@@ -1,0 +1,78 @@
+# HANDOFF — Double Operadic Codebase Programme ("The Wiring & the Whole")
+Session: 2026-07-24 → 07-30 · Operator: CETI · Written for a fresh agent or human resuming cold.
+2026-09-16 addendum: container was reclaimed; see RECOVERY.md for restore status. This repo is
+now git-tracked; experiments E2/E3 run today — see experiments/.
+
+## 1. Mission (one paragraph)
+Extract from Libkind & Myers, *Towards a Double Operadic Theory of Systems* (arXiv:2505.18329v2,
+80pp) a research program + eventual paper that (T1) maps the wiring of large production
+codebases as a *module of systems*, (T2) finds symmetries and derived invariants (equivariance —
+"Noether" is prose-only inspiration, banned in formal claims), and (T3) beats AST-aware token
+compression at matched fidelity — the way "On Meta Prompting" was turned into the meta-suite:
+paper → reusable instruments + real systems.
+
+## 2. What happened (the six phases)
+1. **Framing** — meta-planning/meta-prompting → `plans/IDEATION.md`, `plans/META-PLAN.md`
+   (typed work units, OC gates).
+2. **Consensus** — 4 fable agents, one call → `plans/CONSENSUS.md`: repairs R1–R8 (cospan
+   doctrine = single formal spine; Noether demoted to equivariance T2a/T2b/T2c; compression
+   claim restated falsifiably as CR@F95 Pareto, marginal-gain-over-interface-only headline).
+3. **Digestion** — 7 page-disjoint agents → wiki 01–07 (~33k words, page-tagged; lost to
+   reclamation) + `wiki/INDEX.md` (restored: concept→page→use crosswalk + glossary).
+4. **Synthesis & representation** — `synthesis/SYNTHESIS.md` (crosswalk), NOETHER/COMPRESSION
+   (lost; reconstructable), `options/OPTIONS.md`; dashboard v1 field-notebook volume
+   (delivered in-conversation).
+5. **Adversarial** — 4 fable adversaries → `plans/ADVERSARIAL.md`: gaps GA1–GA10 ("category
+   theory is costume until the foundation exists"), MUST-PROVE 1–5, three decisive cheap
+   artifacts, early-migration milestone.
+6. **Solutions + foundation** — `plans/SOLUTIONS-METAPROMPT.md` → FOUNDATION.md (Code_X
+   committed; delivered, lost from disk), EXPERIMENTS.md (frozen E1–E4; delivered, lost from
+   disk; E1 preserved verbatim in `experiments/PROTOCOL-E1.md`), PATH-FORWARD.md (6-week plan,
+   kill-gates G1–G6, claims ladder; delivered, lost from disk), dashboards v2 + r8-witness
+   (delivered). **E1 RUN: 13/13** after two in-session repairs (degenerate associativity;
+   vacuous Ex 4.25 lift — both caught adversarially). 3-member fable panel signed off the
+   deep-dive; fixes applied.
+
+## 3. Current state of truth
+- **E1 witness: 13/13, re-verified on restore** (`witness/`). Caveats that travel with any
+  citation: toy scale; C₀ SymTab skeleton of Code_X; universal property by bounded enumeration
+  (recorded protocol deviation); demonstrated ≠ proved; MUST-PROVE 1–5 open.
+- **Committed foundation:** Code_X = copresheaves on a finite typed-symbol schema; pushouts
+  always exist; collisions = computable κ diagnostic; T-HULL exact-hull factorization replaces
+  ε-equivariance; invariants Reach & Eff.
+- **E2 / E3:** run 2026-09-16 — see `experiments/e2-tokens/E2-RESULTS.md` and
+  `experiments/e3-ablation/E3-RESULTS.md` (deviations from frozen protocols recorded inside).
+- **Claims discipline:** the PATH-FORWARD ladder is binding. Never claim: Noether's theorem
+  applies; canonical minimal presentations from freeness; rex-ness of Code-C in general;
+  "beats Headroom" (market comp, not benchmark arm).
+- **Minting debt:** systems-intake, interface-first-context, symmetry-lens (renamed from
+  noether-lens per GA10) still unminted.
+
+## 4. Folder map
+```
+research/                  (git repo)
+├── HANDOFF.md · RECOVERY.md
+├── plans/                 IDEATION · META-PLAN · CONSENSUS (R1–R8) · ADVERSARIAL (GA1–GA10,
+│                          MUST-PROVE) · SOLUTIONS-METAPROMPT · PANEL-METAPROMPT
+├── wiki/INDEX.md          page-tagged crosswalk of the 80-page paper
+├── synthesis/SYNTHESIS.md paper→codebase crosswalk
+├── options/OPTIONS.md     five build options (sequenced 2→1→4→3, 5 standing)
+├── witness/               run_witness.py + WITNESS.json (13/13) + toybank/
+└── experiments/           PROTOCOL-E1.md (verbatim) · PROTOCOLS-E2-E3-RECONSTRUCTED.md ·
+                           e2-tokens/ · e3-ablation/
+```
+
+## 5. Method notes (keep doing this)
+Fable agents in single parallel batches only; Sonnet for mechanical diagnosis. Every generative
+phase → adversarial phase (written meta-prompt) → solutions phase that COMMITS. Provenance
+discipline: page-tagged, register-tagged, or labeled CONJECTURE/DESIGN. Consistency ≠
+correctness; demonstrated ≠ proved; models ≠ measurements. Treat every "strengthened" check as
+unverified until an independent reader re-derives it (this caught two real bugs).
+
+## 6. Next actions after today's E2/E3
+1. Evaluate E2/E3 outcomes against their decision rules → update claims ladder.
+2. Mint the three free instruments as SKILL.md files + one dogfood run each.
+3. Upgrade witness C₀ → full Code_X (exhaustive-within-bound universal check) → attempt
+   MUST-PROVE 1–2.
+4. Fineract wedge (orbit statistics discharge U1) with E4 migration chain folded in.
+5. Optional: /ceti-explainer film (brief was in explainer/BRIEF.md, reconstructable).
