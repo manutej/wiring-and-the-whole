@@ -1,0 +1,22 @@
+{
+ "n_handlers": 30,
+ "n_questions": 25,
+ "gate_byte_identical": true,
+ "deviants": [
+  "AddLoanChargeCommandHandler",
+  "CreditBalanceRefundCommandHandler",
+  "DisburseLoanCommandHandler",
+  "LoanGoodwillCreditCommandHandler"
+ ],
+ "sha256": {
+  "packA": "0b0e9cccf1f6b4b3c537fbcffd58a333972ba42bf41f68305fa777255c3848f2",
+  "packB": "b30164109f07520d2e54dd640d68d1ebf41f3cc361e26d37796c1cf78d8baa23",
+  "packC": "f4c058c3475048e6b943556a10b76da6ebe73430b74571eec74baac2682302b8",
+  "questions": "8555c6927225b0c64d9ebe87ebf2d00eb45bb3b8dcb93ca6174dceea48ee974c"
+ },
+ "tokens": {
+  "A": 2089,
+  "B": 1316,
+  "C": 845
+ }
+}

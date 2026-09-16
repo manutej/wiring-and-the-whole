@@ -40,8 +40,11 @@ paper → reusable instruments + real systems.
 - **Committed foundation:** Code_X = copresheaves on a finite typed-symbol schema; pushouts
   always exist; collisions = computable κ diagnostic; T-HULL exact-hull factorization replaces
   ε-equivariance; invariants Reach & Eff.
-- **E2 / E3:** run 2026-09-16 — see `experiments/e2-tokens/E2-RESULTS.md` and
-  `experiments/e3-ablation/E3-RESULTS.md` (deviations from frozen protocols recorded inside).
+- **E2: WIN (2026-09-16).** All 3 real Fineract sites: re-expansion gate byte-identical,
+  e>m everywhere, n* = 2–5 vs family sizes 54–514 (GA6 discharged at micro-scale).
+- **E3 pilot: B PASSES (2026-09-16).** Factored packs read at parity (B 95.3% vs A 93.8%
+  on the audit-surviving wiring pool; C floor 0%) at 63% of A's tokens. No ≥5-pt
+  comprehension tax (GA7's core worry unsupported at pilot scale). Deviations recorded.
 - **Claims discipline:** the PATH-FORWARD ladder is binding. Never claim: Noether's theorem
   applies; canonical minimal presentations from freeness; rex-ness of Code-C in general;
   "beats Headroom" (market comp, not benchmark arm).
@@ -69,8 +72,10 @@ discipline: page-tagged, register-tagged, or labeled CONJECTURE/DESIGN. Consiste
 correctness; demonstrated ≠ proved; models ≠ measurements. Treat every "strengthened" check as
 unverified until an independent reader re-derives it (this caught two real bugs).
 
-## 6. Next actions after today's E2/E3
-1. Evaluate E2/E3 outcomes against their decision rules → update claims ladder.
+## 6. Next actions
+1. DONE 2026-09-16: E2 WIN, E3 pilot B-PASSES → claims ladder rungs unlocked:
+   'L2 token arithmetic live at micro-scale' + 'no comprehension tax at pilot scale'.
+   Next: full-protocol E3 (50+10 q, mixed sites, firewalled minting, pinned models).
 2. Mint the three free instruments as SKILL.md files + one dogfood run each.
 3. Upgrade witness C₀ → full Code_X (exhaustive-within-bound universal check) → attempt
    MUST-PROVE 1–2.

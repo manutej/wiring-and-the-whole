@@ -1,0 +1,84 @@
+You are answering questions about a software wiring pack describing command handlers in a Java codebase.
+Answer ONLY from the pack contents. Do not use outside knowledge of any real project.
+Output EXACTLY one line per question, format 'Q<n>: <answer>' with no extra text.
+For list answers use comma-separated values with no spaces. If the pack lacks the information needed, answer 'unknown'.
+
+=== PACK ===
+# WIRING PACK v1 - generator-data form
+# 'motif NAME(slots): template' defines a wiring shape; template lines use $slots.
+# 'inst NAME(fills)' instantiates it: expand the template with the fills.
+# A following indented '+ line' is a DELTA: after expansion, add that line verbatim.
+# Expansion of every inst reproduces the explicit form exactly.
+
+motif CommandHandler(H, S, f, m, entity, action):
+  unit $H
+  anno $H @CommandType entity=$entity action=$action
+  dep $H.$f: $S
+  edge $H -> $S#$m
+
+inst CommandHandler(AddLoanChargeCommandHandler, DataIntegrityErrorHandler, dataIntegrityErrorHandler, handleDataIntegrityIssues, LOANCHARGE, CREATE)
+  + dep AddLoanChargeCommandHandler.writePlatformService: LoanChargeWritePlatformService
+  + edge AddLoanChargeCommandHandler -> LoanChargeWritePlatformService#addLoanCharge
+inst CommandHandler(AttachLoanOriginatorCommandHandler, LoanOriginatorWritePlatformService, writePlatformService, attachOriginatorToLoan, LOAN_ORIGINATOR, ATTACH)
+inst CommandHandler(BulkUpdateLoanOfficerCommandHandler, LoanWritePlatformService, writePlatformService, bulkLoanReassignment, LOAN, BULKREASSIGN)
+inst CommandHandler(CloseLoanCommandHandler, LoanWritePlatformService, writePlatformService, closeLoan, LOAN, CLOSE)
+inst CommandHandler(CreateDelinquencyRangeCommandHandler, DelinquencyWritePlatformService, writePlatformService, createDelinquencyRange, DELINQUENCY_RANGE, CREATE)
+inst CommandHandler(CreditBalanceRefundCommandHandler, DataIntegrityErrorHandler, dataIntegrityErrorHandler, handleDataIntegrityIssues, LOAN, CREDITBALANCEREFUND)
+  + dep CreditBalanceRefundCommandHandler.writePlatformService: LoanWritePlatformService
+  + edge CreditBalanceRefundCommandHandler -> LoanWritePlatformService#creditBalanceRefund
+inst CommandHandler(DetachLoanOriginatorCommandHandler, LoanOriginatorWritePlatformService, writePlatformService, detachOriginatorFromLoan, LOAN_ORIGINATOR, DETACH)
+inst CommandHandler(DisburseLoanCommandHandler, DataIntegrityErrorHandler, dataIntegrityErrorHandler, handleDataIntegrityIssues, LOAN, DISBURSE)
+  + dep DisburseLoanCommandHandler.writePlatformService: LoanWritePlatformService
+  + edge DisburseLoanCommandHandler -> LoanWritePlatformService#disburseLoan
+inst CommandHandler(DisburseLoanToSavingsCommandHandler, LoanWritePlatformService, writePlatformService, disburseLoan, LOAN, DISBURSETOSAVINGS)
+inst CommandHandler(ForeClosureCommandHandler, LoanWritePlatformService, writePlatformService, forecloseLoan, LOAN, FORECLOSURE)
+inst CommandHandler(GLIMApplicationRejectionCommandHandler, LoanApplicationWritePlatformService, writePlatformService, rejectGLIMApplicationApproval, GLIMLOAN, REJECT)
+inst CommandHandler(LoanApplicationModificationCommandHandler, LoanApplicationWritePlatformService, writePlatformService, modifyApplication, LOAN, UPDATE)
+inst CommandHandler(LoanApplicationSubmittalCommandHandler, LoanApplicationWritePlatformService, writePlatformService, submitApplication, LOAN, CREATE)
+inst CommandHandler(LoanApplicationWithdrawnByApplicantCommandHandler, LoanApplicationWritePlatformService, writePlatformService, applicantWithdrawsFromApplication, LOAN, WITHDRAW)
+inst CommandHandler(LoanApprovedAmountModificationCommandHandler, LoanApprovedAmountWritePlatformService, loanApprovedAmountWritePlatformService, modifyLoanApprovedAmount, LOAN, UPDATE_APPROVED_AMOUNT)
+inst CommandHandler(LoanGoodwillCreditCommandHandler, DataIntegrityErrorHandler, dataIntegrityErrorHandler, handleDataIntegrityIssues, LOAN, GOODWILLCREDIT)
+  + dep LoanGoodwillCreditCommandHandler.writePlatformService: LoanWritePlatformService
+  + edge LoanGoodwillCreditCommandHandler -> LoanWritePlatformService#makeLoanRepayment
+inst CommandHandler(LoanMerchantIssuedRefundCommandHandler, LoanWritePlatformService, writePlatformService, makeRefund, LOAN, MERCHANTISSUEDREFUND)
+inst CommandHandler(LoanRefundByCashCommandHandler, LoanWritePlatformService, writePlatformService, makeLoanRefund, LOAN, REFUNDBYCASH)
+inst CommandHandler(LoanRepaymentChargebackCommandHandler, LoanWritePlatformService, writePlatformService, chargebackLoanTransaction, LOAN, CHARGEBACK)
+inst CommandHandler(MarkLoanAsFraudCommandHandler, LoanWritePlatformService, writePlatformService, markLoanAsFraud, LOAN, SETFRAUD)
+inst CommandHandler(PaymentTypeCreateCommandHandler, PaymentTypeWriteService, paymentTypeWriteService, createPaymentType, -, -)
+inst CommandHandler(RejectAddtionalSharesCommandHandler, ShareAccountWritePlatformService, shareAccountWritePlatformService, rejectAdditionalShares, SHAREACCOUNT, REJECTADDITIONALSHARES)
+inst CommandHandler(SaveCenterCollectionSheetCommandHandler, CollectionSheetWritePlatformService, writePlatformService, updateCollectionSheet, CENTER, SAVECOLLECTIONSHEET)
+inst CommandHandler(UpdateChargeDefinitionCommandHandler, ChargeWritePlatformService, clientWritePlatformService, updateCharge, CHARGE, UPDATE)
+inst CommandHandler(UpdateDelinquencyBucketCommandHandler, DelinquencyWritePlatformService, writePlatformService, updateDelinquencyBucket, DELINQUENCY_BUCKET, UPDATE)
+inst CommandHandler(UpdateDelinquencyRangeCommandHandler, DelinquencyWritePlatformService, writePlatformService, updateDelinquencyRange, DELINQUENCY_RANGE, UPDATE)
+inst CommandHandler(UpdateInterestPauseCommandHandler, InterestPauseWritePlatformService, interestPauseService, updateInterestPause, -, -)
+inst CommandHandler(UpdateLoanDelinquencyBucketCommandHandler, DelinquencyWritePlatformService, writePlatformService, applyDelinquencyTagToLoan, LOAN, UPDATEDELINQUENCY)
+inst CommandHandler(WithdrawClientTransferCommandHandler, TransferWritePlatformService, writePlatformService, withdrawClientTransfer, CLIENT, WITHDRAWTRANSFER)
+inst CommandHandler(WorkingCapitalLoanRecoveryPaymentCommandHandler, WorkingCapitalLoanRecoveryPaymentWriteService, recoveryPaymentWriteService, recoveryPayment, CommandWrapperConstants.ENTITY_WORKINGCAPITALLOAN, CommandWrapperConstants.ACTION_RECOVERYPAYMENT)
+=== END PACK ===
+
+=== QUESTIONS ===
+Q1: Which method does RejectAddtionalSharesCommandHandler invoke on its injected service?
+Q2: Which method does AttachLoanOriginatorCommandHandler invoke on its injected service?
+Q3: Which method does WorkingCapitalLoanRecoveryPaymentCommandHandler invoke on its injected service?
+Q4: Which method does LoanApplicationSubmittalCommandHandler invoke on its injected service?
+Q5: Which method does CreditBalanceRefundCommandHandler invoke on its injected service?
+Q6: Which method does PaymentTypeCreateCommandHandler invoke on its injected service?
+Q7: Which method does CloseLoanCommandHandler invoke on its injected service?
+Q8: Which method does LoanApplicationModificationCommandHandler invoke on its injected service?
+Q9: Which handler class handles entity=LOAN action=MERCHANTISSUEDREFUND?
+Q10: Which handler class handles entity=LOAN action=DISBURSE?
+Q11: Which handler class handles entity=LOAN action=CHARGEBACK?
+Q12: Which handler class handles entity=LOAN action=UPDATE_APPROVED_AMOUNT?
+Q13: Which handler class handles entity=LOAN action=UPDATEDELINQUENCY?
+Q14: Which handler class handles entity=DELINQUENCY_BUCKET action=UPDATE?
+Q15: How many handlers in the pack call methods on LoanWritePlatformService? Answer with a number.
+Q16: How many handlers in the pack call methods on DataIntegrityErrorHandler? Answer with a number.
+Q17: How many handlers in the pack call methods on DelinquencyWritePlatformService? Answer with a number.
+Q18: What is the type of the service injected into LoanRefundByCashCommandHandler?
+Q19: What is the type of the service injected into BulkUpdateLoanOfficerCommandHandler?
+Q20: What is the type of the service injected into DetachLoanOriginatorCommandHandler?
+Q21: What is the type of the service injected into CreateDelinquencyRangeCommandHandler?
+Q22: Which handler classes have MORE than one injected dependency? List class names, comma-separated; answer 'none' if none.
+Q23: Which handler classes invoke MORE than one distinct Type#method target? List class names, comma-separated; answer 'none' if none.
+Q24: List every Type#method target that AddLoanChargeCommandHandler invokes, comma-separated.
+Q25: How many injected dependencies does LoanGoodwillCreditCommandHandler have? Answer with a number.

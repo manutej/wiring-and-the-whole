@@ -1,0 +1,442 @@
+[
+ {
+  "cls": "AddLoanChargeCommandHandler",
+  "entity": "LOANCHARGE",
+  "action": "CREATE",
+  "deps": {
+   "writePlatformService": "LoanChargeWritePlatformService",
+   "dataIntegrityErrorHandler": "DataIntegrityErrorHandler"
+  },
+  "edges": [
+   [
+    "DataIntegrityErrorHandler",
+    "handleDataIntegrityIssues"
+   ],
+   [
+    "LoanChargeWritePlatformService",
+    "addLoanCharge"
+   ]
+  ]
+ },
+ {
+  "cls": "AttachLoanOriginatorCommandHandler",
+  "entity": "LOAN_ORIGINATOR",
+  "action": "ATTACH",
+  "deps": {
+   "writePlatformService": "LoanOriginatorWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanOriginatorWritePlatformService",
+    "attachOriginatorToLoan"
+   ]
+  ]
+ },
+ {
+  "cls": "BulkUpdateLoanOfficerCommandHandler",
+  "entity": "LOAN",
+  "action": "BULKREASSIGN",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanWritePlatformService",
+    "bulkLoanReassignment"
+   ]
+  ]
+ },
+ {
+  "cls": "CloseLoanCommandHandler",
+  "entity": "LOAN",
+  "action": "CLOSE",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanWritePlatformService",
+    "closeLoan"
+   ]
+  ]
+ },
+ {
+  "cls": "CreateDelinquencyRangeCommandHandler",
+  "entity": "DELINQUENCY_RANGE",
+  "action": "CREATE",
+  "deps": {
+   "writePlatformService": "DelinquencyWritePlatformService"
+  },
+  "edges": [
+   [
+    "DelinquencyWritePlatformService",
+    "createDelinquencyRange"
+   ]
+  ]
+ },
+ {
+  "cls": "CreditBalanceRefundCommandHandler",
+  "entity": "LOAN",
+  "action": "CREDITBALANCEREFUND",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService",
+   "dataIntegrityErrorHandler": "DataIntegrityErrorHandler"
+  },
+  "edges": [
+   [
+    "DataIntegrityErrorHandler",
+    "handleDataIntegrityIssues"
+   ],
+   [
+    "LoanWritePlatformService",
+    "creditBalanceRefund"
+   ]
+  ]
+ },
+ {
+  "cls": "DetachLoanOriginatorCommandHandler",
+  "entity": "LOAN_ORIGINATOR",
+  "action": "DETACH",
+  "deps": {
+   "writePlatformService": "LoanOriginatorWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanOriginatorWritePlatformService",
+    "detachOriginatorFromLoan"
+   ]
+  ]
+ },
+ {
+  "cls": "DisburseLoanCommandHandler",
+  "entity": "LOAN",
+  "action": "DISBURSE",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService",
+   "dataIntegrityErrorHandler": "DataIntegrityErrorHandler"
+  },
+  "edges": [
+   [
+    "DataIntegrityErrorHandler",
+    "handleDataIntegrityIssues"
+   ],
+   [
+    "LoanWritePlatformService",
+    "disburseLoan"
+   ]
+  ]
+ },
+ {
+  "cls": "DisburseLoanToSavingsCommandHandler",
+  "entity": "LOAN",
+  "action": "DISBURSETOSAVINGS",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanWritePlatformService",
+    "disburseLoan"
+   ]
+  ]
+ },
+ {
+  "cls": "ForeClosureCommandHandler",
+  "entity": "LOAN",
+  "action": "FORECLOSURE",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanWritePlatformService",
+    "forecloseLoan"
+   ]
+  ]
+ },
+ {
+  "cls": "GLIMApplicationRejectionCommandHandler",
+  "entity": "GLIMLOAN",
+  "action": "REJECT",
+  "deps": {
+   "writePlatformService": "LoanApplicationWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanApplicationWritePlatformService",
+    "rejectGLIMApplicationApproval"
+   ]
+  ]
+ },
+ {
+  "cls": "LoanApplicationModificationCommandHandler",
+  "entity": "LOAN",
+  "action": "UPDATE",
+  "deps": {
+   "writePlatformService": "LoanApplicationWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanApplicationWritePlatformService",
+    "modifyApplication"
+   ]
+  ]
+ },
+ {
+  "cls": "LoanApplicationSubmittalCommandHandler",
+  "entity": "LOAN",
+  "action": "CREATE",
+  "deps": {
+   "writePlatformService": "LoanApplicationWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanApplicationWritePlatformService",
+    "submitApplication"
+   ]
+  ]
+ },
+ {
+  "cls": "LoanApplicationWithdrawnByApplicantCommandHandler",
+  "entity": "LOAN",
+  "action": "WITHDRAW",
+  "deps": {
+   "writePlatformService": "LoanApplicationWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanApplicationWritePlatformService",
+    "applicantWithdrawsFromApplication"
+   ]
+  ]
+ },
+ {
+  "cls": "LoanApprovedAmountModificationCommandHandler",
+  "entity": "LOAN",
+  "action": "UPDATE_APPROVED_AMOUNT",
+  "deps": {
+   "loanApprovedAmountWritePlatformService": "LoanApprovedAmountWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanApprovedAmountWritePlatformService",
+    "modifyLoanApprovedAmount"
+   ]
+  ]
+ },
+ {
+  "cls": "LoanGoodwillCreditCommandHandler",
+  "entity": "LOAN",
+  "action": "GOODWILLCREDIT",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService",
+   "dataIntegrityErrorHandler": "DataIntegrityErrorHandler"
+  },
+  "edges": [
+   [
+    "DataIntegrityErrorHandler",
+    "handleDataIntegrityIssues"
+   ],
+   [
+    "LoanWritePlatformService",
+    "makeLoanRepayment"
+   ]
+  ]
+ },
+ {
+  "cls": "LoanMerchantIssuedRefundCommandHandler",
+  "entity": "LOAN",
+  "action": "MERCHANTISSUEDREFUND",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanWritePlatformService",
+    "makeRefund"
+   ]
+  ]
+ },
+ {
+  "cls": "LoanRefundByCashCommandHandler",
+  "entity": "LOAN",
+  "action": "REFUNDBYCASH",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanWritePlatformService",
+    "makeLoanRefund"
+   ]
+  ]
+ },
+ {
+  "cls": "LoanRepaymentChargebackCommandHandler",
+  "entity": "LOAN",
+  "action": "CHARGEBACK",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanWritePlatformService",
+    "chargebackLoanTransaction"
+   ]
+  ]
+ },
+ {
+  "cls": "MarkLoanAsFraudCommandHandler",
+  "entity": "LOAN",
+  "action": "SETFRAUD",
+  "deps": {
+   "writePlatformService": "LoanWritePlatformService"
+  },
+  "edges": [
+   [
+    "LoanWritePlatformService",
+    "markLoanAsFraud"
+   ]
+  ]
+ },
+ {
+  "cls": "PaymentTypeCreateCommandHandler",
+  "entity": null,
+  "action": null,
+  "deps": {
+   "paymentTypeWriteService": "PaymentTypeWriteService"
+  },
+  "edges": [
+   [
+    "PaymentTypeWriteService",
+    "createPaymentType"
+   ]
+  ]
+ },
+ {
+  "cls": "RejectAddtionalSharesCommandHandler",
+  "entity": "SHAREACCOUNT",
+  "action": "REJECTADDITIONALSHARES",
+  "deps": {
+   "shareAccountWritePlatformService": "ShareAccountWritePlatformService"
+  },
+  "edges": [
+   [
+    "ShareAccountWritePlatformService",
+    "rejectAdditionalShares"
+   ]
+  ]
+ },
+ {
+  "cls": "SaveCenterCollectionSheetCommandHandler",
+  "entity": "CENTER",
+  "action": "SAVECOLLECTIONSHEET",
+  "deps": {
+   "writePlatformService": "CollectionSheetWritePlatformService"
+  },
+  "edges": [
+   [
+    "CollectionSheetWritePlatformService",
+    "updateCollectionSheet"
+   ]
+  ]
+ },
+ {
+  "cls": "UpdateChargeDefinitionCommandHandler",
+  "entity": "CHARGE",
+  "action": "UPDATE",
+  "deps": {
+   "clientWritePlatformService": "ChargeWritePlatformService"
+  },
+  "edges": [
+   [
+    "ChargeWritePlatformService",
+    "updateCharge"
+   ]
+  ]
+ },
+ {
+  "cls": "UpdateDelinquencyBucketCommandHandler",
+  "entity": "DELINQUENCY_BUCKET",
+  "action": "UPDATE",
+  "deps": {
+   "writePlatformService": "DelinquencyWritePlatformService"
+  },
+  "edges": [
+   [
+    "DelinquencyWritePlatformService",
+    "updateDelinquencyBucket"
+   ]
+  ]
+ },
+ {
+  "cls": "UpdateDelinquencyRangeCommandHandler",
+  "entity": "DELINQUENCY_RANGE",
+  "action": "UPDATE",
+  "deps": {
+   "writePlatformService": "DelinquencyWritePlatformService"
+  },
+  "edges": [
+   [
+    "DelinquencyWritePlatformService",
+    "updateDelinquencyRange"
+   ]
+  ]
+ },
+ {
+  "cls": "UpdateInterestPauseCommandHandler",
+  "entity": null,
+  "action": null,
+  "deps": {
+   "interestPauseService": "InterestPauseWritePlatformService"
+  },
+  "edges": [
+   [
+    "InterestPauseWritePlatformService",
+    "updateInterestPause"
+   ]
+  ]
+ },
+ {
+  "cls": "UpdateLoanDelinquencyBucketCommandHandler",
+  "entity": "LOAN",
+  "action": "UPDATEDELINQUENCY",
+  "deps": {
+   "writePlatformService": "DelinquencyWritePlatformService"
+  },
+  "edges": [
+   [
+    "DelinquencyWritePlatformService",
+    "applyDelinquencyTagToLoan"
+   ]
+  ]
+ },
+ {
+  "cls": "WithdrawClientTransferCommandHandler",
+  "entity": "CLIENT",
+  "action": "WITHDRAWTRANSFER",
+  "deps": {
+   "writePlatformService": "TransferWritePlatformService"
+  },
+  "edges": [
+   [
+    "TransferWritePlatformService",
+    "withdrawClientTransfer"
+   ]
+  ]
+ },
+ {
+  "cls": "WorkingCapitalLoanRecoveryPaymentCommandHandler",
+  "entity": "CommandWrapperConstants.ENTITY_WORKINGCAPITALLOAN",
+  "action": "CommandWrapperConstants.ACTION_RECOVERYPAYMENT",
+  "deps": {
+   "recoveryPaymentWriteService": "WorkingCapitalLoanRecoveryPaymentWriteService"
+  },
+  "edges": [
+   [
+    "WorkingCapitalLoanRecoveryPaymentWriteService",
+    "recoveryPayment"
+   ]
+  ]
+ }
+]
