@@ -1,0 +1,4 @@
+motif ApiResource(A, deps, calls):
+  unit $A
+  foreach f:T in $deps -> dep $A.$f: $T
+  foreach T#m in $calls -> edge $A -> $T#$m
