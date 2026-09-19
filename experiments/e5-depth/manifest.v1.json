@@ -1,0 +1,30 @@
+{
+ "n_units": 40,
+ "n_handlers": 30,
+ "n_new_units": 10,
+ "n_questions": 112,
+ "per_depth": {
+  "1": 12,
+  "2": 12,
+  "3": 6,
+  "4": 12,
+  "5": 12,
+  "6": 12,
+  "7": 12,
+  "8": 10,
+  "9": 12,
+  "10": 12
+ },
+ "n_oc_trees": 10,
+ "n_oc_subquestions": 29,
+ "gate_byte_identical": true,
+ "tokens": {
+  "A": 12493,
+  "B": 11744
+ },
+ "sha256": {
+  "packA": "42ae65432f1f007b",
+  "packB": "caee7ae5d9949b9d",
+  "questions": "3329de65515950f4"
+ }
+}

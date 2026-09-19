@@ -45,6 +45,15 @@ paper → reusable instruments + real systems.
 - **E3 pilot: B PASSES (2026-09-16).** Factored packs read at parity (B 95.3% vs A 93.8%
   on the audit-surviving wiring pool; C floor 0%) at 63% of A's tokens. No ≥5-pt
   comprehension tax (GA7's core worry unsupported at pilot scale). Deviations recorded.
+- **E5/E5.1: B PASSES AT DEPTH (2026-09-19).** 112 questions x 10 depth levels, 40 real
+  Fineract units, veteran-QA evaluators, 10 operadic-interview trees. Raw run showed a fake
+  depth-collapse; the 3-fable QA panel proved it ~80% harness artifact (undocumented '-'
+  sentinel; ambiguous *Repository* glob; self-contradictory D9 key; 4/10 OC trees were
+  decomposition theater — caught label-free by universal inconsistency). Two spec fixes +
+  rerun: sonnet 100% at every depth in BOTH arms; pooled B-A = -3.7pts (inside the 5-pt
+  rule); haiku-only residual localized to large-list enumeration affecting both arms.
+  Binding lesson: information-equivalent must mean SPEC-equivalent for the reader. OC-v2
+  spec recorded (COMPOSE-witness gate at build time). See experiments/e5-depth/.
 - **Claims discipline:** the PATH-FORWARD ladder is binding. Never claim: Noether's theorem
   applies; canonical minimal presentations from freeness; rex-ness of Code-C in general;
   "beats Headroom" (market comp, not benchmark arm).
