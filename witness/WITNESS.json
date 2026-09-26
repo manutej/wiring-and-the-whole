@@ -1,0 +1,93 @@
+{
+  "code_c": "C0 SymTab (skeleton of Code_X, FOUNDATION.md); pushout=amalgamation, kappa=lint",
+  "checks": {
+    "step4_pushout_commutes": true,
+    "step4_universal_property_bounded": true,
+    "step5_fresh_names_inside_C": true,
+    "step5_no_false_kappa": true,
+    "step6_system_map_square": true,
+    "step7_automorphism_composite_iso": true,
+    "step8_invariant_constant_on_orbit": true,
+    "step9_kappa_fires_on_collision": true,
+    "step10_associativity_canonical_iso": true,
+    "step10_monoidal_unit_disjoint_union": true,
+    "step10_ex425_squares_compose": true,
+    "step8a_system_maps_preserve_invariant": true,
+    "step6_ports_preserved": true
+  },
+  "witnesses": {
+    "step5": {
+      "|Z|": 7,
+      "log_symbols_kept_distinct": [
+        "loans.LoansService#log",
+        "loans.LoansRepository#log"
+      ],
+      "cocones_tested": 6
+    },
+    "step6": {
+      "renamed": [
+        "loans.LoansService#log"
+      ]
+    },
+    "step7": {
+      "phi_size": 9,
+      "composite_size": 18,
+      "construct_then_verify": true
+    },
+    "step8": {
+      "B_accounts_edges": 8,
+      "B_savings_edges": 8,
+      "equal_after_transport": true,
+      "sample": [
+        [
+          "accounts.AccountsController#get",
+          "accounts.AccountsService#fetchOne"
+        ],
+        [
+          "accounts.AccountsController#get",
+          "accounts.AccountsService#fetchPage"
+        ],
+        [
+          "accounts.AccountsController#list",
+          "accounts.AccountsService#fetchOne"
+        ],
+        [
+          "accounts.AccountsController#list",
+          "accounts.AccountsService#fetchPage"
+        ]
+      ]
+    },
+    "step9": {
+      "kappa": [
+        {
+          "identified": [
+            "L:accounts.Money#amountCents",
+            "R:loans.Money#amount"
+          ],
+          "signatures": [
+            "('field', 'double')",
+            "('field', 'long')"
+          ]
+        }
+      ],
+      "silent_merge_would_have": "one Money symbol with contradictory signatures {long}!={double} \u2014 corrupted context"
+    },
+    "step10_assoc": {
+      "|(A+B)+C|": 10,
+      "|A+(B+C)|": 10,
+      "identical_canonical_form": true
+    },
+    "step10_ex425": {
+      "lift_nontrivial_on": 2,
+      "lift_is_morphism": true,
+      "accounts_ports_fixed": true,
+      "naturality_lift_sigma_commute": true,
+      "note": "refactor renames accounts.AccountsService#log (+phi-transport on savings); swap commutes with refactor"
+    }
+  },
+  "notes": [
+    "toybank generated: 16 files",
+    "extracted 16 objects; total symbols 37"
+  ],
+  "all_pass": true
+}
