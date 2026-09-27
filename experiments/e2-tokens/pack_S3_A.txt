@@ -1,0 +1,4 @@
+unit ActivateSavingsAccountCommandHandler
+anno ActivateSavingsAccountCommandHandler @CommandType entity=SAVINGSACCOUNT action=ACTIVATE
+dep ActivateSavingsAccountCommandHandler.writePlatformService: SavingsAccountWritePlatformService
+edge ActivateSavingsAccountCommandHandler -> SavingsAccountWritePlatformService#activate

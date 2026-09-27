@@ -1,0 +1,4 @@
+motif RepositoryWrapper(W, R, deps, calls):
+  unit $W
+  foreach f:T in $deps -> dep $W.$f: $T
+  foreach T#m in $calls -> edge $W -> $T#$m

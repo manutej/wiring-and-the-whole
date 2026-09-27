@@ -47,7 +47,7 @@ paper → reusable instruments + real systems.
   comprehension tax (GA7's core worry unsupported at pilot scale). Deviations recorded.
 - **E5/E5.1: B PASSES AT DEPTH (2026-09-19).** 112 questions x 10 depth levels, 40 real
   Fineract units, veteran-QA evaluators, 10 operadic-interview trees. Raw run showed a fake
-  depth-collapse; the 3-fable QA panel proved it ~80% harness artifact (undocumented '-' 
+  depth-collapse; the 3-fable QA panel proved it ~80% harness artifact (undocumented '-'
   sentinel; ambiguous *Repository* glob; self-contradictory D9 key; 4/10 OC trees were
   decomposition theater — caught label-free by universal inconsistency). Two spec fixes +
   rerun: sonnet 100% at every depth in BOTH arms; pooled B-A = -3.7pts (inside the 5-pt
@@ -68,7 +68,7 @@ research/                  (git repo)
 │                          MUST-PROVE) · SOLUTIONS-METAPROMPT · PANEL-METAPROMPT
 ├── wiki/INDEX.md          page-tagged crosswalk of the 80-page paper
 ├── synthesis/SYNTHESIS.md paper→codebase crosswalk
-├── options/OPTIONS.md     five build options, sequenced artifacts-first
+├── options/OPTIONS.md     five build options (sequenced 2→1→4→3, 5 standing)
 ├── witness/               run_witness.py + WITNESS.json (13/13) + toybank/
 └── experiments/           PROTOCOL-E1.md (verbatim) · PROTOCOLS-E2-E3-RECONSTRUCTED.md ·
                            e2-tokens/ · e3-ablation/

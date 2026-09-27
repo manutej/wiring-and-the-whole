@@ -128,4 +128,5 @@ step affordable; the wiring map (T1) is what sequences the steps; the invariants
 - U4: "Noether" here is an analogy until we fix an action functional; candidate: black-boxing
   functor as the invariant-assigner; formal work needed to make the theorem-shape precise.
 - U5: Loose bimodule/companion-commuter machinery (§2–3) — how much is load-bearing for
-  applications vs. scaffolding for the math? Wiki digestion must answer. [Discharged: ~25% load-bearing; see wiki/INDEX.md standing verdicts.]
+  applications vs. scaffolding for the math? Wiki digestion must answer. [Discharged: ~25%
+  load-bearing; see wiki/INDEX.md standing verdicts.]
