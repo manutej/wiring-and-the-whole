@@ -1,0 +1,5 @@
+motif CommandHandler(H, S, m, entity, action):
+  unit $H
+  anno $H @CommandType entity=$entity action=$action
+  dep $H.writePlatformService: $S
+  edge $H -> $S#$m

@@ -1,0 +1,172 @@
+{
+ "n_questions": 112,
+ "n_unique": 108,
+ "duplicates_removed": 4,
+ "runs": {
+  "A_haiku": {
+   "overall": 0.917,
+   "per_depth": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 0.417,
+    "D8": 1.0,
+    "D9": 0.75,
+    "D10": 1.0
+   }
+  },
+  "A_sonnet": {
+   "overall": 0.981,
+   "per_depth": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 1.0,
+    "D8": 1.0,
+    "D9": 0.75,
+    "D10": 1.0
+   }
+  },
+  "B_haiku": {
+   "overall": 0.806,
+   "per_depth": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 0.083,
+    "D6": 1.0,
+    "D7": 0.25,
+    "D8": 0.9,
+    "D9": 1.0,
+    "D10": 1.0
+   }
+  },
+  "B_sonnet": {
+   "overall": 0.889,
+   "per_depth": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 0.25,
+    "D8": 0.9,
+    "D9": 0.75,
+    "D10": 1.0
+   }
+  }
+ },
+ "oc": {
+  "A_haiku": {
+   "trees": 10,
+   "consistent": 7,
+   "P(correct|consistent)": 1.0,
+   "P(correct|inconsistent)": 0.667,
+   "inconsistent_qs": [
+    89,
+    90,
+    91
+   ]
+  },
+  "A_sonnet": {
+   "trees": 10,
+   "consistent": 6,
+   "P(correct|consistent)": 1.0,
+   "P(correct|inconsistent)": 0.75,
+   "inconsistent_qs": [
+    89,
+    90,
+    91,
+    101
+   ]
+  },
+  "B_haiku": {
+   "trees": 10,
+   "consistent": 7,
+   "P(correct|consistent)": 0.714,
+   "P(correct|inconsistent)": 1.0,
+   "inconsistent_qs": [
+    89,
+    90,
+    91
+   ]
+  },
+  "B_sonnet": {
+   "trees": 10,
+   "consistent": 6,
+   "P(correct|consistent)": 1.0,
+   "P(correct|inconsistent)": 0.75,
+   "inconsistent_qs": [
+    89,
+    90,
+    91,
+    101
+   ]
+  }
+ },
+ "pooled_per_depth": {
+  "D1": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  },
+  "D2": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  },
+  "D3": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  },
+  "D4": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  },
+  "D5": {
+   "A": 1.0,
+   "B": 0.542,
+   "B_minus_A_pts": -45.8
+  },
+  "D6": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  },
+  "D7": {
+   "A": 0.708,
+   "B": 0.25,
+   "B_minus_A_pts": -45.8
+  },
+  "D8": {
+   "A": 1.0,
+   "B": 0.9,
+   "B_minus_A_pts": -10.0
+  },
+  "D9": {
+   "A": 0.75,
+   "B": 0.875,
+   "B_minus_A_pts": 12.5
+  },
+  "D10": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  }
+ },
+ "pooled_overall": {
+  "A": 0.949,
+  "B": 0.848,
+  "B_minus_A_pts": -10.2
+ }
+}

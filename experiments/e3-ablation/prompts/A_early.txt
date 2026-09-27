@@ -1,0 +1,189 @@
+You are answering questions about a software wiring pack describing command handlers in a Java codebase.
+Answer ONLY from the pack contents. Do not use outside knowledge of any real project.
+Output EXACTLY one line per question, format 'Q<n>: <answer>' with no extra text.
+For list answers use comma-separated values with no spaces. If the pack lacks the information needed, answer 'unknown'.
+
+=== PACK ===
+unit AddLoanChargeCommandHandler
+anno AddLoanChargeCommandHandler @CommandType entity=LOANCHARGE action=CREATE
+dep AddLoanChargeCommandHandler.dataIntegrityErrorHandler: DataIntegrityErrorHandler
+dep AddLoanChargeCommandHandler.writePlatformService: LoanChargeWritePlatformService
+edge AddLoanChargeCommandHandler -> DataIntegrityErrorHandler#handleDataIntegrityIssues
+edge AddLoanChargeCommandHandler -> LoanChargeWritePlatformService#addLoanCharge
+
+unit AttachLoanOriginatorCommandHandler
+anno AttachLoanOriginatorCommandHandler @CommandType entity=LOAN_ORIGINATOR action=ATTACH
+dep AttachLoanOriginatorCommandHandler.writePlatformService: LoanOriginatorWritePlatformService
+edge AttachLoanOriginatorCommandHandler -> LoanOriginatorWritePlatformService#attachOriginatorToLoan
+
+unit BulkUpdateLoanOfficerCommandHandler
+anno BulkUpdateLoanOfficerCommandHandler @CommandType entity=LOAN action=BULKREASSIGN
+dep BulkUpdateLoanOfficerCommandHandler.writePlatformService: LoanWritePlatformService
+edge BulkUpdateLoanOfficerCommandHandler -> LoanWritePlatformService#bulkLoanReassignment
+
+unit CloseLoanCommandHandler
+anno CloseLoanCommandHandler @CommandType entity=LOAN action=CLOSE
+dep CloseLoanCommandHandler.writePlatformService: LoanWritePlatformService
+edge CloseLoanCommandHandler -> LoanWritePlatformService#closeLoan
+
+unit CreateDelinquencyRangeCommandHandler
+anno CreateDelinquencyRangeCommandHandler @CommandType entity=DELINQUENCY_RANGE action=CREATE
+dep CreateDelinquencyRangeCommandHandler.writePlatformService: DelinquencyWritePlatformService
+edge CreateDelinquencyRangeCommandHandler -> DelinquencyWritePlatformService#createDelinquencyRange
+
+unit CreditBalanceRefundCommandHandler
+anno CreditBalanceRefundCommandHandler @CommandType entity=LOAN action=CREDITBALANCEREFUND
+dep CreditBalanceRefundCommandHandler.dataIntegrityErrorHandler: DataIntegrityErrorHandler
+dep CreditBalanceRefundCommandHandler.writePlatformService: LoanWritePlatformService
+edge CreditBalanceRefundCommandHandler -> DataIntegrityErrorHandler#handleDataIntegrityIssues
+edge CreditBalanceRefundCommandHandler -> LoanWritePlatformService#creditBalanceRefund
+
+unit DetachLoanOriginatorCommandHandler
+anno DetachLoanOriginatorCommandHandler @CommandType entity=LOAN_ORIGINATOR action=DETACH
+dep DetachLoanOriginatorCommandHandler.writePlatformService: LoanOriginatorWritePlatformService
+edge DetachLoanOriginatorCommandHandler -> LoanOriginatorWritePlatformService#detachOriginatorFromLoan
+
+unit DisburseLoanCommandHandler
+anno DisburseLoanCommandHandler @CommandType entity=LOAN action=DISBURSE
+dep DisburseLoanCommandHandler.dataIntegrityErrorHandler: DataIntegrityErrorHandler
+dep DisburseLoanCommandHandler.writePlatformService: LoanWritePlatformService
+edge DisburseLoanCommandHandler -> DataIntegrityErrorHandler#handleDataIntegrityIssues
+edge DisburseLoanCommandHandler -> LoanWritePlatformService#disburseLoan
+
+unit DisburseLoanToSavingsCommandHandler
+anno DisburseLoanToSavingsCommandHandler @CommandType entity=LOAN action=DISBURSETOSAVINGS
+dep DisburseLoanToSavingsCommandHandler.writePlatformService: LoanWritePlatformService
+edge DisburseLoanToSavingsCommandHandler -> LoanWritePlatformService#disburseLoan
+
+unit ForeClosureCommandHandler
+anno ForeClosureCommandHandler @CommandType entity=LOAN action=FORECLOSURE
+dep ForeClosureCommandHandler.writePlatformService: LoanWritePlatformService
+edge ForeClosureCommandHandler -> LoanWritePlatformService#forecloseLoan
+
+unit GLIMApplicationRejectionCommandHandler
+anno GLIMApplicationRejectionCommandHandler @CommandType entity=GLIMLOAN action=REJECT
+dep GLIMApplicationRejectionCommandHandler.writePlatformService: LoanApplicationWritePlatformService
+edge GLIMApplicationRejectionCommandHandler -> LoanApplicationWritePlatformService#rejectGLIMApplicationApproval
+
+unit LoanApplicationModificationCommandHandler
+anno LoanApplicationModificationCommandHandler @CommandType entity=LOAN action=UPDATE
+dep LoanApplicationModificationCommandHandler.writePlatformService: LoanApplicationWritePlatformService
+edge LoanApplicationModificationCommandHandler -> LoanApplicationWritePlatformService#modifyApplication
+
+unit LoanApplicationSubmittalCommandHandler
+anno LoanApplicationSubmittalCommandHandler @CommandType entity=LOAN action=CREATE
+dep LoanApplicationSubmittalCommandHandler.writePlatformService: LoanApplicationWritePlatformService
+edge LoanApplicationSubmittalCommandHandler -> LoanApplicationWritePlatformService#submitApplication
+
+unit LoanApplicationWithdrawnByApplicantCommandHandler
+anno LoanApplicationWithdrawnByApplicantCommandHandler @CommandType entity=LOAN action=WITHDRAW
+dep LoanApplicationWithdrawnByApplicantCommandHandler.writePlatformService: LoanApplicationWritePlatformService
+edge LoanApplicationWithdrawnByApplicantCommandHandler -> LoanApplicationWritePlatformService#applicantWithdrawsFromApplication
+
+unit LoanApprovedAmountModificationCommandHandler
+anno LoanApprovedAmountModificationCommandHandler @CommandType entity=LOAN action=UPDATE_APPROVED_AMOUNT
+dep LoanApprovedAmountModificationCommandHandler.loanApprovedAmountWritePlatformService: LoanApprovedAmountWritePlatformService
+edge LoanApprovedAmountModificationCommandHandler -> LoanApprovedAmountWritePlatformService#modifyLoanApprovedAmount
+
+unit LoanGoodwillCreditCommandHandler
+anno LoanGoodwillCreditCommandHandler @CommandType entity=LOAN action=GOODWILLCREDIT
+dep LoanGoodwillCreditCommandHandler.dataIntegrityErrorHandler: DataIntegrityErrorHandler
+dep LoanGoodwillCreditCommandHandler.writePlatformService: LoanWritePlatformService
+edge LoanGoodwillCreditCommandHandler -> DataIntegrityErrorHandler#handleDataIntegrityIssues
+edge LoanGoodwillCreditCommandHandler -> LoanWritePlatformService#makeLoanRepayment
+
+unit LoanMerchantIssuedRefundCommandHandler
+anno LoanMerchantIssuedRefundCommandHandler @CommandType entity=LOAN action=MERCHANTISSUEDREFUND
+dep LoanMerchantIssuedRefundCommandHandler.writePlatformService: LoanWritePlatformService
+edge LoanMerchantIssuedRefundCommandHandler -> LoanWritePlatformService#makeRefund
+
+unit LoanRefundByCashCommandHandler
+anno LoanRefundByCashCommandHandler @CommandType entity=LOAN action=REFUNDBYCASH
+dep LoanRefundByCashCommandHandler.writePlatformService: LoanWritePlatformService
+edge LoanRefundByCashCommandHandler -> LoanWritePlatformService#makeLoanRefund
+
+unit LoanRepaymentChargebackCommandHandler
+anno LoanRepaymentChargebackCommandHandler @CommandType entity=LOAN action=CHARGEBACK
+dep LoanRepaymentChargebackCommandHandler.writePlatformService: LoanWritePlatformService
+edge LoanRepaymentChargebackCommandHandler -> LoanWritePlatformService#chargebackLoanTransaction
+
+unit MarkLoanAsFraudCommandHandler
+anno MarkLoanAsFraudCommandHandler @CommandType entity=LOAN action=SETFRAUD
+dep MarkLoanAsFraudCommandHandler.writePlatformService: LoanWritePlatformService
+edge MarkLoanAsFraudCommandHandler -> LoanWritePlatformService#markLoanAsFraud
+
+unit PaymentTypeCreateCommandHandler
+dep PaymentTypeCreateCommandHandler.paymentTypeWriteService: PaymentTypeWriteService
+edge PaymentTypeCreateCommandHandler -> PaymentTypeWriteService#createPaymentType
+
+unit RejectAddtionalSharesCommandHandler
+anno RejectAddtionalSharesCommandHandler @CommandType entity=SHAREACCOUNT action=REJECTADDITIONALSHARES
+dep RejectAddtionalSharesCommandHandler.shareAccountWritePlatformService: ShareAccountWritePlatformService
+edge RejectAddtionalSharesCommandHandler -> ShareAccountWritePlatformService#rejectAdditionalShares
+
+unit SaveCenterCollectionSheetCommandHandler
+anno SaveCenterCollectionSheetCommandHandler @CommandType entity=CENTER action=SAVECOLLECTIONSHEET
+dep SaveCenterCollectionSheetCommandHandler.writePlatformService: CollectionSheetWritePlatformService
+edge SaveCenterCollectionSheetCommandHandler -> CollectionSheetWritePlatformService#updateCollectionSheet
+
+unit UpdateChargeDefinitionCommandHandler
+anno UpdateChargeDefinitionCommandHandler @CommandType entity=CHARGE action=UPDATE
+dep UpdateChargeDefinitionCommandHandler.clientWritePlatformService: ChargeWritePlatformService
+edge UpdateChargeDefinitionCommandHandler -> ChargeWritePlatformService#updateCharge
+
+unit UpdateDelinquencyBucketCommandHandler
+anno UpdateDelinquencyBucketCommandHandler @CommandType entity=DELINQUENCY_BUCKET action=UPDATE
+dep UpdateDelinquencyBucketCommandHandler.writePlatformService: DelinquencyWritePlatformService
+edge UpdateDelinquencyBucketCommandHandler -> DelinquencyWritePlatformService#updateDelinquencyBucket
+
+unit UpdateDelinquencyRangeCommandHandler
+anno UpdateDelinquencyRangeCommandHandler @CommandType entity=DELINQUENCY_RANGE action=UPDATE
+dep UpdateDelinquencyRangeCommandHandler.writePlatformService: DelinquencyWritePlatformService
+edge UpdateDelinquencyRangeCommandHandler -> DelinquencyWritePlatformService#updateDelinquencyRange
+
+unit UpdateInterestPauseCommandHandler
+dep UpdateInterestPauseCommandHandler.interestPauseService: InterestPauseWritePlatformService
+edge UpdateInterestPauseCommandHandler -> InterestPauseWritePlatformService#updateInterestPause
+
+unit UpdateLoanDelinquencyBucketCommandHandler
+anno UpdateLoanDelinquencyBucketCommandHandler @CommandType entity=LOAN action=UPDATEDELINQUENCY
+dep UpdateLoanDelinquencyBucketCommandHandler.writePlatformService: DelinquencyWritePlatformService
+edge UpdateLoanDelinquencyBucketCommandHandler -> DelinquencyWritePlatformService#applyDelinquencyTagToLoan
+
+unit WithdrawClientTransferCommandHandler
+anno WithdrawClientTransferCommandHandler @CommandType entity=CLIENT action=WITHDRAWTRANSFER
+dep WithdrawClientTransferCommandHandler.writePlatformService: TransferWritePlatformService
+edge WithdrawClientTransferCommandHandler -> TransferWritePlatformService#withdrawClientTransfer
+
+unit WorkingCapitalLoanRecoveryPaymentCommandHandler
+anno WorkingCapitalLoanRecoveryPaymentCommandHandler @CommandType entity=CommandWrapperConstants.ENTITY_WORKINGCAPITALLOAN action=CommandWrapperConstants.ACTION_RECOVERYPAYMENT
+dep WorkingCapitalLoanRecoveryPaymentCommandHandler.recoveryPaymentWriteService: WorkingCapitalLoanRecoveryPaymentWriteService
+edge WorkingCapitalLoanRecoveryPaymentCommandHandler -> WorkingCapitalLoanRecoveryPaymentWriteService#recoveryPayment
+=== END PACK ===
+
+=== QUESTIONS ===
+Q1: Which method does RejectAddtionalSharesCommandHandler invoke on its injected service?
+Q2: Which method does AttachLoanOriginatorCommandHandler invoke on its injected service?
+Q3: Which method does WorkingCapitalLoanRecoveryPaymentCommandHandler invoke on its injected service?
+Q4: Which method does LoanApplicationSubmittalCommandHandler invoke on its injected service?
+Q5: Which method does CreditBalanceRefundCommandHandler invoke on its injected service?
+Q6: Which method does PaymentTypeCreateCommandHandler invoke on its injected service?
+Q7: Which method does CloseLoanCommandHandler invoke on its injected service?
+Q8: Which method does LoanApplicationModificationCommandHandler invoke on its injected service?
+Q9: Which handler class handles entity=LOAN action=MERCHANTISSUEDREFUND?
+Q10: Which handler class handles entity=LOAN action=DISBURSE?
+Q11: Which handler class handles entity=LOAN action=CHARGEBACK?
+Q12: Which handler class handles entity=LOAN action=UPDATE_APPROVED_AMOUNT?
+Q13: Which handler class handles entity=LOAN action=UPDATEDELINQUENCY?
+Q14: Which handler class handles entity=DELINQUENCY_BUCKET action=UPDATE?
+Q15: How many handlers in the pack call methods on LoanWritePlatformService? Answer with a number.
+Q16: How many handlers in the pack call methods on DataIntegrityErrorHandler? Answer with a number.
+Q17: How many handlers in the pack call methods on DelinquencyWritePlatformService? Answer with a number.
+Q18: What is the type of the service injected into LoanRefundByCashCommandHandler?
+Q19: What is the type of the service injected into BulkUpdateLoanOfficerCommandHandler?
+Q20: What is the type of the service injected into DetachLoanOriginatorCommandHandler?
+Q21: What is the type of the service injected into CreateDelinquencyRangeCommandHandler?
+Q22: Which handler classes have MORE than one injected dependency? List class names, comma-separated; answer 'none' if none.
+Q23: Which handler classes invoke MORE than one distinct Type#method target? List class names, comma-separated; answer 'none' if none.
+Q24: List every Type#method target that AddLoanChargeCommandHandler invokes, comma-separated.
+Q25: How many injected dependencies does LoanGoodwillCreditCommandHandler have? Answer with a number.

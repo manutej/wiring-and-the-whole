@@ -1,0 +1,50 @@
+# WIRING PACK v1 - generator-data form
+# 'motif NAME(slots): template' defines a wiring shape; template lines use $slots.
+# 'inst NAME(fills)' instantiates it: expand the template with the fills.
+# A following indented '+ line' is a DELTA: after expansion, add that line verbatim.
+# Expansion of every inst reproduces the explicit form exactly.
+
+motif CommandHandler(H, S, f, m, entity, action):
+  unit $H
+  anno $H @CommandType entity=$entity action=$action
+  dep $H.$f: $S
+  edge $H -> $S#$m
+
+inst CommandHandler(AddLoanChargeCommandHandler, DataIntegrityErrorHandler, dataIntegrityErrorHandler, handleDataIntegrityIssues, LOANCHARGE, CREATE)
+  + dep AddLoanChargeCommandHandler.writePlatformService: LoanChargeWritePlatformService
+  + edge AddLoanChargeCommandHandler -> LoanChargeWritePlatformService#addLoanCharge
+inst CommandHandler(AttachLoanOriginatorCommandHandler, LoanOriginatorWritePlatformService, writePlatformService, attachOriginatorToLoan, LOAN_ORIGINATOR, ATTACH)
+inst CommandHandler(BulkUpdateLoanOfficerCommandHandler, LoanWritePlatformService, writePlatformService, bulkLoanReassignment, LOAN, BULKREASSIGN)
+inst CommandHandler(CloseLoanCommandHandler, LoanWritePlatformService, writePlatformService, closeLoan, LOAN, CLOSE)
+inst CommandHandler(CreateDelinquencyRangeCommandHandler, DelinquencyWritePlatformService, writePlatformService, createDelinquencyRange, DELINQUENCY_RANGE, CREATE)
+inst CommandHandler(CreditBalanceRefundCommandHandler, DataIntegrityErrorHandler, dataIntegrityErrorHandler, handleDataIntegrityIssues, LOAN, CREDITBALANCEREFUND)
+  + dep CreditBalanceRefundCommandHandler.writePlatformService: LoanWritePlatformService
+  + edge CreditBalanceRefundCommandHandler -> LoanWritePlatformService#creditBalanceRefund
+inst CommandHandler(DetachLoanOriginatorCommandHandler, LoanOriginatorWritePlatformService, writePlatformService, detachOriginatorFromLoan, LOAN_ORIGINATOR, DETACH)
+inst CommandHandler(DisburseLoanCommandHandler, DataIntegrityErrorHandler, dataIntegrityErrorHandler, handleDataIntegrityIssues, LOAN, DISBURSE)
+  + dep DisburseLoanCommandHandler.writePlatformService: LoanWritePlatformService
+  + edge DisburseLoanCommandHandler -> LoanWritePlatformService#disburseLoan
+inst CommandHandler(DisburseLoanToSavingsCommandHandler, LoanWritePlatformService, writePlatformService, disburseLoan, LOAN, DISBURSETOSAVINGS)
+inst CommandHandler(ForeClosureCommandHandler, LoanWritePlatformService, writePlatformService, forecloseLoan, LOAN, FORECLOSURE)
+inst CommandHandler(GLIMApplicationRejectionCommandHandler, LoanApplicationWritePlatformService, writePlatformService, rejectGLIMApplicationApproval, GLIMLOAN, REJECT)
+inst CommandHandler(LoanApplicationModificationCommandHandler, LoanApplicationWritePlatformService, writePlatformService, modifyApplication, LOAN, UPDATE)
+inst CommandHandler(LoanApplicationSubmittalCommandHandler, LoanApplicationWritePlatformService, writePlatformService, submitApplication, LOAN, CREATE)
+inst CommandHandler(LoanApplicationWithdrawnByApplicantCommandHandler, LoanApplicationWritePlatformService, writePlatformService, applicantWithdrawsFromApplication, LOAN, WITHDRAW)
+inst CommandHandler(LoanApprovedAmountModificationCommandHandler, LoanApprovedAmountWritePlatformService, loanApprovedAmountWritePlatformService, modifyLoanApprovedAmount, LOAN, UPDATE_APPROVED_AMOUNT)
+inst CommandHandler(LoanGoodwillCreditCommandHandler, DataIntegrityErrorHandler, dataIntegrityErrorHandler, handleDataIntegrityIssues, LOAN, GOODWILLCREDIT)
+  + dep LoanGoodwillCreditCommandHandler.writePlatformService: LoanWritePlatformService
+  + edge LoanGoodwillCreditCommandHandler -> LoanWritePlatformService#makeLoanRepayment
+inst CommandHandler(LoanMerchantIssuedRefundCommandHandler, LoanWritePlatformService, writePlatformService, makeRefund, LOAN, MERCHANTISSUEDREFUND)
+inst CommandHandler(LoanRefundByCashCommandHandler, LoanWritePlatformService, writePlatformService, makeLoanRefund, LOAN, REFUNDBYCASH)
+inst CommandHandler(LoanRepaymentChargebackCommandHandler, LoanWritePlatformService, writePlatformService, chargebackLoanTransaction, LOAN, CHARGEBACK)
+inst CommandHandler(MarkLoanAsFraudCommandHandler, LoanWritePlatformService, writePlatformService, markLoanAsFraud, LOAN, SETFRAUD)
+inst CommandHandler(PaymentTypeCreateCommandHandler, PaymentTypeWriteService, paymentTypeWriteService, createPaymentType, -, -)
+inst CommandHandler(RejectAddtionalSharesCommandHandler, ShareAccountWritePlatformService, shareAccountWritePlatformService, rejectAdditionalShares, SHAREACCOUNT, REJECTADDITIONALSHARES)
+inst CommandHandler(SaveCenterCollectionSheetCommandHandler, CollectionSheetWritePlatformService, writePlatformService, updateCollectionSheet, CENTER, SAVECOLLECTIONSHEET)
+inst CommandHandler(UpdateChargeDefinitionCommandHandler, ChargeWritePlatformService, clientWritePlatformService, updateCharge, CHARGE, UPDATE)
+inst CommandHandler(UpdateDelinquencyBucketCommandHandler, DelinquencyWritePlatformService, writePlatformService, updateDelinquencyBucket, DELINQUENCY_BUCKET, UPDATE)
+inst CommandHandler(UpdateDelinquencyRangeCommandHandler, DelinquencyWritePlatformService, writePlatformService, updateDelinquencyRange, DELINQUENCY_RANGE, UPDATE)
+inst CommandHandler(UpdateInterestPauseCommandHandler, InterestPauseWritePlatformService, interestPauseService, updateInterestPause, -, -)
+inst CommandHandler(UpdateLoanDelinquencyBucketCommandHandler, DelinquencyWritePlatformService, writePlatformService, applyDelinquencyTagToLoan, LOAN, UPDATEDELINQUENCY)
+inst CommandHandler(WithdrawClientTransferCommandHandler, TransferWritePlatformService, writePlatformService, withdrawClientTransfer, CLIENT, WITHDRAWTRANSFER)
+inst CommandHandler(WorkingCapitalLoanRecoveryPaymentCommandHandler, WorkingCapitalLoanRecoveryPaymentWriteService, recoveryPaymentWriteService, recoveryPayment, CommandWrapperConstants.ENTITY_WORKINGCAPITALLOAN, CommandWrapperConstants.ACTION_RECOVERYPAYMENT)

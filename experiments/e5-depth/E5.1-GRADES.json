@@ -1,0 +1,354 @@
+{
+ "grading": "panel-corrected (dual-key D9, OC valid-trees only, item-recall reported)",
+ "runs": {
+  "A_haiku_v1": {
+   "overall_strict": 0.935,
+   "per_depth_strict": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 0.417,
+    "D8": 1.0,
+    "D9": 1.0,
+    "D10": 1.0
+   },
+   "per_depth_item_recall": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 0.975,
+    "D8": 1.0,
+    "D9": 1.0,
+    "D10": 1.0
+   }
+  },
+  "A_sonnet_v1": {
+   "overall_strict": 1.0,
+   "per_depth_strict": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 1.0,
+    "D8": 1.0,
+    "D9": 1.0,
+    "D10": 1.0
+   },
+   "per_depth_item_recall": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 1.0,
+    "D8": 1.0,
+    "D9": 1.0,
+    "D10": 1.0
+   }
+  },
+  "B_haiku_v2": {
+   "overall_strict": 0.861,
+   "per_depth_strict": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 0.833,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 0.417,
+    "D8": 0.9,
+    "D9": 0.875,
+    "D10": 0.667
+   },
+   "per_depth_item_recall": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 0.909,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 0.971,
+    "D8": 1.0,
+    "D9": 0.984,
+    "D10": 0.667
+   }
+  },
+  "B_sonnet_v2": {
+   "overall_strict": 1.0,
+   "per_depth_strict": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 1.0,
+    "D8": 1.0,
+    "D9": 1.0,
+    "D10": 1.0
+   },
+   "per_depth_item_recall": {
+    "D1": 1.0,
+    "D2": 1.0,
+    "D3": 1.0,
+    "D4": 1.0,
+    "D5": 1.0,
+    "D6": 1.0,
+    "D7": 1.0,
+    "D8": 1.0,
+    "D9": 1.0,
+    "D10": 1.0
+   }
+  }
+ },
+ "pooled_per_depth": {
+  "D1": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  },
+  "D2": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  },
+  "D3": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  },
+  "D4": {
+   "A": 1.0,
+   "B": 0.917,
+   "B_minus_A_pts": -8.3
+  },
+  "D5": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0
+  },
+  "D6": {
+   "A": 1.0,
+   "B": 1.0,
+   "B_minus_A_pts": 0.0,
+   "flag": "NON-DISCRIMINATING (uniform gold, name-derivable) per QA-2"
+  },
+  "D7": {
+   "A": 0.708,
+   "B": 0.708,
+   "B_minus_A_pts": 0.0
+  },
+  "D8": {
+   "A": 1.0,
+   "B": 0.95,
+   "B_minus_A_pts": -5.0
+  },
+  "D9": {
+   "A": 1.0,
+   "B": 0.938,
+   "B_minus_A_pts": -6.2
+  },
+  "D10": {
+   "A": 1.0,
+   "B": 0.833,
+   "B_minus_A_pts": -16.7
+  }
+ },
+ "oc": {
+  "A_haiku_v1": {
+   "valid_trees": 6,
+   "consistent": 6,
+   "consistent_and_correct": 6,
+   "all_subs_correct": 5,
+   "raw": [
+    {
+     "q": 43,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 44,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 45,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 55,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": false
+    },
+    {
+     "q": 56,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 57,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    }
+   ]
+  },
+  "A_sonnet_v1": {
+   "valid_trees": 6,
+   "consistent": 6,
+   "consistent_and_correct": 6,
+   "all_subs_correct": 6,
+   "raw": [
+    {
+     "q": 43,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 44,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 45,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 55,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 56,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 57,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    }
+   ]
+  },
+  "B_haiku_v2": {
+   "valid_trees": 6,
+   "consistent": 6,
+   "consistent_and_correct": 6,
+   "all_subs_correct": 6,
+   "raw": [
+    {
+     "q": 43,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 44,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 45,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 55,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 56,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 57,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    }
+   ]
+  },
+  "B_sonnet_v2": {
+   "valid_trees": 6,
+   "consistent": 6,
+   "consistent_and_correct": 6,
+   "all_subs_correct": 6,
+   "raw": [
+    {
+     "q": 43,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 44,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 45,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 55,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 56,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    },
+    {
+     "q": 57,
+     "consistent": true,
+     "direct_correct": true,
+     "all_subs_correct": true
+    }
+   ]
+  }
+ },
+ "pooled_overall": {
+  "A_v1": 0.968,
+  "B_v2": 0.93,
+  "B_minus_A_pts": -3.7
+ },
+ "panel_predictions": {
+  "QA2#1 sentinel fix -> B D7 >= 0.75": 0.708,
+  "QA2#2 glob gloss -> B_haiku D5 >= 0.83": 1.0,
+  "QA1 corrected pooled ~ -2pts": -3.7
+ }
+}

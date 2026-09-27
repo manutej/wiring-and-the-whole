@@ -1,0 +1,53 @@
+{
+  "experiment": "E2 token micro-example",
+  "date": "2026-09-16",
+  "tokenizer": "cl100k_base (tiktoken npm, vendored encoder)",
+  "gate_all_sites_byte_identical": true,
+  "legend_tokens": 98,
+  "sites": {
+    "S1": {
+      "family": "ApiResource",
+      "file": "SavingsAccountsApiResource.java",
+      "units_deps": 10,
+      "edges": 11,
+      "gate_byte_identical": true,
+      "e_explicit_tokens": 329,
+      "m_factored_row_tokens": 216,
+      "F_fixed_overhead_tokens": 148,
+      "n_star_breakeven": 2,
+      "n_actual_repo_wide": 169,
+      "verdict": "WIN",
+      "repo_wide_savings_est_tokens": 18949
+    },
+    "S2": {
+      "family": "RepositoryWrapper",
+      "file": "SavingsAccountRepositoryWrapper.java",
+      "units_deps": 2,
+      "edges": 19,
+      "gate_byte_identical": true,
+      "e_explicit_tokens": 326,
+      "m_factored_row_tokens": 209,
+      "F_fixed_overhead_tokens": 150,
+      "n_star_breakeven": 2,
+      "n_actual_repo_wide": 54,
+      "verdict": "WIN",
+      "repo_wide_savings_est_tokens": 6168
+    },
+    "S3": {
+      "family": "CommandHandler",
+      "file": "ActivateSavingsAccountCommandHandler.java",
+      "units_deps": 1,
+      "edges": 1,
+      "gate_byte_identical": true,
+      "e_explicit_tokens": 62,
+      "m_factored_row_tokens": 27,
+      "F_fixed_overhead_tokens": 152,
+      "n_star_breakeven": 5,
+      "n_actual_repo_wide": 514,
+      "verdict": "WIN",
+      "repo_wide_savings_est_tokens": 17838
+    }
+  },
+  "kill_rule": "KILL iff e<=m OR n*>n_actual on ALL sites",
+  "overall": "WIN"
+}
