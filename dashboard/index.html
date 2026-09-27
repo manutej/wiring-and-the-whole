@@ -1,1 +1,189 @@
-placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Wiring & the Whole — surface / mechanism / apparatus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --cream:#f6f1e4; --ink:#1c1914; --muted:#6a6256; --line:#d9d0bd;
+  --verm:#c23b22; --teal:#2a6f6b; --paper:#fffaf0;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 "DM Sans",system-ui,sans-serif}
+header{padding:2.2rem 6vw 1rem;border-bottom:1px solid var(--line)}
+.kicker{font:500 11px/1.3 "JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--verm)}
+h1{font:600 2.1rem/1.15 Newsreader,Georgia,serif;margin:.4rem 0 .6rem;max-width:22ch}
+.lede{max-width:62ch;color:var(--muted)}
+nav{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.2rem}
+nav button{
+  font:500 12px/1 "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--line);background:transparent;color:var(--ink);padding:.45rem .7rem;cursor:pointer
+}
+nav button[aria-current="true"]{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+main{padding:1.6rem 6vw 4rem;max-width:1100px}
+.panel{display:none}
+.panel.on{display:block}
+.grid{display:grid;gap:1rem}
+@media(min-width:800px){.grid.cols-3{grid-template-columns:1fr 1fr 1fr}.grid.cols-2{grid-template-columns:1fr 1fr}}
+.card{background:var(--paper);border:1px solid var(--line);padding:1rem 1.1rem}
+.card h2,.card h3{font:600 1.15rem/1.2 Newsreader,Georgia,serif;margin:.1rem 0 .5rem}
+.meta{font:12px/1.4 "JetBrains Mono",monospace;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.4rem .45rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:500 11px/1.2 "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.win{color:var(--teal);font-weight:600}
+.warn{color:var(--verm)}
+ul{margin:.3rem 0 .6rem;padding-left:1.1rem}
+code,pre{font-family:"JetBrains Mono",monospace;font-size:.86em}
+pre{background:#efe8d6;padding:.8rem;overflow:auto;border:1px solid var(--line)}
+a{color:var(--teal)}
+footer{padding:0 6vw 3rem;color:var(--muted);font-size:.88rem;max-width:1100px}
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">manutej / wiring-and-the-whole · editorial instrument</div>
+  <h1>The wiring, not the whole.</h1>
+  <p class="lede">A large codebase is a module of systems: units known through interfaces, glued by typed interaction patterns. If that algebra is real, you can ship the wiring to a model instead of the source pile — cheaper, and without a comprehension tax. Three depths. No new results on this page.</p>
+  <nav aria-label="Depth">
+    <button type="button" data-depth="surface" aria-current="true">Surface</button>
+    <button type="button" data-depth="mechanism">Mechanism</button>
+    <button type="button" data-depth="apparatus">Apparatus</button>
+  </nav>
+</header>
+<main>
+<section id="surface" class="panel on">
+  <div class="grid cols-2">
+    <article class="card">
+      <p class="meta">The bet</p>
+      <h2>Ship generator data, not spelled-out graphs.</h2>
+      <p>Libkind–Myers DOTS: wiring diagrams are free interactions. Composition is pushout along marked ports. Parallel product is juxtaposition with no identified color — the same constructor now in <a href="https://github.com/manutej/jev">manutej/jev</a> <code>product()</code>.</p>
+    </article>
+    <article class="card">
+      <p class="meta">What this page is allowed to say</p>
+      <h2>Four measured rungs. Not a theorem.</h2>
+      <ul>
+        <li>E1 demonstrated shapes on a 16-file toy.</li>
+        <li>E2: factored form cheaper on 3 Fineract sites.</li>
+        <li>E3: no ≥5-pt tax at pilot scale.</li>
+        <li>E5.1: parity survives depth after spec fixes.</li>
+      </ul>
+    </article>
+  </div>
+  <article class="card" style="margin-top:1rem">
+    <p class="meta">E2 · 2026-09-16 · cl100k_base</p>
+    <h2>Token arithmetic on real Spring files</h2>
+    <table>
+      <thead><tr><th>Site</th><th>Family n</th><th>explicit e</th><th>factored m</th><th>legend+motif F</th><th>n*</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>SavingsAccountsApiResource</td><td>169</td><td>329</td><td>216</td><td>148</td><td>2</td><td class="win">WIN</td></tr>
+        <tr><td>SavingsAccountRepositoryWrapper</td><td>54</td><td>326</td><td>209</td><td>150</td><td>2</td><td class="win">WIN</td></tr>
+        <tr><td>ActivateSavingsAccountCommandHandler</td><td>514</td><td>62</td><td>27</td><td>152</td><td>5</td><td class="win">WIN</td></tr>
+      </tbody>
+    </table>
+    <p class="meta">Re-expansion of the factored form is byte-identical to the explicit form. Break-even n* = 2–5 against families of 54–514. Not repo-scale savings.</p>
+  </article>
+  <div class="grid cols-3" style="margin-top:1rem">
+    <article class="card"><p class="meta">E1</p><h3>13/13 witness</h3><p>Toybank on C₀ SymTab. Demonstrated ≠ proved. MUST-PROVE 1–5 still open.</p></article>
+    <article class="card"><p class="meta">E3</p><h3>B 95.3% / A 93.8%</h3><p>C floor 0%. B uses 63% of A’s tokens. One convention-heavy family.</p></article>
+    <article class="card"><p class="meta">E5.1</p><h3>Pooled B−A = −3.7 pts</h3><p>Raw −10.2 was ~80% harness artifact. Sonnet 100% both arms after legend fixes.</p></article>
+  </div>
+</section>
+<section id="mechanism" class="panel">
+  <article class="card">
+    <p class="meta">Compression is not “delete tokens”</p>
+    <h2>Four layers. Measure the marginal gain of L2–L4 over interface-only.</h2>
+    <table>
+      <thead><tr><th>Layer</th><th>What ships</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>L1</td><td>Interface-only projection (aider repo-map is already roughly this)</td><td>named</td></tr>
+        <tr><td>L2</td><td>(seed, marking, motif, instance table) instead of spelled-out graphs</td><td>E2/E3/E5 live at micro-scale</td></tr>
+        <tr><td>L3</td><td>ε-orbit folding: representative + structured deltas, exact-iso cells only</td><td>not in this repo</td></tr>
+        <tr><td>L4</td><td>Doctrine-annotated elision</td><td>not in this repo</td></tr>
+      </tbody>
+    </table>
+    <p>Headline that is allowed later: CR@F95 — tokens to reach ≥95% of full-context accuracy. That benchmark is <em>not</em> here.</p>
+  </article>
+  <div class="grid cols-2" style="margin-top:1rem">
+    <article class="card">
+      <p class="meta">Paper → code</p>
+      <h3>DOTS as a reading of a repo</h3>
+      <ul>
+        <li>Interface → exported surface</li>
+        <li>Cospan / pushout → import glued on a shared port</li>
+        <li>Parallel product → unrelated modules, no identified color</li>
+        <li>System map square → refactor that must commute with wiring</li>
+        <li>Free interactions → pattern dictionary from generator data</li>
+      </ul>
+    </article>
+    <article class="card">
+      <p class="meta">Same algebra, other repo</p>
+      <h3>jev kernel constructors</h3>
+      <pre>glue   = pushout   identify a color, keep outer ports
+share  = pullback  nadir = shared color
+product = juxtapose left ++ right, never mismatch</pre>
+      <p>Judgment never owns the tick. TypeSafe fills isolated leaves. Code is γ. Do not pipe confidence into τ.</p>
+    </article>
+  </div>
+</section>
+<section id="apparatus" class="panel">
+  <div class="grid cols-2">
+    <article class="card">
+      <p class="meta">MAY</p>
+      <ul>
+        <li>E1 showed cospan-doctrine shapes on a 16-file toy.</li>
+        <li>E2: factored serialization cheaper than explicit edges, losslessly, micro-scale.</li>
+        <li>E3: no ≥5-point tax at pilot scale on one @CommandType family.</li>
+        <li>E5.1: after the legend is complete, a strong model reads both forms at parity through depth 10.</li>
+      </ul>
+    </article>
+    <article class="card">
+      <p class="meta">MAY NOT</p>
+      <ul>
+        <li>Noether’s theorem applies.</li>
+        <li>Canonical minimal presentations from freeness.</li>
+        <li>Rex-ness of Code-C in general.</li>
+        <li>“Beats Headroom.” CR@F95. L3/L4. Repo-scale savings.</li>
+        <li>That E5’s operadic-interview v1 validated <em>model</em> reasoning. It validated the harness. 4/10 trees were decomposition theater.</li>
+      </ul>
+    </article>
+  </div>
+  <article class="card" style="margin-top:1rem">
+    <p class="meta">Leftover that actually mattered</p>
+    <h2>Information-equivalent ≠ spec-equivalent for the reader.</h2>
+    <p>E5 raw depth collapse was mostly harness: undocumented <code>-</code> omit-marker, ambiguous <code>*Repository*</code> glob, self-contradictory D9 key. Two spec fixes and the collapse disappeared. A pack can be lossless under the builder’s private expansion and still be unreadable.</p>
+  </article>
+  <article class="card" style="margin-top:1rem">
+    <p class="meta">Standing debt · HANDOFF.md</p>
+    <ol>
+      <li>Full-protocol E3 (50+10 q, mixed sites, firewalled minting, pinned models).</li>
+      <li>Mint <code>systems-intake</code>, <code>interface-first-context</code>, <code>symmetry-lens</code> as SKILL.md + one dogfood run each.</li>
+      <li>Upgrade witness C₀ → full Code_X. Attempt MUST-PROVE 1–2.</li>
+      <li>Fineract wedge with orbit statistics (U1) and E4 migration chain.</li>
+      <li>Optional CETI explainer film. Reconstruct from explainer/BRIEF.md if recovered.</li>
+    </ol>
+  </article>
+</section>
+</main>
+<footer>
+  Corpus restored 2026-09-26 from the operator tarball. Dashboard text quotes README / HANDOFF / E2-RESULTS only.
+  Paper: Libkind & Myers, arXiv:2505.18329. This page is a field notebook, not a Φ-committed CETI film.
+</footer>
+<script>
+const buttons = [...document.querySelectorAll("nav button")];
+const panels = [...document.querySelectorAll(".panel")];
+function show(id){
+  buttons.forEach(b => b.setAttribute("aria-current", b.dataset.depth === id ? "true" : "false"));
+  panels.forEach(p => p.classList.toggle("on", p.id === id));
+  history.replaceState(null, "", "#" + id);
+}
+buttons.forEach(b => b.addEventListener("click", () => show(b.dataset.depth)));
+const start = location.hash.replace("#","") || "surface";
+if (["surface","mechanism","apparatus"].includes(start)) show(start);
+</script>
+</body>
+</html>
