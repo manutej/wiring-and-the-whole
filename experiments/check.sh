@@ -14,7 +14,8 @@ python3 experiments/e5-depth/e5_grade.py  > /dev/null
 python3 experiments/e5-depth/e5_grade2.py > /dev/null
 changed=$(git status --porcelain -- witness experiments)
 if [ -n "$changed" ]; then
-  echo "REPRODUCIBILITY GATE FAILED: regenerated artifacts differ from committed:" >&2
+  echo "REPRODUCIBILITY GATE FAILED: uncommitted changes under witness/ or experiments/" >&2
+  echo "(regenerated artifacts drifted from what is committed, or your own edits are unstaged):" >&2
   echo "$changed" >&2
   git --no-pager diff --stat -- witness experiments >&2
   exit 1

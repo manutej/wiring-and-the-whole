@@ -8,7 +8,7 @@ evaluator answers the direct question AND its sub-questions; the grader checks O
 (composed sub-answers vs direct) alongside correctness [meta-operad TREE/COMPOSE/COLLAPSE/CHECK].
 Packs A (explicit) and B (factored) gated byte-identical on re-expansion. Frozen via SHA-256.
 """
-import re, os, sys, json, hashlib, random
+import os, sys, json, hashlib, random
 from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
