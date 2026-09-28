@@ -22,6 +22,7 @@ Four empirical results, in the order they were required to exist.
 | **E2** tokens | Is the factored `(seed, marking, motif)` form actually cheaper than explicit edge lists? | **WIN on 3/3** Fineract sites. Break-even `n* = 2–5` vs family sizes 54–514. Re-expansion gate **byte-identical**. | L2 token arithmetic is live at micro-scale. Not repo-scale savings. |
 | **E3** ablation | Do models *read* the factored form, or do you pay a comprehension tax? | **B PASSES.** A 93.8% vs B 95.3% vs C 0% on the wiring pool. B uses **63%** of A's tokens. | No ≥5-pt tax at pilot scale on one convention-heavy family. |
 | **E5 / E5.1** depth | Does that parity survive multi-hop / depth? | **B PASSES AT DEPTH.** Pooled B−A = **−3.7 pts**. Sonnet **100% at every depth in both arms**. Raw −10.2 pts was ~80% harness artifact. | Information-equivalence must be **spec-equivalence for the reader**, not just re-expandable by the builder. |
+| **E5** tokens (side finding) | Does the L2 saving survive a heterogeneous pack? | B **11,787** vs A **12,493** tokens: only **5.7%** cheaper on the mixed 40-unit pack, vs **37%** on E3's uniform 30-handler family. | **L2 savings are homogeneity-dependent.** Only the motif-shaped units compress; the 10 explicit impl/wrapper units do not. Orbit statistics (U1) are the measurement this points at. |
 
 The binding lesson from E5 is the one that travels: a pack can be lossless under the builder's private expansion function and still be unreadable, if the legend forgets to define a sentinel. After two spec fixes (document the `-` omit-marker; disambiguate `*Repository*`), the depth collapse disappeared.
 
@@ -66,16 +67,32 @@ plans/
   ADVERSARIAL.md      GA1–GA10 + MUST-PROVE 1–5 ("category theory is costume until…")
   SOLUTIONS-METAPROMPT.md · PANEL-METAPROMPT.md
 wiki/INDEX.md         page-tagged crosswalk of the 80pp paper (deep wiki 01–07 lost)
-ynthesis/SYNTHESIS.md  paper construct → codebase construct
+synthesis/SYNTHESIS.md paper construct → codebase construct
 options/OPTIONS.md    five build options, sequenced artifacts-first
 witness/              E1: run_witness.py + WITNESS.json (13/13) + toybank/
 experiments/
   PROTOCOL-E1.md
   PROTOCOLS-E2-E3-RECONSTRUCTED.md
+  wiring.py           the one home for extraction, pack serialization, re-expansion, grading
+  check.sh            reproducibility gate: rebuild everything, fail on any artifact diff
+  ask.py              pinned-model evaluator call (writes reply + run record)
   e2-tokens/          packs, tokenizer, E2-RESULTS
   e3-ablation/        A/B/C packs, frozen hashes, grades
-  e5-depth/           112q × 10 depths, QA-panel audit, E5.1 rerun
+  e5-depth/           112q × 10 depths, QA-panel audit, E5.1 rerun, COMPOSE witness in manifest
+dashboard/index.html  three-depth editorial page (surface / mechanism / apparatus)
+.github/workflows/    CI runs experiments/check.sh on every push
 ```
+
+## Reproduce
+
+```
+cd experiments && npm ci && cd .. && sh experiments/check.sh
+```
+
+Rebuilds the E1 witness, every pack, and every grade, and fails if any committed artifact
+changes. Model replies in `responses/` were produced by an in-session subagent harness (a
+recorded protocol deviation); `experiments/ask.py --model <id> prompt out` is the pinned-model
+call for re-running them and for the full-protocol E3.
 
 Original session: 2026-07-24 → 07-30. Workspace reclaimed. Corpus rebuilt 2026-09-16 from artifacts held in context + re-execution. E5 run 2026-09-19. Operator: CETI `<cetiaiservices@gmail.com>`.
 
@@ -120,7 +137,7 @@ MUST-PROVE 1–5 are still open: gluing soundness for Code-C; well-typed equivar
 From the handoff and options list, still unshipped:
 
 - Mint `systems-intake`, `interface-first-context`, `symmetry-lens` (and later `doctrine-typer`, `wiring-mapper`, `migration-square-checker`) as `SKILL.md` files.
-- Full-protocol E3 (50+10 questions, mixed sites, firewalled minting, pinned models).
+- Full-protocol E3 (50+10 questions, mixed sites, firewalled minting, pinned models). `ask.py` now supplies the pinned-model call; the minting firewall is still owed.
 - Upgrade witness `C₀` → full `Code_X`.
 - Fineract wedge with orbit statistics (U1) and the E4 migration chain folded in.
 
