@@ -4,34 +4,19 @@ E3 build — extract graph from 30 real Fineract handlers; emit packs A/B/C, que
 Firewall discipline: questions are generated ONLY from graph.json via templates below;
 pack layout code never informs question selection. Frozen via SHA-256 before any model call.
 """
-import re, os, json, hashlib, subprocess
+import re, os, sys, json, hashlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, ".."))
+from wiring import extract, block_A, MOTIF, row_B, expand_row, count_tokens
 files = sorted(os.listdir(os.path.join(HERE, "raw")))
 
 # ---------- extract ----------
-G = []
-for f in files:
-    src = open(os.path.join(HERE, "raw", f)).read()
-    cls = re.search(r'public class (\w+)', src).group(1)
-    ann = re.search(r'@CommandType\(entity = "?([\w.-]+)"?, action = "?([\w.-]+)"?\)', src)
-    deps = {}
-    for m in re.finditer(r'private final ([A-Z][\w<>,. ]*?)\s+(\w+);', src):
-        deps[m.group(2)] = m.group(1).split('<')[0].strip()
-    edges = sorted({(deps[m.group(1)], m.group(2))
-                    for m in re.finditer(r'(?:this\.)?(\w+)\.(\w+)\(', src) if m.group(1) in deps})
-    G.append({"cls": cls, "entity": ann.group(1) if ann else None,
-              "action": ann.group(2) if ann else None, "deps": deps, "edges": edges})
+G = [extract(open(os.path.join(HERE, "raw", f)).read()) for f in files]
 G.sort(key=lambda x: x["cls"])
 json.dump(G, open(os.path.join(HERE, "graph.json"), "w"), indent=1)
 
 # ---------- packs ----------
-def block_A(x):
-    L = [f"unit {x['cls']}"]
-    if x["entity"]: L.append(f"anno {x['cls']} @CommandType entity={x['entity']} action={x['action']}")
-    for fld, typ in sorted(x["deps"].items()): L.append(f"dep {x['cls']}.{fld}: {typ}")
-    for typ, meth in x["edges"]: L.append(f"edge {x['cls']} -> {typ}#{meth}")
-    return "\n".join(L)
 packA = "\n\n".join(block_A(x) for x in G) + "\n"
 
 LEGEND = ("# WIRING PACK v1 - generator-data form\n"
@@ -39,45 +24,6 @@ LEGEND = ("# WIRING PACK v1 - generator-data form\n"
 "# 'inst NAME(fills)' instantiates it: expand the template with the fills.\n"
 "# A following indented '+ line' is a DELTA: after expansion, add that line verbatim.\n"
 "# Expansion of every inst reproduces the explicit form exactly.\n")
-MOTIF = ("motif CommandHandler(H, S, f, m, entity, action):\n"
-"  unit $H\n"
-"  anno $H @CommandType entity=$entity action=$action\n"
-"  dep $H.$f: $S\n"
-"  edge $H -> $S#$m\n")
-
-def row_B(x):
-    """Convention: exactly 1 dep and 1 edge on that dep -> pure inst row.
-       Deviations -> inst on the first dep/edge + delta lines (R5 discipline)."""
-    fld, typ = sorted(x["deps"].items())[0]
-    prim = next(((t, m) for (t, m) in x["edges"] if t == typ), x["edges"][0] if x["edges"] else (typ, "UNKNOWN"))
-    row = f"inst CommandHandler({x['cls']}, {prim[0]}, {fld}, {prim[1]}, {x['entity'] or '-'}, {x['action'] or '-'})"
-    deltas = []
-    for f2, t2 in sorted(x["deps"].items()):
-        if f2 != fld: deltas.append(f"  + dep {x['cls']}.{f2}: {t2}")
-    for t2, m2 in x["edges"]:
-        if (t2, m2) != prim: deltas.append(f"  + edge {x['cls']} -> {t2}#{m2}")
-    return row + ("\n" + "\n".join(deltas) if deltas else "")
-
-def expand_row(text):
-    lines = text.split("\n")
-    m = re.match(r'inst CommandHandler\((\w+), (\w+), (\w+), (\w+), ([\w.-]+), ([\w.-]+)\)', lines[0])
-    H, S, f, meth, ent, act = m.groups()
-    L = [f"unit {H}"]
-    if ent != "-": L.append(f"anno {H} @CommandType entity={ent} action={act}")
-    L += [f"dep {H}.{f}: {S}", f"edge {H} -> {S}#{meth}"]
-    extra_deps, extra_edges = [], []
-    for d in lines[1:]:
-        d = d.strip()[2:]
-        (extra_deps if d.startswith("dep") else extra_edges).append(d)
-    # reproduce block_A ordering: unit, [anno], all deps sorted by field, then edges sorted
-    unit = L[0]
-    anno = [l for l in L[1:] if l.startswith("anno")]
-    base_dep = [l for l in L[1:] if l.startswith("dep")]
-    base_edge = [l for l in L[1:] if l.startswith("edge")]
-    deps = sorted(base_dep + extra_deps, key=lambda s: s.split(":")[0])
-    edges = sorted(base_edge + extra_edges)
-    return "\n".join([unit] + anno + deps + edges)
-
 rows = [row_B(x) for x in G]
 packB = LEGEND + "\n" + MOTIF + "\n" + "\n".join(rows) + "\n"
 reexp = "\n\n".join(expand_row(r) for r in rows) + "\n"
@@ -139,8 +85,7 @@ for name, txt in [("packA.txt", packA), ("packB.txt", packB), ("packC.txt", pack
 json.dump({"questions": Q, "gold": GOLD, "qtype": QTYPE}, open(os.path.join(HERE, "questions.json"), "w"), indent=1)
 json.dump(manifest, open(os.path.join(HERE, "manifest.json"), "w"), indent=1)
 # token counts
-tok = json.loads(subprocess.run(["node", os.path.join(HERE, "..", "e2-tokens", "tokcount.js")],
-      input=json.dumps({"A": packA, "B": packB, "C": packC}), capture_output=True, text=True, check=True).stdout)
+tok = count_tokens({"A": packA, "B": packB, "C": packC})
 manifest["tokens"] = tok
 json.dump(manifest, open(os.path.join(HERE, "manifest.json"), "w"), indent=1)
 print(json.dumps(manifest, indent=1))

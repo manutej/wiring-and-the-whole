@@ -1,23 +1,22 @@
 #!/usr/bin/env python3
 """E5.1 grading — panel-corrected: dual-key D9, item-recall alongside strict, OC restricted
-to the 6 COMPOSE-valid trees (D5/D6) with all_subs_correct reported, D6 flagged
-non-discriminating. Grades v1 A-runs (unchanged arm) + v2 B-runs (fixed legend/gloss)."""
-import json, os, re
+to the COMPOSE-valid trees (from the build-time witness in manifest.json) with
+all_subs_correct reported, D6 flagged non-discriminating. Grades v1 A-runs (unchanged arm)
++ v2 B-runs (fixed legend/gloss)."""
+import json, os, re, sys
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, ".."))
+from wiring import norm, eq, parse_answers
 qs = json.load(open(os.path.join(HERE, "questions.json")))
+manifest = json.load(open(os.path.join(HERE, "manifest.json")))
 G = json.load(open(os.path.join(HERE, "graph.json")))
 GOLD, DEPTH, OC = qs["gold"], qs["depth"], qs["oc"]
 N = len(GOLD)
 handlers = [x for x in G if x["kind"] == "handler"]
 
-def norm(s): return re.sub(r'\s+', '', s.strip().lower())
 def as_set(a): return set(filter(None, (norm(x) for x in a.split(","))))
-def eq(a, g):
-    if norm(a) == norm(g): return True
-    if "," in g or "," in a: return as_set(a) == as_set(g)
-    return False
 def recall(a, g):
     gs = as_set(g)
     if not gs or g == "none": return 1.0 if eq(a, g) else 0.0
@@ -34,23 +33,16 @@ seen, keep = {}, []
 for i, q in enumerate(qs["questions"]):
     if q not in seen: seen[q] = i; keep.append(i)
 
-def parse(fn):
-    Qa, Sa = {}, {}
-    for line in open(fn):
-        m = re.match(r'([QS])(\d+):\s*(.*)', line.strip())
-        if m: (Qa if m.group(1) == "Q" else Sa)[int(m.group(2))] = m.group(3).strip()
-    return Qa, Sa
-
 runs = {}
 for f in sorted(os.listdir(os.path.join(HERE, "responses"))):
-    if f.startswith("A"): runs[f[:-4] + "_v1"] = parse(os.path.join(HERE, "responses", f))
+    if f.startswith("A"): runs[f[:-4] + "_v1"] = parse_answers(os.path.join(HERE, "responses", f))
 for f in sorted(os.listdir(os.path.join(HERE, "responses_v2"))):
-    runs[f[:-4] + "_v2"] = parse(os.path.join(HERE, "responses_v2", f))
+    runs[f[:-4] + "_v2"] = parse_answers(os.path.join(HERE, "responses_v2", f))
 
 subidx = []
 for i, subs in enumerate(OC):
     for j, s in enumerate(subs): subidx.append((i, j))
-VALID_TREES = [i for i, subs in enumerate(OC) if subs and DEPTH[i] in (5, 6)]  # COMPOSE-valid per QA-3
+VALID_TREES = [q - 1 for q in manifest["oc_compose_valid_q"]]  # build-time COMPOSE witness (was hard-coded D5/D6 per QA-3)
 
 def correct(i, ans):
     if eq(ans, GOLD[i]): return True

@@ -8,34 +8,23 @@ evaluator answers the direct question AND its sub-questions; the grader checks O
 (composed sub-answers vs direct) alongside correctness [meta-operad TREE/COMPOSE/COLLAPSE/CHECK].
 Packs A (explicit) and B (factored) gated byte-identical on re-expansion. Frozen via SHA-256.
 """
-import re, os, json, hashlib, subprocess, random
+import re, os, sys, json, hashlib, random
 from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, ".."))
+from wiring import extract, impl_of, block_A, MOTIF, row_B, expand_row, eq, count_tokens
 E3 = os.path.join(HERE, "..", "e3-ablation")
 rnd = random.Random(20260919)
 
-# ---------------- extract new units (impls + wrappers), same regexes as E3 ----------------
-def extract(path, fname):
-    src = open(path).read()
-    cls = re.search(r'public class (\w+)', src).group(1)
-    deps = {}
-    for m in re.finditer(r'private final ([A-Z][\w<>,. ]*?)\s+(\w+);', src):
-        deps[m.group(2)] = m.group(1).split('<')[0].strip()
-    edges = sorted({(deps[m.group(1)], m.group(2))
-                    for m in re.finditer(r'(?:this\.)?(\w+)\.(\w+)\(', src) if m.group(1) in deps})
-    impl_of = None
-    im = re.search(r'public class \w+[\s\S]{0,200}?implements ([\w, \n]+)\{', src)
-    if im:
-        cands = [c.strip() for c in im.group(1).split(",")]
-        base = cls.replace("JpaRepositoryImpl", "").replace("Impl", "")
-        for c in cands:
-            if c == base or c.startswith(base): impl_of = c; break
-    return {"cls": cls, "deps": deps, "edges": edges, "impl_of": impl_of, "kind": "unit"}
+# ---------------- extract new units (impls + wrappers); handlers come from E3's graph ----------------
+def unit(path):
+    src = open(path).read(); x = extract(src)
+    return {"cls": x["cls"], "deps": x["deps"], "edges": x["edges"], "impl_of": impl_of(src, x["cls"]), "kind": "unit"}
 
 H = json.load(open(os.path.join(E3, "graph.json")))
 for x in H: x["kind"] = "handler"
-NEW = [extract(os.path.join(HERE, "raw", f), f) for f in sorted(os.listdir(os.path.join(HERE, "raw")))]
+NEW = [unit(os.path.join(HERE, "raw", f)) for f in sorted(os.listdir(os.path.join(HERE, "raw")))]
 G = H + NEW
 byname = {x["cls"]: x for x in G}
 impl_map = {x["impl_of"]: x["cls"] for x in NEW if x.get("impl_of")}   # iface -> impl class
@@ -190,14 +179,17 @@ for q, g, subs in d10[:12]:
 counts = Counter(DEPTH)
 assert len(Q) >= 100, f"only {len(Q)} questions"
 
+# ---------------- COMPOSE witness (meta-operad, OC-v2 spec from the E5 panel) ----------------
+# A decomposition tree is legitimate only if composing its sub-golds reproduces the root
+# gold. The graders' compose rule is "last sub-answer == direct answer", so the witness
+# is: last sub-gold == root gold under the same equality. Trees that fail are
+# decomposition theater (yes/no leaf under a list root; a missing composition node) and
+# are guaranteed-inconsistent by construction, so grading them as OC signal is a harness
+# defect, not a model defect. Computed at build time, before any model call.
+COMPOSE_VALID_Q = [i + 1 for i, subs in enumerate(OCSUB) if subs and eq(subs[-1][1], GOLD[i])]
+COMPOSE_THEATER_Q = [i + 1 for i, subs in enumerate(OCSUB) if subs and (i + 1) not in COMPOSE_VALID_Q]
+
 # ---------------- packs ----------------
-def block_A(x):
-    L = [f"unit {x['cls']}"]
-    if x.get("entity"): L.append(f"anno {x['cls']} @CommandType entity={x['entity']} action={x['action']}")
-    if x.get("impl_of"): L.append(f"impl {x['impl_of']} -> {x['cls']}")
-    for fld, typ in sorted(x["deps"].items()): L.append(f"dep {x['cls']}.{fld}: {typ}")
-    for typ, meth in x["edges"]: L.append(f"edge {x['cls']} -> {typ}#{meth}")
-    return "\n".join(L)
 ORDER = sorted(G, key=lambda x: x["cls"])
 packA = "\n\n".join(block_A(x) for x in ORDER) + "\n"
 
@@ -209,38 +201,6 @@ LEGEND = ("# WIRING PACK v2.1 - generator-data form\n"
 "# and action=- mean the unit has NO anno line). Constants.* fills are literal values.\n"
 "# Non-motif units appear explicitly (unit/dep/edge lines). Expansion of every inst\n"
 "# reproduces the explicit form exactly.\n")
-MOTIF = ("motif CommandHandler(H, S, f, m, entity, action):\n"
-"  unit $H\n"
-"  anno $H @CommandType entity=$entity action=$action\n"
-"  dep $H.$f: $S\n"
-"  edge $H -> $S#$m\n")
-
-def row_B(x):
-    fld, typ = sorted(x["deps"].items())[0]
-    prim = next(((t, m) for (t, m) in x["edges"] if t == typ), x["edges"][0])
-    row = f"inst CommandHandler({x['cls']}, {prim[0]}, {fld}, {prim[1]}, {x['entity'] or '-'}, {x['action'] or '-'})"
-    deltas = []
-    for f2, t2 in sorted(x["deps"].items()):
-        if f2 != fld: deltas.append(f"  + dep {x['cls']}.{f2}: {t2}")
-    for t2, m2 in x["edges"]:
-        if (t2, m2) != prim: deltas.append(f"  + edge {x['cls']} -> {t2}#{m2}")
-    return row + ("\n" + "\n".join(deltas) if deltas else "")
-
-def expand_row(text):
-    lines = text.split("\n")
-    m = re.match(r'inst CommandHandler\((\w+), (\w+), (\w+), (\w+), ([\w.-]+), ([\w.-]+)\)', lines[0])
-    Hc, S, f, meth, ent, act = m.groups()
-    L = [f"unit {Hc}"]
-    if ent != "-": L.append(f"anno {Hc} @CommandType entity={ent} action={act}")
-    base_dep = [f"dep {Hc}.{f}: {S}"]; base_edge = [f"edge {Hc} -> {S}#{meth}"]
-    extra_deps, extra_edges = [], []
-    for d in lines[1:]:
-        d = d.strip()[2:]
-        (extra_deps if d.startswith("dep") else extra_edges).append(d)
-    deps = sorted(base_dep + extra_deps, key=lambda s: s.split(":")[0])
-    edges = sorted(base_edge + extra_edges)
-    return "\n".join(L[:1] + [l for l in L[1:] if l.startswith("anno")] + deps + edges)
-
 partsB, expA = [], []
 for x in ORDER:
     if x["kind"] == "handler":
@@ -258,11 +218,11 @@ json.dump(qs, open(os.path.join(HERE, "questions.json"), "w"), indent=1)
 json.dump(G, open(os.path.join(HERE, "graph.json"), "w"), indent=1, default=list)
 open(os.path.join(HERE, "packA.txt"), "w").write(packA)
 open(os.path.join(HERE, "packB.txt"), "w").write(packB)
-tok = json.loads(subprocess.run(["node", os.path.join(E3, "..", "e2-tokens", "tokcount.js")],
-      input=json.dumps({"A": packA, "B": packB}), capture_output=True, text=True, check=True).stdout)
+tok = count_tokens({"A": packA, "B": packB})
 manifest = {"n_units": len(G), "n_handlers": len(handlers), "n_new_units": len(NEW),
             "n_questions": len(Q), "per_depth": dict(sorted(Counter(DEPTH).items())),
             "n_oc_trees": sum(1 for s in OCSUB if s), "n_oc_subquestions": sum(len(s) for s in OCSUB),
+            "oc_compose_valid_q": COMPOSE_VALID_Q, "oc_compose_theater_q": COMPOSE_THEATER_Q,
             "gate_byte_identical": GATE, "tokens": tok,
             "sha256": {"packA": hashlib.sha256(packA.encode()).hexdigest()[:16],
                        "packB": hashlib.sha256(packB.encode()).hexdigest()[:16],

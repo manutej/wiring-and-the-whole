@@ -17,6 +17,20 @@
  },
  "n_oc_trees": 10,
  "n_oc_subquestions": 29,
+ "oc_compose_valid_q": [
+  43,
+  44,
+  45,
+  55,
+  56,
+  57
+ ],
+ "oc_compose_theater_q": [
+  89,
+  90,
+  91,
+  101
+ ],
  "gate_byte_identical": true,
  "tokens": {
   "A": 12493,

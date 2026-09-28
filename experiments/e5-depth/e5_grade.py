@@ -1,36 +1,21 @@
 #!/usr/bin/env python3
 """E5 grading — per-depth accuracy per arm/model; OC consistency (composed sub-answer vs
 direct answer) and OC↔correctness relation; duplicate-question dedup; ambiguity accounting."""
-import json, os, re
+import json, os, sys
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, ".."))
+from wiring import eq, parse_answers
 qs = json.load(open(os.path.join(HERE, "questions.json")))
 GOLD, DEPTH, OC = qs["gold"], qs["depth"], qs["oc"]
 N = len(GOLD)
-
-def norm(s):
-    return re.sub(r'\s+', '', s.strip().lower())
-def eq(a, g):
-    if norm(a) == norm(g): return True
-    if "," in g or "," in a:
-        return set(filter(None, (norm(x) for x in a.split(",")))) == \
-               set(filter(None, (norm(x) for x in g.split(","))))
-    return False
 
 # dedupe: identical question text keeps first occurrence
 seen, keep = {}, []
 for i, q in enumerate(qs["questions"]):
     if q not in seen: seen[q] = i; keep.append(i)
 DUPS = N - len(keep)
-
-def parse(fn):
-    Qa, Sa = {}, {}
-    for line in open(fn):
-        m = re.match(r'([QS])(\d+):\s*(.*)', line.strip())
-        if m:
-            (Qa if m.group(1) == "Q" else Sa)[int(m.group(2))] = m.group(3).strip()
-    return Qa, Sa
 
 # sub-question numbering: sequential over trees
 subidx = []  # (parent_i, sub_j) for each S number
@@ -39,7 +24,7 @@ for i, subs in enumerate(OC):
 
 runs = {}
 for f in sorted(os.listdir(os.path.join(HERE, "responses"))):
-    runs[f[:-4]] = parse(os.path.join(HERE, "responses", f))
+    runs[f[:-4]] = parse_answers(os.path.join(HERE, "responses", f))
 
 out = {"n_questions": N, "n_unique": len(keep), "duplicates_removed": DUPS, "runs": {}, "oc": {}}
 depth_acc = defaultdict(lambda: defaultdict(list))

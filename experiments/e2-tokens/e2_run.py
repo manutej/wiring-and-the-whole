@@ -6,50 +6,23 @@ Sites: S1 SavingsAccountsApiResource (ApiResource family, n=169 repo-wide)
        S2 SavingsAccountRepositoryWrapper (RepositoryWrapper family, n=54)
        S3 ActivateSavingsAccountCommandHandler (@CommandType handler family, n=514)
 """
-import re, json, subprocess, os, sys
+import re, json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, ".."))
+from wiring import extract, block_A, count_tokens
 FAMILY_N = {"ApiResource": 169, "RepositoryWrapper": 54, "CommandHandler": 514}
 
 def read(f): return open(os.path.join(HERE, "raw", f)).read()
-
-# ---------------- extraction: unit -> deps (injected fields) + call edges ----------------
-def extract(fname):
-    src = read(fname)
-    cls = re.search(r'public class (\w+)', src).group(1)
-    # injected deps: private final Type name; (constructor injection incl. @Autowired styles)
-    deps = {}
-    for m in re.finditer(r'private final ([A-Z][\w<>,. ]*?)\s+(\w+);', src):
-        typ = m.group(1).split('<')[0].strip()
-        deps[m.group(2)] = typ
-    # call edges: field.method(  where field is a known dep
-    edges = set()
-    for m in re.finditer(r'(?:this\.)?(\w+)\.(\w+)\(', src):
-        fld, meth = m.group(1), m.group(2)
-        if fld in deps:
-            edges.add((deps[fld], meth))
-    ann = re.search(r'@CommandType\(entity = "(\w+)", action = "(\w+)"\)', src)
-    return {"cls": cls, "deps": deps, "edges": sorted(edges),
-            "annotation": (ann.group(1), ann.group(2)) if ann else None}
 
 SITES = [
     ("S1", "ApiResource", "SavingsAccountsApiResource.java"),
     ("S2", "RepositoryWrapper", "SavingsAccountRepositoryWrapper.java"),
     ("S3", "CommandHandler", "ActivateSavingsAccountCommandHandler.java"),
 ]
-EX = {sid: extract(f) for sid, fam, f in SITES}
+EX = {sid: extract(read(f)) for sid, fam, f in SITES}
 
-# ---------------- Form A: explicit edge list (aider-repo-map style) ----------------
-def form_A(x):
-    L = [f"unit {x['cls']}"]
-    if x["annotation"]:
-        L.append(f"anno {x['cls']} @CommandType entity={x['annotation'][0]} action={x['annotation'][1]}")
-    for fld, typ in sorted(x["deps"].items()):
-        L.append(f"dep {x['cls']}.{fld}: {typ}")
-    for typ, meth in x["edges"]:
-        L.append(f"edge {x['cls']} -> {typ}#{meth}")
-    return "\n".join(L) + "\n"
-
+# Form A (explicit edge list, aider-repo-map style) is wiring.block_A + newline.
 # ---------------- Form B: legend + seed + motif defs + instantiation rows ----------------
 LEGEND = """# WIRING PACK v1 — generator-data form
 # legend: 'motif NAME(slots): template' defines a wiring shape; template lines use $slots.
@@ -82,7 +55,7 @@ def row_for(sid, fam, x):
     if fam == "CommandHandler":
         # fully convention-determined: one dep, one call
         (typ, meth) = x["edges"][0]
-        ent, act = x["annotation"]
+        ent, act = x["entity"], x["action"]
         return f"inst CommandHandler({x['cls']}, {typ}, {meth}, {ent}, {act})\n"
     deps = ",".join(f"{f}:{t}" for f, t in sorted(x["deps"].items()))
     calls = ",".join(f"{t}#{m}" for t, m in x["edges"])
@@ -112,7 +85,7 @@ texts, results = {}, {}
 gate_all = True
 for sid, fam, f in SITES:
     x = EX[sid]
-    A = form_A(x)
+    A = block_A(x) + "\n"
     row = row_for(sid, fam, x)
     reexp = expand(fam, row, x)
     gate = (reexp == A)
@@ -124,8 +97,7 @@ for sid, fam, f in SITES:
                     "edges": len(x["edges"]), "gate_byte_identical": gate}
 texts["LEGEND"] = LEGEND
 
-tok = json.loads(subprocess.run(["node", os.path.join(HERE, "tokcount.js")],
-        input=json.dumps(texts), capture_output=True, text=True, check=True).stdout)
+tok = count_tokens(texts)
 
 for sid, fam, f in SITES:
     e = tok[f"{sid}_A"]                       # explicit per-instance cost

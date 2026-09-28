@@ -3,38 +3,26 @@
 Lenient (labeled sensitivity only) = for single-target questions, gold ∈ comma-set answer.
 Arm-C audit: any question arm C answers correctly (majority over its 4 runs) is flagged
 'answerable-without-wiring' and EXCLUDED from the wiring-comprehension pool."""
-import json, os, re
+import json, os, sys
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, ".."))
+from wiring import norm, eq, parse_answers
 qs = json.load(open(os.path.join(HERE, "questions.json")))
 GOLD, QTYPE = qs["gold"], qs["qtype"]
 N = len(GOLD)
 
-def norm(s):
-    s = s.strip().lower().replace(" ", "")
-    return s
-
-def parse(fn):
-    ans = {}
-    for line in open(fn):
-        m = re.match(r'Q(\d+):\s*(.*)', line.strip())
-        if m: ans[int(m.group(1))] = m.group(2).strip()
-    return ans
-
 runs = {}
 for f in sorted(os.listdir(os.path.join(HERE, "responses"))):
     arm, pos, model = f[:-4].split("_")
-    runs[(arm, pos, model)] = parse(os.path.join(HERE, "responses", f))
+    runs[(arm, pos, model)] = parse_answers(os.path.join(HERE, "responses", f))[0]
 
 def grade(ans, i, lenient=False):
     g, a = GOLD[i], ans.get(i + 1, "")
-    if norm(a) == norm(g): return True
+    if eq(a, g): return True
     if lenient and "," in a and "," not in g:
         return norm(g) in [norm(x) for x in a.split(",")]
-    # set questions: order-insensitive comma sets
-    if "," in g:
-        return set(norm(x) for x in a.split(",")) == set(norm(x) for x in g.split(","))
     return False
 
 # arm-C audit: majority-correct over C runs => answerable without wiring
