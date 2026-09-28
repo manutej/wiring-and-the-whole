@@ -137,5 +137,6 @@ Same operator's applied-operad / sheaf line:
 - [`manutej/jev`](https://github.com/manutej/jev) — applied double-operadic type system (same Libkind–Myers paper)
 - [`manutej/ceti-explainer`](https://github.com/manutej/ceti-explainer) — short-course explainers for sheaves, operads, cohomology
 - [`manutej/sheaf-port`](https://github.com/manutej/sheaf-port) · [`manutej/cell-sheaf`](https://github.com/manutej/cell-sheaf)
+- [`manutej/jev-tape/demos`](https://github.com/manutej/jev-tape/tree/main/demos) — ten interactive demos that put this corpus's packs, pushouts and experiment results behind jev-tape's typed gates and recorded tape; every number traces back to a file here (see [`demos/README.md`](demos/README.md))
 
 This repo is the empirical wedge: *does a wiring pack actually compress, and can a model still read it?*
