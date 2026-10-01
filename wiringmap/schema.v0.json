@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wiring-and-the-whole.dev/wiringmap/schema.v0.json",
+  "title": "WiringMap v0",
+  "description": "Minimal interface catalog + typed wiring edges for L1 feedstock and future extractors. Doctrine tags are hints only until MUST-PROVE 1 (GA1/GA10).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "meta", "units", "edges"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "wiringmap.v0"
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "ref", "slice"],
+      "properties": {
+        "repo": { "type": "string", "minLength": 1 },
+        "ref": { "type": "string", "minLength": 1 },
+        "slice": { "type": "string", "minLength": 1 },
+        "notes": { "type": "string" }
+      }
+    },
+    "junctions": {
+      "type": "array",
+      "description": "Shared glue nodes (DTO, table, topic) referenced by edges.",
+      "items": { "$ref": "#/$defs/junction" },
+      "default": []
+    },
+    "units": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/unit" }
+    },
+    "edges": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/edge" }
+    }
+  },
+  "$defs": {
+    "port_kind": {
+      "type": "string",
+      "enum": ["method", "field", "type", "topic", "table", "other"]
+    },
+    "edge_kind": {
+      "type": "string",
+      "enum": ["call", "ref", "import", "di", "link"]
+    },
+    "doctrine_tag": {
+      "type": "string",
+      "description": "Optional cospan/UWD hint; not a formal guarantee in v0.",
+      "enum": ["interface", "system_map", "junction", "unknown"]
+    },
+    "port": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "symbol", "kind", "exported"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^port:[^#]+#[^#]+$"
+        },
+        "symbol": { "type": "string", "minLength": 1 },
+        "kind": { "$ref": "#/$defs/port_kind" },
+        "signature_stub": { "type": "string" },
+        "exported": { "type": "boolean" }
+      }
+    },
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path", "role", "ports"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^unit:[a-zA-Z0-9._-]+$"
+        },
+        "path": { "type": "string", "minLength": 1 },
+        "role": { "type": "string", "minLength": 1 },
+        "ports": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/port" }
+        }
+      }
+    },
+    "junction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "junction_kind"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^junction:[a-zA-Z0-9._-]+$"
+        },
+        "label": { "type": "string", "minLength": 1 },
+        "junction_kind": {
+          "type": "string",
+          "enum": ["dto", "table", "topic", "page", "other"]
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "from", "to", "edge_kind"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^edge:[a-zA-Z0-9._-]+$"
+        },
+        "from": {
+          "type": "string",
+          "description": "port:id or unit:id (unit-level ref edge)"
+        },
+        "to": {
+          "type": "string",
+          "description": "port:id or junction:id"
+        },
+        "edge_kind": { "$ref": "#/$defs/edge_kind" },
+        "doctrine_tag": { "$ref": "#/$defs/doctrine_tag" },
+        "evidence": {
+          "type": "string",
+          "description": "Human or extractor cite, e.g. // refs: line"
+        }
+      }
+    }
+  }
+}

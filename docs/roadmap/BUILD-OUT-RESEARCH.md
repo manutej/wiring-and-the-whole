@@ -159,7 +159,7 @@
 
 1. ~~Repro runner + `experiments/README.md`~~ **Done** — `make verify`.
 2. ~~Mint first SKILL: `interface-first-context`~~ **Done** — see [`skills/interface-first-context/SKILL.md`](../../skills/interface-first-context/SKILL.md); next: `systems-intake`, `symmetry-lens`.
-3. Define `wiringmap/schema.v0.json` stub when starting WiringMap v0 (empty example + one Fineract edge).
+3. ~~Define `wiringmap/schema.v0.json` stub~~ **In progress** — schema + [`wiringmap/examples/toybank-accounts.v0.json`](../../wiringmap/examples/toybank-accounts.v0.json) (PR); Fineract edge next.
 
 ---
 
