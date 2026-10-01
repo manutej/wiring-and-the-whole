@@ -6,6 +6,7 @@ Machine-readable digest of [@aiDotEngineer](https://www.youtube.com/@aiDotEngine
 
 | File | Purpose |
 |------|---------|
+| `explorer/` | **Navigable shadcn-style concept dashboard** (Vite + React) |
 | `catalog.json` | Recent session uploads (title, views, theme tag) |
 | `digest.json` | Event metadata, narratives, ingest state |
 | `transcript-summaries.json` | Openings + word counts for ingested talks |
