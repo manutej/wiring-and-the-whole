@@ -75,6 +75,7 @@ research/                  (git repo)
 ```
 
 ## 5. Method notes (keep doing this)
+Prefer ASCII diagrams in chat, docs, and HTML deliverables unless the user asks for Mermaid.
 Fable agents in single parallel batches only; Sonnet for mechanical diagnosis. Every generative
 phase → adversarial phase (written meta-prompt) → solutions phase that COMMITS. Provenance
 discipline: page-tagged, register-tagged, or labeled CONJECTURE/DESIGN. Consistency ≠
