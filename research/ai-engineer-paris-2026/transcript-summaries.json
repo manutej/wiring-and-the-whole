@@ -52,5 +52,44 @@
     "kind": null,
     "opening": "Uh I'm Justin Rio. I'm the deputy CTO at DX. I get to do a lot of our research around uh developer experience and its relation to developer productivity. And certainly over the last year, a lot of that research has focused on AI's impact on the developer experience and basic aspects of productivity uh within an organization. Uh so we produce these quarterly reports, our our state of AI and AI impact reports which looks at really a lot of raw data that we're able to get from our platform. Our platform is a researchback platform uh built from the same folks who worked on Dora metrics and the space framework and the DevX framework. Uh and really at the end of the day it's a data gathering platform that can look at a lot of different trends across an organization with you know how are we focus",
     "quotes": []
+  },
+  "XyV6bSMyq-I": {
+    "title": "How We Built an Agent That Improves Itself \u2014 Zubin Aysola, W&B",
+    "segment_count": 563,
+    "word_count": 3968,
+    "language": "English (auto-generated)",
+    "caption": "English (auto-generated)",
+    "opening": "Okay. Hello. Thank you for showing up. Uh my name is Zuben Isola. Uh I work at Weights and Biases. I'm building the Arya agent which is something that we released to general availability on Monday. You might have seen Tim's talk uh one of the pe my peers at Weights and Biases who I work with uh on the main stage yesterday. So I'm going to give you a little bit of a deep dive in\u2026",
+    "quotes": [
+      {"t": "1:41", "text": "benchmarks, evaluations, and agent harness configs are all covariant"},
+      {"t": "2:41", "text": "production traces rip into offline envs to hill-climb — a nice flywheel"},
+      {"t": "13:32", "text": "WBAF (W&B agent factory) caught missing weave.log via offline regression"}
+    ]
+  },
+  "TN3mj92oZ8I": {
+    "title": "Building Self-Improving Agent Software Factories \u2014 Suraj Gupta, Warp",
+    "segment_count": 378,
+    "word_count": 2374,
+    "language": "English (auto-generated)",
+    "caption": "English (auto-generated)",
+    "opening": "Um my name is Siraj Gupta. I lead Harness development at Warp. Um in case you haven't heard of Warp before, um we started off by building a state-of-the-art agentic development environment. Um we have about a million active users that use that. Um it was born out of a modern-day terminal. Um and nowadays we're building a um cloud agent platform to enable teams to build software\u2026",
+    "quotes": [
+      {"t": "1:10", "text": "the self-improvement loop can be automatic"},
+      {"t": "2:28", "text": "factory skills get stale over time without refresh"},
+      {"t": "0:22", "text": "~1M active users on Warp agentic dev environment"}
+    ]
+  },
+  "HvboD89DyQ8": {
+    "title": "No, That's Not a Software Factory \u2014 Ryan Cooke, WorkOS",
+    "segment_count": 488,
+    "word_count": 2978,
+    "language": "English (auto-generated)",
+    "caption": "English (auto-generated)",
+    "opening": "Well, thank you for joining the final day of the conference here. I know it's been a long week. But I'm excited to talk about a topic here that is very near and dear to me. Software factories. Um You this is probably not a new concept to any of you. I'm guessing if you're all here, you're very familiar with software factories. You know, Ramp blogged about their inspects several\u2026",
+    "quotes": [
+      {"t": "3:34", "text": "sandbox factory was indistinguishable from laptop Claude Code"},
+      {"t": "3:56", "text": "not sufficient that the factory produces code — embed eng process"},
+      {"t": "4:10", "text": "TARS agent embedded in Slack, Linear, GitHub with webhook tracking"}
+    ]
   }
 }

@@ -2,7 +2,7 @@
   {
     "id": "Se8jHLliLXE",
     "title": "The State of AI in Software Development: Data from 400+ Orgs \u2014 Justin Reock, DX",
-    "views": 11000,
+    "views": 14000,
     "hours_ago": 15,
     "min": 19,
     "theme": "Engineering metrics"
@@ -10,7 +10,7 @@
   {
     "id": "9cJrbj23fOA",
     "title": "The Chief AI Officer: Scientist, Architect, Coach \u2014 Rania Khalaf, WSO2",
-    "views": 5000,
+    "views": 5600,
     "hours_ago": 15,
     "min": 22,
     "theme": "Leadership"
@@ -18,7 +18,7 @@
   {
     "id": "_mi3alkqy4s",
     "title": "The Death of the Code Review: What the Data Actually Says \u2014 Laurie Voss, Arize AI",
-    "views": 19000,
+    "views": 23000,
     "hours_ago": 16,
     "min": 25,
     "theme": "Code review / evals"
@@ -26,7 +26,7 @@
   {
     "id": "UOcHfR3_tys",
     "title": "Your Agents Are in Solitary Confinement: Why MCP & A2A Aren't Enough \u2014 Vlad Luzin, Band",
-    "views": 5800,
+    "views": 6300,
     "hours_ago": 16,
     "min": 18,
     "theme": "Agent interoperability"
@@ -42,7 +42,7 @@
   {
     "id": "buHC7bQE1X4",
     "title": "Get Out of the Model's Way \u2014 Kevin Hou, Google Antigravity",
-    "views": 16000,
+    "views": 17000,
     "days": 3,
     "min": 19,
     "theme": "Coding agents"
@@ -50,7 +50,7 @@
   {
     "id": "tUPPVhBBcoM",
     "title": "Self-Improving software factories: The new open source model \u2014 Zach Lloyd, Warp",
-    "views": 83000,
+    "views": 87000,
     "days": 3,
     "min": 21,
     "theme": "Software factories"
@@ -66,7 +66,7 @@
   {
     "id": "TRfzFJCJ7ZE",
     "title": "Orchestras, Not Factories: How the Fastest Builders Work \u2014 Charlie Holtz, Conductor",
-    "views": 31000,
+    "views": 32000,
     "days": 3,
     "min": 18,
     "theme": "Multi-agent orchestration"
@@ -74,7 +74,7 @@
   {
     "id": "6MudaeKdBSk",
     "title": "Scale the Judgment, Not the Model \u2014 Andrew Orobator, Reddit",
-    "views": 7400,
+    "views": 7500,
     "days": 3,
     "min": 20,
     "theme": "Evals / judgment"
@@ -90,7 +90,7 @@
   {
     "id": "vGCJ7diEtrw",
     "title": "What It Actually Takes to Build a Software Factory \u2014 Tereza T\u00ed\u017ekov\u00e1, Factory",
-    "views": 75000,
+    "views": 76000,
     "days": 3,
     "min": 23,
     "theme": "Software factories"
@@ -98,7 +98,7 @@
   {
     "id": "YIVkERhy8xo",
     "title": "I Turned Coding Agents Into a Strategy Game \u2014 Ido Salomon, AgentCraft",
-    "views": 16000,
+    "views": 17000,
     "days": 3,
     "min": 15,
     "theme": "Agent UX"
@@ -170,7 +170,7 @@
   {
     "id": "LlgiOCmFG_w",
     "title": "Fixing the PR Bottleneck \u2014 Matt Pocock, AIHero",
-    "views": 67000,
+    "views": 76000,
     "days": 5,
     "min": 23,
     "theme": "PR / skills / review"

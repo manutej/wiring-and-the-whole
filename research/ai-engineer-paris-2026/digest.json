@@ -54,12 +54,15 @@
     "World models": 1
   },
   "transcripts_ingested": [
+    "TN3mj92oZ8I",
     "LlgiOCmFG_w",
-    "tUPPVhBBcoM",
-    "_mi3alkqy4s",
-    "vGCJ7diEtrw",
+    "XyV6bSMyq-I",
+    "HvboD89DyQ8",
     "TRfzFJCJ7ZE",
-    "Se8jHLliLXE"
+    "tUPPVhBBcoM",
+    "Se8jHLliLXE",
+    "_mi3alkqy4s",
+    "vGCJ7diEtrw"
   ],
   "insights": {
     "LlgiOCmFG_w": {
@@ -97,6 +100,42 @@
       "transcript_words": 3787,
       "caption": "English (auto-generated)",
       "hook": "Uh I'm Justin Rio. I'm the deputy CTO at DX. I get to do a lot of our research around uh developer experience and its relation to developer productivity. And certainly over the last year, a lot of that research has focused on AI's impact on the developer experience and basic aspects of productivity uh within an organization. Uh so we produce these \u2026"
+    },
+    "XyV6bSMyq-I": {
+      "title": "How We Built an Agent That Improves Itself \u2014 Zubin Aysola, W&B",
+      "transcript_words": 3968,
+      "caption": "English (auto-generated)",
+      "hook": "Okay. Hello. Thank you for showing up. Uh my name is Zuben Isola. Uh I work at Weights and Biases. I'm building the Arya agent which is something that we released to general availability on Monday. You might have seen Tim's talk uh one of the pe my peers at Weights and Biases who I work with uh on the main stage yesterday. So I'm going to give you a little bit of a deep dive in\u2026",
+      "bullets": [
+        "0:24 — Arya agent hit GA Monday; pairs with Tim Sweeney’s main-stage research-agent talk.",
+        "1:41 — Benchmarks, evals, and harness configs are covariant; dynamic systems need production + offline measurement (sim-to-real gap).",
+        "2:41 — Production traces feed offline sims for hill-climbing; Weave logging closes a self-improvement flywheel.",
+        "13:32 — WBAF (W&B agent factory) runs offline benchmarks and caught a missing weave.log SDK call via regression tasks."
+      ]
+    },
+    "TN3mj92oZ8I": {
+      "title": "Building Self-Improving Agent Software Factories \u2014 Suraj Gupta, Warp",
+      "transcript_words": 2374,
+      "caption": "English (auto-generated)",
+      "hook": "Um my name is Siraj Gupta. I lead Harness development at Warp. Um in case you haven't heard of Warp before, um we started off by building a state-of-the-art agentic development environment. Um we have about a million active users that use that. Um it was born out of a modern-day terminal. Um and nowadays we're building a um cloud agent platform to enable teams to build software\u2026",
+      "bullets": [
+        "0:22 — ~1M MAU on Warp’s agentic IDE; expanding to a cloud agent platform for teams.",
+        "1:10 — Self-improvement loop can be automatic as the software-factory paradigm shifts.",
+        "2:28 — Factory skills (e.g. bug reproduction) go stale unless the improvement loop refreshes them.",
+        "9:29 — Model routing favors Pareto-efficient defaults instead of users pinning one model."
+      ]
+    },
+    "HvboD89DyQ8": {
+      "title": "No, That's Not a Software Factory \u2014 Ryan Cooke, WorkOS",
+      "transcript_words": 2978,
+      "caption": "English (auto-generated)",
+      "hook": "Well, thank you for joining the final day of the conference here. I know it's been a long week. But I'm excited to talk about a topic here that is very near and dear to me. Software factories. Um You this is probably not a new concept to any of you. I'm guessing if you're all here, you're very familiar with software factories. You know, Ramp blogged about their inspects several\u2026",
+      "bullets": [
+        "2:36 — Success metrics are outcome-based (ship features faster), not raw PR/code volume.",
+        "3:34 — Sandbox + model router alone was indistinguishable from engineers running Claude Code locally.",
+        "3:56 — Code output isn’t enough; embed eng process (TARS in Slack/Linear/GitHub + Horizon).",
+        "4:10 — TARS tracks project progress via webhooks, not only generating patches."
+      ]
     }
   },
   "dominant_narratives": [
@@ -118,8 +157,12 @@
     ]
   },
   "next_ingest_priority": [
-    "XyV6bSMyq-I",
-    "TN3mj92oZ8I",
-    "HvboD89DyQ8"
-  ]
+    "buHC7bQE1X4",
+    "YIVkERhy8xo",
+    "OA-Mc60Rboo",
+    "oVsEddfhdxc",
+    "474j-n1Ltxc"
+  ],
+  "last_ingest_at": "2026-10-01T12:15:00Z",
+  "last_ingest_note": "No new channel IDs on page 1; 9 transcripts total; +3 this tick with timestamped bullets; views refreshed."
 }
