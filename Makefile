@@ -1,7 +1,15 @@
-.PHONY: verify witness e2
+.PHONY: verify witness e2 dogfood-grade wiringmap-check
 
 verify:
 	@./scripts/verify.sh
+
+dogfood-grade:
+	@python3 scripts/grade_l1_questions.py
+
+wiringmap-check:
+	@python3 -m pip install -q jsonschema
+	@python3 scripts/validate_wiringmap.py
+	@python3 scripts/extract_toybank_refs.py
 
 witness:
 	@python3 witness/run_witness.py
