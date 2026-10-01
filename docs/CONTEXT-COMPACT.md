@@ -10,54 +10,51 @@ Map production codebases as a **module of systems** (T1), find symmetries/invari
 
 | Area | Status |
 |------|--------|
-| E1 witness | **13/13** — `witness/` + `make witness` |
+| E1 witness | **13/13** — `witness/` |
 | E2 / E3 | WIN + B-PASSES — frozen under **`make verify`** |
-| E5 depth | B-PASSES AT DEPTH — scripts in `experiments/e5-depth/` (not in verify yet) |
-| Repro | **`make verify`** = witness + E2 JSON + E3 grades (needs python3 + node) |
-| SKILL mint | **1/3:** `skills/interface-first-context/` — `systems-intake`, `symmetry-lens` **stub only** (outline below) |
-| WiringMap | **This PR line:** `wiringmap/schema.v0.json` + toybank example — **no extractor** |
+| E5 depth | B-PASSES AT DEPTH — `experiments/e5-depth/` (not in verify yet) |
+| Pulse | **`docs/PULSE.md`** — trigger word `pulse`; **`make pulse-gate`** |
+| WiringMap v0 | `wiringmap/schema.v0.json` + toybank example; **`make wiringmap-check`** |
+| Density ladder | D0–D3 `fixtures/density/` + **D4** external slice — **`make wiringmap-stress`** |
+| External thin slice | `fixtures/external/fineract-handlers-thin/` (7 handlers, vendored) — **`make external-slice-check`** |
+| L1 dogfood | meta / toybank / fineract-thin packs + **`make dogfood-grade*`** |
+| SKILL mint | **2/3 stub:** `interface-first-context`, `systems-intake` — **`symmetry-lens`** not minted |
 
-## Verify
+## Verify & interface checks
 
 ```bash
-make verify    # from repo root; see experiments/README.md
+make verify                      # witness + E2 + E3 frozen
+make wiringmap-check             # toybank accounts
+make wiringmap-stress            # D0–D4 expectations
+make external-slice-check        # fineract-handlers-thin
+make dogfood-grade               # meta L1 questions
+make dogfood-grade-toybank
+make dogfood-grade-fineract-thin
+make pulse-gate
 ```
 
-## Open work (PRs may land out of order)
+## Honest limits (external slice)
 
-Check GitHub for live state; merge-conflict pass (2026-10-01) resolved memo-only overlaps:
-
-- interface-first-context skill, repro runner, dogfood L1 meta pack, ASCII HANDOFF note — see `docs/MERGE-CONFLICT-REPORT.md` for history, not live queue.
-
-**Engineering queue (artifacts-first):**
-
-1. WiringMap v0 schema + one populated example (toybank) — **in flight**
-2. Mint `systems-intake`, `symmetry-lens` SKILL.md (zero-code; one dogfood each)
-3. Pack builder v0 (one Fineract family; E2 re-expansion gate)
-4. Witness C₀ → Code_X split; MUST-PROVE 1–2 hook
-5. Full E3 + Fineract wedge + E4 migration (after map + pack)
+- Extractors read **`// refs:`** only — not full Spring DI graphs.
+- Fineract slice is **vendored subset**, not live `apache/fineract` checkout.
+- `doctrine_tag` on edges is **v0 convention**, not proven doctrine (GA10).
 
 ## Next 3 jumps (small, stable)
 
 ```
-  [A] wiringmap schema + toybank instance  ──►  [B] L1 dogfood accounts slice
-           │                                              │
-           └──────────────────┬───────────────────────────┘
-                              v
-                    [C] static extractor stub (imports/refs only)
+  [A] fetch/pin slice script     [B] symmetry-lens SKILL
+         │                              │
+         └──────────┬───────────────────┘
+                    v
+           [C] pack builder v0 (one handler family, E2 gate)
 ```
 
-1. **A** — `wiringmap/schema.v0.json`, README, example JSON from `witness/toybank/accounts/` (3–4 units, typed edges).
-2. **B** — `docs/dogfood/L1-toybank-accounts.md` companion to meta L1 pack.
-3. **C** — read-only extractor CLI that emits v0 JSON from toybank (no Fineract yet).
-
-## systems-intake / symmetry-lens (mint debt — not shipped)
-
-- **systems-intake:** scope questionnaire → slice boundary + parallel product marks (`‖`) + omissions reasons; feeds L1 skill step 1.
-- **symmetry-lens:** orbit table on exact-iso cells only (GA2); toybank planted orbit as demo; no L3 packer.
+1. **A** — `scripts/fetch_fineract_slice.sh` or submodule pin; refresh thin slice without whole-tree reads.
+2. **B** — mint `symmetry-lens`; dogfood on D3 orbit or toybank savings boundary.
+3. **C** — L2 factored pack from one family; byte-identical re-expansion (E2 pattern).
 
 ## Pointers
 
-- Resume narrative: `HANDOFF.md` (trimmed; defers here for queue)
-- Build order: `docs/roadmap/BUILD-OUT-RESEARCH.md`
-- L1 instrument: `skills/interface-first-context/SKILL.md`
+- Resume: `HANDOFF.md` · Build order: `docs/roadmap/BUILD-OUT-RESEARCH.md`
+- Witness: `docs/witness/index.html` · L1 skill: `skills/interface-first-context/SKILL.md`
+- Fixtures: `fixtures/density/README.md`, `fixtures/external/README.md`
