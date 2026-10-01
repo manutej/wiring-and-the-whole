@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Re-expansion gate v0: expand pack_factored.txt inst rows and byte-compare to pack_explicit.txt.
-LEGEND.txt is not part of the byte check (fixed overhead only).
+LEGEND.txt must match canonical E2 pack legend before re-expansion byte check.
 """
 from __future__ import annotations
 
@@ -9,6 +9,29 @@ import argparse
 import re
 import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+CANONICAL_LEGEND = ROOT / "experiments/e2-tokens/pack_LEGEND.txt"
+
+
+def normalize_text(text: str) -> str:
+    return text if text.endswith("\n") else text + "\n"
+
+
+def validate_legend(pack_dir: Path) -> None:
+    legend_path = pack_dir / "LEGEND.txt"
+    if not legend_path.is_file():
+        print(f"FAIL: missing {legend_path}", file=sys.stderr)
+        sys.exit(1)
+    legend = normalize_text(legend_path.read_text(encoding="utf-8"))
+    canonical = normalize_text(CANONICAL_LEGEND.read_text(encoding="utf-8"))
+    if legend != canonical:
+        print(
+            "FAIL reexpand gate: LEGEND.txt must match canonical E2 pack legend "
+            f"({CANONICAL_LEGEND})",
+            file=sys.stderr,
+        )
+        sys.exit(1)
 
 
 def expand_inst_row(row: str) -> list[str]:
@@ -53,6 +76,7 @@ def main() -> None:
 
     explicit = explicit_path.read_text(encoding="utf-8")
     factored = factored_path.read_text(encoding="utf-8")
+    validate_legend(pack_dir)
     reexpanded = expand_factored(factored)
 
     if reexpanded == explicit:

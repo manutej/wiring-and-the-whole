@@ -18,7 +18,7 @@ Map production codebases as a **module of systems** (T1), find symmetries/invari
 | Density ladder | D0–D3 `fixtures/density/` + **D4** external slice — **`make wiringmap-stress`** |
 | External thin slice | `fixtures/external/fineract-handlers-thin/` (7 handlers, vendored) — **`make external-slice-check`** |
 | L1 dogfood | meta / toybank / fineract-thin packs + **`make dogfood-grade*`** |
-| SKILL mint | **2/3 stub:** `interface-first-context`, `systems-intake` — **`symmetry-lens`** not minted |
+| SKILL mint | **3/3:** `interface-first-context`, `systems-intake`, **`symmetry-lens`** — [`skills/symmetry-lens/SKILL.md`](../skills/symmetry-lens/SKILL.md) |
 
 ## Verify & interface checks
 
@@ -30,6 +30,8 @@ make external-slice-check        # fineract-handlers-thin
 make dogfood-grade               # meta L1 questions
 make dogfood-grade-toybank
 make dogfood-grade-fineract-thin
+make fetch-slice-dry-run        # fineract thin slice stub; temp staging only
+make pack-v0-check              # L2 pack + reexpand + canonical LEGEND gate
 make pulse-gate
 ```
 
@@ -39,19 +41,17 @@ make pulse-gate
 - Fineract slice is **vendored subset**, not live `apache/fineract` checkout.
 - `doctrine_tag` on edges is **v0 convention**, not proven doctrine (GA10).
 
-## Next 3 jumps (small, stable)
+## Pulse R4 on main (2026-10-01)
 
-```
-  [A] fetch/pin slice script     [B] symmetry-lens SKILL
-         │                              │
-         └──────────┬───────────────────┘
-                    v
-           [C] pack builder v0 (one handler family, E2 gate)
-```
+- **A** — `scripts/fetch_fineract_slice.sh` + **`make fetch-slice-dry-run`** (PATH LIST stub; `--apply` updates slice + MANIFEST).
+- **B** — **`symmetry-lens`** minted; dogfood D3 orbit / toybank boundary next.
+- **C** — `scripts/build_l2_pack.py` + **`make pack-v0-check`** (reexpand + canonical LEGEND).
 
-1. **A** — `scripts/fetch_fineract_slice.sh` or submodule pin; refresh thin slice without whole-tree reads.
-2. **B** — mint `symmetry-lens`; dogfood on D3 orbit or toybank savings boundary.
-3. **C** — L2 factored pack from one family; byte-identical re-expansion (E2 pattern).
+## Next jumps
+
+1. Real upstream sparse-checkout / archive in fetch script (replace local corpus stub).
+2. symmetry-lens dogfood report on D3 + fineract thin wiringmap.
+3. Pack v0 on fineract handler family; keep LEGEND parity with E5 rules.
 
 ## Pointers
 
