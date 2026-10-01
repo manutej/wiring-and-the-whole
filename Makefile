@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-.PHONY: verify witness e2 dogfood-grade pulse-gate
-=======
-.PHONY: verify witness e2 dogfood-grade wiringmap-check
->>>>>>> origin/main
+.PHONY: verify witness e2 dogfood-grade pulse-gate wiringmap-check
 
 verify:
 	@./scripts/verify.sh
