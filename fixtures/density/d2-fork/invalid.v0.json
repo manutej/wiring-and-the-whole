@@ -1,0 +1,91 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "fixtures/density/d2-fork",
+    "slice": "d2-fork/",
+    "notes": "Schema-invalid on purpose: wrong signature_stub vs witness and bad doctrine_tag."
+  },
+  "junctions": [
+    {
+      "id": "junction:shared.PageDto",
+      "label": "shared.PageDto#of",
+      "junction_kind": "dto"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit:fork.AccountsController",
+      "path": "fixtures/density/d2-fork/AccountsController.java",
+      "role": "HTTP adapter",
+      "ports": [
+        {
+          "id": "port:fork.AccountsController#list",
+          "symbol": "list",
+          "kind": "method",
+          "signature_stub": "String list(int p)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:fork.AccountsService",
+      "path": "fixtures/density/d2-fork/AccountsService.java",
+      "role": "application service",
+      "ports": [
+        {
+          "id": "port:fork.AccountsService#fetchPage",
+          "symbol": "fetchPage",
+          "kind": "method",
+          "signature_stub": "Page fetchPage(int p)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:fork.AccountsRepository",
+      "path": "fixtures/density/d2-fork/AccountsRepository.java",
+      "role": "persistence",
+      "ports": [
+        {
+          "id": "port:fork.AccountsRepository#findPage",
+          "symbol": "findPage",
+          "kind": "method",
+          "signature_stub": "Page findPage(int p)",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:ctrl-list",
+      "from": "port:fork.AccountsController#list",
+      "to": "port:fork.AccountsService#fetchPage",
+      "edge_kind": "call",
+      "doctrine_tag": "lens",
+      "evidence": "AccountsController.java // refs: fork.AccountsService#fetchPage"
+    },
+    {
+      "id": "edge:svc-page",
+      "from": "port:fork.AccountsService#fetchPage",
+      "to": "port:fork.AccountsRepository#findPage",
+      "edge_kind": "call",
+      "evidence": "AccountsService.java // refs: fork.AccountsRepository#findPage"
+    },
+    {
+      "id": "edge:repo-page",
+      "from": "port:fork.AccountsRepository#findPage",
+      "to": "junction:shared.PageDto",
+      "edge_kind": "ref",
+      "evidence": "AccountsRepository.java // refs: shared.PageDto#of"
+    },
+    {
+      "id": "edge:ctrl-page",
+      "from": "port:fork.AccountsController#list",
+      "to": "junction:shared.PageDto",
+      "edge_kind": "ref",
+      "evidence": "AccountsController.java // refs: shared.PageDto#of"
+    }
+  ]
+}

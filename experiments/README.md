@@ -24,3 +24,14 @@ make e2         # E2 only (installs npm deps)
 ```
 
 E5 depth harness is **not** part of `make verify` (heavier; see `e5-depth/`).
+
+## Wiringmap / dogfood (pulse)
+
+From repo root:
+
+```bash
+make wiringmap-check      # schema + toybank extract
+make wiringmap-stress     # density ladder D0–D3 (fixtures/density/)
+make dogfood-grade        # L1 meta question pack
+make dogfood-grade-toybank
+```
