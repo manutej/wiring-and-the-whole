@@ -81,6 +81,12 @@ Original session: 2026-07-24 → 07-30. Workspace reclaimed. Corpus rebuilt 2026
 
 ---
 
+## Verify (offline)
+
+From a fresh clone (needs **python3** and **node**): run **`make verify`** — E1 witness, E2 token counts vs frozen JSON, E3 grades on checked-in responses. Details: [`experiments/README.md`](experiments/README.md).
+
+---
+
 ## How to read it
 
 1. [`HANDOFF.md`](HANDOFF.md) — mission, current state of truth, next actions.
