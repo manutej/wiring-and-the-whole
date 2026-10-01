@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" font-family="system-ui, sans-serif">
+  <title>TubeAlfred data matrix</title>
+  <rect width="640" height="320" fill="#fafafa"/>
+  <text x="320" y="28" text-anchor="middle" font-size="16" font-weight="600">What TubeAlfred pulls (vs blind spots)</text>
+
+  <!-- Headers -->
+  <rect x="24" y="44" width="140" height="28" fill="#eee" stroke="#ccc"/>
+  <rect x="164" y="44" width="220" height="28" fill="#e8f5e9" stroke="#ccc"/>
+  <rect x="384" y="44" width="232" height="28" fill="#ffebee" stroke="#ccc"/>
+  <text x="94" y="63" text-anchor="middle" font-size="10" font-weight="600">Tool family</text>
+  <text x="274" y="63" text-anchor="middle" font-size="10" font-weight="600">You get (public)</text>
+  <text x="500" y="63" text-anchor="middle" font-size="10" font-weight="600">Not available</text>
+
+  <g font-size="9">
+    <rect x="24" y="72" width="592" height="36" fill="#fff" stroke="#ddd"/>
+    <text x="94" y="94" text-anchor="middle">Resolve / channel</text>
+    <text x="274" y="94" text-anchor="middle">IDs, handles, subs, upload lists</text>
+    <text x="500" y="94" text-anchor="middle">Private analytics</text>
+
+    <rect x="24" y="108" width="592" height="36" fill="#f9f9f9" stroke="#ddd"/>
+    <text x="94" y="130" text-anchor="middle">Search / trending</text>
+    <text x="274" y="130" text-anchor="middle">Snapshot rankings, suggestions</text>
+    <text x="500" y="130" text-anchor="middle">Permanent rank / keyword volume</text>
+
+    <rect x="24" y="144" width="592" height="36" fill="#fff" stroke="#ddd"/>
+    <text x="94" y="166" text-anchor="middle">Video metadata</text>
+    <text x="274" y="166" text-anchor="middle">Description, duration, public counts</text>
+    <text x="500" y="166" text-anchor="middle">Retention, revenue, CTR</text>
+
+    <rect x="24" y="180" width="592" height="36" fill="#f9f9f9" stroke="#ddd"/>
+    <text x="94" y="202" text-anchor="middle">Transcript</text>
+    <text x="274" y="202" text-anchor="middle">Segments + timestamps, caption kind</text>
+    <text x="500" y="202" text-anchor="middle">Guaranteed manual quality</text>
+
+    <rect x="24" y="216" width="592" height="36" fill="#fff" stroke="#ddd"/>
+    <text x="94" y="238" text-anchor="middle">Comments</text>
+    <text x="274" y="238" text-anchor="middle">Public text, likes, paginated sample</text>
+    <text x="500" y="238" text-anchor="middle">All viewers · demographics</text>
+  </g>
+
+  <text x="320" y="280" text-anchor="middle" font-size="10" fill="#444">Paris ingest: ~8 metadata + 4 discovery + 6 transcript + 1 comment pull (credit-metered)</text>
+  <text x="320" y="298" text-anchor="middle" font-size="9" fill="#888">Source: TubeAlfred MCP session Oct 1, 2026</text>
+</svg>
