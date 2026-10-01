@@ -112,9 +112,10 @@
 
 | | |
 |--|--|
-| **Dependencies** | Existing `e2-tokens/`, `e3-ablation/`, `e5-depth/` scripts; `package.json` in experiments if Node used. |
-| **MVP scope** | Single entrypoint: run witness → assert 13/13; run E2 counts; optional E3 grade on frozen responses only (no API). |
-| **Proof-case hook** | CI-style gate: fail if `WITNESS.json` or E2 numbers drift without commit. |
+| **Status** | **Shipped** — `make verify` / [`scripts/verify.sh`](../../scripts/verify.sh); see [`experiments/README.md`](../../experiments/README.md). |
+| **Dependencies** | Existing `e2-tokens/`, `e3-ablation/` scripts; `experiments/package.json` (Node tiktoken). E5-depth scripts remain separate until folded into verify. |
+| **MVP scope** | Witness `all_pass`; E2 vs frozen `E2-RESULTS.json`; E3 grade vs frozen `E3-GRADES.json` (no API). |
+| **Proof-case hook** | Fail if witness checks or E2/E3 frozen metrics drift without an intentional commit. |
 | **Risks** | **GA8** — runner does not substitute frozen question sets + firewall for live minting. |
 
 ### 3. Pack builder v0 (OCC L2)
@@ -156,8 +157,8 @@
 
 ## Immediate next commit targets (engineering)
 
-1. Add `experiments/README.md` with run order and expected artifacts (optional follow-up).
-2. ~~Mint first SKILL: `interface-first-context`~~ **Done** — see [`skills/interface-first-context/SKILL.md`](../../skills/interface-first-context/SKILL.md).
+1. ~~Repro runner + `experiments/README.md`~~ **Done** — `make verify`.
+2. ~~Mint first SKILL: `interface-first-context`~~ **Done** — see [`skills/interface-first-context/SKILL.md`](../../skills/interface-first-context/SKILL.md); next: `systems-intake`, `symmetry-lens`.
 3. Define `wiringmap/schema.v0.json` stub when starting WiringMap v0 (empty example + one Fineract edge).
 
 ---
