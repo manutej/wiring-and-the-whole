@@ -1,0 +1,242 @@
+[
+  {
+    "id": "Se8jHLliLXE",
+    "title": "The State of AI in Software Development: Data from 400+ Orgs \u2014 Justin Reock, DX",
+    "views": 11000,
+    "hours_ago": 15,
+    "min": 19,
+    "theme": "Engineering metrics"
+  },
+  {
+    "id": "9cJrbj23fOA",
+    "title": "The Chief AI Officer: Scientist, Architect, Coach \u2014 Rania Khalaf, WSO2",
+    "views": 5000,
+    "hours_ago": 15,
+    "min": 22,
+    "theme": "Leadership"
+  },
+  {
+    "id": "_mi3alkqy4s",
+    "title": "The Death of the Code Review: What the Data Actually Says \u2014 Laurie Voss, Arize AI",
+    "views": 19000,
+    "hours_ago": 16,
+    "min": 25,
+    "theme": "Code review / evals"
+  },
+  {
+    "id": "UOcHfR3_tys",
+    "title": "Your Agents Are in Solitary Confinement: Why MCP & A2A Aren't Enough \u2014 Vlad Luzin, Band",
+    "views": 5800,
+    "hours_ago": 16,
+    "min": 18,
+    "theme": "Agent interoperability"
+  },
+  {
+    "id": "474j-n1Ltxc",
+    "title": "AI-Generated Code Is Already Competing With Human Code \u2014 Daksh Gupta, Greptile",
+    "views": 13000,
+    "days": 3,
+    "min": 13,
+    "theme": "AI vs human code"
+  },
+  {
+    "id": "buHC7bQE1X4",
+    "title": "Get Out of the Model's Way \u2014 Kevin Hou, Google Antigravity",
+    "views": 16000,
+    "days": 3,
+    "min": 19,
+    "theme": "Coding agents"
+  },
+  {
+    "id": "tUPPVhBBcoM",
+    "title": "Self-Improving software factories: The new open source model \u2014 Zach Lloyd, Warp",
+    "views": 83000,
+    "days": 3,
+    "min": 21,
+    "theme": "Software factories"
+  },
+  {
+    "id": "9JFGohx4E7U",
+    "title": "GLM-5.2: Frontier Intelligence, Open Weights \u2014 Zixuan Li, Z.ai",
+    "views": 8600,
+    "days": 3,
+    "min": 14,
+    "theme": "Open models"
+  },
+  {
+    "id": "TRfzFJCJ7ZE",
+    "title": "Orchestras, Not Factories: How the Fastest Builders Work \u2014 Charlie Holtz, Conductor",
+    "views": 31000,
+    "days": 3,
+    "min": 18,
+    "theme": "Multi-agent orchestration"
+  },
+  {
+    "id": "6MudaeKdBSk",
+    "title": "Scale the Judgment, Not the Model \u2014 Andrew Orobator, Reddit",
+    "views": 7400,
+    "days": 3,
+    "min": 20,
+    "theme": "Evals / judgment"
+  },
+  {
+    "id": "HvboD89DyQ8",
+    "title": "No, That's Not a Software Factory \u2014 Ryan Cooke, WorkOS",
+    "views": 19000,
+    "days": 3,
+    "min": 19,
+    "theme": "Software factories (skeptic)"
+  },
+  {
+    "id": "vGCJ7diEtrw",
+    "title": "What It Actually Takes to Build a Software Factory \u2014 Tereza T\u00ed\u017ekov\u00e1, Factory",
+    "views": 75000,
+    "days": 3,
+    "min": 23,
+    "theme": "Software factories"
+  },
+  {
+    "id": "YIVkERhy8xo",
+    "title": "I Turned Coding Agents Into a Strategy Game \u2014 Ido Salomon, AgentCraft",
+    "views": 16000,
+    "days": 3,
+    "min": 15,
+    "theme": "Agent UX"
+  },
+  {
+    "id": "TN3mj92oZ8I",
+    "title": "Building Self-Improving Agent Software Factories \u2014 Suraj Gupta, Warp",
+    "views": 20000,
+    "days": 3,
+    "min": 13,
+    "theme": "Software factories"
+  },
+  {
+    "id": "oVsEddfhdxc",
+    "title": "We Let Claude Code and Codex Race Human Researchers \u2014 Elie Bakouch, Prime Intellect",
+    "views": 14000,
+    "days": 4,
+    "min": 20,
+    "theme": "Autoresearch"
+  },
+  {
+    "id": "OA-Mc60Rboo",
+    "title": "Beating RL With Reflection: GEPA and Optimize Anything \u2014 Lakshya A. Agrawal, GEPA",
+    "views": 16000,
+    "days": 4,
+    "min": 21,
+    "theme": "Prompt/opt optimization"
+  },
+  {
+    "id": "x4e5O9zN0TE",
+    "title": "Long-Horizon Agents Need Experiments, Not Just Prompts \u2014 Erina Karati",
+    "views": 9700,
+    "days": 4,
+    "min": 21,
+    "theme": "Agent evals"
+  },
+  {
+    "id": "XyV6bSMyq-I",
+    "title": "How We Built an Agent That Improves Itself \u2014 Zubin Aysola, Weights & Biases",
+    "views": 24000,
+    "days": 4,
+    "min": 17,
+    "theme": "Self-improving agents"
+  },
+  {
+    "id": "vrDvatGtIxs",
+    "title": "Autoresearch Made Our Models 3x Faster \u2014 Tejas Bhakta, Morph",
+    "views": 7400,
+    "days": 4,
+    "min": 8,
+    "theme": "Autoresearch"
+  },
+  {
+    "id": "hd7TOvmyAxU",
+    "title": "An AI Research Agent That Runs Your Experiments \u2014 Tim Sweeney, Weights & Biases",
+    "views": 7400,
+    "days": 4,
+    "min": 21,
+    "theme": "Research agents"
+  },
+  {
+    "id": "7taOQBfjDyE",
+    "title": "The Loop Is the Product \u2014 Roland Gavrilescu, Introspection",
+    "views": 11000,
+    "days": 4,
+    "min": 19,
+    "theme": "Product loops"
+  },
+  {
+    "id": "LlgiOCmFG_w",
+    "title": "Fixing the PR Bottleneck \u2014 Matt Pocock, AIHero",
+    "views": 67000,
+    "days": 5,
+    "min": 23,
+    "theme": "PR / skills / review"
+  },
+  {
+    "id": "2LRIAfng7eA",
+    "title": "Teaching LLMs to Speak Spotify \u2014 Yves Raimond & Jacqueline Wood, Spotify",
+    "views": 7200,
+    "days": 5,
+    "min": 20,
+    "theme": "Domain LLMs"
+  },
+  {
+    "id": "lIgdnF0s0kQ",
+    "title": "Why LLM Recommenders Will Be AI's Biggest Consumer App \u2014 Devansh Tandon, Meta",
+    "views": 8300,
+    "days": 5,
+    "min": 18,
+    "theme": "Recsys"
+  },
+  {
+    "id": "ACPEpji5NV4",
+    "title": "Distill the LLM, Don't Serve It \u2014 Raghav Saboo, DoorDash",
+    "views": 9200,
+    "days": 5,
+    "min": 22,
+    "theme": "Inference / distillation"
+  },
+  {
+    "id": "jgWY66RaSrQ",
+    "title": "I Gave an AI a Body \u2014 Cyrus Clarke, MIT Media Lab",
+    "views": 6100,
+    "days": 6,
+    "min": 21,
+    "theme": "Physical AI"
+  },
+  {
+    "id": "2wgPHvW0mG8",
+    "title": "One Operator, Many Drones \u2014 Suchet Bargoti, Skydio",
+    "views": 5800,
+    "days": 6,
+    "min": 21,
+    "theme": "Robotics"
+  },
+  {
+    "id": "Sjfz1TqxzEs",
+    "title": "Robot Demos Are Easy. Reliability Is Hard \u2014 Jason Ma, Dyna Robotics",
+    "views": 9200,
+    "days": 6,
+    "min": 27,
+    "theme": "Robotics"
+  },
+  {
+    "id": "I_VEh7XSwyc",
+    "title": "Physical AI's Next Bottleneck Is Finding the Right Video \u2014 Rafael Levi, Bright Data",
+    "views": 5300,
+    "days": 6,
+    "min": 17,
+    "theme": "Physical AI data"
+  },
+  {
+    "id": "4Gqg0HVe-AY",
+    "title": "World Models Need Causality, Not Pretty Pixels \u2014 Christopher Manning, Moonlake AI",
+    "views": 5600,
+    "days": 6,
+    "min": 52,
+    "theme": "World models"
+  }
+]

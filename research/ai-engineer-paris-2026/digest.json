@@ -1,0 +1,125 @@
+{
+  "event": "AI Engineer Paris 2026",
+  "venue": "STATION F, Paris",
+  "dates": [
+    "2026-09-23",
+    "2026-09-24"
+  ],
+  "channel": {
+    "handle": "@aiDotEngineer",
+    "id": "UCLKPca3kwwd-B59HNr-_lvA",
+    "subscribers": 651000
+  },
+  "streams": [
+    {
+      "id": "CGq9KRSb9Kc",
+      "title": "Day 1 Opening Keynotes (Mistral, Langfuse, Sizzy)",
+      "date": "2026-09-23",
+      "min": 74
+    },
+    {
+      "id": "g0vqT_wZtXA",
+      "title": "Day 2 Main Stage (DeepMind, ElevenLabs, HF, Stripe, Cognition\u2026)",
+      "date": "2026-09-24",
+      "min": 524
+    }
+  ],
+  "session_uploads_sampled": 30,
+  "theme_distribution": {
+    "Software factories": 3,
+    "Autoresearch": 2,
+    "Robotics": 2,
+    "Engineering metrics": 1,
+    "Leadership": 1,
+    "Code review": 1,
+    "Agent interoperability": 1,
+    "AI vs human code": 1,
+    "Coding agents": 1,
+    "Open models": 1,
+    "Multi-agent orchestration": 1,
+    "Evals": 1,
+    "Software factories (skeptic)": 1,
+    "Agent UX": 1,
+    "Prompt/opt optimization": 1,
+    "Agent evals": 1,
+    "Self-improving agents": 1,
+    "Research agents": 1,
+    "Product loops": 1,
+    "PR": 1,
+    "Domain LLMs": 1,
+    "Recsys": 1,
+    "Inference": 1,
+    "Physical AI": 1,
+    "Physical AI data": 1,
+    "World models": 1
+  },
+  "transcripts_ingested": [
+    "LlgiOCmFG_w",
+    "tUPPVhBBcoM",
+    "_mi3alkqy4s",
+    "vGCJ7diEtrw",
+    "TRfzFJCJ7ZE",
+    "Se8jHLliLXE"
+  ],
+  "insights": {
+    "LlgiOCmFG_w": {
+      "title": "Fixing the PR Bottleneck \u2014 Matt Pocock, AIHero",
+      "transcript_words": 4156,
+      "caption": "English (auto-generated)",
+      "hook": "All right. I'm here to talk about fixing the PR bottleneck and this is kind of a grand title for trying to fix the thing that most organizations struggle with, I think, and have kind of historically struggled with before AI, you know, we have always had huge numbers of PRs just laying around that no one's bothered to review and this is now increase\u2026"
+    },
+    "tUPPVhBBcoM": {
+      "title": "Self-Improving software factories \u2014 Zach Lloyd, Warp",
+      "transcript_words": 3636,
+      "caption": "English (auto-generated)",
+      "hook": "[music] Okay. Hello everyone. Uh, I'm excited to be here. Uh, my name is Zach Lloyd. Um, today I'm going to be talking about self-improving software factories, the new open-source model, and basically what I think is happening to development. A little bit about me just to begin. So I am a former uh principal engineer from Google. Used to lead engin\u2026"
+    },
+    "_mi3alkqy4s": {
+      "title": "The Death of the Code Review \u2014 Laurie Voss, Arize AI",
+      "transcript_words": 4412,
+      "caption": "English (auto-generated)",
+      "hook": "[music] Hello everybody. Thank you for following on a session about the death of the code review with a session about the death of the code review. Uh who knows howululing decisions get made, but uh Swix decided it would be funny for those two to be backtoback. Uh, hi. Uh, I'm Lori. I'm head of developer relations at Arise AI. Uh, some of you may r\u2026"
+    },
+    "vGCJ7diEtrw": {
+      "title": "What It Actually Takes to Build a Software Factory \u2014 Tereza T\u00ed\u017ekov\u00e1, Factory",
+      "transcript_words": 3710,
+      "caption": "English (auto-generated)",
+      "hook": "[music] Uh hi everyone. Hey what's up? I'm Teresa. Uh and today I will be talking about software factory. uh everyone is talking about software factory but only few people are actually building one and even fewer people know what it actually takes to build one and how to define it. So I will be talking about what is a software factory, should I bui\u2026"
+    },
+    "TRfzFJCJ7ZE": {
+      "title": "Orchestras, Not Factories \u2014 Charlie Holtz, Conductor",
+      "transcript_words": 3083,
+      "caption": "English (auto-generated)",
+      "hook": "[music] >> Hello. I was at a wedding this weekend and it was in New York and there were a bunch of trendy people there and uh I I told I was talking to someone who I'd never met before and uh I told him I was prepping for this presentation and he was like, \"Oh, that's cool. Like, what what's the conference about?\" And I said it was about AI enginee\u2026"
+    },
+    "Se8jHLliLXE": {
+      "title": "State of AI in Software Development \u2014 Justin Reock, DX",
+      "transcript_words": 3787,
+      "caption": "English (auto-generated)",
+      "hook": "Uh I'm Justin Rio. I'm the deputy CTO at DX. I get to do a lot of our research around uh developer experience and its relation to developer productivity. And certainly over the last year, a lot of that research has focused on AI's impact on the developer experience and basic aspects of productivity uh within an organization. Uh so we produce these \u2026"
+    }
+  },
+  "dominant_narratives": [
+    "Software factories vs orchestras \u2014 competing metaphors for multi-agent SDLC",
+    "PR/review bottleneck \u2014 skills, deep modules, risk-tiered human review",
+    "Autoresearch & self-improving loops \u2014 W&B, Morph, Prime Intellect, GEPA",
+    "Physical AI & world models \u2014 robotics reliability, causal world models",
+    "Production AI economics \u2014 distillation, judgment scaling, DX survey data"
+  ],
+  "audience_signals_sample": {
+    "video": "LlgiOCmFG_w",
+    "comments_sampled": 26,
+    "themes": [
+      "production quality (audio)",
+      "skills vs prompt engineering debate",
+      "deep modules / test interfaces",
+      "token cost concerns",
+      "retro-driven standards"
+    ]
+  },
+  "next_ingest_priority": [
+    "XyV6bSMyq-I",
+    "TN3mj92oZ8I",
+    "HvboD89DyQ8"
+  ]
+}

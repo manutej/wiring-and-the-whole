@@ -1,0 +1,56 @@
+{
+  "LlgiOCmFG_w": {
+    "title": "Fixing the PR Bottleneck \u2014 Matt Pocock, AIHero",
+    "segment_count": 663,
+    "word_count": 4156,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "All right. I'm here to talk about fixing the PR bottleneck and this is kind of a grand title for trying to fix the thing that most organizations struggle with, I think, and have kind of historically struggled with before AI, you know, we have always had huge numbers of PRs just laying around that no one's bothered to review and this is now increased massively because of the new strains on us because of AI imposing all these weird constraints. And to do this, I'm going to use the rubric of my skills, which is kind of heard about, maybe you've used them. And I have a couple of new skills to announce that are going to hopefully improve the way that you do PRs, improve the way that's or improve the speed at which you can review them and do them. Speed. Now, we've been pushed to do more with le",
+    "quotes": []
+  },
+  "tUPPVhBBcoM": {
+    "title": "Self-Improving software factories \u2014 Zach Lloyd, Warp",
+    "segment_count": 528,
+    "word_count": 3636,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "[music] Okay. Hello everyone. Uh, I'm excited to be here. Uh, my name is Zach Lloyd. Um, today I'm going to be talking about self-improving software factories, the new open-source model, and basically what I think is happening to development. A little bit about me just to begin. So I am a former uh principal engineer from Google. Used to lead engineering on the Google Doc Suite. I've been an engineer now for over 20 years. Long time. I am still uh shipping frequently, but I haven't written a line of code in the last six months. Uh and I'm the founder of a company called Warp. Uh Warp, if you're not familiar, is a open-source agentic development environment. Uh you may know us as a terminal. That is how the company started. We're basically a terminal that has agents built in. Uh we open sou",
+    "quotes": []
+  },
+  "_mi3alkqy4s": {
+    "title": "The Death of the Code Review \u2014 Laurie Voss, Arize AI",
+    "segment_count": 632,
+    "word_count": 4412,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "[music] Hello everybody. Thank you for following on a session about the death of the code review with a session about the death of the code review. Uh who knows howululing decisions get made, but uh Swix decided it would be funny for those two to be backtoback. Uh, hi. Uh, I'm Lori. I'm head of developer relations at Arise AI. Uh, some of you may remember me from when I used to co-found npm, Inc. These days, I think about AI and how to test it. Uh, I'm here to talk about a problem that everyone is seeing right now. The rise of AI agents has dramatically increased how fast developers can produce code. Uh, but the speed at which humans can review code. Uh, yeah, I am having a talk right now. Thank you, notion. very good reminder. Uh the team the speed at which humans can review code has stay",
+    "quotes": []
+  },
+  "vGCJ7diEtrw": {
+    "title": "What It Actually Takes to Build a Software Factory \u2014 Tereza T\u00ed\u017ekov\u00e1, Factory",
+    "segment_count": 535,
+    "word_count": 3710,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "[music] Uh hi everyone. Hey what's up? I'm Teresa. Uh and today I will be talking about software factory. uh everyone is talking about software factory but only few people are actually building one and even fewer people know what it actually takes to build one and how to define it. So I will be talking about what is a software factory, should I build your own or outsource it, what works in production already, what are the main challenges and how much is this all going to cost? Uh my name is Theresa. I work at a company called factory.com and we've been building uh this concept of the software factory for quite a long time but finally uh the technology is catching up and it's possible to build this in production for enterprises like EY or Adobe uh I would define the software factory as the ",
+    "quotes": []
+  },
+  "TRfzFJCJ7ZE": {
+    "title": "Orchestras, Not Factories \u2014 Charlie Holtz, Conductor",
+    "segment_count": 461,
+    "word_count": 3083,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "[music] >> Hello. I was at a wedding this weekend and it was in New York and there were a bunch of trendy people there and uh I I told I was talking to someone who I'd never met before and uh I told him I was prepping for this presentation and he was like, \"Oh, that's cool. Like, what what's the conference about?\" And I said it was about AI engineering. And I could just see his eyes glaze over and he started like looking behind me to find the next person to talk to. And I'm it's like so cool to actually be in a room full of people who actually want to hear about this stuff. So, I I I I'm very excited to be here. Um I am the co-founder of Conductor. Um has anyone here used Conductor? Okay, nice. Nice. Okay, cool. So, uh uh for those who don't know, uh Conductor is a desktop app for managing",
+    "quotes": []
+  },
+  "Se8jHLliLXE": {
+    "title": "State of AI in Software Development \u2014 Justin Reock, DX",
+    "segment_count": 557,
+    "word_count": 3787,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "Uh I'm Justin Rio. I'm the deputy CTO at DX. I get to do a lot of our research around uh developer experience and its relation to developer productivity. And certainly over the last year, a lot of that research has focused on AI's impact on the developer experience and basic aspects of productivity uh within an organization. Uh so we produce these quarterly reports, our our state of AI and AI impact reports which looks at really a lot of raw data that we're able to get from our platform. Our platform is a researchback platform uh built from the same folks who worked on Dora metrics and the space framework and the DevX framework. Uh and really at the end of the day it's a data gathering platform that can look at a lot of different trends across an organization with you know how are we focus",
+    "quotes": []
+  }
+}
