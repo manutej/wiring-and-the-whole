@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin external-slice-check fetch-slice-dry-run pulse-gate wiringmap-check wiringmap-stress
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin external-slice-check fetch-slice-dry-run pack-v0-check pulse-gate wiringmap-check wiringmap-stress
 
 verify:
 	@./scripts/verify.sh
@@ -28,6 +28,10 @@ wiringmap-check:
 	@python3 -m pip install -q jsonschema
 	@python3 scripts/validate_wiringmap.py
 	@python3 scripts/extract_toybank_refs.py
+
+pack-v0-check:
+	@python3 scripts/build_l2_pack.py wiringmap/examples/toybank-accounts.v0.json
+	@python3 scripts/reexpand_gate.py wiringmap/examples/toybank-accounts.v0.pack
 
 witness:
 	@python3 witness/run_witness.py
