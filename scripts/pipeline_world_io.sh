@@ -55,6 +55,14 @@ python3 "${ROOT}/scripts/extract_refs.py" \
   --example "${FIN}" \
   > "${WORK}/fineract_extract.json" 2>/dev/null || fail "fineract extract failed"
 
+python3 "${ROOT}/scripts/grade_l1_questions.py" \
+  --answer-mode io \
+  --questions "${ROOT}/docs/dogfood/L1-FINERACT-THIN-QUESTIONS.json" \
+  > "${WORK}/fineract_grade.out" 2>&1 || fail "fineract L1 I/O grade failed"
+
+bash "${ROOT}/scripts/fetch_slice_io_check.sh" \
+  > "${WORK}/fetch_io.out" 2>&1 || fail "fetch slice I/O check failed"
+
 # --- Report (machine-readable contract for downstream CI) ---
 python3 - <<PY
 import json

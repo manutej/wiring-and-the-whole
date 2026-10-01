@@ -6,6 +6,8 @@ Single page for agents resuming on **`main`**. Detail lives in linked files; do 
 
 Map production codebases as a **module of systems** (T1), find symmetries/invariants (T2), beat naive token dumps at matched fidelity (T3). Paper: Libkind & Myers arXiv:2505.18329v2. Claims ladder in `plans/ADVERSARIAL.md` — **demonstrated ≠ proved**.
 
+**Scale intent:** green CI is necessary, not sufficient — see [`docs/SCALE-PATH.md`](SCALE-PATH.md) (toy → Fineract wedge → CR@F95).
+
 ## On main today
 
 | Area | Status |
@@ -49,14 +51,13 @@ make pulse-gate
 - **B** — **`symmetry-lens`** minted; dogfood D3 orbit / toybank boundary next.
 - **C** — `scripts/build_l2_pack.py` + **`make pack-v0-check`** (reexpand + canonical LEGEND).
 
-## Next jumps
+## Next jumps (scale)
 
-1. Real upstream sparse-checkout / archive in fetch script (replace local corpus stub).
-2. symmetry-lens dogfood report on D3 + fineract thin wiringmap.
-3. Pack v0 on fineract handler family; keep LEGEND parity with E5 rules.
+See [`SCALE-PATH.md`](SCALE-PATH.md): CommandHandler pack @ N=30 → sparse fetch pin → CR@F95 harness stub.
 
 ## Pointers
 
 - Resume: `HANDOFF.md` · Build order: `docs/roadmap/BUILD-OUT-RESEARCH.md`
 - Witness: `docs/witness/index.html` · L1 skill: `skills/interface-first-context/SKILL.md`
 - Fixtures: `fixtures/density/README.md`, `fixtures/external/README.md`
+- Scale: `docs/SCALE-PATH.md`

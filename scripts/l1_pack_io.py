@@ -50,14 +50,59 @@ def parallel_witness_path(pack_text: str) -> str:
     return match.group(1)
 
 
+def parallel_experiments_path(pack_text: str) -> str:
+    body = section(pack_text, "Parallel / upstream boundary")
+    if not body:
+        body = section(pack_text, "Parallel product boundary")
+    match = re.search(r"`(experiments/[^`]+/)`", body)
+    if not match:
+        raise ValueError("no parallel experiments path in pack")
+    return match.group(1)
+
+
+def disburse_action_from_pack(pack_text: str) -> str:
+    block = section(pack_text, "Per-unit cards")
+    match = re.search(
+        r"DisburseLoanCommandHandler[\s\S]*?@CommandType\([^)]*action\s*=\s*\"([^\"]+)\"",
+        block,
+    )
+    if not match:
+        raise ValueError("DisburseLoan @CommandType action not found in pack")
+    return match.group(1)
+
+
+def context_only_handler_count(pack_text: str) -> str:
+    catalog = section(pack_text, "Interface catalog")
+    match = re.search(r"\*\*Context-only[^:]*:\*\*\s*(.+)$", catalog, re.MULTILINE)
+    if not match:
+        raise ValueError("context-only handler list not found")
+    tail = match.group(1)
+    count = len(re.findall(r"\b\w+CommandHandler\b", tail))
+    if count == 0:
+        raise ValueError("no CommandHandler names in context-only line")
+    return str(count)
+
+
 def answer_from_pack_io(pack_path: Path, pack_text: str, question_text: str) -> str:
     q = question_text.lower()
+    name = pack_path.name.lower()
+
     if "interface catalog" in q and "unit_id" in q:
         return catalog_unit_count(pack_text)
     if "wiring edges" in q and "flat" in q:
         return flat_wiring_edge_count(pack_text)
     if "skill" in q and "under test" in q:
         return skill_directory_from_pack(pack_text)
+
+    if "fineract" in name or "handlers-thin" in name:
+        if "parallel" in q and "experiments" in q:
+            return parallel_experiments_path(pack_text)
+        if "disburseloan" in q and "action" in q:
+            return disburse_action_from_pack(pack_text)
+        if "context-only" in q:
+            return context_only_handler_count(pack_text)
+
     if "parallel" in q and ("accounts" in q or "‖" in question_text):
         return parallel_witness_path(pack_text)
+
     raise ValueError(f"no I/O parser for question: {question_text!r}")
