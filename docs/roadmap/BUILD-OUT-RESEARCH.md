@@ -113,7 +113,7 @@
 | | |
 |--|--|
 | **Status** | **Shipped** — `make verify` / [`scripts/verify.sh`](../../scripts/verify.sh); see [`experiments/README.md`](../../experiments/README.md). |
-| **Dependencies** | Existing `e2-tokens/`, `e3-ablation/` scripts; `experiments/package.json` (Node tiktoken). |
+| **Dependencies** | Existing `e2-tokens/`, `e3-ablation/` scripts; `experiments/package.json` (Node tiktoken). E5-depth scripts remain separate until folded into verify. |
 | **MVP scope** | Witness `all_pass`; E2 vs frozen `E2-RESULTS.json`; E3 grade vs frozen `E3-GRADES.json` (no API). |
 | **Proof-case hook** | Fail if witness checks or E2/E3 frozen metrics drift without an intentional commit. |
 | **Risks** | **GA8** — runner does not substitute frozen question sets + firewall for live minting. |
