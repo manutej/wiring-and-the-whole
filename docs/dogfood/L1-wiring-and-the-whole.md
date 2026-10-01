@@ -25,6 +25,7 @@
 | `e2-packs` | `experiments/e2-tokens/` | token packs + `E2-RESULTS.json` | 4 |
 | `e3-grades` | `experiments/e3-ablation/` | A/B/C ablation + grades | 3 |
 | `e5-depth` | `experiments/e5-depth/` | depth ablation + E5.1 rerun | 3 |
+| `verify` | `Makefile` + `scripts/verify.sh` | E1+E2+E3 frozen gates (PR #7) | 1 |
 
 ---
 
@@ -81,6 +82,7 @@
 - `readme` → `e2-packs#E2-RESULTS.json` (ref)
 - `readme` → `e3-grades#E3-RESULTS` (ref)
 - `readme` → `e5-depth#E5-RESULTS` (ref)
+- `readme` → `verify#make-target` (ref: `make verify`)
 - `handoff` → `consensus#R1-R8` (ref)
 - `handoff` → `adversarial#GA1-GA10` (ref)
 - `options` → `synthesis#crosswalk` (ref)
@@ -125,6 +127,8 @@
 
 **Useful:** Yes — an agent can route `HANDOFF → ADVERSARIAL → witness/ → experiments/` without opening Fineract or node_modules.
 
-**Gap:** Until `make verify` lands on `main` (in progress on `cursor/repro-runner-cd12-ed6e`), the pack cannot wire `readme` → `verify#make-target` as a checked port.
+**Gap:** `verify` port exists on branch `cursor/repro-runner-cd12-ed6e` (draft PR #7); merge to `main` before treating dogfood grades as CI-backed.
 
-**Next stable jump:** Merge PR #6 (skill) + repro-runner PR; re-run this template with `scripts/verify.sh` as a named port and 5 mechanically gradable questions (e.g. break-even n* for S3, E3 B−A sign, witness check count).
+**Gradable set:** [`L1-QUESTIONS.json`](L1-QUESTIONS.json) — five frozen questions against this pack + README/HANDOFF.
+
+**Next stable jump:** Merge #6 (skill) + #7 (verify) + this dogfood PR; run questions against pack-only context (no repo browse) as adversarial mini-eval.
