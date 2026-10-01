@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin external-slice-check pulse-gate wiringmap-check wiringmap-stress
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin external-slice-check fetch-slice-dry-run pulse-gate wiringmap-check wiringmap-stress
 
 verify:
 	@./scripts/verify.sh
@@ -17,6 +17,9 @@ dogfood-grade-fineract-thin:
 
 external-slice-check:
 	@bash scripts/fineract_slice_check.sh
+
+fetch-slice-dry-run:
+	@bash scripts/fetch_fineract_slice.sh
 
 wiringmap-stress:
 	@bash scripts/wiringmap_stress.sh
