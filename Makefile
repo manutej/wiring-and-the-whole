@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+.PHONY: verify witness e2 dogfood-grade pulse-gate
+=======
 .PHONY: verify witness e2 dogfood-grade wiringmap-check
+>>>>>>> origin/main
 
 verify:
 	@./scripts/verify.sh
+
+pulse-gate:
+	@./scripts/pulse_gate.sh
 
 dogfood-grade:
 	@python3 scripts/grade_l1_questions.py

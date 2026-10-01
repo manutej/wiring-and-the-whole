@@ -81,6 +81,7 @@ phase → adversarial phase (written meta-prompt) → solutions phase that COMMI
 discipline: page-tagged, register-tagged, or labeled CONJECTURE/DESIGN. Consistency ≠
 correctness; demonstrated ≠ proved; models ≠ measurements. Treat every "strengthened" check as
 unverified until an independent reader re-derives it (this caught two real bugs).
+- User trigger **pulse** → see [`docs/PULSE.md`](docs/PULSE.md) (implement → adversarial panel → merge gate → interface tests → firewalled evaluator).
 
 ## 6. Next actions
 
