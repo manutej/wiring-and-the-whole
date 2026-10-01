@@ -71,8 +71,24 @@ check "fetch slice dry-run leaves fixtures untouched" \
 # --- L1 dogfood: grader matches frozen answers (navigation contract) ---
 check "dogfood meta L1" \
   python3 scripts/grade_l1_questions.py
-check "dogfood toybank L1" \
+check "dogfood toybank L1 (heuristic mode)" \
   python3 scripts/grade_l1_questions.py --questions docs/dogfood/L1-TOYBANK-QUESTIONS.json
+
+check "dogfood toybank L1 (pack I/O parse mode)" \
+  python3 scripts/grade_l1_questions.py --answer-mode io \
+    --questions docs/dogfood/L1-TOYBANK-QUESTIONS.json
+
+check "world I/O pipeline (extract→validate→pack→reexpand→grade)" \
+  bash scripts/pipeline_world_io.sh
+
+TMP_PACK_MD="$(mktemp)"
+cp docs/dogfood/L1-toybank-accounts.md "${TMP_PACK_MD}"
+# Drop one catalog row — I/O parser must yield wrong count vs frozen questions
+sed -i '/accounts.Money.*Money.java/d' "${TMP_PACK_MD}"
+check "pack I/O grade fails when catalog row removed" \
+  expect_exit 1 python3 scripts/grade_l1_questions.py --answer-mode io \
+    --pack "${TMP_PACK_MD}" --questions docs/dogfood/L1-TOYBANK-QUESTIONS.json
+rm -f "${TMP_PACK_MD}"
 check "dogfood fineract-thin L1" \
   python3 scripts/grade_l1_questions.py --questions docs/dogfood/L1-FINERACT-THIN-QUESTIONS.json
 

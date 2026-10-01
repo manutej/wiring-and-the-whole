@@ -9,6 +9,8 @@ import re
 import sys
 from pathlib import Path
 
+from l1_pack_io import answer_from_pack_io
+
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_QUESTIONS = REPO / "docs" / "dogfood" / "L1-QUESTIONS.json"
 DEFAULT_PACK = REPO / "docs" / "dogfood" / "L1-wiring-and-the-whole.md"
@@ -89,6 +91,12 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Markdown pack to grade against (default: path from question spec)",
     )
+    parser.add_argument(
+        "--answer-mode",
+        choices=("heuristic", "io"),
+        default="heuristic",
+        help="heuristic: question-key shortcuts; io: parse answers from pack markdown only",
+    )
     return parser
 
 
@@ -111,7 +119,10 @@ def main(argv: list[str] | None = None) -> int:
         qid = item["id"]
         expected = normalize(str(item["expected"]))
         try:
-            got = normalize(answer_from_pack(pack_path, pack_text, item["text"]))
+            if args.answer_mode == "io":
+                got = normalize(answer_from_pack_io(pack_path, pack_text, item["text"]))
+            else:
+                got = normalize(answer_from_pack(pack_path, pack_text, item["text"]))
         except ValueError as exc:
             failures.append(f"{qid}: {exc}")
             continue

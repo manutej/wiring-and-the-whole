@@ -33,6 +33,7 @@ make dogfood-grade-fineract-thin
 make fetch-slice-dry-run        # fineract thin slice stub; temp staging only
 make pack-v0-check              # L2 pack + reexpand + canonical LEGEND gate
 make pulse-eval                 # functional negative/positive interface eval
+make pipeline-io                # E2E: files → subprocess tools → JSON report
 make pulse-gate
 ```
 
