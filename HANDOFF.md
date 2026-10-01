@@ -57,8 +57,8 @@ paper → reusable instruments + real systems.
 - **Claims discipline:** the PATH-FORWARD ladder is binding. Never claim: Noether's theorem
   applies; canonical minimal presentations from freeness; rex-ness of Code-C in general;
   "beats Headroom" (market comp, not benchmark arm).
-- **Minting debt:** systems-intake, interface-first-context, symmetry-lens (renamed from
-  noether-lens per GA10) still unminted.
+- **Minting debt:** systems-intake, symmetry-lens (renamed from noether-lens per GA10) still
+  unminted; **interface-first-context** minted at [`skills/interface-first-context/SKILL.md`](skills/interface-first-context/SKILL.md).
 
 ## 4. Folder map
 ```
@@ -85,7 +85,9 @@ unverified until an independent reader re-derives it (this caught two real bugs)
 1. DONE 2026-09-16: E2 WIN, E3 pilot B-PASSES → claims ladder rungs unlocked:
    'L2 token arithmetic live at micro-scale' + 'no comprehension tax at pilot scale'.
    Next: full-protocol E3 (50+10 q, mixed sites, firewalled minting, pinned models).
-2. Mint the three free instruments as SKILL.md files + one dogfood run each.
+2. Mint the three free instruments as SKILL.md files + one dogfood run each — **partial (1/3):**
+   `interface-first-context` shipped (toybank Accounts dogfood in SKILL); `systems-intake`,
+   `symmetry-lens` remain.
 3. Upgrade witness C₀ → full Code_X (exhaustive-within-bound universal check) → attempt
    MUST-PROVE 1–2.
 4. Fineract wedge (orbit statistics discharge U1) with E4 migration chain folded in.

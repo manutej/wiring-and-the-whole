@@ -102,6 +102,7 @@
 
 | | |
 |--|--|
+| **Status** | **`interface-first-context` shipped** → [`skills/interface-first-context/SKILL.md`](../../skills/interface-first-context/SKILL.md). Remaining: `systems-intake`, `symmetry-lens`. |
 | **Dependencies** | `OPTIONS.md`, `SYNTHESIS.md`, `CONSENSUS.md`; no code required. |
 | **MVP scope** | One `SKILL.md` each: trigger phrases, 5–7 moves, quality checklist, failure modes, one dogfood example (Fineract handler or toybank). |
 | **Proof-case hook** | E1 toybank for symmetry-lens orbit demo; E3 packs for interface-first-context. |
@@ -156,7 +157,7 @@
 ## Immediate next commit targets (engineering)
 
 1. Add `experiments/README.md` with run order and expected artifacts (optional follow-up).
-2. Mint first SKILL: `interface-first-context` — lowest dependency, highest daily use.
+2. ~~Mint first SKILL: `interface-first-context`~~ **Done** — see [`skills/interface-first-context/SKILL.md`](../../skills/interface-first-context/SKILL.md).
 3. Define `wiringmap/schema.v0.json` stub when starting WiringMap v0 (empty example + one Fineract edge).
 
 ---
