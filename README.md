@@ -86,7 +86,7 @@ Original session: 2026-07-24 → 07-30. Workspace reclaimed. Corpus rebuilt 2026
 1. [`HANDOFF.md`](HANDOFF.md) — mission, current state of truth, next actions.
 2. [`synthesis/SYNTHESIS.md`](synthesis/SYNTHESIS.md) — the one-paragraph thesis and the paper→code crosswalk.
 3. [`plans/CONSENSUS.md`](plans/CONSENSUS.md) then [`plans/ADVERSARIAL.md`](plans/ADVERSARIAL.md) — what the program is *allowed* to claim.
-4. [`witness/WITNESS.json`](witness/WITNESS.json) — the 13 checks.
+4. [`docs/witness/index.html`](docs/witness/index.html) · [`WITNESS-HOW-IT-WORKS.md`](docs/witness/WITNESS-HOW-IT-WORKS.md) — E1 witness (ASCII diagrams, 13 checks; artifact: [`witness/WITNESS.json`](witness/WITNESS.json)).
 5. [`experiments/e2-tokens/E2-RESULTS.md`](experiments/e2-tokens/E2-RESULTS.md) → [`e3-ablation/E3-RESULTS.md`](experiments/e3-ablation/E3-RESULTS.md) → [`e5-depth/E5-RESULTS.md`](experiments/e5-depth/E5-RESULTS.md).
 
 Method note from the handoff, still binding: every generative phase has an adversarial phase; consistency ≠ correctness; demonstrated ≠ proved; models ≠ measurements. Treat every "strengthened" check as unverified until an independent reader re-derives it. That rule caught two real bugs in E1 and the E5 harness artifacts.
