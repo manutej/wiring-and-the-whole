@@ -77,22 +77,21 @@
 6. **C₀ → Code_X witness upgrade** — split extract/pushout; exhaustive universal check within bound; MUST-PROVE 1–2 hook.
 7. **Full E3 + Fineract wedge + E4 migration milestone** — after map + pack exist.
 
-```mermaid
-flowchart LR
-  W["E1 witness\n13/13 C₀"]
-  SK["SKILL minting\n(3 free)"]
-  RUN["Repro runner\nE2/E3/E5"]
-  PB["Pack builder v0\nL2 factored"]
-  WM["WiringMap v0\nT1 spine"]
-  E3["Full E3 +\nwedge + E4"]
-
-  W --> SK
-  W --> RUN
-  SK --> PB
-  WM --> PB
-  PB --> E3
-  RUN --> E3
-  W -->|"Code_X upgrade"| WM
+```
+  E1 witness (13/13 C₀)
+        │
+        ├──────────────────────┬─────────────────────────┐
+        v                      v                         v
+  SKILL minting (3 free)   Repro runner            Code_X upgrade
+        │                  E2 / E3 / E5                   │
+        v                      │                         v
+  Pack builder v0 (L2)         │                   WiringMap v0 (T1)
+        ^                      │                         │
+        └──── WiringMap v0 ────┘                         │
+        │                                                │
+        └──────────────────┬───────────────────────────┘
+                           v
+                  Full E3 + Fineract wedge + E4
 ```
 
 ---

@@ -28,36 +28,25 @@ The tuple is recorded verbatim at the top of `WITNESS.json` under `code_c`.
 
 ## Overall witness pipeline
 
-```mermaid
-flowchart LR
-  subgraph inputs
-    PROTO["PROTOCOL-E1.md\n(steps 2–10)"]
-    FOUND["FOUNDATION.md\n(Code_X — lost;\nC₀ default)"]
-  end
+```
+  INPUTS                          RUN: witness/run_witness.py
+  ───────                         ────────────────────────────
 
-  subgraph run["witness/run_witness.py"]
-    GEN["Step 2: generate toybank\n(16 FILES dict)"]
-    EXT["Step 3: extract()\nobj + ports + refs"]
-    PO["Step 4–5: pushout + κ\n+ universal_check"]
-    SM["Step 6: system map\nLoanService → V2"]
-    AUTO["Step 7: glue chains\nσ swap + φ iso"]
-    INV["Step 8/8a: invariant B\nreachability"]
-    COL["Step 9: Money collision"]
-    P10["Step 10: assoc, unit,\nEx 4.25"]
-    EMIT["Write WITNESS.json"]
-  end
-
-  subgraph outputs
-    TB["witness/toybank/**\n16 .java files"]
-    WJ["witness/WITNESS.json\nchecks + witnesses"]
-  end
-
-  PROTO --> GEN
-  FOUND -.-> EXT
-  GEN --> TB
-  GEN --> EXT
-  EXT --> PO --> SM --> AUTO --> INV --> COL --> P10 --> EMIT
-  EMIT --> WJ
+  ┌─────────────────────┐         ┌ Step 2: generate toybank (FILES dict)
+  │ PROTOCOL-E1.md      │────────>│        └─> witness/toybank/*.java (16)
+  │ (steps 2–10)        │         │
+  └─────────────────────┘         ├ Step 3: extract() → obj, ports, refs
+                                  │
+  ┌─────────────────────┐         ├ Step 4–5: pushout + κ + universal_check
+  │ Code_X (FOUNDATION  │ - - - > ├ Step 6: system map LoanService → V2
+  │  lost; C₀ default)  │         ├ Step 7: glue chains, σ swap, φ iso
+  └─────────────────────┘         ├ Step 8/8a: invariant B (reachability)
+                                  ├ Step 9: Money collision (κ must fire)
+                                  ├ Step 10: assoc, monoidal unit, Ex 4.25
+                                  └ Step emit: witness/WITNESS.json
+                                              │
+                                              v
+                                    OUTPUT: checks{13} + witness blobs
 ```
 
 **Data kinds flowing through extraction (step 3):**
@@ -72,47 +61,22 @@ Implementation lives in `extract()` and the inline `FILES` / `vertical()` templa
 
 ## Toybank module graph and file roles
 
-```mermaid
-flowchart TB
-  subgraph shared["shared/ (4)"]
-    PageDto
-    AuditDto
-    EventTopics
-    AppConfig
-  end
+```
+  shared/ (4)          accounts/ — orbit A          savings/ — exact rename of accounts
+  ───────────          ───────────────────          ─────────────────────────────────
+  PageDto              AccountsController ──>       SavingsController ──>
+  AuditDto               AccountsService ──>           SavingsService ──>
+  EventTopics            AccountsRepository            SavingsRepository
+  AppConfig              Money (long amountCents)
 
-  subgraph accounts["accounts/ (4) — planted orbit A"]
-    AC[AccountsController]
-    AS[AccountsService]
-    AR[AccountsRepository]
-    AM[Money.java\nlong amountCents]
-  end
+  loans/ — near-orbit (+refinance)              report/
+  ────────────────────────────────              ───────
+  LoansController ──> LoansService ──>          ReportModule ──refs──> accounts.Money
+    LoansRepository                               └────────refs──> loans.Money
+    Money (double amount)
 
-  subgraph savings["savings/ (4) — exact rename of accounts"]
-    SC[SavingsController]
-    SS[SavingsService]
-    SR[SavingsRepository]
-  end
-
-  subgraph loans["loans/ (4) — near-orbit +1 method"]
-    LC[LoansController]
-    LS[LoansService\n+ refinance]
-    LR[LoansRepository]
-    LM[Money.java\ndouble amount]
-  end
-
-  subgraph report["report/ (1)"]
-    RM[ReportModule\nrefs both Moneys]
-  end
-
-  AC --> AS --> AR
-  SC --> SS --> SR
-  LC --> LS --> LR
-  AC -.-> AuditDto & PageDto
-  SC -.-> AuditDto & PageDto
-  LC -.-> EventTopics & PageDto
-  RM --> AM
-  RM --> LM
+  Legend:  ──>  vertical MVC ref edges (// refs: in source)
+            - -  uses shared DTOs / topics
 ```
 
 | Path | Role in witness |
@@ -129,24 +93,34 @@ Files on disk under `witness/toybank/` are regenerated on every run (determinist
 
 ## Pushout and κ (steps 4–5, 9)
 
-```mermaid
-sequenceDiagram
-  participant J as Junction J
-  participant X as Left X (tag L)
-  participant Y as Right Y (tag R)
-  participant UF as Union-Find
-  participant Z as Pushout object Z
-  participant K as κ lint
-
-  Note over J,Y: f: J→X, g: J→Y on port symbols
-  X->>UF: tag (L, symbol)
-  Y->>UF: tag (R, symbol)
-  J->>UF: union (L,f(j)) with (R,g(j))
-  UF->>Z: one rep per class → Z[name]
-  Z->>K: if class has >1 distinct signature → record collision
-  Z-->>X: ix: X→Z
-  Z-->>Y: iy: Y→Z
-  Note over Z: comm: ix∘f = iy∘g (boolean)
+```
+  Junction J          Left X (tag L)         Right Y (tag R)
+  port symbols        full symbol table      full symbol table
+       │                     │                       │
+       │    f: J→X           │                       │    g: J→Y
+       └──────────┬──────────┴───────────┬───────────┘
+                  │                      │
+                  v                      v
+            tag (L,·) on X         tag (R,·) on Y
+                  │                      │
+                  └──────────┬───────────┘
+                             v
+                    Union-Find: for each j∈J,
+                    union (L,f(j)) with (R,g(j))
+                             │
+                             v
+                    Pushout object Z
+                    one representative name per UF class
+                             │
+              ┌──────────────┼──────────────┐
+              v              v              v
+         ix: X→Z        iy: Y→Z         κ lint
+         embed left     embed right      if one class holds
+                                         >1 distinct signature
+                                         → collision recorded
+              └──────────────┬──────────────┘
+                             v
+                    check: ix∘f = iy∘g  (commutes)
 ```
 
 **Step 5 (the real pushout):** glue `loans/LoansService.java` with `loans/LoansRepository.java` along repository **ports**. Both bodies define private `log`; qualified names `loans.LoansService#log` and `loans.LoansRepository#log` must **not** merge. Success: `step5_fresh_names_inside_C` requires two distinct `#log` entries in `Z5`.
@@ -159,20 +133,20 @@ Core code: `pushout()`, `UF`, and step 5/9 call sites in `witness/run_witness.py
 
 ## System map square (step 6)
 
-```mermaid
-flowchart LR
-  subgraph before
-    Svc["LoanService X\nports P fixed"]
-  end
-  subgraph after
-    V2["LoanServiceV2 X'\n#log → #writeAudit"]
-  end
-  P["Port marking i: P → X"]
-  P2["Port marking i': P → X'"]
+```
+        Port marking i              Port marking i'
+        P ──────────> X             P ──────────> X'
+        (exported keys)             (same keys)
 
-  Svc -->|"system map r"| V2
-  P -->|"same port keys"| P2
-  Note1["Def 4.22 square:\nr ∘ i = i' on ports"]
+              │  system map r
+              │  (rename internal #log → #writeAudit;
+              │   public ports unchanged)
+              v
+
+        Def 4.22 square condition:
+        r ∘ i  and  i'  agree on every exported port key/signature
+
+        Checks: step6_system_map_square, step6_ports_preserved
 ```
 
 Checks: `step6_system_map_square` (morphism + ports align) and `step6_ports_preserved` (exported port keys unchanged under `rmap`).
@@ -181,25 +155,28 @@ Checks: `step6_system_map_square` (morphism + ports align) and `step6_ports_pres
 
 ## Wiring automorphism → composite iso (step 7)
 
-```mermaid
-flowchart TB
-  subgraph glueA["glue_chain(accounts vertical)"]
-    GA["Composite symbol table A"]
-  end
-  subgraph glueS["glue_chain(savings vertical)"]
-    GS["Composite symbol table Sv"]
-  end
+```
+  glue_chain(accounts)              glue_chain(savings)
+         │                                  │
+         v                                  v
+    composite A                         composite Sv
+         │                                  │
+         │         φ : A ──rename──> Sv     │   (Accounts ↔ Savings)
+         │                                  │
+         └────────────┬─────────────────────┘
+                      v
+              W = A ‖ S  (parallel product)
+              symbols tagged (tier, qualified name)
+                      │
+                      │  σ : swap tiers (A,·) ↔ (S,·)
+                      v
+              induced map on σ(W)  — construct, then verify
+                      │
+                      v
+              iso_ok: bijection + inverse laws on finite comp
+              (no search; prescribed σ and φ)
 
-  phi["φ: A → Sv\nAccounts↔Savings rename"]
-  comp["W = A ‖ S\nlabeled pairs (tier, q)"]
-  sigma["σ: swap tiers\n(A,·)↔(S,·)"]
-  induced["induced: construct map\nconstruct-then-verify"]
-
-  GA --> comp
-  GS --> comp
-  GA --> phi --> GS
-  comp --> sigma --> induced
-  induced --> iso["iso_ok: bijection on comp1"]
+        Check: step7_automorphism_composite_iso
 ```
 
 `phi` is a kind+signature-preserving bijection; the witness does **not** search for an isomorphism—it builds `induced` from σ and φ and verifies inverse laws on the finite composite.
@@ -219,43 +196,16 @@ This discharges the “non-vacuous functorial invariant” half of GA3 at witnes
 
 ## Paper constructs ↔ witness steps ↔ artifacts
 
-```mermaid
-flowchart LR
-  subgraph paper["Paper / SYNTHESIS R8"]
-    POp["Pushout / gluing"]
-    SMp["System map\nDef 4.22 square"]
-    WAp["Wiring automorphism\n⇒ composite iso"]
-    Inv["Functorial invariant\non orbit"]
-    Kap["Collision policy κ"]
-    Act["Action associativity\nExpl 4.8 shadow"]
-    Ex425["Ex 4.25\nsquare composition"]
-  end
-
-  subgraph steps["E1 protocol steps"]
-    S45["Steps 4–5"]
-    S6["Step 6"]
-    S7["Step 7"]
-    S8["Steps 8–8a"]
-    S9["Step 9"]
-    S10a["Step 10 assoc/unit"]
-    S10b["Step 10 Ex 4.25"]
-  end
-
-  subgraph artifacts["Repo artifacts"]
-    PY["run_witness.py"]
-    JSON["WITNESS.json"]
-    TB["toybank/"]
-  end
-
-  POp --> S45 --> PY
-  SMp --> S6 --> PY
-  WAp --> S7 --> PY
-  Inv --> S8 --> PY
-  Kap --> S9 --> PY
-  Act --> S10a --> PY
-  Ex425 --> S10b --> PY
-  PY --> JSON
-  PY --> TB
+```
+  Paper / SYNTHESIS R8          E1 protocol              Repo artifacts
+  ────────────────────          ───────────              ──────────────
+  Pushout / gluing      ─────>  Steps 4–5        ─────>  run_witness.py
+  System map (4.22)     ─────>  Step 6           ─────>       │
+  Wiring auto ⇒ iso     ─────>  Step 7           ─────>       ├──> WITNESS.json
+  Invariant on orbit    ─────>  Steps 8–8a       ─────>       └──> toybank/
+  Collision κ           ─────>  Step 9
+  Action associativity  ─────>  Step 10 (assoc/unit)
+  Ex 4.25 composition   ─────>  Step 10 (Ex 4.25)
 ```
 
 ---
@@ -292,7 +242,7 @@ Expected stdout ends with `"all_pass": true` and 13 `"checks"` entries all `true
 
 For the full pre-registered procedure, success criteria, and decision rules (halt equivariance language on step 7 fail, CODE-C revision on step 5 fail, etc.), see **[`experiments/PROTOCOL-E1.md`](../../experiments/PROTOCOL-E1.md)**.
 
-**Interactive diagrams:** [`diagrams.html`](diagrams.html) (same Mermaid figures, browser-rendered).
+**HTML instrument (ASCII diagrams):** [`index.html`](index.html) · full prose: this file.
 
 ---
 

@@ -2,111 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>E1 witness — diagrams</title>
-  <style>
-    :root { --cream: #f4efe6; --ink: #1c1916; --mute: #6a6258; --line: #d4cbb8; --accent: #c23b22; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.5 Georgia, serif; }
-    header, main { max-width: 960px; margin: 0 auto; padding: 1.5rem 1.25rem; }
-    h1 { font-weight: 400; font-size: 1.75rem; }
-    .meta { color: var(--mute); font-size: 0.9rem; }
-    a { color: var(--accent); }
-    section { border-top: 1px solid var(--line); padding: 1.5rem 0; }
-    h2 { font-size: 1.2rem; font-weight: 400; }
-    .mermaid { background: #fff; border: 1px solid var(--line); padding: 1rem; overflow-x: auto; }
-  </style>
+  <meta http-equiv="refresh" content="0; url=index.html" />
+  <title>Redirect — E1 witness</title>
+  <link rel="canonical" href="index.html" />
 </head>
 <body>
-  <header>
-    <h1>E1 witness diagrams</h1>
-    <p class="meta">Rendered from the same Mermaid sources as <a href="WITNESS-HOW-IT-WORKS.md">WITNESS-HOW-IT-WORKS.md</a>. Run: <code>python3 witness/run_witness.py</code></p>
-  </header>
-  <main>
-    <section>
-      <h2>Overall pipeline</h2>
-      <pre class="mermaid">
-flowchart LR
-  subgraph inputs
-    PROTO["PROTOCOL-E1.md"]
-    FOUND["Code_X / C0 default"]
-  end
-  subgraph run["run_witness.py"]
-    GEN["Generate toybank"]
-    EXT["Extract obj+ports+refs"]
-    PO["Pushout + kappa"]
-    SM["System map"]
-    AUTO["Automorphism iso"]
-    INV["Invariant B"]
-    COL["Money collision"]
-    P10["Assoc + Ex 4.25"]
-    EMIT["WITNESS.json"]
-  end
-  PROTO --> GEN --> EXT --> PO --> SM --> AUTO --> INV --> COL --> P10 --> EMIT
-      </pre>
-    </section>
-    <section>
-      <h2>Toybank module graph</h2>
-      <pre class="mermaid">
-flowchart TB
-  subgraph accounts["accounts — orbit A"]
-    AC[AccountsController] --> AS[AccountsService] --> AR[AccountsRepository]
-    AM[Money long]
-  end
-  subgraph savings["savings — exact rename"]
-    SC[SavingsController] --> SS[SavingsService] --> SR[SavingsRepository]
-  end
-  subgraph loans["loans — near orbit"]
-    LC[LoansController] --> LS[LoansService] --> LR[LoansRepository]
-    LM[Money double]
-  end
-  RM[ReportModule] --> AM
-  RM --> LM
-      </pre>
-    </section>
-    <section>
-      <h2>Pushout sequence</h2>
-      <pre class="mermaid">
-sequenceDiagram
-  participant J as Junction J
-  participant X as Left X
-  participant Y as Right Y
-  participant Z as Pushout Z
-  participant K as kappa
-  J->>X: f
-  J->>Y: g
-  X->>Z: ix
-  Y->>Z: iy
-  Z->>K: signature clash?
-      </pre>
-    </section>
-    <section>
-      <h2>Paper ↔ witness ↔ artifacts</h2>
-      <pre class="mermaid">
-flowchart LR
-  POp[Pushout] --> S45[Steps 4-5] --> PY[run_witness.py]
-  SMp[System map] --> S6[Step 6] --> PY
-  WAp[Automorphism iso] --> S7[Step 7] --> PY
-  Inv[Invariant B] --> S8[Step 8] --> PY
-  Kap[kappa] --> S9[Step 9] --> PY
-  PY --> JSON[WITNESS.json]
-  PY --> TB[toybank]
-      </pre>
-    </section>
-    <section>
-      <h2>Target build architecture</h2>
-      <pre class="mermaid">
-flowchart LR
-  W[E1 witness] --> SK[SKILL files]
-  W --> PB[Pack builder v0]
-  WM[WiringMap v0] --> PB
-  PB --> E3[Full E3 + wedge]
-      </pre>
-    </section>
-  </main>
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true, theme: "neutral" });
-  </script>
+  <p>Moved to <a href="index.html">docs/witness/index.html</a> (ASCII instrument view).</p>
 </body>
 </html>
