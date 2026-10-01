@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Where we are — clock, kernel, wiring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --cream:#f3eee4; --paper:#fffaf2; --ink:#1b1814; --mute:#6d655b;
+  --line:#d8cfbf; --red:#b42318; --amber:#8a5a12; --green:#1f6b45;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif}
+header,main,footer{max-width:980px;margin:0 auto;padding:0 1.3rem}
+header{padding:2.4rem 1.3rem 1.2rem}
+.kicker{font:500 11px/1 "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+h1{font:600 2.4rem/1.1 Newsreader,Georgia,serif;margin:.35rem 0 .6rem;letter-spacing:-.02em}
+.lede{font:400 1.2rem/1.45 Newsreader,Georgia,serif;max-width:42rem}
+nav{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.1rem}
+nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);font-size:.9rem}
+section{padding:1.6rem 0;border-top:1px solid var(--line)}
+h2{font:600 1.45rem/1.2 Newsreader,Georgia,serif;margin:0 0 .7rem}
+.sentence{background:var(--paper);border:1px solid var(--line);padding:1rem 1.1rem;font:400 1.15rem/1.45 Newsreader,Georgia,serif}
+.grid{display:grid;gap:.8rem}
+@media(min-width:800px){.g3{grid-template-columns:1fr 1fr 1fr}.g2{grid-template-columns:1fr 1fr}}
+.card{background:var(--paper);border:1px solid var(--line);padding:.95rem 1rem}
+.card h3{margin:0 0 .35rem;font:600 1.05rem/1.2 Newsreader,Georgia,serif}
+.pill{display:inline-block;font:500 10px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;padding:.18rem .4rem;border:1px solid currentColor;margin-right:.3rem}
+.g{color:var(--green)}.a{color:var(--amber)}.r{color:var(--red)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:.45rem .4rem .45rem 0;border-bottom:1px solid var(--line)}
+th{font:500 11px/1.2 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+code,pre{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.86em}
+pre{background:#efe8d8;padding:.8rem;overflow:auto;border:1px solid var(--line)}
+a{color:#8d2c1c}
+.small{color:var(--mute);font-size:.88rem}
+footer{padding:1.2rem 1.3rem 3rem;color:var(--mute);font-size:.88rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">Status notebook · 30 Sep 2026 · not a new result</div>
+  <h1>Where we actually are.</h1>
+  <p class="lede">Three piles of work, one conserved sentence, and a short list of things that look finished but are not. Read this before the experiment page or the kernel.</p>
+  <nav>
+    <a href="#sentence">The sentence</a>
+    <a href="#piles">Three piles</a>
+    <a href="#map">What each word means</a>
+    <a href="#open">Still open</a>
+    <a href="#next">Next</a>
+    <a href="../dashboard/index.html">Wiring depths</a>
+  </nav>
+</header>
+<main>
+<section id="sentence">
+  <h2>The sentence that still holds</h2>
+  <p class="sentence">Judgment never owns the tick. The host decides when something may change. Jev only answers a closed leaf. Code composes the answers. A second model, behind a gate, writes any string.</p>
+  <p class="small">That sentence is true on a browser paint ring and on <code>cargo test</code>. Everything else below is either demonstrated at toy or pilot scale, or still costume.</p>
+</section>
+
+<section id="piles">
+  <h2>Three piles. Do not glue them.</h2>
+  <div class="grid g3">
+    <article class="card">
+      <p><span class="pill g">kernel</span></p>
+      <h3>manutej/jev</h3>
+      <p>Discrete colored-port calculator. Glue identifies a color. Share names the overlap. Product juxtaposes ports and never mismatches. Score fails closed.</p>
+      <p class="small">HEAD <a href="https://github.com/manutej/jev/commit/0a6f403273752e872def4177a553cedb14d84dee">0a6f403</a> · 29 Sep. Ledger + OC eval. No TypeSafe call. Wasm binary still stale.</p>
+    </article>
+    <article class="card">
+      <p><span class="pill g">measured</span></p>
+      <h3>wiring-and-the-whole</h3>
+      <p>Does a factored wiring pack compress Fineract, and can a model still read it? E1 toy 13/13. E2 WIN 3/3. E3 no ≥5-pt tax at pilot. E5.1 parity after legend fixes.</p>
+      <p class="small">HEAD <a href="https://github.com/manutej/wiring-and-the-whole/commit/77a4d7d13f3e3981c44b8e04be00272b368afe2c">77a4d7d</a> · 26 Sep. Experiment page is <a href="../dashboard/index.html">dashboard/</a>.</p>
+    </article>
+    <article class="card">
+      <p><span class="pill a">exhibit</span></p>
+      <h3>ceti-clock-tree</h3>
+      <p>Browser as the worked example of a host clock, a DOM tree, a guest, and a judgment slot. Not a live harness. Not a Φ film.</p>
+      <p class="small">Last commit 20 Sep. Stale relative to the other two.</p>
+    </article>
+  </div>
+</section>
+
+<section id="map">
+  <h2>Plain map</h2>
+  <table>
+    <thead><tr><th>Word</th><th>What it is</th><th>What it is not</th></tr></thead>
+    <tbody>
+      <tr><td>Tick</td><td>The host’s clock: paint, compile, test, protocol step</td><td>Jev, a 400ms timer, a dashboard</td></tr>
+      <tr><td>Tree / cover</td><td>The inventory you can actually name (DOM nodes, crate files, handler family)</td><td>A folder the agent invented</td></tr>
+      <tr><td>Glue</td><td>Pushout: identify a shared color, keep the outer ports</td><td>Concatenation</td></tr>
+      <tr><td>Share</td><td>Pullback: the color both feet carry</td><td>A product</td></tr>
+      <tr><td>Product</td><td>Juxtaposition: left ports then right ports. Never color-mismatches</td><td>TV(joint, p⊗q). Not E2 token savings</td></tr>
+      <tr><td>Jev</td><td>A typed leaf: Choice, Score, or Noul. Pin jev-1.13.0</td><td>The clock. The writer. The oracle</td></tr>
+      <tr><td>γ</td><td>Code that composes isolated leaves</td><td>A flattened pair-Choice</td></tr>
+    </tbody>
+  </table>
+  <pre>if tick is unknown → wait
+else if cover is broken → refuse
+else if act is not in the closed set → refuse
+else if the act needs a string → hand off to another model
+else → compose</pre>
+  <p class="small">That rule is <code>composeLeaves</code> in jev <code>eval/oc.ts</code>. It has not been run against a live host.</p>
+</section>
+
+<section id="open">
+  <h2>Honest colors</h2>
+  <table>
+    <thead><tr><th></th><th>Claim</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td><span class="pill g">green</span></td><td>Judgment off the tick. Kernel has no IO.</td><td>Law. Keep.</td></tr>
+      <tr><td><span class="pill g">green</span></td><td>product ≠ glue ≠ share</td><td>Tested in the crate.</td></tr>
+      <tr><td><span class="pill g">green</span></td><td>E2 factored form cheaper on 3 Fineract sites, re-expansion byte-identical</td><td>Micro-scale only.</td></tr>
+      <tr><td><span class="pill a">amber</span></td><td>E3 / E5.1 “no comprehension tax”</td><td>Pilot, one family, after spec fixes. Not “L2 solved.”</td></tr>
+      <tr><td><span class="pill a">amber</span></td><td>Depth-4 schema (compose / escalate / refuse + who pays)</td><td>Shape is right. Stock fixtures are the wrong plane.</td></tr>
+      <tr><td><span class="pill r">red</span></td><td>100 questions per concept is a bank</td><td>E11 only proved the count. E19 uniqueness was 0.93, not a 20×5 stem collapse. The costume is subtler than the ledger first said.</td></tr>
+      <tr><td><span class="pill r">red</span></td><td>We ran Jev / we measured δ</td><td>Codec only. No live call. δ is a spec.</td></tr>
+      <tr><td><span class="pill r">red</span></td><td>E1 proves Code_X. P1 proves agents emit bad folders.</td><td>Toy witness. No three-clock transcript.</td></tr>
+      <tr><td><span class="pill r">red</span></td><td>plans/ADVERSARIAL.md is current</td><td>Still says token arithmetic was never done. E2 already won. Register is stale.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="next">
+  <h2>If you only do one thing</h2>
+  <div class="grid g2">
+    <article class="card">
+      <h3>Do not</h3>
+      <ul>
+        <li>Another film or a sixth algebra</li>
+        <li>Pipe TypeSafe confidence into τ</li>
+        <li>Treat the wiring page and the kernel as the same product</li>
+        <li>Call the 100-question generator an interview</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Cheapest honest next</h3>
+      <ol>
+        <li>Dated addendum on the wiring register: GA6 done at micro-scale.</li>
+        <li>Retarget E19 at template index, not English stems.</li>
+        <li>Pick one: full-protocol E3, a typed handoff object, or one live 2×2 for δ.</li>
+      </ol>
+    </article>
+  </div>
+</section>
+</main>
+<footer>
+  Built 30 Sep 2026 from jev 0a6f403, wiring 77a4d7d, and the clock-law thread. Field notebook. Not a CETI film. Paper: Libkind & Myers, arXiv:2505.18329.
+</footer>
+</body>
+</html>
