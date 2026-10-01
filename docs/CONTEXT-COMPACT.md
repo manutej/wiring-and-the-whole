@@ -13,7 +13,7 @@ Map production codebases as a **module of systems** (T1), find symmetries/invari
 | E1 witness | **13/13** — `witness/` |
 | E2 / E3 | WIN + B-PASSES — frozen under **`make verify`** |
 | E5 depth | B-PASSES AT DEPTH — `experiments/e5-depth/` (not in verify yet) |
-| Pulse | **`docs/PULSE.md`** — trigger word `pulse`; **`make pulse-gate`** |
+| Pulse | **`docs/PULSE.md`** — trigger `pulse`; **`make pulse-eval`** (functional) + **`make pulse-gate`** |
 | WiringMap v0 | `wiringmap/schema.v0.json` + toybank example; **`make wiringmap-check`** |
 | Density ladder | D0–D3 `fixtures/density/` + **D4** external slice — **`make wiringmap-stress`** |
 | External thin slice | `fixtures/external/fineract-handlers-thin/` (7 handlers, vendored) — **`make external-slice-check`** |
@@ -32,6 +32,7 @@ make dogfood-grade-toybank
 make dogfood-grade-fineract-thin
 make fetch-slice-dry-run        # fineract thin slice stub; temp staging only
 make pack-v0-check              # L2 pack + reexpand + canonical LEGEND gate
+make pulse-eval                 # functional negative/positive interface eval
 make pulse-gate
 ```
 

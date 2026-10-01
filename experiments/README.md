@@ -32,6 +32,7 @@ From repo root:
 ```bash
 make wiringmap-check      # schema + toybank extract
 make wiringmap-stress     # density ladder D0–D4 (fixtures/density/)
+make pulse-eval           # functional eval (negative gates + dogfood; see scripts/pulse_eval_functional.sh)
 make dogfood-grade        # L1 meta question pack
 make dogfood-grade-toybank
 make dogfood-grade-fineract-thin
