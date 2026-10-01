@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E1 witness — how it works</title>
+  <style>
+    :root {
+      --cream: #f4efe6;
+      --paper: #ebe4d6;
+      --ink: #1c1916;
+      --mute: #6a6258;
+      --line: #d4cbb8;
+      --vermillion: #c23b22;
+      --ok: #2c5a3c;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.55 Georgia, "Times New Roman", serif; }
+    a { color: var(--vermillion); }
+    header, main, footer { max-width: 920px; margin: 0 auto; padding: 0 1.25rem; }
+    header { padding-top: 2.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
+    .kicker { letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.72rem; color: var(--mute); font-family: ui-sans-serif, system-ui, sans-serif; }
+    h1 { font-size: 1.85rem; font-weight: 400; margin: 0.35rem 0 0.5rem; }
+    .lede { font-size: 1.08rem; max-width: 42rem; color: var(--ink); }
+    nav { display: flex; gap: 0.85rem; flex-wrap: wrap; margin-top: 1rem; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.82rem; }
+    nav a { text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 0.12rem; }
+    section { padding: 1.75rem 0; border-bottom: 1px solid var(--line); }
+    h2 { font-size: 1.28rem; font-weight: 400; margin: 0 0 0.65rem; }
+    p { margin: 0 0 0.85rem; max-width: 42rem; }
+    .diagram {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 1rem 1.1rem;
+      margin: 0.75rem 0 1rem;
+      overflow-x: auto;
+    }
+    .diagram pre {
+      margin: 0;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.72rem;
+      line-height: 1.35;
+      color: var(--ink);
+    }
+    .tag { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--ok); color: var(--ok); padding: 0.12rem 0.45rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin-top: 0.5rem; }
+    th, td { text-align: left; vertical-align: top; padding: 0.4rem 0.55rem 0.4rem 0; border-bottom: 1px solid var(--line); }
+    th { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--mute); font-weight: 600; }
+    code { font-family: ui-monospace, Menlo, monospace; font-size: 0.86em; }
+    footer { padding: 1.5rem 1.25rem 2.5rem; color: var(--mute); font-size: 0.88rem; }
+    @media (min-width: 640px) { .diagram pre { font-size: 0.76rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="kicker">E1 · R8 faithfulness witness</div>
+    <h1>How the witness works</h1>
+    <p class="lede">One Python runner generates a 16-file toybank, instantiates category <strong>C₀ (SymTab)</strong>, and emits <code>witness/WITNESS.json</code> with <span class="tag">13/13</span> checks. Demonstrated ≠ proved; see claims discipline in the repo README.</p>
+    <nav>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#toybank">Toybank</a>
+      <a href="#pushout">Pushout &amp; κ</a>
+      <a href="#checks">13 checks</a>
+      <a href="WITNESS-HOW-IT-WORKS.md">Markdown source</a>
+      <a href="../../dashboard/index.html">Dashboard</a>
+      <a href="../../README.md">Repo</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="pipeline">
+      <h2>Overall pipeline</h2>
+      <p><code>python3 witness/run_witness.py</code> — stdlib only; rewrites toybank and JSON each run.</p>
+      <div class="diagram"><pre>
+  INPUTS                          RUN: witness/run_witness.py
+  ───────                         ────────────────────────────
+
+  ┌─────────────────────┐         ┌ Step 2: generate toybank (FILES dict)
+  │ PROTOCOL-E1.md      │────────>│        └─> witness/toybank/*.java (16)
+  │ (steps 2–10)        │         │
+  └─────────────────────┘         ├ Step 3: extract() → obj, ports, refs
+                                  │
+  ┌─────────────────────┐         ├ Step 4–5: pushout + κ + universal_check
+  │ Code_X (FOUNDATION  │ - - - > ├ Step 6: system map LoanService → V2
+  │  lost; C₀ default)  │         ├ Step 7: glue chains, σ swap, φ iso
+  └─────────────────────┘         ├ Step 8/8a: invariant B (reachability)
+                                  ├ Step 9: Money collision (κ must fire)
+                                  ├ Step 10: assoc, monoidal unit, Ex 4.25
+                                  └ Step emit: witness/WITNESS.json
+                                              │
+                                              v
+                                    OUTPUT: checks{13} + witness blobs</pre></div>
+    </section>
+
+    <section id="toybank">
+      <h2>Toybank module graph</h2>
+      <p>Planted <strong>exact orbit</strong> (accounts ≡ savings), <strong>near orbit</strong> (loans + <code>refinance</code>), deliberate <strong>Money</strong> collision for step 9.</p>
+      <div class="diagram"><pre>
+  shared/ (4)          accounts/ — orbit A          savings/ — exact rename of accounts
+  ───────────          ───────────────────          ─────────────────────────────────
+  PageDto              AccountsController ──>       SavingsController ──>
+  AuditDto               AccountsService ──>           SavingsService ──>
+  EventTopics            AccountsRepository            SavingsRepository
+  AppConfig              Money (long amountCents)
+
+  loans/ — near-orbit (+refinance)              report/
+  ────────────────────────────────              ───────
+  LoansController ──> LoansService ──>          ReportModule ──refs──> accounts.Money
+    LoansRepository                               └────────refs──> loans.Money
+    Money (double amount)
+
+  Legend:  ──>  vertical MVC ref edges (// refs: in source)
+            - -  uses shared DTOs / topics</pre></div>
+    </section>
+
+    <section id="pushout">
+      <h2>Pushout and κ</h2>
+      <p>Step 5 glues <code>LoansService</code> and <code>LoansRepository</code>; private <code>#log</code> symbols must stay distinct. Step 9 identifies incompatible Money signatures; κ must fire.</p>
+      <div class="diagram"><pre>
+  Junction J          Left X (tag L)         Right Y (tag R)
+       │                     │                       │
+       │    f: J→X           │                       │    g: J→Y
+       └──────────┬──────────┴───────────┬───────────┘
+                  v                      v
+            Union-Find on tagged symbols (L,·) and (R,·)
+                  │
+                  v
+            Pushout Z  +  κ: signature clash → collision
+                  │
+                  v
+            check: ix∘f = iy∘g  (commutes)</pre></div>
+    </section>
+
+    <section id="checks">
+      <h2>The 13 checks (summary)</h2>
+      <p>Full table and failure modes: <a href="WITNESS-HOW-IT-WORKS.md">WITNESS-HOW-IT-WORKS.md</a>.</p>
+      <table>
+        <thead><tr><th>Check</th><th>Step</th><th>Proves</th></tr></thead>
+        <tbody>
+          <tr><td><code>step4_pushout_commutes</code></td><td>4</td><td>Pushout triangle commutes on junction.</td></tr>
+          <tr><td><code>step4_universal_property_bounded</code></td><td>4</td><td>Mediating maps for bounded cocone family (protocol deviation noted).</td></tr>
+          <tr><td><code>step5_fresh_names_inside_C</code></td><td>5</td><td>Distinct internal <code>#log</code> after Service⊔Repository glue.</td></tr>
+          <tr><td><code>step5_no_false_kappa</code></td><td>5</td><td>Clean loan pushout: κ empty.</td></tr>
+          <tr><td><code>step6_system_map_square</code></td><td>6</td><td>Refactor is a C-morphism; Def 4.22 square on ports.</td></tr>
+          <tr><td><code>step6_ports_preserved</code></td><td>6, 10</td><td>Exported port keys fixed under system map.</td></tr>
+          <tr><td><code>step7_automorphism_composite_iso</code></td><td>7</td><td>swap(accounts,savings) induces iso on composite.</td></tr>
+          <tr><td><code>step8_invariant_constant_on_orbit</code></td><td>8</td><td>Reachability invariant B on exact orbit.</td></tr>
+          <tr><td><code>step8a_system_maps_preserve_invariant</code></td><td>8a</td><td>Step-6 map preserves B.</td></tr>
+          <tr><td><code>step9_kappa_fires_on_collision</code></td><td>9</td><td>κ fires on Money signature clash.</td></tr>
+          <tr><td><code>step10_associativity_canonical_iso</code></td><td>10</td><td>Loan chain associativity of glue.</td></tr>
+          <tr><td><code>step10_monoidal_unit_disjoint_union</code></td><td>10</td><td>Empty junction = disjoint union.</td></tr>
+          <tr><td><code>step10_ex425_squares_compose</code></td><td>10</td><td>Ex 4.25 naturality with swap σ.</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    Protocol: <code>experiments/PROTOCOL-E1.md</code> · Runner: <code>witness/run_witness.py</code> · Build-out memo: <code>docs/roadmap/BUILD-OUT-RESEARCH.md</code>
+  </footer>
+</body>
+</html>
