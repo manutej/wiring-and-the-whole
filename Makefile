@@ -1,7 +1,10 @@
-.PHONY: verify witness e2 dogfood-grade
+.PHONY: verify witness e2 dogfood-grade pulse-gate
 
 verify:
 	@./scripts/verify.sh
+
+pulse-gate:
+	@./scripts/pulse_gate.sh
 
 dogfood-grade:
 	@python3 scripts/grade_l1_questions.py
