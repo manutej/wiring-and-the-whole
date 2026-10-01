@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade pulse-gate wiringmap-check
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank pulse-gate wiringmap-check wiringmap-stress
 
 verify:
 	@./scripts/verify.sh
@@ -8,6 +8,12 @@ pulse-gate:
 
 dogfood-grade:
 	@python3 scripts/grade_l1_questions.py
+
+dogfood-grade-toybank:
+	@python3 scripts/grade_l1_questions.py --questions docs/dogfood/L1-TOYBANK-QUESTIONS.json
+
+wiringmap-stress:
+	@bash scripts/wiringmap_stress.sh
 
 wiringmap-check:
 	@python3 -m pip install -q jsonschema

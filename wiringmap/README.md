@@ -39,7 +39,7 @@ Machine-readable **L1 feedstock**: compilation units, exported ports, typed wiri
 | `di` | Injection/wiring config (Fineract future) |
 | `link` | Non-call association (doc, config) |
 
-`doctrine_tag` is optional prose alignment (`interface`, `system_map`, `junction`, `unknown`) — **not** a formal guarantee until MUST-PROVE 1 (see `plans/ADVERSARIAL.md` GA1).
+`doctrine_tag` is a **v0 naming convention only** — optional prose alignment (`interface`, `system_map`, `junction`, `unknown`); **not proven doctrine** and not a formal guarantee until MUST-PROVE 1 (see `plans/ADVERSARIAL.md` GA1 / GA10).
 
 ## Validate locally
 
@@ -55,6 +55,15 @@ Or run scripts directly:
 python3 -m pip install jsonschema
 python3 scripts/validate_wiringmap.py
 python3 scripts/extract_toybank_refs.py
+python3 scripts/extract_refs.py witness/toybank/accounts
+make wiringmap-stress   # density ladder D0–D3 (see fixtures/density/README.md)
+```
+
+## Dogfood grading
+
+```bash
+make dogfood-grade          # meta L1 pack
+make dogfood-grade-toybank  # toybank accounts L1 pack
 ```
 
 ## Next engineering jumps

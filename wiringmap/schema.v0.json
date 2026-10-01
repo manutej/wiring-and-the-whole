@@ -49,7 +49,7 @@
     },
     "doctrine_tag": {
       "type": "string",
-      "description": "Optional cospan/UWD hint; not a formal guarantee in v0.",
+      "description": "v0 convention label only — not proven doctrine; not a formal guarantee in v0 (GA10).",
       "enum": ["interface", "system_map", "junction", "unknown"]
     },
     "port": {

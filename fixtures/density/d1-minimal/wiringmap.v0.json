@@ -1,0 +1,46 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "fixtures/density/d1-minimal",
+    "slice": "d1-minimal/",
+    "notes": "Intentionally omits density.Ghost#nowhere from edge evidence (extract must fail)."
+  },
+  "units": [
+    {
+      "id": "unit:density.Alpha",
+      "path": "fixtures/density/d1-minimal/Alpha.java",
+      "role": "caller",
+      "ports": [
+        {
+          "id": "port:density.Alpha#ping",
+          "symbol": "ping",
+          "kind": "method",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:density.Beta",
+      "path": "fixtures/density/d1-minimal/Beta.java",
+      "role": "callee",
+      "ports": [
+        {
+          "id": "port:density.Beta#pong",
+          "symbol": "pong",
+          "kind": "method",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:alpha-pong",
+      "from": "port:density.Alpha#ping",
+      "to": "port:density.Beta#pong",
+      "edge_kind": "call",
+      "evidence": "Alpha.java // refs: density.Beta#pong"
+    }
+  ]
+}

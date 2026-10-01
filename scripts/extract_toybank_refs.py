@@ -1,96 +1,16 @@
 #!/usr/bin/env python3
-"""Parse witness/toybank/accounts // refs: lines and check coverage in wiringmap example."""
+"""Backward-compatible entry: witness/toybank/accounts + toybank-accounts.v0.json."""
 
 from __future__ import annotations
 
-import json
-import os
-import re
 import sys
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[1]
-ACCOUNTS_DIR = Path(
-    os.environ.get("TOYBANK_ACCOUNTS_DIR", REPO / "witness" / "toybank" / "accounts")
-)
-EXAMPLE_PATH = REPO / "wiringmap" / "examples" / "toybank-accounts.v0.json"
-REFS_LINE = re.compile(r"//\s*refs:\s*(.+)$")
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
 
-
-def refs_from_java(path: Path) -> list[str]:
-    for line in path.read_text(encoding="utf-8").splitlines():
-        match = REFS_LINE.search(line)
-        if match:
-            return match.group(1).strip().split()
-    return []
-
-
-def evidence_pairs(example: dict) -> set[tuple[str, str]]:
-    covered: set[tuple[str, str]] = set()
-    for edge in example.get("edges", []):
-        evidence = edge.get("evidence", "")
-        if "// refs:" not in evidence:
-            continue
-        file_part, refs_part = evidence.split("// refs:", 1)
-        fname = file_part.strip()
-        for token in refs_part.strip().split():
-            covered.add((fname, token))
-    return covered
-
-
-def main() -> int:
-    if not EXAMPLE_PATH.is_file():
-        print(f"ERROR: missing example instance: {EXAMPLE_PATH}", file=sys.stderr)
-        return 1
-
-    example = json.loads(EXAMPLE_PATH.read_text(encoding="utf-8"))
-    covered = evidence_pairs(example)
-
-    refs_by_file: dict[str, list[str]] = {}
-    extracted_pairs: set[tuple[str, str]] = set()
-    missing_in_example: list[str] = []
-
-    for java_path in sorted(ACCOUNTS_DIR.glob("*.java")):
-        tokens = refs_from_java(java_path)
-        refs_by_file[java_path.name] = tokens
-        for token in tokens:
-            extracted_pairs.add((java_path.name, token))
-            if (java_path.name, token) not in covered:
-                missing_in_example.append(f"{java_path.name} -> {token}")
-
-    stale_in_java: list[str] = [
-        f"{fname} -> {token}"
-        for fname, token in sorted(covered - extracted_pairs)
-    ]
-
-    fragment = {
-        "slice": "witness/toybank/accounts",
-        "refs_by_file": refs_by_file,
-        "ref_token_count": sum(len(v) for v in refs_by_file.values()),
-    }
-    print(json.dumps(fragment, indent=2))
-
-    failed = False
-    if missing_in_example:
-        failed = True
-        print("refs in witness not reflected in wiringmap example edges:", file=sys.stderr)
-        for line in missing_in_example:
-            print(f"  {line}", file=sys.stderr)
-    if stale_in_java:
-        failed = True
-        print("wiringmap example cites refs missing from witness // refs: lines:", file=sys.stderr)
-        for line in stale_in_java:
-            print(f"  {line}", file=sys.stderr)
-    if failed:
-        return 1
-
-    print(
-        f"OK: {fragment['ref_token_count']} ref tokens covered by "
-        f"{len(example.get('edges', []))} example edges",
-        file=sys.stderr,
-    )
-    return 0
-
+from extract_refs import main as extract_main  # noqa: E402
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(extract_main(sys.argv[1:]))
