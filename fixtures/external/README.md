@@ -21,6 +21,7 @@ Thin **copies** of third-party code used for wiringmap / L1 dogfood. These paths
   scripts/
         extract_refs.py                  ... reads // refs: under slice dir
         fineract_slice_check.sh          ... merge gate for external slice
+        fetch_fineract_slice.sh          ... PATH-LIST fetch stub (dry-run default)
         validate_wiringmap.py
 ```
 
@@ -35,10 +36,22 @@ Thin **copies** of third-party code used for wiringmap / L1 dogfood. These paths
 ## Commands
 
 ```bash
+make fetch-slice-dry-run   # scripts/fetch_fineract_slice.sh (temp dir only; fixtures unchanged)
 make external-slice-check
 make wiringmap-stress    # includes density D4 on this slice
 make dogfood-grade-fineract-thin
 ```
+
+## Refreshing the thin slice (R4 fetch stub)
+
+`scripts/fetch_fineract_slice.sh` documents **sparse-checkout**, **git archive**, and **curl raw** patterns that pull an explicit **PATH LIST** — never a full upstream tree. Defaults match basenames under `fineract-handlers-thin/`.
+
+| Mode | Behavior |
+|------|----------|
+| dry-run (default) | Writes `PATH_LIST.txt` + `FETCH_PLAN.txt` under a temp dir; exits 0; fixtures untouched |
+| `--apply` | Copies staged files into `fineract-handlers-thin/` and writes `MANIFEST.txt` (`source_commit=manual pin` until a live pin is recorded) |
+
+Environment overrides: `FINERACT_UPSTREAM_REPO`, `FINERACT_UPSTREAM_REF`, `FINERACT_UPSTREAM_JAVA_PREFIX`. The current stub stages `*.java` from `experiments/e3-ablation/raw/` and keeps wiringmap/README as in-repo artifacts.
 
 ## Limitations
 
