@@ -82,11 +82,12 @@ correctness; demonstrated ≠ proved; models ≠ measurements. Treat every "stre
 unverified until an independent reader re-derives it (this caught two real bugs).
 
 ## 6. Next actions
-1. DONE 2026-09-16: E2 WIN, E3 pilot B-PASSES → claims ladder rungs unlocked:
+1. DONE 2026-10-01: **Repro runner** — from repo root run `make verify` (witness 13/13 + E2 frozen JSON + E3 frozen grades; no API). See `experiments/README.md`.
+2. DONE 2026-09-16: E2 WIN, E3 pilot B-PASSES → claims ladder rungs unlocked:
    'L2 token arithmetic live at micro-scale' + 'no comprehension tax at pilot scale'.
    Next: full-protocol E3 (50+10 q, mixed sites, firewalled minting, pinned models).
-2. Mint the three free instruments as SKILL.md files + one dogfood run each.
-3. Upgrade witness C₀ → full Code_X (exhaustive-within-bound universal check) → attempt
+3. Mint the three free instruments as SKILL.md files + one dogfood run each.
+4. Upgrade witness C₀ → full Code_X (exhaustive-within-bound universal check) → attempt
    MUST-PROVE 1–2.
-4. Fineract wedge (orbit statistics discharge U1) with E4 migration chain folded in.
-5. Optional: /ceti-explainer film (brief was in explainer/BRIEF.md, reconstructable).
+5. Fineract wedge (orbit statistics discharge U1) with E4 migration chain folded in.
+6. Optional: /ceti-explainer film (brief was in explainer/BRIEF.md, reconstructable).
