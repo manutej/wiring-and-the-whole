@@ -56,6 +56,7 @@ When the user (or automation bound to their standing instruction) says **pulse**
               +------------------------------+
               | 4. MERGE GATE                |
               |    make verify               |
+              |    make pulse-eval (functional)|
               |    make pulse-gate (reminder) |
               +--------------+---------------+
                              |
