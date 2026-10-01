@@ -1,0 +1,15 @@
+---
+description: Editorial Paris talk dashboard — evidence, Talk schema, explorer patterns
+alwaysApply: false
+globs:
+  - "**/paris-editorial-dashboard-kit/**"
+  - "**/ai-engineer-paris-2026/explorer/**"
+---
+
+When editing the Paris editorial explorer or kit:
+
+- Read `AGENTS.md` in the kit root before changing `talks.ts` or hub pages.
+- Quotes and metrics must trace to `data/digest.json` or `data/catalog.json`; cite timestamps for speech claims.
+- Extend `VizKind` / diagram unions with exhaustive TypeScript switches (`never` in default).
+- No decorative motion; one teaching animation per talk page.
+- Run `npm run build` in `explorer/` after substantive UI changes.

@@ -1,0 +1,53 @@
+[
+  {
+    "videoId": "TN3mj92oZ8I",
+    "title": "Building Self-Improving Agent Software Factories \u2014 Suraj Gupta, Warp",
+    "transcriptWords": 2374,
+    "hook": "Um my name is Siraj Gupta. I lead Harness development at Warp. Um in case you haven't heard of Warp before, um we started off by building a state-of-the-art agentic development environment. Um we have about a million active users that use that. Um it was born out of a modern-day terminal. Um and nowadays we're building a um cloud agent platform to enable teams to build software\u2026",
+    "bullets": [
+      "0:22 \u2014 ~1M MAU on Warp\u2019s agentic IDE; expanding to a cloud agent platform for teams.",
+      "1:10 \u2014 Self-improvement loop can be automatic as the software-factory paradigm shifts.",
+      "2:28 \u2014 Factory skills (e.g. bug reproduction) go stale unless the improvement loop refreshes them.",
+      "9:29 \u2014 Model routing favors Pareto-efficient defaults instead of users pinning one model."
+    ],
+    "theme": "Software factories",
+    "views": 20000,
+    "durationMin": 13,
+    "slug": null,
+    "status": "needs-editorial-pass"
+  },
+  {
+    "videoId": "XyV6bSMyq-I",
+    "title": "How We Built an Agent That Improves Itself \u2014 Zubin Aysola, W&B",
+    "transcriptWords": 3968,
+    "hook": "Okay. Hello. Thank you for showing up. Uh my name is Zuben Isola. Uh I work at Weights and Biases. I'm building the Arya agent which is something that we released to general availability on Monday. You might have seen Tim's talk uh one of the pe my peers at Weights and Biases who I work with uh on the main stage yesterday. So I'm going to give you a little bit of a deep dive in\u2026",
+    "bullets": [
+      "0:24 \u2014 Arya agent hit GA Monday; pairs with Tim Sweeney\u2019s main-stage research-agent talk.",
+      "1:41 \u2014 Benchmarks, evals, and harness configs are covariant; dynamic systems need production + offline measurement (sim-to-real gap).",
+      "2:41 \u2014 Production traces feed offline sims for hill-climbing; Weave logging closes a self-improvement flywheel.",
+      "13:32 \u2014 WBAF (W&B agent factory) runs offline benchmarks and caught a missing weave.log SDK call via regression tasks."
+    ],
+    "theme": "Self-improving agents",
+    "views": 24000,
+    "durationMin": 17,
+    "slug": null,
+    "status": "needs-editorial-pass"
+  },
+  {
+    "videoId": "HvboD89DyQ8",
+    "title": "No, That's Not a Software Factory \u2014 Ryan Cooke, WorkOS",
+    "transcriptWords": 2978,
+    "hook": "Well, thank you for joining the final day of the conference here. I know it's been a long week. But I'm excited to talk about a topic here that is very near and dear to me. Software factories. Um You this is probably not a new concept to any of you. I'm guessing if you're all here, you're very familiar with software factories. You know, Ramp blogged about their inspects several\u2026",
+    "bullets": [
+      "2:36 \u2014 Success metrics are outcome-based (ship features faster), not raw PR/code volume.",
+      "3:34 \u2014 Sandbox + model router alone was indistinguishable from engineers running Claude Code locally.",
+      "3:56 \u2014 Code output isn\u2019t enough; embed eng process (TARS in Slack/Linear/GitHub + Horizon).",
+      "4:10 \u2014 TARS tracks project progress via webhooks, not only generating patches."
+    ],
+    "theme": "Software factories (skeptic)",
+    "views": 19000,
+    "durationMin": 19,
+    "slug": null,
+    "status": "needs-editorial-pass"
+  }
+]
