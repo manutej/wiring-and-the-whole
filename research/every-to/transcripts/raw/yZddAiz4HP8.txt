@@ -1,0 +1,561 @@
+[0:01] It's model release day. We've got an
+[0:03] allnew Fable Fable 5.1
+[0:06] and it is Fable for everyone. We've been
+[0:09] testing it for about a week. This is a
+[0:11] sick model. It is a better coding model
+[0:14] than the original Fable. So, if you love
+[0:15] the original Fable, you're going to love
+[0:17] this model even more. And it speaks
+[0:20] English. It actually talks to you like a
+[0:23] normal person. It says things that you
+[0:25] can understand. And that's not all. It
+[0:27] is significantly faster. It's like twice
+[0:29] as fast as Old Fable and it uses half
+[0:33] the tokens as Opus 5 for similar tasks.
+[0:36] So, it's priced like a Fable, but you'll
+[0:38] be able to use it for all your Opus
+[0:40] tasks. And there's really no reason for
+[0:42] you to use Opus anymore. Fable all day,
+[0:45] baby. So, let's get into the vibe check.
+[0:47] So, before we get into this video, who
+[0:49] am I and how do I possibly have a full
+[0:52] review of a model that just dropped? My
+[0:54] name is Dan Shipper and I'm the
+[0:55] co-founder and CEO of EveryY. Every is
+[0:57] the only subscription you need to stay
+[0:59] at the edge of AI. We get all of the
+[1:02] models before they come out and we test
+[1:04] them with a team of writers, designers,
+[1:07] engineers, and more to tell you what
+[1:09] they're good for. So on the day a model
+[1:11] drops, we have long form reviews to tell
+[1:13] you what to use them for and what not to
+[1:15] use them for from our real experience
+[1:18] doing real work. So we've been testing
+[1:19] this model on all the kinds of things
+[1:21] that you do every day. So we've done it
+[1:23] from on coding, we've done it on
+[1:25] knowledge work like debt creation and
+[1:26] data analysis and we've done it on
+[1:28] writing. And I'm going to show you
+[1:29] everything that we found in our usage
+[1:30] and how that has pulled through into how
+[1:33] I use it day-to-day. What are the actual
+[1:35] numbers for how it has changed my usage
+[1:38] over the week since I I got access to
+[1:40] it. Let's get started.
+[1:42] One of the coolest things I had to build
+[1:44] is this thing called hands. It it is a
+[1:46] computer use agent that sits on my
+[1:47] computer and allows other agents to use
+[1:49] my computer remotely. So that's the
+[1:51] arrow for hands. That's hands going and
+[1:54] using my computer. And you can see it
+[1:55] has this little uh this little window on
+[1:57] my computer that shows me what Hans is
+[1:59] doing. And what this does is it lets me
+[2:01] remotely use my computer from any agent
+[2:02] I want. And this is like a hard thing to
+[2:06] build. It's hard to make a Mac app that
+[2:09] is a computer use agent that is
+[2:11] accessible from the web that can do any
+[2:14] task you ask it to do. And I tried to
+[2:16] build hands in 5.6 six in regular Fable
+[2:20] and it it was like good but like it
+[2:22] didn't really work and this actually
+[2:24] just works like it just uses my computer
+[2:27] and I can I can have it use my computer
+[2:29] from Slack and that is like [ __ ]
+[2:31] wild. Look at that. It's look at that.
+[2:33] Like that is [ __ ] wild. And look,
+[2:34] it's going to start typing too. And you
+[2:36] can see it's working in chatbt. You can
+[2:39] see it's typing. It's typing. And
+[2:41] [snorts] I have no idea how this works.
+[2:42] This was built end to end by Fable 5.1
+[2:46] from a couple prompts that is a desktop
+[2:49] agent built fully by this model. So this
+[2:53] is just like a fullyfledged app. It has
+[2:56] a screenshot of the current state. It
+[2:57] says what it's doing. It has a log.
+[2:59] Look, look. These are all the tasks I've
+[3:01] been doing with with this thing. I mean,
+[3:04] this would or ordinarily take months to
+[3:06] be good and it just worked after like a
+[3:09] day. I gave a prompt to Fable 5.1 and it
+[3:12] just churned on Ultra Code with like 40
+[3:16] sub agents for like a day and then this
+[3:18] came out and it just it just works. I I
+[3:21] don't know I don't know how else to say
+[3:22] it. It's a completely different
+[3:23] experience of programming to be able to
+[3:26] give a simple prompt to a model and have
+[3:29] a completely usable complex application
+[3:32] come out like a day later. That said,
+[3:36] there are some things to be aware of.
+[3:37] It's it's more token efficient than Opus
+[3:41] 5, but it's, you know, if you give it a
+[3:42] big task like this on Ultra Code, it's
+[3:44] going to run for like a day and it's
+[3:45] going to use I mean, this is like a 3 to
+[3:47] 5 million token run. So, it can get it
+[3:51] can get expensive and especially on
+[3:54] ultra code, it's not really that
+[3:56] conversational. It is conversational on
+[3:58] lower lower effort settings, but if you
+[4:01] put it on ultra code, it's basically
+[4:02] just going to like go off and cook and
+[4:05] come back later. So that's it's just
+[4:07] like a different usage pattern than you
+[4:09] might be used to. It's like better for
+[4:11] especially for big projects like not as
+[4:13] interactive coding work but [ __ ] sick
+[4:17] and and the other technical people at
+[4:18] every like Kieran Classen who's a GM of
+[4:21] Kora and makes compound engineering love
+[4:23] this model. Like I think for Kieran,
+[4:26] he's been a Claude stand for a long time
+[4:29] and even he didn't like Opus 5, didn't
+[4:33] like Sonnet 5, and this model, he's
+[4:35] like, "This is my favorite again." So,
+[4:37] it's like a big jump in both power and
+[4:41] usability, which usually don't go hand
+[4:42] in hand, and speed. It's just fast
+[4:44] enough to use for day-to-day tasks. To
+[4:47] give you a little bit of a sense for its
+[4:49] level of efficiency and how and how fast
+[4:53] it is, we ran it on our internal agent
+[4:56] benchmark. This measures it on tasks
+[4:58] that uh our internal agent does like
+[5:00] work inside of a company and we compared
+[5:02] it to Opus 5. So in terms of the number
+[5:04] of tokens per run, on average this model
+[5:08] consumed about 766 tokens for each run.
+[5:12] So each request to the model was about
+[5:14] 766 tokens. By comparison, Opus 5 was
+[5:18] almost 2,000 tokens for the same tasks.
+[5:21] Similarly, the the average latency for
+[5:24] this model was about 22 seconds. So
+[5:26] that's how long it took for a basic
+[5:28] request to get a response. 22 seconds.
+[5:31] Opus was about 37 seconds. It's a so
+[5:34] it's about twice as fast as as Opus. And
+[5:36] it uses about half the tokens. That's
+[5:39] really crazy. And it's a very rare jump.
+[5:41] There was this moment in like December
+[5:44] 2025 where Opus45 and where Opus45 and
+[5:50] GBT 53ish like crossed this barrier
+[5:53] where suddenly it all these vibe coding
+[5:55] use cases opened up and all these people
+[5:57] discovered that you could code in this
+[5:59] new way with these models. I think
+[6:01] there's a similar thing happening with
+[6:03] Fable 5.1 because it opens up these long
+[6:07] horizon tasks in an easy to use form
+[6:10] factor that's cheap enough for regular
+[6:12] people to try. I think it has the chance
+[6:15] to open up real delegation of coding and
+[6:18] knowledgework tasks to to more average
+[6:21] knowledge workers and that's a big deal.
+[6:24] [music]
+[6:26] So now let's get into knowledge work. So
+[6:28] we have this we have this really cool
+[6:30] eval viewer. So I can show you exactly
+[6:32] what we ran it on, what the prompts were
+[6:34] and what the outputs were. The first
+[6:36] knowledgework test we always do with
+[6:38] this model is we run it on data
+[6:40] analysis. So we feed it a survey that we
+[6:42] gave like a real survey that we gave to
+[6:44] our customers a couple years ago and we
+[6:46] ask it to analyze the survey. So the
+[6:49] prompt was I want you to build a static
+[6:51] HTML NPS dashboard. NPS's net promoter
+[6:54] score and pick one pick out and pick out
+[6:56] interesting insights after doing the
+[6:57] analysis. So this is what we got out of
+[7:01] the model. So it's a very clean design.
+[7:06] It really it makes it really easy to see
+[7:08] like the score distribution and all that
+[7:10] kind of stuff which is I would say like
+[7:12] pretty normal. You know it's not it's
+[7:14] not obviously like AI right now. So it
+[7:17] doesn't feel like slap. One thing that
+[7:19] it that it did that I think is a little
+[7:21] bit worse than for example GPT 5.6 is
+[7:24] and we can actually go look at GBT 5.6
+[7:26] for comparison like GBT 5.6 this is GB
+[7:29] 5.6's version it pulled out a story at
+[7:33] the top a strong core a clear promise
+[7:35] customer see every as a rare mix of
+[7:36] thoughtful this is something that fable
+[7:38] 5.1 didn't really do it was much more
+[7:40] like straight ahead so I I you know so I
+[7:44] really I actually really like GB 5.6 six
+[7:46] on this task. But one thing that I I
+[7:47] want to point out from 5.1 that's really
+[7:51] interesting is it did an incredibly good
+[7:54] job at pulling out real insights from
+[7:58] both the quantitative and qualitative
+[8:00] data and then presenting it to us. So
+[8:02] like what people love the writing is the
+[8:04] core of the love, the apps are the bonus
+[8:06] keeps me current without overwhelming me
+[8:07] is the strongest value proposition.
+[8:10] Interesting as a warning word, useful
+[8:11] great and smart predict promoter. So
+[8:13] this is really cool, right? So it's it
+[8:15] went and did the analysis to understand
+[8:18] that when someone when one of our
+[8:19] customers calls us interesting they
+[8:21] actually don't really like us that much
+[8:23] but if someone calls us useful great or
+[8:25] smart they do love us and then it was
+[8:27] able to package it not only find the
+[8:29] insight but package it into a little
+[8:31] sentence that could express it to me in
+[8:33] a way that I didn't feel like was slop.
+[8:35] This is something that Old Fable
+[8:36] wouldn't do 5 absolutely would not do
+[8:39] and generally models struggle with. So
+[8:41] there's a there's a leap here in how it
+[8:44] is able to pick out interesting things
+[8:46] and then present them to you.
+[8:48] Another thing that we always do is we
+[8:50] have these models create a PowerPoint.
+[8:52] So here's the PowerPoint it created. You
+[8:54] know you'll notice some like small
+[8:56] visual things like this every logo is
+[8:58] not quite right. But in general we the
+[9:01] prompt we give it is just take
+[9:02] compounding engineering and turn it into
+[9:06] a deck. It created this deck end to end.
+[9:09] I mean, this is a very well put together
+[9:12] deck on a couple different levels. For
+[9:14] one, it does a very good job of pulling
+[9:17] out specific ideas and making sure each
+[9:20] slide has one idea on it. It does a
+[9:23] really good job of, you know, these
+[9:25] subtle visual design things like, you
+[9:27] know, the yellow for the compound
+[9:29] engineering and and and sort of the end
+[9:31] of that paragraph.
+[9:33] And it even does things like you you'll
+[9:35] see it placed these arrows to show the
+[9:37] compound engineering loop. It created it
+[9:39] does these bubbles with these arrows.
+[9:42] Most models can't get these arrows right
+[9:45] there. There are these like subtle
+[9:46] little things that it does really really
+[9:48] well. So it is the kind of model where
+[9:51] if you give it a, you know, a
+[9:53] well-written dock and turn it and ask it
+[9:55] to turn it into a deck, it'll do a
+[9:57] really good first pass end to end
+[9:58] without very much interference, which is
+[10:01] something that most models can't do. So
+[10:04] for example, this is what 5.6's deck
+[10:06] looks like. And you can tell it's just
+[10:08] it's like a little bit worse. It's a
+[10:10] little bit more bare. You can see the
+[10:13] arrows here. The arrows are not done
+[10:15] right. So So the thing I want you to
+[10:17] take away is
+[10:20] developers for at least the last six
+[10:23] months, depending on who you are, have
+[10:25] been getting used to delegating big
+[10:27] chunks of work to the model. That hasn't
+[10:29] really been possible for knowledge
+[10:31] workers. You can do it, but the details
+[10:33] aren't really right. It looks a little
+[10:36] bit like slop. This is a big step in the
+[10:39] direction of actually I can have it make
+[10:41] a deck for me end to end. Actually, I
+[10:42] can have it do a bunch of data analysis
+[10:44] and get something back. And I'm like,
+[10:45] this is actually pretty good. And to be
+[10:47] clear, the original Fable did some of
+[10:50] this, but not at this speed and not at
+[10:52] this cost. So, it makes it available to
+[10:55] more and more people that previously
+[10:57] would have looked at Fable and been
+[10:58] like, "This is not for me." For example,
+[11:01] this is a meeting where I can be a
+[11:02] tiebreaker. our head of marketing is
+[11:04] talking about a new launch and who we're
+[11:06] targeting for that launch and whether we
+[11:08] might want to target other customers as
+[11:09] well and it's flagging me as like Dan
+[11:12] there's there's a there's a question
+[11:14] about strategy here you might want to be
+[11:17] involved in this you might want to know
+[11:18] about this and this is like a superpower
+[11:20] for me that Fable 5.1 can do is pick out
+[11:24] interesting things that you're going to
+[11:25] care about from what's happening in your
+[11:27] company what's happening in the world
+[11:28] and tell you about it in a way that kind
+[11:31] of clicks for you this is new. Normally,
+[11:33] it would show you stuff and you'd be
+[11:34] like, "Ah, like this doesn't really
+[11:35] click for me. It's it's not actually
+[11:38] interesting." This is the first model
+[11:40] that I've ever found that can pull out
+[11:42] something interesting and then present
+[11:44] it to you in a way that makes it click.
+[11:46] I think the thing that Fable can do,
+[11:48] well, one, it just like built this app
+[11:50] totally end to end. But the thing that
+[11:52] it can do is
+[11:54] if when Fable thinks something is
+[11:58] interesting,
+[12:00] it's more likely to actually be
+[12:02] interesting. You know, there's this um
+[12:03] there's this eval that's like loosely
+[12:06] called the McDonald's eval where if
+[12:08] you're talking to your model and you're
+[12:10] like, "Oh, that's exactly like
+[12:11] McDonald's." And it's like, "Oh, yeah,
+[12:13] you're totally right." But you're
+[12:14] talking about something completely
+[12:15] random. That's a that's an example of
+[12:18] the kind of thing that models struggle
+[12:21] with is I would call it I mean to one to
+[12:23] some degree it's like people pleasing to
+[12:24] another it's basically discernment like
+[12:28] when you make a connection is that
+[12:30] connection actually interesting is it a
+[12:32] real connection or is it just that you
+[12:34] can connect anything to anything which
+[12:35] these models can do because they know
+[12:36] everything and I think Fable's level of
+[12:40] discernment is much higher than previous
+[12:42] models I've tried [music]
+[12:45] and that takes me to the next which is
+[12:46] writing and obviously like writing is
+[12:49] that's it's that's what it's that's what
+[12:50] I love and so Enthropic has really
+[12:52] struggled with writing recently they
+[12:54] used to be the top writing model but
+[12:56] with Son of 5 and Opus 5 pretty much
+[12:59] everyone was just like this model
+[13:00] doesn't speak English correctly it
+[13:02] doesn't give me good output anymore and
+[13:04] everyone internally at every had
+[13:05] switched to CHBT with Fable 5.1 it's not
+[13:09] only better than Opus at writing it's
+[13:11] actually starting to compete with CHBT
+[13:13] it writes quickly it has pretty clear
+[13:16] pros. It still has a lot of the clawed
+[13:19] literariness, but if you look at the
+[13:22] reading level that it writes at and the
+[13:24] reading ease scores, it has the highest
+[13:26] reading ease and the lowest grade level
+[13:28] of Opus 5 and GBT 5.6 Soul. So, it is
+[13:31] just producing stuff that's easier to
+[13:33] read. So, as an example of the kind of
+[13:36] oneshot writing this thing does, we
+[13:38] asked it to create a blog post based on
+[13:41] a simple prompt and a long transcript of
+[13:45] Mike Taylor, who's our head of eval just
+[13:47] talking about some of the work that he
+[13:48] does. And we asked it to write some of
+[13:50] the things that he's learned about
+[13:51] getting teams to use AI. And this is the
+[13:53] post that it created just from a very,
+[13:55] very simple prompt. You can see the
+[13:56] prompt is really small. Raise the
+[13:59] ceiling, not the floor. Seven things
+[14:01] I've learned about getting teams to
+[14:02] actually use AI from my first few months
+[14:04] running tech consulting at every sampar
+[14:06] asked me a question on X last week that
+[14:08] I've been asked in one form or another
+[14:09] in almost every client meeting since I
+[14:11] joined every how's everyone getting team
+[14:13] adoption for claude. It's the right
+[14:15] question. The gap between what the
+[14:16] terminally online people in a company
+[14:18] can do with AI and what everyone else
+[14:20] does with it has never been wider. This
+[14:22] is like pretty good pros. It doesn't
+[14:24] feel like slop by the model. Buy the
+[14:26] model direct, not third party tools.
+[14:28] When a company decides to do AI, the
+[14:30] first instinct is to evalu evaluate
+[14:32] tools. Someone assembles a spreadsheet
+[14:33] of vendors with Clutter Codeex or Gemini
+[14:35] under the hood. It doesn't have any of
+[14:37] the X not Ys. It has the raise the
+[14:39] ceiling, not the floor, but still it's
+[14:41] not it doesn't have that slop feeling.
+[14:43] It's well structured. It's thoughtful.
+[14:47] It's actually really impressive. Let's
+[14:49] look back at Opus. Opus 5. Same prompt,
+[14:52] same exercise, same everything. Nobody
+[14:54] wants to use your AI tools. Opus 5 was
+[14:56] such a dick.
+[14:58] >> [laughter]
+[14:58] >> Nobody wants to use your AI tools. Seven
+[15:00] things I've learned about AI adoption
+[15:01] since joining every consulting. Sam Par
+[15:03] asked a question last week that I think
+[15:04] is the real question in AI right now. So
+[15:06] that that opener, it's a sort of similar
+[15:08] opener. It's a it's a little bit of more
+[15:10] of a minimal sentence construction,
+[15:13] which isn't necessarily bad, but you can
+[15:15] just sort of feel, let's see, the
+[15:18] instinct is to go after lagards. We
+[15:20] bought you the tools. Now everyone needs
+[15:22] to use AI. This does not work. On pain
+[15:24] of death, a good number of people are
+[15:25] emotionally unwilling to use AI. Like
+[15:27] what is this thing even talking about?
+[15:29] It's Opus 5 is just so dark and they
+[15:31] fixed it with Fable 5.1. It's really
+[15:34] impressive. I find for me personally,
+[15:36] I'm I'm a pretty I write every day and
+[15:40] I'm still using 5.6 in the CHBT for work
+[15:44] app for most of my day-to-day writing. I
+[15:48] still find with Fable 5.1, it's still
+[15:50] like a little bit literary and chunky,
+[15:52] but different writers have different
+[15:53] styles. So Katie Parrot, who's a staff
+[15:55] writer, uses is now back. She she was
+[15:58] using Chetchy Boutique all the time and
+[15:59] now she's back to Claude for a lot of
+[16:01] her writing because she's a big Claude
+[16:02] fan for many years until the the last
+[16:06] few models. So I find that for me I
+[16:09] really like more minimal straight ahead
+[16:12] pros and I can kind of collaborate with
+[16:14] 5.6 a little bit easier to to create
+[16:16] that. But I am now flipping back to 5.1
+[16:19] to Fable when the first prompt or two to
+[16:22] chat to BT doesn't work. So I find it to
+[16:25] be a valuable part of my arsenal where I
+[16:28] wasn't using claude at all for writing
+[16:29] anymore.
+[16:31] And that's new and I certain I mean I
+[16:33] certainly was never using Fable for
+[16:34] writing because Fable is like this warp
+[16:36] drive thing.
+[16:38] So, one of the things this model knows
+[16:40] how to do that other models don't really
+[16:43] know is it knows how sentences connect
+[16:46] together. Like I was working on this
+[16:48] piece, I'm working on this history of
+[16:50] codecs and I was working on a piece of
+[16:54] it where I asked a question, why was
+[16:58] codeex cloud different? And the details
+[17:00] of this don't matter. Why was Codex
+[17:02] cloud different? And then there was some
+[17:04] text after that. There was I had I had a
+[17:06] you know I had a falling paragraph and I
+[17:08] just knew it wasn't really quite working
+[17:10] and I threw it into this model and it
+[17:12] was like here's what's dragging it down
+[17:13] roughly in order of how much it matters.
+[17:15] The biggest problem is that the
+[17:16] paragraph goes flat right where it
+[17:18] should pay off. You set up a real
+[17:19] puzzle. Why was Codex cloud different
+[17:20] and then answer it in the voice of a
+[17:22] help center article the right software
+[17:23] dependencies blah blah blah. Everywhere
+[17:25] else in the piece you reach for an image
+[17:27] here you explain dependency hell
+[17:29] literally. So, it's actually zeroing in
+[17:32] on the right part of the problem and
+[17:34] then telling me how to fix it. And the
+[17:36] takes that it does generally the
+[17:38] sentence are connecting. They're it's
+[17:40] leading from one sentence to the next.
+[17:42] It doesn't write as many of those
+[17:43] sentences where you're like, "Oh, yeah,
+[17:44] that's that sounds right." And then you
+[17:45] think about it and you're like, "That
+[17:46] doesn't mean anything. I have no idea
+[17:47] what it means." And that's new for a
+[17:50] model of this level of power. So the
+[17:53] takeaway here is if you really liked
+[17:56] Claude models until Opus 5 or Sonify 5
+[17:58] for writing, you're going to really like
+[18:00] this model. It's going to be back to the
+[18:02] stuff that you love. And if you've been
+[18:04] using GPT 5.6 or similar models for your
+[18:06] writing, you should give this one a try.
+[18:08] It's a good one-two punch to give you a
+[18:10] little bit more variation and
+[18:12] perspective in your writing. That'll
+[18:13] help liven it up. So where does this
+[18:16] leave us? I I want to show you like my
+[18:18] actual usage. So I got this model on
+[18:21] August 24th and you can see you know
+[18:23] this is in in green this is codeex or
+[18:25] chatbtd for work and in orange it's
+[18:27] cloud code. You can see it my my level
+[18:30] of use has not really changed. I'm
+[18:33] mostly using codeex but then if I look
+[18:36] at the number of tokens
+[18:38] my my use of claude jumped dramatically.
+[18:43] Why is that? That's interesting right?
+[18:45] What Fable 5.1 has done for me is given
+[18:47] me a model that I set off on a big
+[18:49] chunky task and I just let it cook and
+[18:52] I'm in chat for my more basic day-to-day
+[18:54] stuff and then I flip back to Fable
+[18:56] every once in a while. And so I'm
+[18:58] getting like all this work done but I'm
+[19:00] not really checking it because it it
+[19:02] just does the work end to end. And this
+[19:04] is that new style of coding and
+[19:05] knowledge work that I'm talking about.
+[19:07] You want both. You want both gears. But
+[19:09] what what Fable 5.1 has really given me
+[19:11] is this extra tool that works at the
+[19:14] cost and speed of Opus 5, but gives you
+[19:16] the delegation power of Fable
+[19:19] that used to be pretty out of reach
+[19:21] unless you're spend willing to spend a
+[19:22] ton of money. So you can sort of see
+[19:24] that in the graph, right? Like I'm still
+[19:26] using a lot of CHBT tokens, but I'm
+[19:28] using way more claw tokens and I'm in
+[19:31] CHBT more. I'm I'm prompting Chetch
+[19:34] more. It's more of an interactive model.
+[19:36] I think that's really interesting. Um,
+[19:38] okay. What did I actually use the tokens
+[19:40] on? It's like it's hands. It's this
+[19:42] personal feed experiments. It's these
+[19:44] big things that I'm building end to end.
+[19:47] And the rest of my work I'm mostly still
+[19:49] doing in Chach.
+[19:51] [music]
+[19:52] So, final thoughts. If you like cloud
+[19:56] models and you've been disappointed by
+[19:57] the recent releases, you're going to
+[19:58] love this. You need to check it out. And
+[20:00] if you're a big GPT 5.6 six fan like I
+[20:03] am, it's worth really adding to your
+[20:06] arsenal, especially for your big
+[20:08] projects and especially for trying to
+[20:10] understand, okay, where is knowledge
+[20:11] work going? How is knowledge work going
+[20:12] to work when I'm delegating lots of
+[20:14] things like making a slide deck end to
+[20:16] end that used to be impossible, it's
+[20:18] starting to be possible now. And so, if
+[20:20] you want to get a glimpse of this new
+[20:22] way of working in a way that isn't going
+[20:24] to totally break your bank account,
+[20:26] check out Fable 5.1.
+[20:29] In addition to this video, we have a
+[20:30] long form written vibe check with all of
+[20:32] our benchmarks and all of our testing
+[20:34] live now on every.TO. We also have a
+[20:37] prompt library that you can download to
+[20:38] help you get the most out of Fable 5.1.
+[20:40] So, if you want to go deeper after this
+[20:42] video, check it out. Every.TO.

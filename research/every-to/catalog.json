@@ -1,0 +1,224 @@
+{
+  "channel": {
+    "id": "UCjIMtrzxYc0lblGhmOgC_CA",
+    "title": "Every",
+    "handle": "@EveryInc",
+    "url": "https://www.youtube.com/@EveryInc",
+    "ceo": "Dan Shipper (Every / every.to)",
+    "subscribers_approx": 48100
+  },
+  "fetched_at": "2026-10-01T18:10:00Z",
+  "source": "TubeAlfred youtube_channel_videos (page 1, n=30)",
+  "videos": [
+    {
+      "id": "jZh55CQwSh8",
+      "title": "How Sam Altman Actually Uses Dots to Run OpenAI and His Life",
+      "views": 54000,
+      "published_time_text": "21 hours ago",
+      "length_seconds": 1990
+    },
+    {
+      "id": "WW_0xPcFbzw",
+      "title": "We Tested OpenAI DevDay Products! 6 Things to Know: Dots, Spaces, Astra Ultrafast",
+      "views": 14000,
+      "published_time_text": "2 days ago",
+      "length_seconds": 575
+    },
+    {
+      "id": "1EEw36H2zLo",
+      "title": "We tested OpenAI's Astra! 5 things to know",
+      "views": 98000,
+      "published_time_text": "3 weeks ago",
+      "length_seconds": 399
+    },
+    {
+      "id": "vey_dBnDTAU",
+      "title": "How a Professional Writer Writes With AI",
+      "views": 6600,
+      "published_time_text": "4 weeks ago",
+      "length_seconds": 2878
+    },
+    {
+      "id": "yZddAiz4HP8",
+      "title": "We Tested Anthropic's Fable 5.1 for a Week",
+      "views": 30000,
+      "published_time_text": "1 month ago",
+      "length_seconds": 1245
+    },
+    {
+      "id": "IfL_OY-wRBM",
+      "title": "Why This $10B Hedge Fund Made AI Training Mandatory (Best of the Pod)",
+      "views": 6700,
+      "published_time_text": "1 month ago",
+      "length_seconds": 4026
+    },
+    {
+      "id": "LJmwOojvMik",
+      "title": "What the OpenAI\u2013Hugging Face Incident Really Means",
+      "views": 6200,
+      "published_time_text": "1 month ago",
+      "length_seconds": 876
+    },
+    {
+      "id": "ngTS4gUINVk",
+      "title": "$4M in 4 Weeks: How This AI Alien Companion App Took Off (Best of the Pod)",
+      "views": 1500,
+      "published_time_text": "1 month ago",
+      "length_seconds": 4928
+    },
+    {
+      "id": "KzwMs-TQwz8",
+      "title": "Introducing Thesis: 2027",
+      "views": 528,
+      "published_time_text": "1 month ago",
+      "length_seconds": 63
+    },
+    {
+      "id": "jBGo33Jkids",
+      "title": "Microsoft\u2019s Vision for an Internet Made for Agents With CTO Kevin Scott (Best of the Pod)",
+      "views": 1400,
+      "published_time_text": "1 month ago",
+      "length_seconds": 1683
+    },
+    {
+      "id": "dlI-5W7d7uU",
+      "title": "Why the Next Hit AI Product Will Be Social  (Best of the Pod)",
+      "views": 3200,
+      "published_time_text": "1 month ago",
+      "length_seconds": 2915
+    },
+    {
+      "id": "s4Ld3ZkM0Do",
+      "title": "Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success (Best of the Pod)",
+      "views": 1700,
+      "published_time_text": "2 months ago",
+      "length_seconds": 3222
+    },
+    {
+      "id": "H4jlCNVDgPA",
+      "title": "Build Your Own Repeatable AI Design Workflow",
+      "views": 5900,
+      "published_time_text": "2 months ago",
+      "length_seconds": 561
+    },
+    {
+      "id": "tqF8Ffv7tDs",
+      "title": "We Tested Claude Opus 5. It\u2019s Frustrating with Flashes of Brilliance.",
+      "views": 33000,
+      "published_time_text": "2 months ago",
+      "length_seconds": 571
+    },
+    {
+      "id": "qtKkzsQjAy0",
+      "title": "How to Build a Multi-Agent Review Swarm",
+      "views": 1400,
+      "published_time_text": "2 months ago",
+      "length_seconds": 721
+    },
+    {
+      "id": "pogKlhNAEV8",
+      "title": "Behind Our Largest Subscription Revenue Increase",
+      "views": 2100,
+      "published_time_text": "2 months ago",
+      "length_seconds": 2791
+    },
+    {
+      "id": "B9N0P5-R4m0",
+      "title": "OpenAI\u2019s Codex Workflows for Knowledge Work",
+      "views": 3300,
+      "published_time_text": "2 months ago",
+      "length_seconds": 1770
+    },
+    {
+      "id": "u_3q5rMkAds",
+      "title": "I Vibecoded This Feature Using Codex",
+      "views": 1000,
+      "published_time_text": "2 months ago",
+      "length_seconds": 771
+    },
+    {
+      "id": "uzYLYlaGAZA",
+      "title": "Granola's Chris Pedregal on Building a $1.5B AI Company",
+      "views": 2400,
+      "published_time_text": "2 months ago",
+      "length_seconds": 3579
+    },
+    {
+      "id": "13tHN3iP5kQ",
+      "title": "I Tested GPT\u20115.6 Sol for a Month",
+      "views": 14000,
+      "published_time_text": "2 months ago",
+      "length_seconds": 815
+    },
+    {
+      "id": "7ND0lQmLJlA",
+      "title": "How a Writer Uses AI Without Losing His Voice",
+      "views": 7000,
+      "published_time_text": "2 months ago",
+      "length_seconds": 3188
+    },
+    {
+      "id": "IiGt2_-NmbI",
+      "title": "How Every's Head of Consulting Uses Codex Every Day",
+      "views": 7800,
+      "published_time_text": "3 months ago",
+      "length_seconds": 2476
+    },
+    {
+      "id": "omX6wrLuX08",
+      "title": "Building a School Where AI Models Learn About Humanity",
+      "views": 2500,
+      "published_time_text": "3 months ago",
+      "length_seconds": 2629
+    },
+    {
+      "id": "OCEVqy8kl7Q",
+      "title": "GitHub\u2019s COO Explains Why AI Hasn\u2019t Replaced Developers",
+      "views": 3100,
+      "published_time_text": "3 months ago",
+      "length_seconds": 1688
+    },
+    {
+      "id": "rYX6m4gIys0",
+      "title": "How I Built an AI Software Factory With Fable 5",
+      "views": 3700,
+      "published_time_text": "3 months ago",
+      "length_seconds": 466
+    },
+    {
+      "id": "XWpTgCvgYaE",
+      "title": "Anthropic Expert: Rethink What's Possible With Fable 5",
+      "views": 18000,
+      "published_time_text": "3 months ago",
+      "length_seconds": 3127
+    },
+    {
+      "id": "GrdEid8H6H4",
+      "title": "We Tested Anthropic\u2019s Fable 5 for a Week",
+      "views": 136000,
+      "published_time_text": "3 months ago",
+      "length_seconds": 998
+    },
+    {
+      "id": "2Yy8EJlZJFE",
+      "title": "Codex Runs My Inbox Now",
+      "views": 11000,
+      "published_time_text": "3 months ago",
+      "length_seconds": 433
+    },
+    {
+      "id": "kYKebKB3-d0",
+      "title": "The SaaS Apocalypse Is a Goldmine With Figma\u2019s Matt Colyer",
+      "views": 5900,
+      "published_time_text": "3 months ago",
+      "length_seconds": 2034
+    },
+    {
+      "id": "kXYDUozZAhk",
+      "title": "Why Opus 4.8 Pulled Me Back to Claude",
+      "views": 21000,
+      "published_time_text": "4 months ago",
+      "length_seconds": 630
+    }
+  ]
+}

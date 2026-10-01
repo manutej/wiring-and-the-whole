@@ -1,0 +1,257 @@
+[0:00] We're here. We're in San Francisco and
+[0:02] we're going to talk about Dev Day. This
+[0:04] is This is my fourth Dev Day. First year
+[0:08] they launched 11 11 products and
+[0:10] features. Second year, five. Third year,
+[0:14] nine. This year, 22 new products and
+[0:17] features dropping today at Dev Day. If
+[0:20] you're watching this, it means that the
+[0:22] keynote just started. We got access
+[0:24] early to everything they were dropping.
+[0:26] Here's our breakdown on what they
+[0:27] launched, what matters, and what it
+[0:28] means for you.
+[0:30] Number one is dots, an always on
+[0:32] persistent agent that works sort of like
+[0:33] OpenClaw or Muse or Instinct or
+[0:35] Grockbots. This is a completion of a
+[0:38] story arc that started like 9 months or
+[0:40] so ago when OpenClaw like totally blew
+[0:42] up and OpenAI hired Pete Steinberger who
+[0:44] made OpenClaw to help them make these
+[0:47] kinds of persistent agents. So this is
+[0:49] OpenAI's entrance into that race. Dots
+[0:51] is an always on persistent agent. It
+[0:54] comes up as a little new tab at the top
+[0:56] of Chatbt. So instead of starting a new
+[0:58] chat in chatbd for work or codeex either
+[1:01] in the desktop app or in the mobile app,
+[1:03] all you do is click your dot my dot's
+[1:05] name is buu and you have one long
+[1:07] running chat that you can use to do
+[1:09] anything you need to do in AI. Your
+[1:11] persistent agent has access to its own
+[1:13] computer. It has access to your computer
+[1:15] and it's proactive. So you'll notice
+[1:17] every once in a while through the day
+[1:19] it'll just send you a message saying,
+[1:20] "Hey, I did this thing. Hey, like you
+[1:22] had a couple people reach out to
+[1:24] schedule something with you. I replied
+[1:25] to them." That kind of thing. when it
+[1:27] works, it's obviously the future. It's
+[1:30] like really delightful. I've been able
+[1:31] to test it for the last week or so. And
+[1:33] I find myself starting to reach for it
+[1:36] over starting a new chat in Codex or or
+[1:38] Chat GBT. It's one of those things where
+[1:40] you're like, I could have done this
+[1:41] before if I manually set it all up with
+[1:43] heartbeats and stuff like that, but this
+[1:44] is just it just works sometimes. When it
+[1:48] works is good. Uh the only problem is,
+[1:51] at least in the versions that I've been
+[1:53] testing, it's not quite there yet. uh if
+[1:56] you compare it to like a Muse or a
+[1:57] Grockbots, it's just a very early
+[2:00] product that they're iterating on really
+[2:02] quickly. And I just found lots and lots
+[2:03] of bugs and and inconsistencies where it
+[2:05] felt kind of confusing for me to use and
+[2:07] honestly for the dot itself to figure
+[2:10] out what to do. Um if you ask it to open
+[2:12] up an inapp browser, it doesn't know
+[2:14] whether you mean the inapp browser in
+[2:16] its own thread or a separate codeex
+[2:18] thread or in its on its cloud computer.
+[2:21] Um, I had lots of issues with like
+[2:23] logging in, having it log into external
+[2:25] sites and using its own wallet and all
+[2:28] of these things are getting cleaned up
+[2:29] and I am I imagine that they will be
+[2:31] different in a week or two but you can
+[2:33] just feel the speed that OpenAI is
+[2:36] operating at and I just didn't have the
+[2:38] best experience with this product. Okay,
+[2:40] number two. Space space
+[2:44] is OpenAI's attempt to sort of build a
+[2:48] Microsoft Office suite inside of Chacht.
+[2:50] something that I've been wanting them to
+[2:51] do for a really long time and it's
+[2:54] finally here. It's a native
+[2:56] implementation of something like a file
+[2:59] system almost like Google Drive plus a
+[3:01] document editor, slides and sheets and
+[3:04] you can do it all from within your CHBT
+[3:06] or codeex task or if you're using your
+[3:09] dot. What's really cool about it is it's
+[3:11] it's all in one place. So I can make a
+[3:12] comment in a document and then I can tag
+[3:14] my dot and it can go in and do work with
+[3:15] me and it's just sort of this like
+[3:17] parallel collaborative space space for
+[3:20] humans and now agents and you can see
+[3:24] how if I'm using this with my dot and
+[3:27] other people in my company how I'm going
+[3:28] to just like I can kind of never have to
+[3:31] leave ChachiBT which I kind of love. I
+[3:34] think the space implementation is pretty
+[3:37] good. So, I'll be curious to see today
+[3:40] and over the next couple weeks if
+[3:41] they're fully featured enough for me to
+[3:43] switch to using them fully. You know, do
+[3:45] I find myself reaching for them over
+[3:48] Google Slides or Sheets or Keynote or
+[3:50] Notion? It's a tall order, but I think
+[3:52] for space and for docs, just being
+[3:55] integrated inside of Chetchup BT is a
+[3:57] huge benefit. Okay, number three. What
+[4:00] is number three? Ooh, this is a good
+[4:01] one. They're creating something called
+[4:03] plug-in extensions. Plug-in extensions
+[4:05] are essentially like codeex native apps.
+[4:08] So in the same way that they're
+[4:09] launching their own native versions of
+[4:11] docs, slides, and sheets. Plug-in
+[4:14] extensions allows you to create apps for
+[4:16] yourself that you distribute to your
+[4:18] company or your users. These are apps
+[4:21] that are designed to be used inside of
+[4:23] chatbt in parallel with dots or just
+[4:26] regular chatbt or codeex threads. This
+[4:28] is something that I've been asking for
+[4:30] for a long time and it's finally here.
+[4:33] And what they also added into the mix
+[4:35] here is the ability to allow your plugin
+[4:39] to be discovered automatically by
+[4:42] chatbt. So they have an they have a
+[4:44] plug-in store and they created a way
+[4:46] where when users are asking chatbt to do
+[4:49] something, it'll search and potentially
+[4:51] surface your plugin, your app to be used
+[4:53] by the user as a new distribution
+[4:55] mechanism for developers and startups.
+[4:57] It remains to be seen how how good this
+[5:00] is. They've had three or four cracks at
+[5:02] building an app store, but from what
+[5:05] I've seen, from the demos I've seen,
+[5:07] this is the most promising one yet.
+[5:09] Number four, this is a good one. They
+[5:12] have extended sign in with CHBT. So, you
+[5:15] can take your CHBT subscription and
+[5:17] spend your tokens on third party apps.
+[5:20] They've got like 15 apps that are uh
+[5:22] participating in this right now. So apps
+[5:24] like Devon where you're paying for a CHP
+[5:27] subscription when you go to use Devon
+[5:29] instead of using your usage on Devon you
+[5:31] can bring your CHP subscription with you
+[5:33] and draw down usage there. I think this
+[5:35] is incredible. It's really good for open
+[5:37] AI it's really good for app makers
+[5:39] people like us at every like when a user
+[5:41] comes to our app we always have to be
+[5:44] careful about okay how much AI are they
+[5:45] using all that kind of stuff and it it
+[5:47] incentivizes app makers to use cheaper
+[5:49] and cheaper models like all that kind of
+[5:50] stuff. Now, if you're bringing your
+[5:52] tokens, we don't have to worry about
+[5:53] that. You can use the best model for
+[5:55] you. And that means I think it's a
+[5:57] really good deal for users. It means
+[5:59] that your it means that your AI
+[6:01] subscription is going to be a lot like a
+[6:04] cell phone data plan. Uh, and you can
+[6:06] use your tokens wherever you want. This
+[6:08] is the first this is the first shot of
+[6:10] this, but I'm very excited for it. Okay,
+[6:13] number five, we've got the decisions
+[6:16] API. Uh if you've been following
+[6:17] anything in AI, you know that this new
+[6:19] model dropped a couple weeks ago called
+[6:21] Jev, which gives you very very very fast
+[6:24] uh structured output responses for
+[6:27] questions that can be used as like LLM
+[6:29] as a judge or classifier. It's not
+[6:31] really an LLM. It's like a sort of
+[6:32] slightly different model. And it's so
+[6:34] much cheaper. It like gives you fable
+[6:36] level performance on a lot of problems,
+[6:37] but I don't know, it's like a couple
+[6:39] hundred times cheaper. And OpenAI today
+[6:42] is releasing that. It's based on a
+[6:44] fine-tuned version of GPT6 Luna and it's
+[6:49] really freaking fast. Uh you can get
+[6:51] responses in like 150 milliseconds in
+[6:53] our testing internally at every we did
+[6:55] find that it was faster than Jev on some
+[6:58] workloads and crucially it's multimodal
+[7:00] so you can feed it images. So if you're
+[7:02] a developer you care about this you
+[7:04] should definitely check out the
+[7:04] decisions API. Six there's like there's
+[7:08] a ton of other things that they
+[7:10] launched. Okay they're launching a $500
+[7:12] plan. It's got a ton more usage than the
+[7:15] regular $200 pro plan and it gives you
+[7:17] access to Astra Ultraast, which is their
+[7:20] new Astra speed tier that's also
+[7:21] dropping today. It does 250 tokens per
+[7:24] second. It's really, really freaking
+[7:25] fast. It's crazy, but it will uh bleed
+[7:29] your token balance dry really fast. So,
+[7:31] be careful with that. We've also got
+[7:32] Soul 6.1. So, they're launching a new
+[7:35] version of Soul. It's got Astro level
+[7:36] performance, but it's 50% of the price.
+[7:38] If you like Astra, but you've been
+[7:39] priced out of it, you should definitely
+[7:41] check out Soul 6.1. They're also
+[7:43] releasing an update to their agents API
+[7:46] that allows you to build on the same
+[7:47] harness as Codex in your own apps and it
+[7:50] now includes computer use. And last but
+[7:52] not least is they're releasing an all
+[7:54] new codec. It's got a voice chat. It's
+[7:56] got new and better interfaces for
+[7:58] tracking agents and a bunch of other
+[7:59] things. You should check it out. Okay,
+[8:02] that is everything that they launched at
+[8:04] Devday. You can see it's a mix of things
+[8:07] for knowledge workers and consumers and
+[8:10] then also a bunch of stuff for
+[8:11] developers. They're both building an
+[8:14] operating system for doing all of your
+[8:15] work inside of Chachebt and they're
+[8:18] building a platform and an ecosystem for
+[8:20] developers to build applications inside
+[8:22] of Chachebt and to bring the CHBT
+[8:24] subscription to other places around the
+[8:26] internet. Every 6 to 12 months you see
+[8:28] model progress creates a shift in form
+[8:30] factor. So in the GBT3 era, it was Chat
+[8:32] GBT on the web. Uh around Sonnet 3.5, it
+[8:36] shifted into terminals and coding agents
+[8:38] in the terminal. Around February, GBT
+[8:40] 5.3, it started shifting into desktop
+[8:42] apps. And now we're entering this
+[8:44] persistent agent era. And so this is
+[8:47] OpenAI's first foray into persistent
+[8:50] agents. Like I said, promising form
+[8:52] factor. I think they have a lot of
+[8:54] reasons to win because it's integrated
+[8:57] right into Chacht. But honestly, in my
+[9:00] testing, it's just not quite there yet.
+[9:03] It's just like all the little things are
+[9:04] not quite working to make it a great
+[9:06] experience. My bet is that will improve.
+[9:09] So, my recommendation is wait a week or
+[9:12] two and then try it out. I will be at
+[9:15] Dev Day all day today. I will be
+[9:17] interviewing Sam Alman on this channel.
+[9:19] So, tune in tomorrow for my interview
+[9:21] with him and we'll also have a dev day
+[9:23] vlog coming out. So, stay tuned for
+[9:25] that. and we'll see you in space.
+[9:30] I don't know. [laughter]

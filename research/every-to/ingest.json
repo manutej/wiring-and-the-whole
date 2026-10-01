@@ -1,0 +1,45 @@
+{
+  "last_ingest_at": "2026-10-01T18:10:00Z",
+  "transcripts_raw": [
+    "1EEw36H2zLo",
+    "WW_0xPcFbzw",
+    "tqF8Ffv7tDs",
+    "vey_dBnDTAU",
+    "x9BNBcP_C7Q",
+    "yZddAiz4HP8"
+  ],
+  "transcripts_pending": [
+    "IfL_OY-wRBM",
+    "LJmwOojvMik",
+    "ngTS4gUINVk",
+    "KzwMs-TQwz8",
+    "jBGo33Jkids",
+    "dlI-5W7d7uU",
+    "s4Ld3ZkM0Do",
+    "H4jlCNVDgPA",
+    "qtKkzsQjAy0",
+    "pogKlhNAEV8",
+    "B9N0P5-R4m0",
+    "u_3q5rMkAds",
+    "uzYLYlaGAZA",
+    "13tHN3iP5kQ",
+    "7ND0lQmLJlA",
+    "IiGt2_-NmbI",
+    "omX6wrLuX08",
+    "OCEVqy8kl7Q",
+    "rYX6m4gIys0",
+    "XWpTgCvgYaE",
+    "GrdEid8H6H4",
+    "2Yy8EJlZJFE",
+    "kYKebKB3-d0",
+    "kXYDUozZAhk"
+  ],
+  "transcripts_unavailable": [
+    "1EEw36H2zLo",
+    "jZh55CQwSh8"
+  ],
+  "notes": [
+    "jZh55CQwSh8: no captions at TubeAlfred check (new upload).",
+    "1EEw36H2zLo: transcript_only_text + empty segments; re-fetch for timestamped segments."
+  ]
+}
