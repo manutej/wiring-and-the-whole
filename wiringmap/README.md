@@ -41,23 +41,20 @@ Machine-readable **L1 feedstock**: compilation units, exported ports, typed wiri
 
 `doctrine_tag` is optional prose alignment (`interface`, `system_map`, `junction`, `unknown`) — **not** a formal guarantee until MUST-PROVE 1 (see `plans/ADVERSARIAL.md` GA1).
 
-## Validate locally (optional)
+## Validate locally
 
-Python 3.10+ with `jsonschema` (not required for `make verify`):
+From repo root (installs `jsonschema` if needed):
 
 ```bash
-python3 -c "
-import json
-from pathlib import Path
-try:
-    import jsonschema
-except ImportError:
-    raise SystemExit('pip install jsonschema for optional validation')
-inst = json.loads(Path('wiringmap/examples/toybank-accounts.v0.json').read_text())
-schema = json.loads(Path('wiringmap/schema.v0.json').read_text())
-jsonschema.validate(inst, schema)
-print('OK: toybank-accounts.v0.json')
-"
+make wiringmap-check
+```
+
+Or run scripts directly:
+
+```bash
+python3 -m pip install jsonschema
+python3 scripts/validate_wiringmap.py
+python3 scripts/extract_toybank_refs.py
 ```
 
 ## Next engineering jumps
