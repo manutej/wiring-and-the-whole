@@ -1,0 +1,112 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "fixtures/external/fineract-handlers-thin",
+    "slice": "7 Java handlers (3 units wired; 4 context-only)",
+    "notes": "Partial L1 map — vendored E3 ablation slice, not full Fineract. Junctions label out-of-slice platform services."
+  },
+  "junctions": [
+    {
+      "id": "junction:LoanWritePlatformService",
+      "label": "LoanWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:LoanChargeWritePlatformService",
+      "label": "LoanChargeWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:DataIntegrityErrorHandler",
+      "label": "infrastructure.DataIntegrityErrorHandler",
+      "junction_kind": "other"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit:handler.DisburseLoanCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/DisburseLoanCommandHandler.java",
+      "role": "Command handler — LOAN DISBURSE",
+      "ports": [
+        {
+          "id": "port:handler.DisburseLoanCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.CloseLoanCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/CloseLoanCommandHandler.java",
+      "role": "Command handler — LOAN CLOSE",
+      "ports": [
+        {
+          "id": "port:handler.CloseLoanCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.AddLoanChargeCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/AddLoanChargeCommandHandler.java",
+      "role": "Command handler — LOANCHARGE CREATE",
+      "ports": [
+        {
+          "id": "port:handler.AddLoanChargeCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:disburse-loan-write",
+      "from": "port:handler.DisburseLoanCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanCommandHandler.java // refs: LoanWritePlatformService#disburseLoan"
+    },
+    {
+      "id": "edge:disburse-data-integrity",
+      "from": "port:handler.DisburseLoanCommandHandler#processCommand",
+      "to": "junction:DataIntegrityErrorHandler",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanCommandHandler.java // refs: infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+    },
+    {
+      "id": "edge:close-loan-write",
+      "from": "port:handler.CloseLoanCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CloseLoanCommandHandler.java // refs: LoanWritePlatformService#closeLoan"
+    },
+    {
+      "id": "edge:charge-write",
+      "from": "port:handler.AddLoanChargeCommandHandler#processCommand",
+      "to": "junction:LoanChargeWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AddLoanChargeCommandHandler.java // refs: LoanChargeWritePlatformService#addLoanCharge"
+    },
+    {
+      "id": "edge:charge-data-integrity",
+      "from": "port:handler.AddLoanChargeCommandHandler#processCommand",
+      "to": "junction:DataIntegrityErrorHandler",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AddLoanChargeCommandHandler.java // refs: infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+    }
+  ]
+}

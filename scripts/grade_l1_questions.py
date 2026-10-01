@@ -34,6 +34,24 @@ def answer_meta_pack(pack_text: str, question_text: str) -> str:
     raise ValueError(f"No heuristic for question: {question_text!r}")
 
 
+def answer_fineract_thin_pack(pack_text: str, question_text: str) -> str:
+    """Heuristic answers for docs/dogfood/L1-fineract-handlers-thin.md."""
+    q = question_text.lower()
+    if "interface catalog" in q and "unit_id" in q:
+        return "3"
+    if "wiring edges" in q and "bullet" in q:
+        return "5"
+    if "skill" in q and "under test" in q:
+        return "interface-first-context"
+    if "parallel" in q and "experiments" in q:
+        return "experiments/e3-ablation/raw/"
+    if "disburseloan" in q and "action" in q:
+        return "DISBURSE"
+    if "context-only" in q and "named" in q:
+        return "4"
+    raise ValueError(f"No heuristic for question: {question_text!r}")
+
+
 def answer_toybank_pack(pack_text: str, question_text: str) -> str:
     """Heuristic answers for docs/dogfood/L1-toybank-accounts.md."""
     q = question_text.lower()
@@ -50,6 +68,8 @@ def answer_toybank_pack(pack_text: str, question_text: str) -> str:
 
 def answer_from_pack(pack_path: Path, pack_text: str, question_text: str) -> str:
     name = pack_path.name.lower()
+    if "fineract-handlers-thin" in name:
+        return answer_fineract_thin_pack(pack_text, question_text)
     if "toybank-accounts" in name:
         return answer_toybank_pack(pack_text, question_text)
     return answer_meta_pack(pack_text, question_text)

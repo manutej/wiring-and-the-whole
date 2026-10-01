@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run validate + extract over density ladder (D0–D3). Subcommand non-zero exits are
+# Run validate + extract over density ladder (D0–D4). Subcommand non-zero exits are
 # expected for adversarial fixtures; this script exits 0 when all expectations match.
 set -euo pipefail
 
