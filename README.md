@@ -125,7 +125,8 @@ MUST-PROVE 1–5 are still open: gluing soundness for Code-C; well-typed equivar
 
 From the handoff and options list, still unshipped:
 
-- Mint `systems-intake`, `interface-first-context`, `symmetry-lens` (and later `doctrine-typer`, `wiring-mapper`, `migration-square-checker`) as `SKILL.md` files.
+- Mint `systems-intake`, `symmetry-lens` (and later `doctrine-typer`, `wiring-mapper`, `migration-square-checker`) as `SKILL.md` files.
+- **Instruments shipped:** [`skills/interface-first-context/SKILL.md`](skills/interface-first-context/SKILL.md) (L1 context packs; 2026-10-01).
 - Full-protocol E3 (50+10 questions, mixed sites, firewalled minting, pinned models).
 - Upgrade witness `C₀` → full `Code_X`.
 - Fineract wedge with orbit statistics (U1) and the E4 migration chain folded in.
