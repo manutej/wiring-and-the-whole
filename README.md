@@ -6,7 +6,7 @@ Research corpus for a simple bet:
 
 This repo is the recovered working record of that program: paper digestion, consensus repairs, adversarial gaps, a toy faithfulness witness, and three experiments on real [Apache Fineract](https://github.com/apache/fineract) Java.
 
-**Start here:** [`HANDOFF.md`](HANDOFF.md) · recovery ledger: [`RECOVERY.md`](RECOVERY.md)
+**Start here:** [`HANDOFF.md`](HANDOFF.md) · scale ladder: [`docs/SCALE-PATH.md`](docs/SCALE-PATH.md) · recovery ledger: [`RECOVERY.md`](RECOVERY.md)
 
 Paper in the background: Libkind & Myers, *[Towards a Double Operadic Theory of Systems](https://arxiv.org/abs/2505.18329)* (arXiv:2505.18329v2, 80pp).
 

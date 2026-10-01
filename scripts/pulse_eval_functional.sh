@@ -89,8 +89,15 @@ check "pack I/O grade fails when catalog row removed" \
   expect_exit 1 python3 scripts/grade_l1_questions.py --answer-mode io \
     --pack "${TMP_PACK_MD}" --questions docs/dogfood/L1-TOYBANK-QUESTIONS.json
 rm -f "${TMP_PACK_MD}"
-check "dogfood fineract-thin L1" \
+check "dogfood fineract-thin L1 (heuristic)" \
   python3 scripts/grade_l1_questions.py --questions docs/dogfood/L1-FINERACT-THIN-QUESTIONS.json
+
+check "dogfood fineract-thin L1 (pack I/O parse mode)" \
+  python3 scripts/grade_l1_questions.py --answer-mode io \
+    --questions docs/dogfood/L1-FINERACT-THIN-QUESTIONS.json
+
+check "fetch slice dry-run inventory I/O" \
+  bash scripts/fetch_slice_io_check.sh
 
 # --- Grader must fail when answers are wrong (not tautological) ---
 WRONG_Q="$(mktemp)"
