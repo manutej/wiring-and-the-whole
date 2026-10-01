@@ -1,0 +1,130 @@
+# L1 — wiring-and-the-whole · meta-corpus · `main` (dogfood)
+
+**Scope:** This repository as a *research corpus* (not toybank Java). Vertical slice: navigation spine from cold start → verify → experiments. **Budget:** ports-only; no prose dumps, no pack bodies, no `node_modules`.
+
+**Skill under test:** `interface-first-context` (draft on `cursor/interface-first-context-skill-cd12`, PR #6).
+
+---
+
+## Interface catalog
+
+| unit_id | path | role | port_count |
+|---------|------|------|------------|
+| `handoff` | `HANDOFF.md` | resume / state-of-truth for agents | 4 |
+| `readme` | `README.md` | public entry + results table | 3 |
+| `recovery` | `RECOVERY.md` | restore ledger | 2 |
+| `consensus` | `plans/CONSENSUS.md` | binding repairs R1–R8 | 8 |
+| `adversarial` | `plans/ADVERSARIAL.md` | gaps GA1–GA10, MUST-PROVE, cheap artifacts | 10 |
+| `synthesis` | `synthesis/SYNTHESIS.md` | paper → codebase crosswalk | 6 |
+| `options` | `options/OPTIONS.md` | build options + L1/L2 sequencing | 5 |
+| `wiki-index` | `wiki/INDEX.md` | page-tagged paper index | 3 |
+| `witness-runner` | `witness/run_witness.py` | E1 executable checks | 2 |
+| `witness-spec` | `witness/WITNESS.json` | 13 check definitions | 13 |
+| `toybank` | `witness/toybank/` | E1 faithfulness substrate (16 files) | 12 |
+| `proto-e1` | `experiments/PROTOCOL-E1.md` | frozen E1 protocol | 2 |
+| `e2-packs` | `experiments/e2-tokens/` | token packs + `E2-RESULTS.json` | 4 |
+| `e3-grades` | `experiments/e3-ablation/` | A/B/C ablation + grades | 3 |
+| `e5-depth` | `experiments/e5-depth/` | depth ablation + E5.1 rerun | 3 |
+
+---
+
+## Per-unit cards (selected)
+
+### `handoff` (`HANDOFF.md`)
+
+**Ports (exported only)**
+
+- `mission` — doc: one-paragraph T1/T2/T3 programme
+- `state_of_truth` — doc: E1/E2/E3/E5 status + claims ladder
+- `folder_map` — doc: top-level layout
+- `next_actions` — doc: ordered resume list
+
+**Wiring (outbound)**
+
+- → `consensus#R1-R8` (ref: claims discipline)
+- → `adversarial#GA1-GA10` (ref: what program may not claim)
+- → `witness-spec#checks` (ref: E1 citation)
+- → `e2-packs#E2-RESULTS` (ref: token arithmetic)
+
+### `witness-runner` (`witness/run_witness.py`)
+
+**Ports (exported only)**
+
+- `main()` — entry: run all checks, exit code
+- `load_witness()` — fn: parse `WITNESS.json`
+
+**Wiring (outbound)**
+
+- → `witness-spec#checks` (read)
+- → `toybank/*` (static analysis / file presence)
+
+### `e2-packs` (`experiments/e2-tokens/`)
+
+**Ports (exported only)**
+
+- `pack_LEGEND.txt` — spec: L2 shorthand + re-expansion rules
+- `E2-RESULTS.json` — artifact: frozen token counts + gates
+- `pack_S*_A.txt` — artifact: explicit-edge arm (per site)
+- `pack_S*_motif.txt` — artifact: factored arm (per site)
+
+**Wiring (outbound)**
+
+- → `adversarial#GA6` (closes micro-scale token question)
+- → `e3-grades#E3-GRADES.json` (feeds comprehension question)
+
+---
+
+## Wiring edges (flat)
+
+- `readme` → `handoff#next_actions` (ref)
+- `readme` → `witness-spec#checks` (ref)
+- `readme` → `e2-packs#E2-RESULTS.json` (ref)
+- `readme` → `e3-grades#E3-RESULTS` (ref)
+- `readme` → `e5-depth#E5-RESULTS` (ref)
+- `handoff` → `consensus#R1-R8` (ref)
+- `handoff` → `adversarial#GA1-GA10` (ref)
+- `options` → `synthesis#crosswalk` (ref)
+- `options` → `readme#L1-L4` (ref: compression layers)
+- `witness-runner` → `witness-spec#checks` (import/read)
+- `witness-runner` → `toybank/accounts/AccountsController` (check target)
+- `e2-packs` → `proto-e1` (method note: E1 before benchmark code)
+- `e3-grades` → `e2-packs#pack_LEGEND.txt` (same legend discipline)
+- `e5-depth` → `e3-grades` (extends format-comprehension to depth)
+
+**Parallel product boundary (`‖`)**
+
+- `wiki-index` ‖ `toybank` — paper index vs Java witness; no runtime edge
+- `plans/IDEATION.md` ‖ `experiments/e2-tokens/` — framing prose ‖ measured artifacts
+
+---
+
+## Omissions log
+
+- `experiments/node_modules/` — impl-local / vendored tokenizer; not L1 navigation
+- `witness/toybank/**` method bodies — L1 for meta-repo; toybank L1 is a separate slice (`witness/toybank/accounts/` chain)
+- `skills/interface-first-context/` — on PR branch #6 only; not on `main` at dogfood time
+- `docs/witness/` — in flight on `cursor/witness-diagrams-cd12` (PR #5)
+- Full `plans/*` except consensus + adversarial — out-of-slice for this cold-start pack
+- Dashboard / HTML instruments — conversational deliverables; not in git on `main`
+
+---
+
+## Adversarial spot-check (this pack)
+
+| Item | Pass? | Note |
+|------|-------|------|
+| GA7 — no unpriced indirection | ✓ | Edges name targets; no motif table without legend |
+| GA10 — no authority laundering | ✓ | E1/E2/E3 cited as demonstrated, not proved |
+| GA4 — L1 ≠ motif dictionary | ✓ | Catalog is units + refs, not 12-motif seed |
+| Ports only | ✓ | No Java bodies, no E2 pack text inlined |
+| Reader legend | ✓ | `‖` = parallel product; `ref` = markdown pointer |
+
+---
+
+## Dogfood verdict (self)
+
+**Useful:** Yes — an agent can route `HANDOFF → ADVERSARIAL → witness/ → experiments/` without opening Fineract or node_modules.
+
+**Gap:** Until `make verify` lands on `main` (in progress on `cursor/repro-runner-cd12-ed6e`), the pack cannot wire `readme` → `verify#make-target` as a checked port.
+
+**Next stable jump:** Merge PR #6 (skill) + repro-runner PR; re-run this template with `scripts/verify.sh` as a named port and 5 mechanically gradable questions (e.g. break-even n* for S3, E3 B−A sign, witness check count).
