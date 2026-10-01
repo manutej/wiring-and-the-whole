@@ -4,12 +4,15 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-ACCOUNTS_DIR = REPO / "witness" / "toybank" / "accounts"
+ACCOUNTS_DIR = Path(
+    os.environ.get("TOYBANK_ACCOUNTS_DIR", REPO / "witness" / "toybank" / "accounts")
+)
 EXAMPLE_PATH = REPO / "wiringmap" / "examples" / "toybank-accounts.v0.json"
 REFS_LINE = re.compile(r"//\s*refs:\s*(.+)$")
 
@@ -44,14 +47,21 @@ def main() -> int:
     covered = evidence_pairs(example)
 
     refs_by_file: dict[str, list[str]] = {}
-    missing: list[str] = []
+    extracted_pairs: set[tuple[str, str]] = set()
+    missing_in_example: list[str] = []
 
     for java_path in sorted(ACCOUNTS_DIR.glob("*.java")):
         tokens = refs_from_java(java_path)
         refs_by_file[java_path.name] = tokens
         for token in tokens:
+            extracted_pairs.add((java_path.name, token))
             if (java_path.name, token) not in covered:
-                missing.append(f"{java_path.name} -> {token}")
+                missing_in_example.append(f"{java_path.name} -> {token}")
+
+    stale_in_java: list[str] = [
+        f"{fname} -> {token}"
+        for fname, token in sorted(covered - extracted_pairs)
+    ]
 
     fragment = {
         "slice": "witness/toybank/accounts",
@@ -60,10 +70,18 @@ def main() -> int:
     }
     print(json.dumps(fragment, indent=2))
 
-    if missing:
-        print("refs not reflected in wiringmap example edges:", file=sys.stderr)
-        for line in missing:
+    failed = False
+    if missing_in_example:
+        failed = True
+        print("refs in witness not reflected in wiringmap example edges:", file=sys.stderr)
+        for line in missing_in_example:
             print(f"  {line}", file=sys.stderr)
+    if stale_in_java:
+        failed = True
+        print("wiringmap example cites refs missing from witness // refs: lines:", file=sys.stderr)
+        for line in stale_in_java:
+            print(f"  {line}", file=sys.stderr)
+    if failed:
         return 1
 
     print(
