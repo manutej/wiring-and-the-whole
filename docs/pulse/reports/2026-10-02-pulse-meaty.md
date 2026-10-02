@@ -9,7 +9,7 @@
 | End time (UTC) | `2026-10-02T15:41:01Z` |
 | How long (minutes) | ~2 (build, docs, and merge checks) |
 | Working branch | `cursor/pulse-meaty-edge-blind-3f70` (merged to main) |
-| Pull request | merged via main at commit `5bed9b4`; follow-up spec approval on `cursor/pulse-report-approved-3c9d` |
+| Pull request | https://github.com/manutej/wiring-and-the-whole/commit/b82b20b (direct merge to main) |
 
 ### Agents
 
