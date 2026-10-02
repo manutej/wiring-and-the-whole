@@ -46,7 +46,7 @@
     },
     {
       "id": "D4",
-      "label": "external fineract-handlers-thin partial wiringmap",
+      "label": "external fineract-handlers-thin full wiringmap (7 units)",
       "refs_dir": "fixtures/external/fineract-handlers-thin",
       "extract_example": "fixtures/external/fineract-handlers-thin/wiringmap.v0.json",
       "validate_instance": "fixtures/external/fineract-handlers-thin/wiringmap.v0.json",

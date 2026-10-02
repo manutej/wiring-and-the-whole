@@ -40,17 +40,17 @@ def answer_fineract_thin_pack(pack_text: str, question_text: str) -> str:
     """Heuristic answers for docs/dogfood/L1-fineract-handlers-thin.md."""
     q = question_text.lower()
     if "interface catalog" in q and "unit_id" in q:
-        return "3"
+        return "7"
     if "wiring edges" in q and "bullet" in q:
-        return "5"
+        return "9"
     if "skill" in q and "under test" in q:
         return "interface-first-context"
     if "parallel" in q and "experiments" in q:
         return "experiments/e3-ablation/raw/"
     if "disburseloan" in q and "action" in q:
         return "DISBURSE"
-    if "context-only" in q and "named" in q:
-        return "4"
+    if "junction" in q and "wiringmap" in q:
+        return "6"
     raise ValueError(f"No heuristic for question: {question_text!r}")
 
 

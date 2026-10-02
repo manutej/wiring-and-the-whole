@@ -6,12 +6,12 @@
     {
       "id": "FT1",
       "text": "How many compilation units appear in the interface catalog table (unit_id rows)?",
-      "expected": "3"
+      "expected": "7"
     },
     {
       "id": "FT2",
       "text": "In Wiring edges (flat), how many directed edges are listed (count bullet lines)?",
-      "expected": "5"
+      "expected": "9"
     },
     {
       "id": "FT3",
@@ -30,8 +30,8 @@
     },
     {
       "id": "FT6",
-      "text": "How many context-only handlers are named in the interface catalog section (not in the table)?",
-      "expected": "4"
+      "text": "How many junction nodes are declared in the machine mirror wiringmap (count junction entries)?",
+      "expected": "6"
     }
   ]
 }

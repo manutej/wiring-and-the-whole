@@ -54,6 +54,20 @@ python3 "${ROOT}/scripts/extract_refs.py" \
   "${ROOT}/fixtures/external/fineract-handlers-thin" \
   --example "${FIN}" \
   > "${WORK}/fineract_extract.json" 2>/dev/null || fail "fineract extract failed"
+FIN_REF_COUNT="$(python3 -c "import json; print(json.load(open('${WORK}/fineract_extract.json'))['ref_token_count'])")"
+
+python3 "${ROOT}/scripts/build_l2_pack.py" "${FIN}" >/dev/null
+FIN_PACK="${FIN%.json}.pack"
+[[ -d "${FIN_PACK}" ]] || fail "fineract pack dir missing: ${FIN_PACK}"
+cp -a "${FIN_PACK}" "${WORK}/fineract_pack/"
+
+python3 "${ROOT}/scripts/reexpand_gate.py" "${WORK}/fineract_pack" \
+  > "${WORK}/fineract_reexpand.out" 2>&1 || fail "fineract reexpand_gate failed"
+
+FIN_EXPLICIT_EDGES="$(grep -c '^edge ' "${WORK}/fineract_pack/pack_explicit.txt" || true)"
+if [[ "${FIN_REF_COUNT}" -ne "${FIN_EXPLICIT_EDGES}" ]]; then
+  fail "fineract ref_token_count (${FIN_REF_COUNT}) != explicit pack edges (${FIN_EXPLICIT_EDGES})"
+fi
 
 python3 "${ROOT}/scripts/grade_l1_questions.py" \
   --answer-mode io \
@@ -76,7 +90,9 @@ report = {
         "pack_dir": str(work / "pack"),
     },
     "fineract_thin": {
-        "ref_token_count": json.loads((work / "fineract_extract.json").read_text())["ref_token_count"],
+        "ref_token_count": int("${FIN_REF_COUNT}"),
+        "pack_explicit_edges": int("${FIN_EXPLICIT_EDGES}"),
+        "pack_dir": str(work / "fineract_pack"),
     },
     "artifacts": {
         "extract_json": str(work / "extract.json"),

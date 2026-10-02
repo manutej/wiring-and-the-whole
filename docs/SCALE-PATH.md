@@ -38,7 +38,7 @@ Category language is **spec** until MUST-PROVE 1–5 land; empirics lead.
 | Faithfulness | Code = module of systems | E1 witness 13/13 toybank | C₀ not Code_X; toy only |
 | Token math | L2 cheaper than explicit | E2 WIN 3 Fineract sites | Not repo-wide |
 | Comprehension | No ≥5 pt tax | E3 pilot + E5 depth | One family / frozen arms |
-| Wiring I/O | Extract ↔ map ↔ pack | `make pipeline-io`, density D0–D4, thin external slice | `// refs:` only; 7 handlers |
+| Wiring I/O | Extract ↔ map ↔ pack | `make pipeline-io`, density D0–D4, thin external slice | `// refs:` only; 7/7 handlers wired |
 | Instruments | Repeatable agent moves | 3 SKILL.md + pulse protocol | **Pack I/O** on toybank, fineract-thin, handler-wedge; meta L1 still heuristic |
 
 The **density ladder** and **thin external slice** exist so we can **stress scripts and packs** without loading million-file trees — that is the bridge mechanism, not the finish line.
@@ -69,7 +69,7 @@ The **density ladder** and **thin external slice** exist so we can **stress scri
 
 - **Input:** PATH LIST from [`scripts/fetch_fineract_slice.sh`](../scripts/fetch_fineract_slice.sh) → real `git sparse-checkout` or archive when credentials/network allow; until then **local corpus stub** with manifest pin.
 - **Output:** wiringmap JSON validated + extract coverage gate (same contract as toybank).
-- **Proof:** `make external-slice-check` (includes **`MANIFEST.txt` drift gate** via `validate_slice_manifest.py`); `make fetch-slice-manifest-check`; **`make edge-recall-sample-check`** (29 frozen ref pairs on toybank accounts/loans/savings + thin slice).
+- **Proof:** `make external-slice-check` (includes **`MANIFEST.txt` drift gate** via `validate_slice_manifest.py`); `make fetch-slice-manifest-check`; **`make edge-recall-sample-check`** (33 frozen ref pairs on toybank accounts/loans/savings + thin slice); **`make pipeline-io`** L2 pack + reexpand on fineract-thin (parity with toybank).
 
 ### Wedge 3 — Full E3 + Fineract map statistics
 

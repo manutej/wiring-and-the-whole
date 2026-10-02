@@ -31,7 +31,7 @@ Thin **copies** of third-party code used for wiringmap / L1 dogfood. These paths
 
 | Slice | Upstream (conceptual) | In-repo source | Wired units |
 |-------|----------------------|----------------|-------------|
-| `fineract-handlers-thin/` | Apache Fineract command handlers | `experiments/e3-ablation/raw/` (copy) | 3 of 7 Java files |
+| `fineract-handlers-thin/` | Apache Fineract command handlers | `experiments/e3-ablation/raw/` (copy) | 7 of 7 Java files (9 edges) |
 
 ## Commands
 
