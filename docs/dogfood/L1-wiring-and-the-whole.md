@@ -145,4 +145,4 @@ Frozen answers for [`L1-QUESTIONS.json`](L1-QUESTIONS.json) — parse this table
 
 **Gradable set:** [`L1-QUESTIONS.json`](L1-QUESTIONS.json) — five questions; use `grade_l1_questions.py --answer-mode io` for pack-only parsing.
 
-**Next stable jump:** Blind pack-only LLM eval on this L1 + handler-wedge L1 (no repo browse).
+**Blind eval:** [`experiments/pack-blind-eval/`](../../experiments/pack-blind-eval/) — `make pack-blind-eval-check` (stub I/O grade + prompt bundles; optional `PACK_EVAL_LLM=1`).

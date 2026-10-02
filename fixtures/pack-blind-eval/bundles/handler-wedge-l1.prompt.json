@@ -1,0 +1,36 @@
+{
+  "harness": "pack-blind-eval-v0",
+  "pack_id": "handler-wedge-l1",
+  "pack_path": "docs/dogfood/L1-e3-commandhandler-wedge.md",
+  "pack_markdown": "# L1 \u2014 e3-commandhandler-wedge \u00b7 CommandHandler family (dogfood)\n\n**Scope:** Twenty-nine `@CommandType` / sidecar handlers parsed from [`experiments/e3-ablation/raw/`](../../experiments/e3-ablation/raw/) into [`fixtures/e3-commandhandler-wedge/pack/`](../../fixtures/e3-commandhandler-wedge/pack/). **Budget:** L2 motif + inst rows only; no Java bodies in the pack. **Machine mirror:** [`fixtures/e3-commandhandler-wedge/manifest.json`](../../fixtures/e3-commandhandler-wedge/manifest.json); one curated annotation in [`annotation_sidecar.v0.json`](../../fixtures/e3-commandhandler-wedge/annotation_sidecar.v0.json).\n\n**Skill under test:** [`interface-first-context`](../../skills/interface-first-context/SKILL.md).\n\n---\n\n## Scale metrics\n\n| metric | value |\n|--------|------:|\n| Java files in pool (`*CommandHandler.java`) | 30 |\n| Parsed into pack (parser v1) | 29 |\n| Skipped (orthogonal / out of family) | 1 |\n| Explicit lines (4 per handler) | 116 |\n| `inst CommandHandler` rows in factored pack | 29 |\n\n---\n\n## Interface catalog\n\n| unit_id | source (pool) | @CommandType (entity / action) |\n|---------|---------------|--------------------------------|\n| `handler.DisburseLoanCommandHandler` | `DisburseLoanCommandHandler.java` | LOAN / DISBURSE |\n| `handler.CloseLoanCommandHandler` | `CloseLoanCommandHandler.java` | LOAN / CLOSE |\n| `handler.AddLoanChargeCommandHandler` | `AddLoanChargeCommandHandler.java` | LOANCHARGE / CREATE |\n\n*(26 additional handlers \u2014 same 4-line explicit block shape; see manifest.)*\n\n---\n\n## Per-unit cards\n\n### `handler.DisburseLoanCommandHandler`\n\n**Annotation**\n\n- `@CommandType(entity = \"LOAN\", action = \"DISBURSE\")`\n\n**Wiring (outbound)**\n\n- \u2192 `LoanWritePlatformService#disburseLoan` (di)\n\n---\n\n## Wiring edges (flat)\n\n- `handler.DisburseLoanCommandHandler` \u2192 `LoanWritePlatformService#disburseLoan` (di)\n- `handler.CloseLoanCommandHandler` \u2192 `LoanWritePlatformService#closeLoan` (di)\n- `handler.AddLoanChargeCommandHandler` \u2192 `LoanChargeWritePlatformService#addLoanCharge` (di)\n\n*(One primary call edge per parsed handler \u2014 29 total.)*\n\n---\n\n## E2 reference (CommandHandler family)\n\nSingle-site micro-example **S3** from [`experiments/e2-tokens/E2-RESULTS.json`](../../experiments/e2-tokens/E2-RESULTS.json):\n\n| site | e_explicit (per handler) | m_row (inst) | F_fixed (legend+motif) | n_star breakeven |\n|------|-------------------------:|-------------:|-----------------------:|-----------------:|\n| S3 | 62 | 27 | 152 | 5 |\n\nWedge pack uses the same legend and **CommandHandler** motif as E2 S3; full-family token report: [`fixtures/e3-commandhandler-wedge/token_report.json`](../../fixtures/e3-commandhandler-wedge/token_report.json).\n\n---\n\n## Parallel / upstream boundary\n\n- `experiments/e3-ablation/raw/` **\u2016** this wedge \u2014 same handler lineage; build reads the pool PATH LIST, not a live Fineract clone.\n- `fixtures/external/fineract-handlers-thin/` **\u2016** seven-handler thin slice (separate L1 dogfood pack).\n\n---\n\n## Operator proof\n\n```bash\nmake handler-family-pack-check\npython3 scripts/handler_family_token_report.py --write\n```\n\nSee [`docs/SCALE-PATH.md`](../SCALE-PATH.md) Wedge 1.\n",
+  "questions": [
+    {
+      "id": "EW1",
+      "text": "In Scale metrics, how many handlers were parsed into pack (parser v1)?"
+    },
+    {
+      "id": "EW2",
+      "text": "In Scale metrics, how many files were skipped (orthogonal / out of family)?"
+    },
+    {
+      "id": "EW3",
+      "text": "Which skill is under test for this L1 slice (directory name under skills/)?"
+    },
+    {
+      "id": "EW4",
+      "text": "Parallel boundary: which experiments subtree is marked parallel (\u2016) to this wedge?"
+    },
+    {
+      "id": "EW5",
+      "text": "DisburseLoan @CommandType action string (action = \"...\")?"
+    },
+    {
+      "id": "EW6",
+      "text": "How many inst CommandHandler rows appear in the factored pack (Scale metrics table)?"
+    },
+    {
+      "id": "EW7",
+      "text": "E2 S3 break-even n* from the E2 reference table in this pack?"
+    }
+  ]
+}

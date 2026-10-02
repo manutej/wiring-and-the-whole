@@ -130,6 +130,22 @@ check "fineract slice MANIFEST matches on-disk inventory" \
 check "CR@F95 harness stub (config validate + grade + tokens, no LLM)" \
   make cr-f95-stub-check
 
+check "blind pack-only eval stub (meta + handler-wedge, no answers in bundle)" \
+  make pack-blind-eval-check
+
+check "blind eval firewall rejects expected key in prompt bundle" \
+  python3 -c "
+import sys
+sys.path.insert(0, '${ROOT}/scripts')
+from pack_blind_eval_run import assert_firewall
+bad = {'questions': [{'id': 'X', 'text': 'q', 'expected': 'LEAK'}]}
+try:
+    assert_firewall(bad)
+    sys.exit(1)
+except ValueError:
+    sys.exit(0)
+"
+
 TMP_SLICE="$(mktemp -d)"
 printf '%s\n' 'source_repo=x' '' '# paths applied:' 'only-on-manifest.txt' > "${TMP_SLICE}/MANIFEST.txt"
 touch "${TMP_SLICE}/other-file.txt"

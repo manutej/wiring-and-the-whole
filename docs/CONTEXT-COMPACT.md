@@ -14,7 +14,7 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 | GA7 mixed-site comprehension | Frozen E3 in `make verify` | Not 50+10; not wedge pack |
 | GA6 token WIN | E2 frozen + handler **29/30** pack | Not 514 handlers |
 | Edge recall | — | Not gated |
-| Wiring I/O | `pipeline-io`, **24×** `pulse-eval`, D0–D4, thin slice, wedge | `// refs:` only |
+| Wiring I/O | `pipeline-io`, **27×** `pulse-eval`, D0–D4, thin slice, wedge | `// refs:` only |
 
 ## Shipped harness
 
@@ -25,7 +25,8 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 | Wedge 1 | **29/30** CommandHandler L2 — `make handler-family-pack-check` |
 | Wedge 2 pin | `MANIFEST.txt` — `make external-slice-check` |
 | L1 dogfood | meta / toybank / fineract-thin / handler-wedge — **all support `--answer-mode io`** |
-| Pulse | `make pulse-eval` (**25** checks after meta I/O pulse) |
+| Pulse | `make pulse-eval` (**27** checks after blind pack stub) |
+| Blind pack eval | meta + handler-wedge stub — `make pack-blind-eval-check` |
 
 ## Commands (copy-paste)
 
@@ -34,12 +35,13 @@ make verify && make pulse-eval
 make handler-family-pack-check
 make external-slice-check
 make cr-f95-stub-check
+make pack-blind-eval-check      # prompt bundles + I/O stub grade
 make dogfood-grade              # meta L1, I/O mode
 ```
 
 ## Next scale jumps
 
-1. Blind **pack-only** LLM eval (handler-wedge + meta L1).  
+1. ~~Blind **pack-only** stub~~ — `make pack-blind-eval-check`; optional `PACK_EVAL_LLM=1` + API key.  
 2. Wedge 2 **edge-recall** sample gate (~30-file vertical).  
 3. CR@F95 **accuracy column** + baseline arm (still no claim until pre-registered).
 

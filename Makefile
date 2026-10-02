@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pulse-gate pulse-eval pipeline-io wiringmap-check wiringmap-stress
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pulse-gate pulse-eval pipeline-io wiringmap-check wiringmap-stress
 
 verify:
 	@./scripts/verify.sh
@@ -38,6 +38,9 @@ fetch-slice-manifest-check:
 
 cr-f95-stub-check:
 	@python3 scripts/cr_f95_stub_run.py --config experiments/cr-f95-stub/run_config.handler-wedge.v0.json
+
+pack-blind-eval-check:
+	@python3 scripts/pack_blind_eval_run.py --config experiments/pack-blind-eval/run_config.v0.json
 
 wiringmap-stress:
 	@bash scripts/wiringmap_stress.sh

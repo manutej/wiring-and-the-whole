@@ -1,0 +1,15 @@
+{
+  "harness_version": "pack-blind-eval-v0",
+  "cases": [
+    {
+      "pack_id": "meta-l1-wiring-and-the-whole",
+      "questions_path": "docs/dogfood/L1-QUESTIONS.json",
+      "grade_mode": "io"
+    },
+    {
+      "pack_id": "handler-wedge-l1",
+      "questions_path": "docs/dogfood/L1-E3-COMMANDHANDLER-WEDGE-QUESTIONS.json",
+      "grade_mode": "io"
+    }
+  ]
+}
