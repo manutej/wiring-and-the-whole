@@ -130,53 +130,44 @@ def run_llm_lane(bundle: dict, questions_doc: dict) -> dict:
     return {"llm_results": results}
 
 
-def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
-    p.add_argument(
-        "--write-bundles",
-        type=Path,
-        default=DEFAULT_BUNDLE_DIR,
-        help="Write prompt-only bundles for external grading (default: fixtures/pack-blind-eval/bundles)",
-    )
-    p.add_argument("--skip-bundle-write", action="store_true")
-    args = p.parse_args(argv)
-
-    config_path = args.config if args.config.is_absolute() else ROOT / args.config
+def run_pack_blind_eval(
+    config_path: Path,
+    *,
+    write_bundles: Path = DEFAULT_BUNDLE_DIR,
+    skip_bundle_write: bool = False,
+) -> dict:
+    """Run blind pack eval; return summary report dict (raises on failure)."""
     config = load_json(config_path)
     if not isinstance(config, dict):
-        print("ERROR: config must be a JSON object", file=sys.stderr)
-        return 1
+        raise ValueError("config must be a JSON object")
     validate_config(config)
 
     llm_requested = os.environ.get("PACK_EVAL_LLM", "").strip() in ("1", "true", "yes")
     llm_invoked = False
     case_reports: list[dict] = []
 
-    bundle_dir = args.write_bundles
-    if not args.skip_bundle_write:
+    bundle_dir = write_bundles if write_bundles.is_absolute() else ROOT / write_bundles
+    if not skip_bundle_write:
         bundle_dir.mkdir(parents=True, exist_ok=True)
 
     for case in config["cases"]:
         questions_path = ROOT / case["questions_path"]
         questions_doc = load_json(questions_path)
         if not isinstance(questions_doc, dict):
-            print(f"ERROR: invalid questions doc: {questions_path}", file=sys.stderr)
-            return 1
+            raise ValueError(f"invalid questions doc: {questions_path}")
 
         pack_path = ROOT / questions_doc["pack"]
         pack_text = pack_path.read_text(encoding="utf-8")
         bundle = build_bundle(case, questions_doc, pack_text)
         assert_firewall(bundle)
 
-        if not args.skip_bundle_write:
+        if not skip_bundle_write:
             out_path = bundle_dir / f"{case['pack_id']}.prompt.json"
             out_path.write_text(json.dumps(bundle, indent=2) + "\n", encoding="utf-8")
 
         proc = grade_case(questions_path, case["grade_mode"])
         if proc.returncode != 0:
-            print(proc.stdout, proc.stderr, file=sys.stderr)
-            return proc.returncode
+            raise RuntimeError(f"grade failed: {proc.stdout}\n{proc.stderr}")
 
         report: dict = {
             "pack_id": case["pack_id"],
@@ -196,7 +187,7 @@ def main(argv: list[str] | None = None) -> int:
                 report["llm_lane"] = run_llm_lane(bundle, questions_doc)
         case_reports.append(report)
 
-    summary = {
+    return {
         "status": "ok",
         "harness": config["harness_version"],
         "cases": case_reports,
@@ -204,6 +195,31 @@ def main(argv: list[str] | None = None) -> int:
         "llm_invoked": llm_invoked,
         "note": "Stub mode proves pack I/O grading firewall; LLM lane optional via PACK_EVAL_LLM=1.",
     }
+
+
+def main(argv: list[str] | None = None) -> int:
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    p.add_argument(
+        "--write-bundles",
+        type=Path,
+        default=DEFAULT_BUNDLE_DIR,
+        help="Write prompt-only bundles for external grading (default: fixtures/pack-blind-eval/bundles)",
+    )
+    p.add_argument("--skip-bundle-write", action="store_true")
+    args = p.parse_args(argv)
+
+    config_path = args.config if args.config.is_absolute() else ROOT / args.config
+    try:
+        summary = run_pack_blind_eval(
+            config_path,
+            write_bundles=args.write_bundles,
+            skip_bundle_write=args.skip_bundle_write,
+        )
+    except (ValueError, RuntimeError) as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 1
+
     print(json.dumps(summary, indent=2))
     return 0
 

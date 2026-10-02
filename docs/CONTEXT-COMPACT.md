@@ -10,7 +10,7 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 
 | Spec (scale) | We measure today | Gap |
 |--------------|------------------|-----|
-| CR@F95 Pareto | `make cr-f95-stub-check` (meta L1 + handler-wedge; Q firewall + tokens + null accuracy column) | No LLM, no 95% accuracy |
+| CR@F95 Pareto | `make pulse-unified-eval-check` (pack-blind + cr-f95 stub one JSON) or split gates | No LLM, no 95% accuracy |
 | GA7 mixed-site comprehension | Frozen E3 in `make verify` | Not 50+10; not wedge pack |
 | GA6 token WIN | E2 frozen + handler **29/30** pack | Not 514 handlers |
 | Edge recall | `make edge-recall-sample-check` (13 frozen pairs) | Not staff slice / not 514 handlers |
@@ -25,8 +25,8 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 | Wedge 1 | **29/30** CommandHandler L2 — `make handler-family-pack-check` |
 | Wedge 2 pin | `MANIFEST.txt` — `make external-slice-check` |
 | L1 dogfood | meta / toybank / fineract-thin / handler-wedge — **all support `--answer-mode io`** |
-| Pulse | `make pulse-eval` (**30** checks after CR accuracy column) |
-| Blind pack eval | meta + handler-wedge stub — `make pack-blind-eval-check` |
+| Pulse | `make pulse-eval` (**31** checks incl. unified eval JSON) |
+| Blind pack eval | meta + handler-wedge — `make pack-blind-eval-check` or `make pulse-unified-eval-check` |
 
 ## Commands (copy-paste)
 
@@ -35,6 +35,7 @@ make verify && make pulse-eval
 make pulse-loop                 # verify + pulse-eval + role checklist (Paris loop doc)
 make handler-family-pack-check
 make external-slice-check
+make pulse-unified-eval-check
 make cr-f95-stub-check
 make pack-blind-eval-check
 make edge-recall-sample-check
@@ -45,7 +46,7 @@ make dogfood-grade              # meta L1, I/O mode
 
 1. ~~Blind **pack-only** stub~~ — `make pack-blind-eval-check`; optional `PACK_EVAL_LLM=1` + API key.  
 2. ~~Wedge 2 **edge-recall** sample gate~~ — `make edge-recall-sample-check` (8+5 pairs); extend to vertical slice.  
-3. ~~CR@F95 **accuracy column** plumbing~~ — null + schema; **next:** LLM baseline fill + Pareto.
+3. ~~CR@F95 **accuracy column** plumbing~~ — null + schema; ~~unified eval report~~ — `make pulse-unified-eval-check`; **next:** LLM baseline fill + Pareto.
 
 ## Pointers
 

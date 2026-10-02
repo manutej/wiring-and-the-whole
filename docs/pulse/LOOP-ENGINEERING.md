@@ -93,6 +93,7 @@ Paris **wb-covariant-evals** (W&B): benchmarks, harness, and agent config move t
 | `make pack-blind-eval-check` | Blind pack-only L1 stub (meta + handler-wedge); firewall on prompt bundles |
 | `make edge-recall-sample-check` | Frozen extract ↔ wiringmap pairs (wedge-2 sample) |
 | `make cr-f95-stub-check` | Question firewall + token column + **reserved** accuracy column (no LLM claim) |
+| `make pulse-unified-eval-check` | **Single JSON** merging pack-blind + cr-f95 stub (`llm_invoked` false unless `PACK_EVAL_LLM=1`) |
 
 Extend harness and frozen fixtures in the **same PR** when adopting a Paris insight row (CONSENSUS-FORWARD Phase 2 example).
 

@@ -1,0 +1,5 @@
+{
+  "harness_version": "pulse-unified-eval-v0",
+  "pack_blind_eval_config": "experiments/pack-blind-eval/run_config.v0.json",
+  "cr_f95_stub_config": "experiments/cr-f95-stub/run_config.handler-wedge.v0.json"
+}
