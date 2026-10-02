@@ -25,7 +25,7 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 | Wedge 1 | **29/30** CommandHandler L2 — `make handler-family-pack-check` |
 | Wedge 2 pin | `MANIFEST.txt` — `make external-slice-check` |
 | L1 dogfood | meta / toybank / fineract-thin / handler-wedge — **all support `--answer-mode io`** |
-| Pulse | `make pulse-eval` (**31** checks incl. unified eval JSON) |
+| Pulse | `make pulse-eval` (**33** checks incl. unified eval + archived pack-blind results) |
 | Blind pack eval | meta + handler-wedge — `make pack-blind-eval-check` or `make pulse-unified-eval-check` |
 
 ## Commands (copy-paste)
@@ -38,6 +38,7 @@ make external-slice-check
 make pulse-unified-eval-check
 make cr-f95-stub-check
 make pack-blind-eval-check
+make pack-blind-results-check
 make edge-recall-sample-check
 make dogfood-grade              # meta L1, I/O mode
 ```
@@ -46,7 +47,7 @@ make dogfood-grade              # meta L1, I/O mode
 
 1. ~~Blind **pack-only** stub~~ — `make pack-blind-eval-check`; optional `PACK_EVAL_LLM=1` + API key.  
 2. ~~Wedge 2 **edge-recall** sample gate~~ — `make edge-recall-sample-check` (29 pairs on toybank MVC + thin handlers); extend to vertical slice.  
-3. ~~CR@F95 **accuracy column** plumbing~~ — null + schema; ~~unified eval report~~ — `make pulse-unified-eval-check`; **next:** LLM baseline fill + Pareto.
+3. ~~CR@F95 **accuracy column** plumbing~~ — null + schema; ~~unified eval report~~ — `make pulse-unified-eval-check`; ~~archived pack-blind results on CI~~ — `make pack-blind-results-check`; **next:** LLM baseline fill + Pareto.
 
 ## Pointers
 

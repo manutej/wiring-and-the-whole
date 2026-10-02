@@ -148,6 +148,27 @@ sys.exit(0 if proc.returncode != 0 else 1)
 check "blind pack-only eval stub (meta + handler-wedge, no answers in bundle)" \
   make pack-blind-eval-check
 
+check "archived pack-blind results match schema and live stub grades" \
+  make pack-blind-results-check
+
+check "pack-blind results check fails when archived case count drifts" \
+  python3 -c "
+import json, subprocess, sys, tempfile, os
+from pathlib import Path
+ROOT = Path('${ROOT}')
+art = json.loads((ROOT / 'experiments/pack-blind-eval/results/stub.report.v0.json').read_text())
+art['cases'][0]['questions_count'] = 999
+bad = tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False)
+json.dump(art, bad)
+bad.close()
+proc = subprocess.run(
+    [sys.executable, str(ROOT / 'scripts/validate_pack_blind_results.py'), '--artifact', bad.name, '--compare-live'],
+    capture_output=True, text=True, cwd=str(ROOT),
+)
+os.unlink(bad.name)
+sys.exit(0 if proc.returncode != 0 else 1)
+"
+
 check "pulse unified eval (pack-blind + cr-f95 stub, llm_invoked false by default)" \
   python3 -c "
 import json, subprocess, sys
