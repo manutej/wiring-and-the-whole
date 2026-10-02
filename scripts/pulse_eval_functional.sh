@@ -133,6 +133,22 @@ check "CR@F95 harness stub (config validate + grade + tokens, no LLM)" \
 check "blind pack-only eval stub (meta + handler-wedge, no answers in bundle)" \
   make pack-blind-eval-check
 
+check "edge-recall sample gate (toybank + fineract-thin frozen pairs)" \
+  make edge-recall-sample-check
+
+TMP_EDGE_FIX="$(mktemp)"
+python3 -c "
+import json
+from pathlib import Path
+p = Path('fixtures/edge-recall-sample/expected.v0.json')
+doc = json.loads(p.read_text())
+doc['samples'][0]['pairs'].append(['Ghost.java', 'missing.Service#nowhere'])
+Path('${TMP_EDGE_FIX}').write_text(json.dumps(doc))
+"
+check "edge-recall sample fails when fixture expects missing ref pair" \
+  expect_exit 1 python3 scripts/edge_recall_sample_check.py --fixture "${TMP_EDGE_FIX}"
+rm -f "${TMP_EDGE_FIX}"
+
 check "blind eval firewall rejects expected key in prompt bundle" \
   python3 -c "
 import sys

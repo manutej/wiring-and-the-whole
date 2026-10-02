@@ -69,7 +69,7 @@ The **density ladder** and **thin external slice** exist so we can **stress scri
 
 - **Input:** PATH LIST from [`scripts/fetch_fineract_slice.sh`](../scripts/fetch_fineract_slice.sh) → real `git sparse-checkout` or archive when credentials/network allow; until then **local corpus stub** with manifest pin.
 - **Output:** wiringmap JSON validated + extract coverage gate (same contract as toybank).
-- **Proof:** `make external-slice-check` (includes **`MANIFEST.txt` drift gate** via `validate_slice_manifest.py`); `make fetch-slice-manifest-check`; edge recall sample on 30-file vertical slice.
+- **Proof:** `make external-slice-check` (includes **`MANIFEST.txt` drift gate** via `validate_slice_manifest.py`); `make fetch-slice-manifest-check`; **`make edge-recall-sample-check`** (13 frozen ref pairs on toybank + thin slice).
 
 ### Wedge 3 — Full E3 + Fineract map statistics
 
@@ -96,8 +96,9 @@ make handler-family-pack-check  # e3 CommandHandler L2 pack + token report
 make dogfood-grade-handler-wedge
 make fetch-slice-dry-run        # PATH LIST staging (no full tree)
 make fetch-slice-io-check
-make pulse-eval                 # 27 functional pass/fail incl. negative cases
+make pulse-eval                 # 29 functional pass/fail incl. negative cases
 make pack-blind-eval-check      # L1 prompt bundles + I/O stub (optional LLM lane)
+make edge-recall-sample-check   # frozen extract ↔ wiringmap pairs
 make cr-f95-stub-check          # question firewall + tokens; no LLM/API
 ```
 

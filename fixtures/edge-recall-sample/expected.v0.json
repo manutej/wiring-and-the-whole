@@ -1,0 +1,33 @@
+{
+  "schema_version": "edge-recall-sample.v0",
+  "description": "Frozen (file, ref_token) pairs for wedge-2 edge recall sample gate",
+  "samples": [
+    {
+      "id": "toybank-accounts",
+      "refs_dir": "witness/toybank/accounts",
+      "wiringmap": "wiringmap/examples/toybank-accounts.v0.json",
+      "pairs": [
+        ["AccountsController.java", "accounts.AccountsService#fetchPage"],
+        ["AccountsController.java", "accounts.AccountsService#fetchOne"],
+        ["AccountsController.java", "shared.AuditDto#log"],
+        ["AccountsController.java", "shared.PageDto#of"],
+        ["AccountsService.java", "accounts.AccountsRepository#findPage"],
+        ["AccountsService.java", "accounts.AccountsRepository#findOne"],
+        ["AccountsService.java", "shared.EventTopics#EVT"],
+        ["AccountsRepository.java", "shared.PageDto#of"]
+      ]
+    },
+    {
+      "id": "fineract-handlers-thin",
+      "refs_dir": "fixtures/external/fineract-handlers-thin",
+      "wiringmap": "fixtures/external/fineract-handlers-thin/wiringmap.v0.json",
+      "pairs": [
+        ["DisburseLoanCommandHandler.java", "LoanWritePlatformService#disburseLoan"],
+        ["DisburseLoanCommandHandler.java", "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"],
+        ["CloseLoanCommandHandler.java", "LoanWritePlatformService#closeLoan"],
+        ["AddLoanChargeCommandHandler.java", "LoanChargeWritePlatformService#addLoanCharge"],
+        ["AddLoanChargeCommandHandler.java", "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"]
+      ]
+    }
+  ]
+}
