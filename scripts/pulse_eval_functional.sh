@@ -237,6 +237,9 @@ check "grade_l1 fails when expected answer is wrong (not tautology)" \
   expect_exit 1 python3 scripts/grade_l1_questions.py --questions "${WRONG_Q}"
 rm -f "${WRONG_Q}"
 
+check "meta-evaluator hook (craft index + rubric firewall)" \
+  python3 scripts/meta_evaluator_hook.py --check
+
 echo ""
 echo "Functional eval: ${pass} passed, ${fail} failed"
 if [[ "${fail}" -gt 0 ]]; then

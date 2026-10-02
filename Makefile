@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pack-blind-results-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval pipeline-io wiringmap-check wiringmap-stress
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pack-blind-results-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval meta-evaluator meta-evaluator-check pipeline-io wiringmap-check wiringmap-stress
 
 verify:
 	@./scripts/verify.sh
@@ -11,6 +11,12 @@ pulse-loop:
 
 pulse-eval:
 	@bash scripts/pulse_eval_functional.sh
+
+meta-evaluator:
+	@python3 scripts/meta_evaluator_hook.py
+
+meta-evaluator-check:
+	@python3 scripts/meta_evaluator_hook.py --check
 
 pipeline-io:
 	@bash scripts/pipeline_world_io.sh

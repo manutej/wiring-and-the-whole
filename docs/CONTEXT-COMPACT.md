@@ -33,6 +33,7 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 ```bash
 make verify && make pulse-eval
 make pulse-loop                 # verify + pulse-eval + role checklist (Paris loop doc)
+make meta-evaluator-check       # post-loop craft index + firewall sanity (in pulse-eval)
 make handler-family-pack-check
 make external-slice-check
 make pulse-unified-eval-check
