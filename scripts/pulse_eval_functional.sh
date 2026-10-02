@@ -192,7 +192,7 @@ if len(doc.get('pack_blind_eval', {}).get('cases') or []) < 2:
     sys.exit(1)
 "
 
-check "edge-recall sample gate (toybank accounts/loans/savings + fineract-thin, 29 frozen pairs)" \
+check "edge-recall sample gate (toybank accounts/loans/savings + fineract-thin, 33 frozen pairs)" \
   make edge-recall-sample-check
 
 TMP_EDGE_FIX="$(mktemp)"

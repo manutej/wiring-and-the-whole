@@ -8,7 +8,7 @@ README="${SLICE}/README.md"
 WIRINGMAP="${SLICE}/wiringmap.v0.json"
 SCHEMA="${ROOT}/wiringmap/schema.v0.json"
 MIN_JAVA="${FINERACT_SLICE_MIN_JAVA:-5}"
-MIN_REFS="${FINERACT_SLICE_MIN_REFS:-5}"
+MIN_REFS="${FINERACT_SLICE_MIN_REFS:-9}"
 
 if [[ ! -f "${README}" ]]; then
   echo "ERROR: missing slice README: ${README}" >&2

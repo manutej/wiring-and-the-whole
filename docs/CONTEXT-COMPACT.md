@@ -13,7 +13,7 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 | CR@F95 Pareto | `make pulse-unified-eval-check` (pack-blind + cr-f95 stub one JSON) or split gates | No LLM, no 95% accuracy |
 | GA7 mixed-site comprehension | Frozen E3 in `make verify` | Not 50+10; not wedge pack |
 | GA6 token WIN | E2 frozen + handler **29/30** pack | Not 514 handlers |
-| Edge recall | `make edge-recall-sample-check` (29 frozen pairs) | Not staff slice / not 514 handlers |
+| Edge recall | `make edge-recall-sample-check` (33 frozen pairs) | Not staff slice / not 514 handlers |
 | Wiring I/O | `pipeline-io`, **30×** `pulse-eval`, D0–D4, thin slice, wedge | `// refs:` only |
 
 ## Shipped harness

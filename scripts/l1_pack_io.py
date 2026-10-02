@@ -148,8 +148,8 @@ def answer_from_pack_io(pack_path: Path, pack_text: str, question_text: str) -> 
             return parallel_experiments_path(pack_text)
         if "disburseloan" in q and "action" in q:
             return disburse_action_from_pack(pack_text)
-        if "context-only" in q:
-            return context_only_handler_count(pack_text)
+        if "junction" in q and "wiringmap" in q:
+            return scale_metric_value(pack_text, "Junction entries")
 
     if "parallel" in q and ("accounts" in q or "‖" in question_text):
         return parallel_witness_path(pack_text)

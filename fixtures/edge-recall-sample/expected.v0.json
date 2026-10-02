@@ -56,7 +56,11 @@
         ["DisburseLoanCommandHandler.java", "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"],
         ["CloseLoanCommandHandler.java", "LoanWritePlatformService#closeLoan"],
         ["AddLoanChargeCommandHandler.java", "LoanChargeWritePlatformService#addLoanCharge"],
-        ["AddLoanChargeCommandHandler.java", "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"]
+        ["AddLoanChargeCommandHandler.java", "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"],
+        ["MarkLoanAsFraudCommandHandler.java", "LoanWritePlatformService#markLoanAsFraud"],
+        ["CreateDelinquencyRangeCommandHandler.java", "DelinquencyWritePlatformService#createDelinquencyRange"],
+        ["SaveCenterCollectionSheetCommandHandler.java", "CollectionSheetWritePlatformService#updateCollectionSheet"],
+        ["WithdrawClientTransferCommandHandler.java", "TransferWritePlatformService#withdrawClientTransfer"]
       ]
     }
   ]
