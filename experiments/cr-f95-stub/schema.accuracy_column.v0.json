@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wiring-and-the-whole.local/cr-f95-stub/accuracy_column.v0.json",
+  "title": "CR@F95 accuracy column (v0 — unfilled until LLM baseline run)",
+  "description": "Plumbing only. Do not invent accuracy values in stub runs.",
+  "oneOf": [
+    { "type": "null" },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accuracy", "fidelity_target", "reference_arm", "filled_at"],
+      "properties": {
+        "accuracy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Fraction correct on frozen question set at stated fidelity target."
+        },
+        "fidelity_target": {
+          "type": "number",
+          "const": 0.95,
+          "description": "CR@F95 reference fidelity (not claimed until measured)."
+        },
+        "reference_arm": {
+          "type": "string",
+          "description": "Baseline arm label, e.g. full_context or open_baseline."
+        },
+        "filled_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "model_id": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  ]
+}

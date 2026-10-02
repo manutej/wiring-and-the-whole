@@ -127,8 +127,23 @@ check "fetch slice dry-run inventory I/O" \
 check "fineract slice MANIFEST matches on-disk inventory" \
   python3 scripts/validate_slice_manifest.py
 
-check "CR@F95 harness stub (config validate + grade + tokens, no LLM)" \
+check "CR@F95 harness stub (config validate + grade + tokens, unfilled accuracy_column)" \
   make cr-f95-stub-check
+
+check "CR@F95 stub rejects non-null accuracy_column in run config" \
+  python3 -c "
+import json, subprocess, sys, tempfile, os
+from pathlib import Path
+ROOT = Path('${ROOT}')
+cfg = json.loads((ROOT / 'experiments/cr-f95-stub/run_config.meta-l1.v0.json').read_text())
+cfg['accuracy_column'] = {'accuracy': 0.99, 'fidelity_target': 0.95, 'reference_arm': 'fake', 'filled_at': '2026-01-01T00:00:00Z'}
+bad = tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False)
+json.dump(cfg, bad)
+bad.close()
+proc = subprocess.run([sys.executable, str(ROOT / 'scripts/cr_f95_stub_run.py'), '--config', bad.name], capture_output=True)
+os.unlink(bad.name)
+sys.exit(0 if proc.returncode != 0 else 1)
+"
 
 check "blind pack-only eval stub (meta + handler-wedge, no answers in bundle)" \
   make pack-blind-eval-check

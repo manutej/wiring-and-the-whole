@@ -3,5 +3,6 @@
   "questions_path": "docs/dogfood/L1-E3-COMMANDHANDLER-WEDGE-QUESTIONS.json",
   "expected_grade_mode": "io",
   "token_pack_dir": "fixtures/e3-commandhandler-wedge/pack",
-  "token_budget": 947
+  "token_budget": 947,
+  "accuracy_column": null
 }
