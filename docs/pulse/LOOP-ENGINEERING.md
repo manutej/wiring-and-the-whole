@@ -91,7 +91,7 @@ Paris **wb-covariant-evals** (W&B): benchmarks, harness, and agent config move t
 | Target | What it proves today |
 |--------|----------------------|
 | `make pack-blind-eval-check` | Blind pack-only L1 stub (meta + handler-wedge); firewall on prompt bundles |
-| `make edge-recall-sample-check` | Frozen extract ↔ wiringmap pairs (wedge-2 sample) |
+| `make edge-recall-sample-check` | Frozen extract ↔ wiringmap pairs (29 pairs, wedge-2 sample) |
 | `make cr-f95-stub-check` | Question firewall + token column + **reserved** accuracy column (no LLM claim) |
 | `make pulse-unified-eval-check` | **Single JSON** merging pack-blind + cr-f95 stub (`llm_invoked` false unless `PACK_EVAL_LLM=1`) |
 
@@ -112,5 +112,6 @@ Extend harness and frozen fixtures in the **same PR** when adopting a Paris insi
 ## Related
 
 - [`docs/PULSE.md`](../PULSE.md)
+- Post-pulse executive report: [`PULSE-REPORT-SPEC.md`](PULSE-REPORT-SPEC.md) · depth note in [`PULSE-DEPTH.md`](PULSE-DEPTH.md)
 - [`skills/systems-intake/SKILL.md`](../../skills/systems-intake/SKILL.md) — covariant eval section (Paris adopted)
 - Programme scale: [`docs/SCALE-PATH.md`](../SCALE-PATH.md)

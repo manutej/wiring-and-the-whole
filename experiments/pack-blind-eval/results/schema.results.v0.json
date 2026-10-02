@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wiring-and-the-whole.local/pack-blind-eval/results.v0.json",
+  "title": "Blind pack-only eval persisted results",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at_utc", "harness", "status", "cases"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "pack-blind-eval-results.v0"
+    },
+    "generated_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "harness": {
+      "type": "string",
+      "const": "pack-blind-eval-v0"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["ok", "failed"]
+    },
+    "llm_requested": { "type": "boolean" },
+    "llm_invoked": { "type": "boolean" },
+    "run_config_path": { "type": "string" },
+    "note": { "type": "string" },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "pack_id",
+          "questions_path",
+          "grade_mode",
+          "stub_io_grade",
+          "questions_count",
+          "firewall"
+        ],
+        "properties": {
+          "pack_id": { "type": "string" },
+          "questions_path": { "type": "string" },
+          "grade_mode": { "type": "string", "enum": ["io"] },
+          "stub_io_grade": { "type": "string", "enum": ["ok", "failed"] },
+          "questions_count": { "type": "integer", "minimum": 1 },
+          "firewall": {
+            "type": "string",
+            "const": "no_expected_in_prompt_bundle"
+          },
+          "llm_lane": {
+            "type": "string",
+            "enum": ["skipped_no_api_key", "ok", "partial", "failed"]
+          },
+          "accuracy_stub": {
+            "type": ["number", "null"],
+            "description": "Reserved; null until LLM lane fills scores"
+          }
+        }
+      }
+    }
+  }
+}

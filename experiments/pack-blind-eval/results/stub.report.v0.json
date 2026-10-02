@@ -1,0 +1,30 @@
+{
+  "schema_version": "pack-blind-eval-results.v0",
+  "generated_at_utc": "2026-10-02T00:00:00Z",
+  "harness": "pack-blind-eval-v0",
+  "status": "ok",
+  "llm_requested": false,
+  "llm_invoked": false,
+  "run_config_path": "experiments/pack-blind-eval/run_config.v0.json",
+  "note": "Stub snapshot for schema pinning; regenerate via make pack-blind-eval-check and validate against schema.results.v0.json.",
+  "cases": [
+    {
+      "pack_id": "meta-l1-wiring-and-the-whole",
+      "questions_path": "docs/dogfood/L1-QUESTIONS.json",
+      "grade_mode": "io",
+      "stub_io_grade": "ok",
+      "questions_count": 5,
+      "firewall": "no_expected_in_prompt_bundle",
+      "accuracy_stub": null
+    },
+    {
+      "pack_id": "handler-wedge-l1",
+      "questions_path": "docs/dogfood/L1-E3-COMMANDHANDLER-WEDGE-QUESTIONS.json",
+      "grade_mode": "io",
+      "stub_io_grade": "ok",
+      "questions_count": 7,
+      "firewall": "no_expected_in_prompt_bundle",
+      "accuracy_stub": null
+    }
+  ]
+}

@@ -19,6 +19,10 @@ Checklist when running a **deep** pulse (template — fill per round, no fake sc
 - [ ] Evaluator scored artifacts-only; blockers documented if rubric fail.
 - [ ] SCALE-PATH / CONTEXT-COMPACT updated if behavior or honest limits changed.
 
+## Executive report (post-pulse)
+
+After gates pass, file a user-facing summary per [`PULSE-REPORT-SPEC.md`](PULSE-REPORT-SPEC.md): metadata (pulse id, UTC duration, branch, PR, agents table) plus **Done / Tested / Next** — three sections, three bullets each.
+
 ## When to extend harness vs run deep pulse
 
 | Signal | Harness bump | Full pulse |

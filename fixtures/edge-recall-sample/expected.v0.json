@@ -18,6 +18,36 @@
       ]
     },
     {
+      "id": "toybank-loans",
+      "refs_dir": "witness/toybank/loans",
+      "wiringmap": "wiringmap/examples/toybank-loans.v0.json",
+      "pairs": [
+        ["LoansController.java", "loans.LoansService#fetchPage"],
+        ["LoansController.java", "loans.LoansService#fetchOne"],
+        ["LoansController.java", "shared.AuditDto#log"],
+        ["LoansController.java", "shared.PageDto#of"],
+        ["LoansService.java", "loans.LoansRepository#findPage"],
+        ["LoansService.java", "loans.LoansRepository#findOne"],
+        ["LoansService.java", "shared.EventTopics#EVT"],
+        ["LoansRepository.java", "shared.PageDto#of"]
+      ]
+    },
+    {
+      "id": "toybank-savings",
+      "refs_dir": "witness/toybank/savings",
+      "wiringmap": "wiringmap/examples/toybank-savings.v0.json",
+      "pairs": [
+        ["SavingsController.java", "savings.SavingsService#fetchPage"],
+        ["SavingsController.java", "savings.SavingsService#fetchOne"],
+        ["SavingsController.java", "shared.AuditDto#log"],
+        ["SavingsController.java", "shared.PageDto#of"],
+        ["SavingsService.java", "savings.SavingsRepository#findPage"],
+        ["SavingsService.java", "savings.SavingsRepository#findOne"],
+        ["SavingsService.java", "shared.EventTopics#EVT"],
+        ["SavingsRepository.java", "shared.PageDto#of"]
+      ]
+    },
+    {
       "id": "fineract-handlers-thin",
       "refs_dir": "fixtures/external/fineract-handlers-thin",
       "wiringmap": "fixtures/external/fineract-handlers-thin/wiringmap.v0.json",

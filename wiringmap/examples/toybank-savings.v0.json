@@ -1,0 +1,164 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "witness/toybank",
+    "slice": "savings/",
+    "notes": "Hand-populated from witness/toybank/savings/*.java refs comments; edge-recall wedge sample."
+  },
+  "junctions": [
+    {
+      "id": "junction:shared.PageDto",
+      "label": "shared.PageDto#of",
+      "junction_kind": "dto"
+    },
+    {
+      "id": "junction:shared.AuditDto",
+      "label": "shared.AuditDto#log",
+      "junction_kind": "dto"
+    },
+    {
+      "id": "junction:shared.EventTopics",
+      "label": "shared.EventTopics#EVT",
+      "junction_kind": "topic"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit:savings.SavingsController",
+      "path": "witness/toybank/savings/SavingsController.java",
+      "role": "HTTP adapter — list/get savings",
+      "ports": [
+        {
+          "id": "port:savings.SavingsController#list",
+          "symbol": "list",
+          "kind": "method",
+          "signature_stub": "Page list(int p)",
+          "exported": true
+        },
+        {
+          "id": "port:savings.SavingsController#get",
+          "symbol": "get",
+          "kind": "method",
+          "signature_stub": "Dto get(long id)",
+          "exported": true
+        },
+        {
+          "id": "port:savings.SavingsController#log",
+          "symbol": "log",
+          "kind": "method",
+          "signature_stub": "void log(String m)",
+          "exported": false
+        }
+      ]
+    },
+    {
+      "id": "unit:savings.SavingsService",
+      "path": "witness/toybank/savings/SavingsService.java",
+      "role": "Application service — page and single fetch",
+      "ports": [
+        {
+          "id": "port:savings.SavingsService#fetchPage",
+          "symbol": "fetchPage",
+          "kind": "method",
+          "signature_stub": "Page fetchPage(int p)",
+          "exported": true
+        },
+        {
+          "id": "port:savings.SavingsService#fetchOne",
+          "symbol": "fetchOne",
+          "kind": "method",
+          "signature_stub": "Dto fetchOne(long id)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:savings.SavingsRepository",
+      "path": "witness/toybank/savings/SavingsRepository.java",
+      "role": "Persistence — page and single find",
+      "ports": [
+        {
+          "id": "port:savings.SavingsRepository#findPage",
+          "symbol": "findPage",
+          "kind": "method",
+          "signature_stub": "Page findPage(int p)",
+          "exported": true
+        },
+        {
+          "id": "port:savings.SavingsRepository#findOne",
+          "symbol": "findOne",
+          "kind": "method",
+          "signature_stub": "Dto findOne(long id)",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:ctrl-svc-page",
+      "from": "port:savings.SavingsController#list",
+      "to": "port:savings.SavingsService#fetchPage",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "SavingsController.java // refs: savings.SavingsService#fetchPage"
+    },
+    {
+      "id": "edge:ctrl-svc-one",
+      "from": "port:savings.SavingsController#get",
+      "to": "port:savings.SavingsService#fetchOne",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "SavingsController.java // refs: savings.SavingsService#fetchOne"
+    },
+    {
+      "id": "edge:ctrl-audit",
+      "from": "port:savings.SavingsController#log",
+      "to": "junction:shared.AuditDto",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "SavingsController.java // refs: shared.AuditDto#log"
+    },
+    {
+      "id": "edge:ctrl-page-dto",
+      "from": "port:savings.SavingsController#list",
+      "to": "junction:shared.PageDto",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "SavingsController.java // refs: shared.PageDto#of"
+    },
+    {
+      "id": "edge:svc-repo-page",
+      "from": "port:savings.SavingsService#fetchPage",
+      "to": "port:savings.SavingsRepository#findPage",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "SavingsService.java // refs: savings.SavingsRepository#findPage"
+    },
+    {
+      "id": "edge:svc-repo-one",
+      "from": "port:savings.SavingsService#fetchOne",
+      "to": "port:savings.SavingsRepository#findOne",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "SavingsService.java // refs: savings.SavingsRepository#findOne"
+    },
+    {
+      "id": "edge:svc-event-topic",
+      "from": "unit:savings.SavingsService",
+      "to": "junction:shared.EventTopics",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "SavingsService.java // refs: shared.EventTopics#EVT"
+    },
+    {
+      "id": "edge:repo-page-dto",
+      "from": "port:savings.SavingsRepository#findPage",
+      "to": "junction:shared.PageDto",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "SavingsRepository.java // refs: shared.PageDto#of"
+    }
+  ]
+}
