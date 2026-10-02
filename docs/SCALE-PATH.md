@@ -114,4 +114,4 @@ make cr-f95-stub-check          # question firewall + tokens; no LLM/API
 5. ~~**CR@F95 harness stub**~~ — [`experiments/cr-f95-stub/`](../experiments/cr-f95-stub/) + `make cr-f95-stub-check` (firewall + token + **`accuracy_column: null`** schema).
 6. ~~**Pulse unified eval report**~~ — [`experiments/pulse-unified-eval/`](../experiments/pulse-unified-eval/) + `make pulse-unified-eval-check`. **Next:** Pareto curve vs baselines + live LLM fill in unified JSON.
 
-See also [`docs/CONTEXT-COMPACT.md`](CONTEXT-COMPACT.md) for cold-start status.
+See also [`docs/CONTEXT-COMPACT.md`](CONTEXT-COMPACT.md) for cold-start status. **Feasibility (1k / 10k LOC chartered slices):** [`docs/reports/2026-10-02-feasibility-1k-10k-loc.md`](reports/2026-10-02-feasibility-1k-10k-loc.md).
