@@ -49,5 +49,6 @@ make dogfood-grade              # meta L1, I/O mode
 
 ## Pointers
 
-- Scale ladder: [`SCALE-PATH.md`](SCALE-PATH.md) · Pulse ops: [`PULSE.md`](PULSE.md) · Depth: [`pulse/PULSE-DEPTH.md`](pulse/PULSE-DEPTH.md)  
+- Scale ladder: [`SCALE-PATH.md`](SCALE-PATH.md) · Pulse ops: [`PULSE.md`](PULSE.md) · Loop + Paris lanes: [`pulse/LOOP-ENGINEERING.md`](pulse/LOOP-ENGINEERING.md) · Depth: [`pulse/PULSE-DEPTH.md`](pulse/PULSE-DEPTH.md)  
+- Paris / Every **research** (not on `main`): branches `cursor/ai-engineer-paris-research-8e4f`, `cursor/every-to-transcripts-8e4f` — merge via charter in [`LOOP-ENGINEERING.md`](pulse/LOOP-ENGINEERING.md)  
 - Wedge fixture: [`fixtures/e3-commandhandler-wedge/README.md`](../fixtures/e3-commandhandler-wedge/README.md)
