@@ -13,7 +13,7 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 | CR@F95 Pareto | `make pulse-unified-eval-check` (pack-blind + cr-f95 stub one JSON) or split gates | No LLM, no 95% accuracy |
 | GA7 mixed-site comprehension | Frozen E3 in `make verify` | Not 50+10; not wedge pack |
 | GA6 token WIN | E2 frozen + handler **29/30** pack | Not 514 handlers |
-| Edge recall | `make edge-recall-sample-check` (13 frozen pairs) | Not staff slice / not 514 handlers |
+| Edge recall | `make edge-recall-sample-check` (29 frozen pairs) | Not staff slice / not 514 handlers |
 | Wiring I/O | `pipeline-io`, **30×** `pulse-eval`, D0–D4, thin slice, wedge | `// refs:` only |
 
 ## Shipped harness
@@ -45,11 +45,11 @@ make dogfood-grade              # meta L1, I/O mode
 ## Next scale jumps
 
 1. ~~Blind **pack-only** stub~~ — `make pack-blind-eval-check`; optional `PACK_EVAL_LLM=1` + API key.  
-2. ~~Wedge 2 **edge-recall** sample gate~~ — `make edge-recall-sample-check` (8+5 pairs); extend to vertical slice.  
+2. ~~Wedge 2 **edge-recall** sample gate~~ — `make edge-recall-sample-check` (29 pairs on toybank MVC + thin handlers); extend to vertical slice.  
 3. ~~CR@F95 **accuracy column** plumbing~~ — null + schema; ~~unified eval report~~ — `make pulse-unified-eval-check`; **next:** LLM baseline fill + Pareto.
 
 ## Pointers
 
-- Scale ladder: [`SCALE-PATH.md`](SCALE-PATH.md) · Pulse ops: [`PULSE.md`](PULSE.md) · Loop + Paris lanes: [`pulse/LOOP-ENGINEERING.md`](pulse/LOOP-ENGINEERING.md) · Depth: [`pulse/PULSE-DEPTH.md`](pulse/PULSE-DEPTH.md)  
+- Scale ladder: [`SCALE-PATH.md`](SCALE-PATH.md) · Pulse ops: [`PULSE.md`](PULSE.md) · Executive report: [`pulse/PULSE-REPORT-SPEC.md`](pulse/PULSE-REPORT-SPEC.md) · Loop + Paris lanes: [`pulse/LOOP-ENGINEERING.md`](pulse/LOOP-ENGINEERING.md) · Depth: [`pulse/PULSE-DEPTH.md`](pulse/PULSE-DEPTH.md)  
 - Paris / Every **research** (not on `main`): branches `cursor/ai-engineer-paris-research-8e4f`, `cursor/every-to-transcripts-8e4f` — merge via charter in [`LOOP-ENGINEERING.md`](pulse/LOOP-ENGINEERING.md)  
 - Wedge fixture: [`fixtures/e3-commandhandler-wedge/README.md`](../fixtures/e3-commandhandler-wedge/README.md)
