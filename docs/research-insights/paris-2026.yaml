@@ -1,0 +1,76 @@
+# Actionable Paris 2026 insights → programme hooks (cites from digest.json)
+# status: candidate | adopted | rejected
+schema_version: paris-insights.v0
+
+insights:
+  - id: pocock-pr-skills
+    video_id: LlgiOCmFG_w
+    cite: "0:00"
+    theme: PR bottleneck
+    summary: "Agent speed needs process brakes; skills as review rubric."
+    maps_to: pulse
+    target: docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md
+    status: candidate
+
+  - id: voss-measure-review
+    video_id: _mi3alkqy4s
+    cite: "0:00"
+    theme: Code review / evals
+    summary: "Replace ritual review with eval discipline and observability."
+    maps_to: l1
+    target: docs/dogfood/L1-QUESTIONS.json
+    status: candidate
+
+  - id: wb-covariant-evals
+    video_id: XyV6bSMyq-I
+    cite: "1:41"
+    theme: Self-improving agents
+    summary: "Benchmarks, harness, and agent config are covariant—measure prod + offline."
+    maps_to: skill
+    target: skills/systems-intake/SKILL.md
+    status: candidate
+
+  - id: workos-outcome-metrics
+    video_id: HvboD89DyQ8
+    cite: "2:36"
+    theme: Factory skeptic
+    summary: "Factory success = outcome metrics (ship features), not PR/code volume."
+    maps_to: l1
+    target: docs/dogfood/L1-wiring-and-the-whole.md
+    status: candidate
+
+  - id: workos-embed-process
+    video_id: HvboD89DyQ8
+    cite: "3:56"
+    theme: Factory skeptic
+    summary: "Code-only automation insufficient; embed eng process in tooling."
+    maps_to: pulse
+    target: docs/PULSE.md
+    status: candidate
+
+  - id: warp-stale-skills
+    video_id: TN3mj92oZ8I
+    cite: "2:28"
+    theme: Software factories
+    summary: "Factory skills go stale without self-improvement refresh loop."
+    maps_to: skill
+    target: skills/interface-first-context/SKILL.md
+    status: candidate
+
+  - id: holtz-orchestra
+    video_id: TRfzFJCJ7ZE
+    cite: "0:00"
+    theme: Multi-agent orchestration
+    summary: "Parallel agents need a score (conductor), not only factory line."
+    maps_to: none
+    target: paris-editorial-kit only
+    status: candidate
+
+  - id: dx-data-grounding
+    video_id: Se8jHLliLXE
+    cite: "0:00"
+    theme: Engineering metrics
+    summary: "Quarterly platform data vs anecdote for AI impact on DevEx."
+    maps_to: gate
+    target: experiments/README.md
+    status: candidate

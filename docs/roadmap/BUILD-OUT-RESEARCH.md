@@ -163,6 +163,13 @@
 
 ---
 
+## Programme + research consensus
+
+- Enduring plan (adversarial-reviewed): [`CONSENSUS-FORWARD.md`](CONSENSUS-FORWARD.md)
+- External corpus rules: [`docs/research/CORPUS-CHARTER.md`](../research/CORPUS-CHARTER.md)
+- Paris insight registry: [`docs/research-insights/paris-2026.yaml`](../research-insights/paris-2026.yaml)
+- Gate: `make verify-research`
+
 ## References
 
 - Witness detail: [`docs/witness/WITNESS-HOW-IT-WORKS.md`](../witness/WITNESS-HOW-IT-WORKS.md)

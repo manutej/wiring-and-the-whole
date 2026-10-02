@@ -163,6 +163,7 @@
     "oVsEddfhdxc",
     "474j-n1Ltxc"
   ],
-  "last_ingest_at": "2026-10-01T12:15:00Z",
-  "last_ingest_note": "No new channel IDs on page 1; 9 transcripts total; +3 this tick with timestamped bullets; views refreshed."
+  "last_ingest_at": "2026-10-02T00:00:00Z",
+  "last_ingest_note": "Loop tick skipped API: TubeAlfred credits 0 (channel + transcript). No catalog diff; 9 transcripts unchanged. Next: buHC7bQE1X4, YIVkERhy8xo, OA-Mc60Rboo when credits restored.",
+  "last_ingest_status": "skipped_insufficient_credits"
 }

@@ -1,7 +1,10 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin external-slice-check fetch-slice-dry-run fetch-slice-io-check pack-v0-check pulse-gate pulse-eval pipeline-io wiringmap-check wiringmap-stress
+.PHONY: verify verify-research witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin external-slice-check fetch-slice-dry-run fetch-slice-io-check pack-v0-check pulse-gate pulse-eval pipeline-io wiringmap-check wiringmap-stress
 
 verify:
 	@./scripts/verify.sh
+
+verify-research:
+	@bash scripts/verify_research.sh
 
 pulse-gate:
 	@./scripts/pulse_gate.sh
