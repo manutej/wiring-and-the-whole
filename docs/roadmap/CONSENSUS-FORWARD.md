@@ -110,11 +110,22 @@ Paris **explorer** stays **optional teaching surface** until Phase 3 exit criter
 
 ## Immediate next actions (ordered)
 
-1. Implement **`make verify-research`** + **`docs/research/CORPUS-CHARTER.md`** (programme PR on `main` or Paris branch with charter only).
-2. **Seed `paris-2026.yaml`** from existing digest bullets (≥8 rows, cites).
-3. **Paris branch hygiene:** strip or gitignore `explorer/node_modules`; document explorer as optional; sync kit `data/` with canonical research JSON or fail verify-research.
-4. **Programme:** Fineract wiringmap edge (BUILD-OUT next commit).
-5. When TubeAlfred credits return: **one batch** ingest (top 2–3 IDs) → digest → registry candidates—not per-tick heroics.
+1. ~~Implement **`make verify-research`** + **`docs/research/CORPUS-CHARTER.md`**~~ **Done** (Paris branch).
+2. ~~**Seed `paris-2026.yaml`** from existing digest bullets (≥8 rows, cites).~~ **Done**.
+3. ~~**Paris branch hygiene:** gitignore explorer vendor/build; README ingest policy; kit `data/` sync via verify-research.~~ **Done** (2026-10-02).
+4. ~~**Programme:** Fineract wiringmap edge~~ **In progress** — `MarkLoanAsFraud` wired (4/7 handlers); three handlers still import-fallback only.
+5. **Pulse wiring:** ~~`pulse_gate` + implementer brief + filled brief~~ **Done** (2026-10-02); run evaluator SHIP before merge to `main`.
+6. When TubeAlfred credits return: **one batch** ingest (top 2–3 IDs) → digest → registry candidates—not per-tick heroics.
+
+### Execution log (2026-10-02)
+
+| Step | Artifact |
+|------|----------|
+| Cold start | `docs/CONTEXT-COMPACT.md` — verify-research, charter, CONSENSUS-FORWARD links |
+| Registry | `pocock-pr-skills`, `wb-covariant-evals` → **adopted** |
+| Skill | `skills/systems-intake/SKILL.md` v0 + covariant eval section |
+| Fixture | `fixtures/external/fineract-handlers-thin/` — 4th handler edge |
+| Pulse | `docs/pulse/briefs/2026-10-02-consensus-forward-execute.md` |
 
 ---
 

@@ -1,0 +1,5 @@
+# Optional Vite explorer — never commit vendor or build output
+explorer/node_modules/
+explorer/dist/
+paris-editorial-dashboard-kit/explorer/node_modules/
+paris-editorial-dashboard-kit/explorer/dist/

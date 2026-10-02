@@ -3,7 +3,7 @@
   "meta": {
     "repo": "wiring-and-the-whole",
     "ref": "fixtures/external/fineract-handlers-thin",
-    "slice": "7 Java handlers (3 units wired; 4 context-only)",
+    "slice": "7 Java handlers (4 units wired; 3 context-only)",
     "notes": "Partial L1 map — vendored E3 ablation slice, not full Fineract. Junctions label out-of-slice platform services."
   },
   "junctions": [
@@ -65,6 +65,20 @@
           "exported": true
         }
       ]
+    },
+    {
+      "id": "unit:handler.MarkLoanAsFraudCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/MarkLoanAsFraudCommandHandler.java",
+      "role": "Command handler — LOAN SETFRAUD",
+      "ports": [
+        {
+          "id": "port:handler.MarkLoanAsFraudCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
     }
   ],
   "edges": [
@@ -107,6 +121,14 @@
       "edge_kind": "di",
       "doctrine_tag": "system_map",
       "evidence": "AddLoanChargeCommandHandler.java // refs: infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+    },
+    {
+      "id": "edge:fraud-loan-write",
+      "from": "port:handler.MarkLoanAsFraudCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "MarkLoanAsFraudCommandHandler.java // refs: LoanWritePlatformService#markLoanAsFraud"
     }
   ]
 }

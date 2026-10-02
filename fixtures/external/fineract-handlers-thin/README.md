@@ -9,7 +9,7 @@
 | Source tree | `experiments/e3-ablation/raw/*.java` |
 | Selection | Seven handlers with `@CommandType` (loan, loancharge, delinquency, center, client transfer) |
 | Pin note | Vendored slice from e3-ablation at repo commit; **not** a live upstream pin |
-| `// refs:` | Hand-maintained on **three** handlers only (`DisburseLoan`, `CloseLoan`, `AddLoanCharge`) for wiringmap extract; other files rely on import heuristics in `scripts/fineract_slice_check.sh` |
+| `// refs:` | Hand-maintained on **four** handlers (`DisburseLoan`, `CloseLoan`, `AddLoanCharge`, `MarkLoanAsFraud`) for wiringmap extract; other files rely on import heuristics in `scripts/fineract_slice_check.sh` |
 
 ## What is **not** included
 
@@ -30,7 +30,7 @@
 
 ## Wiring artifacts
 
-- `wiringmap.v0.json` — hand-curated L1 map for the three ref-annotated handlers (partial coverage by design)
+- `wiringmap.v0.json` — hand-curated L1 map for the four ref-annotated handlers (partial coverage by design)
 - `wiringmap.v0.partial.json` — alias copy for density / dogfood docs (same content)
 
 ## Commands

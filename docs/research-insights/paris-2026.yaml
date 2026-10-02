@@ -10,7 +10,7 @@ insights:
     summary: "Agent speed needs process brakes; skills as review rubric."
     maps_to: pulse
     target: docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md
-    status: candidate
+    status: adopted
 
   - id: voss-measure-review
     video_id: _mi3alkqy4s
@@ -28,7 +28,7 @@ insights:
     summary: "Benchmarks, harness, and agent config are covariant—measure prod + offline."
     maps_to: skill
     target: skills/systems-intake/SKILL.md
-    status: candidate
+    status: adopted
 
   - id: workos-outcome-metrics
     video_id: HvboD89DyQ8

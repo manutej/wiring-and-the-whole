@@ -18,6 +18,8 @@ Copy this file per pulse (e.g. `docs/pulse/briefs/YYYY-MM-DD-topic.md`). Give **
 
 ## Scope
 
+**One primary deliverable (Pocock small-PR rule):** pick exactly one of — Paris registry row adoption · WiringMap v0 slice edge · SKILL.md + one L1 hook · programme gate script only.
+
 **In:**
 
 -
@@ -41,7 +43,9 @@ Copy this file per pulse (e.g. `docs/pulse/briefs/YYYY-MM-DD-topic.md`). Give **
 ## Commands
 
 - Verify: `make verify`
-- Pulse gate: `make pulse-gate`
+- Research lane (if Paris JSON or kit touched): `make verify-research`
+- Pulse gate: `make pulse-gate` (verify + verify-research when Paris dir exists)
+- Functional eval (wiringmap / pack / L1): `make pulse-eval`
 - Witness only: `make witness`
 
 ## Handoff to adversarial panel

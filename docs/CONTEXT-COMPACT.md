@@ -1,4 +1,4 @@
-# Context compact — cold-start snapshot (2026-10-01)
+# Context compact — cold-start snapshot (2026-10-02)
 
 Single page for agents resuming on **`main`**. Detail lives in linked files; do not duplicate long inventories here.
 
@@ -16,16 +16,19 @@ Map production codebases as a **module of systems** (T1), find symmetries/invari
 | E2 / E3 | WIN + B-PASSES — frozen under **`make verify`** |
 | E5 depth | B-PASSES AT DEPTH — `experiments/e5-depth/` (not in verify yet) |
 | Pulse | **`docs/PULSE.md`** — trigger `pulse`; **`make pulse-eval`** (functional) + **`make pulse-gate`** |
+| Research (Paris) | `research/ai-engineer-paris-2026/` — tier-0 evidence; **`make verify-research`**; charter **`docs/research/CORPUS-CHARTER.md`** |
+| Consensus plan | **`docs/roadmap/CONSENSUS-FORWARD.md`** — programme + ingest lanes, phase gates |
 | WiringMap v0 | `wiringmap/schema.v0.json` + toybank example; **`make wiringmap-check`** |
 | Density ladder | D0–D3 `fixtures/density/` + **D4** external slice — **`make wiringmap-stress`** |
 | External thin slice | `fixtures/external/fineract-handlers-thin/` (7 handlers, vendored) — **`make external-slice-check`** |
 | L1 dogfood | meta / toybank / fineract-thin packs + **`make dogfood-grade*`** |
-| SKILL mint | **3/3:** `interface-first-context`, `systems-intake`, **`symmetry-lens`** — [`skills/symmetry-lens/SKILL.md`](../skills/symmetry-lens/SKILL.md) |
+| SKILL mint | **3/3:** `interface-first-context`, **`systems-intake`** (v0 + covariant eval), **`symmetry-lens`** |
 
 ## Verify & interface checks
 
 ```bash
 make verify                      # witness + E2 + E3 frozen
+make verify-research             # Paris JSON + kit/data sync (+ ingest degraded warn)
 make wiringmap-check             # toybank accounts
 make wiringmap-stress            # D0–D4 expectations
 make external-slice-check        # fineract-handlers-thin
@@ -57,7 +60,8 @@ See [`SCALE-PATH.md`](SCALE-PATH.md): CommandHandler pack @ N=30 → sparse fetc
 
 ## Pointers
 
-- Resume: `HANDOFF.md` · Build order: `docs/roadmap/BUILD-OUT-RESEARCH.md`
+- Resume: `HANDOFF.md` · Build order: `docs/roadmap/BUILD-OUT-RESEARCH.md` · Forward plan: `docs/roadmap/CONSENSUS-FORWARD.md`
+- Paris registry: `docs/research-insights/paris-2026.yaml`
 - Witness: `docs/witness/index.html` · L1 skill: `skills/interface-first-context/SKILL.md`
 - Fixtures: `fixtures/density/README.md`, `fixtures/external/README.md`
 - Scale: `docs/SCALE-PATH.md`

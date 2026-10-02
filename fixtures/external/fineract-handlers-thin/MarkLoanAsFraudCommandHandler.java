@@ -18,6 +18,7 @@
  */
 package org.apache.fineract.portfolio.loanaccount.handler;
 
+  // refs: LoanWritePlatformService#markLoanAsFraud
 import lombok.RequiredArgsConstructor;
 import org.apache.fineract.commands.annotation.CommandType;
 import org.apache.fineract.commands.handler.NewCommandSourceHandler;
