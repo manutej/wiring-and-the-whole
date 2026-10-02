@@ -38,23 +38,16 @@ def validate_config(config: dict) -> None:
     jsonschema.validate(config, schema)
 
 
-def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
-    p.add_argument("--write-report", type=Path, default=None)
-    args = p.parse_args(argv)
-
-    config_path = args.config if args.config.is_absolute() else ROOT / args.config
+def run_cr_f95_stub(config_path: Path) -> dict:
+    """Run CR@F95 stub harness; return report dict (raises on failure)."""
     config = load_json(config_path)
     if not isinstance(config, dict):
-        print("ERROR: config must be a JSON object", file=sys.stderr)
-        return 1
+        raise ValueError("config must be a JSON object")
     validate_config(config)
 
     questions = ROOT / config["questions_path"]
     if not questions.is_file():
-        print(f"ERROR: missing questions file: {questions}", file=sys.stderr)
-        return 1
+        raise FileNotFoundError(f"missing questions file: {questions}")
 
     grade_cmd = [
         sys.executable,
@@ -68,13 +61,11 @@ def main(argv: list[str] | None = None) -> int:
 
     proc = subprocess.run(grade_cmd, capture_output=True, text=True)
     if proc.returncode != 0:
-        print(proc.stdout, proc.stderr, file=sys.stderr)
-        return proc.returncode
+        raise RuntimeError(f"grade failed: {proc.stdout}\n{proc.stderr}")
 
     tokens_factored: int | None = None
     token_pack = config.get("token_pack_dir")
     if token_pack:
-        pack_dir = ROOT / token_pack
         tok_proc = subprocess.run(
             [sys.executable, str(ROOT / "scripts/handler_family_token_report.py")],
             capture_output=True,
@@ -82,8 +73,7 @@ def main(argv: list[str] | None = None) -> int:
             cwd=str(ROOT),
         )
         if tok_proc.returncode != 0:
-            print(tok_proc.stderr, file=sys.stderr)
-            return tok_proc.returncode
+            raise RuntimeError(tok_proc.stderr)
         tok_report = json.loads(tok_proc.stdout)
         tokens_factored = tok_report["tokens"]["factored_full"]
 
@@ -96,7 +86,7 @@ def main(argv: list[str] | None = None) -> int:
 
         jsonschema.validate(accuracy_column, load_json(ACCURACY_SCHEMA))
 
-    report = {
+    return {
         "status": "ok",
         "harness": "cr-f95-stub-v0",
         "llm_invoked": False,
@@ -111,6 +101,19 @@ def main(argv: list[str] | None = None) -> int:
         "note": "Stub only — not CR@F95 accuracy; firewall + token + accuracy column plumbing.",
     }
 
+
+def main(argv: list[str] | None = None) -> int:
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    p.add_argument("--write-report", type=Path, default=None)
+    args = p.parse_args(argv)
+
+    config_path = args.config if args.config.is_absolute() else ROOT / args.config
+    try:
+        report = run_cr_f95_stub(config_path)
+    except (ValueError, FileNotFoundError, RuntimeError) as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 1
     out = json.dumps(report, indent=2) + "\n"
     if args.write_report:
         out_path = args.write_report if args.write_report.is_absolute() else ROOT / args.write_report

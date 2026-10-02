@@ -148,6 +148,29 @@ sys.exit(0 if proc.returncode != 0 else 1)
 check "blind pack-only eval stub (meta + handler-wedge, no answers in bundle)" \
   make pack-blind-eval-check
 
+check "pulse unified eval (pack-blind + cr-f95 stub, llm_invoked false by default)" \
+  python3 -c "
+import json, subprocess, sys
+from pathlib import Path
+ROOT = Path('${ROOT}')
+proc = subprocess.run(
+    [sys.executable, str(ROOT / 'scripts/pulse_unified_eval_run.py')],
+    capture_output=True, text=True, cwd=str(ROOT),
+)
+if proc.returncode != 0:
+    sys.stderr.write(proc.stderr)
+    sys.exit(1)
+doc = json.loads(proc.stdout)
+if doc.get('llm_invoked') is not False:
+    sys.exit(1)
+if doc.get('pack_blind_eval', {}).get('status') != 'ok':
+    sys.exit(1)
+if doc.get('cr_f95_stub', {}).get('status') != 'ok':
+    sys.exit(1)
+if len(doc.get('pack_blind_eval', {}).get('cases') or []) < 2:
+    sys.exit(1)
+"
+
 check "edge-recall sample gate (toybank + fineract-thin frozen pairs)" \
   make edge-recall-sample-check
 
