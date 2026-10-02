@@ -39,7 +39,7 @@ Category language is **spec** until MUST-PROVE 1–5 land; empirics lead.
 | Token math | L2 cheaper than explicit | E2 WIN 3 Fineract sites | Not repo-wide |
 | Comprehension | No ≥5 pt tax | E3 pilot + E5 depth | One family / frozen arms |
 | Wiring I/O | Extract ↔ map ↔ pack | `make pipeline-io`, density D0–D4, thin external slice | `// refs:` only; 7 handlers |
-| Instruments | Repeatable agent moves | 3 SKILL.md + pulse protocol | Dogfood heuristics mostly replaced by **pack I/O** on toybank + fineract-thin |
+| Instruments | Repeatable agent moves | 3 SKILL.md + pulse protocol | **Pack I/O** on toybank, fineract-thin, handler-wedge; meta L1 still heuristic |
 
 The **density ladder** and **thin external slice** exist so we can **stress scripts and packs** without loading million-file trees — that is the bridge mechanism, not the finish line.
 
