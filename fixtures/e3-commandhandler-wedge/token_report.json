@@ -1,0 +1,29 @@
+{
+  "pack_dir": "fixtures/e3-commandhandler-wedge/pack",
+  "handlers_inst_rows": 24,
+  "tokenizer": "cl100k_base (tiktoken npm, vendored encoder)",
+  "tokens": {
+    "legend": 98,
+    "motif": 54,
+    "explicit_full": 1577,
+    "factored_full": 766,
+    "per_handler_explicit": 58,
+    "per_handler_inst_row": 26,
+    "fixed_overhead_legend_plus_motif": 152
+  },
+  "breakeven": {
+    "n_star_from_per_handler_rates": 5,
+    "n_actual_repo_wide_CommandHandler": 514,
+    "verdict_at_n": "WIN"
+  },
+  "e2_S3_frozen_reference": {
+    "e_explicit_tokens": 62,
+    "m_factored_row_tokens": 27,
+    "F_fixed_overhead_tokens": 152,
+    "n_star_breakeven": 5
+  },
+  "consistency_checks": {
+    "per_handler_explicit_matches_e2_S3": false,
+    "per_handler_row_matches_e2_S3": false
+  }
+}

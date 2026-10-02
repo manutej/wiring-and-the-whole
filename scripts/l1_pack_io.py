@@ -71,6 +71,30 @@ def disburse_action_from_pack(pack_text: str) -> str:
     return match.group(1)
 
 
+def scale_metric_value(pack_text: str, row_prefix: str) -> str:
+    body = section(pack_text, "Scale metrics")
+    for line in body.splitlines():
+        if not line.strip().startswith("|"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 2:
+            continue
+        label = cells[0].lower()
+        if label.startswith(row_prefix.lower()) or row_prefix.lower() in label:
+            return cells[1]
+    raise ValueError(f"scale metric row not found: {row_prefix!r}")
+
+
+def e2_reference_n_star(pack_text: str) -> str:
+    body = section(pack_text, "E2 reference (CommandHandler family)")
+    for line in body.splitlines():
+        if line.strip().startswith("| S3"):
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if len(cells) >= 5:
+                return cells[4]
+    raise ValueError("E2 S3 n_star row not found in pack")
+
+
 def context_only_handler_count(pack_text: str) -> str:
     catalog = section(pack_text, "Interface catalog")
     match = re.search(r"\*\*Context-only[^:]*:\*\*\s*(.+)$", catalog, re.MULTILINE)
@@ -93,6 +117,20 @@ def answer_from_pack_io(pack_path: Path, pack_text: str, question_text: str) -> 
         return flat_wiring_edge_count(pack_text)
     if "skill" in q and "under test" in q:
         return skill_directory_from_pack(pack_text)
+
+    if "commandhandler-wedge" in name or "e3-commandhandler" in name:
+        if "parsed into pack" in q:
+            return scale_metric_value(pack_text, "Parsed into pack")
+        if "skipped" in q and "alternate" in q:
+            return scale_metric_value(pack_text, "Skipped")
+        if "inst commandhandler" in q:
+            return scale_metric_value(pack_text, "inst CommandHandler")
+        if "e2 s3" in q and "n*" in q:
+            return e2_reference_n_star(pack_text)
+        if "parallel" in q and "experiments" in q:
+            return parallel_experiments_path(pack_text)
+        if "disburseloan" in q and "action" in q:
+            return disburse_action_from_pack(pack_text)
 
     if "fineract" in name or "handlers-thin" in name:
         if "parallel" in q and "experiments" in q:

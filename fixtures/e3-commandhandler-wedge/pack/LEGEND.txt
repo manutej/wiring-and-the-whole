@@ -1,0 +1,5 @@
+# WIRING PACK v1 — generator-data form
+# legend: 'motif NAME(slots): template' defines a wiring shape; template lines use $slots.
+# 'inst NAME(fills) [+ delta-lines]' instantiates it: expand template with fills, then apply
+# deltas verbatim. 'deps=' lists field:Type pairs; 'calls=' lists Type#method targets.
+# Expansion of every inst reproduces the explicit form exactly (lossless by construction).

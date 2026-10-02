@@ -60,8 +60,10 @@ The **density ladder** and **thin external slice** exist so we can **stress scri
 ### Wedge 1 — One real motif family at Fineract density
 
 - **Input:** `experiments/e3-ablation/raw/` pool (already vendored), not live clone of entire repo.
-- **Output:** L2 `pack_A` / `pack_B` via [`scripts/build_l2_pack.py`](../scripts/build_l2_pack.py) extended to **CommandHandler** motif (E2 S3 pattern), byte-identical re-expand gate.
-- **Proof:** extend E2-style token counts + add **new** comprehension questions mined from handler names/actions (GA8: not designer circularity only).
+- **Output:** L2 CommandHandler pack via [`scripts/build_handler_family_pack.py`](../scripts/build_handler_family_pack.py) — **24/30** handlers in v0 parser; [`fixtures/e3-commandhandler-wedge/`](../fixtures/e3-commandhandler-wedge/).
+- **Proof:** `make handler-family-pack-check` (reexpand byte gate + parsed ≥20).
+- **Also:** [`scripts/handler_family_token_report.py`](../scripts/handler_family_token_report.py) + frozen [`token_report.json`](../fixtures/e3-commandhandler-wedge/token_report.json); L1 dogfood [`L1-e3-commandhandler-wedge.md`](dogfood/L1-e3-commandhandler-wedge.md).
+- **Next:** parser v1 for 6 skipped styles; blind pack-only LLM eval.
 
 ### Wedge 2 — Scoped extract without whole-tree read
 
@@ -98,7 +100,7 @@ make pulse-eval             # functional pass/fail incl. negative cases
 
 ## Next pulse targets (aligned with scale, not repo hygiene)
 
-1. **Extend `build_l2_pack.py`** to emit E2-compatible **CommandHandler** factored packs for N handlers from e3 pool (N=30 pilot).
+1. **Parser v1** for the six skipped handler styles in the e3 pool.
 2. **Wire fetch `--apply` + MANIFEST** into slice check (drift detection).
 3. **Meta L1 I/O parser** or retire heuristic mode — one grading story.
 4. **CR@F95 harness stub** — question JSON firewall + token counter column; no LLM until wedge 1 packs exist.

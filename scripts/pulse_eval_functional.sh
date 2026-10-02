@@ -81,6 +81,16 @@ check "dogfood toybank L1 (pack I/O parse mode)" \
 check "world I/O pipeline (extract→validate→pack→reexpand→grade)" \
   bash scripts/pipeline_world_io.sh
 
+check "CommandHandler family wedge (24+ handlers, reexpand gate)" \
+  make handler-family-pack-check
+
+check "dogfood handler-wedge L1 (heuristic)" \
+  python3 scripts/grade_l1_questions.py --questions docs/dogfood/L1-E3-COMMANDHANDLER-WEDGE-QUESTIONS.json
+
+check "dogfood handler-wedge L1 (pack I/O parse mode)" \
+  python3 scripts/grade_l1_questions.py --answer-mode io \
+    --questions docs/dogfood/L1-E3-COMMANDHANDLER-WEDGE-QUESTIONS.json
+
 TMP_PACK_MD="$(mktemp)"
 cp docs/dogfood/L1-toybank-accounts.md "${TMP_PACK_MD}"
 # Drop one catalog row — I/O parser must yield wrong count vs frozen questions
