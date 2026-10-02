@@ -29,7 +29,7 @@ Use these when mapping conference evidence → pulse / L1 / skills (paths exist 
 | [`research/ai-engineer-paris-2026/LOOP.md`](../../research/ai-engineer-paris-2026/LOOP.md) | 12h ingest timer log (research clock — not programme CI) |
 | [`research/ai-engineer-paris-2026/paris-editorial-dashboard-kit/AGENTS.md`](../../research/ai-engineer-paris-2026/paris-editorial-dashboard-kit/AGENTS.md) | Editorial agent rules: fact vs inference, timestamp cites, no slop |
 | [`docs/research-insights/paris-2026.yaml`](../research-insights/paris-2026.yaml) | Actionable rows → `maps_to_skill` / `maps_to_l1` / `maps_to_pulse` |
-| [`docs/roadmap/CONSENSUS-FORWARD.md`](../roadmap/CONSENSUS-FORWARD.md) | Advocate / adversarial / operator consensus; three clocks |
+| `docs/roadmap/CONSENSUS-FORWARD.md` (Paris branch) | Advocate / adversarial / operator consensus; three clocks |
 | [`plans/CONSENSUS.md`](../../plans/CONSENSUS.md) | Round-1 binding repairs (R1–R8), suite-minting |
 | [`plans/ADVERSARIAL.md`](../../plans/ADVERSARIAL.md) | GA1–GA10 register; hostile-review gaps |
 
