@@ -9,7 +9,7 @@
 | End time (UTC) | `2026-10-02T15:44:30Z` |
 | How long (minutes) | ~4 (implementation, docs, and merge checks) |
 | Working branch | `cursor/pulse-ci-results-cd12` |
-| Pull request | https://github.com/manutej/wiring-and-the-whole/compare/main...cursor/pulse-ci-results-cd12?expand=1 |
+| Pull request | https://github.com/manutej/wiring-and-the-whole/pull/28 |
 
 ### Agents
 
