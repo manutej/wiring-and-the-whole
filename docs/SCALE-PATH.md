@@ -96,7 +96,7 @@ make handler-family-pack-check  # e3 CommandHandler L2 pack + token report
 make dogfood-grade-handler-wedge
 make fetch-slice-dry-run        # PATH LIST staging (no full tree)
 make fetch-slice-io-check
-make pulse-eval                 # 20 functional pass/fail incl. negative cases
+make pulse-eval                 # 25 functional pass/fail incl. negative cases
 make cr-f95-stub-check          # question firewall + tokens; no LLM/API
 ```
 
@@ -106,7 +106,7 @@ make cr-f95-stub-check          # question firewall + tokens; no LLM/API
 
 1. ~~**Parser v1** (e3 pool 29/30)~~ — done; PaymentType remains orthogonal family.
 2. ~~**Wire fetch `--apply` + MANIFEST** into slice check~~ — `MANIFEST.txt` + `validate_slice_manifest.py` in `external-slice-check`.
-3. **Meta L1 I/O parser** or retire heuristic mode — one grading story.
-4. **CR@F95 harness stub** — [`experiments/cr-f95-stub/`](../experiments/cr-f95-stub/): question JSON firewall + token column; **stub only (no live LLM/API)**; blind eval later.
+3. ~~**Meta L1 I/O parser**~~ — Grading facts table + `--answer-mode io` on meta pack; **next:** blind pack-only LLM eval on meta + handler-wedge.
+4. ~~**CR@F95 harness stub**~~ — [`experiments/cr-f95-stub/`](../experiments/cr-f95-stub/) + `make cr-f95-stub-check` (firewall + token column; **no accuracy / no LLM**). **Next:** Pareto curve vs baselines + blind pack-only eval.
 
 See also [`docs/CONTEXT-COMPACT.md`](CONTEXT-COMPACT.md) for cold-start status.

@@ -71,6 +71,17 @@ def disburse_action_from_pack(pack_text: str) -> str:
     return match.group(1)
 
 
+def grading_fact_value(pack_text: str, fact_key: str) -> str:
+    body = section(pack_text, "Grading facts")
+    for line in body.splitlines():
+        if not line.strip().startswith("|"):
+            continue
+        cells = [c.strip().strip("`") for c in line.strip().strip("|").split("|")]
+        if len(cells) >= 2 and cells[0] == fact_key:
+            return cells[1]
+    raise ValueError(f"grading fact not found: {fact_key!r}")
+
+
 def scale_metric_value(pack_text: str, row_prefix: str) -> str:
     body = section(pack_text, "Scale metrics")
     for line in body.splitlines():
@@ -142,5 +153,17 @@ def answer_from_pack_io(pack_path: Path, pack_text: str, question_text: str) -> 
 
     if "parallel" in q and ("accounts" in q or "‖" in question_text):
         return parallel_witness_path(pack_text)
+
+    if "wiring-and-the-whole" in name or name == "l1-wiring-and-the-whole.md":
+        if "witness.json" in q and "check" in q:
+            return grading_fact_value(pack_text, "e1_witness_check_count")
+        if "break-even n*" in q or ("n*" in q and "s3" in q):
+            return grading_fact_value(pack_text, "e2_s3_n_star_breakeven")
+        if "comprehension tax" in q and "e3" in q:
+            return grading_fact_value(pack_text, "e3_pilot_b_passes_comprehension_tax_rule")
+        if "ga1" in q and "ga10" in q:
+            return grading_fact_value(pack_text, "adversarial_ga_register_path")
+        if "make target" in q or "verify entrypoint" in q:
+            return grading_fact_value(pack_text, "verify_make_target")
 
     raise ValueError(f"no I/O parser for question: {question_text!r}")
