@@ -2,7 +2,21 @@
 
 **Scope:** This repository as a *research corpus* (not toybank Java). Vertical slice: navigation spine from cold start → verify → experiments. **Budget:** ports-only; no prose dumps, no pack bodies, no `node_modules`.
 
-**Skill under test:** `interface-first-context` (draft on `cursor/interface-first-context-skill-cd12`, PR #6).
+**Skill under test:** [`interface-first-context`](../../skills/interface-first-context/SKILL.md).
+
+---
+
+## Grading facts
+
+Frozen answers for [`L1-QUESTIONS.json`](L1-QUESTIONS.json) — parse this table in **pack I/O** mode (no repo browse).
+
+| fact_key | value |
+|----------|-------|
+| `e1_witness_check_count` | 13 |
+| `e2_s3_n_star_breakeven` | 5 |
+| `e3_pilot_b_passes_comprehension_tax_rule` | yes |
+| `adversarial_ga_register_path` | plans/ADVERSARIAL.md |
+| `verify_make_target` | verify |
 
 ---
 
@@ -104,8 +118,8 @@
 
 - `experiments/node_modules/` — impl-local / vendored tokenizer; not L1 navigation
 - `witness/toybank/**` method bodies — L1 for meta-repo; toybank L1 is a separate slice (`witness/toybank/accounts/` chain)
-- `skills/interface-first-context/` — on PR branch #6 only; not on `main` at dogfood time
-- `docs/witness/` — in flight on `cursor/witness-diagrams-cd12` (PR #5)
+- `skills/interface-first-context/` — minted on `main`; this pack cites the skill path only
+- `docs/witness/` — HTML witness docs on `main`; not required for L1 navigation spine
 - Full `plans/*` except consensus + adversarial — out-of-slice for this cold-start pack
 - Dashboard / HTML instruments — conversational deliverables; not in git on `main`
 
@@ -127,8 +141,8 @@
 
 **Useful:** Yes — an agent can route `HANDOFF → ADVERSARIAL → witness/ → experiments/` without opening Fineract or node_modules.
 
-**Gap:** `verify` port exists on branch `cursor/repro-runner-cd12-ed6e` (draft PR #7); merge to `main` before treating dogfood grades as CI-backed.
+**Gap:** Meta answers are **pack-local** (Grading facts table); they must stay aligned with `witness/WITNESS.json` and frozen E2/E3 on intentional updates.
 
-**Gradable set:** [`L1-QUESTIONS.json`](L1-QUESTIONS.json) — five frozen questions against this pack + README/HANDOFF.
+**Gradable set:** [`L1-QUESTIONS.json`](L1-QUESTIONS.json) — five questions; use `grade_l1_questions.py --answer-mode io` for pack-only parsing.
 
-**Next stable jump:** Merge #6 (skill) + #7 (verify) + this dogfood PR; run questions against pack-only context (no repo browse) as adversarial mini-eval.
+**Next stable jump:** Blind pack-only LLM eval on this L1 + handler-wedge L1 (no repo browse).

@@ -13,7 +13,7 @@ pipeline-io:
 	@bash scripts/pipeline_world_io.sh
 
 dogfood-grade:
-	@python3 scripts/grade_l1_questions.py
+	@python3 scripts/grade_l1_questions.py --answer-mode io
 
 dogfood-grade-toybank:
 	@python3 scripts/grade_l1_questions.py --questions docs/dogfood/L1-TOYBANK-QUESTIONS.json

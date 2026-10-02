@@ -69,8 +69,16 @@ check "fetch slice dry-run leaves fixtures untouched" \
   bash scripts/fetch_fineract_slice.sh
 
 # --- L1 dogfood: grader matches frozen answers (navigation contract) ---
-check "dogfood meta L1" \
-  python3 scripts/grade_l1_questions.py
+check "dogfood meta L1 (pack I/O parse mode)" \
+  python3 scripts/grade_l1_questions.py --answer-mode io
+
+TMP_META_PACK="$(mktemp)"
+cp docs/dogfood/L1-wiring-and-the-whole.md "${TMP_META_PACK}"
+sed -i 's/| `e1_witness_check_count` | 13 |/| `e1_witness_check_count` | 12 |/' "${TMP_META_PACK}"
+check "meta L1 I/O grade fails when grading fact row tampered" \
+  expect_exit 1 python3 scripts/grade_l1_questions.py --answer-mode io \
+    --pack "${TMP_META_PACK}"
+rm -f "${TMP_META_PACK}"
 check "dogfood toybank L1 (heuristic mode)" \
   python3 scripts/grade_l1_questions.py --questions docs/dogfood/L1-TOYBANK-QUESTIONS.json
 
