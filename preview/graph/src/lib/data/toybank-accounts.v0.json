@@ -1,0 +1,185 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "witness/toybank",
+    "slice": "accounts/",
+    "notes": "Hand-populated from witness/toybank/accounts/*.java refs comments; E1 substrate only."
+  },
+  "junctions": [
+    {
+      "id": "junction:shared.PageDto",
+      "label": "shared.PageDto#of",
+      "junction_kind": "dto"
+    },
+    {
+      "id": "junction:shared.AuditDto",
+      "label": "shared.AuditDto#log",
+      "junction_kind": "dto"
+    },
+    {
+      "id": "junction:shared.EventTopics",
+      "label": "shared.EventTopics#EVT",
+      "junction_kind": "topic"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit:accounts.AccountsController",
+      "path": "witness/toybank/accounts/AccountsController.java",
+      "role": "HTTP adapter — list/get accounts",
+      "ports": [
+        {
+          "id": "port:accounts.AccountsController#list",
+          "symbol": "list",
+          "kind": "method",
+          "signature_stub": "Page list(int p)",
+          "exported": true
+        },
+        {
+          "id": "port:accounts.AccountsController#get",
+          "symbol": "get",
+          "kind": "method",
+          "signature_stub": "Dto get(long id)",
+          "exported": true
+        },
+        {
+          "id": "port:accounts.AccountsController#log",
+          "symbol": "log",
+          "kind": "method",
+          "signature_stub": "void log(String m)",
+          "exported": false
+        }
+      ]
+    },
+    {
+      "id": "unit:accounts.AccountsService",
+      "path": "witness/toybank/accounts/AccountsService.java",
+      "role": "Application service — page and single fetch",
+      "ports": [
+        {
+          "id": "port:accounts.AccountsService#fetchPage",
+          "symbol": "fetchPage",
+          "kind": "method",
+          "signature_stub": "Page fetchPage(int p)",
+          "exported": true
+        },
+        {
+          "id": "port:accounts.AccountsService#fetchOne",
+          "symbol": "fetchOne",
+          "kind": "method",
+          "signature_stub": "Dto fetchOne(long id)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:accounts.AccountsRepository",
+      "path": "witness/toybank/accounts/AccountsRepository.java",
+      "role": "Persistence — page and single find",
+      "ports": [
+        {
+          "id": "port:accounts.AccountsRepository#findPage",
+          "symbol": "findPage",
+          "kind": "method",
+          "signature_stub": "Page findPage(int p)",
+          "exported": true
+        },
+        {
+          "id": "port:accounts.AccountsRepository#findOne",
+          "symbol": "findOne",
+          "kind": "method",
+          "signature_stub": "Dto findOne(long id)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:accounts.Money",
+      "path": "witness/toybank/accounts/Money.java",
+      "role": "Value type — amount + currency (κ collision demo elsewhere in witness)",
+      "ports": [
+        {
+          "id": "port:accounts.Money#amountCents",
+          "symbol": "amountCents",
+          "kind": "field",
+          "signature_stub": "long amountCents",
+          "exported": true
+        },
+        {
+          "id": "port:accounts.Money#currency",
+          "symbol": "currency",
+          "kind": "field",
+          "signature_stub": "String currency",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:ctrl-svc-page",
+      "from": "port:accounts.AccountsController#list",
+      "to": "port:accounts.AccountsService#fetchPage",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "AccountsController.java // refs: accounts.AccountsService#fetchPage"
+    },
+    {
+      "id": "edge:ctrl-svc-one",
+      "from": "port:accounts.AccountsController#get",
+      "to": "port:accounts.AccountsService#fetchOne",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "AccountsController.java // refs: accounts.AccountsService#fetchOne"
+    },
+    {
+      "id": "edge:ctrl-audit",
+      "from": "port:accounts.AccountsController#log",
+      "to": "junction:shared.AuditDto",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "AccountsController.java // refs: shared.AuditDto#log"
+    },
+    {
+      "id": "edge:ctrl-page-dto",
+      "from": "port:accounts.AccountsController#list",
+      "to": "junction:shared.PageDto",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "AccountsController.java // refs: shared.PageDto#of"
+    },
+    {
+      "id": "edge:svc-repo-page",
+      "from": "port:accounts.AccountsService#fetchPage",
+      "to": "port:accounts.AccountsRepository#findPage",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "AccountsService.java // refs: accounts.AccountsRepository#findPage"
+    },
+    {
+      "id": "edge:svc-repo-one",
+      "from": "port:accounts.AccountsService#fetchOne",
+      "to": "port:accounts.AccountsRepository#findOne",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "AccountsService.java // refs: accounts.AccountsRepository#findOne"
+    },
+    {
+      "id": "edge:svc-event-topic",
+      "from": "unit:accounts.AccountsService",
+      "to": "junction:shared.EventTopics",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "AccountsService.java // refs: shared.EventTopics#EVT"
+    },
+    {
+      "id": "edge:repo-page-dto",
+      "from": "port:accounts.AccountsRepository#findPage",
+      "to": "junction:shared.PageDto",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "AccountsRepository.java // refs: shared.PageDto#of"
+    }
+  ]
+}
