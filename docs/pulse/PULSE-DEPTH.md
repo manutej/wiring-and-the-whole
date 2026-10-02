@@ -7,6 +7,15 @@ This repo runs **two layers** of quality loops. Do not confuse them.
 - Functional pass/fail scripts: pack reexpand, density D0–D4, slice MANIFEST, L1 I/O grading, blind pack stub, edge-recall sample, CR@F95 stub columns.
 - **No** firewalled evaluator rubric score, **no** adversarial panel transcript, **no** live LLM accuracy claim.
 
+## Meaty pulse (minimum depth)
+
+Operator-approved **meaty** rounds are not doc-only nudges. A pulse counts as meaty when **either**:
+
+- **Multi-deliverable:** at least two shipped outcomes (e.g. new gate + doc/policy + pulse artifacts), **and** wall-clock work on the branch is **≥ 5 minutes** before the merge gate last passes; **or**
+- **E5-depth spot check (optional):** one run of [`experiments/e5-depth/e5_grade.py`](../../experiments/e5-depth/e5_grade.py) when the round touches comprehension depth — skip if out of scope and the multi-deliverable bar is met.
+
+Record UTC start/end and gate timings in the executive report ([`PULSE-REPORT-SPEC.md`](PULSE-REPORT-SPEC.md)). Run `make verify` and `make pulse-loop` **twice** on meaty rounds; note elapsed times in the optional gate timing table.
+
 ## Full pulse (operator protocol)
 
 See [`PULSE.md`](../PULSE.md): implement → adversarial panel → merge gate → interface tests → **firewalled evaluator** against [`RUBRIC-EVALUATOR.md`](RUBRIC-EVALUATOR.md).

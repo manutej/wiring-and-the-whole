@@ -91,6 +91,7 @@ Paris **wb-covariant-evals** (W&B): benchmarks, harness, and agent config move t
 | Target | What it proves today |
 |--------|----------------------|
 | `make pack-blind-eval-check` | Blind pack-only L1 stub (meta + handler-wedge); firewall on prompt bundles |
+| `make pack-blind-results-check` | Archived pack-blind results JSON vs schema + live stub grade alignment |
 | `make edge-recall-sample-check` | Frozen extract ↔ wiringmap pairs (29 pairs, wedge-2 sample) |
 | `make cr-f95-stub-check` | Question firewall + token column + **reserved** accuracy column (no LLM claim) |
 | `make pulse-unified-eval-check` | **Single JSON** merging pack-blind + cr-f95 stub (`llm_invoked` false unless `PACK_EVAL_LLM=1`) |

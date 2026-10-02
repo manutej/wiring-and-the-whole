@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval pipeline-io wiringmap-check wiringmap-stress
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pack-blind-results-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval pipeline-io wiringmap-check wiringmap-stress
 
 verify:
 	@./scripts/verify.sh
@@ -44,6 +44,9 @@ cr-f95-stub-check:
 
 pack-blind-eval-check:
 	@python3 scripts/pack_blind_eval_run.py --config experiments/pack-blind-eval/run_config.v0.json
+
+pack-blind-results-check:
+	@python3 scripts/validate_pack_blind_results.py --compare-live
 
 pulse-unified-eval-check:
 	@python3 scripts/pulse_unified_eval_run.py --config experiments/pulse-unified-eval/run_config.v0.json
