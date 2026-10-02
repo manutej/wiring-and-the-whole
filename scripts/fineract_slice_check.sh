@@ -48,4 +48,6 @@ if [[ "${ref_tokens}" -lt "${MIN_REFS}" ]]; then
   exit 1
 fi
 
+python3 "${ROOT}/scripts/validate_slice_manifest.py" --slice-dir "${SLICE}"
+
 echo "OK: fineract-handlers-thin — ${java_count} Java files, ${ref_tokens} ref tokens, ${import_fallback} import-line fallback (unwired handlers)" >&2

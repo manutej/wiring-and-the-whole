@@ -47,13 +47,26 @@ def expand_slice_unit_row(row: str) -> list[str]:
 
 
 def expand_command_handler_row(row: str) -> list[str]:
-    m = re.match(
-        r"inst CommandHandler\((\w+),\s*(\w+),\s*(\w+),\s*(\w+),\s*(\w+)\)\s*$",
-        row.strip(),
+    stripped = row.strip()
+    m6 = re.match(
+        r"inst CommandHandler\((\w+),\s*(\w+),\s*(\w+),\s*(\w+),\s*(\w+),\s*(\w+)\)\s*$",
+        stripped,
     )
-    if not m:
+    if m6:
+        handler, dep_field, service, method, entity, action = m6.groups()
+        return [
+            f"unit {handler}",
+            f"anno {handler} @CommandType entity={entity} action={action}",
+            f"dep {handler}.{dep_field}: {service}",
+            f"edge {handler} -> {service}#{method}",
+        ]
+    m5 = re.match(
+        r"inst CommandHandler\((\w+),\s*(\w+),\s*(\w+),\s*(\w+),\s*(\w+)\)\s*$",
+        stripped,
+    )
+    if not m5:
         raise ValueError(f"bad CommandHandler inst row: {row!r}")
-    handler, service, method, entity, action = m.groups()
+    handler, service, method, entity, action = m5.groups()
     return [
         f"unit {handler}",
         f"anno {handler} @CommandType entity={entity} action={action}",

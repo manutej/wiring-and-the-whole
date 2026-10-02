@@ -7,10 +7,11 @@
 | Metric | Value |
 |--------|------:|
 | Java files in pool | 30 |
-| Parsed into pack (v0 parser) | 24 |
-| Skipped (alternate handler styles) | 6 — see `manifest.json` |
-| Explicit lines | 96 (4 per handler) |
-| Factored lines | 1 motif + 24 inst rows |
+| Parsed into pack (parser v1) | 29 |
+| Skipped (orthogonal family) | 1 — `PaymentTypeCreateCommandHandler` |
+| Sidecar annotations | 1 — [`annotation_sidecar.v0.json`](annotation_sidecar.v0.json) |
+| Explicit lines | 116 (4 per handler) |
+| Factored lines | 1 motif + 29 inst rows |
 
 Re-expansion must **byte-match** explicit (`make handler-family-pack-check`).
 

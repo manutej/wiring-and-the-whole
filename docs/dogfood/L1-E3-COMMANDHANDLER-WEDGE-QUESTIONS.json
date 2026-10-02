@@ -5,13 +5,13 @@
   "questions": [
     {
       "id": "EW1",
-      "text": "In Scale metrics, how many handlers were parsed into pack (v0 parser)?",
-      "expected": "24"
+      "text": "In Scale metrics, how many handlers were parsed into pack (parser v1)?",
+      "expected": "29"
     },
     {
       "id": "EW2",
-      "text": "In Scale metrics, how many files were skipped for alternate handler styles?",
-      "expected": "6"
+      "text": "In Scale metrics, how many files were skipped (orthogonal / out of family)?",
+      "expected": "1"
     },
     {
       "id": "EW3",
@@ -31,7 +31,7 @@
     {
       "id": "EW6",
       "text": "How many inst CommandHandler rows appear in the factored pack (Scale metrics table)?",
-      "expected": "24"
+      "expected": "29"
     },
     {
       "id": "EW7",

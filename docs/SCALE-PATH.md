@@ -60,16 +60,16 @@ The **density ladder** and **thin external slice** exist so we can **stress scri
 ### Wedge 1 — One real motif family at Fineract density
 
 - **Input:** `experiments/e3-ablation/raw/` pool (already vendored), not live clone of entire repo.
-- **Output:** L2 CommandHandler pack via [`scripts/build_handler_family_pack.py`](../scripts/build_handler_family_pack.py) — **24/30** handlers in v0 parser; [`fixtures/e3-commandhandler-wedge/`](../fixtures/e3-commandhandler-wedge/).
-- **Proof:** `make handler-family-pack-check` (reexpand byte gate + parsed ≥20).
+- **Output:** L2 CommandHandler pack via [`scripts/build_handler_family_pack.py`](../scripts/build_handler_family_pack.py) — **29/30** handlers (parser v1 + [`annotation_sidecar.v0.json`](../fixtures/e3-commandhandler-wedge/annotation_sidecar.v0.json)); one **orthogonal** `CommandHandler<Req,Res>` skipped; [`fixtures/e3-commandhandler-wedge/`](../fixtures/e3-commandhandler-wedge/).
+- **Proof:** `make handler-family-pack-check` (reexpand byte gate + parsed ≥29).
 - **Also:** [`scripts/handler_family_token_report.py`](../scripts/handler_family_token_report.py) + frozen [`token_report.json`](../fixtures/e3-commandhandler-wedge/token_report.json); L1 dogfood [`L1-e3-commandhandler-wedge.md`](dogfood/L1-e3-commandhandler-wedge.md).
-- **Next:** parser v1 for 6 skipped styles; blind pack-only LLM eval.
+- **Next:** blind pack-only LLM eval; extend sidecar / wiringmap for annotation-less handlers at scale.
 
 ### Wedge 2 — Scoped extract without whole-tree read
 
 - **Input:** PATH LIST from [`scripts/fetch_fineract_slice.sh`](../scripts/fetch_fineract_slice.sh) → real `git sparse-checkout` or archive when credentials/network allow; until then **local corpus stub** with manifest pin.
 - **Output:** wiringmap JSON validated + extract coverage gate (same contract as toybank).
-- **Proof:** `make external-slice-check` + growing file count in manifest; edge recall sample on 30-file vertical slice.
+- **Proof:** `make external-slice-check` (includes **`MANIFEST.txt` drift gate** via `validate_slice_manifest.py`); `make fetch-slice-manifest-check`; edge recall sample on 30-file vertical slice.
 
 ### Wedge 3 — Full E3 + Fineract map statistics
 
@@ -89,20 +89,24 @@ The **density ladder** and **thin external slice** exist so we can **stress scri
 ## Operator commands (scale-oriented I/O today)
 
 ```bash
-make pipeline-io          # toybank + fineract-thin round-trip JSON
-make wiringmap-stress       # adversarial density D0–D4
-make external-slice-check   # thin slice contract
-make fetch-slice-dry-run    # PATH LIST staging (no full tree)
-make pulse-eval             # functional pass/fail incl. negative cases
+make pipeline-io                # toybank + fineract-thin round-trip JSON
+make wiringmap-stress           # adversarial density D0–D4
+make external-slice-check       # thin slice contract (+ MANIFEST drift)
+make handler-family-pack-check  # e3 CommandHandler L2 pack + token report
+make dogfood-grade-handler-wedge
+make fetch-slice-dry-run        # PATH LIST staging (no full tree)
+make fetch-slice-io-check
+make pulse-eval                 # 20 functional pass/fail incl. negative cases
+make cr-f95-stub-check          # question firewall + tokens; no LLM/API
 ```
 
 ---
 
 ## Next pulse targets (aligned with scale, not repo hygiene)
 
-1. **Parser v1** for the six skipped handler styles in the e3 pool.
-2. **Wire fetch `--apply` + MANIFEST** into slice check (drift detection).
+1. ~~**Parser v1** (e3 pool 29/30)~~ — done; PaymentType remains orthogonal family.
+2. ~~**Wire fetch `--apply` + MANIFEST** into slice check~~ — `MANIFEST.txt` + `validate_slice_manifest.py` in `external-slice-check`.
 3. **Meta L1 I/O parser** or retire heuristic mode — one grading story.
-4. **CR@F95 harness stub** — question JSON firewall + token counter column; no LLM until wedge 1 packs exist.
+4. **CR@F95 harness stub** — [`experiments/cr-f95-stub/`](../experiments/cr-f95-stub/): question JSON firewall + token column; **stub only (no live LLM/API)**; blind eval later.
 
 See also [`docs/CONTEXT-COMPACT.md`](CONTEXT-COMPACT.md) for cold-start status.

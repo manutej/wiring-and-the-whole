@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wiring-and-the-whole.local/cr-f95-stub/run_config.v0.json",
+  "title": "CR@F95 harness stub run config (no LLM)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["pack_id", "questions_path", "expected_grade_mode"],
+  "properties": {
+    "pack_id": {
+      "type": "string",
+      "description": "Logical pack identifier for reports (not an API call)."
+    },
+    "questions_path": {
+      "type": "string",
+      "description": "Repo-relative path to L1 question JSON (firewall surface)."
+    },
+    "expected_grade_mode": {
+      "type": "string",
+      "enum": ["heuristic", "io"]
+    },
+    "token_pack_dir": {
+      "type": "string",
+      "description": "Optional repo-relative L2 pack dir for token column."
+    },
+    "token_budget": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Optional stub budget column (cl100k tokens); not a pass/fail claim."
+    }
+  }
+}

@@ -57,8 +57,9 @@ paper → reusable instruments + real systems.
 - **Claims discipline:** the PATH-FORWARD ladder is binding. Never claim: Noether's theorem
   applies; canonical minimal presentations from freeness; rex-ness of Code-C in general;
   "beats Headroom" (market comp, not benchmark arm).
-- **Minting debt (1/3 shipped):** [`skills/interface-first-context/SKILL.md`](skills/interface-first-context/SKILL.md);
-  `systems-intake`, `symmetry-lens` still unminted — stub outlines in [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md).
+- **SKILL instruments (3/3 minted):** [`interface-first-context`](skills/interface-first-context/SKILL.md),
+  [`systems-intake`](skills/systems-intake/SKILL.md), [`symmetry-lens`](skills/symmetry-lens/SKILL.md).
+  Cold-start status lives in [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md), not this section.
 
 ## 4. Folder map
 ```
@@ -85,7 +86,10 @@ unverified until an independent reader re-derives it (this caught two real bugs)
 
 ## 6. Next actions
 
-**Cold-start queue (ordered jumps, verify command, open PR context):** [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md).
+**Cold-start queue:** [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md) + scale wedges in [`docs/SCALE-PATH.md`](docs/SCALE-PATH.md).
 
-Done on main: **`make verify`** (2026-10-01); E2/E3 ladder rungs per README; **`interface-first-context`** SKILL (1/3 mints).
-Still open: remaining SKILL mints, WiringMap v0 → pack builder, Code_X upgrade, full E3, Fineract wedge + E4.
+**Shipped on main (harness):** `make verify`; WiringMap v0 + `make pack-v0-check`; density D0–D4; external thin slice;
+Wedge 1 CommandHandler pack (`make handler-family-pack-check`); **`make pulse-eval`** (20 checks); 3/3 SKILL.md.
+
+**Still open (programme):** Code_X upgrade; full E3 50+10; E4 migration harness; repo-wide CR@F95 with live LLM;
+parser v1 completion (29/30); sparse fetch `--apply` + MANIFEST drift gates; blind pack-only eval.

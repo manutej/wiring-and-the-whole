@@ -81,8 +81,15 @@ check "dogfood toybank L1 (pack I/O parse mode)" \
 check "world I/O pipeline (extract→validate→pack→reexpand→grade)" \
   bash scripts/pipeline_world_io.sh
 
-check "CommandHandler family wedge (24+ handlers, reexpand gate)" \
+check "CommandHandler family wedge (29 handlers, reexpand gate)" \
   make handler-family-pack-check
+
+TMP_HANDLER_PACK="$(mktemp -d)"
+cp -r fixtures/e3-commandhandler-wedge/pack/* "${TMP_HANDLER_PACK}/"
+echo "inst CommandHandler(TamperedHandler, Foo, bar, X, Y)" >> "${TMP_HANDLER_PACK}/pack_factored.txt"
+check "handler wedge reexpand fails when inst row tampered" \
+  expect_exit 1 python3 scripts/reexpand_gate.py "${TMP_HANDLER_PACK}"
+rm -rf "${TMP_HANDLER_PACK}"
 
 check "dogfood handler-wedge L1 (heuristic)" \
   python3 scripts/grade_l1_questions.py --questions docs/dogfood/L1-E3-COMMANDHANDLER-WEDGE-QUESTIONS.json
@@ -108,6 +115,19 @@ check "dogfood fineract-thin L1 (pack I/O parse mode)" \
 
 check "fetch slice dry-run inventory I/O" \
   bash scripts/fetch_slice_io_check.sh
+
+check "fineract slice MANIFEST matches on-disk inventory" \
+  python3 scripts/validate_slice_manifest.py
+
+check "CR@F95 harness stub (config validate + grade + tokens, no LLM)" \
+  make cr-f95-stub-check
+
+TMP_SLICE="$(mktemp -d)"
+printf '%s\n' 'source_repo=x' '' '# paths applied:' 'only-on-manifest.txt' > "${TMP_SLICE}/MANIFEST.txt"
+touch "${TMP_SLICE}/other-file.txt"
+check "slice MANIFEST drift is detected" \
+  expect_exit 1 python3 scripts/validate_slice_manifest.py --slice-dir "${TMP_SLICE}"
+rm -rf "${TMP_SLICE}"
 
 # --- Grader must fail when answers are wrong (not tautological) ---
 WRONG_Q="$(mktemp)"

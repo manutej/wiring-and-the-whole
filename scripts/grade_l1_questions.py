@@ -58,9 +58,9 @@ def answer_commandhandler_wedge_pack(pack_text: str, question_text: str) -> str:
     """Heuristic answers for docs/dogfood/L1-e3-commandhandler-wedge.md."""
     q = question_text.lower()
     if "parsed into pack" in q:
-        return "24"
-    if "skipped" in q and "alternate" in q:
-        return "6"
+        return "29"
+    if "skipped" in q and ("orthogonal" in q or "out of family" in q):
+        return "1"
     if "skill" in q and "under test" in q:
         return "interface-first-context"
     if "parallel" in q and "experiments" in q:
@@ -68,7 +68,7 @@ def answer_commandhandler_wedge_pack(pack_text: str, question_text: str) -> str:
     if "disburseloan" in q and "action" in q:
         return "DISBURSE"
     if "inst commandhandler" in q:
-        return "24"
+        return "29"
     if "e2 s3" in q and "n*" in q:
         return "5"
     raise ValueError(f"No heuristic for question: {question_text!r}")

@@ -9,11 +9,19 @@ import json
 import sys
 from pathlib import Path
 
-from command_handler_parse import HandlerSpec, explicit_block, inst_row, parse_handler_java
+from command_handler_parse import (
+    HandlerSpec,
+    ParseSkip,
+    explicit_block,
+    inst_row,
+    load_annotation_sidecar,
+    parse_handler_java,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RAW = ROOT / "experiments/e3-ablation/raw"
 DEFAULT_OUT = ROOT / "fixtures/e3-commandhandler-wedge/pack"
+DEFAULT_SIDECAR = ROOT / "fixtures/e3-commandhandler-wedge/annotation_sidecar.v0.json"
 MOTIF_PATH = ROOT / "experiments/e2-tokens/pack_S3_motif.txt"
 LEGEND_PATH = ROOT / "experiments/e2-tokens/pack_LEGEND.txt"
 
@@ -35,14 +43,21 @@ def main(argv: list[str] | None = None) -> int:
     if args.limit > 0:
         paths = paths[: args.limit]
 
+    sidecar = load_annotation_sidecar(DEFAULT_SIDECAR)
+
     specs: list[HandlerSpec] = []
     skipped: list[dict[str, str]] = []
     for path in paths:
-        spec = parse_handler_java(path)
-        if spec is None:
-            skipped.append({"file": path.name, "reason": "no @CommandType or writePlatformService call"})
+        parsed = parse_handler_java(path, annotation_sidecar=sidecar)
+        if isinstance(parsed, ParseSkip):
+            skipped.append(
+                {"file": path.name, "reason": parsed.reason, "category": parsed.category}
+            )
             continue
-        specs.append(spec)
+        if parsed is None:
+            skipped.append({"file": path.name, "reason": "unparseable", "category": "unclassified"})
+            continue
+        specs.append(parsed)
 
     if not specs:
         print("ERROR: no handlers parsed", file=sys.stderr)
@@ -72,7 +87,9 @@ def main(argv: list[str] | None = None) -> int:
         "raw_dir": str(raw_dir.relative_to(ROOT) if raw_dir.is_relative_to(ROOT) else raw_dir),
         "parsed": len(specs),
         "skipped": skipped,
+        "skipped_count": len(skipped),
         "handlers": [s.handler for s in specs],
+        "parser_version": "v1",
     }
     (out_dir.parent / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 

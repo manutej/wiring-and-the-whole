@@ -1,0 +1,10 @@
+{
+  "comment": "Curated @CommandType strings when upstream class lacks annotation (v0 convention only).",
+  "handlers": {
+    "UpdateInterestPauseCommandHandler.java": {
+      "entity": "LOAN",
+      "action": "UPDATEINTERESTPAUSE",
+      "source": "Fineract command registry (not present on vendored class body)"
+    }
+  }
+}

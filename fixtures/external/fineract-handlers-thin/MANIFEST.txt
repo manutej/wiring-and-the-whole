@@ -1,0 +1,18 @@
+source_repo=https://github.com/apache/fineract.git
+source_commit=manual pin
+source_ref=develop
+fetched_at=2026-10-02T00:00:00Z
+fetch_mode=stub (local corpus for *.java; in-repo wiringmap/README)
+path_list_file=PATH_LIST.txt
+
+# paths applied:
+AddLoanChargeCommandHandler.java
+CloseLoanCommandHandler.java
+CreateDelinquencyRangeCommandHandler.java
+DisburseLoanCommandHandler.java
+MarkLoanAsFraudCommandHandler.java
+README.md
+SaveCenterCollectionSheetCommandHandler.java
+WithdrawClientTransferCommandHandler.java
+wiringmap.v0.json
+wiringmap.v0.partial.json

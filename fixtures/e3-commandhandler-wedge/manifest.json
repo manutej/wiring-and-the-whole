@@ -1,32 +1,14 @@
 {
   "raw_dir": "experiments/e3-ablation/raw",
-  "parsed": 24,
+  "parsed": 29,
   "skipped": [
     {
-      "file": "LoanApprovedAmountModificationCommandHandler.java",
-      "reason": "no @CommandType or writePlatformService call"
-    },
-    {
       "file": "PaymentTypeCreateCommandHandler.java",
-      "reason": "no @CommandType or writePlatformService call"
-    },
-    {
-      "file": "RejectAddtionalSharesCommandHandler.java",
-      "reason": "no @CommandType or writePlatformService call"
-    },
-    {
-      "file": "UpdateChargeDefinitionCommandHandler.java",
-      "reason": "no @CommandType or writePlatformService call"
-    },
-    {
-      "file": "UpdateInterestPauseCommandHandler.java",
-      "reason": "no @CommandType or writePlatformService call"
-    },
-    {
-      "file": "WorkingCapitalLoanRecoveryPaymentCommandHandler.java",
-      "reason": "no @CommandType or writePlatformService call"
+      "reason": "orthogonal command API (CommandHandler<Req,Res>, not @CommandType family)",
+      "category": "orthogonal_command_api"
     }
   ],
+  "skipped_count": 1,
   "handlers": [
     "AddLoanChargeCommandHandler",
     "AttachLoanOriginatorCommandHandler",
@@ -42,15 +24,21 @@
     "LoanApplicationModificationCommandHandler",
     "LoanApplicationSubmittalCommandHandler",
     "LoanApplicationWithdrawnByApplicantCommandHandler",
+    "LoanApprovedAmountModificationCommandHandler",
     "LoanGoodwillCreditCommandHandler",
     "LoanMerchantIssuedRefundCommandHandler",
     "LoanRefundByCashCommandHandler",
     "LoanRepaymentChargebackCommandHandler",
     "MarkLoanAsFraudCommandHandler",
+    "RejectAddtionalSharesCommandHandler",
     "SaveCenterCollectionSheetCommandHandler",
+    "UpdateChargeDefinitionCommandHandler",
     "UpdateDelinquencyBucketCommandHandler",
     "UpdateDelinquencyRangeCommandHandler",
+    "UpdateInterestPauseCommandHandler",
     "UpdateLoanDelinquencyBucketCommandHandler",
-    "WithdrawClientTransferCommandHandler"
-  ]
+    "WithdrawClientTransferCommandHandler",
+    "WorkingCapitalLoanRecoveryPaymentCommandHandler"
+  ],
+  "parser_version": "v1"
 }
