@@ -163,7 +163,7 @@
     "oVsEddfhdxc",
     "474j-n1Ltxc"
   ],
-  "last_ingest_at": "2026-10-02T00:00:00Z",
-  "last_ingest_note": "Loop tick skipped API: TubeAlfred credits 0 (channel + transcript). No catalog diff; 9 transcripts unchanged. Next: buHC7bQE1X4, YIVkERhy8xo, OA-Mc60Rboo when credits restored.",
+  "last_ingest_at": "2026-10-02T12:00:11Z",
+  "last_ingest_note": "Loop tick 12:00 UTC: TubeAlfred 402 insufficient_credits (0 available). Skipped channel_videos + transcripts. Corpus frozen at 9 ingested; priority unchanged: buHC7bQE1X4, YIVkERhy8xo, OA-Mc60Rboo.",
   "last_ingest_status": "skipped_insufficient_credits"
 }
