@@ -96,7 +96,7 @@ make handler-family-pack-check  # e3 CommandHandler L2 pack + token report
 make dogfood-grade-handler-wedge
 make fetch-slice-dry-run        # PATH LIST staging (no full tree)
 make fetch-slice-io-check
-make pulse-eval                 # 29 functional pass/fail incl. negative cases
+make pulse-eval                 # 30 functional pass/fail incl. negative cases
 make pack-blind-eval-check      # L1 prompt bundles + I/O stub (optional LLM lane)
 make edge-recall-sample-check   # frozen extract ↔ wiringmap pairs
 make cr-f95-stub-check          # question firewall + tokens; no LLM/API
@@ -110,6 +110,6 @@ make cr-f95-stub-check          # question firewall + tokens; no LLM/API
 2. ~~**Wire fetch `--apply` + MANIFEST** into slice check~~ — `MANIFEST.txt` + `validate_slice_manifest.py` in `external-slice-check`.
 3. ~~**Meta L1 I/O parser**~~ — Grading facts table + `--answer-mode io` on meta pack.
 4. ~~**Blind pack-only eval stub**~~ — [`experiments/pack-blind-eval/`](../experiments/pack-blind-eval/) + `make pack-blind-eval-check` (meta + handler-wedge; optional `PACK_EVAL_LLM=1`).
-5. ~~**CR@F95 harness stub**~~ — [`experiments/cr-f95-stub/`](../experiments/cr-f95-stub/) + `make cr-f95-stub-check` (firewall + token column; **no accuracy / no LLM**). **Next:** Pareto curve vs baselines + live LLM fill.
+5. ~~**CR@F95 harness stub**~~ — [`experiments/cr-f95-stub/`](../experiments/cr-f95-stub/) + `make cr-f95-stub-check` (firewall + token + **`accuracy_column: null`** schema). **Next:** Pareto curve vs baselines + live LLM fill.
 
 See also [`docs/CONTEXT-COMPACT.md`](CONTEXT-COMPACT.md) for cold-start status.

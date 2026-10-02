@@ -1,0 +1,6 @@
+{
+  "pack_id": "meta-l1-wiring-and-the-whole",
+  "questions_path": "docs/dogfood/L1-QUESTIONS.json",
+  "expected_grade_mode": "io",
+  "accuracy_column": null
+}

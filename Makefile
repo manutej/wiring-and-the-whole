@@ -38,6 +38,7 @@ fetch-slice-manifest-check:
 
 cr-f95-stub-check:
 	@python3 scripts/cr_f95_stub_run.py --config experiments/cr-f95-stub/run_config.handler-wedge.v0.json
+	@python3 scripts/cr_f95_stub_run.py --config experiments/cr-f95-stub/run_config.meta-l1.v0.json
 
 pack-blind-eval-check:
 	@python3 scripts/pack_blind_eval_run.py --config experiments/pack-blind-eval/run_config.v0.json

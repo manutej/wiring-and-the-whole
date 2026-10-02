@@ -26,6 +26,10 @@
       "type": "integer",
       "minimum": 1,
       "description": "Optional stub budget column (cl100k tokens); not a pass/fail claim."
+    },
+    "accuracy_column": {
+      "description": "Reserved for future LLM fill; stub runs must keep null.",
+      "type": "null"
     }
   }
 }

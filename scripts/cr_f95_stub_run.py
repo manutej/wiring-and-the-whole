@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "experiments/cr-f95-stub/run_config.handler-wedge.v0.json"
 SCHEMA = ROOT / "experiments/cr-f95-stub/schema.run_config.v0.json"
+ACCURACY_SCHEMA = ROOT / "experiments/cr-f95-stub/schema.accuracy_column.v0.json"
 
 
 def load_json(path: Path) -> object:
@@ -89,6 +90,12 @@ def main(argv: list[str] | None = None) -> int:
     question_doc = load_json(questions)
     n_q = len(question_doc.get("questions") or [])
 
+    accuracy_column = config.get("accuracy_column", None)
+    if accuracy_column is not None:
+        import jsonschema
+
+        jsonschema.validate(accuracy_column, load_json(ACCURACY_SCHEMA))
+
     report = {
         "status": "ok",
         "harness": "cr-f95-stub-v0",
@@ -99,7 +106,9 @@ def main(argv: list[str] | None = None) -> int:
         "grade_mode": config["expected_grade_mode"],
         "tokens_factored_full": tokens_factored,
         "token_budget_column": config.get("token_budget"),
-        "note": "Stub only — not CR@F95 accuracy; firewall + token column plumbing.",
+        "accuracy_column": accuracy_column,
+        "accuracy_column_schema": "experiments/cr-f95-stub/schema.accuracy_column.v0.json",
+        "note": "Stub only — not CR@F95 accuracy; firewall + token + accuracy column plumbing.",
     }
 
     out = json.dumps(report, indent=2) + "\n"
