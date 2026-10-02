@@ -1,0 +1,95 @@
+{
+  "LlgiOCmFG_w": {
+    "title": "Fixing the PR Bottleneck \u2014 Matt Pocock, AIHero",
+    "segment_count": 663,
+    "word_count": 4156,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "All right. I'm here to talk about fixing the PR bottleneck and this is kind of a grand title for trying to fix the thing that most organizations struggle with, I think, and have kind of historically struggled with before AI, you know, we have always had huge numbers of PRs just laying around that no one's bothered to review and this is now increased massively because of the new strains on us because of AI imposing all these weird constraints. And to do this, I'm going to use the rubric of my skills, which is kind of heard about, maybe you've used them. And I have a couple of new skills to announce that are going to hopefully improve the way that you do PRs, improve the way that's or improve the speed at which you can review them and do them. Speed. Now, we've been pushed to do more with le",
+    "quotes": []
+  },
+  "tUPPVhBBcoM": {
+    "title": "Self-Improving software factories \u2014 Zach Lloyd, Warp",
+    "segment_count": 528,
+    "word_count": 3636,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "[music] Okay. Hello everyone. Uh, I'm excited to be here. Uh, my name is Zach Lloyd. Um, today I'm going to be talking about self-improving software factories, the new open-source model, and basically what I think is happening to development. A little bit about me just to begin. So I am a former uh principal engineer from Google. Used to lead engineering on the Google Doc Suite. I've been an engineer now for over 20 years. Long time. I am still uh shipping frequently, but I haven't written a line of code in the last six months. Uh and I'm the founder of a company called Warp. Uh Warp, if you're not familiar, is a open-source agentic development environment. Uh you may know us as a terminal. That is how the company started. We're basically a terminal that has agents built in. Uh we open sou",
+    "quotes": []
+  },
+  "_mi3alkqy4s": {
+    "title": "The Death of the Code Review \u2014 Laurie Voss, Arize AI",
+    "segment_count": 632,
+    "word_count": 4412,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "[music] Hello everybody. Thank you for following on a session about the death of the code review with a session about the death of the code review. Uh who knows howululing decisions get made, but uh Swix decided it would be funny for those two to be backtoback. Uh, hi. Uh, I'm Lori. I'm head of developer relations at Arise AI. Uh, some of you may remember me from when I used to co-found npm, Inc. These days, I think about AI and how to test it. Uh, I'm here to talk about a problem that everyone is seeing right now. The rise of AI agents has dramatically increased how fast developers can produce code. Uh, but the speed at which humans can review code. Uh, yeah, I am having a talk right now. Thank you, notion. very good reminder. Uh the team the speed at which humans can review code has stay",
+    "quotes": []
+  },
+  "vGCJ7diEtrw": {
+    "title": "What It Actually Takes to Build a Software Factory \u2014 Tereza T\u00ed\u017ekov\u00e1, Factory",
+    "segment_count": 535,
+    "word_count": 3710,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "[music] Uh hi everyone. Hey what's up? I'm Teresa. Uh and today I will be talking about software factory. uh everyone is talking about software factory but only few people are actually building one and even fewer people know what it actually takes to build one and how to define it. So I will be talking about what is a software factory, should I build your own or outsource it, what works in production already, what are the main challenges and how much is this all going to cost? Uh my name is Theresa. I work at a company called factory.com and we've been building uh this concept of the software factory for quite a long time but finally uh the technology is catching up and it's possible to build this in production for enterprises like EY or Adobe uh I would define the software factory as the ",
+    "quotes": []
+  },
+  "TRfzFJCJ7ZE": {
+    "title": "Orchestras, Not Factories \u2014 Charlie Holtz, Conductor",
+    "segment_count": 461,
+    "word_count": 3083,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "[music] >> Hello. I was at a wedding this weekend and it was in New York and there were a bunch of trendy people there and uh I I told I was talking to someone who I'd never met before and uh I told him I was prepping for this presentation and he was like, \"Oh, that's cool. Like, what what's the conference about?\" And I said it was about AI engineering. And I could just see his eyes glaze over and he started like looking behind me to find the next person to talk to. And I'm it's like so cool to actually be in a room full of people who actually want to hear about this stuff. So, I I I I'm very excited to be here. Um I am the co-founder of Conductor. Um has anyone here used Conductor? Okay, nice. Nice. Okay, cool. So, uh uh for those who don't know, uh Conductor is a desktop app for managing",
+    "quotes": []
+  },
+  "Se8jHLliLXE": {
+    "title": "State of AI in Software Development \u2014 Justin Reock, DX",
+    "segment_count": 557,
+    "word_count": 3787,
+    "language": "English (auto-generated)",
+    "kind": null,
+    "opening": "Uh I'm Justin Rio. I'm the deputy CTO at DX. I get to do a lot of our research around uh developer experience and its relation to developer productivity. And certainly over the last year, a lot of that research has focused on AI's impact on the developer experience and basic aspects of productivity uh within an organization. Uh so we produce these quarterly reports, our our state of AI and AI impact reports which looks at really a lot of raw data that we're able to get from our platform. Our platform is a researchback platform uh built from the same folks who worked on Dora metrics and the space framework and the DevX framework. Uh and really at the end of the day it's a data gathering platform that can look at a lot of different trends across an organization with you know how are we focus",
+    "quotes": []
+  },
+  "XyV6bSMyq-I": {
+    "title": "How We Built an Agent That Improves Itself \u2014 Zubin Aysola, W&B",
+    "segment_count": 563,
+    "word_count": 3968,
+    "language": "English (auto-generated)",
+    "caption": "English (auto-generated)",
+    "opening": "Okay. Hello. Thank you for showing up. Uh my name is Zuben Isola. Uh I work at Weights and Biases. I'm building the Arya agent which is something that we released to general availability on Monday. You might have seen Tim's talk uh one of the pe my peers at Weights and Biases who I work with uh on the main stage yesterday. So I'm going to give you a little bit of a deep dive in\u2026",
+    "quotes": [
+      {"t": "1:41", "text": "benchmarks, evaluations, and agent harness configs are all covariant"},
+      {"t": "2:41", "text": "production traces rip into offline envs to hill-climb — a nice flywheel"},
+      {"t": "13:32", "text": "WBAF (W&B agent factory) caught missing weave.log via offline regression"}
+    ]
+  },
+  "TN3mj92oZ8I": {
+    "title": "Building Self-Improving Agent Software Factories \u2014 Suraj Gupta, Warp",
+    "segment_count": 378,
+    "word_count": 2374,
+    "language": "English (auto-generated)",
+    "caption": "English (auto-generated)",
+    "opening": "Um my name is Siraj Gupta. I lead Harness development at Warp. Um in case you haven't heard of Warp before, um we started off by building a state-of-the-art agentic development environment. Um we have about a million active users that use that. Um it was born out of a modern-day terminal. Um and nowadays we're building a um cloud agent platform to enable teams to build software\u2026",
+    "quotes": [
+      {"t": "1:10", "text": "the self-improvement loop can be automatic"},
+      {"t": "2:28", "text": "factory skills get stale over time without refresh"},
+      {"t": "0:22", "text": "~1M active users on Warp agentic dev environment"}
+    ]
+  },
+  "HvboD89DyQ8": {
+    "title": "No, That's Not a Software Factory \u2014 Ryan Cooke, WorkOS",
+    "segment_count": 488,
+    "word_count": 2978,
+    "language": "English (auto-generated)",
+    "caption": "English (auto-generated)",
+    "opening": "Well, thank you for joining the final day of the conference here. I know it's been a long week. But I'm excited to talk about a topic here that is very near and dear to me. Software factories. Um You this is probably not a new concept to any of you. I'm guessing if you're all here, you're very familiar with software factories. You know, Ramp blogged about their inspects several\u2026",
+    "quotes": [
+      {"t": "3:34", "text": "sandbox factory was indistinguishable from laptop Claude Code"},
+      {"t": "3:56", "text": "not sufficient that the factory produces code — embed eng process"},
+      {"t": "4:10", "text": "TARS agent embedded in Slack, Linear, GitHub with webhook tracking"}
+    ]
+  }
+}

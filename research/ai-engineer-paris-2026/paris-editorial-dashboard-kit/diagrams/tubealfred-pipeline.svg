@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" font-family="system-ui, sans-serif">
+  <title>TubeAlfred read pipeline</title>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="720" height="420" fill="#fafafa"/>
+  <text x="360" y="32" text-anchor="middle" font-size="18" font-weight="600" fill="#111">TubeAlfred  public read pipeline</text>
+  <text x="360" y="52" text-anchor="middle" font-size="11" fill="#666">Read-only MCP · no Studio analytics · credits per successful call</text>
+
+  <g font-size="11" fill="#111">
+    <rect x="286" y="70" width="148" height="44" rx="6" fill="#e8f0fe" stroke="#6b9bd1"/>
+    <text x="360" y="90" text-anchor="middle" font-weight="600">Your input</text>
+    <text x="360" y="104" text-anchor="middle" fill="#444" font-size="9">URL · search · channel</text>
+
+    <line x1="360" y1="114" x2="360" y2="138" stroke="#555" marker-end="url(#arr)"/>
+
+    <rect x="80" y="138" width="148" height="44" rx="6" fill="#fff" stroke="#999"/>
+    <text x="154" y="158" text-anchor="middle" font-weight="600">url_resolve</text>
+    <text x="154" y="172" text-anchor="middle" fill="#444" font-size="9">IDs + canonical URL</text>
+
+    <rect x="492" y="138" width="148" height="44" rx="6" fill="#fff" stroke="#999"/>
+    <text x="566" y="158" text-anchor="middle" font-weight="600">search / channel_videos</text>
+    <text x="566" y="172" text-anchor="middle" fill="#444" font-size="9">candidate set</text>
+
+    <line x1="154" y1="182" x2="154" y2="210" stroke="#555"/>
+    <line x1="566" y1="182" x2="566" y2="210" stroke="#555"/>
+    <line x1="154" y1="210" x2="566" y2="210" stroke="#555"/>
+    <line x1="360" y1="210" x2="360" y2="234" stroke="#555" marker-end="url(#arr)"/>
+
+    <rect x="286" y="234" width="148" height="44" rx="6" fill="#fff" stroke="#999"/>
+    <text x="360" y="254" text-anchor="middle" font-weight="600">video_get / batch</text>
+    <text x="360" y="268" text-anchor="middle" fill="#444" font-size="9">title · desc · stats · duration</text>
+
+    <line x1="360" y1="278" x2="360" y2="302" stroke="#555" marker-end="url(#arr)"/>
+
+    <rect x="180" y="302" width="148" height="44" rx="6" fill="#e6f4ea" stroke="#6aa684"/>
+    <text x="254" y="322" text-anchor="middle" font-weight="600">video_transcript</text>
+    <text x="254" y="336" text-anchor="middle" fill="#444" font-size="9">timestamped segments</text>
+
+    <rect x="392" y="302" width="148" height="44" rx="6" fill="#fef7e0" stroke="#c9a227"/>
+    <text x="466" y="322" text-anchor="middle" font-weight="600">comments_list</text>
+    <text x="466" y="336" text-anchor="middle" fill="#444" font-size="9">public thread sample</text>
+
+    <line x1="254" y1="346" x2="254" y2="368" stroke="#555"/>
+    <line x1="466" y1="346" x2="466" y2="368" stroke="#555"/>
+    <line x1="254" y1="368" x2="466" y2="368" stroke="#555"/>
+    <line x1="360" y1="368" x2="360" y2="388" stroke="#555" marker-end="url(#arr)"/>
+
+    <rect x="256" y="388" width="208" height="24" rx="4" fill="#111"/>
+    <text x="360" y="404" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">Digest · canvas · content briefs</text>
+  </g>
+</svg>

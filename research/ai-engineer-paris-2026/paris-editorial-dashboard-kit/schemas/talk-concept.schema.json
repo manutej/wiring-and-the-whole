@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "paris-editorial-talk-concept",
+  "title": "TalkConceptPage",
+  "type": "object",
+  "required": [
+    "slug",
+    "videoId",
+    "title",
+    "speaker",
+    "org",
+    "accent",
+    "metaphor",
+    "thesis",
+    "hook",
+    "durationMin",
+    "transcriptWords",
+    "stats",
+    "symbols",
+    "vocab",
+    "failureModes",
+    "demoStages",
+    "diagram"
+  ],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "videoId": { "type": "string", "minLength": 6 },
+    "title": { "type": "string" },
+    "speaker": { "type": "string" },
+    "org": { "type": "string" },
+    "accent": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+    "metaphor": { "type": "string" },
+    "thesis": { "type": "string" },
+    "hook": { "type": "string" },
+    "durationMin": { "type": "number", "minimum": 1 },
+    "transcriptWords": { "type": "number", "minimum": 0 },
+    "stats": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["value", "label"],
+        "properties": {
+          "value": { "type": "string" },
+          "label": { "type": "string" },
+          "cite": { "type": "string" }
+        }
+      }
+    },
+    "symbols": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["term", "meaning"],
+        "properties": {
+          "term": { "type": "string" },
+          "meaning": { "type": "string" }
+        }
+      }
+    },
+    "vocab": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["term", "def", "viz"],
+        "properties": {
+          "term": { "type": "string" },
+          "def": { "type": "string" },
+          "viz": {
+            "enum": [
+              "deep-module",
+              "review-gate",
+              "eval-loop",
+              "factory-line",
+              "enterprise-stack",
+              "orchestra",
+              "survey-radar"
+            ]
+          }
+        }
+      }
+    },
+    "failureModes": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["title", "body"],
+        "properties": {
+          "title": { "type": "string" },
+          "body": { "type": "string" }
+        }
+      }
+    },
+    "demoStages": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["label", "meta"],
+        "properties": {
+          "label": { "type": "string" },
+          "meta": { "type": "string" }
+        }
+      }
+    },
+    "diagram": {
+      "enum": [
+        "pr-pipeline",
+        "review-cliff",
+        "factory-loop",
+        "build-buy",
+        "orchestra-pit",
+        "dx-radar"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
