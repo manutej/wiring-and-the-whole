@@ -11,3 +11,5 @@ After every **meaty pulse** (not a quick `make pulse-loop` only):
 Cloud agents: also read [`cursor/stores/self/pulse-reporting.md`](cursor/stores/self/pulse-reporting.md) when present in the environment.
 
 Cold start: [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md) · Scale: [`docs/SCALE-PATH.md`](docs/SCALE-PATH.md) · Loop roles: [`docs/pulse/LOOP-ENGINEERING.md`](docs/pulse/LOOP-ENGINEERING.md).
+
+Post-loop (after firewalled evaluator): `make meta-evaluator` — see [`docs/pulse/META-EVALUATOR.md`](docs/pulse/META-EVALUATOR.md) and external craft index [`docs/pulse/CRAFT-SKILLS-INTEGRATION.md`](docs/pulse/CRAFT-SKILLS-INTEGRATION.md). Implementers mid-pulse must not read [`docs/pulse/RUBRIC-EVALUATOR.md`](docs/pulse/RUBRIC-EVALUATOR.md).

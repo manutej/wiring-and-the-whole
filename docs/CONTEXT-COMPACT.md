@@ -25,7 +25,7 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 | Wedge 1 | **29/30** CommandHandler L2 — `make handler-family-pack-check` |
 | Wedge 2 pin | `MANIFEST.txt` — `make external-slice-check` |
 | L1 dogfood | meta / toybank / fineract-thin / handler-wedge — **all support `--answer-mode io`** |
-| Pulse | `make pulse-eval` (**33** checks incl. unified eval + archived pack-blind results) |
+| Pulse | `make pulse-eval` (**34** checks incl. unified eval + meta-evaluator hook) |
 | Blind pack eval | meta + handler-wedge — `make pack-blind-eval-check` or `make pulse-unified-eval-check` |
 
 ## Commands (copy-paste)
@@ -33,6 +33,7 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 ```bash
 make verify && make pulse-eval
 make pulse-loop                 # verify + pulse-eval + role checklist (Paris loop doc)
+make meta-evaluator-check       # post-loop craft index + firewall sanity (in pulse-eval)
 make handler-family-pack-check
 make external-slice-check
 make pulse-unified-eval-check

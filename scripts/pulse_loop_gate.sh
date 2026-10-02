@@ -19,6 +19,7 @@ cat <<'EOF'
   [ ] Interface tests — failure modes / cold navigation, not frozen-json echo
   [ ] Evaluator lane — firewalled SHIP | NO-SHIP stored outside implementer context
   [ ] Paris/Every research edits stayed on research lanes; no silent E2/E3/witness drift
+  [ ] Post-loop meta-evaluator (optional) — make meta-evaluator after SHIP; see docs/pulse/META-EVALUATOR.md
 
 EOF
 

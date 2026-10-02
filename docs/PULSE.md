@@ -149,3 +149,4 @@ Frozen JSON echo tests belong in **`make verify`**. Pulse adds **failure-mode** 
 - Implementer template: [`docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md`](pulse/IMPLEMENTER-BRIEF-TEMPLATE.md)
 - Evaluator rubric (implementer must not read during pulse): [`docs/pulse/RUBRIC-EVALUATOR.md`](pulse/RUBRIC-EVALUATOR.md)
 - Loop engineering + Paris paths: [`docs/pulse/LOOP-ENGINEERING.md`](pulse/LOOP-ENGINEERING.md)
+- Post-loop meta-evaluator + craft index: [`docs/pulse/META-EVALUATOR.md`](pulse/META-EVALUATOR.md) · [`docs/pulse/CRAFT-SKILLS-INTEGRATION.md`](pulse/CRAFT-SKILLS-INTEGRATION.md)

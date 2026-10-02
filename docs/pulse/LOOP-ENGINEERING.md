@@ -107,6 +107,9 @@ Extend harness and frozen fixtures in the **same PR** when adopting a Paris insi
 | `make pulse-gate` | [`scripts/pulse_gate.sh`](../../scripts/pulse_gate.sh) | `make verify` + process reminders |
 | `make pulse-loop` | [`scripts/pulse_loop_gate.sh`](../../scripts/pulse_loop_gate.sh) | verify + `pulse-eval` + loop checklist |
 | `make pulse-eval` | [`scripts/pulse_eval_functional.sh`](../../scripts/pulse_eval_functional.sh) | Functional harness regression battery |
+| `make meta-evaluator` | [`scripts/meta_evaluator_hook.py`](../../scripts/meta_evaluator_hook.py) | Post-loop JSON: programme pointers + craft skill index (no rubric text) |
+
+Craft pull-in policy: [`CRAFT-SKILLS-INTEGRATION.md`](CRAFT-SKILLS-INTEGRATION.md) · hook spec: [`META-EVALUATOR.md`](META-EVALUATOR.md).
 
 ---
 
