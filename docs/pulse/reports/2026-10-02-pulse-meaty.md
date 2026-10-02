@@ -9,7 +9,7 @@
 | ended_at_utc | `2026-10-02T15:40:01Z` |
 | duration_minutes | ~1 (implementation + gates; wall-clock) |
 | branch | `cursor/pulse-meaty-edge-blind-3f70` |
-| pr | https://github.com/manutej/wiring-and-the-whole/compare/main...cursor/pulse-meaty-edge-blind-3f70 |
+| pr | Merged to `main` (branch `cursor/pulse-meaty-edge-blind-3f70`; no GitHub PR — direct merge) |
 
 ### Agents
 
