@@ -129,9 +129,10 @@ Frozen JSON echo tests belong in **`make verify`**. Pulse adds **failure-mode** 
 - Evaluator completed rubric stored **outside** implementer context (separate file, separate subagent transcript).
 - Interface-level test notes: what was broken on purpose and what signal was observed.
 
-**Optional script:**
+**Optional scripts:**
 
-- `make pulse-gate` → `scripts/pulse_gate.sh`
+- `make pulse-gate` → `scripts/pulse_gate.sh` (verify + reminders)
+- `make pulse-loop` → `scripts/pulse_loop_gate.sh` (verify + `pulse-eval` + loop checklist; see [`docs/pulse/LOOP-ENGINEERING.md`](pulse/LOOP-ENGINEERING.md))
 
 ## What "pulse" is NOT
 
@@ -146,3 +147,4 @@ Frozen JSON echo tests belong in **`make verify`**. Pulse adds **failure-mode** 
 - Cloud agent pointer: [`/cursor/stores/self/pulse-protocol.md`](/cursor/stores/self/pulse-protocol.md)
 - Implementer template: [`docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md`](pulse/IMPLEMENTER-BRIEF-TEMPLATE.md)
 - Evaluator rubric (implementer must not read during pulse): [`docs/pulse/RUBRIC-EVALUATOR.md`](pulse/RUBRIC-EVALUATOR.md)
+- Loop engineering + Paris paths: [`docs/pulse/LOOP-ENGINEERING.md`](pulse/LOOP-ENGINEERING.md)
