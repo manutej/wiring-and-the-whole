@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin external-slice-check fetch-slice-dry-run fetch-slice-io-check pack-v0-check pulse-gate pulse-eval pipeline-io wiringmap-check wiringmap-stress
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check pack-v0-check handler-family-pack-check pulse-gate pulse-eval pipeline-io wiringmap-check wiringmap-stress
 
 verify:
 	@./scripts/verify.sh
@@ -21,6 +21,9 @@ dogfood-grade-toybank:
 dogfood-grade-fineract-thin:
 	@python3 scripts/grade_l1_questions.py --answer-mode io --questions docs/dogfood/L1-FINERACT-THIN-QUESTIONS.json
 
+dogfood-grade-handler-wedge:
+	@python3 scripts/grade_l1_questions.py --questions docs/dogfood/L1-E3-COMMANDHANDLER-WEDGE-QUESTIONS.json
+
 external-slice-check:
 	@bash scripts/fineract_slice_check.sh
 
@@ -41,6 +44,12 @@ wiringmap-check:
 pack-v0-check:
 	@python3 scripts/build_l2_pack.py wiringmap/examples/toybank-accounts.v0.json
 	@python3 scripts/reexpand_gate.py wiringmap/examples/toybank-accounts.v0.pack
+
+handler-family-pack-check:
+	@python3 scripts/build_handler_family_pack.py
+	@python3 scripts/reexpand_gate.py fixtures/e3-commandhandler-wedge/pack
+	@python3 -c "import json,pathlib; m=json.loads(pathlib.Path('fixtures/e3-commandhandler-wedge/manifest.json').read_text()); assert m['parsed']>=20, m"
+	@python3 scripts/handler_family_token_report.py --write
 
 witness:
 	@python3 witness/run_witness.py

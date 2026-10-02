@@ -54,6 +54,26 @@ def answer_fineract_thin_pack(pack_text: str, question_text: str) -> str:
     raise ValueError(f"No heuristic for question: {question_text!r}")
 
 
+def answer_commandhandler_wedge_pack(pack_text: str, question_text: str) -> str:
+    """Heuristic answers for docs/dogfood/L1-e3-commandhandler-wedge.md."""
+    q = question_text.lower()
+    if "parsed into pack" in q:
+        return "24"
+    if "skipped" in q and "alternate" in q:
+        return "6"
+    if "skill" in q and "under test" in q:
+        return "interface-first-context"
+    if "parallel" in q and "experiments" in q:
+        return "experiments/e3-ablation/raw/"
+    if "disburseloan" in q and "action" in q:
+        return "DISBURSE"
+    if "inst commandhandler" in q:
+        return "24"
+    if "e2 s3" in q and "n*" in q:
+        return "5"
+    raise ValueError(f"No heuristic for question: {question_text!r}")
+
+
 def answer_toybank_pack(pack_text: str, question_text: str) -> str:
     """Heuristic answers for docs/dogfood/L1-toybank-accounts.md."""
     q = question_text.lower()
@@ -70,6 +90,8 @@ def answer_toybank_pack(pack_text: str, question_text: str) -> str:
 
 def answer_from_pack(pack_path: Path, pack_text: str, question_text: str) -> str:
     name = pack_path.name.lower()
+    if "commandhandler-wedge" in name or "e3-commandhandler" in name:
+        return answer_commandhandler_wedge_pack(pack_text, question_text)
     if "fineract-handlers-thin" in name:
         return answer_fineract_thin_pack(pack_text, question_text)
     if "toybank-accounts" in name:

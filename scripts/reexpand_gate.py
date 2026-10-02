@@ -34,16 +34,41 @@ def validate_legend(pack_dir: Path) -> None:
         sys.exit(1)
 
 
-def expand_inst_row(row: str) -> list[str]:
+def expand_slice_unit_row(row: str) -> list[str]:
     m = re.match(r"inst SliceUnit\((\w+), edges=\[(.*)\]\)\s*$", row.strip(), re.S)
     if not m:
-        raise ValueError(f"bad inst row: {row!r}")
+        raise ValueError(f"bad SliceUnit inst row: {row!r}")
     unit, edges_s = m.groups()
     lines = [f"unit {unit}"]
     edges = [e.strip() for e in edges_s.split(",") if e.strip()]
     for target in sorted(edges):
         lines.append(f"edge {unit} -> {target}")
     return lines
+
+
+def expand_command_handler_row(row: str) -> list[str]:
+    m = re.match(
+        r"inst CommandHandler\((\w+),\s*(\w+),\s*(\w+),\s*(\w+),\s*(\w+)\)\s*$",
+        row.strip(),
+    )
+    if not m:
+        raise ValueError(f"bad CommandHandler inst row: {row!r}")
+    handler, service, method, entity, action = m.groups()
+    return [
+        f"unit {handler}",
+        f"anno {handler} @CommandType entity={entity} action={action}",
+        f"dep {handler}.writePlatformService: {service}",
+        f"edge {handler} -> {service}#{method}",
+    ]
+
+
+def expand_inst_row(row: str) -> list[str]:
+    stripped = row.strip()
+    if stripped.startswith("inst CommandHandler("):
+        return expand_command_handler_row(row)
+    if stripped.startswith("inst SliceUnit("):
+        return expand_slice_unit_row(row)
+    raise ValueError(f"unknown inst row: {row!r}")
 
 
 def expand_factored(factored_text: str) -> str:

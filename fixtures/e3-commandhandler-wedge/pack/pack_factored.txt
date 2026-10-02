@@ -1,0 +1,30 @@
+motif CommandHandler(H, S, m, entity, action):
+  unit $H
+  anno $H @CommandType entity=$entity action=$action
+  dep $H.writePlatformService: $S
+  edge $H -> $S#$m
+
+inst CommandHandler(AddLoanChargeCommandHandler, LoanChargeWritePlatformService, addLoanCharge, LOANCHARGE, CREATE)
+inst CommandHandler(AttachLoanOriginatorCommandHandler, LoanOriginatorWritePlatformService, attachOriginatorToLoan, LOAN_ORIGINATOR, ATTACH)
+inst CommandHandler(BulkUpdateLoanOfficerCommandHandler, LoanWritePlatformService, bulkLoanReassignment, LOAN, BULKREASSIGN)
+inst CommandHandler(CloseLoanCommandHandler, LoanWritePlatformService, closeLoan, LOAN, CLOSE)
+inst CommandHandler(CreateDelinquencyRangeCommandHandler, DelinquencyWritePlatformService, createDelinquencyRange, DELINQUENCY_RANGE, CREATE)
+inst CommandHandler(CreditBalanceRefundCommandHandler, LoanWritePlatformService, creditBalanceRefund, LOAN, CREDITBALANCEREFUND)
+inst CommandHandler(DetachLoanOriginatorCommandHandler, LoanOriginatorWritePlatformService, detachOriginatorFromLoan, LOAN_ORIGINATOR, DETACH)
+inst CommandHandler(DisburseLoanCommandHandler, LoanWritePlatformService, disburseLoan, LOAN, DISBURSE)
+inst CommandHandler(DisburseLoanToSavingsCommandHandler, LoanWritePlatformService, disburseLoan, LOAN, DISBURSETOSAVINGS)
+inst CommandHandler(ForeClosureCommandHandler, LoanWritePlatformService, forecloseLoan, LOAN, FORECLOSURE)
+inst CommandHandler(GLIMApplicationRejectionCommandHandler, LoanApplicationWritePlatformService, rejectGLIMApplicationApproval, GLIMLOAN, REJECT)
+inst CommandHandler(LoanApplicationModificationCommandHandler, LoanApplicationWritePlatformService, modifyApplication, LOAN, UPDATE)
+inst CommandHandler(LoanApplicationSubmittalCommandHandler, LoanApplicationWritePlatformService, submitApplication, LOAN, CREATE)
+inst CommandHandler(LoanApplicationWithdrawnByApplicantCommandHandler, LoanApplicationWritePlatformService, applicantWithdrawsFromApplication, LOAN, WITHDRAW)
+inst CommandHandler(LoanGoodwillCreditCommandHandler, LoanWritePlatformService, makeLoanRepayment, LOAN, GOODWILLCREDIT)
+inst CommandHandler(LoanMerchantIssuedRefundCommandHandler, LoanWritePlatformService, makeRefund, LOAN, MERCHANTISSUEDREFUND)
+inst CommandHandler(LoanRefundByCashCommandHandler, LoanWritePlatformService, makeLoanRefund, LOAN, REFUNDBYCASH)
+inst CommandHandler(LoanRepaymentChargebackCommandHandler, LoanWritePlatformService, chargebackLoanTransaction, LOAN, CHARGEBACK)
+inst CommandHandler(MarkLoanAsFraudCommandHandler, LoanWritePlatformService, markLoanAsFraud, LOAN, SETFRAUD)
+inst CommandHandler(SaveCenterCollectionSheetCommandHandler, CollectionSheetWritePlatformService, updateCollectionSheet, CENTER, SAVECOLLECTIONSHEET)
+inst CommandHandler(UpdateDelinquencyBucketCommandHandler, DelinquencyWritePlatformService, updateDelinquencyBucket, DELINQUENCY_BUCKET, UPDATE)
+inst CommandHandler(UpdateDelinquencyRangeCommandHandler, DelinquencyWritePlatformService, updateDelinquencyRange, DELINQUENCY_RANGE, UPDATE)
+inst CommandHandler(UpdateLoanDelinquencyBucketCommandHandler, DelinquencyWritePlatformService, applyDelinquencyTagToLoan, LOAN, UPDATEDELINQUENCY)
+inst CommandHandler(WithdrawClientTransferCommandHandler, TransferWritePlatformService, withdrawClientTransfer, CLIENT, WITHDRAWTRANSFER)
