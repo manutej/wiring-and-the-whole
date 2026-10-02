@@ -1,6 +1,6 @@
 # L1 — e3-commandhandler-wedge · CommandHandler family (dogfood)
 
-**Scope:** Twenty-four `@CommandType` handlers parsed from [`experiments/e3-ablation/raw/`](../../experiments/e3-ablation/raw/) into [`fixtures/e3-commandhandler-wedge/pack/`](../../fixtures/e3-commandhandler-wedge/pack/). **Budget:** L2 motif + inst rows only; no Java bodies in the pack. **Machine mirror:** [`fixtures/e3-commandhandler-wedge/manifest.json`](../../fixtures/e3-commandhandler-wedge/manifest.json).
+**Scope:** Twenty-nine `@CommandType` / sidecar handlers parsed from [`experiments/e3-ablation/raw/`](../../experiments/e3-ablation/raw/) into [`fixtures/e3-commandhandler-wedge/pack/`](../../fixtures/e3-commandhandler-wedge/pack/). **Budget:** L2 motif + inst rows only; no Java bodies in the pack. **Machine mirror:** [`fixtures/e3-commandhandler-wedge/manifest.json`](../../fixtures/e3-commandhandler-wedge/manifest.json); one curated annotation in [`annotation_sidecar.v0.json`](../../fixtures/e3-commandhandler-wedge/annotation_sidecar.v0.json).
 
 **Skill under test:** [`interface-first-context`](../../skills/interface-first-context/SKILL.md).
 
@@ -11,10 +11,10 @@
 | metric | value |
 |--------|------:|
 | Java files in pool (`*CommandHandler.java`) | 30 |
-| Parsed into pack (v0 parser) | 24 |
-| Skipped (alternate handler styles) | 6 |
-| Explicit lines (4 per handler) | 96 |
-| `inst CommandHandler` rows in factored pack | 24 |
+| Parsed into pack (parser v1) | 29 |
+| Skipped (orthogonal / out of family) | 1 |
+| Explicit lines (4 per handler) | 116 |
+| `inst CommandHandler` rows in factored pack | 29 |
 
 ---
 
@@ -26,7 +26,7 @@
 | `handler.CloseLoanCommandHandler` | `CloseLoanCommandHandler.java` | LOAN / CLOSE |
 | `handler.AddLoanChargeCommandHandler` | `AddLoanChargeCommandHandler.java` | LOANCHARGE / CREATE |
 
-*(21 additional handlers — same 4-line explicit block shape; see manifest.)*
+*(26 additional handlers — same 4-line explicit block shape; see manifest.)*
 
 ---
 
@@ -50,7 +50,7 @@
 - `handler.CloseLoanCommandHandler` → `LoanWritePlatformService#closeLoan` (di)
 - `handler.AddLoanChargeCommandHandler` → `LoanChargeWritePlatformService#addLoanCharge` (di)
 
-*(One primary call edge per parsed handler — 24 total.)*
+*(One primary call edge per parsed handler — 29 total.)*
 
 ---
 

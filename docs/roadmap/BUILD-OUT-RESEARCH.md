@@ -1,5 +1,18 @@
 # Build-out research memo — what exists and what to ship next
 
+> **Superseded for status (2026-10-02):** use [`docs/CONTEXT-COMPACT.md`](../CONTEXT-COMPACT.md) and [`docs/SCALE-PATH.md`](../SCALE-PATH.md) as ground truth on `main`. This memo remains useful for **history and OPTIONS sequencing**, not current ship state.
+
+### Delta — BUILD-OUT claims vs landed on main
+
+| BUILD-OUT row (Oct 1) | Landed since |
+|----------------------|--------------|
+| No repro runner | **`make verify`** / `scripts/verify.sh` |
+| No pack builder v0 | **`build_l2_pack.py`**, **`make pack-v0-check`**, **`build_handler_family_pack.py`** |
+| No WiringMap v0 | **`wiringmap/schema.v0.json`**, toybank + thin slice examples |
+| 2/3 SKILLs unminted | **3/3** SKILL.md minted |
+| Fineract wedge open | **Wedge 1** `fixtures/e3-commandhandler-wedge/` (**29/30** parser v1) |
+| No functional pulse eval | **`make pulse-eval`** (20 checks) |
+
 **Date:** 2026-10-01 · **Audience:** cold agent resuming the programme · **Sources:** `HANDOFF.md`, `options/OPTIONS.md`, `plans/ADVERSARIAL.md`, `witness/`, `experiments/`.
 
 ---

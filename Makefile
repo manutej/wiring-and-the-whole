@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check pack-v0-check handler-family-pack-check pulse-gate pulse-eval pipeline-io wiringmap-check wiringmap-stress
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pulse-gate pulse-eval pipeline-io wiringmap-check wiringmap-stress
 
 verify:
 	@./scripts/verify.sh
@@ -33,6 +33,12 @@ fetch-slice-dry-run:
 fetch-slice-io-check:
 	@bash scripts/fetch_slice_io_check.sh
 
+fetch-slice-manifest-check:
+	@python3 scripts/validate_slice_manifest.py
+
+cr-f95-stub-check:
+	@python3 scripts/cr_f95_stub_run.py --config experiments/cr-f95-stub/run_config.handler-wedge.v0.json
+
 wiringmap-stress:
 	@bash scripts/wiringmap_stress.sh
 
@@ -48,7 +54,7 @@ pack-v0-check:
 handler-family-pack-check:
 	@python3 scripts/build_handler_family_pack.py
 	@python3 scripts/reexpand_gate.py fixtures/e3-commandhandler-wedge/pack
-	@python3 -c "import json,pathlib; m=json.loads(pathlib.Path('fixtures/e3-commandhandler-wedge/manifest.json').read_text()); assert m['parsed']>=20, m"
+	@python3 -c "import json,pathlib; m=json.loads(pathlib.Path('fixtures/e3-commandhandler-wedge/manifest.json').read_text()); assert m['parsed']>=29, m"
 	@python3 scripts/handler_family_token_report.py --write
 
 witness:

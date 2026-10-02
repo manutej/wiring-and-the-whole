@@ -121,7 +121,7 @@ def answer_from_pack_io(pack_path: Path, pack_text: str, question_text: str) -> 
     if "commandhandler-wedge" in name or "e3-commandhandler" in name:
         if "parsed into pack" in q:
             return scale_metric_value(pack_text, "Parsed into pack")
-        if "skipped" in q and "alternate" in q:
+        if "skipped" in q and ("orthogonal" in q or "out of family" in q):
             return scale_metric_value(pack_text, "Skipped")
         if "inst commandhandler" in q:
             return scale_metric_value(pack_text, "inst CommandHandler")
