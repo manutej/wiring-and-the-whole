@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "description": "Density ladder expectations for scripts/wiringmap_stress.sh — add D4+ rows here without editing extract/validate core logic.",
+  "cases": [
+    {
+      "id": "D0",
+      "label": "witness/toybank/accounts (production witness slice)",
+      "refs_dir": "witness/toybank/accounts",
+      "extract_example": "wiringmap/examples/toybank-accounts.v0.json",
+      "validate_instance": "wiringmap/examples/toybank-accounts.v0.json",
+      "expect": {
+        "validate_exit": 0,
+        "extract_exit": 0
+      }
+    },
+    {
+      "id": "D1",
+      "label": "d1-minimal missing ref",
+      "refs_dir": "fixtures/density/d1-minimal",
+      "extract_example": "fixtures/density/d1-minimal/wiringmap.v0.json",
+      "expect": {
+        "extract_exit": 1
+      }
+    },
+    {
+      "id": "D2",
+      "label": "d2-fork invalid wiringmap instance",
+      "refs_dir": "fixtures/density/d2-fork",
+      "extract_example": "fixtures/density/d2-fork/wiringmap.v0.json",
+      "validate_instance": "fixtures/density/d2-fork/invalid.v0.json",
+      "expect": {
+        "validate_exit": 1,
+        "extract_exit": 0
+      }
+    },
+    {
+      "id": "D3",
+      "label": "d3-orbit duplicate MVC pair",
+      "refs_dir": "fixtures/density/d3-orbit",
+      "extract_example": "fixtures/density/d3-orbit/wiringmap.v0.json",
+      "validate_instance": "fixtures/density/d3-orbit/wiringmap.v0.json",
+      "expect": {
+        "validate_exit": 0,
+        "extract_exit": 0
+      }
+    },
+    {
+      "id": "D4",
+      "label": "external fineract-handlers-thin partial wiringmap",
+      "refs_dir": "fixtures/external/fineract-handlers-thin",
+      "extract_example": "fixtures/external/fineract-handlers-thin/wiringmap.v0.json",
+      "validate_instance": "fixtures/external/fineract-handlers-thin/wiringmap.v0.json",
+      "expect": {
+        "validate_exit": 0,
+        "extract_exit": 0
+      }
+    }
+  ]
+}

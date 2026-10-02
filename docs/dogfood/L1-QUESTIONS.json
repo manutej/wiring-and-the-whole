@@ -1,0 +1,32 @@
+{
+  "pack": "docs/dogfood/L1-wiring-and-the-whole.md",
+  "version": 1,
+  "grading": "exact string or number match unless noted",
+  "questions": [
+    {
+      "id": "Q1",
+      "text": "How many E1 witness checks does WITNESS.json define (check keys under checks)?",
+      "expected": "13"
+    },
+    {
+      "id": "Q2",
+      "text": "For Fineract site S3 (ActivateSavingsAccountCommandHandler family), what is break-even n* per README/E2 (integer)?",
+      "expected": "5"
+    },
+    {
+      "id": "Q3",
+      "text": "E3 pilot: did arm B pass the no-≥5pt comprehension tax rule vs A (yes/no)?",
+      "expected": "yes"
+    },
+    {
+      "id": "Q4",
+      "text": "From handoff wiring: which adversarial register lists GA1–GA10?",
+      "expected": "plans/ADVERSARIAL.md"
+    },
+    {
+      "id": "Q5",
+      "text": "Repo verify entrypoint after repro harness (make target name)?",
+      "expected": "verify"
+    }
+  ]
+}

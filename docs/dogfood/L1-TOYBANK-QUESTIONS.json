@@ -1,0 +1,27 @@
+{
+  "pack": "docs/dogfood/L1-toybank-accounts.md",
+  "version": 1,
+  "grading": "exact string or number match unless noted",
+  "questions": [
+    {
+      "id": "TB1",
+      "text": "How many compilation units appear in the interface catalog table (unit_id rows)?",
+      "expected": "4"
+    },
+    {
+      "id": "TB2",
+      "text": "In Wiring edges (flat), how many directed edges are listed (count bullet lines)?",
+      "expected": "8"
+    },
+    {
+      "id": "TB3",
+      "text": "Which skill is under test for this L1 slice (directory name under skills/)?",
+      "expected": "interface-first-context"
+    },
+    {
+      "id": "TB4",
+      "text": "Parallel product boundary: which witness subtree is marked parallel (‖) to accounts/?",
+      "expected": "witness/toybank/savings/"
+    }
+  ]
+}

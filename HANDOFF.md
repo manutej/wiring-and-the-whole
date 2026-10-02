@@ -57,8 +57,8 @@ paper → reusable instruments + real systems.
 - **Claims discipline:** the PATH-FORWARD ladder is binding. Never claim: Noether's theorem
   applies; canonical minimal presentations from freeness; rex-ness of Code-C in general;
   "beats Headroom" (market comp, not benchmark arm).
-- **Minting debt:** systems-intake, interface-first-context, symmetry-lens (renamed from
-  noether-lens per GA10) still unminted.
+- **Minting debt (1/3 shipped):** [`skills/interface-first-context/SKILL.md`](skills/interface-first-context/SKILL.md);
+  `systems-intake`, `symmetry-lens` still unminted — stub outlines in [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md).
 
 ## 4. Folder map
 ```
@@ -75,18 +75,17 @@ research/                  (git repo)
 ```
 
 ## 5. Method notes (keep doing this)
+Prefer ASCII diagrams in chat, docs, and HTML deliverables unless the user asks for Mermaid.
 Fable agents in single parallel batches only; Sonnet for mechanical diagnosis. Every generative
 phase → adversarial phase (written meta-prompt) → solutions phase that COMMITS. Provenance
 discipline: page-tagged, register-tagged, or labeled CONJECTURE/DESIGN. Consistency ≠
 correctness; demonstrated ≠ proved; models ≠ measurements. Treat every "strengthened" check as
 unverified until an independent reader re-derives it (this caught two real bugs).
+- User trigger **pulse** → see [`docs/PULSE.md`](docs/PULSE.md) (implement → adversarial panel → merge gate → interface tests → firewalled evaluator).
 
 ## 6. Next actions
-1. DONE 2026-09-16: E2 WIN, E3 pilot B-PASSES → claims ladder rungs unlocked:
-   'L2 token arithmetic live at micro-scale' + 'no comprehension tax at pilot scale'.
-   Next: full-protocol E3 (50+10 q, mixed sites, firewalled minting, pinned models).
-2. Mint the three free instruments as SKILL.md files + one dogfood run each.
-3. Upgrade witness C₀ → full Code_X (exhaustive-within-bound universal check) → attempt
-   MUST-PROVE 1–2.
-4. Fineract wedge (orbit statistics discharge U1) with E4 migration chain folded in.
-5. Optional: /ceti-explainer film (brief was in explainer/BRIEF.md, reconstructable).
+
+**Cold-start queue (ordered jumps, verify command, open PR context):** [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md).
+
+Done on main: **`make verify`** (2026-10-01); E2/E3 ladder rungs per README; **`interface-first-context`** SKILL (1/3 mints).
+Still open: remaining SKILL mints, WiringMap v0 → pack builder, Code_X upgrade, full E3, Fineract wedge + E4.

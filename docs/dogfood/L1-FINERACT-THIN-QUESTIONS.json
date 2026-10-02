@@ -1,0 +1,37 @@
+{
+  "pack": "docs/dogfood/L1-fineract-handlers-thin.md",
+  "version": 1,
+  "grading": "exact string or number match unless noted",
+  "questions": [
+    {
+      "id": "FT1",
+      "text": "How many compilation units appear in the interface catalog table (unit_id rows)?",
+      "expected": "3"
+    },
+    {
+      "id": "FT2",
+      "text": "In Wiring edges (flat), how many directed edges are listed (count bullet lines)?",
+      "expected": "5"
+    },
+    {
+      "id": "FT3",
+      "text": "Which skill is under test for this L1 slice (directory name under skills/)?",
+      "expected": "interface-first-context"
+    },
+    {
+      "id": "FT4",
+      "text": "Parallel boundary: which experiments subtree is marked parallel (‖) to this external slice?",
+      "expected": "experiments/e3-ablation/raw/"
+    },
+    {
+      "id": "FT5",
+      "text": "DisburseLoan @CommandType action string (action = \"...\")?",
+      "expected": "DISBURSE"
+    },
+    {
+      "id": "FT6",
+      "text": "How many context-only handlers are named in the interface catalog section (not in the table)?",
+      "expected": "4"
+    }
+  ]
+}

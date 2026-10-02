@@ -1,0 +1,146 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "fixtures/density/d3-orbit",
+    "slice": "orbit/",
+    "notes": "Hand wiringmap for duplicate MVC orbit (accounts ‖ savings); symmetry stress only."
+  },
+  "junctions": [
+    {
+      "id": "junction:shared.PageDto",
+      "label": "shared.PageDto#of",
+      "junction_kind": "dto"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit:orbit.accounts.AccountsController",
+      "path": "fixtures/density/d3-orbit/accounts/AccountsController.java",
+      "role": "accounts HTTP adapter",
+      "ports": [
+        {
+          "id": "port:orbit.accounts.AccountsController#list",
+          "symbol": "list",
+          "kind": "method",
+          "signature_stub": "Page list(int p)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:orbit.accounts.AccountsService",
+      "path": "fixtures/density/d3-orbit/accounts/AccountsService.java",
+      "role": "accounts application service",
+      "ports": [
+        {
+          "id": "port:orbit.accounts.AccountsService#fetchPage",
+          "symbol": "fetchPage",
+          "kind": "method",
+          "signature_stub": "Page fetchPage(int p)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:orbit.accounts.AccountsRepository",
+      "path": "fixtures/density/d3-orbit/accounts/AccountsRepository.java",
+      "role": "accounts persistence",
+      "ports": [
+        {
+          "id": "port:orbit.accounts.AccountsRepository#findPage",
+          "symbol": "findPage",
+          "kind": "method",
+          "signature_stub": "Page findPage(int p)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:orbit.savings.SavingsController",
+      "path": "fixtures/density/d3-orbit/savings/SavingsController.java",
+      "role": "savings HTTP adapter (orbit twin)",
+      "ports": [
+        {
+          "id": "port:orbit.savings.SavingsController#list",
+          "symbol": "list",
+          "kind": "method",
+          "signature_stub": "Page list(int p)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:orbit.savings.SavingsService",
+      "path": "fixtures/density/d3-orbit/savings/SavingsService.java",
+      "role": "savings application service (orbit twin)",
+      "ports": [
+        {
+          "id": "port:orbit.savings.SavingsService#fetchPage",
+          "symbol": "fetchPage",
+          "kind": "method",
+          "signature_stub": "Page fetchPage(int p)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:orbit.savings.SavingsRepository",
+      "path": "fixtures/density/d3-orbit/savings/SavingsRepository.java",
+      "role": "savings persistence (orbit twin)",
+      "ports": [
+        {
+          "id": "port:orbit.savings.SavingsRepository#findPage",
+          "symbol": "findPage",
+          "kind": "method",
+          "signature_stub": "Page findPage(int p)",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:acct-ctrl-svc",
+      "from": "port:orbit.accounts.AccountsController#list",
+      "to": "port:orbit.accounts.AccountsService#fetchPage",
+      "edge_kind": "call",
+      "evidence": "accounts/AccountsController.java // refs: orbit.accounts.AccountsService#fetchPage"
+    },
+    {
+      "id": "edge:acct-ctrl-page",
+      "from": "port:orbit.accounts.AccountsController#list",
+      "to": "junction:shared.PageDto",
+      "edge_kind": "ref",
+      "evidence": "accounts/AccountsController.java // refs: shared.PageDto#of"
+    },
+    {
+      "id": "edge:acct-svc-repo",
+      "from": "port:orbit.accounts.AccountsService#fetchPage",
+      "to": "port:orbit.accounts.AccountsRepository#findPage",
+      "edge_kind": "call",
+      "evidence": "accounts/AccountsService.java // refs: orbit.accounts.AccountsRepository#findPage"
+    },
+    {
+      "id": "edge:sav-ctrl-svc",
+      "from": "port:orbit.savings.SavingsController#list",
+      "to": "port:orbit.savings.SavingsService#fetchPage",
+      "edge_kind": "call",
+      "evidence": "savings/SavingsController.java // refs: orbit.savings.SavingsService#fetchPage"
+    },
+    {
+      "id": "edge:sav-ctrl-page",
+      "from": "port:orbit.savings.SavingsController#list",
+      "to": "junction:shared.PageDto",
+      "edge_kind": "ref",
+      "evidence": "savings/SavingsController.java // refs: shared.PageDto#of"
+    },
+    {
+      "id": "edge:sav-svc-repo",
+      "from": "port:orbit.savings.SavingsService#fetchPage",
+      "to": "port:orbit.savings.SavingsRepository#findPage",
+      "edge_kind": "call",
+      "evidence": "savings/SavingsService.java // refs: orbit.savings.SavingsRepository#findPage"
+    }
+  ]
+}
