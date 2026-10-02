@@ -1,48 +1,48 @@
-# Pulse report — 2026-10-02-pulse-meaty
+# Pulse report — meaty wiring and blind-pack round (2026-10-02)
 
 ## Metadata
 
 | Field | Value |
 |-------|-------|
-| pulse_id | `2026-10-02-pulse-meaty` |
-| started_at_utc | `2026-10-02T15:39:24Z` |
-| ended_at_utc | `2026-10-02T15:40:01Z` |
-| duration_minutes | ~1 (implementation + gates; wall-clock) |
-| branch | `cursor/pulse-meaty-edge-blind-3f70` |
-| pr | Merged to `main` (branch `cursor/pulse-meaty-edge-blind-3f70`; no GitHub PR — direct merge) |
+| Pulse round name | `2026-10-02-pulse-meaty` |
+| Start time (UTC) | `2026-10-02T15:39:24Z` |
+| End time (UTC) | `2026-10-02T15:41:01Z` |
+| How long (minutes) | ~2 (build, docs, and merge checks) |
+| Working branch | `cursor/pulse-meaty-edge-blind-3f70` (merged to main) |
+| Pull request | merged via main at commit `5bed9b4`; follow-up spec approval on `cursor/pulse-report-approved-3c9d` |
 
 ### Agents
 
-| role | id | model |
+| Role | Who | Notes |
 |------|-----|-------|
-| implementer | bc-9e99d112-570c-5a13-b6b6-eb6df7313f70 | cloud agent |
-| adversarial panel | bc-9e99d112-570c-5a13-b6b6-eb6df7313f70 | cloud agent |
-| evaluator | deferred | — |
+| Builder | bc-9e99d112-570c-5a13-b6b6-eb6df7313f70 | cloud agent |
+| Challenge reviewers | bc-9e99d112-570c-5a13-b6b6-eb6df7313f70 | cloud agent (same run, small round) |
+| Independent scorer | deferred | rubric lane not run this round |
 
-### Gate timing (recorded)
+### Gate timing
 
-| command | elapsed |
-|---------|---------|
-| `make verify` | 2 s |
-| `make pulse-loop` #1 | ~7 s |
-| `make pulse-loop` #2 | 7 s |
+| Check | Elapsed |
+|-------|---------|
+| Full repo witness check | ~1 s |
+| Automated pulse test battery (first run) | ~7 s |
+| Automated pulse test battery (second run) | ~7 s |
 
 ---
 
 ## Done
 
-- Added post-pulse executive report spec, template, and cloud-agent pointer so each pulse can ship a plain-English summary with UTC duration and agent metadata.
-- Grew the edge-recall sample gate from 13 to 29 frozen pairs by wiring toybank loans and savings maps alongside accounts and the thin Fineract handler slice.
-- Introduced a persisted pack-blind results JSON schema plus stub artifact and a dated adversarial scorecard for this round.
+- Wrote the approved rules for after-pulse summaries, a blank report template, and a short pointer so cloud agents know where to file them.
+- Grew the frozen wiring-connection sample from thirteen pairs to twenty-nine by adding toy-bank loan and savings maps plus the thin handler slice alongside accounts.
+- Defined a saved shape for blind reading-pack results, added a stub results file, and filed a dated challenge scorecard for this round.
 
 ## Tested
 
-- `make verify` passed witness E1–E3 frozen parity on the merge candidate.
-- `make pulse-loop` ran twice (verify + 31-check `pulse-eval` battery); edge-recall, pack-blind, and unified eval cases all green.
-- Negative probes in pulse-eval still catch tampered edge fixtures, prompt-bundle answer leaks, and slice MANIFEST drift.
+- The full repo witness check passed on the merge candidate (three frozen comparison steps).
+- The automated pulse test battery ran twice; thirty-one checks passed each time with zero failures.
+- Deliberate wrong inputs still fail as expected: tampered connection samples, leaked answer hints in prompt bundles, and changed slice inventory files.
 
 ## Next
 
-- Wire CI validation so pack-blind stdout can be archived against `schema.results.v0.json` without manual drift.
-- Extend edge-recall only with chartered slices; do not imply staff-scale recall until new fixtures exist.
-- Fill LLM baseline and external question minting when CR@F95 moves beyond stub columns (MUST-PROVE MP-unified-1).
+- Teach continuous integration to archive blind-pack run output and compare it to the agreed results shape without manual edits.
+- Add connection samples only when new chartered code slices exist; do not claim whole-bank recall until those samples exist.
+- Turn on live model baselines and externally minted questions when accuracy tracking moves beyond placeholder columns.

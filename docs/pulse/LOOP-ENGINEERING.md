@@ -112,6 +112,6 @@ Extend harness and frozen fixtures in the **same PR** when adopting a Paris insi
 ## Related
 
 - [`docs/PULSE.md`](../PULSE.md)
-- Post-pulse executive report: [`PULSE-REPORT-SPEC.md`](PULSE-REPORT-SPEC.md) · depth note in [`PULSE-DEPTH.md`](PULSE-DEPTH.md)
+- Post-pulse executive report (**APPROVED 2026-10-02**, plain language only): [`PULSE-REPORT-SPEC.md`](PULSE-REPORT-SPEC.md) · depth note in [`PULSE-DEPTH.md`](PULSE-DEPTH.md) · example [`reports/2026-10-02-pulse-meaty.md`](reports/2026-10-02-pulse-meaty.md)
 - [`skills/systems-intake/SKILL.md`](../../skills/systems-intake/SKILL.md) — covariant eval section (Paris adopted)
 - Programme scale: [`docs/SCALE-PATH.md`](../SCALE-PATH.md)

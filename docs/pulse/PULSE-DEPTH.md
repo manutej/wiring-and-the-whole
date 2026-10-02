@@ -21,7 +21,7 @@ Checklist when running a **deep** pulse (template — fill per round, no fake sc
 
 ## Executive report (post-pulse)
 
-After gates pass, file a user-facing summary per [`PULSE-REPORT-SPEC.md`](PULSE-REPORT-SPEC.md): metadata (pulse id, UTC duration, branch, PR, agents table) plus **Done / Tested / Next** — three sections, three bullets each.
+After gates pass, file a user-facing summary per [`PULSE-REPORT-SPEC.md`](PULSE-REPORT-SPEC.md) (**APPROVED 2026-10-02**): plain-language metadata (UTC duration, branch, PR, agents table) plus **Done / Tested / Next** — three sections, three bullets each, **no jargon in the whole file**.
 
 ## When to extend harness vs run deep pulse
 

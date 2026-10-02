@@ -4,20 +4,26 @@
 
 | Field | Value |
 |-------|-------|
-| pulse_id | `YYYY-MM-DD-topic` |
-| started_at_utc | |
-| ended_at_utc | |
-| duration_minutes | |
-| branch | |
-| pr | |
+| Pulse round name | `YYYY-MM-DD-topic` |
+| Start time (UTC) | |
+| End time (UTC) | |
+| How long (minutes) | |
+| Working branch | |
+| Pull request | |
 
 ### Agents
 
-| role | id | model |
+| Role | Who | Notes |
 |------|-----|-------|
-| implementer | | |
-| adversarial panel | | |
-| evaluator | deferred \| |
+| Builder | | |
+| Challenge reviewers | | |
+| Independent scorer | deferred | |
+
+### Gate timing (optional)
+
+| Check | Elapsed |
+|-------|---------|
+| | |
 
 ---
 
