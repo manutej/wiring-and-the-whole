@@ -144,7 +144,7 @@ Frozen JSON echo tests belong in **`make verify`**. Pulse adds **failure-mode** 
 
 ## Related
 
-- Post-pulse executive report: [`docs/pulse/PULSE-REPORT-SPEC.md`](pulse/PULSE-REPORT-SPEC.md) · template [`docs/pulse/reports/TEMPLATE.md`](pulse/reports/TEMPLATE.md)
+- Post-pulse executive report (**APPROVED 2026-10-02**, no jargon in the whole file): [`docs/pulse/PULSE-REPORT-SPEC.md`](pulse/PULSE-REPORT-SPEC.md) · template [`docs/pulse/reports/TEMPLATE.md`](pulse/reports/TEMPLATE.md) · example [`docs/pulse/reports/2026-10-02-pulse-meaty.md`](pulse/reports/2026-10-02-pulse-meaty.md)
 - Cloud agent pointer: [`/cursor/stores/self/pulse-protocol.md`](/cursor/stores/self/pulse-protocol.md) · reporting [`/cursor/stores/self/pulse-reporting.md`](/cursor/stores/self/pulse-reporting.md)
 - Implementer template: [`docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md`](pulse/IMPLEMENTER-BRIEF-TEMPLATE.md)
 - Evaluator rubric (implementer must not read during pulse): [`docs/pulse/RUBRIC-EVALUATOR.md`](pulse/RUBRIC-EVALUATOR.md)
