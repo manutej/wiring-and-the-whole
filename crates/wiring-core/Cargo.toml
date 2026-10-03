@@ -9,6 +9,10 @@ license = "Apache-2.0"
 name = "wiring-validate"
 path = "src/bin/wiring_validate.rs"
 
+[[bin]]
+name = "wiring-extract-java-refs"
+path = "src/bin/wiring_extract_java_refs.rs"
+
 [dependencies]
 clap = { version = "=4.4.18", features = ["derive"] }
 serde = { version = "1.0", features = ["derive"] }

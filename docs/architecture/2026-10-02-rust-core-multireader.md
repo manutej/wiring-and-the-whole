@@ -77,7 +77,7 @@ Keep **Next.js preview** as a consumer: load JSON or call WASM build of `wiring-
    - Structural v0 validate in `wiring-core` + `wiring-validate` CLI; `make wiring-core-check` runs **Rust + Python** on toybank, fineract-thin, and [`repo-rust-spine.v0.json`](../../wiringmap/examples/repo-rust-spine.v0.json).  
    - Full JSON Schema via embedded schema in Rust deferred (toolchain pin); Python `jsonschema` remains authoritative for schema edge cases.
 
-3. **Phase 2 — extract parity (Java readers)**  
+3. **Phase 2 — extract parity (Java readers)** *(java `// refs:` in `wiring-core::reader::java_refs`; parity gate in `make wiring-core-check`)*  
    - Port ref-line and CommandHandler parsers to `wiring-reader-java*`.  
    - Golden tests: same `refs_by_file` / counts as current extract JSON in `pipeline-io`.
 
