@@ -37,3 +37,13 @@ echo "OK: wiring-core validate parity (${#INSTANCES[@]} instances, Rust + Python
 
 bash scripts/java_refs_parity.sh witness/toybank/accounts witness/toybank/accounts
 bash scripts/java_refs_parity.sh fixtures/external/fineract-handlers-thin fixtures/external/fineract-handlers-thin
+
+REEXPAND_BIN="${CRATE}/target/release/wiring-reexpand"
+PACK="${ROOT}/wiringmap/examples/toybank-accounts.v0.pack"
+CANONICAL_LEGEND="${ROOT}/experiments/e2-tokens/pack_LEGEND.txt"
+if [[ ! -f "${PACK}/pack_explicit.txt" ]]; then
+  echo "ERROR: missing toybank pack at ${PACK}" >&2
+  exit 1
+fi
+"${REEXPAND_BIN}" "${PACK}" --canonical-legend "${CANONICAL_LEGEND}"
+echo "OK: wiring-core reexpand gate (toybank pack, Rust parity with reexpand_gate.py)"
