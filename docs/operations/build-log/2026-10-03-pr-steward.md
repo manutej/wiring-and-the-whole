@@ -9,13 +9,15 @@
 
 | UTC (approx) | Event | Notes |
 |--------------|-------|-------|
-| 2026-10-03T21:58Z | First `origin/cursor/mvp-engine-push-cd12` | Tip `d582e48199cb34f8bd348accaae94840f970994d` (1 commit ahead of main) |
+| 2026-10-03T21:58Z | First `origin/cursor/mvp-engine-push-cd12` | Tip `d582e48…` (1 commit ahead of main) |
+| 2026-10-03T22:00Z | Steward log push | Tip `041bfaf…` (2 commits ahead of main) |
 
 ## Commits on integration branch (pushed)
 
 | SHA | Message | Observed (UTC) |
 |-----|---------|----------------|
 | `d582e48199cb34f8bd348accaae94840f970994d` | feat(mvp): M1a java refs regex parity + compound build SOP | 2026-10-03T21:59Z |
+| `041bfaf33b8c43a413a1506fc7ee81b96b44f834` | docs(operations): PR steward log for mvp-engine-push-cd12 | 2026-10-03T22:00Z |
 
 ## Milestone gates (steward)
 
