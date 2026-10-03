@@ -4,7 +4,7 @@
 
 **Integration branch:** `cursor/mvp-engine-push-cd12`  
 **Parent baseline (`origin/main` at first remote push):** `dbe6a8fd5f55bd20aced8b4c625cf15b7ca1ce56` — Merge pull request #41 from manutej/cursor/adversarial-firewall-cd12  
-**Current tip:** `4c74ae27b5394b074468e2e81ad4dd6e538dead1` (8 commits ahead of `origin/main`)
+**Current tip:** see latest push below (M1a eval + M1b builder commits after steward meta-commits)
 
 ## Remote tracking
 
@@ -26,16 +26,18 @@
 | `23eda74e9d7cfc55031000ea7197912fee04a940` | docs(operations): steward log — sync all branch commits | 2026-10-03T22:02Z |
 | `a569ba6883ddd7b175db13e70cf7c2aff627601f` | docs(operations): steward log — current tip 23eda74 | 2026-10-03T22:03Z |
 | `4c74ae27b5394b074468e2e81ad4dd6e538dead1` | docs(operations): steward log — tip a569ba6 | 2026-10-03T22:03Z |
+| `faef34d…` | feat(mvp): M1b Rust reexpand gate on toybank pack | 2026-10-03T22:01Z |
+| `cbba017…` | docs(pulse): independent M1a evaluation SHIP | 2026-10-03T22:05Z |
 
 ## Milestone gates (steward)
 
 | Gate | Command / action | Status |
 |------|------------------|--------|
-| M1 complete (coordinator) | `git pull origin cursor/mvp-engine-push-cd12` then `make pulse-loop` | **waiting** |
+| M1 complete (coordinator) | `git pull origin cursor/mvp-engine-push-cd12` then `make pulse-loop` | **partial** — pulse green @ `faef34d`; M1c/M1d pending |
 | Open GitHub PR | After M1d + independent eval SHIP | **hold** (per SOP) |
 
 ## Verification log
 
 | UTC | Action | Result |
 |-----|--------|--------|
-| — | `make pulse-loop` | _not run — M1 not signaled complete_ |
+| 2026-10-03T22:06Z | `make pulse-loop` @ `faef34d`+M1a eval cherry-pick | **PASS** (35/35) |
