@@ -1,0 +1,55 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "witness/toybank/report",
+    "slice": "Report module cross-package refs",
+    "notes": "Small witness slice for edge-recall growth (not in main pipeline-io path)."
+  },
+  "junctions": [
+    {
+      "id": "junction:accounts.Money",
+      "label": "accounts.Money",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:loans.Money",
+      "label": "loans.Money",
+      "junction_kind": "other"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit:ReportModule",
+      "path": "witness/toybank/report/ReportModule.java",
+      "role": "Report stub",
+      "ports": [
+        {
+          "id": "port:ReportModule#render",
+          "symbol": "render",
+          "kind": "method",
+          "signature_stub": "String render()",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:report-accounts-money",
+      "from": "port:ReportModule#render",
+      "to": "junction:accounts.Money",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "ReportModule.java // refs: accounts.Money#amountCents"
+    },
+    {
+      "id": "edge:report-loans-money",
+      "from": "port:ReportModule#render",
+      "to": "junction:loans.Money",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "ReportModule.java // refs: loans.Money#amount"
+    }
+  ]
+}

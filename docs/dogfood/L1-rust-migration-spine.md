@@ -15,7 +15,8 @@
 | `rust_crate_path` | crates/wiring-core |
 | `rust_validate_binary` | wiring-validate |
 | `python_validate_script` | scripts/validate_wiringmap.py |
-| `migration_phase_active` | 2 |
+| `migration_phase_active` | 3 |
+| `pipeline_default_engine` | rust (`WIRING_ENGINE=rust` in `pipeline_world_io.sh`; extract still Python) |
 | `rust_java_refs_binary` | wiring-extract-java-refs |
 | `spine_edge_count` | 8 |
 

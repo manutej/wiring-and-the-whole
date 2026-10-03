@@ -12,6 +12,11 @@ const cards = [
     body: "Real vendored @CommandType handlers — map matches make pipeline-io on main.",
   },
   {
+    href: "/charter",
+    title: "Fineract charter (~1k LOC)",
+    body: "29-handler pinned vertical — manifest drift + 90 ref tokens (M2 scale-honest slice).",
+  },
+  {
     href: "/spine",
     title: "Rust migration spine",
     body: "This repo’s own harness wiring: Python tools → wiring-core Phase 1 targets.",
