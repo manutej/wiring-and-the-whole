@@ -4,7 +4,7 @@
 
 **Integration branch:** `cursor/mvp-engine-push-cd12`  
 **Parent baseline (`origin/main` at first remote push):** `dbe6a8fd5f55bd20aced8b4c625cf15b7ca1ce56` — Merge pull request #41 from manutej/cursor/adversarial-firewall-cd12  
-**Current tip:** `bb493e13b464c815703ccc08336539ce89e8528a` (5 commits ahead of `origin/main`)
+**Current tip:** `23eda74e9d7cfc55031000ea7197912fee04a940` (6 commits ahead of `origin/main`)
 
 ## Remote tracking
 
