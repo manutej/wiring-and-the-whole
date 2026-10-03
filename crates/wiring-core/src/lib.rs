@@ -1,6 +1,7 @@
 //! WiringMap v0 core — validate and typed graph IR (Phase 1).
 
 mod validate_v0;
+pub mod reader;
 
 use serde_json::Value;
 use std::path::Path;
