@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pack-blind-results-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval meta-evaluator meta-evaluator-check pipeline-io wiringmap-check wiringmap-stress
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pack-blind-results-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval meta-evaluator meta-evaluator-check pipeline-io wiringmap-check wiringmap-stress wiring-core-check
 
 verify:
 	@./scripts/verify.sh
@@ -77,6 +77,9 @@ handler-family-pack-check:
 	@python3 scripts/reexpand_gate.py fixtures/e3-commandhandler-wedge/pack
 	@python3 -c "import json,pathlib; m=json.loads(pathlib.Path('fixtures/e3-commandhandler-wedge/manifest.json').read_text()); assert m['parsed']>=29, m"
 	@python3 scripts/handler_family_token_report.py --write
+
+wiring-core-check:
+	@bash scripts/wiring_core_check.sh
 
 witness:
 	@python3 witness/run_witness.py
