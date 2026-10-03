@@ -12,6 +12,8 @@ Cloud agents: also read [`cursor/stores/self/pulse-reporting.md`](cursor/stores/
 
 Cold start: [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md) · Scale: [`docs/SCALE-PATH.md`](docs/SCALE-PATH.md) · Loop roles: [`docs/pulse/LOOP-ENGINEERING.md`](docs/pulse/LOOP-ENGINEERING.md).
 
+**Large / tiered programmes:** operate via [`skills/compound-build-loop/SKILL.md`](skills/compound-build-loop/SKILL.md) (integration branch, build specs, independent SHIP, **one PR** when checklist green). Repo instance: [`docs/operations/COMPOUND-BUILD-SOP.md`](docs/operations/COMPOUND-BUILD-SOP.md).
+
 Post-loop (after firewalled evaluator): `make meta-evaluator` — see [`docs/pulse/META-EVALUATOR.md`](docs/pulse/META-EVALUATOR.md) and external craft index [`docs/pulse/CRAFT-SKILLS-INTEGRATION.md`](docs/pulse/CRAFT-SKILLS-INTEGRATION.md). Implementers mid-pulse must not read [`docs/pulse/RUBRIC-EVALUATOR.md`](docs/pulse/RUBRIC-EVALUATOR.md).
 
 ## Adversarial + evaluator (mandatory separation)

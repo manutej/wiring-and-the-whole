@@ -1,5 +1,7 @@
 # Compound build SOP — MVP push
 
+**Portable skill (use in any repo):** [`skills/compound-build-loop/SKILL.md`](../../skills/compound-build-loop/SKILL.md) — full role DAGs, PR timing, gate stack, templates.
+
 **Goal:** Ship **M1 Engine MVP** then **M2 1k charter** without process theater.
 
 ## Roles (segregated)
