@@ -71,6 +71,7 @@ wiringmap-check:
 pack-v0-check:
 	@python3 scripts/build_l2_pack.py wiringmap/examples/toybank-accounts.v0.json
 	@python3 scripts/reexpand_gate.py wiringmap/examples/toybank-accounts.v0.pack
+	@bash scripts/l2_pack_parity.sh wiringmap/examples/toybank-accounts.v0.json
 
 handler-family-pack-check:
 	@python3 scripts/build_handler_family_pack.py
