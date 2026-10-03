@@ -37,6 +37,7 @@ echo "OK: wiring-core validate parity (${#INSTANCES[@]} instances, Rust + Python
 
 bash scripts/java_refs_parity.sh witness/toybank/accounts witness/toybank/accounts
 bash scripts/java_refs_parity.sh fixtures/external/fineract-handlers-thin fixtures/external/fineract-handlers-thin
+bash scripts/java_refs_example_parity.sh
 
 REEXPAND_BIN="${CRATE}/target/release/wiring-reexpand"
 PACK="${ROOT}/wiringmap/examples/toybank-accounts.v0.pack"

@@ -18,6 +18,11 @@ CANONICAL_LEGEND="${ROOT}/experiments/e2-tokens/pack_LEGEND.txt"
 
 fail() { echo "PIPELINE IO FAIL: $*" >&2; exit 1; }
 
+case "${WIRING_ENGINE}" in
+  rust|python) ;;
+  *) fail "invalid WIRING_ENGINE=${WIRING_ENGINE} (want rust|python)" ;;
+esac
+
 ensure_engine() {
   if [[ "${WIRING_ENGINE}" == "rust" ]]; then
     if ! command -v cargo >/dev/null 2>&1; then

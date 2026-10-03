@@ -9,10 +9,8 @@ WM="${1:-wiringmap/examples/toybank-accounts.v0.json}"
 WM_ABS="${ROOT}/${WM}"
 LEGEND="${ROOT}/experiments/e2-tokens/pack_LEGEND.txt"
 
+cargo build --quiet --manifest-path crates/wiring-core/Cargo.toml --release --bins
 BIN="${ROOT}/crates/wiring-core/target/release/wiring-build-l2-pack"
-if [[ ! -x "${BIN}" ]]; then
-  cargo build --quiet --manifest-path crates/wiring-core/Cargo.toml --release
-fi
 
 TMP_PY="$(mktemp -d)"
 TMP_RS="$(mktemp -d)"
