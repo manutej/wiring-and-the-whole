@@ -240,6 +240,9 @@ rm -f "${WRONG_Q}"
 check "meta-evaluator hook (craft index + rubric firewall)" \
   python3 scripts/meta_evaluator_hook.py --check
 
+check "wiring-core Rust validate (Phase 1 parity maps)" \
+  bash scripts/wiring_core_check.sh
+
 echo ""
 echo "Functional eval: ${pass} passed, ${fail} failed"
 if [[ "${fail}" -gt 0 ]]; then

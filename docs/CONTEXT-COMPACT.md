@@ -25,7 +25,7 @@ Single page for agents on **`main`**. Detail: [`SCALE-PATH.md`](SCALE-PATH.md), 
 | Wedge 1 | **29/30** CommandHandler L2 — `make handler-family-pack-check` |
 | Wedge 2 pin | `MANIFEST.txt` — `make external-slice-check` |
 | L1 dogfood | meta / toybank / fineract-thin / handler-wedge — **all support `--answer-mode io`** |
-| Pulse | `make pulse-eval` (**34** checks incl. unified eval + meta-evaluator hook) |
+| Pulse | `make pulse-eval` (**35** checks incl. wiring-core Rust validate + meta-evaluator hook) |
 | Blind pack eval | meta + handler-wedge — `make pack-blind-eval-check` or `make pulse-unified-eval-check` |
 
 ## Commands (copy-paste)

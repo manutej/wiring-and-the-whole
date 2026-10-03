@@ -5,3 +5,4 @@ probe.bin
 __pycache__/
 *.v0.pack/
 craft/
+crates/**/target/
