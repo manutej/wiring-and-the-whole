@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pack-blind-results-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval meta-evaluator meta-evaluator-check pipeline-io wiringmap-check wiringmap-stress wiring-core-check
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check charter-1k-check fetch-charter-1k-apply fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pack-blind-results-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval meta-evaluator meta-evaluator-check pipeline-io wiringmap-check wiringmap-stress wiring-core-check
 
 verify:
 	@./scripts/verify.sh
@@ -36,6 +36,12 @@ dogfood-grade-handler-wedge:
 external-slice-check:
 	@bash scripts/fineract_slice_check.sh
 
+charter-1k-check:
+	@bash scripts/charter_1k_check.sh
+
+fetch-charter-1k-apply:
+	@bash scripts/fetch_fineract_charter_1k.sh --apply
+
 fetch-slice-dry-run:
 	@bash scripts/fetch_fineract_slice.sh
 
@@ -71,6 +77,7 @@ wiringmap-check:
 pack-v0-check:
 	@python3 scripts/build_l2_pack.py wiringmap/examples/toybank-accounts.v0.json
 	@python3 scripts/reexpand_gate.py wiringmap/examples/toybank-accounts.v0.pack
+	@bash scripts/l2_pack_parity.sh wiringmap/examples/toybank-accounts.v0.json
 
 handler-family-pack-check:
 	@python3 scripts/build_handler_family_pack.py

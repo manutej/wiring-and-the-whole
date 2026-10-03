@@ -12,7 +12,51 @@ REFS="${ROOT}/witness/toybank/accounts"
 WORK="$(mktemp -d)"
 trap 'rm -rf "${WORK}"' EXIT
 
+WIRING_ENGINE="${WIRING_ENGINE:-rust}"
+CRATE="${ROOT}/crates/wiring-core"
+CANONICAL_LEGEND="${ROOT}/experiments/e2-tokens/pack_LEGEND.txt"
+
 fail() { echo "PIPELINE IO FAIL: $*" >&2; exit 1; }
+
+ensure_engine() {
+  if [[ "${WIRING_ENGINE}" == "rust" ]]; then
+    if ! command -v cargo >/dev/null 2>&1; then
+      echo "WARN: cargo missing; falling back to python engine" >&2
+      WIRING_ENGINE=python
+      return
+    fi
+    cargo build --quiet --manifest-path "${CRATE}/Cargo.toml" --release --bins
+  fi
+}
+
+validate_wiringmap() {
+  local inst="$1"
+  if [[ "${WIRING_ENGINE}" == "rust" ]]; then
+    "${CRATE}/target/release/wiring-validate" --schema "${SCHEMA}" --instance "${inst}"
+  else
+    python3 "${ROOT}/scripts/validate_wiringmap.py" "${SCHEMA}" "${inst}"
+  fi
+}
+
+build_l2_pack() {
+  local inst="$1"
+  if [[ "${WIRING_ENGINE}" == "rust" ]]; then
+    "${CRATE}/target/release/wiring-build-l2-pack" "${inst}" --canonical-legend "${CANONICAL_LEGEND}" >/dev/null
+  else
+    python3 "${ROOT}/scripts/build_l2_pack.py" "${inst}" >/dev/null
+  fi
+}
+
+run_reexpand_gate() {
+  local pack_dir="$1"
+  if [[ "${WIRING_ENGINE}" == "rust" ]]; then
+    "${CRATE}/target/release/wiring-reexpand" "${pack_dir}" --canonical-legend "${CANONICAL_LEGEND}" >/dev/null
+  else
+    python3 "${ROOT}/scripts/reexpand_gate.py" "${pack_dir}" >/dev/null
+  fi
+}
+
+ensure_engine
 
 # --- 1. Extract refs (stdout JSON captured to disk) ---
 python3 "${ROOT}/scripts/extract_refs.py" "${REFS}" --example "${WM}" \
@@ -21,18 +65,16 @@ python3 "${ROOT}/scripts/extract_refs.py" "${REFS}" --example "${WM}" \
 REF_COUNT="$(python3 -c "import json; print(json.load(open('${WORK}/extract.json'))['ref_token_count'])")"
 
 # --- 2. Validate wiringmap (schema I/O) ---
-python3 "${ROOT}/scripts/validate_wiringmap.py" "${SCHEMA}" "${WM}" \
-  > "${WORK}/validate.out" 2>&1 || fail "validate_wiringmap failed"
+validate_wiringmap "${WM}" > "${WORK}/validate.out" 2>&1 || fail "validate failed"
 
 # --- 3. Build L2 pack directory on disk ---
-python3 "${ROOT}/scripts/build_l2_pack.py" "${WM}" >/dev/null
+build_l2_pack "${WM}"
 PACK="${WM%.json}.pack"
 [[ -d "${PACK}" ]] || fail "pack dir missing: ${PACK}"
 cp -a "${PACK}" "${WORK}/pack/"
 
 # --- 4. Re-expansion byte gate (reads pack files from disk) ---
-python3 "${ROOT}/scripts/reexpand_gate.py" "${WORK}/pack" \
-  > "${WORK}/reexpand.out" 2>&1 || fail "reexpand_gate failed"
+run_reexpand_gate "${WORK}/pack" > "${WORK}/reexpand.out" 2>&1 || fail "reexpand_gate failed"
 
 # --- 5. Cross-check: extract ref count vs pack explicit edge lines ---
 EXPLICIT_EDGES="$(grep -c '^edge ' "${WORK}/pack/pack_explicit.txt" || true)"
@@ -48,20 +90,19 @@ python3 "${ROOT}/scripts/grade_l1_questions.py" \
 
 # --- 7. Fineract thin slice: validate + extract only (external fixture I/O) ---
 FIN="${ROOT}/fixtures/external/fineract-handlers-thin/wiringmap.v0.json"
-python3 "${ROOT}/scripts/validate_wiringmap.py" "${SCHEMA}" "${FIN}" >/dev/null \
-  || fail "fineract wiringmap validate failed"
+validate_wiringmap "${FIN}" >/dev/null || fail "fineract wiringmap validate failed"
 python3 "${ROOT}/scripts/extract_refs.py" \
   "${ROOT}/fixtures/external/fineract-handlers-thin" \
   --example "${FIN}" \
   > "${WORK}/fineract_extract.json" 2>/dev/null || fail "fineract extract failed"
 FIN_REF_COUNT="$(python3 -c "import json; print(json.load(open('${WORK}/fineract_extract.json'))['ref_token_count'])")"
 
-python3 "${ROOT}/scripts/build_l2_pack.py" "${FIN}" >/dev/null
+build_l2_pack "${FIN}"
 FIN_PACK="${FIN%.json}.pack"
 [[ -d "${FIN_PACK}" ]] || fail "fineract pack dir missing: ${FIN_PACK}"
 cp -a "${FIN_PACK}" "${WORK}/fineract_pack/"
 
-python3 "${ROOT}/scripts/reexpand_gate.py" "${WORK}/fineract_pack" \
+run_reexpand_gate "${WORK}/fineract_pack" \
   > "${WORK}/fineract_reexpand.out" 2>&1 || fail "fineract reexpand_gate failed"
 
 FIN_EXPLICIT_EDGES="$(grep -c '^edge ' "${WORK}/fineract_pack/pack_explicit.txt" || true)"
@@ -84,6 +125,7 @@ from pathlib import Path
 work = Path("${WORK}")
 report = {
     "status": "ok",
+    "wiring_engine": "${WIRING_ENGINE}",
     "toybank": {
         "ref_token_count": int("${REF_COUNT}"),
         "pack_explicit_edges": int("${EXPLICIT_EDGES}"),
@@ -102,4 +144,4 @@ report = {
 print(json.dumps(report, indent=2))
 PY
 
-echo "PIPELINE IO PASS: toybank + fineract-thin round-trip" >&2
+echo "PIPELINE IO PASS: toybank + fineract-thin round-trip (engine=${WIRING_ENGINE})" >&2

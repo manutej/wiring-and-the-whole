@@ -11,7 +11,8 @@ Thin **copies** of third-party code used for wiringmap / L1 dogfood. These paths
   |
   +-- fixtures/external/
         |
-        +-- fineract-handlers-thin/      ... 5–8 handler files + wiringmap (THIS SLICE)
+        +-- fineract-handlers-thin/      ... 7 handler files + wiringmap (wedge-2 pin)
+        +-- fineract-charter-1k/         ... ~29 handlers (~1k LOC chartered vertical)
         |     *.java
         |     wiringmap.v0.json
         |     README.md  (provenance + omissions)
@@ -32,12 +33,15 @@ Thin **copies** of third-party code used for wiringmap / L1 dogfood. These paths
 | Slice | Upstream (conceptual) | In-repo source | Wired units |
 |-------|----------------------|----------------|-------------|
 | `fineract-handlers-thin/` | Apache Fineract command handlers | `experiments/e3-ablation/raw/` (copy) | 7 of 7 Java files (9 edges) |
+| `fineract-charter-1k/` | Same corpus, chartered PATH LIST | `bootstrap_fineract_charter_1k.py` | 29 wired handlers (~90 ref tokens) |
 
 ## Commands
 
 ```bash
 make fetch-slice-dry-run   # scripts/fetch_fineract_slice.sh (temp dir only; fixtures unchanged)
+make fetch-charter-1k-apply # re-bootstrap charter from e3 raw
 make external-slice-check
+make charter-1k-check
 make wiringmap-stress    # includes density D4 on this slice
 make dogfood-grade-fineract-thin
 ```

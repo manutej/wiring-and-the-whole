@@ -1,20 +1,44 @@
 {
   "schema_version": "edge-recall-sample.v0",
-  "description": "Frozen (file, ref_token) pairs for wedge-2 edge recall sample gate",
+  "description": "Frozen (file, ref_token) pairs for wedge-2 edge recall sample gate (toybank + fineract thin + ~1k charter vertical)",
   "samples": [
     {
       "id": "toybank-accounts",
       "refs_dir": "witness/toybank/accounts",
       "wiringmap": "wiringmap/examples/toybank-accounts.v0.json",
       "pairs": [
-        ["AccountsController.java", "accounts.AccountsService#fetchPage"],
-        ["AccountsController.java", "accounts.AccountsService#fetchOne"],
-        ["AccountsController.java", "shared.AuditDto#log"],
-        ["AccountsController.java", "shared.PageDto#of"],
-        ["AccountsService.java", "accounts.AccountsRepository#findPage"],
-        ["AccountsService.java", "accounts.AccountsRepository#findOne"],
-        ["AccountsService.java", "shared.EventTopics#EVT"],
-        ["AccountsRepository.java", "shared.PageDto#of"]
+        [
+          "AccountsController.java",
+          "accounts.AccountsService#fetchPage"
+        ],
+        [
+          "AccountsController.java",
+          "accounts.AccountsService#fetchOne"
+        ],
+        [
+          "AccountsController.java",
+          "shared.AuditDto#log"
+        ],
+        [
+          "AccountsController.java",
+          "shared.PageDto#of"
+        ],
+        [
+          "AccountsService.java",
+          "accounts.AccountsRepository#findPage"
+        ],
+        [
+          "AccountsService.java",
+          "accounts.AccountsRepository#findOne"
+        ],
+        [
+          "AccountsService.java",
+          "shared.EventTopics#EVT"
+        ],
+        [
+          "AccountsRepository.java",
+          "shared.PageDto#of"
+        ]
       ]
     },
     {
@@ -22,14 +46,38 @@
       "refs_dir": "witness/toybank/loans",
       "wiringmap": "wiringmap/examples/toybank-loans.v0.json",
       "pairs": [
-        ["LoansController.java", "loans.LoansService#fetchPage"],
-        ["LoansController.java", "loans.LoansService#fetchOne"],
-        ["LoansController.java", "shared.AuditDto#log"],
-        ["LoansController.java", "shared.PageDto#of"],
-        ["LoansService.java", "loans.LoansRepository#findPage"],
-        ["LoansService.java", "loans.LoansRepository#findOne"],
-        ["LoansService.java", "shared.EventTopics#EVT"],
-        ["LoansRepository.java", "shared.PageDto#of"]
+        [
+          "LoansController.java",
+          "loans.LoansService#fetchPage"
+        ],
+        [
+          "LoansController.java",
+          "loans.LoansService#fetchOne"
+        ],
+        [
+          "LoansController.java",
+          "shared.AuditDto#log"
+        ],
+        [
+          "LoansController.java",
+          "shared.PageDto#of"
+        ],
+        [
+          "LoansService.java",
+          "loans.LoansRepository#findPage"
+        ],
+        [
+          "LoansService.java",
+          "loans.LoansRepository#findOne"
+        ],
+        [
+          "LoansService.java",
+          "shared.EventTopics#EVT"
+        ],
+        [
+          "LoansRepository.java",
+          "shared.PageDto#of"
+        ]
       ]
     },
     {
@@ -37,14 +85,38 @@
       "refs_dir": "witness/toybank/savings",
       "wiringmap": "wiringmap/examples/toybank-savings.v0.json",
       "pairs": [
-        ["SavingsController.java", "savings.SavingsService#fetchPage"],
-        ["SavingsController.java", "savings.SavingsService#fetchOne"],
-        ["SavingsController.java", "shared.AuditDto#log"],
-        ["SavingsController.java", "shared.PageDto#of"],
-        ["SavingsService.java", "savings.SavingsRepository#findPage"],
-        ["SavingsService.java", "savings.SavingsRepository#findOne"],
-        ["SavingsService.java", "shared.EventTopics#EVT"],
-        ["SavingsRepository.java", "shared.PageDto#of"]
+        [
+          "SavingsController.java",
+          "savings.SavingsService#fetchPage"
+        ],
+        [
+          "SavingsController.java",
+          "savings.SavingsService#fetchOne"
+        ],
+        [
+          "SavingsController.java",
+          "shared.AuditDto#log"
+        ],
+        [
+          "SavingsController.java",
+          "shared.PageDto#of"
+        ],
+        [
+          "SavingsService.java",
+          "savings.SavingsRepository#findPage"
+        ],
+        [
+          "SavingsService.java",
+          "savings.SavingsRepository#findOne"
+        ],
+        [
+          "SavingsService.java",
+          "shared.EventTopics#EVT"
+        ],
+        [
+          "SavingsRepository.java",
+          "shared.PageDto#of"
+        ]
       ]
     },
     {
@@ -52,15 +124,424 @@
       "refs_dir": "fixtures/external/fineract-handlers-thin",
       "wiringmap": "fixtures/external/fineract-handlers-thin/wiringmap.v0.json",
       "pairs": [
-        ["DisburseLoanCommandHandler.java", "LoanWritePlatformService#disburseLoan"],
-        ["DisburseLoanCommandHandler.java", "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"],
-        ["CloseLoanCommandHandler.java", "LoanWritePlatformService#closeLoan"],
-        ["AddLoanChargeCommandHandler.java", "LoanChargeWritePlatformService#addLoanCharge"],
-        ["AddLoanChargeCommandHandler.java", "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"],
-        ["MarkLoanAsFraudCommandHandler.java", "LoanWritePlatformService#markLoanAsFraud"],
-        ["CreateDelinquencyRangeCommandHandler.java", "DelinquencyWritePlatformService#createDelinquencyRange"],
-        ["SaveCenterCollectionSheetCommandHandler.java", "CollectionSheetWritePlatformService#updateCollectionSheet"],
-        ["WithdrawClientTransferCommandHandler.java", "TransferWritePlatformService#withdrawClientTransfer"]
+        [
+          "DisburseLoanCommandHandler.java",
+          "LoanWritePlatformService#disburseLoan"
+        ],
+        [
+          "DisburseLoanCommandHandler.java",
+          "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+        ],
+        [
+          "CloseLoanCommandHandler.java",
+          "LoanWritePlatformService#closeLoan"
+        ],
+        [
+          "AddLoanChargeCommandHandler.java",
+          "LoanChargeWritePlatformService#addLoanCharge"
+        ],
+        [
+          "AddLoanChargeCommandHandler.java",
+          "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+        ],
+        [
+          "MarkLoanAsFraudCommandHandler.java",
+          "LoanWritePlatformService#markLoanAsFraud"
+        ],
+        [
+          "CreateDelinquencyRangeCommandHandler.java",
+          "DelinquencyWritePlatformService#createDelinquencyRange"
+        ],
+        [
+          "SaveCenterCollectionSheetCommandHandler.java",
+          "CollectionSheetWritePlatformService#updateCollectionSheet"
+        ],
+        [
+          "WithdrawClientTransferCommandHandler.java",
+          "TransferWritePlatformService#withdrawClientTransfer"
+        ]
+      ]
+    },
+    {
+      "id": "toybank-report",
+      "refs_dir": "witness/toybank/report",
+      "wiringmap": "wiringmap/examples/toybank-report.v0.json",
+      "pairs": [
+        [
+          "ReportModule.java",
+          "accounts.Money#amountCents"
+        ],
+        [
+          "ReportModule.java",
+          "loans.Money#amount"
+        ]
+      ]
+    },
+    {
+      "id": "fineract-charter-1k",
+      "refs_dir": "fixtures/external/fineract-charter-1k",
+      "wiringmap": "fixtures/external/fineract-charter-1k/wiringmap.v0.json",
+      "pairs": [
+        [
+          "AddLoanChargeCommandHandler.java",
+          "LoanChargeWritePlatformService#addLoanCharge"
+        ],
+        [
+          "AddLoanChargeCommandHandler.java",
+          "portfolio.loanaccount.service.LoanChargeWritePlatformService#addLoanCharge"
+        ],
+        [
+          "AddLoanChargeCommandHandler.java",
+          "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+        ],
+        [
+          "AddLoanChargeCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "AttachLoanOriginatorCommandHandler.java",
+          "LoanOriginatorWritePlatformService#attachOriginatorToLoan"
+        ],
+        [
+          "AttachLoanOriginatorCommandHandler.java",
+          "portfolio.loanorigination.service.LoanOriginatorWritePlatformService#attachOriginatorToLoan"
+        ],
+        [
+          "AttachLoanOriginatorCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "AttachLoanOriginatorCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "BulkUpdateLoanOfficerCommandHandler.java",
+          "LoanWritePlatformService#bulkLoanReassignment"
+        ],
+        [
+          "BulkUpdateLoanOfficerCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#bulkLoanReassignment"
+        ],
+        [
+          "CloseLoanCommandHandler.java",
+          "LoanWritePlatformService#closeLoan"
+        ],
+        [
+          "CloseLoanCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#closeLoan"
+        ],
+        [
+          "CloseLoanCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "CreateDelinquencyRangeCommandHandler.java",
+          "DelinquencyWritePlatformService#createDelinquencyRange"
+        ],
+        [
+          "CreateDelinquencyRangeCommandHandler.java",
+          "portfolio.delinquency.service.DelinquencyWritePlatformService#createDelinquencyRange"
+        ],
+        [
+          "CreditBalanceRefundCommandHandler.java",
+          "LoanWritePlatformService#creditBalanceRefund"
+        ],
+        [
+          "CreditBalanceRefundCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#creditBalanceRefund"
+        ],
+        [
+          "CreditBalanceRefundCommandHandler.java",
+          "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+        ],
+        [
+          "CreditBalanceRefundCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "DetachLoanOriginatorCommandHandler.java",
+          "LoanOriginatorWritePlatformService#detachOriginatorFromLoan"
+        ],
+        [
+          "DetachLoanOriginatorCommandHandler.java",
+          "portfolio.loanorigination.service.LoanOriginatorWritePlatformService#detachOriginatorFromLoan"
+        ],
+        [
+          "DetachLoanOriginatorCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "DetachLoanOriginatorCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "DisburseLoanCommandHandler.java",
+          "LoanWritePlatformService#disburseLoan"
+        ],
+        [
+          "DisburseLoanCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#disburseLoan"
+        ],
+        [
+          "DisburseLoanCommandHandler.java",
+          "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+        ],
+        [
+          "DisburseLoanCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "DisburseLoanToSavingsCommandHandler.java",
+          "LoanWritePlatformService#disburseLoan"
+        ],
+        [
+          "DisburseLoanToSavingsCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#disburseLoan"
+        ],
+        [
+          "DisburseLoanToSavingsCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "ForeClosureCommandHandler.java",
+          "LoanWritePlatformService#forecloseLoan"
+        ],
+        [
+          "ForeClosureCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#forecloseLoan"
+        ],
+        [
+          "ForeClosureCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "GLIMApplicationRejectionCommandHandler.java",
+          "LoanApplicationWritePlatformService#rejectGLIMApplicationApproval"
+        ],
+        [
+          "GLIMApplicationRejectionCommandHandler.java",
+          "portfolio.loanaccount.service.LoanApplicationWritePlatformService#rejectGLIMApplicationApproval"
+        ],
+        [
+          "GLIMApplicationRejectionCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "LoanApplicationModificationCommandHandler.java",
+          "LoanApplicationWritePlatformService#modifyApplication"
+        ],
+        [
+          "LoanApplicationModificationCommandHandler.java",
+          "portfolio.loanaccount.service.LoanApplicationWritePlatformService#modifyApplication"
+        ],
+        [
+          "LoanApplicationModificationCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "LoanApplicationSubmittalCommandHandler.java",
+          "LoanApplicationWritePlatformService#submitApplication"
+        ],
+        [
+          "LoanApplicationSubmittalCommandHandler.java",
+          "portfolio.loanaccount.service.LoanApplicationWritePlatformService#submitApplication"
+        ],
+        [
+          "LoanApplicationWithdrawnByApplicantCommandHandler.java",
+          "LoanApplicationWritePlatformService#applicantWithdrawsFromApplication"
+        ],
+        [
+          "LoanApplicationWithdrawnByApplicantCommandHandler.java",
+          "portfolio.loanaccount.service.LoanApplicationWritePlatformService#applicantWithdrawsFromApplication"
+        ],
+        [
+          "LoanApplicationWithdrawnByApplicantCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "LoanApprovedAmountModificationCommandHandler.java",
+          "LoanApprovedAmountWritePlatformService#modifyLoanApprovedAmount"
+        ],
+        [
+          "LoanApprovedAmountModificationCommandHandler.java",
+          "portfolio.loanaccount.service.LoanApprovedAmountWritePlatformService#modifyLoanApprovedAmount"
+        ],
+        [
+          "LoanApprovedAmountModificationCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "LoanGoodwillCreditCommandHandler.java",
+          "LoanWritePlatformService#makeLoanRepayment"
+        ],
+        [
+          "LoanGoodwillCreditCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#makeLoanRepayment"
+        ],
+        [
+          "LoanGoodwillCreditCommandHandler.java",
+          "infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+        ],
+        [
+          "LoanGoodwillCreditCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "LoanMerchantIssuedRefundCommandHandler.java",
+          "LoanWritePlatformService#makeRefund"
+        ],
+        [
+          "LoanMerchantIssuedRefundCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#makeRefund"
+        ],
+        [
+          "LoanMerchantIssuedRefundCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "LoanRefundByCashCommandHandler.java",
+          "LoanWritePlatformService#makeLoanRefund"
+        ],
+        [
+          "LoanRefundByCashCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#makeLoanRefund"
+        ],
+        [
+          "LoanRefundByCashCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "LoanRepaymentChargebackCommandHandler.java",
+          "LoanWritePlatformService#chargebackLoanTransaction"
+        ],
+        [
+          "LoanRepaymentChargebackCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#chargebackLoanTransaction"
+        ],
+        [
+          "LoanRepaymentChargebackCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "LoanRepaymentChargebackCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "MarkLoanAsFraudCommandHandler.java",
+          "LoanWritePlatformService#markLoanAsFraud"
+        ],
+        [
+          "MarkLoanAsFraudCommandHandler.java",
+          "portfolio.loanaccount.service.LoanWritePlatformService#markLoanAsFraud"
+        ],
+        [
+          "MarkLoanAsFraudCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "RejectAddtionalSharesCommandHandler.java",
+          "ShareAccountWritePlatformService#rejectAdditionalShares"
+        ],
+        [
+          "RejectAddtionalSharesCommandHandler.java",
+          "portfolio.shareaccounts.service.ShareAccountWritePlatformService#rejectAdditionalShares"
+        ],
+        [
+          "RejectAddtionalSharesCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "SaveCenterCollectionSheetCommandHandler.java",
+          "CollectionSheetWritePlatformService#updateCollectionSheet"
+        ],
+        [
+          "SaveCenterCollectionSheetCommandHandler.java",
+          "portfolio.collectionsheet.service.CollectionSheetWritePlatformService#updateCollectionSheet"
+        ],
+        [
+          "UpdateChargeDefinitionCommandHandler.java",
+          "ChargeWritePlatformService#updateCharge"
+        ],
+        [
+          "UpdateChargeDefinitionCommandHandler.java",
+          "portfolio.charge.service.ChargeWritePlatformService#updateCharge"
+        ],
+        [
+          "UpdateChargeDefinitionCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "UpdateDelinquencyBucketCommandHandler.java",
+          "DelinquencyWritePlatformService#updateDelinquencyBucket"
+        ],
+        [
+          "UpdateDelinquencyBucketCommandHandler.java",
+          "portfolio.delinquency.service.DelinquencyWritePlatformService#updateDelinquencyBucket"
+        ],
+        [
+          "UpdateDelinquencyBucketCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "UpdateDelinquencyRangeCommandHandler.java",
+          "DelinquencyWritePlatformService#updateDelinquencyRange"
+        ],
+        [
+          "UpdateDelinquencyRangeCommandHandler.java",
+          "portfolio.delinquency.service.DelinquencyWritePlatformService#updateDelinquencyRange"
+        ],
+        [
+          "UpdateDelinquencyRangeCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "UpdateInterestPauseCommandHandler.java",
+          "InterestPauseWritePlatformService#updateInterestPause"
+        ],
+        [
+          "UpdateInterestPauseCommandHandler.java",
+          "portfolio.interestpauses.service.InterestPauseWritePlatformService#updateInterestPause"
+        ],
+        [
+          "UpdateInterestPauseCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ],
+        [
+          "UpdateLoanDelinquencyBucketCommandHandler.java",
+          "DelinquencyWritePlatformService#applyDelinquencyTagToLoan"
+        ],
+        [
+          "UpdateLoanDelinquencyBucketCommandHandler.java",
+          "portfolio.delinquency.service.DelinquencyWritePlatformService#applyDelinquencyTagToLoan"
+        ],
+        [
+          "UpdateLoanDelinquencyBucketCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "WithdrawClientTransferCommandHandler.java",
+          "TransferWritePlatformService#withdrawClientTransfer"
+        ],
+        [
+          "WithdrawClientTransferCommandHandler.java",
+          "portfolio.transfer.service.TransferWritePlatformService#withdrawClientTransfer"
+        ],
+        [
+          "WithdrawClientTransferCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#entityId"
+        ],
+        [
+          "WorkingCapitalLoanRecoveryPaymentCommandHandler.java",
+          "WorkingCapitalLoanRecoveryPaymentWriteService#recoveryPayment"
+        ],
+        [
+          "WorkingCapitalLoanRecoveryPaymentCommandHandler.java",
+          "portfolio.workingcapitalloan.service.WorkingCapitalLoanRecoveryPaymentWriteService#recoveryPayment"
+        ],
+        [
+          "WorkingCapitalLoanRecoveryPaymentCommandHandler.java",
+          "infrastructure.core.api.JsonCommand#getLoanId"
+        ]
       ]
     }
   ]

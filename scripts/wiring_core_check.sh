@@ -13,7 +13,7 @@ if ! command -v cargo >/dev/null 2>&1; then
   exit 0
 fi
 
-cargo build --quiet --manifest-path "${CRATE}/Cargo.toml" --release
+cargo build --quiet --manifest-path "${CRATE}/Cargo.toml" --release --bins
 BIN="${CRATE}/target/release/wiring-validate"
 
 INSTANCES=(
@@ -37,3 +37,16 @@ echo "OK: wiring-core validate parity (${#INSTANCES[@]} instances, Rust + Python
 
 bash scripts/java_refs_parity.sh witness/toybank/accounts witness/toybank/accounts
 bash scripts/java_refs_parity.sh fixtures/external/fineract-handlers-thin fixtures/external/fineract-handlers-thin
+
+REEXPAND_BIN="${CRATE}/target/release/wiring-reexpand"
+PACK="${ROOT}/wiringmap/examples/toybank-accounts.v0.pack"
+CANONICAL_LEGEND="${ROOT}/experiments/e2-tokens/pack_LEGEND.txt"
+if [[ ! -f "${PACK}/pack_explicit.txt" ]]; then
+  bash "${ROOT}/scripts/l2_pack_parity.sh" wiringmap/examples/toybank-accounts.v0.json
+fi
+"${REEXPAND_BIN}" "${PACK}" --canonical-legend "${CANONICAL_LEGEND}"
+python3 scripts/reexpand_gate.py "${PACK}" >/dev/null
+echo "OK: wiring-core reexpand gate (toybank pack, Rust + Python)"
+
+bash scripts/l2_pack_parity.sh
+echo "OK: wiring-core L2 pack build (toybank, Rust ≡ Python)"
