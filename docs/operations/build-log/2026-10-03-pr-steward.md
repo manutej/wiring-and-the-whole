@@ -4,15 +4,15 @@
 
 **Integration branch:** `cursor/mvp-engine-push-cd12`  
 **Parent baseline (`origin/main` at first remote push):** `dbe6a8fd5f55bd20aced8b4c625cf15b7ca1ce56` — Merge pull request #41 from manutej/cursor/adversarial-firewall-cd12  
-**Current tip:** `a569ba6883ddd7b175db13e70cf7c2aff627601f` — refresh: `git rev-parse origin/cursor/mvp-engine-push-cd12`
+**Current tip:** `4c74ae27b5394b074468e2e81ad4dd6e538dead1` (8 commits ahead of `origin/main`)
 
 ## Remote tracking
 
 | UTC (approx) | Event | Notes |
 |--------------|-------|-------|
-| 2026-10-03T21:58Z | First `origin/cursor/mvp-engine-push-cd12` | Builder push; tip `d582e48…` |
-| 2026-10-03T22:00Z | Parallel role pushes | Arch + math docs (`2b0f471…`, `a8169aa…`) |
-| 2026-10-03T22:01Z | Steward log updates | `041bfaf…`, `bb493e1…` |
+| 2026-10-03T21:58Z | First `origin/cursor/mvp-engine-push-cd12` | Builder push |
+| 2026-10-03T22:00Z | Parallel role pushes | Arch + math review docs |
+| 2026-10-03T22:00–22:03Z | Steward log | This file; see commits table |
 
 ## Commits on integration branch (pushed)
 
@@ -24,6 +24,8 @@
 | `a8169aa999aa59a7354765b86a177f3e1a47c871` | docs: audit E2/wedge token math and breakeven limits | 2026-10-03T22:01Z |
 | `bb493e13b464c815703ccc08336539ce89e8528a` | docs(operations): steward log — record initial pushes | 2026-10-03T22:01Z |
 | `23eda74e9d7cfc55031000ea7197912fee04a940` | docs(operations): steward log — sync all branch commits | 2026-10-03T22:02Z |
+| `a569ba6883ddd7b175db13e70cf7c2aff627601f` | docs(operations): steward log — current tip 23eda74 | 2026-10-03T22:03Z |
+| `4c74ae27b5394b074468e2e81ad4dd6e538dead1` | docs(operations): steward log — tip a569ba6 | 2026-10-03T22:03Z |
 
 ## Milestone gates (steward)
 
