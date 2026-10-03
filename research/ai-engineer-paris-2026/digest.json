@@ -163,7 +163,7 @@
     "oVsEddfhdxc",
     "474j-n1Ltxc"
   ],
-  "last_ingest_at": "2026-10-03T00:07:26Z",
-  "last_ingest_note": "Loop tick 00:07 UTC: TubeAlfred 402 insufficient_credits (0 available). Skipped channel_videos + transcripts. Corpus frozen at 9 ingested; batch when funded: buHC7bQE1X4, YIVkERhy8xo, OA-Mc60Rboo.",
+  "last_ingest_at": "2026-10-03T12:10:56Z",
+  "last_ingest_note": "Loop tick 12:10 UTC: TubeAlfred 402 insufficient_credits (0 available). Skipped channel_videos + transcripts. Corpus frozen at 9 ingested; batch when funded: buHC7bQE1X4, YIVkERhy8xo, OA-Mc60Rboo.",
   "last_ingest_status": "skipped_insufficient_credits"
 }
