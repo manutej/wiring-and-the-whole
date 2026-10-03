@@ -1,7 +1,6 @@
 # Evaluator — 2026-10-03 rust java refs (Phase 2)
 
-**Verdict:** SHIP
+**Status:** **VOID — implementer self-score.** Do not use for merge decisions.
 
-**Scope:** Java `// refs:` extractor in Rust with golden parity vs Python on toybank (8) and fineract-thin (9).
-
-**Evidence:** `make pulse-loop` pass; functional core + thin CLI per craft effects-and-purity pattern.
+**Authoritative verdict:** [`2026-10-03-rust-java-refs-independent.md`](2026-10-03-rust-java-refs-independent.md)  
+**Adversarial:** [`../adversarial/2026-10-03-rust-java-refs-independent.md`](../adversarial/2026-10-03-rust-java-refs-independent.md)
