@@ -1,5 +1,6 @@
 //! Parse `// refs:` tokens from Java source (parity with scripts/extract_refs.py).
 
+use regex::Regex;
 use serde::Serialize;
 use std::collections::BTreeMap;
 use std::path::{Path, PathBuf};
@@ -11,21 +12,20 @@ pub struct ExtractFragment {
     pub ref_token_count: usize,
 }
 
-/// Pure: tokens from one Java file's text.
+/// Pure: tokens from one Java file's text (first line matching Python `REFS_LINE`).
 pub fn refs_from_java_source(source: &str) -> Vec<String> {
-    let mut tokens = Vec::new();
+    static RE: std::sync::OnceLock<Regex> = std::sync::OnceLock::new();
+    let re = RE.get_or_init(|| Regex::new(r"//\s*refs:\s*(.+)$").expect("refs regex"));
     for line in source.lines() {
-        if let Some(rest) = line.split("// refs:").nth(1) {
-            tokens.extend(
-                rest.trim()
-                    .split_whitespace()
-                    .map(str::to_string)
-                    .collect::<Vec<_>>(),
-            );
-            break;
+        if let Some(caps) = re.captures(line) {
+            return caps[1]
+                .trim()
+                .split_whitespace()
+                .map(str::to_string)
+                .collect();
         }
     }
-    tokens
+    vec![]
 }
 
 pub fn file_key(java_path: &Path, refs_dir: &Path) -> String {
@@ -103,6 +103,18 @@ mod tests {
             refs_from_java_source(src),
             vec!["foo.Bar#baz".to_string(), "other.Q#w".to_string()]
         );
+    }
+
+    #[test]
+    fn parses_whitespace_variants_like_python() {
+        for src in [
+            "//  refs: a.A#x\n",
+            "//refs: a.A#x\n",
+            "  // refs: a.A#x b.B#y  \n",
+        ] {
+            let got = refs_from_java_source(src);
+            assert!(got.contains(&"a.A#x".to_string()), "failed on {src:?}");
+        }
     }
 
     #[test]
