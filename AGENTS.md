@@ -13,3 +13,10 @@ Cloud agents: also read [`cursor/stores/self/pulse-reporting.md`](cursor/stores/
 Cold start: [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md) · Scale: [`docs/SCALE-PATH.md`](docs/SCALE-PATH.md) · Loop roles: [`docs/pulse/LOOP-ENGINEERING.md`](docs/pulse/LOOP-ENGINEERING.md).
 
 Post-loop (after firewalled evaluator): `make meta-evaluator` — see [`docs/pulse/META-EVALUATOR.md`](docs/pulse/META-EVALUATOR.md) and external craft index [`docs/pulse/CRAFT-SKILLS-INTEGRATION.md`](docs/pulse/CRAFT-SKILLS-INTEGRATION.md). Implementers mid-pulse must not read [`docs/pulse/RUBRIC-EVALUATOR.md`](docs/pulse/RUBRIC-EVALUATOR.md).
+
+## Adversarial + evaluator (mandatory separation)
+
+- **Implementers must not** write `docs/pulse/evaluations/*` SHIP/NO-SHIP for their own PR, merge the PR based on self-review, or label their recap “adversarial.”
+- **Adversarial panel** — separate agent or human; output under `docs/pulse/adversarial/` (independent filename suffix `-independent` when the implementer already shipped).
+- **Evaluator** — separate from implementer and adversarial author; output under `docs/pulse/evaluations/`; merge only when this verdict is **SHIP** (or documented deferral with user consent).
+- When only one agent is available: **stop after implement + gates**, then spawn a **fresh** subagent with no implementer chain-of-thought for adversarial + eval before merge.
