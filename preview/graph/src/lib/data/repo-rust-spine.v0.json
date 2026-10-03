@@ -1,0 +1,178 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "scripts/",
+    "slice": "rust-migration-spine/",
+    "notes": "Compressed harness wiring derived from docs/dogfood/L1-wiring-and-the-whole.md + L1-rust-migration-spine.md. Maps Python CI tools to wiring-core Phase 1–2 targets."
+  },
+  "junctions": [
+    {
+      "id": "junction:crates.wiring-core",
+      "label": "wiring-core (Rust)",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:crates.wiring-reader-java",
+      "label": "wiring-reader-java (Rust, planned)",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:docs.dogfood.L1-wiring",
+      "label": "L1 meta-corpus pack",
+      "junction_kind": "other"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit:scripts.validate_wiringmap",
+      "path": "scripts/validate_wiringmap.py",
+      "role": "WiringMap v0 JSON Schema gate (Python today)",
+      "ports": [
+        {
+          "id": "port:scripts.validate_wiringmap#main",
+          "symbol": "main",
+          "kind": "method",
+          "signature_stub": "int main(argv)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:scripts.extract_refs",
+      "path": "scripts/extract_refs.py",
+      "role": "Mine // refs: tokens from a tree (Java today)",
+      "ports": [
+        {
+          "id": "port:scripts.extract_refs#main",
+          "symbol": "main",
+          "kind": "method",
+          "signature_stub": "int main(argv)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:scripts.build_l2_pack",
+      "path": "scripts/build_l2_pack.py",
+      "role": "WiringMap → L2 factored pack text",
+      "ports": [
+        {
+          "id": "port:scripts.build_l2_pack#main",
+          "symbol": "main",
+          "kind": "method",
+          "signature_stub": "int main(argv)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:scripts.reexpand_gate",
+      "path": "scripts/reexpand_gate.py",
+      "role": "L2 pack faithfulness / re-expand byte gate",
+      "ports": [
+        {
+          "id": "port:scripts.reexpand_gate#main",
+          "symbol": "main",
+          "kind": "method",
+          "signature_stub": "int main(argv)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:scripts.pipeline_world_io",
+      "path": "scripts/pipeline_world_io.sh",
+      "role": "End-to-end extract → map → pack → L1 I/O grade",
+      "ports": [
+        {
+          "id": "port:scripts.pipeline_world_io#run",
+          "symbol": "run",
+          "kind": "method",
+          "signature_stub": "void run()",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:crates.wiring_validate",
+      "path": "crates/wiring-core/src/bin/wiring_validate.rs",
+      "role": "Rust CLI — validate (Phase 1 parity)",
+      "ports": [
+        {
+          "id": "port:crates.wiring_validate#main",
+          "symbol": "main",
+          "kind": "method",
+          "signature_stub": "fn main()",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:pipeline-validate",
+      "from": "port:scripts.pipeline_world_io#run",
+      "to": "port:scripts.validate_wiringmap#main",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "pipeline_world_io.sh // refs: scripts/validate_wiringmap.py#main"
+    },
+    {
+      "id": "edge:pipeline-extract",
+      "from": "port:scripts.pipeline_world_io#run",
+      "to": "port:scripts.extract_refs#main",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "pipeline_world_io.sh // refs: scripts/extract_refs.py#main"
+    },
+    {
+      "id": "edge:pipeline-pack",
+      "from": "port:scripts.pipeline_world_io#run",
+      "to": "port:scripts.build_l2_pack#main",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "pipeline_world_io.sh // refs: scripts/build_l2_pack.py#main"
+    },
+    {
+      "id": "edge:pipeline-reexpand",
+      "from": "port:scripts.pipeline_world_io#run",
+      "to": "port:scripts.reexpand_gate#main",
+      "edge_kind": "call",
+      "doctrine_tag": "system_map",
+      "evidence": "pipeline_world_io.sh // refs: scripts/reexpand_gate.py#main"
+    },
+    {
+      "id": "edge:validate-rust-parity",
+      "from": "port:scripts.validate_wiringmap#main",
+      "to": "port:crates.wiring_validate#main",
+      "edge_kind": "ref",
+      "doctrine_tag": "interface",
+      "evidence": "docs/dogfood/L1-rust-migration-spine.md // refs: crates.wiring-core#validate parity Phase 1"
+    },
+    {
+      "id": "edge:spine-from-l1",
+      "from": "unit:scripts.pipeline_world_io",
+      "to": "junction:docs.dogfood.L1-wiring",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "L1-wiring-and-the-whole.md verify#make-target → pipeline-io"
+    },
+    {
+      "id": "edge:rust-core-home",
+      "from": "port:crates.wiring_validate#main",
+      "to": "junction:crates.wiring-core",
+      "edge_kind": "ref",
+      "doctrine_tag": "junction",
+      "evidence": "crates/wiring-core/src/lib.rs // refs: wiring_core::validate_files"
+    },
+    {
+      "id": "edge:extract-reader-future",
+      "from": "port:scripts.extract_refs#main",
+      "to": "junction:crates.wiring-reader-java",
+      "edge_kind": "ref",
+      "doctrine_tag": "interface",
+      "evidence": "docs/architecture/2026-10-02-rust-core-multireader.md Phase 2 java-refs reader"
+    }
+  ]
+}

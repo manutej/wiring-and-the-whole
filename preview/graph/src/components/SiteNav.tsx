@@ -2,7 +2,9 @@ import Link from "next/link";
 
 const links = [
   { href: "/", label: "Overview" },
-  { href: "/wiringmap", label: "WiringMap (toybank)" },
+  { href: "/wiringmap", label: "Toybank" },
+  { href: "/fineract", label: "Fineract thin" },
+  { href: "/spine", label: "Rust spine" },
   { href: "/witness", label: "E1 witness" },
   { href: "/pipeline", label: "Pipeline I/O" },
 ];
