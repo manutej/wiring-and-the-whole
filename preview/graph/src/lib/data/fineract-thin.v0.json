@@ -1,0 +1,215 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "fixtures/external/fineract-handlers-thin",
+    "slice": "7 Java handlers (7 units wired)",
+    "notes": "Full L1 map for vendored E3 ablation slice — platform services as junction labels only, not full Fineract."
+  },
+  "junctions": [
+    {
+      "id": "junction:LoanWritePlatformService",
+      "label": "LoanWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:LoanChargeWritePlatformService",
+      "label": "LoanChargeWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:DataIntegrityErrorHandler",
+      "label": "infrastructure.DataIntegrityErrorHandler",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:DelinquencyWritePlatformService",
+      "label": "DelinquencyWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:CollectionSheetWritePlatformService",
+      "label": "CollectionSheetWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:TransferWritePlatformService",
+      "label": "TransferWritePlatformService",
+      "junction_kind": "other"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit:handler.DisburseLoanCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/DisburseLoanCommandHandler.java",
+      "role": "Command handler — LOAN DISBURSE",
+      "ports": [
+        {
+          "id": "port:handler.DisburseLoanCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.CloseLoanCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/CloseLoanCommandHandler.java",
+      "role": "Command handler — LOAN CLOSE",
+      "ports": [
+        {
+          "id": "port:handler.CloseLoanCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.AddLoanChargeCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/AddLoanChargeCommandHandler.java",
+      "role": "Command handler — LOANCHARGE CREATE",
+      "ports": [
+        {
+          "id": "port:handler.AddLoanChargeCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.MarkLoanAsFraudCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/MarkLoanAsFraudCommandHandler.java",
+      "role": "Command handler — LOAN SETFRAUD",
+      "ports": [
+        {
+          "id": "port:handler.MarkLoanAsFraudCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.CreateDelinquencyRangeCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/CreateDelinquencyRangeCommandHandler.java",
+      "role": "Command handler — DELINQUENCY_RANGE CREATE",
+      "ports": [
+        {
+          "id": "port:handler.CreateDelinquencyRangeCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.SaveCenterCollectionSheetCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/SaveCenterCollectionSheetCommandHandler.java",
+      "role": "Command handler — CENTER SAVECOLLECTIONSHEET",
+      "ports": [
+        {
+          "id": "port:handler.SaveCenterCollectionSheetCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.WithdrawClientTransferCommandHandler",
+      "path": "fixtures/external/fineract-handlers-thin/WithdrawClientTransferCommandHandler.java",
+      "role": "Command handler — CLIENT WITHDRAWTRANSFER",
+      "ports": [
+        {
+          "id": "port:handler.WithdrawClientTransferCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:disburse-loan-write",
+      "from": "port:handler.DisburseLoanCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanCommandHandler.java // refs: LoanWritePlatformService#disburseLoan"
+    },
+    {
+      "id": "edge:disburse-data-integrity",
+      "from": "port:handler.DisburseLoanCommandHandler#processCommand",
+      "to": "junction:DataIntegrityErrorHandler",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanCommandHandler.java // refs: infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+    },
+    {
+      "id": "edge:close-loan-write",
+      "from": "port:handler.CloseLoanCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CloseLoanCommandHandler.java // refs: LoanWritePlatformService#closeLoan"
+    },
+    {
+      "id": "edge:charge-write",
+      "from": "port:handler.AddLoanChargeCommandHandler#processCommand",
+      "to": "junction:LoanChargeWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AddLoanChargeCommandHandler.java // refs: LoanChargeWritePlatformService#addLoanCharge"
+    },
+    {
+      "id": "edge:charge-data-integrity",
+      "from": "port:handler.AddLoanChargeCommandHandler#processCommand",
+      "to": "junction:DataIntegrityErrorHandler",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AddLoanChargeCommandHandler.java // refs: infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+    },
+    {
+      "id": "edge:fraud-loan-write",
+      "from": "port:handler.MarkLoanAsFraudCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "MarkLoanAsFraudCommandHandler.java // refs: LoanWritePlatformService#markLoanAsFraud"
+    },
+    {
+      "id": "edge:delinquency-write",
+      "from": "port:handler.CreateDelinquencyRangeCommandHandler#processCommand",
+      "to": "junction:DelinquencyWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CreateDelinquencyRangeCommandHandler.java // refs: DelinquencyWritePlatformService#createDelinquencyRange"
+    },
+    {
+      "id": "edge:center-collection-sheet",
+      "from": "port:handler.SaveCenterCollectionSheetCommandHandler#processCommand",
+      "to": "junction:CollectionSheetWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "SaveCenterCollectionSheetCommandHandler.java // refs: CollectionSheetWritePlatformService#updateCollectionSheet"
+    },
+    {
+      "id": "edge:transfer-withdraw",
+      "from": "port:handler.WithdrawClientTransferCommandHandler#processCommand",
+      "to": "junction:TransferWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "WithdrawClientTransferCommandHandler.java // refs: TransferWritePlatformService#withdrawClientTransfer"
+    }
+  ]
+}

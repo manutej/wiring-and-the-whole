@@ -9,7 +9,7 @@
 | End time (UTC) | 2026-10-03T15:25:00Z |
 | How long (minutes) | ~15 |
 | Working branch | cursor/pulse-rust-core-cd12 |
-| Pull request | pending |
+| Pull request | https://github.com/manutej/wiring-and-the-whole/pull/38 (merged) |
 
 ### Agents
 

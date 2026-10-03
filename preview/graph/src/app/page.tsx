@@ -4,7 +4,17 @@ const cards = [
   {
     href: "/wiringmap",
     title: "WiringMap v0 — toybank accounts",
-    body: "Mermaid flowchart generated from wiringmap/examples/toybank-accounts.v0.json (4 units, 3 junctions, 8 edges).",
+    body: "Mermaid flowchart from toybank-accounts.v0.json (4 units, 3 junctions, 8 edges).",
+  },
+  {
+    href: "/fineract",
+    title: "Fineract thin slice (7 handlers)",
+    body: "Real vendored @CommandType handlers — map matches make pipeline-io on main.",
+  },
+  {
+    href: "/spine",
+    title: "Rust migration spine",
+    body: "This repo’s own harness wiring: Python tools → wiring-core Phase 1 targets.",
   },
   {
     href: "/witness",
@@ -23,7 +33,7 @@ export default function Home() {
     <div className="space-y-6">
       <p className="max-w-2xl leading-relaxed">
         Stakeholder preview for graph-shaped artefacts in the repo — not raw JSON.
-        Data is loaded from the checked-in toybank slice and static witness HTML.
+        Data is loaded from checked-in WiringMap JSON (toybank, Fineract thin, repo spine) and static witness HTML.
       </p>
       <ul className="grid gap-4 sm:grid-cols-1">
         {cards.map((c) => (
