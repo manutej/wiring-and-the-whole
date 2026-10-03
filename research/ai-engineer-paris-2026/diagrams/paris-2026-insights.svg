@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="system-ui, sans-serif">
+  <title>AI Engineer Paris 2026  insight map</title>
+  <defs>
+    <marker id="a2" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="800" height="360" fill="#fafafa"/>
+  <text x="400" y="28" text-anchor="middle" font-size="17" font-weight="600">Paris 2026  what the ingest surfaced</text>
+  <text x="400" y="46" text-anchor="middle" font-size="10" fill="#666">6 transcripts + 30-upload catalog · synthesis, not official tracks</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="80" width="120" height="48" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="100" y="102" text-anchor="middle" font-size="10" font-weight="600">Agent speed ‘</text>
+  <text x="100" y="116" text-anchor="middle" font-size="8" fill="#444">coding agents · factories</text>
+
+  <line x1="160" y1="104" x2="200" y2="104" stroke="#2563eb" stroke-width="2" marker-end="url(#a2)"/>
+
+  <rect x="200" y="80" width="120" height="48" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="260" y="102" text-anchor="middle" font-size="10" font-weight="600">PR / review gap</text>
+  <text x="260" y="116" text-anchor="middle" font-size="8" fill="#444">Pocock · Voss</text>
+
+  <line x1="320" y1="104" x2="360" y2="104" stroke="#2563eb" stroke-width="2" marker-end="url(#a2)"/>
+
+  <rect x="360" y="80" width="120" height="48" rx="6" fill="#fef3c7" stroke="#d97706"/>
+  <text x="420" y="102" text-anchor="middle" font-size="10" font-weight="600">Process brakes</text>
+  <text x="420" y="116" text-anchor="middle" font-size="8" fill="#444">skills · evals · tiers</text>
+
+  <!-- Branch down -->
+  <line x1="420" y1="128" x2="420" y2="168" stroke="#2563eb" stroke-width="2" marker-end="url(#a2)"/>
+
+  <rect x="330" y="168" width="180" height="52" rx="6" fill="#e0e7ff" stroke="#4f46e5"/>
+  <text x="420" y="190" text-anchor="middle" font-size="10" font-weight="600">Software factories vs orchestras</text>
+  <text x="420" y="206" text-anchor="middle" font-size="8" fill="#444">Warp · Factory · Conductor · skeptics</text>
+
+  <line x1="420" y1="220" x2="420" y2="260" stroke="#2563eb" stroke-width="2" marker-end="url(#a2)"/>
+
+  <rect x="300" y="260" width="240" height="48" rx="6" fill="#d1fae5" stroke="#059669"/>
+  <text x="420" y="282" text-anchor="middle" font-size="10" font-weight="600">Autoresearch &amp; experiment loops</text>
+  <text x="420" y="296" text-anchor="middle" font-size="8" fill="#444">W&amp;B · Morph · GEPA · Prime Intellect</text>
+
+  <!-- Side branch physical AI -->
+  <line x1="510" y1="194" x2="580" y2="194" stroke="#2563eb" stroke-width="2" marker-end="url(#a2)"/>
+  <rect x="580" y="168" width="180" height="52" rx="6" fill="#f3e8ff" stroke="#9333ea"/>
+  <text x="670" y="190" text-anchor="middle" font-size="10" font-weight="600">Physical AI</text>
+  <text x="670" y="206" text-anchor="middle" font-size="8" fill="#444">robotics · world models · data</text>
+
+  <!-- Legend box -->
+  <rect x="40" y="260" width="220" height="88" rx="6" fill="#fff" stroke="#ccc"/>
+  <text x="52" y="280" font-size="10" font-weight="600">Evidence types used</text>
+  <text x="52" y="298" font-size="9" fill="#333">  Metadata  views, titles, descriptions</text>
+  <text x="52" y="312" font-size="9" fill="#333">  Transcript  ~34k words / talk (auto EN)</text>
+  <text x="52" y="326" font-size="9" fill="#333">  Comments  n=26 sample (1 video)</text>
+  <text x="52" y="340" font-size="9" fill="#666">  Arrows  our thematic synthesis</text>
+</svg>

@@ -1,0 +1,1816 @@
+{
+  "meta": {
+    "video_id": "tqF8Ffv7tDs",
+    "url": "https://www.youtube.com/watch?v=tqF8Ffv7tDs",
+    "language": "English (auto-generated)",
+    "language_code": "en",
+    "is_auto_generated": true,
+    "availability": {
+      "status": "available"
+    },
+    "fetched_via": "TubeAlfred youtube_video_transcript"
+  },
+  "transcript": [
+    {
+      "text": "It's model release day. Opus 5 is out.",
+      "start_ms": "0",
+      "end_ms": "6360",
+      "start_time_text": "0:00"
+    },
+    {
+      "text": "We have your day zero vibe check. So,",
+      "start_ms": "3360",
+      "end_ms": "7480",
+      "start_time_text": "0:03"
+    },
+    {
+      "text": "let's get into it. We've been testing",
+      "start_ms": "6360",
+      "end_ms": "10320",
+      "start_time_text": "0:06"
+    },
+    {
+      "text": "this model for about a week now. And",
+      "start_ms": "7480",
+      "end_ms": "11920.000000000002",
+      "start_time_text": "0:07"
+    },
+    {
+      "text": "it's I got to say, it's a little bit of",
+      "start_ms": "10320",
+      "end_ms": "13080",
+      "start_time_text": "0:10"
+    },
+    {
+      "text": "a hard model to love.",
+      "start_ms": "11920",
+      "end_ms": "14520",
+      "start_time_text": "0:11"
+    },
+    {
+      "text": ">> What have they done to my boy?",
+      "start_ms": "13080",
+      "end_ms": "16920",
+      "start_time_text": "0:13"
+    },
+    {
+      "text": ">> Everyone was like, like it's it's not",
+      "start_ms": "14520",
+      "end_ms": "19439.999999999996",
+      "start_time_text": "0:14"
+    },
+    {
+      "text": "that usable. It stops. It argues with",
+      "start_ms": "16920",
+      "end_ms": "20480",
+      "start_time_text": "0:16"
+    },
+    {
+      "text": "you.",
+      "start_ms": "19440",
+      "end_ms": "22920",
+      "start_time_text": "0:19"
+    },
+    {
+      "text": "But as we've been testing it,",
+      "start_ms": "20480",
+      "end_ms": "23920",
+      "start_time_text": "0:20"
+    },
+    {
+      "text": "there've been some glimmers of things",
+      "start_ms": "22920",
+      "end_ms": "25320",
+      "start_time_text": "0:22"
+    },
+    {
+      "text": "where you're like, oh, there there might",
+      "start_ms": "23920",
+      "end_ms": "26880.000000000004",
+      "start_time_text": "0:23"
+    },
+    {
+      "text": "be something here. So, here's what we're",
+      "start_ms": "25320",
+      "end_ms": "28280",
+      "start_time_text": "0:25"
+    },
+    {
+      "text": "going to talk about. We're going to talk",
+      "start_ms": "26880",
+      "end_ms": "29720",
+      "start_time_text": "0:26"
+    },
+    {
+      "text": "about whether you should switch to it if",
+      "start_ms": "28280",
+      "end_ms": "31560.000000000004",
+      "start_time_text": "0:28"
+    },
+    {
+      "text": "you're a Codex user,",
+      "start_ms": "29720",
+      "end_ms": "32879.99999999999",
+      "start_time_text": "0:29"
+    },
+    {
+      "text": "what you should expect if you're a",
+      "start_ms": "31560",
+      "end_ms": "34600",
+      "start_time_text": "0:31"
+    },
+    {
+      "text": "Claude user, and we're going to talk",
+      "start_ms": "32880",
+      "end_ms": "35560",
+      "start_time_text": "0:32"
+    },
+    {
+      "text": "about the state of the race. What does",
+      "start_ms": "34600",
+      "end_ms": "37800.00000000001",
+      "start_time_text": "0:34"
+    },
+    {
+      "text": "it mean for OpenAI and Anthropic? I feel",
+      "start_ms": "35560",
+      "end_ms": "39720",
+      "start_time_text": "0:35"
+    },
+    {
+      "text": "like I have two big slots in my life",
+      "start_ms": "37800",
+      "end_ms": "42199.99999999999",
+      "start_time_text": "0:37"
+    },
+    {
+      "text": "right now for models. One slot is my",
+      "start_ms": "39720",
+      "end_ms": "44600",
+      "start_time_text": "0:39"
+    },
+    {
+      "text": "like day-to-day daily driver. And right",
+      "start_ms": "42200",
+      "end_ms": "46280",
+      "start_time_text": "0:42"
+    },
+    {
+      "text": "now that's just 5.6. Like it's smart,",
+      "start_ms": "44600",
+      "end_ms": "48000",
+      "start_time_text": "0:44"
+    },
+    {
+      "text": "it's fast, it's not that compute",
+      "start_ms": "46280",
+      "end_ms": "49520",
+      "start_time_text": "0:46"
+    },
+    {
+      "text": "intensive, all that kind of stuff. Then",
+      "start_ms": "48000",
+      "end_ms": "51480",
+      "start_time_text": "0:48"
+    },
+    {
+      "text": "Opus 5 should compete with that. I don't",
+      "start_ms": "49520",
+      "end_ms": "53760.00000000001",
+      "start_time_text": "0:49"
+    },
+    {
+      "text": "think it does, to be honest. Um the",
+      "start_ms": "51480",
+      "end_ms": "55879.99999999999",
+      "start_time_text": "0:51"
+    },
+    {
+      "text": "other slot I have in my life is like",
+      "start_ms": "53760",
+      "end_ms": "57480",
+      "start_time_text": "0:53"
+    },
+    {
+      "text": "I need the warp drive. I need like the",
+      "start_ms": "55880",
+      "end_ms": "59200",
+      "start_time_text": "0:55"
+    },
+    {
+      "text": "tactical nuke to like go do this like",
+      "start_ms": "57480",
+      "end_ms": "61319.99999999999",
+      "start_time_text": "0:57"
+    },
+    {
+      "text": "gigantic big project um all",
+      "start_ms": "59200",
+      "end_ms": "63480.00000000001",
+      "start_time_text": "0:59"
+    },
+    {
+      "text": "autonomously. And I don't feel like Opus",
+      "start_ms": "61320",
+      "end_ms": "66080",
+      "start_time_text": "1:01"
+    },
+    {
+      "text": "5 has the top end for that. I use Fable",
+      "start_ms": "63480",
+      "end_ms": "67880",
+      "start_time_text": "1:03"
+    },
+    {
+      "text": "for that. So, 80% of the time I'm still",
+      "start_ms": "66080",
+      "end_ms": "69880",
+      "start_time_text": "1:06"
+    },
+    {
+      "text": "on GPT-4 20% of the time I'm still on",
+      "start_ms": "67880",
+      "end_ms": "71360",
+      "start_time_text": "1:07"
+    },
+    {
+      "text": "Fable.",
+      "start_ms": "69880",
+      "end_ms": "72440",
+      "start_time_text": "1:09"
+    },
+    {
+      "text": "This model's just like a little bit more",
+      "start_ms": "71360",
+      "end_ms": "73320",
+      "start_time_text": "1:11"
+    },
+    {
+      "text": "pushy. It's a little bit more",
+      "start_ms": "72440",
+      "end_ms": "75800",
+      "start_time_text": "1:12"
+    },
+    {
+      "text": "opinionated in a way that you can get",
+      "start_ms": "73320",
+      "end_ms": "77279.99999999999",
+      "start_time_text": "1:13"
+    },
+    {
+      "text": "away with that if you're super [ __ ]",
+      "start_ms": "75800",
+      "end_ms": "79800",
+      "start_time_text": "1:15"
+    },
+    {
+      "text": "smart. If you're not, then",
+      "start_ms": "77280",
+      "end_ms": "81560",
+      "start_time_text": "1:17"
+    },
+    {
+      "text": "it's just more annoying. And I think",
+      "start_ms": "79800",
+      "end_ms": "83800",
+      "start_time_text": "1:19"
+    },
+    {
+      "text": "that's indicative of the attitude this",
+      "start_ms": "81560",
+      "end_ms": "86360",
+      "start_time_text": "1:21"
+    },
+    {
+      "text": "thing has where it has some of the the",
+      "start_ms": "83800",
+      "end_ms": "88120",
+      "start_time_text": "1:23"
+    },
+    {
+      "text": "genius tendencies of Fable. Like maybe",
+      "start_ms": "86360",
+      "end_ms": "89520",
+      "start_time_text": "1:26"
+    },
+    {
+      "text": "it's a little bit too argumentative. It",
+      "start_ms": "88120",
+      "end_ms": "91360",
+      "start_time_text": "1:28"
+    },
+    {
+      "text": "has maybe its own opinions.",
+      "start_ms": "89520",
+      "end_ms": "93240",
+      "start_time_text": "1:29"
+    },
+    {
+      "text": "Um but it's not as smart as Fable, so",
+      "start_ms": "91360",
+      "end_ms": "95000",
+      "start_time_text": "1:31"
+    },
+    {
+      "text": "it's just annoying.",
+      "start_ms": "93240",
+      "end_ms": "96119.99999999999",
+      "start_time_text": "1:33"
+    },
+    {
+      "text": "If you're a Codex user, I would not",
+      "start_ms": "95000",
+      "end_ms": "100800",
+      "start_time_text": "1:35"
+    },
+    {
+      "text": "switch. Um I think 5.6 is uh still 5.6",
+      "start_ms": "96120",
+      "end_ms": "103560",
+      "start_time_text": "1:36"
+    },
+    {
+      "text": "in Codex in ChatGPT for work is still my",
+      "start_ms": "100800",
+      "end_ms": "105560",
+      "start_time_text": "1:40"
+    },
+    {
+      "text": "in my view the gold standard for",
+      "start_ms": "103560",
+      "end_ms": "107080",
+      "start_time_text": "1:43"
+    },
+    {
+      "text": "knowledge work for day-to-day coding",
+      "start_ms": "105560",
+      "end_ms": "108600.00000000001",
+      "start_time_text": "1:45"
+    },
+    {
+      "text": "tasks, all that kind of stuff. Fable,",
+      "start_ms": "107080",
+      "end_ms": "110679.99999999999",
+      "start_time_text": "1:47"
+    },
+    {
+      "text": "different story. I still use that every",
+      "start_ms": "108600",
+      "end_ms": "112479.99999999999",
+      "start_time_text": "1:48"
+    },
+    {
+      "text": "day for like the bigger tasks that I",
+      "start_ms": "110680",
+      "end_ms": "114320.00000000001",
+      "start_time_text": "1:50"
+    },
+    {
+      "text": "have, and I switch back and forth. So,",
+      "start_ms": "112480",
+      "end_ms": "115960.00000000001",
+      "start_time_text": "1:52"
+    },
+    {
+      "text": "Fable is like a provider switching model",
+      "start_ms": "114320",
+      "end_ms": "120160",
+      "start_time_text": "1:54"
+    },
+    {
+      "text": "job. You have to start using it. Opus 5",
+      "start_ms": "115960",
+      "end_ms": "121960",
+      "start_time_text": "1:55"
+    },
+    {
+      "text": "if you're already in the Claude",
+      "start_ms": "120160",
+      "end_ms": "123880",
+      "start_time_text": "2:00"
+    },
+    {
+      "text": "ecosystem and you love Opus 4.8, like",
+      "start_ms": "121960",
+      "end_ms": "125720",
+      "start_time_text": "2:01"
+    },
+    {
+      "text": "it'll probably be okay. It might be",
+      "start_ms": "123880",
+      "end_ms": "127920",
+      "start_time_text": "2:03"
+    },
+    {
+      "text": "annoying for you. Like it's just a",
+      "start_ms": "125720",
+      "end_ms": "129720",
+      "start_time_text": "2:05"
+    },
+    {
+      "text": "little harder to use and a lot of your",
+      "start_ms": "127920",
+      "end_ms": "130640.00000000001",
+      "start_time_text": "2:07"
+    },
+    {
+      "text": "skills you're going to have to think",
+      "start_ms": "129720",
+      "end_ms": "132280",
+      "start_time_text": "2:09"
+    },
+    {
+      "text": "about rewriting, which is just it's just",
+      "start_ms": "130639.99999999999",
+      "end_ms": "133920",
+      "start_time_text": "2:10"
+    },
+    {
+      "text": "a pain. But if you're someone who's",
+      "start_ms": "132280",
+      "end_ms": "136520",
+      "start_time_text": "2:12"
+    },
+    {
+      "text": "already in the open AI ecosystem or you",
+      "start_ms": "133920",
+      "end_ms": "138320",
+      "start_time_text": "2:13"
+    },
+    {
+      "text": "just like to switch around to whatever's",
+      "start_ms": "136520",
+      "end_ms": "140120",
+      "start_time_text": "2:16"
+    },
+    {
+      "text": "best and you mix and match, I really",
+      "start_ms": "138320",
+      "end_ms": "141440",
+      "start_time_text": "2:18"
+    },
+    {
+      "text": "don't think that Opus 5 is going to be",
+      "start_ms": "140120",
+      "end_ms": "143320",
+      "start_time_text": "2:20"
+    },
+    {
+      "text": "your favorite model out of the box.",
+      "start_ms": "141440",
+      "end_ms": "145160",
+      "start_time_text": "2:21"
+    },
+    {
+      "text": "So, if you are if you are in the Claude",
+      "start_ms": "143320",
+      "end_ms": "146920",
+      "start_time_text": "2:23"
+    },
+    {
+      "text": "ecosystem and you're going from 4.8 to",
+      "start_ms": "145160",
+      "end_ms": "149520",
+      "start_time_text": "2:25"
+    },
+    {
+      "text": "5, some of the things we observed, so a",
+      "start_ms": "146920",
+      "end_ms": "150839.99999999997",
+      "start_time_text": "2:26"
+    },
+    {
+      "text": "big skill that we build and run",
+      "start_ms": "149520",
+      "end_ms": "152200.00000000003",
+      "start_time_text": "2:29"
+    },
+    {
+      "text": "internally is called compound",
+      "start_ms": "150840",
+      "end_ms": "154360",
+      "start_time_text": "2:30"
+    },
+    {
+      "text": "engineering. It's something that Kieran",
+      "start_ms": "152200",
+      "end_ms": "156440",
+      "start_time_text": "2:32"
+    },
+    {
+      "text": "Classon, who works at Every, has built.",
+      "start_ms": "154360",
+      "end_ms": "157760.00000000003",
+      "start_time_text": "2:34"
+    },
+    {
+      "text": "It's a it's a really big open source",
+      "start_ms": "156440",
+      "end_ms": "159520",
+      "start_time_text": "2:36"
+    },
+    {
+      "text": "project that all of us use to do a lot",
+      "start_ms": "157760",
+      "end_ms": "161480",
+      "start_time_text": "2:37"
+    },
+    {
+      "text": "of engineering work, but also a lot of",
+      "start_ms": "159520",
+      "end_ms": "162840",
+      "start_time_text": "2:39"
+    },
+    {
+      "text": "honestly just general knowledge work.",
+      "start_ms": "161480",
+      "end_ms": "164440",
+      "start_time_text": "2:41"
+    },
+    {
+      "text": "It's an incredible plugin and it has a",
+      "start_ms": "162840",
+      "end_ms": "166320",
+      "start_time_text": "2:42"
+    },
+    {
+      "text": "set of skills that help you do",
+      "start_ms": "164440",
+      "end_ms": "168720",
+      "start_time_text": "2:44"
+    },
+    {
+      "text": "engineering better and compound what you",
+      "start_ms": "166320",
+      "end_ms": "171239.99999999997",
+      "start_time_text": "2:46"
+    },
+    {
+      "text": "learn so that it gets better over time.",
+      "start_ms": "168720",
+      "end_ms": "173560",
+      "start_time_text": "2:48"
+    },
+    {
+      "text": "And what what Kieran found in testing",
+      "start_ms": "171240",
+      "end_ms": "175880",
+      "start_time_text": "2:51"
+    },
+    {
+      "text": "this is it would like stop early, for",
+      "start_ms": "173560",
+      "end_ms": "177320",
+      "start_time_text": "2:53"
+    },
+    {
+      "text": "example. Compound engineering has an",
+      "start_ms": "175880",
+      "end_ms": "179519",
+      "start_time_text": "2:55"
+    },
+    {
+      "text": "autonomous developer loop as part of its",
+      "start_ms": "177320",
+      "end_ms": "181359.99999999997",
+      "start_time_text": "2:57"
+    },
+    {
+      "text": "skill set, so it just you give it a goal",
+      "start_ms": "179519",
+      "end_ms": "183120",
+      "start_time_text": "2:59"
+    },
+    {
+      "text": "and it just keeps going. It has a lot of",
+      "start_ms": "181360",
+      "end_ms": "184480.00000000003",
+      "start_time_text": "3:01"
+    },
+    {
+      "text": "instructions for the model about how to",
+      "start_ms": "183120",
+      "end_ms": "186760",
+      "start_time_text": "3:03"
+    },
+    {
+      "text": "do that and when. I I found this too. We",
+      "start_ms": "184480",
+      "end_ms": "188560",
+      "start_time_text": "3:04"
+    },
+    {
+      "text": "have a senior engineer benchmark and I I",
+      "start_ms": "186760",
+      "end_ms": "191239",
+      "start_time_text": "3:06"
+    },
+    {
+      "text": "did find that it it consistently stopped",
+      "start_ms": "188560",
+      "end_ms": "193000",
+      "start_time_text": "3:08"
+    },
+    {
+      "text": "too early. It would say it was done, but",
+      "start_ms": "191239",
+      "end_ms": "194120",
+      "start_time_text": "3:11"
+    },
+    {
+      "text": "it wasn't done and I had to be like keep",
+      "start_ms": "193000",
+      "end_ms": "196480",
+      "start_time_text": "3:13"
+    },
+    {
+      "text": "going, which is a problem that",
+      "start_ms": "194120",
+      "end_ms": "198920.00000000003",
+      "start_time_text": "3:14"
+    },
+    {
+      "text": "is not that common anymore. Usually",
+      "start_ms": "196480",
+      "end_ms": "200040",
+      "start_time_text": "3:16"
+    },
+    {
+      "text": "models are pretty good at telling",
+      "start_ms": "198920",
+      "end_ms": "202559.99999999997",
+      "start_time_text": "3:18"
+    },
+    {
+      "text": "telling when to finish. So,",
+      "start_ms": "200040",
+      "end_ms": "205320",
+      "start_time_text": "3:20"
+    },
+    {
+      "text": "what Kieran found, what I found is",
+      "start_ms": "202560",
+      "end_ms": "206320",
+      "start_time_text": "3:22"
+    },
+    {
+      "text": "little things like that where you're",
+      "start_ms": "205320",
+      "end_ms": "207440",
+      "start_time_text": "3:25"
+    },
+    {
+      "text": "like, \"Okay, I'm going to set this off",
+      "start_ms": "206320",
+      "end_ms": "208959",
+      "start_time_text": "3:26"
+    },
+    {
+      "text": "and and I'm going to go get a sandwich",
+      "start_ms": "207440",
+      "end_ms": "210800",
+      "start_time_text": "3:27"
+    },
+    {
+      "text": "or whatever.\" It just stops too early.",
+      "start_ms": "208959",
+      "end_ms": "212000",
+      "start_time_text": "3:28"
+    },
+    {
+      "text": "It appears that they happen more",
+      "start_ms": "210800",
+      "end_ms": "213440",
+      "start_time_text": "3:30"
+    },
+    {
+      "text": "frequently when you use them with",
+      "start_ms": "212000",
+      "end_ms": "215560",
+      "start_time_text": "3:32"
+    },
+    {
+      "text": "complex existing skills.",
+      "start_ms": "213440",
+      "end_ms": "217200",
+      "start_time_text": "3:33"
+    },
+    {
+      "text": "So, if you have a big skill file that",
+      "start_ms": "215560",
+      "end_ms": "220080",
+      "start_time_text": "3:35"
+    },
+    {
+      "text": "has a ton of different instructions, its",
+      "start_ms": "217200",
+      "end_ms": "222200",
+      "start_time_text": "3:37"
+    },
+    {
+      "text": "ability to follow those instructions,",
+      "start_ms": "220080",
+      "end_ms": "224280",
+      "start_time_text": "3:40"
+    },
+    {
+      "text": "it's less good at that. But if you're",
+      "start_ms": "222200",
+      "end_ms": "225920",
+      "start_time_text": "3:42"
+    },
+    {
+      "text": "giving it um",
+      "start_ms": "224280",
+      "end_ms": "228080",
+      "start_time_text": "3:44"
+    },
+    {
+      "text": "vaguer instructions or if you start",
+      "start_ms": "225920",
+      "end_ms": "230320",
+      "start_time_text": "3:45"
+    },
+    {
+      "text": "fresh and you start to explore what can",
+      "start_ms": "228080",
+      "end_ms": "232440.00000000003",
+      "start_time_text": "3:48"
+    },
+    {
+      "text": "this model do with just building up from",
+      "start_ms": "230320",
+      "end_ms": "234040",
+      "start_time_text": "3:50"
+    },
+    {
+      "text": "a small prompt, you may have more",
+      "start_ms": "232440",
+      "end_ms": "235960",
+      "start_time_text": "3:52"
+    },
+    {
+      "text": "success. And so, for example, Kieran is",
+      "start_ms": "234040",
+      "end_ms": "238640",
+      "start_time_text": "3:54"
+    },
+    {
+      "text": "rewriting comp engineering to see if he",
+      "start_ms": "235960",
+      "end_ms": "240960",
+      "start_time_text": "3:55"
+    },
+    {
+      "text": "can get it to work well with this model",
+      "start_ms": "238640",
+      "end_ms": "242880",
+      "start_time_text": "3:58"
+    },
+    {
+      "text": "and just prompt it differently.",
+      "start_ms": "240960",
+      "end_ms": "245280",
+      "start_time_text": "4:00"
+    },
+    {
+      "text": "Um but, it's just a pain when a model",
+      "start_ms": "242880",
+      "end_ms": "246959",
+      "start_time_text": "4:02"
+    },
+    {
+      "text": "just breaks your existing workflows. It",
+      "start_ms": "245280",
+      "end_ms": "248400",
+      "start_time_text": "4:05"
+    },
+    {
+      "text": "might seem like the model isn't very",
+      "start_ms": "246959",
+      "end_ms": "249520",
+      "start_time_text": "4:06"
+    },
+    {
+      "text": "good.",
+      "start_ms": "248400",
+      "end_ms": "252240",
+      "start_time_text": "4:08"
+    },
+    {
+      "text": "And I think the the actual story here is",
+      "start_ms": "249520",
+      "end_ms": "254000",
+      "start_time_text": "4:09"
+    },
+    {
+      "text": "a little bit more complicated than that.",
+      "start_ms": "252240",
+      "end_ms": "254920.00000000003",
+      "start_time_text": "4:12"
+    },
+    {
+      "text": "You actually have to prompt it",
+      "start_ms": "254000",
+      "end_ms": "256320",
+      "start_time_text": "4:14"
+    },
+    {
+      "text": "differently, and if you give it the",
+      "start_ms": "254920",
+      "end_ms": "258120",
+      "start_time_text": "4:14"
+    },
+    {
+      "text": "kinds of things that used to work really",
+      "start_ms": "256320",
+      "end_ms": "261959",
+      "start_time_text": "4:16"
+    },
+    {
+      "text": "well with Opus 4.8 or like big skills,",
+      "start_ms": "258120",
+      "end_ms": "263440",
+      "start_time_text": "4:18"
+    },
+    {
+      "text": "it's not going to work. Uh it'll, for",
+      "start_ms": "261959",
+      "end_ms": "265280.00000000006",
+      "start_time_text": "4:21"
+    },
+    {
+      "text": "example, stop early. It'll It'll argue",
+      "start_ms": "263440",
+      "end_ms": "266840",
+      "start_time_text": "4:23"
+    },
+    {
+      "text": "with you, like that kind of stuff. It",
+      "start_ms": "265280",
+      "end_ms": "268760",
+      "start_time_text": "4:25"
+    },
+    {
+      "text": "sort of brings out this",
+      "start_ms": "266840",
+      "end_ms": "270840",
+      "start_time_text": "4:26"
+    },
+    {
+      "text": "annoying behavior that you might",
+      "start_ms": "268760",
+      "end_ms": "271960",
+      "start_time_text": "4:28"
+    },
+    {
+      "text": "recognize a little bit of its",
+      "start_ms": "270840",
+      "end_ms": "273359.99999999994",
+      "start_time_text": "4:30"
+    },
+    {
+      "text": "personality from Fable, but it doesn't",
+      "start_ms": "271960",
+      "end_ms": "275039.99999999994",
+      "start_time_text": "4:31"
+    },
+    {
+      "text": "have Fable's top end, so it's not as",
+      "start_ms": "273360",
+      "end_ms": "277240",
+      "start_time_text": "4:33"
+    },
+    {
+      "text": "excusable. It's a hard model to love,",
+      "start_ms": "275040",
+      "end_ms": "279320",
+      "start_time_text": "4:35"
+    },
+    {
+      "text": "especially on day one, but as we've",
+      "start_ms": "277240",
+      "end_ms": "280760",
+      "start_time_text": "4:37"
+    },
+    {
+      "text": "gotten deeper into it, there are certain",
+      "start_ms": "279320",
+      "end_ms": "281960",
+      "start_time_text": "4:39"
+    },
+    {
+      "text": "people on the team, like Kieran, who",
+      "start_ms": "280760",
+      "end_ms": "283960",
+      "start_time_text": "4:40"
+    },
+    {
+      "text": "have been like, \"Actually, if you try it",
+      "start_ms": "281960",
+      "end_ms": "286359.99999999994",
+      "start_time_text": "4:41"
+    },
+    {
+      "text": "on a lower thinking level, you may find",
+      "start_ms": "283960",
+      "end_ms": "288680",
+      "start_time_text": "4:43"
+    },
+    {
+      "text": "good results.\" He prefers to use this",
+      "start_ms": "286360",
+      "end_ms": "292440",
+      "start_time_text": "4:46"
+    },
+    {
+      "text": "model on medium or low reasoning.",
+      "start_ms": "288680",
+      "end_ms": "294160",
+      "start_time_text": "4:48"
+    },
+    {
+      "text": "Almost all my testing was on like high",
+      "start_ms": "292440",
+      "end_ms": "295480",
+      "start_time_text": "4:52"
+    },
+    {
+      "text": "or max or whatever, cuz I'm like, \"Oh,",
+      "start_ms": "294160",
+      "end_ms": "297400.00000000006",
+      "start_time_text": "4:54"
+    },
+    {
+      "text": "these are hard tasks or whatever.\" It's",
+      "start_ms": "295480",
+      "end_ms": "299200.00000000006",
+      "start_time_text": "4:55"
+    },
+    {
+      "text": "really important with Claude models of",
+      "start_ms": "297400",
+      "end_ms": "301560",
+      "start_time_text": "4:57"
+    },
+    {
+      "text": "this generation to pay attention to the",
+      "start_ms": "299200",
+      "end_ms": "303800",
+      "start_time_text": "4:59"
+    },
+    {
+      "text": "reasoning level. Um and not just the",
+      "start_ms": "301560",
+      "end_ms": "306000",
+      "start_time_text": "5:01"
+    },
+    {
+      "text": "model family. So, regardless of whether",
+      "start_ms": "303800",
+      "end_ms": "307840.00000000006",
+      "start_time_text": "5:03"
+    },
+    {
+      "text": "you're using Opus 5 today or not, a",
+      "start_ms": "306000",
+      "end_ms": "310800",
+      "start_time_text": "5:06"
+    },
+    {
+      "text": "thing to be aware of is in 2026, when",
+      "start_ms": "307840",
+      "end_ms": "313560",
+      "start_time_text": "5:07"
+    },
+    {
+      "text": "you're using AI, the thing to start",
+      "start_ms": "310800",
+      "end_ms": "315640",
+      "start_time_text": "5:10"
+    },
+    {
+      "text": "dialing up and down is the thinking",
+      "start_ms": "313560",
+      "end_ms": "317560",
+      "start_time_text": "5:13"
+    },
+    {
+      "text": "level. It's kind of true. The thinking",
+      "start_ms": "315640",
+      "end_ms": "320599.99999999994",
+      "start_time_text": "5:15"
+    },
+    {
+      "text": "level is its effort, and Opus is a smart",
+      "start_ms": "317560",
+      "end_ms": "322720",
+      "start_time_text": "5:17"
+    },
+    {
+      "text": "model that does better when it thinks",
+      "start_ms": "320600",
+      "end_ms": "325280.00000000006",
+      "start_time_text": "5:20"
+    },
+    {
+      "text": "less. It does better when it is puts a",
+      "start_ms": "322720",
+      "end_ms": "326720",
+      "start_time_text": "5:22"
+    },
+    {
+      "text": "little bit less effort into its task and",
+      "start_ms": "325280",
+      "end_ms": "328159.99999999994",
+      "start_time_text": "5:25"
+    },
+    {
+      "text": "it just answers. And to some degree,",
+      "start_ms": "326720",
+      "end_ms": "329919.00000000006",
+      "start_time_text": "5:26"
+    },
+    {
+      "text": "humans are like that, too. Like, there's",
+      "start_ms": "328160",
+      "end_ms": "331160",
+      "start_time_text": "5:28"
+    },
+    {
+      "text": "There are times where you're just like",
+      "start_ms": "329919",
+      "end_ms": "333560",
+      "start_time_text": "5:29"
+    },
+    {
+      "text": "totally trying too hard, and you way",
+      "start_ms": "331160",
+      "end_ms": "335800",
+      "start_time_text": "5:31"
+    },
+    {
+      "text": "overthink it. And I think the Claude",
+      "start_ms": "333560",
+      "end_ms": "337440",
+      "start_time_text": "5:33"
+    },
+    {
+      "text": "family of models,",
+      "start_ms": "335800",
+      "end_ms": "338840.00000000006",
+      "start_time_text": "5:35"
+    },
+    {
+      "text": "um especially in this generation, are",
+      "start_ms": "337440",
+      "end_ms": "340120",
+      "start_time_text": "5:37"
+    },
+    {
+      "text": "like that.",
+      "start_ms": "338840",
+      "end_ms": "342159.99999999994",
+      "start_time_text": "5:38"
+    },
+    {
+      "text": "I think there's actually a really big,",
+      "start_ms": "340120",
+      "end_ms": "343600",
+      "start_time_text": "5:40"
+    },
+    {
+      "text": "interesting strategy question here,",
+      "start_ms": "342160",
+      "end_ms": "345600",
+      "start_time_text": "5:42"
+    },
+    {
+      "text": "which is OpenAI and Anthropic are taking",
+      "start_ms": "343600",
+      "end_ms": "347360",
+      "start_time_text": "5:43"
+    },
+    {
+      "text": "two very different strategies to",
+      "start_ms": "345600",
+      "end_ms": "348880",
+      "start_time_text": "5:45"
+    },
+    {
+      "text": "building models.",
+      "start_ms": "347360",
+      "end_ms": "350400.00000000006",
+      "start_time_text": "5:47"
+    },
+    {
+      "text": "Anthropic is like, we're going to build",
+      "start_ms": "348880",
+      "end_ms": "352280",
+      "start_time_text": "5:48"
+    },
+    {
+      "text": "this gigantic",
+      "start_ms": "350400",
+      "end_ms": "354320",
+      "start_time_text": "5:50"
+    },
+    {
+      "text": "a super weapon size, almost illegal",
+      "start_ms": "352280",
+      "end_ms": "356039.99999999994",
+      "start_time_text": "5:52"
+    },
+    {
+      "text": "model, and that's Fable, and we're going",
+      "start_ms": "354320",
+      "end_ms": "358400",
+      "start_time_text": "5:54"
+    },
+    {
+      "text": "to use it to then build our other",
+      "start_ms": "356040",
+      "end_ms": "359640.00000000006",
+      "start_time_text": "5:56"
+    },
+    {
+      "text": "models. And what they're trying to get",
+      "start_ms": "358400",
+      "end_ms": "361479.99999999994",
+      "start_time_text": "5:58"
+    },
+    {
+      "text": "to is recursive self-improvement. It's",
+      "start_ms": "359640",
+      "end_ms": "363680",
+      "start_time_text": "5:59"
+    },
+    {
+      "text": "like a it's a model that's so smart that",
+      "start_ms": "361480",
+      "end_ms": "365440",
+      "start_time_text": "6:01"
+    },
+    {
+      "text": "it can train its successors and get",
+      "start_ms": "363680",
+      "end_ms": "367000",
+      "start_time_text": "6:03"
+    },
+    {
+      "text": "better autonomously.",
+      "start_ms": "365440",
+      "end_ms": "369160",
+      "start_time_text": "6:05"
+    },
+    {
+      "text": "Um and turns out if you have like a",
+      "start_ms": "367000",
+      "end_ms": "370880",
+      "start_time_text": "6:07"
+    },
+    {
+      "text": "super genius training your like best",
+      "start_ms": "369160",
+      "end_ms": "372760.00000000006",
+      "start_time_text": "6:09"
+    },
+    {
+      "text": "friend, your best friend turns into this",
+      "start_ms": "370880",
+      "end_ms": "375159.99999999994",
+      "start_time_text": "6:10"
+    },
+    {
+      "text": "sort of not really a super genius, but",
+      "start_ms": "372760",
+      "end_ms": "376400",
+      "start_time_text": "6:12"
+    },
+    {
+      "text": "they have all the attitude of a super",
+      "start_ms": "375160",
+      "end_ms": "378240",
+      "start_time_text": "6:15"
+    },
+    {
+      "text": "genius. OpenAI done something quite",
+      "start_ms": "376400",
+      "end_ms": "381000",
+      "start_time_text": "6:16"
+    },
+    {
+      "text": "different. So, after GPT-4.5, which is",
+      "start_ms": "378240",
+      "end_ms": "382240",
+      "start_time_text": "6:18"
+    },
+    {
+      "text": "about a year ago or a year and a half",
+      "start_ms": "381000",
+      "end_ms": "383960",
+      "start_time_text": "6:21"
+    },
+    {
+      "text": "ago, which was the biggest model that",
+      "start_ms": "382240",
+      "end_ms": "385480",
+      "start_time_text": "6:22"
+    },
+    {
+      "text": "they've ever trained, and it really",
+      "start_ms": "383960",
+      "end_ms": "386960",
+      "start_time_text": "6:23"
+    },
+    {
+      "text": "didn't do that well, like people didn't",
+      "start_ms": "385480",
+      "end_ms": "390080.00000000006",
+      "start_time_text": "6:25"
+    },
+    {
+      "text": "really like it, they have focused much",
+      "start_ms": "386960",
+      "end_ms": "392640",
+      "start_time_text": "6:26"
+    },
+    {
+      "text": "less on model size and much more on",
+      "start_ms": "390080",
+      "end_ms": "393919",
+      "start_time_text": "6:30"
+    },
+    {
+      "text": "post-training.",
+      "start_ms": "392640",
+      "end_ms": "396840",
+      "start_time_text": "6:32"
+    },
+    {
+      "text": "And that's why GPT-5.6 is so usable.",
+      "start_ms": "393919",
+      "end_ms": "398120",
+      "start_time_text": "6:33"
+    },
+    {
+      "text": "Like it just feels like it's something",
+      "start_ms": "396840",
+      "end_ms": "400520",
+      "start_time_text": "6:36"
+    },
+    {
+      "text": "it's it's fast, it's really efficient.",
+      "start_ms": "398120",
+      "end_ms": "401880",
+      "start_time_text": "6:38"
+    },
+    {
+      "text": "You ask it to do anything from knowledge",
+      "start_ms": "400520",
+      "end_ms": "403039.99999999994",
+      "start_time_text": "6:40"
+    },
+    {
+      "text": "work to coding, it's just sort of going",
+      "start_ms": "401880",
+      "end_ms": "404360",
+      "start_time_text": "6:41"
+    },
+    {
+      "text": "to get the task done and just like check",
+      "start_ms": "403040",
+      "end_ms": "406440",
+      "start_time_text": "6:43"
+    },
+    {
+      "text": "it off. Um it's so much more usable than",
+      "start_ms": "404360",
+      "end_ms": "408760",
+      "start_time_text": "6:44"
+    },
+    {
+      "text": "something like Fable. And so, the",
+      "start_ms": "406440",
+      "end_ms": "410320",
+      "start_time_text": "6:46"
+    },
+    {
+      "text": "interesting difference in the strategy",
+      "start_ms": "408760",
+      "end_ms": "411240",
+      "start_time_text": "6:48"
+    },
+    {
+      "text": "is",
+      "start_ms": "410320",
+      "end_ms": "412960",
+      "start_time_text": "6:50"
+    },
+    {
+      "text": "OpenAI has a model right now that is",
+      "start_ms": "411240",
+      "end_ms": "415240",
+      "start_time_text": "6:51"
+    },
+    {
+      "text": "just easier to use and better.",
+      "start_ms": "412960",
+      "end_ms": "416520",
+      "start_time_text": "6:52"
+    },
+    {
+      "text": "Um",
+      "start_ms": "415240",
+      "end_ms": "417840.00000000006",
+      "start_time_text": "6:55"
+    },
+    {
+      "text": "when you install it, no matter what it",
+      "start_ms": "416520",
+      "end_ms": "419400",
+      "start_time_text": "6:56"
+    },
+    {
+      "text": "like what plugins, what stack, whatever,",
+      "start_ms": "417840",
+      "end_ms": "420840",
+      "start_time_text": "6:57"
+    },
+    {
+      "text": "it's just going to start working. Fable",
+      "start_ms": "419400",
+      "end_ms": "423479.99999999994",
+      "start_time_text": "6:59"
+    },
+    {
+      "text": "and now Opus 5 are like they're slightly",
+      "start_ms": "420840",
+      "end_ms": "424880",
+      "start_time_text": "7:00"
+    },
+    {
+      "text": "different, they're slightly weirder.",
+      "start_ms": "423480",
+      "end_ms": "426720",
+      "start_time_text": "7:03"
+    },
+    {
+      "text": "They have like different ways of working",
+      "start_ms": "424880",
+      "end_ms": "429440",
+      "start_time_text": "7:04"
+    },
+    {
+      "text": "that you have to adapt yourself to.",
+      "start_ms": "426720",
+      "end_ms": "430360",
+      "start_time_text": "7:06"
+    },
+    {
+      "text": "Some people are going to make that jump",
+      "start_ms": "429440",
+      "end_ms": "431760",
+      "start_time_text": "7:09"
+    },
+    {
+      "text": "and some people are not. OpenAI is",
+      "start_ms": "430360",
+      "end_ms": "433400.00000000006",
+      "start_time_text": "7:10"
+    },
+    {
+      "text": "betting that having just an off-the-bat",
+      "start_ms": "431760",
+      "end_ms": "435800",
+      "start_time_text": "7:11"
+    },
+    {
+      "text": "model that just works is the way to go.",
+      "start_ms": "433400",
+      "end_ms": "437919",
+      "start_time_text": "7:13"
+    },
+    {
+      "text": "And Anthropic is betting that if you",
+      "start_ms": "435800",
+      "end_ms": "440880",
+      "start_time_text": "7:15"
+    },
+    {
+      "text": "make the super super genius model,",
+      "start_ms": "437919",
+      "end_ms": "442320",
+      "start_time_text": "7:17"
+    },
+    {
+      "text": "everything else falls into place. Over",
+      "start_ms": "440880",
+      "end_ms": "444280",
+      "start_time_text": "7:20"
+    },
+    {
+      "text": "the course of the last year, I feel like",
+      "start_ms": "442320",
+      "end_ms": "446080",
+      "start_time_text": "7:22"
+    },
+    {
+      "text": "Anthropic has had a little bit of the",
+      "start_ms": "444280",
+      "end_ms": "448359.99999999994",
+      "start_time_text": "7:24"
+    },
+    {
+      "text": "mandate of heaven here. Um particularly",
+      "start_ms": "446080",
+      "end_ms": "450039.99999999994",
+      "start_time_text": "7:26"
+    },
+    {
+      "text": "since Claude code about a year or a year",
+      "start_ms": "448360",
+      "end_ms": "451880",
+      "start_time_text": "7:28"
+    },
+    {
+      "text": "and a half ago, they've kind of",
+      "start_ms": "450040",
+      "end_ms": "453960.00000000006",
+      "start_time_text": "7:30"
+    },
+    {
+      "text": "dominated in terms of what the daily",
+      "start_ms": "451880",
+      "end_ms": "455800",
+      "start_time_text": "7:31"
+    },
+    {
+      "text": "driver is for most people who really",
+      "start_ms": "453960",
+      "end_ms": "457840",
+      "start_time_text": "7:33"
+    },
+    {
+      "text": "love AI. A lot of people, me included,",
+      "start_ms": "455800",
+      "end_ms": "459440",
+      "start_time_text": "7:35"
+    },
+    {
+      "text": "started to switch back into the OpenAI",
+      "start_ms": "457840",
+      "end_ms": "461000",
+      "start_time_text": "7:37"
+    },
+    {
+      "text": "ecosystem.",
+      "start_ms": "459440",
+      "end_ms": "462320",
+      "start_time_text": "7:39"
+    },
+    {
+      "text": "And now Codex is having a moment. Like",
+      "start_ms": "461000",
+      "end_ms": "463840",
+      "start_time_text": "7:41"
+    },
+    {
+      "text": "if you look, I think they're like adding",
+      "start_ms": "462320",
+      "end_ms": "465400",
+      "start_time_text": "7:42"
+    },
+    {
+      "text": "a million users a day or something right",
+      "start_ms": "463840",
+      "end_ms": "467520",
+      "start_time_text": "7:43"
+    },
+    {
+      "text": "now. So, there's something really",
+      "start_ms": "465400",
+      "end_ms": "469479.99999999994",
+      "start_time_text": "7:45"
+    },
+    {
+      "text": "interesting going on with OpenAI and and",
+      "start_ms": "467520",
+      "end_ms": "471440",
+      "start_time_text": "7:47"
+    },
+    {
+      "text": "this current strategy. And I think the",
+      "start_ms": "469480",
+      "end_ms": "473320",
+      "start_time_text": "7:49"
+    },
+    {
+      "text": "balance of who's ahead is starting to",
+      "start_ms": "471440",
+      "end_ms": "476160",
+      "start_time_text": "7:51"
+    },
+    {
+      "text": "shift a little bit back to them.",
+      "start_ms": "473320",
+      "end_ms": "478360",
+      "start_time_text": "7:53"
+    },
+    {
+      "text": "How we like a model and what we like",
+      "start_ms": "476160",
+      "end_ms": "479720",
+      "start_time_text": "7:56"
+    },
+    {
+      "text": "about a model",
+      "start_ms": "478360",
+      "end_ms": "482240",
+      "start_time_text": "7:58"
+    },
+    {
+      "text": "can sometimes change over a couple weeks",
+      "start_ms": "479720",
+      "end_ms": "484280.00000000006",
+      "start_time_text": "7:59"
+    },
+    {
+      "text": "to a month because you start to learn",
+      "start_ms": "482240",
+      "end_ms": "485840.00000000006",
+      "start_time_text": "8:02"
+    },
+    {
+      "text": "little things that you try it for that",
+      "start_ms": "484280",
+      "end_ms": "487200",
+      "start_time_text": "8:04"
+    },
+    {
+      "text": "you're like, oh, there's a new way of",
+      "start_ms": "485840",
+      "end_ms": "488560",
+      "start_time_text": "8:05"
+    },
+    {
+      "text": "doing this that didn't look like my old",
+      "start_ms": "487200",
+      "end_ms": "489479.99999999994",
+      "start_time_text": "8:07"
+    },
+    {
+      "text": "way.",
+      "start_ms": "488560",
+      "end_ms": "491000",
+      "start_time_text": "8:08"
+    },
+    {
+      "text": "Um and it's kind of annoying that I have",
+      "start_ms": "489480",
+      "end_ms": "492680",
+      "start_time_text": "8:09"
+    },
+    {
+      "text": "to change, but there's like hidden",
+      "start_ms": "491000",
+      "end_ms": "494720",
+      "start_time_text": "8:11"
+    },
+    {
+      "text": "powers in here that I I really really",
+      "start_ms": "492680",
+      "end_ms": "496600",
+      "start_time_text": "8:12"
+    },
+    {
+      "text": "like. So, um",
+      "start_ms": "494720",
+      "end_ms": "499200.00000000006",
+      "start_time_text": "8:14"
+    },
+    {
+      "text": "for us, like our vibe check right now is",
+      "start_ms": "496600",
+      "end_ms": "501160",
+      "start_time_text": "8:16"
+    },
+    {
+      "text": "it's it's it's hard to use. Some",
+      "start_ms": "499200",
+      "end_ms": "502640",
+      "start_time_text": "8:19"
+    },
+    {
+      "text": "interesting things, but it's not great.",
+      "start_ms": "501160",
+      "end_ms": "503840.00000000006",
+      "start_time_text": "8:21"
+    },
+    {
+      "text": "There may be a vibe shift though. We've",
+      "start_ms": "502640",
+      "end_ms": "505640",
+      "start_time_text": "8:22"
+    },
+    {
+      "text": "seen this before. Um",
+      "start_ms": "503840",
+      "end_ms": "507479.99999999994",
+      "start_time_text": "8:23"
+    },
+    {
+      "text": "I think a really good example of a model",
+      "start_ms": "505640",
+      "end_ms": "510240",
+      "start_time_text": "8:25"
+    },
+    {
+      "text": "that's that's kind of like this is um",
+      "start_ms": "507480",
+      "end_ms": "515440.00000000006",
+      "start_time_text": "8:27"
+    },
+    {
+      "text": "GPT-5, GPT-5.1, GPT-5.2 that were all",
+      "start_ms": "510240",
+      "end_ms": "517919",
+      "start_time_text": "8:30"
+    },
+    {
+      "text": "just really hard to use and people",
+      "start_ms": "515440.00000000006",
+      "end_ms": "519880.0000000001",
+      "start_time_text": "8:35"
+    },
+    {
+      "text": "didn't like and then about a month later",
+      "start_ms": "517919",
+      "end_ms": "521520",
+      "start_time_text": "8:37"
+    },
+    {
+      "text": "they're like, but it's really powerful",
+      "start_ms": "519880",
+      "end_ms": "522679.99999999994",
+      "start_time_text": "8:39"
+    },
+    {
+      "text": "for certain things, especially",
+      "start_ms": "521520",
+      "end_ms": "524159.99999999994",
+      "start_time_text": "8:41"
+    },
+    {
+      "text": "especially the Codex line. I think",
+      "start_ms": "522679.99999999994",
+      "end_ms": "525520",
+      "start_time_text": "8:42"
+    },
+    {
+      "text": "there's a similar feeling thing",
+      "start_ms": "524159.99999999994",
+      "end_ms": "526920",
+      "start_time_text": "8:44"
+    },
+    {
+      "text": "happening where",
+      "start_ms": "525520",
+      "end_ms": "528319.9999999999",
+      "start_time_text": "8:45"
+    },
+    {
+      "text": "Fable, which has",
+      "start_ms": "526920",
+      "end_ms": "530040",
+      "start_time_text": "8:46"
+    },
+    {
+      "text": "blew the ceiling off the intelligence",
+      "start_ms": "528320",
+      "end_ms": "532400.0000000001",
+      "start_time_text": "8:48"
+    },
+    {
+      "text": "level to such a degree that you're",
+      "start_ms": "530040",
+      "end_ms": "534640",
+      "start_time_text": "8:50"
+    },
+    {
+      "text": "seeing that then leak into all those",
+      "start_ms": "532400",
+      "end_ms": "537400",
+      "start_time_text": "8:52"
+    },
+    {
+      "text": "sort of like weaker models and",
+      "start_ms": "534640",
+      "end_ms": "538600",
+      "start_time_text": "8:54"
+    },
+    {
+      "text": "Anthropic's going to have to figure out",
+      "start_ms": "537400",
+      "end_ms": "540560",
+      "start_time_text": "8:57"
+    },
+    {
+      "text": "how do we post-train these models better",
+      "start_ms": "538600",
+      "end_ms": "542600",
+      "start_time_text": "8:58"
+    },
+    {
+      "text": "to make them more usable even at even",
+      "start_ms": "540560",
+      "end_ms": "544319.9999999999",
+      "start_time_text": "9:00"
+    },
+    {
+      "text": "even as they're so smart. So, what I",
+      "start_ms": "542600",
+      "end_ms": "546200",
+      "start_time_text": "9:02"
+    },
+    {
+      "text": "would say is",
+      "start_ms": "544320",
+      "end_ms": "548280.0000000001",
+      "start_time_text": "9:04"
+    },
+    {
+      "text": "probably you're going to use this model",
+      "start_ms": "546200",
+      "end_ms": "550680.0000000001",
+      "start_time_text": "9:06"
+    },
+    {
+      "text": "and not like it that much. But we're",
+      "start_ms": "548280",
+      "end_ms": "552120",
+      "start_time_text": "9:08"
+    },
+    {
+      "text": "really going to know in a couple weeks",
+      "start_ms": "550680",
+      "end_ms": "553839",
+      "start_time_text": "9:10"
+    },
+    {
+      "text": "once everyone has had a chance to like",
+      "start_ms": "552120",
+      "end_ms": "555800",
+      "start_time_text": "9:12"
+    },
+    {
+      "text": "poke at its corners to really understand",
+      "start_ms": "553839",
+      "end_ms": "557839",
+      "start_time_text": "9:13"
+    },
+    {
+      "text": "like what might be hidden in there. But",
+      "start_ms": "555800",
+      "end_ms": "560160",
+      "start_time_text": "9:15"
+    },
+    {
+      "text": "for now",
+      "start_ms": "557839",
+      "end_ms": "561839",
+      "start_time_text": "9:17"
+    },
+    {
+      "text": "to me, this model feels a little bit",
+      "start_ms": "560160",
+      "end_ms": "563520",
+      "start_time_text": "9:20"
+    },
+    {
+      "text": "like a poor man's Fable. It has all of",
+      "start_ms": "561839",
+      "end_ms": "566320",
+      "start_time_text": "9:21"
+    },
+    {
+      "text": "Fable's personality, but really not its",
+      "start_ms": "563520",
+      "end_ms": "569280",
+      "start_time_text": "9:23"
+    },
+    {
+      "text": "top end. So, for for me personally, it's",
+      "start_ms": "566320",
+      "end_ms": "572040.0000000001",
+      "start_time_text": "9:26"
+    },
+    {
+      "text": "not my favorite model.",
+      "start_ms": "569280",
+      "end_ms": "572040",
+      "start_time_text": "9:29"
+    }
+  ],
+  "transcript_only_text": "It's model release day. Opus 5 is out. We have your day zero vibe check. So, let's get into it. We've been testing this model for about a week now. And it's I got to say, it's a little bit of a hard model to love. >> What have they done to my boy? >> Everyone was like, like it's it's not that usable. It stops. It argues with you. But as we've been testing it, there've been some glimmers of things where you're like, oh, there there might be something here. So, here's what we're going to talk about. We're going to talk about whether you should switch to it if you're a Codex user, what you should expect if you're a Claude user, and we're going to talk about the state of the race. What does it mean for OpenAI and Anthropic? I feel like I have two big slots in my life right now for models. One slot is my like day-to-day daily driver. And right now that's just 5.6. Like it's smart, it's fast, it's not that compute intensive, all that kind of stuff. Then Opus 5 should compete with that. I don't think it does, to be honest. Um the other slot I have in my life is like I need the warp drive. I need like the tactical nuke to like go do this like gigantic big project um all autonomously. And I don't feel like Opus 5 has the top end for that. I use Fable for that. So, 80% of the time I'm still on GPT-4 20% of the time I'm still on Fable. This model's just like a little bit more pushy. It's a little bit more opinionated in a way that you can get away with that if you're super [ __ ] smart. If you're not, then it's just more annoying. And I think that's indicative of the attitude this thing has where it has some of the the genius tendencies of Fable. Like maybe it's a little bit too argumentative. It has maybe its own opinions. Um but it's not as smart as Fable, so it's just annoying. If you're a Codex user, I would not switch. Um I think 5.6 is uh still 5.6 in Codex in ChatGPT for work is still my in my view the gold standard for knowledge work for day-to-day coding tasks, all that kind of stuff. Fable, different story. I still use that every day for like the bigger tasks that I have, and I switch back and forth. So, Fable is like a provider switching model job. You have to start using it. Opus 5 if you're already in the Claude ecosystem and you love Opus 4.8, like it'll probably be okay. It might be annoying for you. Like it's just a little harder to use and a lot of your skills you're going to have to think about rewriting, which is just it's just a pain. But if you're someone who's already in the open AI ecosystem or you just like to switch around to whatever's best and you mix and match, I really don't think that Opus 5 is going to be your favorite model out of the box. So, if you are if you are in the Claude ecosystem and you're going from 4.8 to 5, some of the things we observed, so a big skill that we build and run internally is called compound engineering. It's something that Kieran Classon, who works at Every, has built. It's a it's a really big open source project that all of us use to do a lot of engineering work, but also a lot of honestly just general knowledge work. It's an incredible plugin and it has a set of skills that help you do engineering better and compound what you learn so that it gets better over time. And what what Kieran found in testing this is it would like stop early, for example. Compound engineering has an autonomous developer loop as part of its skill set, so it just you give it a goal and it just keeps going. It has a lot of instructions for the model about how to do that and when. I I found this too. We have a senior engineer benchmark and I I did find that it it consistently stopped too early. It would say it was done, but it wasn't done and I had to be like keep going, which is a problem that is not that common anymore. Usually models are pretty good at telling telling when to finish. So, what Kieran found, what I found is little things like that where you're like, \"Okay, I'm going to set this off and and I'm going to go get a sandwich or whatever.\" It just stops too early. It appears that they happen more frequently when you use them with complex existing skills. So, if you have a big skill file that has a ton of different instructions, its ability to follow those instructions, it's less good at that. But if you're giving it um vaguer instructions or if you start fresh and you start to explore what can this model do with just building up from a small prompt, you may have more success. And so, for example, Kieran is rewriting comp engineering to see if he can get it to work well with this model and just prompt it differently. Um but, it's just a pain when a model just breaks your existing workflows. It might seem like the model isn't very good. And I think the the actual story here is a little bit more complicated than that. You actually have to prompt it differently, and if you give it the kinds of things that used to work really well with Opus 4.8 or like big skills, it's not going to work. Uh it'll, for example, stop early. It'll It'll argue with you, like that kind of stuff. It sort of brings out this annoying behavior that you might recognize a little bit of its personality from Fable, but it doesn't have Fable's top end, so it's not as excusable. It's a hard model to love, especially on day one, but as we've gotten deeper into it, there are certain people on the team, like Kieran, who have been like, \"Actually, if you try it on a lower thinking level, you may find good results.\" He prefers to use this model on medium or low reasoning. Almost all my testing was on like high or max or whatever, cuz I'm like, \"Oh, these are hard tasks or whatever.\" It's really important with Claude models of this generation to pay attention to the reasoning level. Um and not just the model family. So, regardless of whether you're using Opus 5 today or not, a thing to be aware of is in 2026, when you're using AI, the thing to start dialing up and down is the thinking level. It's kind of true. The thinking level is its effort, and Opus is a smart model that does better when it thinks less. It does better when it is puts a little bit less effort into its task and it just answers. And to some degree, humans are like that, too. Like, there's There are times where you're just like totally trying too hard, and you way overthink it. And I think the Claude family of models, um especially in this generation, are like that. I think there's actually a really big, interesting strategy question here, which is OpenAI and Anthropic are taking two very different strategies to building models. Anthropic is like, we're going to build this gigantic a super weapon size, almost illegal model, and that's Fable, and we're going to use it to then build our other models. And what they're trying to get to is recursive self-improvement. It's like a it's a model that's so smart that it can train its successors and get better autonomously. Um and turns out if you have like a super genius training your like best friend, your best friend turns into this sort of not really a super genius, but they have all the attitude of a super genius. OpenAI done something quite different. So, after GPT-4.5, which is about a year ago or a year and a half ago, which was the biggest model that they've ever trained, and it really didn't do that well, like people didn't really like it, they have focused much less on model size and much more on post-training. And that's why GPT-5.6 is so usable. Like it just feels like it's something it's it's fast, it's really efficient. You ask it to do anything from knowledge work to coding, it's just sort of going to get the task done and just like check it off. Um it's so much more usable than something like Fable. And so, the interesting difference in the strategy is OpenAI has a model right now that is just easier to use and better. Um when you install it, no matter what it like what plugins, what stack, whatever, it's just going to start working. Fable and now Opus 5 are like they're slightly different, they're slightly weirder. They have like different ways of working that you have to adapt yourself to. Some people are going to make that jump and some people are not. OpenAI is betting that having just an off-the-bat model that just works is the way to go. And Anthropic is betting that if you make the super super genius model, everything else falls into place. Over the course of the last year, I feel like Anthropic has had a little bit of the mandate of heaven here. Um particularly since Claude code about a year or a year and a half ago, they've kind of dominated in terms of what the daily driver is for most people who really love AI. A lot of people, me included, started to switch back into the OpenAI ecosystem. And now Codex is having a moment. Like if you look, I think they're like adding a million users a day or something right now. So, there's something really interesting going on with OpenAI and and this current strategy. And I think the balance of who's ahead is starting to shift a little bit back to them. How we like a model and what we like about a model can sometimes change over a couple weeks to a month because you start to learn little things that you try it for that you're like, oh, there's a new way of doing this that didn't look like my old way. Um and it's kind of annoying that I have to change, but there's like hidden powers in here that I I really really like. So, um for us, like our vibe check right now is it's it's it's hard to use. Some interesting things, but it's not great. There may be a vibe shift though. We've seen this before. Um I think a really good example of a model that's that's kind of like this is um GPT-5, GPT-5.1, GPT-5.2 that were all just really hard to use and people didn't like and then about a month later they're like, but it's really powerful for certain things, especially especially the Codex line. I think there's a similar feeling thing happening where Fable, which has blew the ceiling off the intelligence level to such a degree that you're seeing that then leak into all those sort of like weaker models and Anthropic's going to have to figure out how do we post-train these models better to make them more usable even at even even as they're so smart. So, what I would say is probably you're going to use this model and not like it that much. But we're really going to know in a couple weeks once everyone has had a chance to like poke at its corners to really understand like what might be hidden in there. But for now to me, this model feels a little bit like a poor man's Fable. It has all of Fable's personality, but really not its top end. So, for for me personally, it's not my favorite model."
+}

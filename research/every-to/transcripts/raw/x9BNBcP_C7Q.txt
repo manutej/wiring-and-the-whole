@@ -1,0 +1,1635 @@
+[0:00] Codex is one of those things where 3
+[0:02] months ago, 6 months ago, it was trash.
+[0:04] If anyone from OpenAI is on the call and
+[0:07] listening to that, I stand by that 100%.
+[0:09] If you have a great general purpose
+[0:11] coding agent on your computer, it's
+[0:13] actually really great for any kind of
+[0:15] knowledge work. If it can write software
+[0:16] on its own, it can do any kind of
+[0:17] knowledge work on its own.
+[0:18] >> When I sign on during the day, Codex is
+[0:20] the first thing I open. It is pulling in
+[0:22] whatever I need from Gmail, Slack,
+[0:25] [music] Notion, Stripe, all of our data
+[0:27] sources. It's where I spend like 80% of
+[0:30] my time working. Overwhelmingly because
+[0:33] the app itself is just so good.
+[0:34] >> There's a new operating system for how
+[0:37] and where you're going to get your work
+[0:38] done, and it's this kind of agent
+[0:39] management interface.
+[0:47] >> [music]
+[0:52] [music]
+[0:55] >> Hello, everybody. Welcome to Codex Camp,
+[1:00] Codex for knowledge work. Psyched to
+[1:03] have you, psyched to have you on this
+[1:05] auspicious GPT 5.5
+[1:08] day after release day.
+[1:10] Hope you're doing well. Um I'm here with
+[1:13] our head of growth, Austin. Austin, say
+[1:15] hello.
+[1:16] >> Hello.
+[1:17] >> We're psyched to have you. We are
+[1:19] psyched to do this. Um Codex is one of
+[1:21] those things where,
+[1:23] you know, 3 months ago, 6 months ago, it
+[1:25] was trash. Um and if anyone from OpenAI
+[1:29] is on the call and listening to that, I
+[1:30] stand by that 100%. Um and it was really
+[1:35] built for
+[1:37] um senior engineers uh doing pair
+[1:39] programming. So, it was um it would
+[1:43] argue with you, it would make you feel
+[1:44] stupid, it was just it was like a little
+[1:46] autistic, like it it didn't have any
+[1:48] emotional intelligence.
+[1:50] And I think OpenAI had this interesting
+[1:53] strategy or this interesting theory
+[1:55] starting with GPT-5 that
+[1:57] your vibe coding was going to happen in
+[1:59] ChatGPT and that was where all that
+[2:01] stuff was going to live and then senior
+[2:03] engineers are going to use Codex to like
+[2:04] do all of their programming work but
+[2:06] we're going to hobble the model so it
+[2:08] doesn't do anything bad as in a sandbox
+[2:09] all that kind of stuff.
+[2:11] And
+[2:12] I think basically what happened is
+[2:14] Anthropic figured out that
+[2:17] having a model that's pretty usable and
+[2:20] fast and smart and also emotionally
+[2:21] intelligent intelligent on your computer
+[2:24] that can access your computer
+[2:26] um is a really really great experience
+[2:29] for programmers and it means you could
+[2:30] throw away a lot of the old uh stuff
+[2:33] that you used to have in a in a
+[2:35] programming environment where you were
+[2:36] it was built for typing code you could
+[2:38] just type commands into your terminal
+[2:39] and then it would start working.
+[2:41] And then I think what Anthropic figured
+[2:42] out is if you have a great general
+[2:45] purpose if you have a great coding agent
+[2:48] on your computer it's actually really
+[2:50] great for any kind of knowledge work. If
+[2:51] it can write software on its own it can
+[2:52] do any kind of knowledge work on its
+[2:54] own. And we started to move from this
+[2:56] world where programmers had been
+[2:57] delegating um had been delegating their
+[3:00] tasks starting to delegate their tasks
+[3:01] inside of Cloud Code to now any kind of
+[3:05] knowledge work is being delegated inside
+[3:06] of Cloud Code and Cloud Code work and
+[3:08] all that kind of stuff. And I think
+[3:08] OpenAI they had this original split it's
+[3:11] like oh you're going to do all your vibe
+[3:12] coding in ChatGPT and I think they saw
+[3:15] what was starting to happen with Cloud
+[3:17] Code and over the last maybe 3 months or
+[3:19] so they have done this hard pivot on
+[3:21] code Codex where it has gone from a
+[3:23] senior engineer only tool that it's
+[3:25] really for pair programming um to
+[3:30] I think like it's it is my daily driver
+[3:32] for this kind of work. Um
+[3:35] I uh I I use Codex for everything from
+[3:39] deep engineering stuff to
+[3:42] writing to recruiting I do a lot of
+[3:45] actually do a fair amount of recruiting
+[3:46] it's really good for that. I'll give you
+[3:47] some use cases um later.
+[3:50] But they sort [snorts] of figured out
+[3:51] that
+[3:53] um having this general-purpose agent on
+[3:55] your computer with the ability to write
+[3:57] code, the ability to access your file
+[3:58] system, the ability to have a browser,
+[4:00] um and wrapping it in a desktop app is
+[4:03] like the ideal
+[4:05] uh
+[4:06] ideal next step for knowledge work, and
+[4:08] I think that they built the best current
+[4:10] version of that.
+[4:11] Um and it what it is starting to snap
+[4:14] into into focus now is that there's a
+[4:19] new operating system for how and where
+[4:21] surface for how and where you're going
+[4:23] to get your work done, and it's this
+[4:24] kind of agent management interface. And
+[4:26] that's
+[4:27] whether or not you're using Claude Code
+[4:29] or Claude Co-work in the desktop app or
+[4:31] Codex in the desktop app, it's becoming
+[4:34] this race between the model companies
+[4:35] where every each model company has their
+[4:37] own surface like this for agent
+[4:38] management, a desktop app for agent
+[4:40] management that's
+[4:41] at its core a programming agent that's
+[4:43] used for knowledge work.
+[4:45] Um Anthropic has Claude Code and Claude
+[4:47] Co-work.
+[4:48] OpenAI has Codex. XAI recently um
+[4:52] essentially bought Cursor.
+[4:54] Um
+[4:55] and uh and Google is the only one that I
+[4:59] mean, they have anti-gravity, but I
+[5:00] don't think no one is seriously using it
+[5:02] for that yet, but I I imagine Google
+[5:04] will do this, too. And that's the race.
+[5:06] That is the race that's happening. And
+[5:08] so, I think
+[5:10] for us who gets who get all the benefits
+[5:12] of uh being able to use these tools,
+[5:15] uh
+[5:16] it's really important to uh be be
+[5:19] bouncing around between these. So, like
+[5:21] use it for example, using Codex so that
+[5:23] you can feel what it's like to work in
+[5:25] an agent-first world because once you
+[5:27] add once you add an agent that is like
+[5:29] that your primary way of accessing and
+[5:31] using software and the internet and all
+[5:32] that kind of stuff, it opens up all this
+[5:35] interesting stuff that wasn't possible
+[5:36] before because you can send your agent
+[5:38] out to go talk to other pieces of
+[5:39] software and come back and um you know,
+[5:43] we can get into into more of the details
+[5:44] there, but I want want get into like the
+[5:45] more of the concrete use cases, but
+[5:48] that's the world that we're starting to
+[5:49] live in. You're doing work on your
+[5:51] computer through Codex or Co-work.
+[5:54] And
+[5:55] um and your agent is your interface to a
+[5:59] lot of the work that you're doing and a
+[6:00] lot of the a lot of the software that
+[6:02] you use and a lot of the stuff that you
+[6:03] do every day. And uh that's actually
+[6:06] really fun. It's really cool. There's a
+[6:08] lot of good stuff here. And so
+[6:10] I wanted to uh I wanted to bring Austin
+[6:12] in to to help do this because Austin is
+[6:15] our head of growth. And
+[6:17] I think he had his real agent pill
+[6:19] moment. You tell me, Austin, but
+[6:21] probably like three or four months ago.
+[6:23] And the agent pill moment was really
+[6:25] Claude Code. And I sort of remember you
+[6:28] just being like
+[6:29] "Oh, yeah." On a on a Monday morning
+[6:31] being like, "Oh, yeah. I just was on my
+[6:32] computer all weekend. Like I I was like
+[6:34] 12 hours a day. I didn't go out or
+[6:35] anything."
+[6:36] Cuz I was using Claude Code. And um you
+[6:39] started to use it for all those all the
+[6:41] kind of knowledge work tasks that a that
+[6:43] a growth marketer would.
+[6:45] And over the last
+[6:47] couple weeks as we've been using 55 and
+[6:50] I've been telling you for a little bit
+[6:51] you should try Codex.
+[6:52] It seems like you've you actually just
+[6:54] shifted everything over to Codex in 55.
+[6:56] And so I think you're a great person to
+[6:59] talk about, you know, sort of what
+[7:01] you're seeing and how and how that is
+[7:05] uh
+[7:05] how that is um
+[7:08] how this has changed how these agent
+[7:10] management interfaces have changed your
+[7:11] workflow. And then why you like Codex.
+[7:14] And then I would love to get into some
+[7:15] demos of your actual Codex workflows so
+[7:18] that we can sort of see things uh from
+[7:21] your perspective.
+[7:22] >> Yeah, that sounds great. So I um yes, my
+[7:25] like agent pill moment was spending a
+[7:29] week
+[7:30] going deep into Claude Code in the CLI.
+[7:34] Uh probably in like December into
+[7:36] January hooking it up to everything I do
+[7:39] for work and for my personal life and
+[7:41] finding that I I use Warp as my like CLI
+[7:44] interface
+[7:46] and finding that the things that could
+[7:49] automate the things that could handle
+[7:51] for me and then the way it could work as
+[7:53] a thought partner to make my work
+[7:55] better. It was like this is the only way
+[7:57] I want to do the kind of knowledge work
+[7:59] that requires
+[8:01] strategic thinking and data analysis and
+[8:05] shipping marketing copy like a bunch of
+[8:07] stuff that can get you spread out across
+[8:10] of apps and tools during the day. And
+[8:13] and maybe in February you kept nudging
+[8:15] me to be like you really should try
+[8:16] Codex. There were things you liked about
+[8:18] it and and if someone says that it ever
+[8:20] if anyone on the team says that like
+[8:21] I'll go try it. And I like to push
+[8:24] myself and play around with more
+[8:26] engineering tasks especially to see what
+[8:28] these models are capable of. And so I
+[8:30] tried to build a personal vibe coded app
+[8:34] in Codex cuz that was one of the things
+[8:36] that you said that it was really good
+[8:37] for.
+[8:38] And my immediate response was like I
+[8:40] think it is better at building the app
+[8:43] but I can't tell because it's nothing
+[8:45] has ever made me feel more stupid than
+[8:48] Codex like 2 months ago. Like I always I
+[8:51] used Compound it the Compound
+[8:52] Engineering plugin that Kieran Plunkett
+[8:53] made for basically everything including
+[8:55] knowledge work but especially if I'm
+[8:57] trying to build an app or ship a PR to
+[9:00] the to the site.
+[9:01] So I made a plan in the plan it comes up
+[9:04] with like three questions and for like
+[9:07] which direction we should go and I had
+[9:10] no idea what the hell it was talking
+[9:11] about. It was like do you do one any of
+[9:12] these three and every question I was
+[9:13] like please explain this to me
+[9:16] in more detail and its response was
+[9:18] basically like why? Like why don't you
+[9:20] just do what I'm recommending? And I
+[9:23] found a way to I I basically stayed in
+[9:25] Codex for all engineering stuff cuz I
+[9:27] did like the results even if I didn't
+[9:29] love working in it but I would say 80%
+[9:32] of what I was reaching for was was Cloud
+[9:33] Code in the CLI. And when we got our
+[9:36] hands on the new GPT model
+[9:39] a a month ago, the the the the first
+[9:42] thing I felt was at the very least
+[9:44] there's
+[9:46] parity between the latest Opus model and
+[9:48] the latest GPT model for the kind of
+[9:50] knowledge work I do. There's a few
+[9:52] things that Opus does better. There's a
+[9:54] few things that that Codex does better.
+[9:56] That feels a little more specific to me
+[9:58] even. Like I I outside of design, which
+[10:00] I still really trust Opus for. Um it
+[10:04] feels a little more like a there's some
+[10:05] stuff I like better than this. But the
+[10:06] real differentiator to me is that to me
+[10:09] there's no comparison for how fast and
+[10:12] powerful the Codex desktop app is as
+[10:14] just like an app compared to the Claude
+[10:17] desktop app. Like I have never been able
+[10:19] to get uh code work to work for me. And
+[10:21] I think it's because I've been kind of
+[10:23] ruined by the Codex app. It's so fast.
+[10:25] The sub agents are so good. The way in
+[10:28] which it suggests and then um ships
+[10:31] automations for me is just like I can't
+[10:34] imagine not using it. I wouldn't be
+[10:36] surprised if any week the Claude desktop
+[10:39] app is like just as good, right? Like um
+[10:42] they could ship versions where it's
+[10:43] faster and better. But I I'm now at the
+[10:45] point where when I sign on during the
+[10:48] day, I Codex is the first thing I open.
+[10:51] It is pulling in whatever I need from
+[10:54] Gmail, Slack, Notion, Stripe, all of our
+[10:57] data sources. This morning I was like,
+[11:00] "Oh yeah, we need to do a run of show
+[11:01] for this camp." I messaged Codex. I'm
+[11:03] like, "Make the run of show."
+[11:05] It knows exactly where to look cuz we've
+[11:07] already had conversations about what
+[11:08] we're going to talk about today. It
+[11:09] pushed it to Notion. It sent it to
+[11:12] Slack. It was perfect. It was like, "Oh
+[11:15] yeah, this is exactly what we should
+[11:16] do." And um
+[11:18] yeah, it's where I spend like 80% of my
+[11:20] time working overwhelmingly because the
+[11:23] app itself is just so good. And then the
+[11:25] model has now gotten
+[11:27] good enough to be the daily driver for
+[11:29] me.
+[11:30] >> Yeah. And I I feel I feel the same way.
+[11:33] Um I love to get into and and for people
+[11:36] someone who someone asked, are you we
+[11:37] discussing the app or the CLI? We're
+[11:39] discussing the app, the desktop app. And
+[11:41] and I think you're making a good point
+[11:43] that
+[11:44] uh
+[11:45] both of these companies I think sort of
+[11:47] see the end game here and they're
+[11:49] pushing in the right direction. And for
+[11:51] a while at least, it's going to be a
+[11:53] horse race where
+[11:54] every couple every couple weeks or every
+[11:56] couple months, like one is going to pull
+[11:58] ahead and have this like sort of amazing
+[12:01] thing going on and then their the
+[12:03] competitor is going to
+[12:05] uh like Anthropic for example, I think
+[12:07] will release something in a couple weeks
+[12:08] or couple months. I don't have any
+[12:09] inside information into this, but that
+[12:11] will make it at least parity, if not
+[12:14] better, and they're just going to keep
+[12:16] trading.
+[12:17] Um and at some point I think that'll
+[12:19] slow down and you'll end up with sort of
+[12:21] separate ecosystems, but for now,
+[12:24] they're actually fairly easy to switch
+[12:26] between. It's not
+[12:28] it's not trivial, but it's pretty easy.
+[12:31] Like you can kind of ask Codex, hey, can
+[12:33] you go grab all my Claude stuff and
+[12:35] it'll go do it.
+[12:36] >> It I think it it feels that way when you
+[12:39] do it. It's funny. I'm in I'm in New
+[12:40] York right now. I usually live in LA.
+[12:42] Most of my friends who are in the
+[12:43] knowledge work space have been asking me
+[12:45] about like what they should be using.
+[12:47] They're all Claude code or Claude
+[12:49] desktop app filled and when I tell them
+[12:51] that I have fully transitioned to Codex,
+[12:54] this like look of horror shows up on
+[12:55] their face and they're like
+[12:57] do I They're kind of like, do I really
+[12:58] have to? And I of course tell them they
+[13:00] don't, but I'm like, you really should.
+[13:02] Right now, you really should. Like I
+[13:03] think you would get a big benefit from
+[13:05] it and I've been showing them why. And
+[13:06] it's it's interesting and and to me
+[13:08] unsurprisingly how resistant people have
+[13:10] been to it because the
+[13:11] when you're a knowledge worker and you
+[13:14] have all these new tools, the Claude
+[13:15] desktop app is is game changing. It's
+[13:17] amazing, right? So the idea that the
+[13:19] Codex app is maybe 30 to 40% better is
+[13:22] like, "Ooh, that's a lot of work." Um
+[13:24] which we can get into kind of how I
+[13:26] migrated. I can show some of that. It
+[13:27] was very easy and the ways that I'm uh
+[13:30] starting to use it. So, I'm happy to
+[13:32] dive into that and start sharing my
+[13:33] screen and show what it
+[13:34] >> Yeah, why don't you share your screen?
+[13:35] Um I think yeah, I I kind of agree with
+[13:37] you. It's more of like an emotional
+[13:38] thing of like, "Oh, I have to learn a
+[13:40] whole new thing." or whatever, but it's
+[13:42] it's pretty similar. Yeah, I would love
+[13:43] to see some of your workflows.
+[13:45] >> Cool. So, um
+[13:47] this is the Codex app. I I was going to
+[13:49] do like a very, very quick tour. I think
+[13:50] a lot of the audience has seen it, but
+[13:52] kind of like where I go and how I use
+[13:54] it. Um one thing I love about the Codex
+[13:57] app is like I do think it's much better
+[13:58] organized than the Claude desktop app.
+[14:01] My the ability to have
+[14:03] these folders with persistent,
+[14:05] consistent chats inside of it that I can
+[14:07] go check out. And then especially like
+[14:10] the big differentiator is that because I
+[14:12] do think this is much better for
+[14:14] engineering, for like occasionally I
+[14:16] will ship a PR for one of our products,
+[14:18] it's great to not have to switch between
+[14:22] uh the Claude Code CLI, the Claude
+[14:23] desktop app, and Codex that I can be
+[14:25] here, I can be working on or improving
+[14:28] our KPI sheet, which I'll like show what
+[14:30] I was doing here, and then I can go down
+[14:32] to plus one and ship a PR for plus one.
+[14:35] And um the other thing I found cuz I did
+[14:37] I tried the new I tried the updates in
+[14:39] the Claude desktop app last week when
+[14:41] they when they shipped it. And the the
+[14:43] stress test I put on it was make a
+[14:46] go-to-market plan for our new product
+[14:48] and ship a PR to sparkle in different
+[14:51] chats. And it it was so clunky and slow.
+[14:54] And when you do stuff like that inside
+[14:56] of Codex, it just works. Like it just
+[14:58] works really quickly and and well. And
+[15:00] and and that's the thing that like once
+[15:01] you start feeling that, it's very hard
+[15:03] for me to turn away from it. So, I have
+[15:05] these different folders for um some like
+[15:08] five coded apps that I play around with
+[15:09] for fun, for my personal open claw where
+[15:13] I can go and manipulate it here, and
+[15:16] then the one with all of the chats is
+[15:17] this like every growth OS. All this is
+[15:20] is a folder with a bunch of um secrets
+[15:24] and keys, so it's connected to
+[15:26] everything we use for every and then
+[15:28] some project instructional files that
+[15:30] explain what the every business is, what
+[15:32] we care about, how we like to work
+[15:34] together.
+[15:36] It has some like reviewer agents inside
+[15:38] of it that are all informed by how
+[15:41] Compound Engineering works. Inside of
+[15:43] Compound Engineering Kieran's plugin,
+[15:46] there is a Compound Engineering review
+[15:48] step once you do some work
+[15:51] that reviews for like security and a few
+[15:53] different things that are often times
+[15:55] not as helpful for like I'm doing a
+[15:57] strategic plan for a go to market
+[15:59] initiative. And so inside of here
+[16:01] there's like a fork for it for strategic
+[16:04] alignment with the company goals, for
+[16:06] data
+[16:07] data accuracy, and having that inside of
+[16:10] this folder means that as I'm making
+[16:12] plans, I can get reviews
+[16:15] from the model in like a targeted way.
+[16:18] And so the first thing I wanted to show
+[16:20] is like how I I was talking to our our
+[16:22] editor-in-chief Kate yesterday to show
+[16:24] her like how I would recommend getting
+[16:26] started in Codex. And this is my
+[16:29] recommended prompts. I'm happy to put it
+[16:32] in the chat for people. We can put it in
+[16:34] the email as well.
+[16:36] And so all I did was I'm putting in the
+[16:41] prompts here. I only have personal
+[16:43] panelist access, so I'll send it later
+[16:45] or something.
+[16:46] >> Okay, yeah, maybe read it out.
+[16:48] >> You can all agree that housing is
+[16:49] expensive. Rent or mortgage doesn't
+[16:51] matter what you're paying, it stings
+[16:53] [music] every month. But Bilt can make
+[16:55] it feel a little better. Bilt started
+[16:57] out by rewarding members [music] for
+[16:59] their rent. Now as of 2026, Bilt members
+[17:02] can also earn points on mortgage
+[17:04] payments wherever [music] they live.
+[17:05] Every housing payment earns points you
+[17:07] can use toward flights with top travel
+[17:09] partners like United and Hyatt, Lyft
+[17:10] [music] rides, amazon.com purchases, and
+[17:13] so much more. This is actually pretty
+[17:14] cool and I I some friends that use
+[17:16] [music] this and like a lot. Something
+[17:17] that's underrated is that Built members
+[17:19] also get access to a neighborhood
+[17:20] [music]
+[17:21] concierge. They can make restaurant
+[17:23] reservations, book fitness classes, and
+[17:25] find new local spots, [music]
+[17:26] all while still rewarding you at 45,000
+[17:29] merchant partners. It's like having a
+[17:30] personal assistant baked into where you
+[17:32] live. [music] It's simple. Being a
+[17:34] renter and now owning a home is better
+[17:36] with Built.
+[17:37] >> [music]
+[17:37] >> Make sure to use our URL so they know we
+[17:39] sent you.
+[17:40] And now, back to the episode.
+[17:42] >> Yeah, yeah, yeah. Um okay, I can zoom in
+[17:44] as well, I think. There we go. Um so,
+[17:49] through the plug-in tool with Codex, I
+[17:53] have went in and man and like did the
+[17:55] manual clicks to connect all of the
+[17:57] tools I use every day, like Gmail,
+[17:59] Slack, Notion.
+[18:01] And then, I went to a new chat inside of
+[18:05] this folder that was built through
+[18:08] Claude code. Claude code built this
+[18:10] whole Everycode OS system. There's a
+[18:11] Claude MD file in there, and it's saved
+[18:14] locally. It's also um synced and then
+[18:17] pushed to to GitHub. And so, I just
+[18:19] opened that project inside of Codex when
+[18:20] I started working here. And I uh start a
+[18:24] compound engineering brainstorm
+[18:26] workflow, cuz it is again just kind of
+[18:28] like a thing I reach for of let let's
+[18:29] think about this thing together, me and
+[18:31] the me and the model.
+[18:33] And basically what I said is like, go
+[18:35] take a look at the things I use the
+[18:36] most, which are Notion, Slack, and
+[18:38] Gmail.
+[18:39] And think of some automations that would
+[18:42] help me with my work. I I find that when
+[18:44] I'm trying something new, whether it's a
+[18:46] model or an app, um
+[18:48] having an agent, having a very smart
+[18:50] frontier model like tell me how to use
+[18:53] it, tell me what it should do is like
+[18:55] exactly where I want to start rather
+[18:57] than thinking of it myself. I usually
+[18:59] start here. Sometimes I will describe a
+[19:00] very specific problem, but this is very
+[19:03] helpful for me and I think a good
+[19:04] generic problem for people to start
+[19:06] with.
+[19:06] And uh Codex comes back. It looks at
+[19:10] what's going on for me and for the
+[19:12] company right now. And um I thought
+[19:15] these were really good that like um
+[19:18] it has this kind of follow-up radar.
+[19:20] This is a big thing that happens with
+[19:21] people who do knowledge work, who do
+[19:23] partnerships, who do social media
+[19:25] marketing that there's all this stuff
+[19:27] coming at you across a bunch of
+[19:28] different sources. Like what if it
+[19:30] handled the triage for you? Um what if
+[19:34] it had this kind of like command sensor
+[19:36] when we run a a camp or an event which
+[19:38] usually requires a bunch of moving
+[19:40] pieces and and moving parts.
+[19:42] Uh
+[19:42] like they mentioned for recruiting and
+[19:44] hiring, we don't use a tool like Ashby
+[19:46] or something. We kind of have it all
+[19:48] synced through Notion because
+[19:51] uh apps like this and agents can kind of
+[19:53] like handle a lot of the pipeline and
+[19:55] tracking work for us and you can just
+[19:57] ask it to automate it for you.
+[19:59] And so it it does that and it asks me
+[20:01] like
+[20:03] which ones look good, what do you want
+[20:04] to tweak? For the for the sake of this
+[20:06] demo, I didn't give it any real
+[20:08] feedback. I was like looks good. And um
+[20:11] this is actually the thing I've always
+[20:13] been most impressed with Codex for and
+[20:15] and for the models is that it's like
+[20:17] great, I made this automation for you.
+[20:19] And I do find that they just work
+[20:20] incredibly well. They require very
+[20:22] little tweaking to be like this is a
+[20:24] thing I would and do use every day. Uh
+[20:28] there's this set of instructions that it
+[20:31] comes up with based on what it knows
+[20:32] about me. I can change when it runs. I
+[20:35] can give it additional insights. I can
+[20:37] connect it to other things. But mostly
+[20:39] it just works. There's there's one that
+[20:41] works for me that just at the end of
+[20:42] each day now compiles all of the stuff
+[20:45] that I haven't responded to yet, drafts
+[20:47] the replies, and we can kind of like
+[20:49] knock it out together of what to say or
+[20:51] like actually all I need to do is just
+[20:52] give like a thumbs up Slack reaction or
+[20:54] something and it'll do that for me. It's
+[20:56] kind of like a like a dumb agent. Like I
+[20:59] think of agents like this is like the
+[21:00] dumb ones that just do the right thing
+[21:02] every time. And then the smart ones like
+[21:05] an open claw or a a one of the projects
+[21:07] we have coming that's like you'll work
+[21:09] back and forth with it and like have a
+[21:11] have like a more of like a creative
+[21:13] strategic partner. And Codex is good at
+[21:16] building both and I can I can show kind
+[21:17] of like the smart agent setup, but if
+[21:20] someone is looking to be like, "Can I
+[21:21] see what this thing can do to help me
+[21:23] with knowledge work?" I would start here
+[21:25] in like a brainstorming automation state
+[21:27] because it is and I think you'll also be
+[21:29] surprised by how fast it is and you're
+[21:30] like, "Oh, I'm starting to get what this
+[21:31] thing can do."
+[21:33] >> This is so sick. I your your Codex is
+[21:37] just far surpassing mine in terms of
+[21:39] interestingness.
+[21:40] >> [laughter]
+[21:41] >> I'm getting a lot of ideas.
+[21:43] Um, I want to just actually pause here.
+[21:45] Normally we take questions at the end,
+[21:47] but I think it would be kind of
+[21:47] interesting. If you have a question
+[21:49] about what Austin has just showed, it
+[21:51] would be nice to let people come up and
+[21:54] um just ask a question or two just to
+[21:56] see what the vibe of the room is like.
+[21:59] Um, so please raise your hand uh if you
+[22:01] have a question
+[22:02] and we will uh
+[22:05] call on you.
+[22:07] Uh Margaret, welcome. Uh please uh
+[22:10] introduce yourself and ask your
+[22:11] question.
+[22:12] >> Hi. Can you hear me? I'm Margaret. I'm
+[22:15] in Plymouth. Um and my question is what
+[22:20] does your review step look like? So,
+[22:23] it's um saying don't send, post,
+[22:25] archive, or modify without explicit
+[22:27] approval.
+[22:28] So, what does that look like? Is that
+[22:31] like do you call up say, "Hey, let's do
+[22:33] the review flow now?" Or does it do we
+[22:35] push notifications to your phone or
+[22:37] what? Thanks.
+[22:39] >> Yeah, so um for this, what I prefer and
+[22:42] I was actually talking to a a friend at
+[22:43] dinner last night who said they did the
+[22:45] same thing on their own. They came up
+[22:47] with this too is like everything I I
+[22:49] work primarily in Codex. I do all the
+[22:51] drafting and setup in Codex and then
+[22:54] it's helpful for my brain to have the
+[22:56] final review step actually live in the
+[22:58] external app. So, it will draft all the
+[23:01] Slack messages and then I can go to
+[23:02] Slack where Slack has that like draft
+[23:05] reply um tab, and I can go and knock
+[23:07] them out. And I do find that it it like
+[23:10] uh freshens up my my brain a bit to be
+[23:12] like, "Here's where I'll just make sure
+[23:13] that this is what I want to send to a
+[23:15] human being." Uh same thing for email.
+[23:17] It like creates all of these drafts in
+[23:20] uh in Gmail, and I'll actually go open
+[23:22] Gmail and look at them and and knock
+[23:25] them out. I I know some other people who
+[23:27] just have it actually come up inside of
+[23:30] Codex, and they're like, "Yeah, sure,
+[23:31] send it. It looks good there." Um I do
+[23:34] the same thing for strategic planning.
+[23:35] It pushes to a either proof doc uh the
+[23:38] the like agent-friendly markdown file
+[23:40] that Dan made or a Notion doc. I use
+[23:42] them for two different things. And I I
+[23:44] just like for like the last pass before
+[23:47] humans engage with it to step away from
+[23:50] this um agentic space and have a final
+[23:55] check in another surface. That's really
+[23:57] the only time that I'm like leaving the
+[23:59] app to do something.
+[24:02] >> That's brilliant. Thank you.
+[24:04] >> Sweet. All right, we'll do one more, and
+[24:06] then we'll keep going.
+[24:08] Alex, please uh
+[24:10] introduce yourself and ask your
+[24:11] question.
+[24:13] >> Hi. Uh my name is Alex. I'm a musician,
+[24:15] and uh I I do a lot of gigs and get uh
+[24:20] emails from clients all the time.
+[24:22] Uh so I have to sort my leads from, you
+[24:24] know, my newsletters and
+[24:26] all that informational stuff. So how do
+[24:28] you make sure that you prompt
+[24:32] uh Codex to um keep those emails safe
+[24:35] for me, the ones that, you know, that
+[24:37] require a personalized response, and and
+[24:40] um I just want to make sure that, you
+[24:42] know, I don't send something that, you
+[24:43] know, loses me money hehe
+[24:46] or something.
+[24:47] >> Yeah.
+[24:48] Um so for me personally, I rely a lot on
+[24:53] Cora, the internal like the the app that
+[24:56] uh Kieran runs at every for like the AI
+[24:59] email assistant that's a part of the
+[25:00] every subscription. It's it's really
+[25:02] helpful now that inside of Cora there is
+[25:05] a
+[25:06] like CLI and an API connector that I can
+[25:10] work in Codex and tell it tell Cora
+[25:14] which is managing my email filtering and
+[25:18] my email rules what I want and what I
+[25:20] value.
+[25:22] The way I do that is the same thing I
+[25:24] would recommend whether you use Cora or
+[25:26] not which is you have the agent
+[25:28] interview you to get an understanding of
+[25:30] what the rules should be. I always find
+[25:33] that I get a better result rather than
+[25:36] saying what I think the rules should be
+[25:39] and so I will I'll do a brain dump using
+[25:41] monologue our speech to text app saying
+[25:44] here's the problem I'm facing my email's
+[25:45] a mess let's figure out how to triage
+[25:48] it. I think it would work perfectly well
+[25:50] if you wanted to try starting it as an
+[25:52] automation in in Codex or a rule in
+[25:54] Codex of saying like I think these are
+[25:56] the things I want to make sure I get. I
+[25:58] think these are the rules I want to set
+[25:59] of like never send anything for me only
+[26:01] draft. I think I want to go through all
+[26:03] emails at 3:00 p.m. on on weekdays but
+[26:07] go take a look at all my email go do a
+[26:09] search spawn sub agents to do a search.
+[26:11] I'm always telling Codex to spawn sub
+[26:13] agents to do different types of work
+[26:15] across different workflows.
+[26:17] And then
+[26:19] come back with a plan. Come back with a
+[26:21] plan for like how you're going to set up
+[26:23] my my email. And then you can read the
+[26:26] plan and see oh it looks like it's
+[26:29] actually going to
+[26:31] brief or summarize or auto archive
+[26:33] something that might lead to making
+[26:35] money for you and that's where you can
+[26:37] tweak it. And then the other step I take
+[26:41] is that I set
+[26:43] reminders for myself
+[26:45] in I used to doist for all of my like
+[26:48] reminder task tracking. It's also
+[26:51] connected to Codex so I can just message
+[26:53] Codex or message by Open Claw and say
+[26:55] like just add this reminder to my
+[26:57] schedule to to check how the new
+[27:00] automation is working
+[27:02] and like do an audit of it. So you can
+[27:04] see like it's been 72 hours. Let's see
+[27:08] if I'm see if I've missed anything. You
+[27:10] can prompt the model to see like what
+[27:12] have you been archiving? And I find that
+[27:14] really helpful, but I I'm really excited
+[27:16] by all of the work our product and GMs
+[27:20] and everyone have been doing to make it
+[27:21] so that I can just prompt Codex or
+[27:24] Claude Code or you know, inside of
+[27:26] cursor any agents to manipulate those
+[27:29] apps how I want. It works really well
+[27:31] with with
+[27:33] our other tools also.
+[27:35] >> Thanks Alex. I will I will add to that
+[27:39] like one of the things that we found
+[27:41] basically because Austin started doing
+[27:42] it, I sort of was like oh, that's really
+[27:44] interesting is that Austin started we
+[27:46] have plus ones which is our hosted Open
+[27:48] Claw. And Austin started setting up his
+[27:50] plus ones with
+[27:52] Codex and Claude Code and realized that
+[27:55] it's just a much better experience.
+[27:58] So rather than for example the earlier
+[28:02] version of plus ones, we had like a
+[28:03] whole dashboard and a whole onboarding
+[28:05] experience where you had to kind of
+[28:07] manually click a bunch of buttons and
+[28:08] give it a lot of context.
+[28:10] It's much easier if we just expose
+[28:13] plus ones via a CLI to
+[28:16] Codex or Claude Code and then you can
+[28:18] just like talk to Codex and it will take
+[28:21] everything it knows about you from your
+[28:22] computer and your past conversations and
+[28:23] throw it into throw it into a plus one
+[28:27] setup and and Austin's showing this and
+[28:29] it's it's like a it's really powerful
+[28:31] and
+[28:32] it's it's part of what I'm saying about
+[28:34] how the world is changing when you
+[28:36] assume every user has access to an agent
+[28:38] like this
+[28:40] because we don't have to have a settings
+[28:42] dashboard. We don't have to have an
+[28:43] onboarding experience. We don't have to
+[28:46] gather as much context manually. It can
+[28:48] just be given to us for free by Codex,
+[28:49] and that's really interesting.
+[28:52] >> Yeah, one of my favorite use cases was I
+[28:54] got I got really inspired by this
+[28:55] interview with Claire Bo did with Lenny
+[28:57] where she said how much of a
+[28:58] breakthrough she had when she stopped
+[29:01] trying to just use an individual open
+[29:03] claw as like a master supercharged open
+[29:07] claw and had this suite of six like
+[29:10] specified open claws. I think that
+[29:12] applies to any kind of like agent like
+[29:15] there's the new
+[29:16] uh chat GPT like provisional agents like
+[29:18] I I got hooked on that and I think
+[29:20] Claire's point was really good. And my
+[29:22] path towards making this suite of agents
+[29:25] to help with the growth function at
+[29:26] Every was just going to Codex, going to
+[29:28] this folder.
+[29:30] Um, I I actually just sent it the
+[29:32] transcript of Claire's interview with
+[29:34] Lenny and said like, "I want to do this
+[29:35] too. Given everything you know about me
+[29:38] and my work, um, make a plan to suggest
+[29:41] six agents that we should provision into
+[29:44] our Slack. Um, consider the fact that we
+[29:47] might want to make some of them notion
+[29:49] custom agents which I find work really
+[29:51] well. It's just like do the same thing
+[29:52] every day every time. Some of them might
+[29:54] need to be smarter automations, but like
+[29:56] do that, come up with the plan." The
+[29:58] plan it made was really good and like I
+[30:00] tweaked it a bit um after seeing it, but
+[30:02] there's that and then now I have this
+[30:04] suite of six agents in our in our Slack
+[30:06] that that work really well for me. They
+[30:08] still break. Like I I find when you're
+[30:10] making open claws and and personal
+[30:12] agents right now like they're going to
+[30:13] you should accept they're going to break
+[30:14] a bit, but the really powerful thing is
+[30:16] that rather than going back and forth
+[30:17] with the agent forgetting frustrated,
+[30:20] um,
+[30:20] I just go to Codex and I'm like, "I I
+[30:22] either screenshot or I can at Slack in
+[30:26] Codex and say like, go find this
+[30:28] conversation where this stupid thing
+[30:30] happened and fix it." And it it does a
+[30:31] really good job of just like changing
+[30:34] the architecture of the agent and making
+[30:36] a fix from there.
+[30:39] I love that. Um, yeah, it's it's just a
+[30:41] it's such a it's such a step change in
+[30:44] how you work and
+[30:46] now now I want to paste that clear
+[30:47] interview, too.
+[30:49] >> [laughter]
+[30:49] >> I want to I want to show one I want to
+[30:50] show one thing that I like this is like
+[30:52] kind of actually my favorite way to use
+[30:53] this stuff for
+[30:54] for for knowledge work.
+[30:56] It's a thing that I like wish I had for
+[30:59] so much of my career cuz this is one of
+[31:01] the most like time consuming to me like
+[31:03] frustrating things about about knowledge
+[31:05] work is that we are doing a a real
+[31:09] go-to-market market public launch for a
+[31:11] plus one we're very excited by it and
+[31:14] we've been having a bunch of
+[31:16] internal meetings and slack
+[31:18] conversations around like
+[31:20] how are we taking this to market? What
+[31:22] is the strategy? What are we going to
+[31:24] do?
+[31:25] Um, and we've done all of the work that
+[31:28] like kind of like only humans can do the
+[31:31] like marketing case the business case
+[31:33] the like the narratives and stuff.
+[31:35] Not all of it is as refined as it needs
+[31:37] to be cuz it still needs to be refined
+[31:38] but it's all sitting somewhere
+[31:40] and
+[31:42] I had all these plans this week to make
+[31:46] the go-to-market plan which is like one
+[31:47] thing I'm responsible for and an
+[31:50] inevitable thing that happens that
+[31:51] happens in everyone's job is like
+[31:53] all this stuff came up like I've got to
+[31:54] do interviews for hiring. We found out
+[31:57] the release date for the new chat GPT
+[31:58] model
+[32:00] and so I had a day I think it was
+[32:02] Tuesday in between meetings where I'm
+[32:04] just kind of like I'm prompting Codex
+[32:06] this way
+[32:08] hey I I kind of done most of the work,
+[32:10] right? Like in our notion every meeting
+[32:12] is recorded in a single place that all
+[32:14] the transcripts are there. We've we
+[32:16] talked about this a bunch in slack. I
+[32:18] have a template for a go-to-market plan
+[32:20] that I really like and I can go to Codex
+[32:24] and say like can you just make the plan?
+[32:26] Like and in my head what I'm thinking is
+[32:28] like maybe it'll get like a six out of
+[32:30] 10 or a seven out of 10 and we can keep
+[32:32] nudging it and I can keep like going
+[32:34] along and so it
+[32:36] it does that. What I'm asking for is
+[32:38] like, why don't you start by doing the
+[32:40] compound engineering brainstorm step to
+[32:42] to just ship a proof doc and I can see
+[32:44] how close you are.
+[32:45] And
+[32:46] um
+[32:47] I one thing that it doesn't really do
+[32:50] super well unless I tell it to and I
+[32:51] want to install this as like a workflow
+[32:54] is that it doesn't go read our calendar
+[32:56] of upcoming posts and launches. And so,
+[32:59] as it was going, I was like, oh, you
+[33:00] always forget this. This is the message
+[33:01] I'm sending of like, actually look at
+[33:03] everything that's scheduled cuz I have
+[33:04] to account but I didn't go to market
+[33:05] plan.
+[33:06] Um and then it makes a
+[33:10] uh it makes a plan as a proof doc. I
+[33:13] went and looked at it and I was like,
+[33:14] again, I I maybe have 5 minutes in
+[33:15] between meetings and I'm like, this is
+[33:17] really good. Like, you kind of have
+[33:18] every you have the architecture enough
+[33:21] that um I want you to like factor in one
+[33:24] other change and then just ship the plan
+[33:28] to Notion. And the plan it shipped to
+[33:30] Notion, I was reading it and I was like,
+[33:33] this is basically
+[33:35] 80 to 90% of the way there and that's
+[33:38] that's not because it I'm relying on the
+[33:40] model to come up with our go-to-market
+[33:43] strategy, it's that I'm relying on the
+[33:45] model to
+[33:46] um look at all of the things that we've
+[33:49] already said thought about the
+[33:50] go-to-market strategy, piece it together
+[33:53] and then review it, right? Come with
+[33:55] what will work what what's not. There's
+[33:58] a lot of important context loading that
+[34:00] happens here where like, it knows what
+[34:01] our target ICP is, it knows what our
+[34:03] goals are, it knows how we think about
+[34:06] narrative positioning. And
+[34:09] before this was possible, the only thing
+[34:12] I could have done was either block off a
+[34:14] whole day to sit and do this or get done
+[34:17] with my work for the day at like 6:00 or
+[34:19] 7:00 and then stay up all night writing
+[34:21] this. And this has been such a
+[34:23] game-changer for me and the the other
+[34:26] part of it that I think I found is
+[34:27] really helpful is that I I don't make
+[34:30] this plan for humans. I make this for
+[34:33] humans and agents and primarily for
+[34:34] humans to understand through agents. And
+[34:37] so when I send it to the team working on
+[34:39] the go-to-market, they can read it and
+[34:42] it's like digestible to humans, but the
+[34:44] the thing that it's really helpful for
+[34:46] is like it's the full plan sectioned off
+[34:48] all in one. And so Brandon, our COO,
+[34:50] who's like deep in this product, can ask
+[34:52] his plus one, can ask Coda, you know,
+[34:54] it's called code, like "Let me know what
+[34:56] Austen's plan is. Like summarize it for
+[34:58] me. Let me know the business case."
+[35:00] Brandon has to come up with the pricing
+[35:01] modeling for the plan, so he can work
+[35:04] with an agent against the plan. And um
+[35:07] as someone who's spent so much time in
+[35:09] my career thinking about like literally
+[35:12] how the the proposal or go-to-market
+[35:14] document looks like, how is it going to
+[35:15] look when I present to the CEO, like
+[35:18] this two-page plan for for like a for a
+[35:20] budget I'm asking for, like is it going
+[35:22] to make sense to their eyes and like
+[35:23] really fine-tuning stuff,
+[35:25] giving up on that and just saying like,
+[35:27] "Is the plan really good? And is it
+[35:28] going to make sense to like Dan's agents
+[35:30] if he approves it?" Um
+[35:32] for to me, it makes me work faster, it
+[35:33] makes the work better, it means that I
+[35:35] don't have to think about all this like
+[35:36] kind of dumb stuff that doesn't matter.
+[35:39] Um
+[35:39] that like it's to me a much more like
+[35:42] powerful and fun way to work.
+[35:44] >> I totally totally agree with that. I you
+[35:46] said so many things that are interesting
+[35:48] there. The first one is just normalize
+[35:50] sending agent documents around.
+[35:52] Um and that's why we have proof.
+[35:55] Uh it's just such an easy way to send
+[35:57] the markdown documents that we generate
+[36:00] to each other and and to review them
+[36:01] together. And it's like there I think
+[36:04] there's this whole strand of AI stuff
+[36:06] that's like make AI write in your voice.
+[36:08] We even do this with spiral, but there's
+[36:10] this other strand of just like normalize
+[36:11] AI writing cuz I would actually prefer
+[36:13] to read your agent's writing than your
+[36:15] writing in a lot of cases because
+[36:18] I know that it's just easier for you to
+[36:20] get all that that thinking together in a
+[36:22] format I can read if you if you have
+[36:24] your agent write it. The the I care
+[36:26] about is
+[36:27] do you stand by it? Have you thought
+[36:29] about it? And if I talk to you about it,
+[36:32] will it be clear that if I talk about a
+[36:34] particular bullet point in it like
+[36:35] you've thought that through?
+[36:37] And as long as we have the trust that
+[36:39] that's going to be the case, then I
+[36:40] absolutely prefer the the agent version.
+[36:45] >> In the future, humans face a new
+[36:47] problem. What do you do when your
+[36:49] computer is doing your work for you?
+[36:52] One answer, think a cloud walk. An idea
+[36:55] by Avery.
+[36:58] >> [music]
+[37:00] >> Avery, the only subscription you need to
+[37:02] stay at the edge of AI.
+[37:05] >> Totally. Like my friend Rachel Karten,
+[37:07] who runs the great like Substack
+[37:09] newsletter Liquid Bio about
+[37:12] social media, had had a really good
+[37:13] piece this week about
+[37:15] frustrations for
+[37:17] people working in social for like every
+[37:20] like this pressure they feel that
+[37:21] everything has to run through AI and the
+[37:24] quality going down. And one reason why
+[37:26] is that there's that dichotomy of like
+[37:28] what do you actually stand behind? Like
+[37:30] are you running something through AI and
+[37:32] you like you maybe your manager did it
+[37:35] and they don't even know what it what it
+[37:36] said. And the thing I love about working
+[37:39] at Avery is like you you show up to a
+[37:41] meeting, you you've like shared an AI
+[37:44] written document ahead of time, and the
+[37:47] expectation is that you're going to
+[37:48] stand behind all of it. That someone
+[37:49] will ask you a question of what's in
+[37:50] that document and you
+[37:52] if you say like, oh, I didn't even know
+[37:54] that was in there, it's like you're
+[37:56] you're you're exposed, right? But the
+[37:58] other nice thing is that we continue to
+[38:01] keep investing in skills and workflows
+[38:04] and tools to kind of ensure that never
+[38:06] happens. Like I have rules inside of
+[38:09] this project file to be like if don't
+[38:12] don't add anything that I haven't like
+[38:14] said in another context. I want your
+[38:17] suggestions. Send your suggestions to me
+[38:18] in the chat, but don't put it in a in a
+[38:21] document. and like
+[38:23] depending on how big the context gets,
+[38:25] these models can follow or not follow
+[38:27] those rules, which is another reason why
+[38:30] I always leave Codex for that final
+[38:33] review before it goes to the like humans
+[38:35] I work with.
+[38:37] >> Yeah. And I I think that that that last
+[38:39] thing that that that I want to point out
+[38:40] that you said is like
+[38:42] a lot of the time
+[38:44] that you spend working is about taking
+[38:47] thinking you've already done and putting
+[38:49] it into a form that other people can
+[38:51] read and consume.
+[38:53] And the important part is doing the
+[38:56] thinking.
+[38:58] There There is something obviously about
+[39:00] like I love writing. Writing is a good
+[39:01] way of thinking. Um and sometimes you
+[39:04] actually want to do the writing yourself
+[39:05] because you want to think about it for
+[39:06] certain types of things and certain
+[39:07] types of people, but there's a lot of
+[39:09] stuff like company strategy where a lot
+[39:11] of the thinking happens out loud
+[39:13] in meetings. And there's also times like
+[39:15] for example, I'm writing something
+[39:17] that's sort of like a
+[39:18] it's like a retrospective on the last
+[39:20] three and a half years of AI and like
+[39:21] where I think we're going.
+[39:22] And
+[39:24] that's so hard to sit down and write,
+[39:26] but it's much easier to just like
+[39:28] dictate. So I just took a monologue note
+[39:29] where I was just like saying stuff and
+[39:31] it I'm using the AI to help me like
+[39:34] figure out what I'm really trying to
+[39:35] say.
+[39:36] And And in those cases, I think it's
+[39:38] just so nice to record stuff, give Codex
+[39:41] access to everything, and then just have
+[39:44] it spit out a strategy doc and go
+[39:46] through it to make sure it it's stuff
+[39:47] you agree with, but it's um such a time
+[39:50] saver and especially if you're someone
+[39:52] who like us and or like me, like you're
+[39:54] in meetings a lot and so
+[39:57] you don't necessarily have huge chunks
+[39:59] of time in your day to like go do a big
+[40:02] strategy document cuz you're just trying
+[40:03] to stay on top of whatever's happening.
+[40:06] It helps you do that in the cracks of
+[40:08] your day and do a lot of that thinking
+[40:09] and I just I love it for that.
+[40:12] >> Yeah, me too. Um
+[40:14] I want to show one more thing before we
+[40:16] get into more questions cuz this is like
+[40:17] I wanted to show kind of like a a more
+[40:19] like mix of knowledge work and
+[40:21] engineering-y stuff that like would
+[40:23] never have been possible without these
+[40:24] kinds of tools and that I really love
+[40:26] Codex for, which is I've been rebuilding
+[40:30] our um KPI tracker every week. Um
+[40:35] I'll just like show it here for a bit.
+[40:37] So um we have so many different parts of
+[40:41] our business at uh at Every. And uh it's
+[40:46] very difficult to
+[40:49] get all of those um data points in one
+[40:53] source of truth in a traditional tool,
+[40:55] like even PostHog, which I really like
+[40:58] and a lot of our data runs through it,
+[40:59] to get one dashboard that is again both
+[41:02] human and human and agent-facing that is
+[41:05] up-to-date with all of the metrics we
+[41:06] care about. I I haven't found a great
+[41:09] solution for just like, you know, going
+[41:11] to PostHog and having it having it do
+[41:13] it. So um we I've been rebuilding our
+[41:16] KPI sheet inside of Notion with the goal
+[41:20] in mind of any anyone can point their
+[41:23] agent to look at it and see how our new
+[41:26] paid subscription trials doing, how our
+[41:28] page views doing, how is uh Monologue
+[41:30] iOS MRR doing, all versus plan, all of
+[41:33] this stuff. Because one, it helps you
+[41:36] work as a human, but it also really
+[41:38] helps you automate agentic work so that
+[41:41] you can say like, if your agent sees
+[41:43] that we're tracking behind on SEO for a
+[41:46] keyword we should be winning on, they
+[41:49] can go just like ship a bunch of landing
+[41:51] pages for us to try to win more on it if
+[41:52] the if the source of truth are good. And
+[41:55] so I have been doing this big kind of
+[41:57] like to me complex uh workflow problem
+[42:00] in Codex of let's build the sheet
+[42:02] together, let's have it live in a Notion
+[42:04] database that all of our agents can
+[42:06] point at, and I've done a bunch of
+[42:08] different versions of it. The first
+[42:10] version was like,
+[42:12] can Codex one-shot this, right? Like it
+[42:14] has all the API keys, it has everything.
+[42:16] I'm happy to give it the context on like
+[42:18] how we measure MRR and everything.
+[42:21] And each time it was like a little off.
+[42:23] It was like maybe 5 to 10% off of the
+[42:26] formatting, the numbers, the framing.
+[42:29] And our MRR our our MRR number can't be
+[42:31] 5% off. Like we can't run a business
+[42:33] where the source of truth is even 3%
+[42:35] off. It has to be just exactly right.
+[42:37] And so the thing that I forced myself to
+[42:39] do and it's weird. Now I'm like it feels
+[42:41] so stupid that I have to do this, but it
+[42:43] makes sense is like I'm going column by
+[42:45] column end to end to ensure each column
+[42:49] is exactly right and defensible because
+[42:52] it's the only way that we can run and
+[42:54] grow the business reliably. And
+[42:56] especially the only way we can we can
+[42:57] confidently unleash agents to go take
+[42:59] actions against what's happening in that
+[43:01] KPI sheet. And um it's it's like it's so
+[43:05] interesting to me that I'm frustrated
+[43:07] that I have to do this that the that the
+[43:08] model can't do it for me. Um but it's
+[43:11] just because of how like powerful these
+[43:12] models have gotten that I expect it to
+[43:13] be able to do it. But um and this is a
+[43:16] thing where I'm like, you know, it's
+[43:17] using um
+[43:19] Notion's Workers Tool, which is this
+[43:21] like dev tool to build always-on tool
+[43:24] calls of our Stripe, of our social. Um
+[43:27] it's like creating little scripts and
+[43:29] stuff. All stuff I don't really
+[43:30] understand, but I understand the
+[43:32] outputs. I understand that the output is
+[43:33] a Notion database that updates every 6
+[43:35] hours with all of our metrics. And it's
+[43:38] just nice that I can do that and I don't
+[43:41] need to hire a consultant to do it or
+[43:44] like I don't need to like um
+[43:46] uh
+[43:47] yeah, take away from our uh like our
+[43:49] engineers' times that that work on our
+[43:51] data. Like I can do this now. And I can
+[43:53] do it just by like prompting the model
+[43:55] and understanding how the metrics are
+[43:57] supposed to work.
+[43:59] >> It's amazing. Uh I can't wait. Is the Do
+[44:02] you think it'll be ready on Monday?
+[44:04] >> It'll be ready on Monday.
+[44:05] yeah.
+[44:06] >> Feeling really good.
+[44:07] >> Cuz we've been I mean just having It
+[44:09] turns out that figuring out how much
+[44:11] money you're making and how much you've
+[44:12] grown is truly a philosophical question,
+[44:15] you know?
+[44:16] Um
+[44:16] and you actually do need to like go in
+[44:18] and like set that frame.
+[44:21] Um
+[44:22] and so we've been dealing with an
+[44:24] outdated sheet cuz it's like
+[44:26] it's pulling numbers, but is are the
+[44:28] numbers correct? You know, even even
+[44:30] outside of AI. Um
+[44:33] and and there's no one way to for
+[44:35] example measure MRR. You just want to do
+[44:37] it the same way every time. So you have
+[44:38] to decide.
+[44:39] And
+[44:41] uh that's kind of it's kind of wild that
+[44:42] it's like almost impossible to tell how
+[44:44] much money you've made in an objective
+[44:45] way. You have to just like pick. But
+[44:48] anyway,
+[44:49] uh that's just the way my brain works. I
+[44:51] want to say before we get into
+[44:52] questions, one other thing that I used
+[44:54] this for that would it like blew my mind
+[44:56] from a knowledge work perspective
+[44:58] is recruiting. So, we're hiring a lot.
+[45:03] And we were looking for an L&D head of
+[45:06] L&D, someone to help us run courses.
+[45:09] And there's this company in New York
+[45:11] called General Assembly, and when I
+[45:12] think about people who've run like
+[45:14] really great courses about technology to
+[45:16] teach people how to get hands-on with
+[45:18] like programming or design or anything
+[45:20] like that. Like they're the company that
+[45:21] I think of from
+[45:22] the like 2010s in New York.
+[45:25] And so
+[45:26] I
+[45:28] my theory was that if we're hiring for
+[45:31] someone to do like build our courses,
+[45:33] they would probably have a good person
+[45:35] probably would have worked at GA. And
+[45:38] Jason, yes. Um
+[45:41] and
+[45:42] I think GA's quality has gone up and
+[45:44] down, but at the beginning they were
+[45:45] amazing.
+[45:47] Um
+[45:48] and uh so what I did was I just said to
+[45:51] Codex, "Hey, like
+[45:53] can you find Can you just get a list of
+[45:55] GA alums? I'm like hiring an an L&D
+[45:58] director.
+[45:59] And then I want you to filter and sort
+[46:01] the list by
+[46:03] people who have subsequently
+[46:05] gotten into AI.
+[46:07] And
+[46:08] it did it. Like it just gave me a list
+[46:10] of people.
+[46:12] The first one I clicked on, it was like
+[46:14] I was like this guy is perfect.
+[46:16] And then I looked and he followed me on
+[46:18] Twitter. So I just DM'd him. And like I
+[46:20] don't know if we're going to end up
+[46:21] working with him, but like it was just
+[46:23] one of those holy light bulb
+[46:24] moments where
+[46:26] normally what we're doing is sorting
+[46:28] through a ton of applications and like
+[46:30] trying to find the right person. I We're
+[46:31] still going to do that, but especially
+[46:33] for any kind of like outbound effort, it
+[46:35] can kind of find that needle in the
+[46:37] haystack that you're looking for really,
+[46:38] really well. So I highly, highly
+[46:40] recommend.
+[46:41] Um
+[46:43] Okay, we've got about 10 minutes left.
+[46:45] Um and I want to take some more time for
+[46:49] questions. So if you got a question,
+[46:51] please uh
+[46:52] uh please raise your hand. One thing
+[46:54] that we have not gotten to actually is
+[46:55] that if you're here, you are getting
+[46:57] Codex credits. Uh Austin, do you want to
+[47:00] uh go through that really quick?
+[47:02] >> Yes. So uh OpenAI has given us a code
+[47:08] I'm about to drop into the chat for 250
+[47:12] attendees of this camp to get a free
+[47:14] month of ChatGPT ChatGPT Pro Lights.
+[47:17] That's about a $100 value. Um and you
+[47:21] can redeem it at this link that uh we
+[47:25] will drop in the chat right now.
+[47:28] >> Sick. So
+[47:28] >> Uh Dan Dan, I'm actually going to I'm
+[47:30] going to Slack it to you so you can drop
+[47:31] it in the chat because for some reason I
+[47:33] don't have access.
+[47:34] >> Okay, I'll do that. Um so yes, this is
+[47:37] this is our gift to you as every
+[47:38] subscriber. We try to do stuff like this
+[47:40] all the time. We've been We've given out
+[47:42] I think we've done um
+[47:44] cursor credits. We've done We've done a
+[47:46] lot of a lot of other stuff. We have
+[47:47] more stuff like this coming. So we just
+[47:49] want you to be able to try these tools,
+[47:51] be at the edge with us, and um
+[47:54] we just love having you as a subscriber.
+[47:57] So here is the link.
+[47:59] It's $100. Oh, Notion, yes, we did give
+[48:01] out Notion. It's $100.
+[48:04] Um
+[48:06] and
+[48:08] uh check it out. We will send it out in
+[48:09] an email. Maybe we actually we may not
+[48:11] send it out in an email because it's
+[48:13] only 200 limited to 250 people and
+[48:15] that's pretty much exactly the number of
+[48:17] people who are here. So, if there's any
+[48:19] left, we will send it. Um
+[48:21] if there is one person there's 251
+[48:24] people here, so there's
+[48:28] uh
+[48:33] So, if uh that person if you let us
+[48:36] know, we'll figure something out for
+[48:37] you.
+[48:38] Um interesting, not available on my
+[48:41] plan.
+[48:42] Um
+[48:46] Okay.
+[48:47] Uh we will have to deal with this. Uh
+[48:50] let us
+[48:53] let us figure out what to do what to do
+[48:55] here. So,
+[48:57] correction, this is only if you do not
+[48:59] have a plan. This is for new users and
+[49:02] we'll try to we'll try to get something
+[49:04] for existing users and send it out as
+[49:07] soon as we can.
+[49:09] Cool.
+[49:10] All right, let's do some questions. Um
+[49:14] Rich, please ask your question.
+[49:19] >> So, I I saw at the beginning you were
+[49:21] using Compound Engineering as kind of
+[49:24] part of your workflow.
+[49:26] Are you using kind of like the
+[49:28] off-the-shelf plugin or is there tweaks
+[49:32] to it and kind of where does that work
+[49:34] and maybe not work when you're outside
+[49:36] of the
+[49:37] you know, kind of code creation
+[49:39] workflow?
+[49:43] >> So, I I find that there's no um
+[49:47] overwhelming need to fork your own
+[49:49] version of Compound Engineering. I used
+[49:52] it for a long time. Um
+[49:55] for all of my knowledge work, and it was
+[49:57] extremely powerful for me. And then, um
+[50:00] maybe about 2 months ago, the the main
+[50:02] thing I noticed was reading the agent's
+[50:04] response to especially the review stage
+[50:09] of watching the reviewers that Kieran
+[50:11] and Trevin had built that are very
+[50:13] specific to engineering.
+[50:15] It it it was like, oh, this like the the
+[50:18] thing you'll see the agent do is say
+[50:20] like, um I'm supposed to go through
+[50:22] through this review step. It looks like
+[50:24] it's designed for engineering. It's
+[50:26] thinking about security and front-end
+[50:29] design when this is a go-to-market plan.
+[50:32] The agent will then like change the
+[50:34] path. The agent will be like, I'm going
+[50:35] to review this for something else rather
+[50:37] than reviewing it for security. And so,
+[50:39] the thing that I did was I went and
+[50:43] forked a version of it that is actually,
+[50:45] um
+[50:46] publicly available on our GitHub called
+[50:49] compound knowledge, which is, uh, built
+[50:52] exclusively for me taking the compound
+[50:55] engineering plugin, which is also public
+[50:57] and you can go fork, and going inside of
+[51:00] I think I started in Claude code, now I
+[51:02] updated it updated it in Codex, and
+[51:04] saying like, I want to tweak this to
+[51:06] general knowledge work. And this is the
+[51:09] thing I was I was referencing around the
+[51:12] like reviewers being much more specific
+[51:14] to knowledge work around like strategic
+[51:17] alignment and and data accuracy.
+[51:19] I think more than anything, this is like
+[51:21] a really fun way to learn, um and a what
+[51:23] fun way to like kind of like push
+[51:24] yourself on using models. You're welcome
+[51:26] just to go use this one. We'll include
+[51:27] it in the in the follow-up email to the
+[51:29] camp. Um but I think it's a cool like I
+[51:32] learned a ton just by doing this. I had
+[51:34] never made like a plugin like this
+[51:36] before. Um and to make your own version
+[51:39] of say you do like social media
+[51:40] marketing and you want to make sure all
+[51:42] the reviews go through your style guide,
+[51:44] your like past performance, um I I got a
+[51:47] ton out of operating this way. If you
+[51:49] just want the compound engineering to
+[51:51] make your work better, it absolutely
+[51:53] works really, really well for knowledge
+[51:54] work just kind of out of the box.
+[51:58] >> Got it. Yeah, no,
+[52:00] interesting particularly using kind of
+[52:03] all the the inner step pieces like
+[52:05] compound that that's still
+[52:08] a
+[52:09] apparently a valuable step for you.
+[52:13] >> Yeah, other compound step is is really
+[52:14] valuable. We have um, inside of our
+[52:17] notion a go-to database of after you're
+[52:21] done with a session,
+[52:24] um, you can send the learnings from the
+[52:25] session to actually a team-wide shared
+[52:28] compound source of truth. Um, whenever
+[52:31] I'm done with any session in Codex or
+[52:33] Cloud Code, the agents are instructed to
+[52:36] ask me, should we compound this, save it
+[52:39] somewhere for the learning, and should
+[52:41] we turn any workflow from the session
+[52:43] into a skill so that we um, can just do
+[52:46] it automatically each time.
+[52:49] >> Got it. Cool. No, I'll check that out.
+[52:50] Thanks.
+[52:51] >> Cool.
+[52:58] >> All right, Rory, please introduce
+[53:00] yourself and ask your question.
+[53:02] >> Hi, my name is Rory and I'm in your
+[53:04] head.
+[53:05] Um, is it Are there anything uh, about
+[53:08] the way you work at every
+[53:11] um, like maybe taking some time after
+[53:15] meetings, like ending them a few minutes
+[53:16] early so that you can do those things
+[53:18] that
+[53:19] um, you'd recommend to teams that are
+[53:21] adopting
+[53:23] workflows like yours?
+[53:28] Is that clear?
+[53:29] >> Uh,
+[53:30] yeah, I I think so. Like, um, but to say
+[53:32] it back to you, like what what I'm
+[53:33] hearing, which is like a very real
+[53:34] challenge here, is that um,
+[53:37] it's
+[53:38] the
+[53:39] it's so exciting and tempting and
+[53:41] alluring to like spend a lot of your day
+[53:44] playing with stuff. Also spend a lot of
+[53:46] your day continuing to push on like
+[53:49] if I just get this automation right or
+[53:51] this tool right, my work is going to be
+[53:54] at like 100 times better and easier. And
+[53:58] I actually find myself a lot like on a
+[53:59] lot of days spending most of my time not
+[54:01] in meetings trying to build really good
+[54:04] tools and automations that work well and
+[54:07] not making the time to do the actual
+[54:10] like tasks that have to push the the
+[54:12] business forward like like uh shipping
+[54:15] the social posts for the day or or
+[54:17] whatever. And I I don't really have like
+[54:20] an awesome answer for it that outside of
+[54:22] the fact that like the the playing
+[54:24] around one is like kind of core to how
+[54:26] we operate at every. It's it's a thing
+[54:28] that Dan like pushes all of us to do.
+[54:30] It's one reason why I love working here.
+[54:32] It's also like
+[54:33] to me the best way to learn and and
+[54:35] makes me better at everything I do. And
+[54:37] then um the the the only kind of like
+[54:40] guidance I've given myself is that like
+[54:43] these automations in Coda X
+[54:46] keep me on track to get the work done so
+[54:48] that when I'm too deep in
+[54:51] um in like playing around and building
+[54:53] this like there's like a social
+[54:55] automation tool I'm working on that I've
+[54:56] been like deep in for a while. Um the
+[54:58] Coda X automations make it so that I
+[55:00] like, you know, make sure Brandon gets
+[55:02] what he needs for this like um some like
+[55:05] biz dev plan we're we're doing.
+[55:08] I I do find myself over indexing on
+[55:09] learning and and playing because of how
+[55:12] exciting and powerful the models have
+[55:14] been and that more after
+[55:16] like continue to pull myself into the
+[55:19] the like required day-to-day tasks and
+[55:21] the the urgent stuff that's happening.
+[55:23] >> Yeah. And I I also sort of read your
+[55:24] question, Rory, and you tell me if this
+[55:26] is wrong, but as like how do we do more
+[55:29] of the AI stuff, the more of the playing
+[55:32] even
+[55:33] even
+[55:34] get started on this stuff in our
+[55:36] day-to-day
+[55:37] uh if we're like busy all the time. And
+[55:40] I and what are the organizational
+[55:41] practices that we have for that? And
+[55:43] yeah, I just think like Austin said like
+[55:45] it's just like a culture it's a cultural
+[55:47] thing. Um we just love playing around
+[55:49] and that's like that's part of our job.
+[55:52] Um and I think there's this
+[55:56] there's this thing happening right now
+[55:57] where the tools and the workflows are
+[55:59] changing so fast
+[56:01] that
+[56:02] just focusing on how your job currently
+[56:04] works you you can run as fast as
+[56:06] possible and someone using a new tool
+[56:08] with a new paradigm and a new workflow
+[56:10] is just going to beat you by default.
+[56:11] And so if you just give yourself some
+[56:14] time to play around it may feel like a
+[56:16] waste of time, but you're leveling
+[56:17] yourself up to a different game at a
+[56:19] different level. And I think that's
+[56:20] really important and some of the
+[56:22] organizational practices that we have to
+[56:24] help people do that are really around so
+[56:26] one of the things we do twice a year is
+[56:28] called Think Week.
+[56:29] Um and we just literally don't do any of
+[56:32] our day-to-day work and we just spend a
+[56:33] week together just like playing around
+[56:35] with new stuff and building stuff and
+[56:37] learning and and being together and
+[56:40] you don't necessarily have to do a whole
+[56:41] week of that, but
+[56:43] um I think it's really good to maybe do
+[56:44] that once a quarter for a day or
+[56:46] something like that. Um and just give
+[56:47] people the the time and space to if if
+[56:49] you can.
+[56:56] Sweet.
+[56:57] Um all right, y'all. So that is our
+[57:00] program for today. Thank you for coming.
+[57:03] Uh we love seeing you. We love doing
+[57:04] this with you. Remember Every is the
+[57:07] only subscription you need to stay at
+[57:08] the edge of AI. We would love it if
+[57:10] today you would go tell one of your
+[57:12] friends to go subscribe to Every. Um we
+[57:15] want to get more people in here. We just
+[57:17] think we're we're right at this amazing
+[57:20] point in history where we get to surf
+[57:22] ride this big wave together and figure
+[57:23] it out together together. And um please
+[57:27] please tell your friends.
+[57:29] See See
+[57:30] >> Thanks, y'all.
+[57:39] >> Oh my gosh, folks. You absolutely,
+[57:41] positively have to smash that like
+[57:43] button and subscribe to AI and I. Why?
+[57:46] Because this show is the epitome of
+[57:48] awesomeness. It's like finding a
+[57:49] treasure chest in your backyard, but
+[57:51] instead of gold, it's filled with pure,
+[57:53] unadulterated knowledge bombs about
+[57:55] ChatGPT.
+[57:57] Every episode is a roller coaster of
+[57:59] emotions, insights, and laughter that
+[58:01] will leave you on the edge of your seat
+[58:03] craving for more. It's not just a show,
+[58:06] it's a journey into the future with Dan
+[58:08] Shipper as the captain of the spaceship.
+[58:11] So, do yourself a favor. Hit like, smash
+[58:13] subscribe, and strap in for the ride of
+[58:15] your life. And now, without any further
+[58:18] ado, let me just say, Dan, I'm
+[58:20] absolutely, hopelessly in love with you.

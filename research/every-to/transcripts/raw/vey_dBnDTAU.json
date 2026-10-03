@@ -1,0 +1,4234 @@
+{
+  "meta": {
+    "video_id": "vey_dBnDTAU",
+    "url": "https://www.youtube.com/watch?v=vey_dBnDTAU",
+    "language": "English",
+    "language_code": "en",
+    "is_auto_generated": false,
+    "availability": {
+      "status": "available"
+    },
+    "fetched_via": "TubeAlfred youtube_video_transcript"
+  },
+  "transcript": [
+    {
+      "text": "Hey, it's Dan Shipper, and this week I'm excited to share a very special episode of",
+      "start_ms": "0",
+      "end_ms": "5100",
+      "start_time_text": "0:00"
+    },
+    {
+      "text": "AI & I.",
+      "start_ms": "5100",
+      "end_ms": "5640",
+      "start_time_text": "0:05"
+    },
+    {
+      "text": "In this episode, we're previewing the release of an experimental new plugin called",
+      "start_ms": "5860",
+      "end_ms": "9920",
+      "start_time_text": "0:05"
+    },
+    {
+      "text": "Compound Writing, which helps you write with AI the way that we do internally.",
+      "start_ms": "9920",
+      "end_ms": "13400",
+      "start_time_text": "0:09"
+    },
+    {
+      "text": "It's inspired by Kieran Klassen's Compound Engineering, and it's built by one of our",
+      "start_ms": "14040",
+      "end_ms": "18160",
+      "start_time_text": "0:14"
+    },
+    {
+      "text": "staff writers, Katie Parrott.",
+      "start_ms": "18160",
+      "end_ms": "19180",
+      "start_time_text": "0:18"
+    },
+    {
+      "text": "To help talk about this plugin and why Katie made it and how she uses it, Natalia",
+      "start_ms": "19360",
+      "end_ms": "24040",
+      "start_time_text": "0:19"
+    },
+    {
+      "text": "Quintero is the host of this episode.",
+      "start_ms": "24040",
+      "end_ms": "25939.999999999996",
+      "start_time_text": "0:24"
+    },
+    {
+      "text": "She's our head of AI consulting, thing.",
+      "start_ms": "26100",
+      "end_ms": "27620",
+      "start_time_text": "0:26"
+    },
+    {
+      "text": "And she's been on the podcast a few times, and she's just an incredible interviewer.",
+      "start_ms": "28200",
+      "end_ms": "31599.999999999996",
+      "start_time_text": "0:28"
+    },
+    {
+      "text": "So I'm really excited for you to hear Katie and Natalia chat.",
+      "start_ms": "31840",
+      "end_ms": "35100",
+      "start_time_text": "0:31"
+    },
+    {
+      "text": "Today we're talking to Katie Parrott, staff writer at Ebery.",
+      "start_ms": "49430",
+      "end_ms": "53190",
+      "start_time_text": "0:49"
+    },
+    {
+      "text": "Katie, if you've been following Ebery for a while now, we'll be very familiar to",
+      "start_ms": "53570",
+      "end_ms": "58730.00000000001",
+      "start_time_text": "0:53"
+    },
+    {
+      "text": "you.",
+      "start_ms": "58730",
+      "end_ms": "58989.99999999999",
+      "start_time_text": "0:58"
+    },
+    {
+      "text": "She's one of our all star writers, and we're so excited to learn more about her",
+      "start_ms": "59230",
+      "end_ms": "64670",
+      "start_time_text": "0:59"
+    },
+    {
+      "text": "writing process and her new plugin today.",
+      "start_ms": "64670",
+      "end_ms": "67430",
+      "start_time_text": "1:04"
+    },
+    {
+      "text": "Hi Katie, how are you?",
+      "start_ms": "68030",
+      "end_ms": "69230",
+      "start_time_text": "1:08"
+    },
+    {
+      "text": "I'm good.",
+      "start_ms": "69230",
+      "end_ms": "70250",
+      "start_time_text": "1:09"
+    },
+    {
+      "text": "How are you?",
+      "start_ms": "70290",
+      "end_ms": "70870",
+      "start_time_text": "1:10"
+    },
+    {
+      "text": "So good.",
+      "start_ms": "71830",
+      "end_ms": "72570",
+      "start_time_text": "1:11"
+    },
+    {
+      "text": "I am so excited for this conversation.",
+      "start_ms": "72690",
+      "end_ms": "74330",
+      "start_time_text": "1:12"
+    },
+    {
+      "text": "I am revealing myself as a Katie fangirl on the podcast.",
+      "start_ms": "75730",
+      "end_ms": "81270.00000000001",
+      "start_time_text": "1:15"
+    },
+    {
+      "text": "It's a mutual fandom.",
+      "start_ms": "81770",
+      "end_ms": "83589.99999999999",
+      "start_time_text": "1:21"
+    },
+    {
+      "text": "Thank you.",
+      "start_ms": "85990",
+      "end_ms": "86670",
+      "start_time_text": "1:25"
+    },
+    {
+      "text": "Okay, so Katie,",
+      "start_ms": "87770",
+      "end_ms": "88789.99999999999",
+      "start_time_text": "1:27"
+    },
+    {
+      "text": "almost exactly two years ago, you wrote one of your most popular pieces for every",
+      "start_ms": "89710",
+      "end_ms": "94970",
+      "start_time_text": "1:29"
+    },
+    {
+      "text": "and it was about how you had just been laid off.",
+      "start_ms": "94970",
+      "end_ms": "97710",
+      "start_time_text": "1:34"
+    },
+    {
+      "text": "And also maybe we're in the middle of a mental health crisis, which you've written",
+      "start_ms": "98310",
+      "end_ms": "102910",
+      "start_time_text": "1:38"
+    },
+    {
+      "text": "publicly about.",
+      "start_ms": "102910",
+      "end_ms": "103710",
+      "start_time_text": "1:42"
+    },
+    {
+      "text": "And you decided to turn to chat TBT as a career coach.",
+      "start_ms": "104770",
+      "end_ms": "109570",
+      "start_time_text": "1:44"
+    },
+    {
+      "text": "But at the time you were also an AI skeptic, which might be crazy to think about now",
+      "start_ms": "110210",
+      "end_ms": "116309.99999999999",
+      "start_time_text": "1:50"
+    },
+    {
+      "text": "given some of the work that you're doing.",
+      "start_ms": "116310",
+      "end_ms": "117890",
+      "start_time_text": "1:56"
+    },
+    {
+      "text": "But can you take us back to that period?",
+      "start_ms": "117910",
+      "end_ms": "120530",
+      "start_time_text": "1:57"
+    },
+    {
+      "text": "What was going on in your career?",
+      "start_ms": "121090",
+      "end_ms": "122630.00000000001",
+      "start_time_text": "2:01"
+    },
+    {
+      "text": "And in that moment in time that led you to turn to chat tbt in the first place.",
+      "start_ms": "123150",
+      "end_ms": "127910.00000000001",
+      "start_time_text": "2:03"
+    },
+    {
+      "text": "Yeah so I had just been let go from a crypto firm where I was working as an editor",
+      "start_ms": "129169.99999999999",
+      "end_ms": "134589.99999999997",
+      "start_time_text": "2:09"
+    },
+    {
+      "text": "and ghostwriter for the for the team and you know that in like in hindsight like it",
+      "start_ms": "134590",
+      "end_ms": "140070",
+      "start_time_text": "2:14"
+    },
+    {
+      "text": "was traumatizing at the time but in hindsight it was like the best thing that ever",
+      "start_ms": "140070",
+      "end_ms": "143090",
+      "start_time_text": "2:20"
+    },
+    {
+      "text": "happened to me because it led me back to every uh and but I was feeling really lost",
+      "start_ms": "143090",
+      "end_ms": "149070",
+      "start_time_text": "2:23"
+    },
+    {
+      "text": "as you mentioned you know I had tried crypto, I had tried in",
+      "start_ms": "149070",
+      "end_ms": "156030",
+      "start_time_text": "2:29"
+    },
+    {
+      "text": "-house, I had tried out -of -house, I had tried all these different things and I",
+      "start_ms": "156030",
+      "end_ms": "159330",
+      "start_time_text": "2:36"
+    },
+    {
+      "text": "felt like I was at the end of what I could do on my own and I really needed an",
+      "start_ms": "159330",
+      "end_ms": "165090",
+      "start_time_text": "2:39"
+    },
+    {
+      "text": "outside perspective but because I was working on a budget with no clear visibility",
+      "start_ms": "165090",
+      "end_ms": "170330",
+      "start_time_text": "2:45"
+    },
+    {
+      "text": "into how long I would be unemployed, hiring a real career coach wasn't really an",
+      "start_ms": "170330",
+      "end_ms": "175350.00000000003",
+      "start_time_text": "2:50"
+    },
+    {
+      "text": "option for me.",
+      "start_ms": "175350",
+      "end_ms": "176150",
+      "start_time_text": "2:55"
+    },
+    {
+      "text": "So I had some exposure to chatgbt at that time.",
+      "start_ms": "176150",
+      "end_ms": "180030",
+      "start_time_text": "2:56"
+    },
+    {
+      "text": "I had actually used it to produce briefs at a previous job as a content marketing",
+      "start_ms": "180590",
+      "end_ms": "187250",
+      "start_time_text": "3:00"
+    },
+    {
+      "text": "manager.",
+      "start_ms": "187250",
+      "end_ms": "187690",
+      "start_time_text": "3:07"
+    },
+    {
+      "text": "We had an agency and I realized,",
+      "start_ms": "187830",
+      "end_ms": "189790.00000000003",
+      "start_time_text": "3:07"
+    },
+    {
+      "text": "I was like hitting a wall of depression at that job and like could not bring myself",
+      "start_ms": "191030",
+      "end_ms": "195570",
+      "start_time_text": "3:11"
+    },
+    {
+      "text": "to put words on a page.",
+      "start_ms": "195570",
+      "end_ms": "197310",
+      "start_time_text": "3:15"
+    },
+    {
+      "text": "But I found that if I used chatgbt to generate some of the repetitive stuff",
+      "start_ms": "197690",
+      "end_ms": "203230",
+      "start_time_text": "3:17"
+    },
+    {
+      "text": "And it became this assistive tool that I used as a tool for thought, which is a",
+      "start_ms": "204490",
+      "end_ms": "210090",
+      "start_time_text": "3:24"
+    },
+    {
+      "text": "phrase I'd also seen Dan use around the same time because I was following every at",
+      "start_ms": "210090",
+      "end_ms": "215470",
+      "start_time_text": "3:30"
+    },
+    {
+      "text": "the time.",
+      "start_ms": "215470",
+      "end_ms": "215990",
+      "start_time_text": "3:35"
+    },
+    {
+      "text": "And so it was kind of that combination of things where I was like, okay, I can't",
+      "start_ms": "216710",
+      "end_ms": "222230.00000000003",
+      "start_time_text": "3:36"
+    },
+    {
+      "text": "afford like $150 an hour, however much a career coach would be, but I can sign up",
+      "start_ms": "222230",
+      "end_ms": "227329.99999999997",
+      "start_time_text": "3:42"
+    },
+    {
+      "text": "for a $20 a month ChatGPT subscription.",
+      "start_ms": "227330",
+      "end_ms": "229830",
+      "start_time_text": "3:47"
+    },
+    {
+      "text": "and get some of that same result of externalizing my thinking and",
+      "start_ms": "229830",
+      "end_ms": "236490",
+      "start_time_text": "3:49"
+    },
+    {
+      "text": "getting an outside perspective and just holding me accountable for",
+      "start_ms": "236490",
+      "end_ms": "242570.00000000003",
+      "start_time_text": "3:56"
+    },
+    {
+      "text": "how I was thinking about my career journey",
+      "start_ms": "242570",
+      "end_ms": "248269.99999999997",
+      "start_time_text": "4:02"
+    },
+    {
+      "text": "and challenging me when I would get a little,",
+      "start_ms": "249190",
+      "end_ms": "251630",
+      "start_time_text": "4:09"
+    },
+    {
+      "text": "like I have a tendency to catastrophize and the worst and it kind of took me out of",
+      "start_ms": "252450",
+      "end_ms": "256719.99999999997",
+      "start_time_text": "4:12"
+    },
+    {
+      "text": "myself in that way too and it was just like a really great experience for me",
+      "start_ms": "256720.00000000003",
+      "end_ms": "263500",
+      "start_time_text": "4:16"
+    },
+    {
+      "text": "and like kind of and it ultimately led me to every so yeah.",
+      "start_ms": "263500",
+      "end_ms": "269200",
+      "start_time_text": "4:23"
+    },
+    {
+      "text": "Yeah it's such a cool post that you wrote and you have you just always have such",
+      "start_ms": "269700",
+      "end_ms": "276320",
+      "start_time_text": "4:29"
+    },
+    {
+      "text": "great zingers in your writing that are just so delightful to read.",
+      "start_ms": "276320",
+      "end_ms": "280960",
+      "start_time_text": "4:36"
+    },
+    {
+      "text": "I hope when we are sharing this on video we can pull up some of the screenshots of",
+      "start_ms": "281740",
+      "end_ms": "286620",
+      "start_time_text": "4:41"
+    },
+    {
+      "text": "just what your chat DPT prompts and screenshots look like because it feels vintage",
+      "start_ms": "286620",
+      "end_ms": "292720",
+      "start_time_text": "4:46"
+    },
+    {
+      "text": "to be looking at chat from two and a half years ago.",
+      "start_ms": "292720",
+      "end_ms": "296860",
+      "start_time_text": "4:52"
+    },
+    {
+      "text": "But in that post you have this really great quote.",
+      "start_ms": "297740",
+      "end_ms": "300500",
+      "start_time_text": "4:57"
+    },
+    {
+      "text": "It's a little lengthy, but I'm going to try to read it because I have a question",
+      "start_ms": "301320",
+      "end_ms": "304920",
+      "start_time_text": "5:01"
+    },
+    {
+      "text": "about it.",
+      "start_ms": "304920",
+      "end_ms": "306040",
+      "start_time_text": "5:04"
+    },
+    {
+      "text": "So you say, one of my favorite things about writing is that I never know what I",
+      "start_ms": "306360",
+      "end_ms": "310760",
+      "start_time_text": "5:06"
+    },
+    {
+      "text": "think until I write it down.",
+      "start_ms": "310760",
+      "end_ms": "312140",
+      "start_time_text": "5:10"
+    },
+    {
+      "text": "But once I write it down, it becomes obvious.",
+      "start_ms": "313160",
+      "end_ms": "315260.00000000006",
+      "start_time_text": "5:13"
+    },
+    {
+      "text": "Ultimately, what's prompting ChatTPT is",
+      "start_ms": "316300",
+      "end_ms": "318460.00000000006",
+      "start_time_text": "5:16"
+    },
+    {
+      "text": "a form of very specific strategic writing.",
+      "start_ms": "319680",
+      "end_ms": "322120",
+      "start_time_text": "5:19"
+    },
+    {
+      "text": "Do I think my experiment with ChatTPT added clarity in my thinking?",
+      "start_ms": "322460",
+      "end_ms": "325320",
+      "start_time_text": "5:22"
+    },
+    {
+      "text": "Yes, it has.",
+      "start_ms": "325760",
+      "end_ms": "326380",
+      "start_time_text": "5:25"
+    },
+    {
+      "text": "But as with so many of these tools, the real work is still mine.",
+      "start_ms": "326760",
+      "end_ms": "329560",
+      "start_time_text": "5:26"
+    },
+    {
+      "text": "Clarity, it turns out, doesn't arrive gift wrapped from a digital assistant or even",
+      "start_ms": "330080",
+      "end_ms": "333940",
+      "start_time_text": "5:30"
+    },
+    {
+      "text": "a human coach.",
+      "start_ms": "333940",
+      "end_ms": "334580",
+      "start_time_text": "5:33"
+    },
+    {
+      "text": "It's something I had to dig out for myself, question by question and prompt by",
+      "start_ms": "334980",
+      "end_ms": "338460.00000000006",
+      "start_time_text": "5:34"
+    },
+    {
+      "text": "prompt.",
+      "start_ms": "338460",
+      "end_ms": "338760",
+      "start_time_text": "5:38"
+    },
+    {
+      "text": "True clarity, direction, and answers come from the process of engaging with the",
+      "start_ms": "338760",
+      "end_ms": "343060",
+      "start_time_text": "5:38"
+    },
+    {
+      "text": "prompts and doing the hard work yourself.",
+      "start_ms": "343060",
+      "end_ms": "344820",
+      "start_time_text": "5:43"
+    },
+    {
+      "text": "AI can help guide the way, but the journey is yours to take.",
+      "start_ms": "345500",
+      "end_ms": "348180",
+      "start_time_text": "5:45"
+    },
+    {
+      "text": "Just so beautiful.",
+      "start_ms": "349420",
+      "end_ms": "350760",
+      "start_time_text": "5:49"
+    },
+    {
+      "text": "Just so, so cool.",
+      "start_ms": "351260",
+      "end_ms": "352400",
+      "start_time_text": "5:51"
+    },
+    {
+      "text": "And, you know, I think one of the things that really resonates with me about your",
+      "start_ms": "353140",
+      "end_ms": "357219.99999999994",
+      "start_time_text": "5:53"
+    },
+    {
+      "text": "writing is that this feels so reflective of my experience using AI, where",
+      "start_ms": "357220",
+      "end_ms": "363020.00000000006",
+      "start_time_text": "5:57"
+    },
+    {
+      "text": "I am attracted to the possibility",
+      "start_ms": "363020",
+      "end_ms": "369599.99999999994",
+      "start_time_text": "6:03"
+    },
+    {
+      "text": "of maybe an easy answer, an easy solve.",
+      "start_ms": "369600",
+      "end_ms": "373100",
+      "start_time_text": "6:09"
+    },
+    {
+      "text": "But actually what I constantly find myself doing is learning something that was",
+      "start_ms": "374080",
+      "end_ms": "379020",
+      "start_time_text": "6:14"
+    },
+    {
+      "text": "always there inside of me, but I had to put some work in and some clarity into to",
+      "start_ms": "379020",
+      "end_ms": "385599.99999999994",
+      "start_time_text": "6:19"
+    },
+    {
+      "text": "like actually get it out of me.",
+      "start_ms": "385600",
+      "end_ms": "387520.00000000006",
+      "start_time_text": "6:25"
+    },
+    {
+      "text": "Can you tell me a little bit more about what using AI in this very early experience",
+      "start_ms": "388520",
+      "end_ms": "393940",
+      "start_time_text": "6:28"
+    },
+    {
+      "text": "and this very kind of practical high -value experience, what it taught you about",
+      "start_ms": "393940",
+      "end_ms": "399340",
+      "start_time_text": "6:33"
+    },
+    {
+      "text": "using AI?",
+      "start_ms": "399340",
+      "end_ms": "400239.99999999994",
+      "start_time_text": "6:39"
+    },
+    {
+      "text": "The first thing it taught me is that I can use AI to make change in my life, which",
+      "start_ms": "401220",
+      "end_ms": "407280.00000000006",
+      "start_time_text": "6:41"
+    },
+    {
+      "text": "is something that I've continued to carry through over the last couple of years.",
+      "start_ms": "407280",
+      "end_ms": "410580",
+      "start_time_text": "6:47"
+    },
+    {
+      "text": "I really judge the technology by the impact it's had practically for me, And the",
+      "start_ms": "411560",
+      "end_ms": "418400",
+      "start_time_text": "6:51"
+    },
+    {
+      "text": "fact that I used the career coach, for example, I remember talking when I got the",
+      "start_ms": "418400",
+      "end_ms": "425239.99999999994",
+      "start_time_text": "6:58"
+    },
+    {
+      "text": "invitation from Kate to write what ultimately became working overtime, my column,",
+      "start_ms": "425240",
+      "end_ms": "431020",
+      "start_time_text": "7:05"
+    },
+    {
+      "text": "I was talking to ChatGPT about whether it was the right step for me to take",
+      "start_ms": "431920",
+      "end_ms": "437640.00000000006",
+      "start_time_text": "7:11"
+    },
+    {
+      "text": "because I was kind of on the fence.",
+      "start_ms": "439160",
+      "end_ms": "441720",
+      "start_time_text": "7:19"
+    },
+    {
+      "text": "It would have been freelancing at the time.",
+      "start_ms": "441860",
+      "end_ms": "443200",
+      "start_time_text": "7:21"
+    },
+    {
+      "text": "I was kind of on the fence about that versus looking for a full -time opportunity.",
+      "start_ms": "443320",
+      "end_ms": "447719.99999999994",
+      "start_time_text": "7:23"
+    },
+    {
+      "text": "And ChachiPT nudged me in the direction of like, well, why not try it in the",
+      "start_ms": "449200",
+      "end_ms": "453900",
+      "start_time_text": "7:29"
+    },
+    {
+      "text": "meantime?",
+      "start_ms": "453900",
+      "end_ms": "454280",
+      "start_time_text": "7:33"
+    },
+    {
+      "text": "And I did that and now I'm here.",
+      "start_ms": "454720",
+      "end_ms": "457540",
+      "start_time_text": "7:34"
+    },
+    {
+      "text": "And throughout my experience with AI, that's really been the thing is that it's",
+      "start_ms": "458400",
+      "end_ms": "464380",
+      "start_time_text": "7:38"
+    },
+    {
+      "text": "given me both the framework for thinking and obviously it's become the thing I think",
+      "start_ms": "464380",
+      "end_ms": "469159.99999999994",
+      "start_time_text": "7:44"
+    },
+    {
+      "text": "about.",
+      "start_ms": "469160",
+      "end_ms": "469600",
+      "start_time_text": "7:49"
+    },
+    {
+      "text": "But it's really just about the fruits of the labor, so to speak,",
+      "start_ms": "470400",
+      "end_ms": "476400",
+      "start_time_text": "7:50"
+    },
+    {
+      "text": "and seeing what AI is able to give back to me.",
+      "start_ms": "477600",
+      "end_ms": "480720",
+      "start_time_text": "7:57"
+    },
+    {
+      "text": "So it sounds like one of the early takeaways that you had in leveraging AI was that",
+      "start_ms": "481060",
+      "end_ms": "486760",
+      "start_time_text": "8:01"
+    },
+    {
+      "text": "you could really get it to be a valuable tool for you.",
+      "start_ms": "486760",
+      "end_ms": "490159.99999999994",
+      "start_time_text": "8:06"
+    },
+    {
+      "text": "And so that reminds me of another post that you wrote that was really popular with",
+      "start_ms": "491320",
+      "end_ms": "498180",
+      "start_time_text": "8:11"
+    },
+    {
+      "text": "the Every Audience.",
+      "start_ms": "498180",
+      "end_ms": "498980",
+      "start_time_text": "8:18"
+    },
+    {
+      "text": "and I believe it's titled AI Turned Me Into a Content Agency of One.",
+      "start_ms": "498980",
+      "end_ms": "505140.00000000006",
+      "start_time_text": "8:18"
+    },
+    {
+      "text": "And early in this post, you talk about how at the time you were a freelancer, so",
+      "start_ms": "506220",
+      "end_ms": "510520.00000000006",
+      "start_time_text": "8:26"
+    },
+    {
+      "text": "this is early 2025, and you realize that you had",
+      "start_ms": "510520",
+      "end_ms": "516980",
+      "start_time_text": "8:30"
+    },
+    {
+      "text": "overcommitted yourself or potentially overcommitted yourself with the number of",
+      "start_ms": "516980",
+      "end_ms": "521900",
+      "start_time_text": "8:36"
+    },
+    {
+      "text": "freelance projects that you had agreed to deliver.",
+      "start_ms": "521900",
+      "end_ms": "524340",
+      "start_time_text": "8:41"
+    },
+    {
+      "text": "And then you go on to list the number of things that you committed to delivering in",
+      "start_ms": "525220",
+      "end_ms": "530120",
+      "start_time_text": "8:45"
+    },
+    {
+      "text": "a two -week period.",
+      "start_ms": "530120",
+      "end_ms": "531060.0000000001",
+      "start_time_text": "8:50"
+    },
+    {
+      "text": "This includes eight blog posts, three ebooks, 24 LinkedIn posts, we're not",
+      "start_ms": "531700",
+      "end_ms": "538680.0000000001",
+      "start_time_text": "8:51"
+    },
+    {
+      "text": "even halfway through, 24 x posts, 16 Instagram posts.",
+      "start_ms": "538680",
+      "end_ms": "543880",
+      "start_time_text": "8:58"
+    },
+    {
+      "text": "I mean, there is just no way I could write this amount of content in a month.",
+      "start_ms": "544120",
+      "end_ms": "549000",
+      "start_time_text": "9:04"
+    },
+    {
+      "text": "How did you learn to do that?",
+      "start_ms": "549560",
+      "end_ms": "552640",
+      "start_time_text": "9:09"
+    },
+    {
+      "text": "How did you learn to use AI to generate this amount of content and at the caliber",
+      "start_ms": "552760",
+      "end_ms": "558600",
+      "start_time_text": "9:12"
+    },
+    {
+      "text": "that I know you deliver?",
+      "start_ms": "558600",
+      "end_ms": "559740",
+      "start_time_text": "9:18"
+    },
+    {
+      "text": "I think around this time was when I was really discovering, like I wouldn't have",
+      "start_ms": "560600",
+      "end_ms": "566440",
+      "start_time_text": "9:20"
+    },
+    {
+      "text": "used this language because it hadn't really become a thing yet, but context",
+      "start_ms": "566440",
+      "end_ms": "570320",
+      "start_time_text": "9:26"
+    },
+    {
+      "text": "engineering.",
+      "start_ms": "570320",
+      "end_ms": "571040.0000000001",
+      "start_time_text": "9:30"
+    },
+    {
+      "text": "And what I realized was if I gave the model a really good foundation in terms of,",
+      "start_ms": "571820",
+      "end_ms": "577580",
+      "start_time_text": "9:31"
+    },
+    {
+      "text": "you know, the brand messaging, product specifics, audience specifics of the",
+      "start_ms": "577580",
+      "end_ms": "582820",
+      "start_time_text": "9:37"
+    },
+    {
+      "text": "companies that I was working for.",
+      "start_ms": "582820",
+      "end_ms": "584500",
+      "start_time_text": "9:42"
+    },
+    {
+      "text": "I could shape the AI outputs toward the direction that I wanted.",
+      "start_ms": "585420",
+      "end_ms": "590219.9999999999",
+      "start_time_text": "9:45"
+    },
+    {
+      "text": "So it was really a lot of foundational work that once that was set, I could kind of",
+      "start_ms": "591080",
+      "end_ms": "596360",
+      "start_time_text": "9:51"
+    },
+    {
+      "text": "just iterate through.",
+      "start_ms": "596360",
+      "end_ms": "597880",
+      "start_time_text": "9:56"
+    },
+    {
+      "text": "And it helped that a lot of the things were content repurposing, which is one of the",
+      "start_ms": "598240",
+      "end_ms": "602400",
+      "start_time_text": "9:58"
+    },
+    {
+      "text": "first things that people were really excited about.",
+      "start_ms": "602400",
+      "end_ms": "604540",
+      "start_time_text": "10:02"
+    },
+    {
+      "text": "you know, one of the first products that Every put out was Spiral, which was all",
+      "start_ms": "604540",
+      "end_ms": "608500",
+      "start_time_text": "10:04"
+    },
+    {
+      "text": "about content repurposing, because that's something that Every was doing a lot.",
+      "start_ms": "608500",
+      "end_ms": "612160",
+      "start_time_text": "10:08"
+    },
+    {
+      "text": "You know, you have a post, you want to turn it into a LinkedIn post, a blog, you",
+      "start_ms": "612320",
+      "end_ms": "616200",
+      "start_time_text": "10:12"
+    },
+    {
+      "text": "know, a Twitter post, a blog post.",
+      "start_ms": "616200",
+      "end_ms": "617800.0000000001",
+      "start_time_text": "10:16"
+    },
+    {
+      "text": "And so",
+      "start_ms": "618020",
+      "end_ms": "618420",
+      "start_time_text": "10:18"
+    },
+    {
+      "text": "yeah, it was just like, I realized, I like, I was like, okay, I'll write through all",
+      "start_ms": "619780",
+      "end_ms": "624339.9999999999",
+      "start_time_text": "10:19"
+    },
+    {
+      "text": "of the surrounding information that the AI needs to do a good job.",
+      "start_ms": "624340",
+      "end_ms": "628260",
+      "start_time_text": "10:24"
+    },
+    {
+      "text": "And then when that like, the The more I put in that work up front, the easier the",
+      "start_ms": "628820",
+      "end_ms": "635200",
+      "start_time_text": "10:28"
+    },
+    {
+      "text": "process got farther down the line.",
+      "start_ms": "635200",
+      "end_ms": "636620",
+      "start_time_text": "10:35"
+    },
+    {
+      "text": "And that's something that I found with my AI experience overall is just like you",
+      "start_ms": "636740",
+      "end_ms": "641260",
+      "start_time_text": "10:36"
+    },
+    {
+      "text": "invest, at first it feels really effortful and you're spending a lot of time setting",
+      "start_ms": "641260",
+      "end_ms": "646760",
+      "start_time_text": "10:41"
+    },
+    {
+      "text": "the scenes, like getting everything lined up, like in terms of your tools and your",
+      "start_ms": "646760",
+      "end_ms": "651420",
+      "start_time_text": "10:46"
+    },
+    {
+      "text": "integrations and your context documents.",
+      "start_ms": "651420",
+      "end_ms": "653680",
+      "start_time_text": "10:51"
+    },
+    {
+      "text": "But when you have that environment set up, you can just kind of run and like run",
+      "start_ms": "653780",
+      "end_ms": "658900",
+      "start_time_text": "10:53"
+    },
+    {
+      "text": "fast.",
+      "start_ms": "658900",
+      "end_ms": "659340",
+      "start_time_text": "10:58"
+    },
+    {
+      "text": "and that's what I was able to do when I over committed myself that that time.",
+      "start_ms": "659340",
+      "end_ms": "664720",
+      "start_time_text": "10:59"
+    },
+    {
+      "text": "Which I did again like six months later.",
+      "start_ms": "665620",
+      "end_ms": "667520",
+      "start_time_text": "11:05"
+    },
+    {
+      "text": "I think this might be a common characteristic of everyone at Emory.",
+      "start_ms": "669420",
+      "end_ms": "674319.9999999999",
+      "start_time_text": "11:09"
+    },
+    {
+      "text": "Can we talk a little bit more about what was in those files and in the context and",
+      "start_ms": "676480",
+      "end_ms": "683260",
+      "start_time_text": "11:16"
+    },
+    {
+      "text": "in the setup that you created to let you fast because I",
+      "start_ms": "683260",
+      "end_ms": "688120",
+      "start_time_text": "11:23"
+    },
+    {
+      "text": "think I remember some of the context files that you shared with us and that I saw",
+      "start_ms": "688120",
+      "end_ms": "694920",
+      "start_time_text": "11:28"
+    },
+    {
+      "text": "around that time.",
+      "start_ms": "694920",
+      "end_ms": "696479.9999999999",
+      "start_time_text": "11:34"
+    },
+    {
+      "text": "But I'm curious, what does that look like?",
+      "start_ms": "696840",
+      "end_ms": "698840",
+      "start_time_text": "11:36"
+    },
+    {
+      "text": "Were they folders that you were sharing?",
+      "start_ms": "698940",
+      "end_ms": "700660.0000000001",
+      "start_time_text": "11:38"
+    },
+    {
+      "text": "Were they projects on Claude?",
+      "start_ms": "700960",
+      "end_ms": "702420.0000000001",
+      "start_time_text": "11:40"
+    },
+    {
+      "text": "Walk me through what some of those things look like.",
+      "start_ms": "702960",
+      "end_ms": "705260",
+      "start_time_text": "11:42"
+    },
+    {
+      "text": "They weren't projects because projects didn't exist yet.",
+      "start_ms": "705760",
+      "end_ms": "708480",
+      "start_time_text": "11:45"
+    },
+    {
+      "text": "and I remember at the time, like at the time projects launched, I thought back to",
+      "start_ms": "708480",
+      "end_ms": "713640",
+      "start_time_text": "11:48"
+    },
+    {
+      "text": "that period I was like I really wish that this had existed when I was doing this",
+      "start_ms": "714090",
+      "end_ms": "717830",
+      "start_time_text": "11:54"
+    },
+    {
+      "text": "because I had to do a lot of manual copy and pasting like I would have my persistent",
+      "start_ms": "717830",
+      "end_ms": "721630",
+      "start_time_text": "11:57"
+    },
+    {
+      "text": "documents and I would just in a Google doc and I would copy and paste into the",
+      "start_ms": "721630",
+      "end_ms": "726050",
+      "start_time_text": "12:01"
+    },
+    {
+      "text": "context windows so that the agent so that it wasn't an agent well I guess maybe it",
+      "start_ms": "726050",
+      "end_ms": "730510",
+      "start_time_text": "12:06"
+    },
+    {
+      "text": "was an agent I don't know but so that the model would have access to that",
+      "start_ms": "730510",
+      "end_ms": "733810",
+      "start_time_text": "12:10"
+    },
+    {
+      "text": "information.",
+      "start_ms": "733810",
+      "end_ms": "734349.9999999999",
+      "start_time_text": "12:13"
+    },
+    {
+      "text": "And it really came from my experience in the content marketing world building style",
+      "start_ms": "734350",
+      "end_ms": "739890",
+      "start_time_text": "12:14"
+    },
+    {
+      "text": "guides.",
+      "start_ms": "739890",
+      "end_ms": "740530",
+      "start_time_text": "12:19"
+    },
+    {
+      "text": "You know, every brand worth its salt has, you know, a source of truth where",
+      "start_ms": "741370",
+      "end_ms": "747930",
+      "start_time_text": "12:21"
+    },
+    {
+      "text": "they document, okay, who is our audience?",
+      "start_ms": "747930",
+      "end_ms": "750329.9999999999",
+      "start_time_text": "12:27"
+    },
+    {
+      "text": "What are their pain points?",
+      "start_ms": "751150",
+      "end_ms": "752670",
+      "start_time_text": "12:31"
+    },
+    {
+      "text": "How does our product map to those pain points?",
+      "start_ms": "753870",
+      "end_ms": "756610",
+      "start_time_text": "12:33"
+    },
+    {
+      "text": "What is our competition and what are our differentiators?",
+      "start_ms": "757490",
+      "end_ms": "760710",
+      "start_time_text": "12:37"
+    },
+    {
+      "text": "These are units of work that I was used to doing as a content manager.",
+      "start_ms": "761630",
+      "end_ms": "768410",
+      "start_time_text": "12:41"
+    },
+    {
+      "text": "I just started with what I was familiar with.",
+      "start_ms": "770510",
+      "end_ms": "772530",
+      "start_time_text": "12:50"
+    },
+    {
+      "text": "I started with what I knew and gave that information to the model.",
+      "start_ms": "772590",
+      "end_ms": "778170.0000000001",
+      "start_time_text": "12:52"
+    },
+    {
+      "text": "It did a good job.",
+      "start_ms": "779550",
+      "end_ms": "781150",
+      "start_time_text": "12:59"
+    },
+    {
+      "text": "At that point I was like, okay, this seems to be working.",
+      "start_ms": "781890",
+      "end_ms": "784630",
+      "start_time_text": "13:01"
+    },
+    {
+      "text": "and then projects came along and I did so suddenly.",
+      "start_ms": "784630",
+      "end_ms": "788050",
+      "start_time_text": "13:04"
+    },
+    {
+      "text": "I didn't have to copy paste anymore because I could use the project documents and I",
+      "start_ms": "788190",
+      "end_ms": "792310.0000000001",
+      "start_time_text": "13:08"
+    },
+    {
+      "text": "could use the custom instructions to sort of set a project up.",
+      "start_ms": "792310",
+      "end_ms": "796209.9999999999",
+      "start_time_text": "13:12"
+    },
+    {
+      "text": "And I had a project for every freelance client.",
+      "start_ms": "796890",
+      "end_ms": "799550",
+      "start_time_text": "13:16"
+    },
+    {
+      "text": "I had a project for every column that I worked on because I was starting to spread",
+      "start_ms": "799730",
+      "end_ms": "806390",
+      "start_time_text": "13:19"
+    },
+    {
+      "text": "out in terms of what I was doing at every at that time.",
+      "start_ms": "806390",
+      "end_ms": "809050",
+      "start_time_text": "13:26"
+    },
+    {
+      "text": "But it all comes down to basic rules of writing and knowing who is our audience,",
+      "start_ms": "809050",
+      "end_ms": "815589.9999999999",
+      "start_time_text": "13:29"
+    },
+    {
+      "text": "you know, what is our different, like what is, what is our differentiated thing that",
+      "start_ms": "816550",
+      "end_ms": "820370",
+      "start_time_text": "13:36"
+    },
+    {
+      "text": "we have to say, and just feeding the AI all of that foundational stuff",
+      "start_ms": "820370",
+      "end_ms": "827350",
+      "start_time_text": "13:40"
+    },
+    {
+      "text": "so that it feels true.",
+      "start_ms": "827350",
+      "end_ms": "830730",
+      "start_time_text": "13:47"
+    },
+    {
+      "text": "So that it kind of has rails to run on.",
+      "start_ms": "830950",
+      "end_ms": "832950",
+      "start_time_text": "13:50"
+    },
+    {
+      "text": "That's what I'm always, I always think of is just like creating guardrails and kind",
+      "start_ms": "833010",
+      "end_ms": "837569.9999999999",
+      "start_time_text": "13:53"
+    },
+    {
+      "text": "of like a fenced in place for the model to play,",
+      "start_ms": "837570",
+      "end_ms": "840770.0000000001",
+      "start_time_text": "13:57"
+    },
+    {
+      "text": "and then you don't have to worry so much about getting something that's completely",
+      "start_ms": "841930",
+      "end_ms": "848609.9999999999",
+      "start_time_text": "14:01"
+    },
+    {
+      "text": "wrong because you're kind of pushing it in the right direction.",
+      "start_ms": "848610",
+      "end_ms": "852150",
+      "start_time_text": "14:08"
+    },
+    {
+      "text": "Right, you've given it a playground.",
+      "start_ms": "853030",
+      "end_ms": "854850",
+      "start_time_text": "14:13"
+    },
+    {
+      "text": "I know this is something that Mike Taylor on our team cares a lot about, you know,",
+      "start_ms": "855350",
+      "end_ms": "859490",
+      "start_time_text": "14:15"
+    },
+    {
+      "text": "having really clean context windows and being very selective of what playground",
+      "start_ms": "859510",
+      "end_ms": "865330",
+      "start_time_text": "14:19"
+    },
+    {
+      "text": "you're giving model.",
+      "start_ms": "865330",
+      "end_ms": "866350",
+      "start_time_text": "14:25"
+    },
+    {
+      "text": "Knowing what you know now and as a writer, what are the things that you think",
+      "start_ms": "866350",
+      "end_ms": "873250",
+      "start_time_text": "14:26"
+    },
+    {
+      "text": "have made it so that your projects are so successful?",
+      "start_ms": "873250",
+      "end_ms": "875490",
+      "start_time_text": "14:33"
+    },
+    {
+      "text": "Is it having a really strong point of view on what good writing is, on what good",
+      "start_ms": "875750",
+      "end_ms": "879550",
+      "start_time_text": "14:35"
+    },
+    {
+      "text": "content marketing is?",
+      "start_ms": "879550",
+      "end_ms": "880670",
+      "start_time_text": "14:39"
+    },
+    {
+      "text": "What are those things that are so important to have a strong perspective on?",
+      "start_ms": "880870",
+      "end_ms": "884690",
+      "start_time_text": "14:40"
+    },
+    {
+      "text": "I think it's less about the",
+      "start_ms": "884690",
+      "end_ms": "890450",
+      "start_time_text": "14:44"
+    },
+    {
+      "text": "writing at first than it is about",
+      "start_ms": "890450",
+      "end_ms": "895190",
+      "start_time_text": "14:50"
+    },
+    {
+      "text": "the other kinds of contacts like the",
+      "start_ms": "895190",
+      "end_ms": "901650.0000000001",
+      "start_time_text": "14:55"
+    },
+    {
+      "text": "data that you're giving it, the frameworks for",
+      "start_ms": "901650",
+      "end_ms": "907970",
+      "start_time_text": "15:01"
+    },
+    {
+      "text": "audience personas and who they should be talking to.",
+      "start_ms": "907970",
+      "end_ms": "912330",
+      "start_time_text": "15:07"
+    },
+    {
+      "text": "Like you need all of that in place before you can even get to stuff like use these",
+      "start_ms": "912330",
+      "end_ms": "917390",
+      "start_time_text": "15:12"
+    },
+    {
+      "text": "words and avoid these words.",
+      "start_ms": "917390",
+      "end_ms": "919150",
+      "start_time_text": "15:17"
+    },
+    {
+      "text": "Like prefer this level of reading difficulty and like strike this tone.",
+      "start_ms": "919450",
+      "end_ms": "925510",
+      "start_time_text": "15:19"
+    },
+    {
+      "text": "Like before you even get to the point where you're sort of messing with that kind of",
+      "start_ms": "925790",
+      "end_ms": "930390",
+      "start_time_text": "15:25"
+    },
+    {
+      "text": "stuff you need to have those foundational elements kind of set up and then like",
+      "start_ms": "930390",
+      "end_ms": "937189.9999999999",
+      "start_time_text": "15:30"
+    },
+    {
+      "text": "you'll we'll be wrestling with this addiction and syntax thing for the rest of",
+      "start_ms": "937190",
+      "end_ms": "940690",
+      "start_time_text": "15:37"
+    },
+    {
+      "text": "forever.",
+      "start_ms": "940690",
+      "end_ms": "941030.0000000001",
+      "start_time_text": "15:40"
+    },
+    {
+      "text": "And when you're referring to the data, what is the data that you would need to to",
+      "start_ms": "943310",
+      "end_ms": "948810",
+      "start_time_text": "15:43"
+    },
+    {
+      "text": "put in there?",
+      "start_ms": "948810",
+      "end_ms": "949510",
+      "start_time_text": "15:48"
+    },
+    {
+      "text": "Well, that's the that's the specifics of the piece.",
+      "start_ms": "949830",
+      "end_ms": "951910.0000000001",
+      "start_time_text": "15:49"
+    },
+    {
+      "text": "So like something that I feel really strongly about it like as like our role as",
+      "start_ms": "952170",
+      "end_ms": "957490",
+      "start_time_text": "15:52"
+    },
+    {
+      "text": "humans in this wonderful world of AI and AI writing specifically is that there's",
+      "start_ms": "957490",
+      "end_ms": "963430.0000000001",
+      "start_time_text": "15:57"
+    },
+    {
+      "text": "sort of a last mile problem in writing in AI and writing, which is AI has that",
+      "start_ms": "963430",
+      "end_ms": "970229.9999999999",
+      "start_time_text": "16:03"
+    },
+    {
+      "text": "knowledge cut off, right?",
+      "start_ms": "970230",
+      "end_ms": "971330",
+      "start_time_text": "16:10"
+    },
+    {
+      "text": "It's always working with data that's several months out of date.",
+      "start_ms": "971670",
+      "end_ms": "975630",
+      "start_time_text": "16:11"
+    },
+    {
+      "text": "And our job as the humans is to close that last mile and provide the real world",
+      "start_ms": "976310",
+      "end_ms": "982290",
+      "start_time_text": "16:16"
+    },
+    {
+      "text": "experiences that AI can't get because they come after the knowledge cut off and it's",
+      "start_ms": "982290",
+      "end_ms": "987630",
+      "start_time_text": "16:22"
+    },
+    {
+      "text": "also out there happening somewhere in the real world and AI is not in the real",
+      "start_ms": "987630",
+      "end_ms": "993790",
+      "start_time_text": "16:27"
+    },
+    {
+      "text": "world, the physical world yet.",
+      "start_ms": "993790",
+      "end_ms": "995530",
+      "start_time_text": "16:33"
+    },
+    {
+      "text": "So when I say research, I'm really talking about the unique or data that it's like",
+      "start_ms": "995530",
+      "end_ms": "1000150",
+      "start_time_text": "16:35"
+    },
+    {
+      "text": "the unique insight so that whether that's like a study that your that your company",
+      "start_ms": "1000150",
+      "end_ms": "1004569.9999999999",
+      "start_time_text": "16:40"
+    },
+    {
+      "text": "has produced or third -party research that you're pulling in which is something that",
+      "start_ms": "1004570",
+      "end_ms": "1009410.0000000001",
+      "start_time_text": "16:44"
+    },
+    {
+      "text": "I love to do in my writing for working overtime it's all of the all of the",
+      "start_ms": "1009410",
+      "end_ms": "1014290",
+      "start_time_text": "16:49"
+    },
+    {
+      "text": "constitutive elements that go into the the writing and the model",
+      "start_ms": "1015530",
+      "end_ms": "1022490",
+      "start_time_text": "16:55"
+    },
+    {
+      "text": "can then work from that.",
+      "start_ms": "1022490",
+      "end_ms": "1023630",
+      "start_time_text": "17:02"
+    },
+    {
+      "text": "But the inputs are really what makes the writing unique.",
+      "start_ms": "1023830",
+      "end_ms": "1028230",
+      "start_time_text": "17:03"
+    },
+    {
+      "text": "I think a lot of times when people are writing with AI, they just kind of go with to",
+      "start_ms": "1029109.9999999999",
+      "end_ms": "1033069.9999999999",
+      "start_time_text": "17:09"
+    },
+    {
+      "text": "it and say, write a blog post about style guides.",
+      "start_ms": "1033069.9999999999",
+      "end_ms": "1036609.9999999999",
+      "start_time_text": "17:13"
+    },
+    {
+      "text": "Let's just use that as an example.",
+      "start_ms": "1036790",
+      "end_ms": "1038170.0000000001",
+      "start_time_text": "17:16"
+    },
+    {
+      "text": "And they don't give it anything to go on.",
+      "start_ms": "1038390.0000000001",
+      "end_ms": "1039990",
+      "start_time_text": "17:18"
+    },
+    {
+      "text": "They're just like, write a style guide, a guide, a post about style guides based on",
+      "start_ms": "1040109.9999999999",
+      "end_ms": "1044770",
+      "start_time_text": "17:20"
+    },
+    {
+      "text": "what you, the model, already know.",
+      "start_ms": "1044770",
+      "end_ms": "1046430.0000000001",
+      "start_time_text": "17:24"
+    },
+    {
+      "text": "But then what the model already knows as commoditized information.",
+      "start_ms": "1046910.0000000001",
+      "end_ms": "1050030",
+      "start_time_text": "17:26"
+    },
+    {
+      "text": "Like that's not useful or interesting.",
+      "start_ms": "1050570",
+      "end_ms": "1052290",
+      "start_time_text": "17:30"
+    },
+    {
+      "text": "So the data is the unique insight, the data point that the model doesn't have",
+      "start_ms": "1052730",
+      "end_ms": "1059730",
+      "start_time_text": "17:32"
+    },
+    {
+      "text": "access to yet, the personal experience, all of those things that are working are",
+      "start_ms": "1059730",
+      "end_ms": "1065930",
+      "start_time_text": "17:39"
+    },
+    {
+      "text": "ultimately going to make the writing unique.",
+      "start_ms": "1065930",
+      "end_ms": "1067730",
+      "start_time_text": "17:45"
+    },
+    {
+      "text": "It all sounds like the documents that you save for what might be a project today or",
+      "start_ms": "1068790",
+      "end_ms": "1074970",
+      "start_time_text": "17:48"
+    },
+    {
+      "text": "what might be maybe like a Codex sort of setup is all of the things that can be",
+      "start_ms": "1074970",
+      "end_ms": "1079170",
+      "start_time_text": "17:54"
+    },
+    {
+      "text": "codified as like good best practices but then what you bring into every piece it's",
+      "start_ms": "1079170",
+      "end_ms": "1084970",
+      "start_time_text": "17:59"
+    },
+    {
+      "text": "like the it's like the quality of the ingredients right so it sounds like what",
+      "start_ms": "1084970",
+      "end_ms": "1088710",
+      "start_time_text": "18:04"
+    },
+    {
+      "text": "you're bringing to the piece it's just the the sort of like freshness quality and",
+      "start_ms": "1088710",
+      "end_ms": "1094110.0000000002",
+      "start_time_text": "18:08"
+    },
+    {
+      "text": "unique elements of the piece that you want to highlight and bring out that only you",
+      "start_ms": "1094110",
+      "end_ms": "1099870",
+      "start_time_text": "18:14"
+    },
+    {
+      "text": "can really bring.",
+      "start_ms": "1099870",
+      "end_ms": "1100610",
+      "start_time_text": "18:19"
+    },
+    {
+      "text": "I love that analogy that's a really good one that's That's pretty much exactly it.",
+      "start_ms": "1101770",
+      "end_ms": "1106510",
+      "start_time_text": "18:21"
+    },
+    {
+      "text": "You know, the model is the kitchen.",
+      "start_ms": "1106630",
+      "end_ms": "1108990",
+      "start_time_text": "18:26"
+    },
+    {
+      "text": "The, you know,",
+      "start_ms": "1110170",
+      "end_ms": "1110630",
+      "start_time_text": "18:30"
+    },
+    {
+      "text": "the, you know,",
+      "start_ms": "1111630",
+      "end_ms": "1113110.0000000002",
+      "start_time_text": "18:31"
+    },
+    {
+      "text": "like structure, like the outline is like chopping and the composition is like",
+      "start_ms": "1114010",
+      "end_ms": "1120150",
+      "start_time_text": "18:34"
+    },
+    {
+      "text": "boiling, but like you need the individual ingredients to be like fresh and",
+      "start_ms": "1120150",
+      "end_ms": "1126770",
+      "start_time_text": "18:40"
+    },
+    {
+      "text": "like good to produce good work.",
+      "start_ms": "1126770",
+      "end_ms": "1129850",
+      "start_time_text": "18:46"
+    },
+    {
+      "text": "Yeah.",
+      "start_ms": "1130570",
+      "end_ms": "1130850",
+      "start_time_text": "18:50"
+    },
+    {
+      "text": "This is actually something that you referenced very early on in this piece in 2025.",
+      "start_ms": "1131510",
+      "end_ms": "1136270",
+      "start_time_text": "18:51"
+    },
+    {
+      "text": "You have this really beautiful quote,",
+      "start_ms": "1136550",
+      "end_ms": "1138470",
+      "start_time_text": "18:56"
+    },
+    {
+      "text": "and I'm sorry to read you your great quotes back to you.",
+      "start_ms": "1139730",
+      "end_ms": "1143610.0000000002",
+      "start_time_text": "18:59"
+    },
+    {
+      "text": "It's horrible.",
+      "start_ms": "1143690",
+      "end_ms": "1144090.0000000002",
+      "start_time_text": "19:03"
+    },
+    {
+      "text": "So you write, Two odd years into my AI journey, I have to admit, AI hasn't just",
+      "start_ms": "1144570",
+      "end_ms": "1150050",
+      "start_time_text": "19:04"
+    },
+    {
+      "text": "helped me produce content faster.",
+      "start_ms": "1150050",
+      "end_ms": "1152110",
+      "start_time_text": "19:10"
+    },
+    {
+      "text": "It has fundamentally changed the scale of what I can do, the limits of what I use to",
+      "start_ms": "1152550",
+      "end_ms": "1157110",
+      "start_time_text": "19:12"
+    },
+    {
+      "text": "bump up against time, energy, capacity are way lower.",
+      "start_ms": "1157110",
+      "end_ms": "1160469.9999999998",
+      "start_time_text": "19:17"
+    },
+    {
+      "text": "And it sounds like that's the recipe, right?",
+      "start_ms": "1161590",
+      "end_ms": "1163649.9999999998",
+      "start_time_text": "19:21"
+    },
+    {
+      "text": "It's like you would always be using the same recipe, but now you don't have to worry",
+      "start_ms": "1163790",
+      "end_ms": "1168129.9999999998",
+      "start_time_text": "19:23"
+    },
+    {
+      "text": "so much about the recipe.",
+      "start_ms": "1168130",
+      "end_ms": "1168990",
+      "start_time_text": "19:28"
+    },
+    {
+      "text": "The recipe is codified.",
+      "start_ms": "1169110",
+      "end_ms": "1170110",
+      "start_time_text": "19:29"
+    },
+    {
+      "text": "Now you can really just come to the table with what is uniquely in your brain.",
+      "start_ms": "1170390",
+      "end_ms": "1175090.0000000002",
+      "start_time_text": "19:30"
+    },
+    {
+      "text": "This is something you also say in the post.",
+      "start_ms": "1175910",
+      "end_ms": "1177650",
+      "start_time_text": "19:35"
+    },
+    {
+      "text": "It's become trite to say that AI frees you to focus on the human elements that truly",
+      "start_ms": "1178010",
+      "end_ms": "1182070",
+      "start_time_text": "19:38"
+    },
+    {
+      "text": "matter, but AI has freed me to focus on the human elements that truly matter.",
+      "start_ms": "1182070",
+      "end_ms": "1186129.9999999998",
+      "start_time_text": "19:42"
+    },
+    {
+      "text": "I remember that one.",
+      "start_ms": "1187550",
+      "end_ms": "1189070",
+      "start_time_text": "19:47"
+    },
+    {
+      "text": "It's magic seeing it from the outside, you know?",
+      "start_ms": "1191210",
+      "end_ms": "1194570",
+      "start_time_text": "19:51"
+    },
+    {
+      "text": "Like, I have no idea how you do it, and it's magical every time that you put another",
+      "start_ms": "1194750",
+      "end_ms": "1200390",
+      "start_time_text": "19:54"
+    },
+    {
+      "text": "piece together.",
+      "start_ms": "1200390",
+      "end_ms": "1201070.0000000002",
+      "start_time_text": "20:00"
+    },
+    {
+      "text": "It's magical to me too.",
+      "start_ms": "1201770",
+      "end_ms": "1203190",
+      "start_time_text": "20:01"
+    },
+    {
+      "text": "Like, that's really all I can say is, like,",
+      "start_ms": "1203710",
+      "end_ms": "1206170",
+      "start_time_text": "20:03"
+    },
+    {
+      "text": "the fact, like, working with AI kind of made me fall in love with writing again,",
+      "start_ms": "1207590",
+      "end_ms": "1212949.9999999998",
+      "start_time_text": "20:07"
+    },
+    {
+      "text": "because for a long time writing to me had just felt like such a slog.",
+      "start_ms": "1212950",
+      "end_ms": "1216970",
+      "start_time_text": "20:12"
+    },
+    {
+      "text": "It was like so effortful.",
+      "start_ms": "1217450",
+      "end_ms": "1219250",
+      "start_time_text": "20:17"
+    },
+    {
+      "text": "I was spending so much like energy and mental capacity just trying to assemble",
+      "start_ms": "1219530",
+      "end_ms": "1225649.9999999998",
+      "start_time_text": "20:19"
+    },
+    {
+      "text": "sentences that I wasn't really paying attention to what the sentences as a whole",
+      "start_ms": "1225650",
+      "end_ms": "1231750",
+      "start_time_text": "20:25"
+    },
+    {
+      "text": "said or like how like or like I was just like this is done I'm gonna get it off my",
+      "start_ms": "1231750",
+      "end_ms": "1237270",
+      "start_time_text": "20:31"
+    },
+    {
+      "text": "plate it's good enough and now with AI I have like the energy left over to spend",
+      "start_ms": "1237270",
+      "end_ms": "1243510",
+      "start_time_text": "20:37"
+    },
+    {
+      "text": "more time wrestling with those harder, bigger picture questions.",
+      "start_ms": "1243510",
+      "end_ms": "1246370",
+      "start_time_text": "20:43"
+    },
+    {
+      "text": "And it's just made writing a lot more fun because it's brought back a feeling of",
+      "start_ms": "1247250",
+      "end_ms": "1251830",
+      "start_time_text": "20:47"
+    },
+    {
+      "text": "exploration and discovery both with the tool, but then also with my own brain and",
+      "start_ms": "1251830",
+      "end_ms": "1258389.9999999998",
+      "start_time_text": "20:51"
+    },
+    {
+      "text": "what I think and like how I bring that to life.",
+      "start_ms": "1258390",
+      "end_ms": "1261530.0000000002",
+      "start_time_text": "20:58"
+    },
+    {
+      "text": "So I want to turn back a moment to,",
+      "start_ms": "1262730",
+      "end_ms": "1266470",
+      "start_time_text": "21:02"
+    },
+    {
+      "text": "you know, there's two things that I admire so much in the way that you use AI",
+      "start_ms": "1267830",
+      "end_ms": "1271870",
+      "start_time_text": "21:07"
+    },
+    {
+      "text": "specifically.",
+      "start_ms": "1271870",
+      "end_ms": "1272629.9999999998",
+      "start_time_text": "21:11"
+    },
+    {
+      "text": "And one is obviously the way in which you use it for writing, but the other is the",
+      "start_ms": "1274050",
+      "end_ms": "1278870",
+      "start_time_text": "21:14"
+    },
+    {
+      "text": "way in which you use it kind of like as a harness for doing your best work.",
+      "start_ms": "1278870",
+      "end_ms": "1283649.9999999998",
+      "start_time_text": "21:18"
+    },
+    {
+      "text": "And you have this really beautiful piece that you wrote in",
+      "start_ms": "1284430",
+      "end_ms": "1290510",
+      "start_time_text": "21:24"
+    },
+    {
+      "text": "about a year ago, so kind of like mid 2025, called AI Solved the Problem that I",
+      "start_ms": "1291090",
+      "end_ms": "1296990",
+      "start_time_text": "21:31"
+    },
+    {
+      "text": "couldn't explain to managers.",
+      "start_ms": "1296990",
+      "end_ms": "1298820",
+      "start_time_text": "21:36"
+    },
+    {
+      "text": "And in this piece, you talk about how or actually, can you tell us a little bit",
+      "start_ms": "1299800",
+      "end_ms": "1306180",
+      "start_time_text": "21:39"
+    },
+    {
+      "text": "about this piece?",
+      "start_ms": "1306180",
+      "end_ms": "1306700",
+      "start_time_text": "21:46"
+    },
+    {
+      "text": "Do you remember what you talked about?",
+      "start_ms": "1306700",
+      "end_ms": "1308460",
+      "start_time_text": "21:46"
+    },
+    {
+      "text": "You hear a lot about AI tools on this show.",
+      "start_ms": "1308920",
+      "end_ms": "1311720",
+      "start_time_text": "21:48"
+    },
+    {
+      "text": "But the one that's truly at the center of your work is your CRM.",
+      "start_ms": "1312160",
+      "end_ms": "1315780",
+      "start_time_text": "21:52"
+    },
+    {
+      "text": "It's where all of your customer context lives and where the work either happens or",
+      "start_ms": "1316040",
+      "end_ms": "1320120",
+      "start_time_text": "21:56"
+    },
+    {
+      "text": "gets missed.",
+      "start_ms": "1320120",
+      "end_ms": "1320739.9999999998",
+      "start_time_text": "22:00"
+    },
+    {
+      "text": "Adio delivers the work that you never had time to focus on before and more.",
+      "start_ms": "1321200",
+      "end_ms": "1325600.0000000002",
+      "start_time_text": "22:01"
+    },
+    {
+      "text": "It picks up leads at 2am, it catches renewals before they slip, and drafts the",
+      "start_ms": "1325600",
+      "end_ms": "1331580",
+      "start_time_text": "22:05"
+    },
+    {
+      "text": "follow -up before you've even thought to send one.",
+      "start_ms": "1331580",
+      "end_ms": "1333919.9999999998",
+      "start_time_text": "22:11"
+    },
+    {
+      "text": "Ask Adio anything about your business from this week's forecast to which deals have",
+      "start_ms": "1334240",
+      "end_ms": "1339400",
+      "start_time_text": "22:14"
+    },
+    {
+      "text": "gone quiet and get the answer in seconds.",
+      "start_ms": "1339400",
+      "end_ms": "1341600.0000000002",
+      "start_time_text": "22:19"
+    },
+    {
+      "text": "And because it's extensible with an API and an MCP, your agents work right alongside",
+      "start_ms": "1342120",
+      "end_ms": "1347800",
+      "start_time_text": "22:22"
+    },
+    {
+      "text": "your team to build pipeline, advance deals, and grow accounts around the clock.",
+      "start_ms": "1347800",
+      "end_ms": "1352600",
+      "start_time_text": "22:27"
+    },
+    {
+      "text": "Try adio for free at adio .com slash every that's adio at o .com slash",
+      "start_ms": "1352600",
+      "end_ms": "1359520",
+      "start_time_text": "22:32"
+    },
+    {
+      "text": "every and now back to the episode This is the piece where I talk about my mental",
+      "start_ms": "1359520",
+      "end_ms": "1365620",
+      "start_time_text": "22:39"
+    },
+    {
+      "text": "health and my crippling anxiety around email",
+      "start_ms": "1365620",
+      "end_ms": "1369239.9999999998",
+      "start_time_text": "22:45"
+    },
+    {
+      "text": "Yeah, so this is a piece that this is this is like one of the most personal and like",
+      "start_ms": "1370160",
+      "end_ms": "1374520",
+      "start_time_text": "22:50"
+    },
+    {
+      "text": "one of my favorite pieces that I wrote because it's about",
+      "start_ms": "1374520",
+      "end_ms": "1378540",
+      "start_time_text": "22:54"
+    },
+    {
+      "text": "AI viewed through a different lens that I think we're used to thinking about it.",
+      "start_ms": "1379600",
+      "end_ms": "1383899.9999999998",
+      "start_time_text": "22:59"
+    },
+    {
+      "text": "We think about AI as a productive technology, right?",
+      "start_ms": "1384040",
+      "end_ms": "1386520",
+      "start_time_text": "23:04"
+    },
+    {
+      "text": "We value it for its ability to produce output and get things out of our, like just",
+      "start_ms": "1386580",
+      "end_ms": "1392520",
+      "start_time_text": "23:06"
+    },
+    {
+      "text": "put stuff out.",
+      "start_ms": "1392520",
+      "end_ms": "1393760",
+      "start_time_text": "23:12"
+    },
+    {
+      "text": "And what I found in my personal experience is that AI is just as powerful as a",
+      "start_ms": "1394080",
+      "end_ms": "1399679.9999999998",
+      "start_time_text": "23:14"
+    },
+    {
+      "text": "supportive technology.",
+      "start_ms": "1399680",
+      "end_ms": "1400880",
+      "start_time_text": "23:19"
+    },
+    {
+      "text": "So I have bipolar disorder.",
+      "start_ms": "1401740",
+      "end_ms": "1404720",
+      "start_time_text": "23:21"
+    },
+    {
+      "text": "I experience spikes of like high energy and honestly frankly I spend a lot more time",
+      "start_ms": "1404720",
+      "end_ms": "1410200",
+      "start_time_text": "23:24"
+    },
+    {
+      "text": "in really lows of depression and what I found is that AI kind of reduces friction in",
+      "start_ms": "1410200",
+      "end_ms": "1416340.0000000002",
+      "start_time_text": "23:30"
+    },
+    {
+      "text": "my life in a way that like makes it easier for me to person.",
+      "start_ms": "1416340",
+      "end_ms": "1419820",
+      "start_time_text": "23:36"
+    },
+    {
+      "text": "It makes it easier for me to work, it makes it easier for me to you know move",
+      "start_ms": "1419920",
+      "end_ms": "1425560.0000000002",
+      "start_time_text": "23:39"
+    },
+    {
+      "text": "through my day -to -day life.",
+      "start_ms": "1425560",
+      "end_ms": "1427560",
+      "start_time_text": "23:45"
+    },
+    {
+      "text": "That's actually become even more true now with agents being able to handle what our",
+      "start_ms": "1427640",
+      "end_ms": "1433860.0000000002",
+      "start_time_text": "23:47"
+    },
+    {
+      "text": "COO, Brandon, calls computer errands.",
+      "start_ms": "1433860",
+      "end_ms": "1436040",
+      "start_time_text": "23:53"
+    },
+    {
+      "text": "So I put off making a primary care physician appointment for like...",
+      "start_ms": "1436640",
+      "end_ms": "1442380",
+      "start_time_text": "23:56"
+    },
+    {
+      "text": "three years and then I realized I could simply tell Codex to go find primary care",
+      "start_ms": "1442390",
+      "end_ms": "1447530.0000000002",
+      "start_time_text": "24:02"
+    },
+    {
+      "text": "physicians near me that take my insurance and are accepting new patients.",
+      "start_ms": "1447530",
+      "end_ms": "1453230",
+      "start_time_text": "24:07"
+    },
+    {
+      "text": "And it went off and found me someone and I booked an appointment.",
+      "start_ms": "1453450",
+      "end_ms": "1456610.0000000002",
+      "start_time_text": "24:13"
+    },
+    {
+      "text": "And that's something that I would never have done.",
+      "start_ms": "1457010",
+      "end_ms": "1458890",
+      "start_time_text": "24:17"
+    },
+    {
+      "text": "I would have just kept procrastinating on it infinitely because of the way my brain",
+      "start_ms": "1459010",
+      "end_ms": "1463030",
+      "start_time_text": "24:19"
+    },
+    {
+      "text": "works and AI was able to help me over that hump and it's done that over and over",
+      "start_ms": "1463030",
+      "end_ms": "1469290",
+      "start_time_text": "24:23"
+    },
+    {
+      "text": "again.",
+      "start_ms": "1469290",
+      "end_ms": "1469629.9999999998",
+      "start_time_text": "24:29"
+    },
+    {
+      "text": "And so like, you know, using Quora to make my inbox more manageable.",
+      "start_ms": "1469630",
+      "end_ms": "1473890",
+      "start_time_text": "24:29"
+    },
+    {
+      "text": "So I'm not confronting a wall of emails, but just the really important ones that",
+      "start_ms": "1473890",
+      "end_ms": "1478630",
+      "start_time_text": "24:33"
+    },
+    {
+      "text": "need my human response.",
+      "start_ms": "1478630",
+      "end_ms": "1480630",
+      "start_time_text": "24:38"
+    },
+    {
+      "text": "That's completely changed my relationship to my inbox because I don't have to like",
+      "start_ms": "1480850",
+      "end_ms": "1485850",
+      "start_time_text": "24:40"
+    },
+    {
+      "text": "go digging and like be like looking for the bomb that is hiding in the, in the, in",
+      "start_ms": "1485850",
+      "end_ms": "1492429.9999999998",
+      "start_time_text": "24:45"
+    },
+    {
+      "text": "the millions of like, uh, things that are just like subscription notices and stuff,",
+      "start_ms": "1492430",
+      "end_ms": "1496790",
+      "start_time_text": "24:52"
+    },
+    {
+      "text": "but the things that need human response has come to me.",
+      "start_ms": "1497050",
+      "end_ms": "1499590",
+      "start_time_text": "24:57"
+    },
+    {
+      "text": "And now I have an automation set up through Codex, and I have it tell me what's in",
+      "start_ms": "1500710",
+      "end_ms": "1505070",
+      "start_time_text": "25:00"
+    },
+    {
+      "text": "my inbox that I need to respond to.",
+      "start_ms": "1505070",
+      "end_ms": "1507870",
+      "start_time_text": "25:05"
+    },
+    {
+      "text": "And so my inbox anxiety has been completely resolved.",
+      "start_ms": "1507990",
+      "end_ms": "1512750",
+      "start_time_text": "25:07"
+    },
+    {
+      "text": "And I've just seen a lot of other ways",
+      "start_ms": "1513290",
+      "end_ms": "1514990",
+      "start_time_text": "25:13"
+    },
+    {
+      "text": "that AI supports me and allows me to work better, not just in terms of",
+      "start_ms": "1516270",
+      "end_ms": "1523070",
+      "start_time_text": "25:16"
+    },
+    {
+      "text": "using it for the output, but using it for everything that surrounds the output.",
+      "start_ms": "1523070",
+      "end_ms": "1526610",
+      "start_time_text": "25:23"
+    },
+    {
+      "text": "Right?",
+      "start_ms": "1527530",
+      "end_ms": "1527550",
+      "start_time_text": "25:27"
+    },
+    {
+      "text": "It's like it's not just the medical appointments, it's the bills, it's the emails,",
+      "start_ms": "1527730",
+      "end_ms": "1531710",
+      "start_time_text": "25:27"
+    },
+    {
+      "text": "it's the tasks that, you know, you'll never really get around to doing like around",
+      "start_ms": "1532290",
+      "end_ms": "1537870",
+      "start_time_text": "25:32"
+    },
+    {
+      "text": "the house or whatever it might be.",
+      "start_ms": "1537870",
+      "end_ms": "1539550",
+      "start_time_text": "25:37"
+    },
+    {
+      "text": "And it does feel to me with AI that I have a little bit more firepower to get to",
+      "start_ms": "1539970",
+      "end_ms": "1546110.0000000002",
+      "start_time_text": "25:39"
+    },
+    {
+      "text": "some of those things.",
+      "start_ms": "1546110",
+      "end_ms": "1547050",
+      "start_time_text": "25:46"
+    },
+    {
+      "text": "You'll love this, Katie.",
+      "start_ms": "1547170",
+      "end_ms": "1548050.0000000002",
+      "start_time_text": "25:47"
+    },
+    {
+      "text": "For the first time in my life, I'm filing insurance -free because Codex is filing my",
+      "start_ms": "1548230",
+      "end_ms": "1555150",
+      "start_time_text": "25:48"
+    },
+    {
+      "text": "insurance reimbursements.",
+      "start_ms": "1555150",
+      "end_ms": "1556890",
+      "start_time_text": "25:55"
+    },
+    {
+      "text": "I would rather pay insurance than how to manually do that.",
+      "start_ms": "1557950",
+      "end_ms": "1562530",
+      "start_time_text": "25:57"
+    },
+    {
+      "text": "And it's exciting to have a tool that I feel like can really work in my favor.",
+      "start_ms": "1562950",
+      "end_ms": "1567330.0000000002",
+      "start_time_text": "26:02"
+    },
+    {
+      "text": "In this particular piece, you talk about that and you say, I've been working at",
+      "start_ms": "1568970",
+      "end_ms": "1575250",
+      "start_time_text": "26:08"
+    },
+    {
+      "text": "Avery for one year now, and that might not sound remarkable, but it feels like a",
+      "start_ms": "1575250",
+      "end_ms": "1579050",
+      "start_time_text": "26:15"
+    },
+    {
+      "text": "milestone.",
+      "start_ms": "1579050",
+      "end_ms": "1579450",
+      "start_time_text": "26:19"
+    },
+    {
+      "text": "For me, the proof of AI's value is the fact that I'm still here doing work I'm proud",
+      "start_ms": "1579450",
+      "end_ms": "1584030",
+      "start_time_text": "26:19"
+    },
+    {
+      "text": "of.",
+      "start_ms": "1584030",
+      "end_ms": "1584930",
+      "start_time_text": "26:24"
+    },
+    {
+      "text": "And it kind of is the greatest measure of success that you get to do more of the",
+      "start_ms": "1585810",
+      "end_ms": "1591129.9999999998",
+      "start_time_text": "26:25"
+    },
+    {
+      "text": "work that you're excited to wake up and do every day.",
+      "start_ms": "1591130",
+      "end_ms": "1594350.0000000002",
+      "start_time_text": "26:31"
+    },
+    {
+      "text": "And to me, that's such a clear AI win.",
+      "start_ms": "1595030",
+      "end_ms": "1597129.9999999998",
+      "start_time_text": "26:35"
+    },
+    {
+      "text": "Can you tell us a little bit more about...",
+      "start_ms": "1597550",
+      "end_ms": "1599430",
+      "start_time_text": "26:37"
+    },
+    {
+      "text": "So we started out with you going to ChatTBT over two years ago and",
+      "start_ms": "1599430",
+      "end_ms": "1606230",
+      "start_time_text": "26:39"
+    },
+    {
+      "text": "asking it to be your AI coach.",
+      "start_ms": "1606230",
+      "end_ms": "1607790",
+      "start_time_text": "26:46"
+    },
+    {
+      "text": "and it's enabled this incredible amount of work that you're doing now.",
+      "start_ms": "1607790",
+      "end_ms": "1612510",
+      "start_time_text": "26:47"
+    },
+    {
+      "text": "You've talked about it in some posts.",
+      "start_ms": "1612710",
+      "end_ms": "1614350.0000000002",
+      "start_time_text": "26:52"
+    },
+    {
+      "text": "Now it looks a little bit more like a Codex project, if I believe.",
+      "start_ms": "1614830",
+      "end_ms": "1617629.9999999998",
+      "start_time_text": "26:54"
+    },
+    {
+      "text": "Can you tell us a little bit more about how that has evolved and what that looks",
+      "start_ms": "1617990",
+      "end_ms": "1621570",
+      "start_time_text": "26:57"
+    },
+    {
+      "text": "like today?",
+      "start_ms": "1621570",
+      "end_ms": "1622189.9999999998",
+      "start_time_text": "27:01"
+    },
+    {
+      "text": "My writing process?",
+      "start_ms": "1623330",
+      "end_ms": "1624550",
+      "start_time_text": "27:03"
+    },
+    {
+      "text": "This is for the kind of career,",
+      "start_ms": "1625630",
+      "end_ms": "1627970",
+      "start_time_text": "27:05"
+    },
+    {
+      "text": "like what the equivalent of your career coach looks like today.",
+      "start_ms": "1628910",
+      "end_ms": "1631910",
+      "start_time_text": "27:08"
+    },
+    {
+      "text": "Oh my gosh, my career coach has evolved so much.",
+      "start_ms": "1632130",
+      "end_ms": "1635850.0000000002",
+      "start_time_text": "27:12"
+    },
+    {
+      "text": "It is now a project inside of my codecs and it has so much more information than",
+      "start_ms": "1635850",
+      "end_ms": "1642550",
+      "start_time_text": "27:15"
+    },
+    {
+      "text": "the first version.",
+      "start_ms": "1642550",
+      "end_ms": "1643629.9999999998",
+      "start_time_text": "27:22"
+    },
+    {
+      "text": "So it has a dossier on me and my role and it has",
+      "start_ms": "1644270",
+      "end_ms": "1651090",
+      "start_time_text": "27:24"
+    },
+    {
+      "text": "context around every and our super top secret brand",
+      "start_ms": "1651090",
+      "end_ms": "1658030",
+      "start_time_text": "27:31"
+    },
+    {
+      "text": "positioning that I got from our head of marketing, Douglas,",
+      "start_ms": "1658030",
+      "end_ms": "1662690",
+      "start_time_text": "27:38"
+    },
+    {
+      "text": "that I was like, okay, if we put, and then what I'm able to do with that is like,",
+      "start_ms": "1663850",
+      "end_ms": "1667310",
+      "start_time_text": "27:43"
+    },
+    {
+      "text": "okay, here's the context on me and my role.",
+      "start_ms": "1667310",
+      "end_ms": "1669389.9999999998",
+      "start_time_text": "27:47"
+    },
+    {
+      "text": "Here's the context on every, how do I put those two things together and what should",
+      "start_ms": "1669530",
+      "end_ms": "1674850",
+      "start_time_text": "27:49"
+    },
+    {
+      "text": "I prioritize to have the biggest impact that I can?",
+      "start_ms": "1674850",
+      "end_ms": "1678870",
+      "start_time_text": "27:54"
+    },
+    {
+      "text": "And so it's helped, it helps me now, now that I'm in a job and not looking, not",
+      "start_ms": "1679870",
+      "end_ms": "1684250",
+      "start_time_text": "27:59"
+    },
+    {
+      "text": "meeting the career coach to help me find a job, it helps me orient myself",
+      "start_ms": "1684250",
+      "end_ms": "1689190",
+      "start_time_text": "28:04"
+    },
+    {
+      "text": "prioritize.",
+      "start_ms": "1689190",
+      "end_ms": "1689990",
+      "start_time_text": "28:09"
+    },
+    {
+      "text": "It does project management for me and now increasingly all of this is happening just",
+      "start_ms": "1690730",
+      "end_ms": "1696370.0000000002",
+      "start_time_text": "28:10"
+    },
+    {
+      "text": "with voice, like with monologue.",
+      "start_ms": "1696370",
+      "end_ms": "1698270",
+      "start_time_text": "28:16"
+    },
+    {
+      "text": "I'd monologue like a ton all day, every day and I'll just like talk to my career",
+      "start_ms": "1698770",
+      "end_ms": "1703750",
+      "start_time_text": "28:18"
+    },
+    {
+      "text": "coach about like I've got four different priorities like what should I, what should",
+      "start_ms": "1703750",
+      "end_ms": "1708570",
+      "start_time_text": "28:23"
+    },
+    {
+      "text": "I, what should I do in what order and it kind of operates as that chief of staff",
+      "start_ms": "1708570",
+      "end_ms": "1714270",
+      "start_time_text": "28:28"
+    },
+    {
+      "text": "that kind of like points me in a direction and says this is the highest impact thing",
+      "start_ms": "1714270",
+      "end_ms": "1719310",
+      "start_time_text": "28:34"
+    },
+    {
+      "text": "you can do first, this is like maybe something that you can put off until later, and",
+      "start_ms": "1719310",
+      "end_ms": "1724770",
+      "start_time_text": "28:39"
+    },
+    {
+      "text": "then that like and it just helps do that kind of that kind of work and it maintains",
+      "start_ms": "1724770",
+      "end_ms": "1730889.9999999998",
+      "start_time_text": "28:44"
+    },
+    {
+      "text": "a Kanban board for me.",
+      "start_ms": "1730890",
+      "end_ms": "1732570.0000000002",
+      "start_time_text": "28:50"
+    },
+    {
+      "text": "I've never been a person that can maintain a Kanban board but now I don't even have",
+      "start_ms": "1732830",
+      "end_ms": "1736449.9999999998",
+      "start_time_text": "28:52"
+    },
+    {
+      "text": "to touch it.",
+      "start_ms": "1736450",
+      "end_ms": "1736990",
+      "start_time_text": "28:56"
+    },
+    {
+      "text": "It just lives in this little career coach management project land and I just like",
+      "start_ms": "1736990",
+      "end_ms": "1742590",
+      "start_time_text": "28:56"
+    },
+    {
+      "text": "say like, what's the due date on this deliverable?",
+      "start_ms": "1742590",
+      "end_ms": "1746129.9999999998",
+      "start_time_text": "29:02"
+    },
+    {
+      "text": "And it will tell me.",
+      "start_ms": "1746290",
+      "end_ms": "1746950",
+      "start_time_text": "29:06"
+    },
+    {
+      "text": "Can you tell us a little bit more about how that's set up?",
+      "start_ms": "1747870",
+      "end_ms": "1750790",
+      "start_time_text": "29:07"
+    },
+    {
+      "text": "That sounds incredible.",
+      "start_ms": "1750850",
+      "end_ms": "1751850",
+      "start_time_text": "29:10"
+    },
+    {
+      "text": "So like that's the thing is you kind of forget over time as it starts to work, you",
+      "start_ms": "1752510",
+      "end_ms": "1756270",
+      "start_time_text": "29:12"
+    },
+    {
+      "text": "just take for granted that it's working and you don't think about what's inside it",
+      "start_ms": "1756270",
+      "end_ms": "1759590",
+      "start_time_text": "29:16"
+    },
+    {
+      "text": "so much anymore.",
+      "start_ms": "1759590",
+      "end_ms": "1760290",
+      "start_time_text": "29:19"
+    },
+    {
+      "text": "So let me find career coach mode.",
+      "start_ms": "1761150",
+      "end_ms": "1765330.0000000002",
+      "start_time_text": "29:21"
+    },
+    {
+      "text": "Yeah, so it's got evidence is one of the folders.",
+      "start_ms": "1765930",
+      "end_ms": "1768870.0000000002",
+      "start_time_text": "29:25"
+    },
+    {
+      "text": "So, you know, I periodically scrape all the data out of our content management",
+      "start_ms": "1768870",
+      "end_ms": "1775110",
+      "start_time_text": "29:28"
+    },
+    {
+      "text": "system into a spreadsheet and like I have that so I know like how my posts are",
+      "start_ms": "1775110",
+      "end_ms": "1779669.9999999998",
+      "start_time_text": "29:35"
+    },
+    {
+      "text": "performing.",
+      "start_ms": "1779670",
+      "end_ms": "1780150",
+      "start_time_text": "29:39"
+    },
+    {
+      "text": "It also has like reader feedback and other things like I maintain what I call my",
+      "start_ms": "1780370",
+      "end_ms": "1785649.9999999998",
+      "start_time_text": "29:40"
+    },
+    {
+      "text": "validation folder which is just full of nice things people have said about my work.",
+      "start_ms": "1785650",
+      "end_ms": "1789090.0000000002",
+      "start_time_text": "29:45"
+    },
+    {
+      "text": "That becomes another input because that helps the model understand, okay, what do",
+      "start_ms": "1789350",
+      "end_ms": "1793629.9999999998",
+      "start_time_text": "29:49"
+    },
+    {
+      "text": "people respond positively to in my work that we want to like reinforce.",
+      "start_ms": "1793630",
+      "end_ms": "1797210",
+      "start_time_text": "29:53"
+    },
+    {
+      "text": "It has references, like that's where my role positioning is.",
+      "start_ms": "1797210",
+      "end_ms": "1803190",
+      "start_time_text": "29:57"
+    },
+    {
+      "text": "It has my OKRs for Q2 and now Q3 because somehow it became",
+      "start_ms": "1804310",
+      "end_ms": "1811149.9999999998",
+      "start_time_text": "30:04"
+    },
+    {
+      "text": "Q3 which should not be legal and some other things like that.",
+      "start_ms": "1811150",
+      "end_ms": "1815630",
+      "start_time_text": "30:11"
+    },
+    {
+      "text": "So it just has a ton of these,",
+      "start_ms": "1815770",
+      "end_ms": "1818389.9999999998",
+      "start_time_text": "30:15"
+    },
+    {
+      "text": "again it's all context, it's all documentation that increasingly I don't manually",
+      "start_ms": "1819830",
+      "end_ms": "1826090",
+      "start_time_text": "30:19"
+    },
+    {
+      "text": "create.",
+      "start_ms": "1826090",
+      "end_ms": "1826649.9999999998",
+      "start_time_text": "30:26"
+    },
+    {
+      "text": "I how they I created for me like through an interview process like I'm I'm always",
+      "start_ms": "1826970",
+      "end_ms": "1831010",
+      "start_time_text": "30:26"
+    },
+    {
+      "text": "having AI interview me Alex Duffy gave me that tip early on in my time at every and",
+      "start_ms": "1831010",
+      "end_ms": "1836810",
+      "start_time_text": "30:31"
+    },
+    {
+      "text": "it's just like completely changed how I work with AI because I'll just be like ask",
+      "start_ms": "1836810",
+      "end_ms": "1839889.9999999998",
+      "start_time_text": "30:36"
+    },
+    {
+      "text": "me questions to draw out what I think about this and that's how I was able to pull",
+      "start_ms": "1839890",
+      "end_ms": "1844310.0000000002",
+      "start_time_text": "30:39"
+    },
+    {
+      "text": "together the career coaches like I just said I want to create a career coach you",
+      "start_ms": "1844310",
+      "end_ms": "1849470",
+      "start_time_text": "30:44"
+    },
+    {
+      "text": "know this is what I wanted to do and then I started just showing it a bunch of",
+      "start_ms": "1849470",
+      "end_ms": "1853170",
+      "start_time_text": "30:49"
+    },
+    {
+      "text": "context documents like all of the data from the performances and like my validation",
+      "start_ms": "1853170",
+      "end_ms": "1858190",
+      "start_time_text": "30:53"
+    },
+    {
+      "text": "folder.",
+      "start_ms": "1858190",
+      "end_ms": "1858670",
+      "start_time_text": "30:58"
+    },
+    {
+      "text": "And we just talked until we got to a place where we had a system that worked the way",
+      "start_ms": "1859030",
+      "end_ms": "1863629.9999999998",
+      "start_time_text": "30:59"
+    },
+    {
+      "text": "that I kind of like had envisioned in my mind.",
+      "start_ms": "1863630",
+      "end_ms": "1866590.0000000002",
+      "start_time_text": "31:03"
+    },
+    {
+      "text": "So in two years, which is, you know, a lot of time in AI time, but in two years, you",
+      "start_ms": "1867690",
+      "end_ms": "1874290",
+      "start_time_text": "31:07"
+    },
+    {
+      "text": "went from",
+      "start_ms": "1874290",
+      "end_ms": "1875030",
+      "start_time_text": "31:14"
+    },
+    {
+      "text": "prompting a simple prompt on chat TBT, you know, how can you help me as a career",
+      "start_ms": "1876610",
+      "end_ms": "1880990",
+      "start_time_text": "31:16"
+    },
+    {
+      "text": "coach to having a fully autonomous codec setup that maintains your to -do list,",
+      "start_ms": "1880990",
+      "end_ms": "1887690",
+      "start_time_text": "31:20"
+    },
+    {
+      "text": "your OKRs, it keeps you on track with a Can -bin board and at this point your",
+      "start_ms": "1888430",
+      "end_ms": "1894730",
+      "start_time_text": "31:28"
+    },
+    {
+      "text": "codecs is maintaining it for you.",
+      "start_ms": "1894730",
+      "end_ms": "1897170",
+      "start_time_text": "31:34"
+    },
+    {
+      "text": "Yes.",
+      "start_ms": "1898470",
+      "end_ms": "1898970",
+      "start_time_text": "31:38"
+    },
+    {
+      "text": "Is that insane?",
+      "start_ms": "1898970",
+      "end_ms": "1899890",
+      "start_time_text": "31:38"
+    },
+    {
+      "text": "So I mean, this is amazing, right?",
+      "start_ms": "1900510",
+      "end_ms": "1901890",
+      "start_time_text": "31:40"
+    },
+    {
+      "text": "I think one of the things that you're uniquely great at is using AI for kind of like",
+      "start_ms": "1902170",
+      "end_ms": "1908810.0000000002",
+      "start_time_text": "31:42"
+    },
+    {
+      "text": "powering your career harness and also your ability to write really, really great",
+      "start_ms": "1908810",
+      "end_ms": "1915350",
+      "start_time_text": "31:48"
+    },
+    {
+      "text": "pieces.",
+      "start_ms": "1915350",
+      "end_ms": "1915810",
+      "start_time_text": "31:55"
+    },
+    {
+      "text": "And so going back to the writing component,",
+      "start_ms": "1916510",
+      "end_ms": "1919210",
+      "start_time_text": "31:56"
+    },
+    {
+      "text": "you know, we talked a little bit about some of the how you've created AI to",
+      "start_ms": "1920230",
+      "end_ms": "1925490",
+      "start_time_text": "32:00"
+    },
+    {
+      "text": "basically kind of like hold the recipe for you, like how you think about good",
+      "start_ms": "1925490",
+      "end_ms": "1929390",
+      "start_time_text": "32:05"
+    },
+    {
+      "text": "writing, and then the elements that you bring to each writing session so that it can",
+      "start_ms": "1929390",
+      "end_ms": "1933810.0000000002",
+      "start_time_text": "32:09"
+    },
+    {
+      "text": "just allow you to do your best work.",
+      "start_ms": "1933810",
+      "end_ms": "1935429.9999999998",
+      "start_time_text": "32:13"
+    },
+    {
+      "text": "And now you are,",
+      "start_ms": "1935430",
+      "end_ms": "1941390",
+      "start_time_text": "32:15"
+    },
+    {
+      "text": "I think by the time that this podcast airs, we will have published your compound",
+      "start_ms": "1942310",
+      "end_ms": "1947429.9999999998",
+      "start_time_text": "32:22"
+    },
+    {
+      "text": "writing plugin.",
+      "start_ms": "1947430",
+      "end_ms": "1949510",
+      "start_time_text": "32:27"
+    },
+    {
+      "text": "Can you tell us a little bit about what compounding is as a concept and then about",
+      "start_ms": "1949990",
+      "end_ms": "1956830",
+      "start_time_text": "32:29"
+    },
+    {
+      "text": "the writing plugin?",
+      "start_ms": "1956830",
+      "end_ms": "1958350",
+      "start_time_text": "32:36"
+    },
+    {
+      "text": "Yeah, so compounding is the idea that every piece of feedback",
+      "start_ms": "1958990",
+      "end_ms": "1965830",
+      "start_time_text": "32:38"
+    },
+    {
+      "text": "that you give to AI should feed back into the system to improve the next output.",
+      "start_ms": "1965830",
+      "end_ms": "1970270",
+      "start_time_text": "32:45"
+    },
+    {
+      "text": "So obviously for folks that follow every they'll be familiar with this from Kieran",
+      "start_ms": "1971070",
+      "end_ms": "1975510",
+      "start_time_text": "32:51"
+    },
+    {
+      "text": "Klassen's compound engineering plugin.",
+      "start_ms": "1975510",
+      "end_ms": "1977810",
+      "start_time_text": "32:55"
+    },
+    {
+      "text": "He was really the one to pioneer this idea that you should only have to give a piece",
+      "start_ms": "1978210",
+      "end_ms": "1982090.0000000002",
+      "start_time_text": "32:58"
+    },
+    {
+      "text": "of feedback once, but if you codify it the right way, it will be there forever and",
+      "start_ms": "1982090",
+      "end_ms": "1988490",
+      "start_time_text": "33:02"
+    },
+    {
+      "text": "the next time you're in that same situation, the AI is going to make a better",
+      "start_ms": "1988490",
+      "end_ms": "1991570",
+      "start_time_text": "33:08"
+    },
+    {
+      "text": "decision.",
+      "start_ms": "1991570",
+      "end_ms": "1991990",
+      "start_time_text": "33:11"
+    },
+    {
+      "text": "And so the Compound Writing plugin, it started, I literally just forked.",
+      "start_ms": "1993170",
+      "end_ms": "1997270",
+      "start_time_text": "33:13"
+    },
+    {
+      "text": "Forked is a word that I know now because I wouldn't have known if I weren't working",
+      "start_ms": "1997870",
+      "end_ms": "2002770",
+      "start_time_text": "33:17"
+    },
+    {
+      "text": "with AI, but I pulled the compound engineering plugin down and talked to",
+      "start_ms": "2002770",
+      "end_ms": "2009750",
+      "start_time_text": "33:22"
+    },
+    {
+      "text": "Claude about it said, I want to take this compound engineering plugin and adapt it",
+      "start_ms": "2009750",
+      "end_ms": "2016150",
+      "start_time_text": "33:29"
+    },
+    {
+      "text": "for writing.",
+      "start_ms": "2016150",
+      "end_ms": "2016650",
+      "start_time_text": "33:36"
+    },
+    {
+      "text": "Because in certain ways, writing is very similar to code.",
+      "start_ms": "2017190",
+      "end_ms": "2020550",
+      "start_time_text": "33:37"
+    },
+    {
+      "text": "Like the compound engineering plugin has brainstorming, ideating, planning,",
+      "start_ms": "2021210",
+      "end_ms": "2026950",
+      "start_time_text": "33:41"
+    },
+    {
+      "text": "working, and then reviewing.",
+      "start_ms": "2028430",
+      "end_ms": "2030310.0000000002",
+      "start_time_text": "33:48"
+    },
+    {
+      "text": "And very similarly, in writing, you have brainstorming, outlining, drafting,",
+      "start_ms": "2030750",
+      "end_ms": "2037530",
+      "start_time_text": "33:50"
+    },
+    {
+      "text": "reviewing.",
+      "start_ms": "2038070",
+      "end_ms": "2038510",
+      "start_time_text": "33:58"
+    },
+    {
+      "text": "and it's kind of a similar kind of flow, but there are also differences.",
+      "start_ms": "2038510",
+      "end_ms": "2043450",
+      "start_time_text": "33:58"
+    },
+    {
+      "text": "Like obviously, I don't need my,",
+      "start_ms": "2043750",
+      "end_ms": "2046210",
+      "start_time_text": "34:03"
+    },
+    {
+      "text": "you know, for writing you're not looking at things like",
+      "start_ms": "2047110",
+      "end_ms": "2050569.9999999998",
+      "start_time_text": "34:07"
+    },
+    {
+      "text": "coding conventions, you're looking for things like structure, voice,",
+      "start_ms": "2051429.9999999998",
+      "end_ms": "2054989.9999999998",
+      "start_time_text": "34:11"
+    },
+    {
+      "text": "evidence, and like all of these kinds of different things.",
+      "start_ms": "2057070.0000000002",
+      "end_ms": "2060110.0000000002",
+      "start_time_text": "34:17"
+    },
+    {
+      "text": "So it's a different, like there's a different, it's a different container, but like",
+      "start_ms": "2060250",
+      "end_ms": "2064130",
+      "start_time_text": "34:20"
+    },
+    {
+      "text": "it just made sense to me.",
+      "start_ms": "2064130",
+      "end_ms": "2065850",
+      "start_time_text": "34:24"
+    },
+    {
+      "text": "So like again, I just talked to Claude and said, you know, I want I want these steps",
+      "start_ms": "2065850",
+      "end_ms": "2071310",
+      "start_time_text": "34:25"
+    },
+    {
+      "text": "in the process I want you know, I want an outline to look like this I want a draft",
+      "start_ms": "2071310",
+      "end_ms": "2078070.0000000002",
+      "start_time_text": "34:31"
+    },
+    {
+      "text": "to be done this way and like these are the kinds of review and then like I want two",
+      "start_ms": "2078070.0000000002",
+      "end_ms": "2081950.0000000002",
+      "start_time_text": "34:38"
+    },
+    {
+      "text": "different kinds of Reviews like a substantive edit That's like the big picture",
+      "start_ms": "2081949.9999999998",
+      "end_ms": "2085929.9999999998",
+      "start_time_text": "34:41"
+    },
+    {
+      "text": "structure in the argument and then a line at it that looks at the individual writing",
+      "start_ms": "2085929.9999999998",
+      "end_ms": "2089409.9999999998",
+      "start_time_text": "34:45"
+    },
+    {
+      "text": "and then a final pass that like looks at like just the final details that you want",
+      "start_ms": "2089409.9999999998",
+      "end_ms": "2094710",
+      "start_time_text": "34:49"
+    },
+    {
+      "text": "something to be publication ready.",
+      "start_ms": "2094710",
+      "end_ms": "2095889.9999999998",
+      "start_time_text": "34:54"
+    },
+    {
+      "text": "And I was able to pull that together just like, I always like all of my best AI",
+      "start_ms": "2096090.0000000002",
+      "end_ms": "2101410.0000000005",
+      "start_time_text": "34:56"
+    },
+    {
+      "text": "ideas, I've ripped off from someone else on the every team.",
+      "start_ms": "2101410",
+      "end_ms": "2104690",
+      "start_time_text": "35:01"
+    },
+    {
+      "text": "So it was very much compound engineering plus Dan's agent native architecture guide",
+      "start_ms": "2105130",
+      "end_ms": "2110670",
+      "start_time_text": "35:05"
+    },
+    {
+      "text": "that kind of combined together to create Compound Writing.",
+      "start_ms": "2110670",
+      "end_ms": "2113110",
+      "start_time_text": "35:10"
+    },
+    {
+      "text": "And now that's what I use all the time for every piece that I write.",
+      "start_ms": "2113470",
+      "end_ms": "2117810",
+      "start_time_text": "35:13"
+    },
+    {
+      "text": "I'm no longer in a chat window.",
+      "start_ms": "2117950",
+      "end_ms": "2119810",
+      "start_time_text": "35:17"
+    },
+    {
+      "text": "I'm no longer in a project on Claude .ai or chadgbt .com.",
+      "start_ms": "2119810",
+      "end_ms": "2124970",
+      "start_time_text": "35:19"
+    },
+    {
+      "text": "I am like in the Claude desktop app or the chatgbt desktop app working with",
+      "start_ms": "2125150",
+      "end_ms": "2131910.0000000005",
+      "start_time_text": "35:25"
+    },
+    {
+      "text": "this system that has all that again has the recipe of how I want the drafting",
+      "start_ms": "2131910",
+      "end_ms": "2137230",
+      "start_time_text": "35:31"
+    },
+    {
+      "text": "process to go.",
+      "start_ms": "2137230",
+      "end_ms": "2138310",
+      "start_time_text": "35:37"
+    },
+    {
+      "text": "And then it has the, the context files about this, but like still the, many of",
+      "start_ms": "2138810",
+      "end_ms": "2145710",
+      "start_time_text": "35:38"
+    },
+    {
+      "text": "the same context files that used to live in the project in terms of like a style",
+      "start_ms": "2145710",
+      "end_ms": "2149490.0000000005",
+      "start_time_text": "35:45"
+    },
+    {
+      "text": "guide, example pieces,",
+      "start_ms": "2149490",
+      "end_ms": "2150770",
+      "start_time_text": "35:49"
+    },
+    {
+      "text": "and then again I just bring the fresh information into that ecosystem and",
+      "start_ms": "2151790",
+      "end_ms": "2157210",
+      "start_time_text": "35:51"
+    },
+    {
+      "text": "a piece comes out of it one way or another.",
+      "start_ms": "2158050",
+      "end_ms": "2160290",
+      "start_time_text": "35:58"
+    },
+    {
+      "text": "Somehow a piece appears.",
+      "start_ms": "2161750",
+      "end_ms": "2163910",
+      "start_time_text": "36:01"
+    },
+    {
+      "text": "I'm so excited to use it when it comes available.",
+      "start_ms": "2165150",
+      "end_ms": "2168950.0000000005",
+      "start_time_text": "36:05"
+    },
+    {
+      "text": "I hope to be an alpha tester of it when you're ready to share it.",
+      "start_ms": "2169810",
+      "end_ms": "2173790",
+      "start_time_text": "36:09"
+    },
+    {
+      "text": "Oh, it's on the GitHub.",
+      "start_ms": "2174170",
+      "end_ms": "2174790",
+      "start_time_text": "36:14"
+    },
+    {
+      "text": "You can get it now if you're on the ever GitHub.",
+      "start_ms": "2175170",
+      "end_ms": "2177170",
+      "start_time_text": "36:15"
+    },
+    {
+      "text": "Dang.",
+      "start_ms": "2178110",
+      "end_ms": "2178250",
+      "start_time_text": "36:18"
+    },
+    {
+      "text": "Okay, great.",
+      "start_ms": "2178610",
+      "end_ms": "2178890.0000000005",
+      "start_time_text": "36:18"
+    },
+    {
+      "text": "I will definitely have to try it.",
+      "start_ms": "2179070",
+      "end_ms": "2180450.0000000005",
+      "start_time_text": "36:19"
+    },
+    {
+      "text": "One of the things that I find so exciting about a great plugin.",
+      "start_ms": "2180650",
+      "end_ms": "2184710",
+      "start_time_text": "36:20"
+    },
+    {
+      "text": "A great plugin to me is like an expert instruction manual for how to do something",
+      "start_ms": "2185210",
+      "end_ms": "2192130",
+      "start_time_text": "36:25"
+    },
+    {
+      "text": "you have no business doing.",
+      "start_ms": "2192130",
+      "end_ms": "2193610",
+      "start_time_text": "36:32"
+    },
+    {
+      "text": "And so for me, for compound engineering,",
+      "start_ms": "2194890",
+      "end_ms": "2196950",
+      "start_time_text": "36:34"
+    },
+    {
+      "text": "I am not an engineer by trade, and yet I spend my weekend building different",
+      "start_ms": "2198470",
+      "end_ms": "2204089.9999999995",
+      "start_time_text": "36:38"
+    },
+    {
+      "text": "products and products that I rely on now every day.",
+      "start_ms": "2204090",
+      "end_ms": "2209550",
+      "start_time_text": "36:44"
+    },
+    {
+      "text": "And what compound engineering allows me to do is to build a product using the logic",
+      "start_ms": "2210570",
+      "end_ms": "2217050",
+      "start_time_text": "36:50"
+    },
+    {
+      "text": "and as practices that a great engineer and actually like a great team of engineers",
+      "start_ms": "2217050",
+      "end_ms": "2221690",
+      "start_time_text": "36:57"
+    },
+    {
+      "text": "would use for different steps in the kind of like product build process.",
+      "start_ms": "2221690",
+      "end_ms": "2226850",
+      "start_time_text": "37:01"
+    },
+    {
+      "text": "Obviously it begins with something like a PRD or a plan.",
+      "start_ms": "2227130",
+      "end_ms": "2230210",
+      "start_time_text": "37:07"
+    },
+    {
+      "text": "Things are scoped really well, there's security element, obviously there's",
+      "start_ms": "2230870",
+      "end_ms": "2234210",
+      "start_time_text": "37:10"
+    },
+    {
+      "text": "compounding at the end, but this is a process that if you are not an engineer or an",
+      "start_ms": "2234210",
+      "end_ms": "2239370",
+      "start_time_text": "37:14"
+    },
+    {
+      "text": "expert at building products, it's just totally foreign to you, right?",
+      "start_ms": "2239370",
+      "end_ms": "2242830",
+      "start_time_text": "37:19"
+    },
+    {
+      "text": "So in the same way that when you were describing the things that you would",
+      "start_ms": "2242970",
+      "end_ms": "2246589.9999999995",
+      "start_time_text": "37:22"
+    },
+    {
+      "text": "intuitively create as context files for your cloud projects over a year or two",
+      "start_ms": "2246590",
+      "end_ms": "2253410.0000000005",
+      "start_time_text": "37:26"
+    },
+    {
+      "text": "ago.",
+      "start_ms": "2253410",
+      "end_ms": "2253950",
+      "start_time_text": "37:33"
+    },
+    {
+      "text": "Now it's like I can access Katie's brain recipe with this Compound Writing",
+      "start_ms": "2254750",
+      "end_ms": "2261310",
+      "start_time_text": "37:34"
+    },
+    {
+      "text": "plugin where I can both use the tool and the tool",
+      "start_ms": "2261310",
+      "end_ms": "2268170",
+      "start_time_text": "37:41"
+    },
+    {
+      "text": "can help me do better work.",
+      "start_ms": "2268730",
+      "end_ms": "2270270",
+      "start_time_text": "37:48"
+    },
+    {
+      "text": "But I think what's most exciting about a great plugin to me is that it can teach you",
+      "start_ms": "2270390",
+      "end_ms": "2274330",
+      "start_time_text": "37:50"
+    },
+    {
+      "text": "how to do that kind of work, right?",
+      "start_ms": "2274330",
+      "end_ms": "2276310",
+      "start_time_text": "37:54"
+    },
+    {
+      "text": "So it can teach you how to be a great writer because it presents the steps, the",
+      "start_ms": "2276470",
+      "end_ms": "2281350",
+      "start_time_text": "37:56"
+    },
+    {
+      "text": "options, and the different directions that you might take at any step.",
+      "start_ms": "2281350",
+      "end_ms": "2285110",
+      "start_time_text": "38:01"
+    },
+    {
+      "text": "Do you find that for writing in particular?",
+      "start_ms": "2285570",
+      "end_ms": "2288310",
+      "start_time_text": "38:05"
+    },
+    {
+      "text": "Because it's not so deterministic in the way that code is, that it's a little bit",
+      "start_ms": "2288410",
+      "end_ms": "2293750",
+      "start_time_text": "38:08"
+    },
+    {
+      "text": "more flavored, like it's more of a reflection of how you write, or can it be kind of",
+      "start_ms": "2293750",
+      "end_ms": "2297670",
+      "start_time_text": "38:13"
+    },
+    {
+      "text": "like a generic tool that other people can use, even if they're not professional",
+      "start_ms": "2297670",
+      "end_ms": "2301170",
+      "start_time_text": "38:17"
+    },
+    {
+      "text": "writers?",
+      "start_ms": "2301170",
+      "end_ms": "2301550",
+      "start_time_text": "38:21"
+    },
+    {
+      "text": "I definitely think people can use it who are not professional writers and it may",
+      "start_ms": "2302890",
+      "end_ms": "2306270",
+      "start_time_text": "38:22"
+    },
+    {
+      "text": "even be better for them because they don't have strong pre -existing opinions about",
+      "start_ms": "2306270",
+      "end_ms": "2312850",
+      "start_time_text": "38:26"
+    },
+    {
+      "text": "the writing and so they're going to be less inclined to nitpick and they'll just be",
+      "start_ms": "2312850",
+      "end_ms": "2318930",
+      "start_time_text": "38:32"
+    },
+    {
+      "text": "excited that they can produce something that they maybe hadn't been able to produce",
+      "start_ms": "2318930",
+      "end_ms": "2323509.9999999995",
+      "start_time_text": "38:38"
+    },
+    {
+      "text": "before.",
+      "start_ms": "2323510",
+      "end_ms": "2324070",
+      "start_time_text": "38:43"
+    },
+    {
+      "text": "But,",
+      "start_ms": "2325890",
+      "end_ms": "2326290",
+      "start_time_text": "38:45"
+    },
+    {
+      "text": "and like, I think that, and like, honestly, I think, and I wrote about this in a",
+      "start_ms": "2328370",
+      "end_ms": "2331990",
+      "start_time_text": "38:48"
+    },
+    {
+      "text": "piece for working overtime, like writing with AI is harder than you think.",
+      "start_ms": "2331990",
+      "end_ms": "2335990",
+      "start_time_text": "38:51"
+    },
+    {
+      "text": "It's made me a better writer.",
+      "start_ms": "2336710",
+      "end_ms": "2338090",
+      "start_time_text": "38:56"
+    },
+    {
+      "text": "Like the analogy that I use for the Compound Writing plugin is that it's a gym.",
+      "start_ms": "2338470",
+      "end_ms": "2343069.9999999995",
+      "start_time_text": "38:58"
+    },
+    {
+      "text": "It's a workout system to like make you a better writer because most of the, so like,",
+      "start_ms": "2344110",
+      "end_ms": "2349250",
+      "start_time_text": "39:04"
+    },
+    {
+      "text": "for example, in the editing step, I built in a lot of these reviewers.",
+      "start_ms": "2349370",
+      "end_ms": "2352370",
+      "start_time_text": "39:09"
+    },
+    {
+      "text": "One of my favorites is Vonnegut.",
+      "start_ms": "2352370",
+      "end_ms": "2355210",
+      "start_time_text": "39:12"
+    },
+    {
+      "text": "So Kurt Vonnegut had these like eight elements of story structure.",
+      "start_ms": "2355610",
+      "end_ms": "2358790",
+      "start_time_text": "39:15"
+    },
+    {
+      "text": "So it's things like start as close to the end as possible.",
+      "start_ms": "2359510",
+      "end_ms": "2362110",
+      "start_time_text": "39:19"
+    },
+    {
+      "text": "You know, every sentence has to earn its place.",
+      "start_ms": "2363410",
+      "end_ms": "2365810",
+      "start_time_text": "39:23"
+    },
+    {
+      "text": "Give the reader a character they can root for.",
+      "start_ms": "2366350",
+      "end_ms": "2370170",
+      "start_time_text": "39:26"
+    },
+    {
+      "text": "And I just turned that into a skill in the plugin.",
+      "start_ms": "2370550",
+      "end_ms": "2372950.0000000005",
+      "start_time_text": "39:30"
+    },
+    {
+      "text": "And now you can base it, you can borrow this framework.",
+      "start_ms": "2373410",
+      "end_ms": "2375629.9999999995",
+      "start_time_text": "39:33"
+    },
+    {
+      "text": "It's not that like Kurt Vonnegut, the spirit of Kurt Vonnegut is reviewing your",
+      "start_ms": "2375850",
+      "end_ms": "2380350",
+      "start_time_text": "39:35"
+    },
+    {
+      "text": "work, but he has this framework that I think is really useful for a lot of writers",
+      "start_ms": "2380350",
+      "end_ms": "2384490",
+      "start_time_text": "39:40"
+    },
+    {
+      "text": "that you can kind of distill and turn into a scale.",
+      "start_ms": "2384490",
+      "end_ms": "2387910",
+      "start_time_text": "39:44"
+    },
+    {
+      "text": "And I've done that with several different writers that I admire.",
+      "start_ms": "2388050",
+      "end_ms": "2391790",
+      "start_time_text": "39:48"
+    },
+    {
+      "text": "So another one I have is Hitchcock,",
+      "start_ms": "2391970",
+      "end_ms": "2393209.9999999995",
+      "start_time_text": "39:51"
+    },
+    {
+      "text": "which is based on Hitchcock's principle of suspense.",
+      "start_ms": "2394390",
+      "end_ms": "2398730",
+      "start_time_text": "39:54"
+    },
+    {
+      "text": "So he has this famous quote about a bomb under the table where like if there's a",
+      "start_ms": "2398970",
+      "end_ms": "2404810",
+      "start_time_text": "39:58"
+    },
+    {
+      "text": "bomb under the table and it explodes, that's a one moment of surprise.",
+      "start_ms": "2404810",
+      "end_ms": "2408330",
+      "start_time_text": "40:04"
+    },
+    {
+      "text": "But if you have people sitting around the table and you show the audience the bomb",
+      "start_ms": "2408650",
+      "end_ms": "2412850",
+      "start_time_text": "40:08"
+    },
+    {
+      "text": "under the table and say this bomb will go off in five minutes, now you have five",
+      "start_ms": "2412850",
+      "end_ms": "2417210",
+      "start_time_text": "40:12"
+    },
+    {
+      "text": "minutes of suspense.",
+      "start_ms": "2417210",
+      "end_ms": "2419290",
+      "start_time_text": "40:17"
+    },
+    {
+      "text": "And so I turned that into a skill that assesses, okay, does this, does this make the",
+      "start_ms": "2419530",
+      "end_ms": "2424330.0000000005",
+      "start_time_text": "40:19"
+    },
+    {
+      "text": "reader lean in?",
+      "start_ms": "2424330",
+      "end_ms": "2425090",
+      "start_time_text": "40:24"
+    },
+    {
+      "text": "Does this make the reader like anxious and curious to see what will happen next?",
+      "start_ms": "2425250",
+      "end_ms": "2430590",
+      "start_time_text": "40:25"
+    },
+    {
+      "text": "And that becomes another lens that you can apply to, to writing.",
+      "start_ms": "2430630",
+      "end_ms": "2433930.0000000005",
+      "start_time_text": "40:30"
+    },
+    {
+      "text": "And so I get a lot of value out of that as an experienced writer even because like",
+      "start_ms": "2434330",
+      "end_ms": "2438850",
+      "start_time_text": "40:34"
+    },
+    {
+      "text": "I'm not always able to like consider all of those different lenses but now I can",
+      "start_ms": "2438850",
+      "end_ms": "2443770",
+      "start_time_text": "40:38"
+    },
+    {
+      "text": "just sort of like invoke Vonnegut, invoke Hitchcock, invoke Sorkin, invoke Sedaris",
+      "start_ms": "2443770",
+      "end_ms": "2449810",
+      "start_time_text": "40:43"
+    },
+    {
+      "text": "for humor and get those kinds of perspectives on my writing that are",
+      "start_ms": "2449810",
+      "end_ms": "2456310",
+      "start_time_text": "40:49"
+    },
+    {
+      "text": "informed by these really brilliant storytellers that I admire.",
+      "start_ms": "2456310",
+      "end_ms": "2461610",
+      "start_time_text": "40:56"
+    },
+    {
+      "text": "It's such a gift.",
+      "start_ms": "2462450",
+      "end_ms": "2463609.9999999995",
+      "start_time_text": "41:02"
+    },
+    {
+      "text": "It's so cool that you've done this.",
+      "start_ms": "2463710",
+      "end_ms": "2465670",
+      "start_time_text": "41:03"
+    },
+    {
+      "text": "I mean, I could totally see how, you know, presented with the opinions of Sorkin and",
+      "start_ms": "2466290",
+      "end_ms": "2472370",
+      "start_time_text": "41:06"
+    },
+    {
+      "text": "Zadaris and Vonnegut.",
+      "start_ms": "2472370",
+      "end_ms": "2473850",
+      "start_time_text": "41:12"
+    },
+    {
+      "text": "Someone might say, oh, I really like Vonnegut.",
+      "start_ms": "2474630",
+      "end_ms": "2476770",
+      "start_time_text": "41:14"
+    },
+    {
+      "text": "Like, that's a framework that really resonates with me.",
+      "start_ms": "2476910",
+      "end_ms": "2479129.9999999995",
+      "start_time_text": "41:16"
+    },
+    {
+      "text": "And maybe that is closer to the writing style that I aspire to have and might",
+      "start_ms": "2479170",
+      "end_ms": "2483010",
+      "start_time_text": "41:19"
+    },
+    {
+      "text": "pursue.",
+      "start_ms": "2483010",
+      "end_ms": "2483630",
+      "start_time_text": "41:23"
+    },
+    {
+      "text": "Or equally helpful.",
+      "start_ms": "2484250",
+      "end_ms": "2485610",
+      "start_time_text": "41:24"
+    },
+    {
+      "text": "I don't like the Hitchcock, you know, sort of like method of writing or sort of like",
+      "start_ms": "2486470",
+      "end_ms": "2491169.9999999995",
+      "start_time_text": "41:26"
+    },
+    {
+      "text": "this leaning in.",
+      "start_ms": "2491170",
+      "end_ms": "2492010",
+      "start_time_text": "41:31"
+    },
+    {
+      "text": "And that's what actually would enable you to develop your own taste, which I think",
+      "start_ms": "2492190",
+      "end_ms": "2495850",
+      "start_time_text": "41:32"
+    },
+    {
+      "text": "is really what any ambitious AI user wants to do, right?",
+      "start_ms": "2495850",
+      "end_ms": "2500170",
+      "start_time_text": "41:35"
+    },
+    {
+      "text": "It's like we want to do things that we have no business doing, right?",
+      "start_ms": "2500270",
+      "end_ms": "2503870",
+      "start_time_text": "41:40"
+    },
+    {
+      "text": "Building products that we have, that we wouldn't have been able to build, you know,",
+      "start_ms": "2504030",
+      "end_ms": "2508050",
+      "start_time_text": "41:44"
+    },
+    {
+      "text": "10 years ago or even five years ago, right?",
+      "start_ms": "2508190",
+      "end_ms": "2511270",
+      "start_time_text": "41:48"
+    },
+    {
+      "text": "In compelling ways that feel",
+      "start_ms": "2511970",
+      "end_ms": "2514009.9999999995",
+      "start_time_text": "41:51"
+    },
+    {
+      "text": "authentic and and of a caliber that like we would be proud of but it's actually",
+      "start_ms": "2514850",
+      "end_ms": "2520970",
+      "start_time_text": "41:54"
+    },
+    {
+      "text": "really difficult to do high -quality work and it takes a lot of effort there's",
+      "start_ms": "2520970",
+      "end_ms": "2525549.9999999995",
+      "start_time_text": "42:00"
+    },
+    {
+      "text": "really kind of no shortcut but with a plug -in like the Compound Writing plug -in it",
+      "start_ms": "2525550",
+      "end_ms": "2532450.0000000005",
+      "start_time_text": "42:05"
+    },
+    {
+      "text": "just gives you something to react to it gives you so much more to react to that you",
+      "start_ms": "2532450",
+      "end_ms": "2536430",
+      "start_time_text": "42:12"
+    },
+    {
+      "text": "can either agree or disagree with and that can make you a better writer so much",
+      "start_ms": "2536430",
+      "end_ms": "2541490",
+      "start_time_text": "42:16"
+    },
+    {
+      "text": "faster.",
+      "start_ms": "2541490",
+      "end_ms": "2541970",
+      "start_time_text": "42:21"
+    },
+    {
+      "text": "So I'm personally so excited to be using that tool.",
+      "start_ms": "2542270",
+      "end_ms": "2544790",
+      "start_time_text": "42:22"
+    },
+    {
+      "text": "Thank you for making the plugin.",
+      "start_ms": "2545410",
+      "end_ms": "2547390",
+      "start_time_text": "42:25"
+    },
+    {
+      "text": "It is a gift, especially coming from you.",
+      "start_ms": "2547810",
+      "end_ms": "2550049.9999999995",
+      "start_time_text": "42:27"
+    },
+    {
+      "text": "And I think it really informs this new chapter that we're in AI, which is, you know,",
+      "start_ms": "2551250",
+      "end_ms": "2556410",
+      "start_time_text": "42:31"
+    },
+    {
+      "text": "we're getting expertise that is codified that allows more people to do more great",
+      "start_ms": "2556510",
+      "end_ms": "2562410.0000000005",
+      "start_time_text": "42:36"
+    },
+    {
+      "text": "things, which is just so exciting.",
+      "start_ms": "2562410",
+      "end_ms": "2564410",
+      "start_time_text": "42:42"
+    },
+    {
+      "text": "Yeah, and I'm benefiting from that on my end.",
+      "start_ms": "2565110",
+      "end_ms": "2568890.0000000005",
+      "start_time_text": "42:45"
+    },
+    {
+      "text": "You know, like I also use compound engineering to do things that I have no business",
+      "start_ms": "2569190",
+      "end_ms": "2572810",
+      "start_time_text": "42:49"
+    },
+    {
+      "text": "doing.",
+      "start_ms": "2572810",
+      "end_ms": "2573250",
+      "start_time_text": "42:52"
+    },
+    {
+      "text": "Sometimes that gets me in trouble, but then AI gets me out of trouble as well.",
+      "start_ms": "2573870",
+      "end_ms": "2578470",
+      "start_time_text": "42:53"
+    },
+    {
+      "text": "So that's like, yeah, just like I wrote my like my one of my most recent pieces for",
+      "start_ms": "2579570",
+      "end_ms": "2584390.0000000005",
+      "start_time_text": "42:59"
+    },
+    {
+      "text": "working overtime was about how I accidentally coded a security risk into a product",
+      "start_ms": "2584390",
+      "end_ms": "2588089.9999999995",
+      "start_time_text": "43:04"
+    },
+    {
+      "text": "that I had built.",
+      "start_ms": "2588090",
+      "end_ms": "2589870.0000000005",
+      "start_time_text": "43:08"
+    },
+    {
+      "text": "I had built an MCP into this app I made called Tastemaker that actually lets you",
+      "start_ms": "2590010",
+      "end_ms": "2594930.0000000005",
+      "start_time_text": "43:10"
+    },
+    {
+      "text": "pull clips from different writing you admire and it distills that into a style",
+      "start_ms": "2594930",
+      "end_ms": "2600290",
+      "start_time_text": "43:14"
+    },
+    {
+      "text": "guide.",
+      "start_ms": "2600290",
+      "end_ms": "2600650",
+      "start_time_text": "43:20"
+    },
+    {
+      "text": "It's like okay this is like this is what you admire and appreciate in writing that",
+      "start_ms": "2600830",
+      "end_ms": "2604950",
+      "start_time_text": "43:20"
+    },
+    {
+      "text": "you might want to inform your own pieces and I built an MCP because I was like I",
+      "start_ms": "2604950",
+      "end_ms": "2609109.9999999995",
+      "start_time_text": "43:24"
+    },
+    {
+      "text": "want to be able to like add new clips and like pull my style guide down without",
+      "start_ms": "2609110",
+      "end_ms": "2614390.0000000005",
+      "start_time_text": "43:29"
+    },
+    {
+      "text": "actually having to go to the app just while I'm in Codex and like or Claude and like",
+      "start_ms": "2614390",
+      "end_ms": "2619009.9999999995",
+      "start_time_text": "43:34"
+    },
+    {
+      "text": "I built it and I don't think I had the most up -to -date compound engineering plugin",
+      "start_ms": "2619010",
+      "end_ms": "2623610",
+      "start_time_text": "43:39"
+    },
+    {
+      "text": "that had more robust security features and Claude was just like I'll build that for",
+      "start_ms": "2623610",
+      "end_ms": "2629390.0000000005",
+      "start_time_text": "43:43"
+    },
+    {
+      "text": "you no problem and then like I asked Codex to review it and Codex was like there are",
+      "start_ms": "2629390",
+      "end_ms": "2634589.9999999995",
+      "start_time_text": "43:49"
+    },
+    {
+      "text": "five security vulnerabilities here so AI got me in the trouble and then AI got me",
+      "start_ms": "2634590",
+      "end_ms": "2640290",
+      "start_time_text": "43:54"
+    },
+    {
+      "text": "out of the trouble, but like just the fact that I'm here like building these kinds",
+      "start_ms": "2640290",
+      "end_ms": "2644930",
+      "start_time_text": "44:00"
+    },
+    {
+      "text": "of products, like I built my website, like that's crazy.",
+      "start_ms": "2644930",
+      "end_ms": "2649569.9999999995",
+      "start_time_text": "44:04"
+    },
+    {
+      "text": "Like it's crazy that I'm able to do that, but all I have to do is like borrow",
+      "start_ms": "2649790",
+      "end_ms": "2653529.9999999995",
+      "start_time_text": "44:09"
+    },
+    {
+      "text": "Kieran's brain and I can do it.",
+      "start_ms": "2653530",
+      "end_ms": "2657190",
+      "start_time_text": "44:13"
+    },
+    {
+      "text": "Well, I borrow Kieran's brain and I'm excited to be borrowing your brain.",
+      "start_ms": "2659020",
+      "end_ms": "2662900",
+      "start_time_text": "44:19"
+    },
+    {
+      "text": "So thank you.",
+      "start_ms": "2663160",
+      "end_ms": "2663660",
+      "start_time_text": "44:23"
+    },
+    {
+      "text": "Thank you for putting it out there.",
+      "start_ms": "2663740",
+      "end_ms": "2665439.9999999995",
+      "start_time_text": "44:23"
+    },
+    {
+      "text": "Katie, you've been on this journey for really over two years now, you know, all the",
+      "start_ms": "2666500",
+      "end_ms": "2671580",
+      "start_time_text": "44:26"
+    },
+    {
+      "text": "way from starting to use Chat DPT as a career coach to now having a",
+      "start_ms": "2671580",
+      "end_ms": "2677620",
+      "start_time_text": "44:31"
+    },
+    {
+      "text": "codecs, not just helping you run your work day to day, but now having built your own",
+      "start_ms": "2677620",
+      "end_ms": "2684480",
+      "start_time_text": "44:37"
+    },
+    {
+      "text": "custom writing plugin.",
+      "start_ms": "2684480",
+      "end_ms": "2685940",
+      "start_time_text": "44:44"
+    },
+    {
+      "text": "It's such an incredible journey that you've been on.",
+      "start_ms": "2686380",
+      "end_ms": "2689220.0000000005",
+      "start_time_text": "44:46"
+    },
+    {
+      "text": "And in a few months, you'll be speaking at the every conference thesis on November",
+      "start_ms": "2689840",
+      "end_ms": "2695560",
+      "start_time_text": "44:49"
+    },
+    {
+      "text": "fifth at Pioneer Works in front of so many executives and leaders in the AI space.",
+      "start_ms": "2695560",
+      "end_ms": "2701160",
+      "start_time_text": "44:55"
+    },
+    {
+      "text": "What is your thesis on AI today?",
+      "start_ms": "2701780",
+      "end_ms": "2704200.0000000005",
+      "start_time_text": "45:01"
+    },
+    {
+      "text": "My thesis on AI today is that education and access are going to",
+      "start_ms": "2704920",
+      "end_ms": "2711600",
+      "start_time_text": "45:04"
+    },
+    {
+      "text": "matter more than they ever have before.",
+      "start_ms": "2711600",
+      "end_ms": "2714580",
+      "start_time_text": "45:11"
+    },
+    {
+      "text": "So something I feel very strongly about is the distribution of opportunity.",
+      "start_ms": "2715560",
+      "end_ms": "2720160",
+      "start_time_text": "45:15"
+    },
+    {
+      "text": "I am based in Columbus, Ohio.",
+      "start_ms": "2720160",
+      "end_ms": "2723859.9999999995",
+      "start_time_text": "45:20"
+    },
+    {
+      "text": "I grew up in the Midwest.",
+      "start_ms": "2724520",
+      "end_ms": "2725740",
+      "start_time_text": "45:24"
+    },
+    {
+      "text": "I haven't really spent time in New York or SF or Austin and all these big tech hubs.",
+      "start_ms": "2727860",
+      "end_ms": "2733080",
+      "start_time_text": "45:27"
+    },
+    {
+      "text": "And I believe, but I believe really strongly that this technology should be in the",
+      "start_ms": "2733620",
+      "end_ms": "2736960",
+      "start_time_text": "45:33"
+    },
+    {
+      "text": "hands of as many people as possible.",
+      "start_ms": "2736960",
+      "end_ms": "2738600",
+      "start_time_text": "45:36"
+    },
+    {
+      "text": "But in order for that to happen, you have to create the right conditions.",
+      "start_ms": "2739140",
+      "end_ms": "2742940",
+      "start_time_text": "45:39"
+    },
+    {
+      "text": "So I'm very fortunate in the fact that I have connections.",
+      "start_ms": "2743120",
+      "end_ms": "2747580",
+      "start_time_text": "45:43"
+    },
+    {
+      "text": "Like, I have access to really great thinkers, and like, I can learn from Kieran, I",
+      "start_ms": "2747580",
+      "end_ms": "2752680",
+      "start_time_text": "45:47"
+    },
+    {
+      "text": "can learn from Dan, I can learn from you.",
+      "start_ms": "2752680",
+      "end_ms": "2754419.9999999995",
+      "start_time_text": "45:52"
+    },
+    {
+      "text": "But all of that has been facilitated by the fact that I have a certain amount of",
+      "start_ms": "2755320",
+      "end_ms": "2761580.0000000005",
+      "start_time_text": "45:55"
+    },
+    {
+      "text": "economic comfort.",
+      "start_ms": "2761580",
+      "end_ms": "2762680",
+      "start_time_text": "46:01"
+    },
+    {
+      "text": "I have a certain amount of free time and budget to experiment with these tools and",
+      "start_ms": "2762960",
+      "end_ms": "2768980",
+      "start_time_text": "46:02"
+    },
+    {
+      "text": "like get a subscription and vibe code until 2 a .m.",
+      "start_ms": "2768980",
+      "end_ms": "2773040",
+      "start_time_text": "46:08"
+    },
+    {
+      "text": "if that's what's interesting to me.",
+      "start_ms": "2773040",
+      "end_ms": "2774480",
+      "start_time_text": "46:13"
+    },
+    {
+      "text": "And I think that what I want to challenge the AI community with is thinking about",
+      "start_ms": "2774480",
+      "end_ms": "2780840",
+      "start_time_text": "46:14"
+    },
+    {
+      "text": "how we can expand those kinds of opportunities to more people and more kinds of",
+      "start_ms": "2780840",
+      "end_ms": "2784960",
+      "start_time_text": "46:20"
+    },
+    {
+      "text": "people in more different places.",
+      "start_ms": "2784960",
+      "end_ms": "2786460",
+      "start_time_text": "46:24"
+    },
+    {
+      "text": "Because AI does have this huge multiplicative capacity to end this compounding",
+      "start_ms": "2786800",
+      "end_ms": "2792920",
+      "start_time_text": "46:26"
+    },
+    {
+      "text": "capacity.",
+      "start_ms": "2792920",
+      "end_ms": "2793920",
+      "start_time_text": "46:32"
+    },
+    {
+      "text": "But the risk there is that value is going to compound to the small subset of people",
+      "start_ms": "2794340",
+      "end_ms": "2800180.0000000005",
+      "start_time_text": "46:34"
+    },
+    {
+      "text": "that happen to be early.",
+      "start_ms": "2800180",
+      "end_ms": "2801319.9999999995",
+      "start_time_text": "46:40"
+    },
+    {
+      "text": "And I just think that a much more compelling vision for an AI future is one where",
+      "start_ms": "2801320",
+      "end_ms": "2806320",
+      "start_time_text": "46:41"
+    },
+    {
+      "text": "everyone is able to come along for the ride.",
+      "start_ms": "2806320",
+      "end_ms": "2808300",
+      "start_time_text": "46:46"
+    },
+    {
+      "text": "I aspire to that version of the future.",
+      "start_ms": "2808980",
+      "end_ms": "2811900",
+      "start_time_text": "46:48"
+    },
+    {
+      "text": "Thank you so much, Katie.",
+      "start_ms": "2812200",
+      "end_ms": "2813120",
+      "start_time_text": "46:52"
+    },
+    {
+      "text": "It's been such a treat to connect today.",
+      "start_ms": "2813480",
+      "end_ms": "2815640",
+      "start_time_text": "46:53"
+    },
+    {
+      "text": "So excited to have the public release, to see the public release of the compound",
+      "start_ms": "2815860",
+      "end_ms": "2820320",
+      "start_time_text": "46:55"
+    },
+    {
+      "text": "writing plugin.",
+      "start_ms": "2820320",
+      "end_ms": "2821000",
+      "start_time_text": "47:00"
+    },
+    {
+      "text": "And thank you for your time.",
+      "start_ms": "2821560",
+      "end_ms": "2824080",
+      "start_time_text": "47:01"
+    },
+    {
+      "text": "Thanks for having me.",
+      "start_ms": "2824460",
+      "end_ms": "2825400",
+      "start_time_text": "47:04"
+    },
+    {
+      "text": "This was fun.",
+      "start_ms": "2825480",
+      "end_ms": "2825900",
+      "start_time_text": "47:05"
+    },
+    {
+      "text": "eye and I why because this show is the epitome of awesomeness it's like finding a",
+      "start_ms": "2839290",
+      "end_ms": "2843930",
+      "start_time_text": "47:19"
+    },
+    {
+      "text": "treasure chest in your backyard but instead of gold it's filled with pure",
+      "start_ms": "2843930",
+      "end_ms": "2847790",
+      "start_time_text": "47:23"
+    },
+    {
+      "text": "unadulterated knowledge bombs about chat GPT every episode is a roller coaster of",
+      "start_ms": "2847790",
+      "end_ms": "2853450",
+      "start_time_text": "47:27"
+    },
+    {
+      "text": "emotions insights and laughter that will leave you on the edge of your seat craving",
+      "start_ms": "2853450",
+      "end_ms": "2858330",
+      "start_time_text": "47:33"
+    },
+    {
+      "text": "for more it's not just a show it's a journey into the future with Dan Shipper as the",
+      "start_ms": "2858330",
+      "end_ms": "2863170",
+      "start_time_text": "47:38"
+    },
+    {
+      "text": "captain of the spaceship so do yourself a favor hit Like, smash subscribe, and strap",
+      "start_ms": "2863170",
+      "end_ms": "2869770",
+      "start_time_text": "47:43"
+    },
+    {
+      "text": "in for the ride of your life.",
+      "start_ms": "2869770",
+      "end_ms": "2870750",
+      "start_time_text": "47:49"
+    },
+    {
+      "text": "And now, without any further ado, let me just say Dan, I'm absolutely, hopelessly in",
+      "start_ms": "2871210",
+      "end_ms": "2876090",
+      "start_time_text": "47:51"
+    },
+    {
+      "text": "love with you.",
+      "start_ms": "2876090",
+      "end_ms": "2876550",
+      "start_time_text": "47:56"
+    }
+  ],
+  "transcript_only_text": "Hey, it's Dan Shipper, and this week I'm excited to share a very special episode of AI & I. In this episode, we're previewing the release of an experimental new plugin called Compound Writing, which helps you write with AI the way that we do internally. It's inspired by Kieran Klassen's Compound Engineering, and it's built by one of our staff writers, Katie Parrott. To help talk about this plugin and why Katie made it and how she uses it, Natalia Quintero is the host of this episode. She's our head of AI consulting, thing. And she's been on the podcast a few times, and she's just an incredible interviewer. So I'm really excited for you to hear Katie and Natalia chat. Today we're talking to Katie Parrott, staff writer at Ebery. Katie, if you've been following Ebery for a while now, we'll be very familiar to you. She's one of our all star writers, and we're so excited to learn more about her writing process and her new plugin today. Hi Katie, how are you? I'm good. How are you? So good. I am so excited for this conversation. I am revealing myself as a Katie fangirl on the podcast. It's a mutual fandom. Thank you. Okay, so Katie, almost exactly two years ago, you wrote one of your most popular pieces for every and it was about how you had just been laid off. And also maybe we're in the middle of a mental health crisis, which you've written publicly about. And you decided to turn to chat TBT as a career coach. But at the time you were also an AI skeptic, which might be crazy to think about now given some of the work that you're doing. But can you take us back to that period? What was going on in your career? And in that moment in time that led you to turn to chat tbt in the first place. Yeah so I had just been let go from a crypto firm where I was working as an editor and ghostwriter for the for the team and you know that in like in hindsight like it was traumatizing at the time but in hindsight it was like the best thing that ever happened to me because it led me back to every uh and but I was feeling really lost as you mentioned you know I had tried crypto, I had tried in -house, I had tried out -of -house, I had tried all these different things and I felt like I was at the end of what I could do on my own and I really needed an outside perspective but because I was working on a budget with no clear visibility into how long I would be unemployed, hiring a real career coach wasn't really an option for me. So I had some exposure to chatgbt at that time. I had actually used it to produce briefs at a previous job as a content marketing manager. We had an agency and I realized, I was like hitting a wall of depression at that job and like could not bring myself to put words on a page. But I found that if I used chatgbt to generate some of the repetitive stuff And it became this assistive tool that I used as a tool for thought, which is a phrase I'd also seen Dan use around the same time because I was following every at the time. And so it was kind of that combination of things where I was like, okay, I can't afford like $150 an hour, however much a career coach would be, but I can sign up for a $20 a month ChatGPT subscription. and get some of that same result of externalizing my thinking and getting an outside perspective and just holding me accountable for how I was thinking about my career journey and challenging me when I would get a little, like I have a tendency to catastrophize and the worst and it kind of took me out of myself in that way too and it was just like a really great experience for me and like kind of and it ultimately led me to every so yeah. Yeah it's such a cool post that you wrote and you have you just always have such great zingers in your writing that are just so delightful to read. I hope when we are sharing this on video we can pull up some of the screenshots of just what your chat DPT prompts and screenshots look like because it feels vintage to be looking at chat from two and a half years ago. But in that post you have this really great quote. It's a little lengthy, but I'm going to try to read it because I have a question about it. So you say, one of my favorite things about writing is that I never know what I think until I write it down. But once I write it down, it becomes obvious. Ultimately, what's prompting ChatTPT is a form of very specific strategic writing. Do I think my experiment with ChatTPT added clarity in my thinking? Yes, it has. But as with so many of these tools, the real work is still mine. Clarity, it turns out, doesn't arrive gift wrapped from a digital assistant or even a human coach. It's something I had to dig out for myself, question by question and prompt by prompt. True clarity, direction, and answers come from the process of engaging with the prompts and doing the hard work yourself. AI can help guide the way, but the journey is yours to take. Just so beautiful. Just so, so cool. And, you know, I think one of the things that really resonates with me about your writing is that this feels so reflective of my experience using AI, where I am attracted to the possibility of maybe an easy answer, an easy solve. But actually what I constantly find myself doing is learning something that was always there inside of me, but I had to put some work in and some clarity into to like actually get it out of me. Can you tell me a little bit more about what using AI in this very early experience and this very kind of practical high -value experience, what it taught you about using AI? The first thing it taught me is that I can use AI to make change in my life, which is something that I've continued to carry through over the last couple of years. I really judge the technology by the impact it's had practically for me, And the fact that I used the career coach, for example, I remember talking when I got the invitation from Kate to write what ultimately became working overtime, my column, I was talking to ChatGPT about whether it was the right step for me to take because I was kind of on the fence. It would have been freelancing at the time. I was kind of on the fence about that versus looking for a full -time opportunity. And ChachiPT nudged me in the direction of like, well, why not try it in the meantime? And I did that and now I'm here. And throughout my experience with AI, that's really been the thing is that it's given me both the framework for thinking and obviously it's become the thing I think about. But it's really just about the fruits of the labor, so to speak, and seeing what AI is able to give back to me. So it sounds like one of the early takeaways that you had in leveraging AI was that you could really get it to be a valuable tool for you. And so that reminds me of another post that you wrote that was really popular with the Every Audience. and I believe it's titled AI Turned Me Into a Content Agency of One. And early in this post, you talk about how at the time you were a freelancer, so this is early 2025, and you realize that you had overcommitted yourself or potentially overcommitted yourself with the number of freelance projects that you had agreed to deliver. And then you go on to list the number of things that you committed to delivering in a two -week period. This includes eight blog posts, three ebooks, 24 LinkedIn posts, we're not even halfway through, 24 x posts, 16 Instagram posts. I mean, there is just no way I could write this amount of content in a month. How did you learn to do that? How did you learn to use AI to generate this amount of content and at the caliber that I know you deliver? I think around this time was when I was really discovering, like I wouldn't have used this language because it hadn't really become a thing yet, but context engineering. And what I realized was if I gave the model a really good foundation in terms of, you know, the brand messaging, product specifics, audience specifics of the companies that I was working for. I could shape the AI outputs toward the direction that I wanted. So it was really a lot of foundational work that once that was set, I could kind of just iterate through. And it helped that a lot of the things were content repurposing, which is one of the first things that people were really excited about. you know, one of the first products that Every put out was Spiral, which was all about content repurposing, because that's something that Every was doing a lot. You know, you have a post, you want to turn it into a LinkedIn post, a blog, you know, a Twitter post, a blog post. And so yeah, it was just like, I realized, I like, I was like, okay, I'll write through all of the surrounding information that the AI needs to do a good job. And then when that like, the The more I put in that work up front, the easier the process got farther down the line. And that's something that I found with my AI experience overall is just like you invest, at first it feels really effortful and you're spending a lot of time setting the scenes, like getting everything lined up, like in terms of your tools and your integrations and your context documents. But when you have that environment set up, you can just kind of run and like run fast. and that's what I was able to do when I over committed myself that that time. Which I did again like six months later. I think this might be a common characteristic of everyone at Emory. Can we talk a little bit more about what was in those files and in the context and in the setup that you created to let you fast because I think I remember some of the context files that you shared with us and that I saw around that time. But I'm curious, what does that look like? Were they folders that you were sharing? Were they projects on Claude? Walk me through what some of those things look like. They weren't projects because projects didn't exist yet. and I remember at the time, like at the time projects launched, I thought back to that period I was like I really wish that this had existed when I was doing this because I had to do a lot of manual copy and pasting like I would have my persistent documents and I would just in a Google doc and I would copy and paste into the context windows so that the agent so that it wasn't an agent well I guess maybe it was an agent I don't know but so that the model would have access to that information. And it really came from my experience in the content marketing world building style guides. You know, every brand worth its salt has, you know, a source of truth where they document, okay, who is our audience? What are their pain points? How does our product map to those pain points? What is our competition and what are our differentiators? These are units of work that I was used to doing as a content manager. I just started with what I was familiar with. I started with what I knew and gave that information to the model. It did a good job. At that point I was like, okay, this seems to be working. and then projects came along and I did so suddenly. I didn't have to copy paste anymore because I could use the project documents and I could use the custom instructions to sort of set a project up. And I had a project for every freelance client. I had a project for every column that I worked on because I was starting to spread out in terms of what I was doing at every at that time. But it all comes down to basic rules of writing and knowing who is our audience, you know, what is our different, like what is, what is our differentiated thing that we have to say, and just feeding the AI all of that foundational stuff so that it feels true. So that it kind of has rails to run on. That's what I'm always, I always think of is just like creating guardrails and kind of like a fenced in place for the model to play, and then you don't have to worry so much about getting something that's completely wrong because you're kind of pushing it in the right direction. Right, you've given it a playground. I know this is something that Mike Taylor on our team cares a lot about, you know, having really clean context windows and being very selective of what playground you're giving model. Knowing what you know now and as a writer, what are the things that you think have made it so that your projects are so successful? Is it having a really strong point of view on what good writing is, on what good content marketing is? What are those things that are so important to have a strong perspective on? I think it's less about the writing at first than it is about the other kinds of contacts like the data that you're giving it, the frameworks for audience personas and who they should be talking to. Like you need all of that in place before you can even get to stuff like use these words and avoid these words. Like prefer this level of reading difficulty and like strike this tone. Like before you even get to the point where you're sort of messing with that kind of stuff you need to have those foundational elements kind of set up and then like you'll we'll be wrestling with this addiction and syntax thing for the rest of forever. And when you're referring to the data, what is the data that you would need to to put in there? Well, that's the that's the specifics of the piece. So like something that I feel really strongly about it like as like our role as humans in this wonderful world of AI and AI writing specifically is that there's sort of a last mile problem in writing in AI and writing, which is AI has that knowledge cut off, right? It's always working with data that's several months out of date. And our job as the humans is to close that last mile and provide the real world experiences that AI can't get because they come after the knowledge cut off and it's also out there happening somewhere in the real world and AI is not in the real world, the physical world yet. So when I say research, I'm really talking about the unique or data that it's like the unique insight so that whether that's like a study that your that your company has produced or third -party research that you're pulling in which is something that I love to do in my writing for working overtime it's all of the all of the constitutive elements that go into the the writing and the model can then work from that. But the inputs are really what makes the writing unique. I think a lot of times when people are writing with AI, they just kind of go with to it and say, write a blog post about style guides. Let's just use that as an example. And they don't give it anything to go on. They're just like, write a style guide, a guide, a post about style guides based on what you, the model, already know. But then what the model already knows as commoditized information. Like that's not useful or interesting. So the data is the unique insight, the data point that the model doesn't have access to yet, the personal experience, all of those things that are working are ultimately going to make the writing unique. It all sounds like the documents that you save for what might be a project today or what might be maybe like a Codex sort of setup is all of the things that can be codified as like good best practices but then what you bring into every piece it's like the it's like the quality of the ingredients right so it sounds like what you're bringing to the piece it's just the the sort of like freshness quality and unique elements of the piece that you want to highlight and bring out that only you can really bring. I love that analogy that's a really good one that's That's pretty much exactly it. You know, the model is the kitchen. The, you know, the, you know, like structure, like the outline is like chopping and the composition is like boiling, but like you need the individual ingredients to be like fresh and like good to produce good work. Yeah. This is actually something that you referenced very early on in this piece in 2025. You have this really beautiful quote, and I'm sorry to read you your great quotes back to you. It's horrible. So you write, Two odd years into my AI journey, I have to admit, AI hasn't just helped me produce content faster. It has fundamentally changed the scale of what I can do, the limits of what I use to bump up against time, energy, capacity are way lower. And it sounds like that's the recipe, right? It's like you would always be using the same recipe, but now you don't have to worry so much about the recipe. The recipe is codified. Now you can really just come to the table with what is uniquely in your brain. This is something you also say in the post. It's become trite to say that AI frees you to focus on the human elements that truly matter, but AI has freed me to focus on the human elements that truly matter. I remember that one. It's magic seeing it from the outside, you know? Like, I have no idea how you do it, and it's magical every time that you put another piece together. It's magical to me too. Like, that's really all I can say is, like, the fact, like, working with AI kind of made me fall in love with writing again, because for a long time writing to me had just felt like such a slog. It was like so effortful. I was spending so much like energy and mental capacity just trying to assemble sentences that I wasn't really paying attention to what the sentences as a whole said or like how like or like I was just like this is done I'm gonna get it off my plate it's good enough and now with AI I have like the energy left over to spend more time wrestling with those harder, bigger picture questions. And it's just made writing a lot more fun because it's brought back a feeling of exploration and discovery both with the tool, but then also with my own brain and what I think and like how I bring that to life. So I want to turn back a moment to, you know, there's two things that I admire so much in the way that you use AI specifically. And one is obviously the way in which you use it for writing, but the other is the way in which you use it kind of like as a harness for doing your best work. And you have this really beautiful piece that you wrote in about a year ago, so kind of like mid 2025, called AI Solved the Problem that I couldn't explain to managers. And in this piece, you talk about how or actually, can you tell us a little bit about this piece? Do you remember what you talked about? You hear a lot about AI tools on this show. But the one that's truly at the center of your work is your CRM. It's where all of your customer context lives and where the work either happens or gets missed. Adio delivers the work that you never had time to focus on before and more. It picks up leads at 2am, it catches renewals before they slip, and drafts the follow -up before you've even thought to send one. Ask Adio anything about your business from this week's forecast to which deals have gone quiet and get the answer in seconds. And because it's extensible with an API and an MCP, your agents work right alongside your team to build pipeline, advance deals, and grow accounts around the clock. Try adio for free at adio .com slash every that's adio at o .com slash every and now back to the episode This is the piece where I talk about my mental health and my crippling anxiety around email Yeah, so this is a piece that this is this is like one of the most personal and like one of my favorite pieces that I wrote because it's about AI viewed through a different lens that I think we're used to thinking about it. We think about AI as a productive technology, right? We value it for its ability to produce output and get things out of our, like just put stuff out. And what I found in my personal experience is that AI is just as powerful as a supportive technology. So I have bipolar disorder. I experience spikes of like high energy and honestly frankly I spend a lot more time in really lows of depression and what I found is that AI kind of reduces friction in my life in a way that like makes it easier for me to person. It makes it easier for me to work, it makes it easier for me to you know move through my day -to -day life. That's actually become even more true now with agents being able to handle what our COO, Brandon, calls computer errands. So I put off making a primary care physician appointment for like... three years and then I realized I could simply tell Codex to go find primary care physicians near me that take my insurance and are accepting new patients. And it went off and found me someone and I booked an appointment. And that's something that I would never have done. I would have just kept procrastinating on it infinitely because of the way my brain works and AI was able to help me over that hump and it's done that over and over again. And so like, you know, using Quora to make my inbox more manageable. So I'm not confronting a wall of emails, but just the really important ones that need my human response. That's completely changed my relationship to my inbox because I don't have to like go digging and like be like looking for the bomb that is hiding in the, in the, in the millions of like, uh, things that are just like subscription notices and stuff, but the things that need human response has come to me. And now I have an automation set up through Codex, and I have it tell me what's in my inbox that I need to respond to. And so my inbox anxiety has been completely resolved. And I've just seen a lot of other ways that AI supports me and allows me to work better, not just in terms of using it for the output, but using it for everything that surrounds the output. Right? It's like it's not just the medical appointments, it's the bills, it's the emails, it's the tasks that, you know, you'll never really get around to doing like around the house or whatever it might be. And it does feel to me with AI that I have a little bit more firepower to get to some of those things. You'll love this, Katie. For the first time in my life, I'm filing insurance -free because Codex is filing my insurance reimbursements. I would rather pay insurance than how to manually do that. And it's exciting to have a tool that I feel like can really work in my favor. In this particular piece, you talk about that and you say, I've been working at Avery for one year now, and that might not sound remarkable, but it feels like a milestone. For me, the proof of AI's value is the fact that I'm still here doing work I'm proud of. And it kind of is the greatest measure of success that you get to do more of the work that you're excited to wake up and do every day. And to me, that's such a clear AI win. Can you tell us a little bit more about... So we started out with you going to ChatTBT over two years ago and asking it to be your AI coach. and it's enabled this incredible amount of work that you're doing now. You've talked about it in some posts. Now it looks a little bit more like a Codex project, if I believe. Can you tell us a little bit more about how that has evolved and what that looks like today? My writing process? This is for the kind of career, like what the equivalent of your career coach looks like today. Oh my gosh, my career coach has evolved so much. It is now a project inside of my codecs and it has so much more information than the first version. So it has a dossier on me and my role and it has context around every and our super top secret brand positioning that I got from our head of marketing, Douglas, that I was like, okay, if we put, and then what I'm able to do with that is like, okay, here's the context on me and my role. Here's the context on every, how do I put those two things together and what should I prioritize to have the biggest impact that I can? And so it's helped, it helps me now, now that I'm in a job and not looking, not meeting the career coach to help me find a job, it helps me orient myself prioritize. It does project management for me and now increasingly all of this is happening just with voice, like with monologue. I'd monologue like a ton all day, every day and I'll just like talk to my career coach about like I've got four different priorities like what should I, what should I, what should I do in what order and it kind of operates as that chief of staff that kind of like points me in a direction and says this is the highest impact thing you can do first, this is like maybe something that you can put off until later, and then that like and it just helps do that kind of that kind of work and it maintains a Kanban board for me. I've never been a person that can maintain a Kanban board but now I don't even have to touch it. It just lives in this little career coach management project land and I just like say like, what's the due date on this deliverable? And it will tell me. Can you tell us a little bit more about how that's set up? That sounds incredible. So like that's the thing is you kind of forget over time as it starts to work, you just take for granted that it's working and you don't think about what's inside it so much anymore. So let me find career coach mode. Yeah, so it's got evidence is one of the folders. So, you know, I periodically scrape all the data out of our content management system into a spreadsheet and like I have that so I know like how my posts are performing. It also has like reader feedback and other things like I maintain what I call my validation folder which is just full of nice things people have said about my work. That becomes another input because that helps the model understand, okay, what do people respond positively to in my work that we want to like reinforce. It has references, like that's where my role positioning is. It has my OKRs for Q2 and now Q3 because somehow it became Q3 which should not be legal and some other things like that. So it just has a ton of these, again it's all context, it's all documentation that increasingly I don't manually create. I how they I created for me like through an interview process like I'm I'm always having AI interview me Alex Duffy gave me that tip early on in my time at every and it's just like completely changed how I work with AI because I'll just be like ask me questions to draw out what I think about this and that's how I was able to pull together the career coaches like I just said I want to create a career coach you know this is what I wanted to do and then I started just showing it a bunch of context documents like all of the data from the performances and like my validation folder. And we just talked until we got to a place where we had a system that worked the way that I kind of like had envisioned in my mind. So in two years, which is, you know, a lot of time in AI time, but in two years, you went from prompting a simple prompt on chat TBT, you know, how can you help me as a career coach to having a fully autonomous codec setup that maintains your to -do list, your OKRs, it keeps you on track with a Can -bin board and at this point your codecs is maintaining it for you. Yes. Is that insane? So I mean, this is amazing, right? I think one of the things that you're uniquely great at is using AI for kind of like powering your career harness and also your ability to write really, really great pieces. And so going back to the writing component, you know, we talked a little bit about some of the how you've created AI to basically kind of like hold the recipe for you, like how you think about good writing, and then the elements that you bring to each writing session so that it can just allow you to do your best work. And now you are, I think by the time that this podcast airs, we will have published your compound writing plugin. Can you tell us a little bit about what compounding is as a concept and then about the writing plugin? Yeah, so compounding is the idea that every piece of feedback that you give to AI should feed back into the system to improve the next output. So obviously for folks that follow every they'll be familiar with this from Kieran Klassen's compound engineering plugin. He was really the one to pioneer this idea that you should only have to give a piece of feedback once, but if you codify it the right way, it will be there forever and the next time you're in that same situation, the AI is going to make a better decision. And so the Compound Writing plugin, it started, I literally just forked. Forked is a word that I know now because I wouldn't have known if I weren't working with AI, but I pulled the compound engineering plugin down and talked to Claude about it said, I want to take this compound engineering plugin and adapt it for writing. Because in certain ways, writing is very similar to code. Like the compound engineering plugin has brainstorming, ideating, planning, working, and then reviewing. And very similarly, in writing, you have brainstorming, outlining, drafting, reviewing. and it's kind of a similar kind of flow, but there are also differences. Like obviously, I don't need my, you know, for writing you're not looking at things like coding conventions, you're looking for things like structure, voice, evidence, and like all of these kinds of different things. So it's a different, like there's a different, it's a different container, but like it just made sense to me. So like again, I just talked to Claude and said, you know, I want I want these steps in the process I want you know, I want an outline to look like this I want a draft to be done this way and like these are the kinds of review and then like I want two different kinds of Reviews like a substantive edit That's like the big picture structure in the argument and then a line at it that looks at the individual writing and then a final pass that like looks at like just the final details that you want something to be publication ready. And I was able to pull that together just like, I always like all of my best AI ideas, I've ripped off from someone else on the every team. So it was very much compound engineering plus Dan's agent native architecture guide that kind of combined together to create Compound Writing. And now that's what I use all the time for every piece that I write. I'm no longer in a chat window. I'm no longer in a project on Claude .ai or chadgbt .com. I am like in the Claude desktop app or the chatgbt desktop app working with this system that has all that again has the recipe of how I want the drafting process to go. And then it has the, the context files about this, but like still the, many of the same context files that used to live in the project in terms of like a style guide, example pieces, and then again I just bring the fresh information into that ecosystem and a piece comes out of it one way or another. Somehow a piece appears. I'm so excited to use it when it comes available. I hope to be an alpha tester of it when you're ready to share it. Oh, it's on the GitHub. You can get it now if you're on the ever GitHub. Dang. Okay, great. I will definitely have to try it. One of the things that I find so exciting about a great plugin. A great plugin to me is like an expert instruction manual for how to do something you have no business doing. And so for me, for compound engineering, I am not an engineer by trade, and yet I spend my weekend building different products and products that I rely on now every day. And what compound engineering allows me to do is to build a product using the logic and as practices that a great engineer and actually like a great team of engineers would use for different steps in the kind of like product build process. Obviously it begins with something like a PRD or a plan. Things are scoped really well, there's security element, obviously there's compounding at the end, but this is a process that if you are not an engineer or an expert at building products, it's just totally foreign to you, right? So in the same way that when you were describing the things that you would intuitively create as context files for your cloud projects over a year or two ago. Now it's like I can access Katie's brain recipe with this Compound Writing plugin where I can both use the tool and the tool can help me do better work. But I think what's most exciting about a great plugin to me is that it can teach you how to do that kind of work, right? So it can teach you how to be a great writer because it presents the steps, the options, and the different directions that you might take at any step. Do you find that for writing in particular? Because it's not so deterministic in the way that code is, that it's a little bit more flavored, like it's more of a reflection of how you write, or can it be kind of like a generic tool that other people can use, even if they're not professional writers? I definitely think people can use it who are not professional writers and it may even be better for them because they don't have strong pre -existing opinions about the writing and so they're going to be less inclined to nitpick and they'll just be excited that they can produce something that they maybe hadn't been able to produce before. But, and like, I think that, and like, honestly, I think, and I wrote about this in a piece for working overtime, like writing with AI is harder than you think. It's made me a better writer. Like the analogy that I use for the Compound Writing plugin is that it's a gym. It's a workout system to like make you a better writer because most of the, so like, for example, in the editing step, I built in a lot of these reviewers. One of my favorites is Vonnegut. So Kurt Vonnegut had these like eight elements of story structure. So it's things like start as close to the end as possible. You know, every sentence has to earn its place. Give the reader a character they can root for. And I just turned that into a skill in the plugin. And now you can base it, you can borrow this framework. It's not that like Kurt Vonnegut, the spirit of Kurt Vonnegut is reviewing your work, but he has this framework that I think is really useful for a lot of writers that you can kind of distill and turn into a scale. And I've done that with several different writers that I admire. So another one I have is Hitchcock, which is based on Hitchcock's principle of suspense. So he has this famous quote about a bomb under the table where like if there's a bomb under the table and it explodes, that's a one moment of surprise. But if you have people sitting around the table and you show the audience the bomb under the table and say this bomb will go off in five minutes, now you have five minutes of suspense. And so I turned that into a skill that assesses, okay, does this, does this make the reader lean in? Does this make the reader like anxious and curious to see what will happen next? And that becomes another lens that you can apply to, to writing. And so I get a lot of value out of that as an experienced writer even because like I'm not always able to like consider all of those different lenses but now I can just sort of like invoke Vonnegut, invoke Hitchcock, invoke Sorkin, invoke Sedaris for humor and get those kinds of perspectives on my writing that are informed by these really brilliant storytellers that I admire. It's such a gift. It's so cool that you've done this. I mean, I could totally see how, you know, presented with the opinions of Sorkin and Zadaris and Vonnegut. Someone might say, oh, I really like Vonnegut. Like, that's a framework that really resonates with me. And maybe that is closer to the writing style that I aspire to have and might pursue. Or equally helpful. I don't like the Hitchcock, you know, sort of like method of writing or sort of like this leaning in. And that's what actually would enable you to develop your own taste, which I think is really what any ambitious AI user wants to do, right? It's like we want to do things that we have no business doing, right? Building products that we have, that we wouldn't have been able to build, you know, 10 years ago or even five years ago, right? In compelling ways that feel authentic and and of a caliber that like we would be proud of but it's actually really difficult to do high -quality work and it takes a lot of effort there's really kind of no shortcut but with a plug -in like the Compound Writing plug -in it just gives you something to react to it gives you so much more to react to that you can either agree or disagree with and that can make you a better writer so much faster. So I'm personally so excited to be using that tool. Thank you for making the plugin. It is a gift, especially coming from you. And I think it really informs this new chapter that we're in AI, which is, you know, we're getting expertise that is codified that allows more people to do more great things, which is just so exciting. Yeah, and I'm benefiting from that on my end. You know, like I also use compound engineering to do things that I have no business doing. Sometimes that gets me in trouble, but then AI gets me out of trouble as well. So that's like, yeah, just like I wrote my like my one of my most recent pieces for working overtime was about how I accidentally coded a security risk into a product that I had built. I had built an MCP into this app I made called Tastemaker that actually lets you pull clips from different writing you admire and it distills that into a style guide. It's like okay this is like this is what you admire and appreciate in writing that you might want to inform your own pieces and I built an MCP because I was like I want to be able to like add new clips and like pull my style guide down without actually having to go to the app just while I'm in Codex and like or Claude and like I built it and I don't think I had the most up -to -date compound engineering plugin that had more robust security features and Claude was just like I'll build that for you no problem and then like I asked Codex to review it and Codex was like there are five security vulnerabilities here so AI got me in the trouble and then AI got me out of the trouble, but like just the fact that I'm here like building these kinds of products, like I built my website, like that's crazy. Like it's crazy that I'm able to do that, but all I have to do is like borrow Kieran's brain and I can do it. Well, I borrow Kieran's brain and I'm excited to be borrowing your brain. So thank you. Thank you for putting it out there. Katie, you've been on this journey for really over two years now, you know, all the way from starting to use Chat DPT as a career coach to now having a codecs, not just helping you run your work day to day, but now having built your own custom writing plugin. It's such an incredible journey that you've been on. And in a few months, you'll be speaking at the every conference thesis on November fifth at Pioneer Works in front of so many executives and leaders in the AI space. What is your thesis on AI today? My thesis on AI today is that education and access are going to matter more than they ever have before. So something I feel very strongly about is the distribution of opportunity. I am based in Columbus, Ohio. I grew up in the Midwest. I haven't really spent time in New York or SF or Austin and all these big tech hubs. And I believe, but I believe really strongly that this technology should be in the hands of as many people as possible. But in order for that to happen, you have to create the right conditions. So I'm very fortunate in the fact that I have connections. Like, I have access to really great thinkers, and like, I can learn from Kieran, I can learn from Dan, I can learn from you. But all of that has been facilitated by the fact that I have a certain amount of economic comfort. I have a certain amount of free time and budget to experiment with these tools and like get a subscription and vibe code until 2 a .m. if that's what's interesting to me. And I think that what I want to challenge the AI community with is thinking about how we can expand those kinds of opportunities to more people and more kinds of people in more different places. Because AI does have this huge multiplicative capacity to end this compounding capacity. But the risk there is that value is going to compound to the small subset of people that happen to be early. And I just think that a much more compelling vision for an AI future is one where everyone is able to come along for the ride. I aspire to that version of the future. Thank you so much, Katie. It's been such a treat to connect today. So excited to have the public release, to see the public release of the compound writing plugin. And thank you for your time. Thanks for having me. This was fun. eye and I why because this show is the epitome of awesomeness it's like finding a treasure chest in your backyard but instead of gold it's filled with pure unadulterated knowledge bombs about chat GPT every episode is a roller coaster of emotions insights and laughter that will leave you on the edge of your seat craving for more it's not just a show it's a journey into the future with Dan Shipper as the captain of the spaceship so do yourself a favor hit Like, smash subscribe, and strap in for the ride of your life. And now, without any further ado, let me just say Dan, I'm absolutely, hopelessly in love with you."
+}

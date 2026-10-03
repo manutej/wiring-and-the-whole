@@ -1,0 +1,703 @@
+[0:00] Hey, it's Dan Shipper, and this week I'm excited to share a very special episode of
+[0:05] AI & I.
+[0:05] In this episode, we're previewing the release of an experimental new plugin called
+[0:09] Compound Writing, which helps you write with AI the way that we do internally.
+[0:14] It's inspired by Kieran Klassen's Compound Engineering, and it's built by one of our
+[0:18] staff writers, Katie Parrott.
+[0:19] To help talk about this plugin and why Katie made it and how she uses it, Natalia
+[0:24] Quintero is the host of this episode.
+[0:26] She's our head of AI consulting, thing.
+[0:28] And she's been on the podcast a few times, and she's just an incredible interviewer.
+[0:31] So I'm really excited for you to hear Katie and Natalia chat.
+[0:49] Today we're talking to Katie Parrott, staff writer at Ebery.
+[0:53] Katie, if you've been following Ebery for a while now, we'll be very familiar to
+[0:58] you.
+[0:59] She's one of our all star writers, and we're so excited to learn more about her
+[1:04] writing process and her new plugin today.
+[1:08] Hi Katie, how are you?
+[1:09] I'm good.
+[1:10] How are you?
+[1:11] So good.
+[1:12] I am so excited for this conversation.
+[1:15] I am revealing myself as a Katie fangirl on the podcast.
+[1:21] It's a mutual fandom.
+[1:25] Thank you.
+[1:27] Okay, so Katie,
+[1:29] almost exactly two years ago, you wrote one of your most popular pieces for every
+[1:34] and it was about how you had just been laid off.
+[1:38] And also maybe we're in the middle of a mental health crisis, which you've written
+[1:42] publicly about.
+[1:44] And you decided to turn to chat TBT as a career coach.
+[1:50] But at the time you were also an AI skeptic, which might be crazy to think about now
+[1:56] given some of the work that you're doing.
+[1:57] But can you take us back to that period?
+[2:01] What was going on in your career?
+[2:03] And in that moment in time that led you to turn to chat tbt in the first place.
+[2:09] Yeah so I had just been let go from a crypto firm where I was working as an editor
+[2:14] and ghostwriter for the for the team and you know that in like in hindsight like it
+[2:20] was traumatizing at the time but in hindsight it was like the best thing that ever
+[2:23] happened to me because it led me back to every uh and but I was feeling really lost
+[2:29] as you mentioned you know I had tried crypto, I had tried in
+[2:36] -house, I had tried out -of -house, I had tried all these different things and I
+[2:39] felt like I was at the end of what I could do on my own and I really needed an
+[2:45] outside perspective but because I was working on a budget with no clear visibility
+[2:50] into how long I would be unemployed, hiring a real career coach wasn't really an
+[2:55] option for me.
+[2:56] So I had some exposure to chatgbt at that time.
+[3:00] I had actually used it to produce briefs at a previous job as a content marketing
+[3:07] manager.
+[3:07] We had an agency and I realized,
+[3:11] I was like hitting a wall of depression at that job and like could not bring myself
+[3:15] to put words on a page.
+[3:17] But I found that if I used chatgbt to generate some of the repetitive stuff
+[3:24] And it became this assistive tool that I used as a tool for thought, which is a
+[3:30] phrase I'd also seen Dan use around the same time because I was following every at
+[3:35] the time.
+[3:36] And so it was kind of that combination of things where I was like, okay, I can't
+[3:42] afford like $150 an hour, however much a career coach would be, but I can sign up
+[3:47] for a $20 a month ChatGPT subscription.
+[3:49] and get some of that same result of externalizing my thinking and
+[3:56] getting an outside perspective and just holding me accountable for
+[4:02] how I was thinking about my career journey
+[4:09] and challenging me when I would get a little,
+[4:12] like I have a tendency to catastrophize and the worst and it kind of took me out of
+[4:16] myself in that way too and it was just like a really great experience for me
+[4:23] and like kind of and it ultimately led me to every so yeah.
+[4:29] Yeah it's such a cool post that you wrote and you have you just always have such
+[4:36] great zingers in your writing that are just so delightful to read.
+[4:41] I hope when we are sharing this on video we can pull up some of the screenshots of
+[4:46] just what your chat DPT prompts and screenshots look like because it feels vintage
+[4:52] to be looking at chat from two and a half years ago.
+[4:57] But in that post you have this really great quote.
+[5:01] It's a little lengthy, but I'm going to try to read it because I have a question
+[5:04] about it.
+[5:06] So you say, one of my favorite things about writing is that I never know what I
+[5:10] think until I write it down.
+[5:13] But once I write it down, it becomes obvious.
+[5:16] Ultimately, what's prompting ChatTPT is
+[5:19] a form of very specific strategic writing.
+[5:22] Do I think my experiment with ChatTPT added clarity in my thinking?
+[5:25] Yes, it has.
+[5:26] But as with so many of these tools, the real work is still mine.
+[5:30] Clarity, it turns out, doesn't arrive gift wrapped from a digital assistant or even
+[5:33] a human coach.
+[5:34] It's something I had to dig out for myself, question by question and prompt by
+[5:38] prompt.
+[5:38] True clarity, direction, and answers come from the process of engaging with the
+[5:43] prompts and doing the hard work yourself.
+[5:45] AI can help guide the way, but the journey is yours to take.
+[5:49] Just so beautiful.
+[5:51] Just so, so cool.
+[5:53] And, you know, I think one of the things that really resonates with me about your
+[5:57] writing is that this feels so reflective of my experience using AI, where
+[6:03] I am attracted to the possibility
+[6:09] of maybe an easy answer, an easy solve.
+[6:14] But actually what I constantly find myself doing is learning something that was
+[6:19] always there inside of me, but I had to put some work in and some clarity into to
+[6:25] like actually get it out of me.
+[6:28] Can you tell me a little bit more about what using AI in this very early experience
+[6:33] and this very kind of practical high -value experience, what it taught you about
+[6:39] using AI?
+[6:41] The first thing it taught me is that I can use AI to make change in my life, which
+[6:47] is something that I've continued to carry through over the last couple of years.
+[6:51] I really judge the technology by the impact it's had practically for me, And the
+[6:58] fact that I used the career coach, for example, I remember talking when I got the
+[7:05] invitation from Kate to write what ultimately became working overtime, my column,
+[7:11] I was talking to ChatGPT about whether it was the right step for me to take
+[7:19] because I was kind of on the fence.
+[7:21] It would have been freelancing at the time.
+[7:23] I was kind of on the fence about that versus looking for a full -time opportunity.
+[7:29] And ChachiPT nudged me in the direction of like, well, why not try it in the
+[7:33] meantime?
+[7:34] And I did that and now I'm here.
+[7:38] And throughout my experience with AI, that's really been the thing is that it's
+[7:44] given me both the framework for thinking and obviously it's become the thing I think
+[7:49] about.
+[7:50] But it's really just about the fruits of the labor, so to speak,
+[7:57] and seeing what AI is able to give back to me.
+[8:01] So it sounds like one of the early takeaways that you had in leveraging AI was that
+[8:06] you could really get it to be a valuable tool for you.
+[8:11] And so that reminds me of another post that you wrote that was really popular with
+[8:18] the Every Audience.
+[8:18] and I believe it's titled AI Turned Me Into a Content Agency of One.
+[8:26] And early in this post, you talk about how at the time you were a freelancer, so
+[8:30] this is early 2025, and you realize that you had
+[8:36] overcommitted yourself or potentially overcommitted yourself with the number of
+[8:41] freelance projects that you had agreed to deliver.
+[8:45] And then you go on to list the number of things that you committed to delivering in
+[8:50] a two -week period.
+[8:51] This includes eight blog posts, three ebooks, 24 LinkedIn posts, we're not
+[8:58] even halfway through, 24 x posts, 16 Instagram posts.
+[9:04] I mean, there is just no way I could write this amount of content in a month.
+[9:09] How did you learn to do that?
+[9:12] How did you learn to use AI to generate this amount of content and at the caliber
+[9:18] that I know you deliver?
+[9:20] I think around this time was when I was really discovering, like I wouldn't have
+[9:26] used this language because it hadn't really become a thing yet, but context
+[9:30] engineering.
+[9:31] And what I realized was if I gave the model a really good foundation in terms of,
+[9:37] you know, the brand messaging, product specifics, audience specifics of the
+[9:42] companies that I was working for.
+[9:45] I could shape the AI outputs toward the direction that I wanted.
+[9:51] So it was really a lot of foundational work that once that was set, I could kind of
+[9:56] just iterate through.
+[9:58] And it helped that a lot of the things were content repurposing, which is one of the
+[10:02] first things that people were really excited about.
+[10:04] you know, one of the first products that Every put out was Spiral, which was all
+[10:08] about content repurposing, because that's something that Every was doing a lot.
+[10:12] You know, you have a post, you want to turn it into a LinkedIn post, a blog, you
+[10:16] know, a Twitter post, a blog post.
+[10:18] And so
+[10:19] yeah, it was just like, I realized, I like, I was like, okay, I'll write through all
+[10:24] of the surrounding information that the AI needs to do a good job.
+[10:28] And then when that like, the The more I put in that work up front, the easier the
+[10:35] process got farther down the line.
+[10:36] And that's something that I found with my AI experience overall is just like you
+[10:41] invest, at first it feels really effortful and you're spending a lot of time setting
+[10:46] the scenes, like getting everything lined up, like in terms of your tools and your
+[10:51] integrations and your context documents.
+[10:53] But when you have that environment set up, you can just kind of run and like run
+[10:58] fast.
+[10:59] and that's what I was able to do when I over committed myself that that time.
+[11:05] Which I did again like six months later.
+[11:09] I think this might be a common characteristic of everyone at Emory.
+[11:16] Can we talk a little bit more about what was in those files and in the context and
+[11:23] in the setup that you created to let you fast because I
+[11:28] think I remember some of the context files that you shared with us and that I saw
+[11:34] around that time.
+[11:36] But I'm curious, what does that look like?
+[11:38] Were they folders that you were sharing?
+[11:40] Were they projects on Claude?
+[11:42] Walk me through what some of those things look like.
+[11:45] They weren't projects because projects didn't exist yet.
+[11:48] and I remember at the time, like at the time projects launched, I thought back to
+[11:54] that period I was like I really wish that this had existed when I was doing this
+[11:57] because I had to do a lot of manual copy and pasting like I would have my persistent
+[12:01] documents and I would just in a Google doc and I would copy and paste into the
+[12:06] context windows so that the agent so that it wasn't an agent well I guess maybe it
+[12:10] was an agent I don't know but so that the model would have access to that
+[12:13] information.
+[12:14] And it really came from my experience in the content marketing world building style
+[12:19] guides.
+[12:21] You know, every brand worth its salt has, you know, a source of truth where
+[12:27] they document, okay, who is our audience?
+[12:31] What are their pain points?
+[12:33] How does our product map to those pain points?
+[12:37] What is our competition and what are our differentiators?
+[12:41] These are units of work that I was used to doing as a content manager.
+[12:50] I just started with what I was familiar with.
+[12:52] I started with what I knew and gave that information to the model.
+[12:59] It did a good job.
+[13:01] At that point I was like, okay, this seems to be working.
+[13:04] and then projects came along and I did so suddenly.
+[13:08] I didn't have to copy paste anymore because I could use the project documents and I
+[13:12] could use the custom instructions to sort of set a project up.
+[13:16] And I had a project for every freelance client.
+[13:19] I had a project for every column that I worked on because I was starting to spread
+[13:26] out in terms of what I was doing at every at that time.
+[13:29] But it all comes down to basic rules of writing and knowing who is our audience,
+[13:36] you know, what is our different, like what is, what is our differentiated thing that
+[13:40] we have to say, and just feeding the AI all of that foundational stuff
+[13:47] so that it feels true.
+[13:50] So that it kind of has rails to run on.
+[13:53] That's what I'm always, I always think of is just like creating guardrails and kind
+[13:57] of like a fenced in place for the model to play,
+[14:01] and then you don't have to worry so much about getting something that's completely
+[14:08] wrong because you're kind of pushing it in the right direction.
+[14:13] Right, you've given it a playground.
+[14:15] I know this is something that Mike Taylor on our team cares a lot about, you know,
+[14:19] having really clean context windows and being very selective of what playground
+[14:25] you're giving model.
+[14:26] Knowing what you know now and as a writer, what are the things that you think
+[14:33] have made it so that your projects are so successful?
+[14:35] Is it having a really strong point of view on what good writing is, on what good
+[14:39] content marketing is?
+[14:40] What are those things that are so important to have a strong perspective on?
+[14:44] I think it's less about the
+[14:50] writing at first than it is about
+[14:55] the other kinds of contacts like the
+[15:01] data that you're giving it, the frameworks for
+[15:07] audience personas and who they should be talking to.
+[15:12] Like you need all of that in place before you can even get to stuff like use these
+[15:17] words and avoid these words.
+[15:19] Like prefer this level of reading difficulty and like strike this tone.
+[15:25] Like before you even get to the point where you're sort of messing with that kind of
+[15:30] stuff you need to have those foundational elements kind of set up and then like
+[15:37] you'll we'll be wrestling with this addiction and syntax thing for the rest of
+[15:40] forever.
+[15:43] And when you're referring to the data, what is the data that you would need to to
+[15:48] put in there?
+[15:49] Well, that's the that's the specifics of the piece.
+[15:52] So like something that I feel really strongly about it like as like our role as
+[15:57] humans in this wonderful world of AI and AI writing specifically is that there's
+[16:03] sort of a last mile problem in writing in AI and writing, which is AI has that
+[16:10] knowledge cut off, right?
+[16:11] It's always working with data that's several months out of date.
+[16:16] And our job as the humans is to close that last mile and provide the real world
+[16:22] experiences that AI can't get because they come after the knowledge cut off and it's
+[16:27] also out there happening somewhere in the real world and AI is not in the real
+[16:33] world, the physical world yet.
+[16:35] So when I say research, I'm really talking about the unique or data that it's like
+[16:40] the unique insight so that whether that's like a study that your that your company
+[16:44] has produced or third -party research that you're pulling in which is something that
+[16:49] I love to do in my writing for working overtime it's all of the all of the
+[16:55] constitutive elements that go into the the writing and the model
+[17:02] can then work from that.
+[17:03] But the inputs are really what makes the writing unique.
+[17:09] I think a lot of times when people are writing with AI, they just kind of go with to
+[17:13] it and say, write a blog post about style guides.
+[17:16] Let's just use that as an example.
+[17:18] And they don't give it anything to go on.
+[17:20] They're just like, write a style guide, a guide, a post about style guides based on
+[17:24] what you, the model, already know.
+[17:26] But then what the model already knows as commoditized information.
+[17:30] Like that's not useful or interesting.
+[17:32] So the data is the unique insight, the data point that the model doesn't have
+[17:39] access to yet, the personal experience, all of those things that are working are
+[17:45] ultimately going to make the writing unique.
+[17:48] It all sounds like the documents that you save for what might be a project today or
+[17:54] what might be maybe like a Codex sort of setup is all of the things that can be
+[17:59] codified as like good best practices but then what you bring into every piece it's
+[18:04] like the it's like the quality of the ingredients right so it sounds like what
+[18:08] you're bringing to the piece it's just the the sort of like freshness quality and
+[18:14] unique elements of the piece that you want to highlight and bring out that only you
+[18:19] can really bring.
+[18:21] I love that analogy that's a really good one that's That's pretty much exactly it.
+[18:26] You know, the model is the kitchen.
+[18:30] The, you know,
+[18:31] the, you know,
+[18:34] like structure, like the outline is like chopping and the composition is like
+[18:40] boiling, but like you need the individual ingredients to be like fresh and
+[18:46] like good to produce good work.
+[18:50] Yeah.
+[18:51] This is actually something that you referenced very early on in this piece in 2025.
+[18:56] You have this really beautiful quote,
+[18:59] and I'm sorry to read you your great quotes back to you.
+[19:03] It's horrible.
+[19:04] So you write, Two odd years into my AI journey, I have to admit, AI hasn't just
+[19:10] helped me produce content faster.
+[19:12] It has fundamentally changed the scale of what I can do, the limits of what I use to
+[19:17] bump up against time, energy, capacity are way lower.
+[19:21] And it sounds like that's the recipe, right?
+[19:23] It's like you would always be using the same recipe, but now you don't have to worry
+[19:28] so much about the recipe.
+[19:29] The recipe is codified.
+[19:30] Now you can really just come to the table with what is uniquely in your brain.
+[19:35] This is something you also say in the post.
+[19:38] It's become trite to say that AI frees you to focus on the human elements that truly
+[19:42] matter, but AI has freed me to focus on the human elements that truly matter.
+[19:47] I remember that one.
+[19:51] It's magic seeing it from the outside, you know?
+[19:54] Like, I have no idea how you do it, and it's magical every time that you put another
+[20:00] piece together.
+[20:01] It's magical to me too.
+[20:03] Like, that's really all I can say is, like,
+[20:07] the fact, like, working with AI kind of made me fall in love with writing again,
+[20:12] because for a long time writing to me had just felt like such a slog.
+[20:17] It was like so effortful.
+[20:19] I was spending so much like energy and mental capacity just trying to assemble
+[20:25] sentences that I wasn't really paying attention to what the sentences as a whole
+[20:31] said or like how like or like I was just like this is done I'm gonna get it off my
+[20:37] plate it's good enough and now with AI I have like the energy left over to spend
+[20:43] more time wrestling with those harder, bigger picture questions.
+[20:47] And it's just made writing a lot more fun because it's brought back a feeling of
+[20:51] exploration and discovery both with the tool, but then also with my own brain and
+[20:58] what I think and like how I bring that to life.
+[21:02] So I want to turn back a moment to,
+[21:07] you know, there's two things that I admire so much in the way that you use AI
+[21:11] specifically.
+[21:14] And one is obviously the way in which you use it for writing, but the other is the
+[21:18] way in which you use it kind of like as a harness for doing your best work.
+[21:24] And you have this really beautiful piece that you wrote in
+[21:31] about a year ago, so kind of like mid 2025, called AI Solved the Problem that I
+[21:36] couldn't explain to managers.
+[21:39] And in this piece, you talk about how or actually, can you tell us a little bit
+[21:46] about this piece?
+[21:46] Do you remember what you talked about?
+[21:48] You hear a lot about AI tools on this show.
+[21:52] But the one that's truly at the center of your work is your CRM.
+[21:56] It's where all of your customer context lives and where the work either happens or
+[22:00] gets missed.
+[22:01] Adio delivers the work that you never had time to focus on before and more.
+[22:05] It picks up leads at 2am, it catches renewals before they slip, and drafts the
+[22:11] follow -up before you've even thought to send one.
+[22:14] Ask Adio anything about your business from this week's forecast to which deals have
+[22:19] gone quiet and get the answer in seconds.
+[22:22] And because it's extensible with an API and an MCP, your agents work right alongside
+[22:27] your team to build pipeline, advance deals, and grow accounts around the clock.
+[22:32] Try adio for free at adio .com slash every that's adio at o .com slash
+[22:39] every and now back to the episode This is the piece where I talk about my mental
+[22:45] health and my crippling anxiety around email
+[22:50] Yeah, so this is a piece that this is this is like one of the most personal and like
+[22:54] one of my favorite pieces that I wrote because it's about
+[22:59] AI viewed through a different lens that I think we're used to thinking about it.
+[23:04] We think about AI as a productive technology, right?
+[23:06] We value it for its ability to produce output and get things out of our, like just
+[23:12] put stuff out.
+[23:14] And what I found in my personal experience is that AI is just as powerful as a
+[23:19] supportive technology.
+[23:21] So I have bipolar disorder.
+[23:24] I experience spikes of like high energy and honestly frankly I spend a lot more time
+[23:30] in really lows of depression and what I found is that AI kind of reduces friction in
+[23:36] my life in a way that like makes it easier for me to person.
+[23:39] It makes it easier for me to work, it makes it easier for me to you know move
+[23:45] through my day -to -day life.
+[23:47] That's actually become even more true now with agents being able to handle what our
+[23:53] COO, Brandon, calls computer errands.
+[23:56] So I put off making a primary care physician appointment for like...
+[24:02] three years and then I realized I could simply tell Codex to go find primary care
+[24:07] physicians near me that take my insurance and are accepting new patients.
+[24:13] And it went off and found me someone and I booked an appointment.
+[24:17] And that's something that I would never have done.
+[24:19] I would have just kept procrastinating on it infinitely because of the way my brain
+[24:23] works and AI was able to help me over that hump and it's done that over and over
+[24:29] again.
+[24:29] And so like, you know, using Quora to make my inbox more manageable.
+[24:33] So I'm not confronting a wall of emails, but just the really important ones that
+[24:38] need my human response.
+[24:40] That's completely changed my relationship to my inbox because I don't have to like
+[24:45] go digging and like be like looking for the bomb that is hiding in the, in the, in
+[24:52] the millions of like, uh, things that are just like subscription notices and stuff,
+[24:57] but the things that need human response has come to me.
+[25:00] And now I have an automation set up through Codex, and I have it tell me what's in
+[25:05] my inbox that I need to respond to.
+[25:07] And so my inbox anxiety has been completely resolved.
+[25:13] And I've just seen a lot of other ways
+[25:16] that AI supports me and allows me to work better, not just in terms of
+[25:23] using it for the output, but using it for everything that surrounds the output.
+[25:27] Right?
+[25:27] It's like it's not just the medical appointments, it's the bills, it's the emails,
+[25:32] it's the tasks that, you know, you'll never really get around to doing like around
+[25:37] the house or whatever it might be.
+[25:39] And it does feel to me with AI that I have a little bit more firepower to get to
+[25:46] some of those things.
+[25:47] You'll love this, Katie.
+[25:48] For the first time in my life, I'm filing insurance -free because Codex is filing my
+[25:55] insurance reimbursements.
+[25:57] I would rather pay insurance than how to manually do that.
+[26:02] And it's exciting to have a tool that I feel like can really work in my favor.
+[26:08] In this particular piece, you talk about that and you say, I've been working at
+[26:15] Avery for one year now, and that might not sound remarkable, but it feels like a
+[26:19] milestone.
+[26:19] For me, the proof of AI's value is the fact that I'm still here doing work I'm proud
+[26:24] of.
+[26:25] And it kind of is the greatest measure of success that you get to do more of the
+[26:31] work that you're excited to wake up and do every day.
+[26:35] And to me, that's such a clear AI win.
+[26:37] Can you tell us a little bit more about...
+[26:39] So we started out with you going to ChatTBT over two years ago and
+[26:46] asking it to be your AI coach.
+[26:47] and it's enabled this incredible amount of work that you're doing now.
+[26:52] You've talked about it in some posts.
+[26:54] Now it looks a little bit more like a Codex project, if I believe.
+[26:57] Can you tell us a little bit more about how that has evolved and what that looks
+[27:01] like today?
+[27:03] My writing process?
+[27:05] This is for the kind of career,
+[27:08] like what the equivalent of your career coach looks like today.
+[27:12] Oh my gosh, my career coach has evolved so much.
+[27:15] It is now a project inside of my codecs and it has so much more information than
+[27:22] the first version.
+[27:24] So it has a dossier on me and my role and it has
+[27:31] context around every and our super top secret brand
+[27:38] positioning that I got from our head of marketing, Douglas,
+[27:43] that I was like, okay, if we put, and then what I'm able to do with that is like,
+[27:47] okay, here's the context on me and my role.
+[27:49] Here's the context on every, how do I put those two things together and what should
+[27:54] I prioritize to have the biggest impact that I can?
+[27:59] And so it's helped, it helps me now, now that I'm in a job and not looking, not
+[28:04] meeting the career coach to help me find a job, it helps me orient myself
+[28:09] prioritize.
+[28:10] It does project management for me and now increasingly all of this is happening just
+[28:16] with voice, like with monologue.
+[28:18] I'd monologue like a ton all day, every day and I'll just like talk to my career
+[28:23] coach about like I've got four different priorities like what should I, what should
+[28:28] I, what should I do in what order and it kind of operates as that chief of staff
+[28:34] that kind of like points me in a direction and says this is the highest impact thing
+[28:39] you can do first, this is like maybe something that you can put off until later, and
+[28:44] then that like and it just helps do that kind of that kind of work and it maintains
+[28:50] a Kanban board for me.
+[28:52] I've never been a person that can maintain a Kanban board but now I don't even have
+[28:56] to touch it.
+[28:56] It just lives in this little career coach management project land and I just like
+[29:02] say like, what's the due date on this deliverable?
+[29:06] And it will tell me.
+[29:07] Can you tell us a little bit more about how that's set up?
+[29:10] That sounds incredible.
+[29:12] So like that's the thing is you kind of forget over time as it starts to work, you
+[29:16] just take for granted that it's working and you don't think about what's inside it
+[29:19] so much anymore.
+[29:21] So let me find career coach mode.
+[29:25] Yeah, so it's got evidence is one of the folders.
+[29:28] So, you know, I periodically scrape all the data out of our content management
+[29:35] system into a spreadsheet and like I have that so I know like how my posts are
+[29:39] performing.
+[29:40] It also has like reader feedback and other things like I maintain what I call my
+[29:45] validation folder which is just full of nice things people have said about my work.
+[29:49] That becomes another input because that helps the model understand, okay, what do
+[29:53] people respond positively to in my work that we want to like reinforce.
+[29:57] It has references, like that's where my role positioning is.
+[30:04] It has my OKRs for Q2 and now Q3 because somehow it became
+[30:11] Q3 which should not be legal and some other things like that.
+[30:15] So it just has a ton of these,
+[30:19] again it's all context, it's all documentation that increasingly I don't manually
+[30:26] create.
+[30:26] I how they I created for me like through an interview process like I'm I'm always
+[30:31] having AI interview me Alex Duffy gave me that tip early on in my time at every and
+[30:36] it's just like completely changed how I work with AI because I'll just be like ask
+[30:39] me questions to draw out what I think about this and that's how I was able to pull
+[30:44] together the career coaches like I just said I want to create a career coach you
+[30:49] know this is what I wanted to do and then I started just showing it a bunch of
+[30:53] context documents like all of the data from the performances and like my validation
+[30:58] folder.
+[30:59] And we just talked until we got to a place where we had a system that worked the way
+[31:03] that I kind of like had envisioned in my mind.
+[31:07] So in two years, which is, you know, a lot of time in AI time, but in two years, you
+[31:14] went from
+[31:16] prompting a simple prompt on chat TBT, you know, how can you help me as a career
+[31:20] coach to having a fully autonomous codec setup that maintains your to -do list,
+[31:28] your OKRs, it keeps you on track with a Can -bin board and at this point your
+[31:34] codecs is maintaining it for you.
+[31:38] Yes.
+[31:38] Is that insane?
+[31:40] So I mean, this is amazing, right?
+[31:42] I think one of the things that you're uniquely great at is using AI for kind of like
+[31:48] powering your career harness and also your ability to write really, really great
+[31:55] pieces.
+[31:56] And so going back to the writing component,
+[32:00] you know, we talked a little bit about some of the how you've created AI to
+[32:05] basically kind of like hold the recipe for you, like how you think about good
+[32:09] writing, and then the elements that you bring to each writing session so that it can
+[32:13] just allow you to do your best work.
+[32:15] And now you are,
+[32:22] I think by the time that this podcast airs, we will have published your compound
+[32:27] writing plugin.
+[32:29] Can you tell us a little bit about what compounding is as a concept and then about
+[32:36] the writing plugin?
+[32:38] Yeah, so compounding is the idea that every piece of feedback
+[32:45] that you give to AI should feed back into the system to improve the next output.
+[32:51] So obviously for folks that follow every they'll be familiar with this from Kieran
+[32:55] Klassen's compound engineering plugin.
+[32:58] He was really the one to pioneer this idea that you should only have to give a piece
+[33:02] of feedback once, but if you codify it the right way, it will be there forever and
+[33:08] the next time you're in that same situation, the AI is going to make a better
+[33:11] decision.
+[33:13] And so the Compound Writing plugin, it started, I literally just forked.
+[33:17] Forked is a word that I know now because I wouldn't have known if I weren't working
+[33:22] with AI, but I pulled the compound engineering plugin down and talked to
+[33:29] Claude about it said, I want to take this compound engineering plugin and adapt it
+[33:36] for writing.
+[33:37] Because in certain ways, writing is very similar to code.
+[33:41] Like the compound engineering plugin has brainstorming, ideating, planning,
+[33:48] working, and then reviewing.
+[33:50] And very similarly, in writing, you have brainstorming, outlining, drafting,
+[33:58] reviewing.
+[33:58] and it's kind of a similar kind of flow, but there are also differences.
+[34:03] Like obviously, I don't need my,
+[34:07] you know, for writing you're not looking at things like
+[34:11] coding conventions, you're looking for things like structure, voice,
+[34:17] evidence, and like all of these kinds of different things.
+[34:20] So it's a different, like there's a different, it's a different container, but like
+[34:24] it just made sense to me.
+[34:25] So like again, I just talked to Claude and said, you know, I want I want these steps
+[34:31] in the process I want you know, I want an outline to look like this I want a draft
+[34:38] to be done this way and like these are the kinds of review and then like I want two
+[34:41] different kinds of Reviews like a substantive edit That's like the big picture
+[34:45] structure in the argument and then a line at it that looks at the individual writing
+[34:49] and then a final pass that like looks at like just the final details that you want
+[34:54] something to be publication ready.
+[34:56] And I was able to pull that together just like, I always like all of my best AI
+[35:01] ideas, I've ripped off from someone else on the every team.
+[35:05] So it was very much compound engineering plus Dan's agent native architecture guide
+[35:10] that kind of combined together to create Compound Writing.
+[35:13] And now that's what I use all the time for every piece that I write.
+[35:17] I'm no longer in a chat window.
+[35:19] I'm no longer in a project on Claude .ai or chadgbt .com.
+[35:25] I am like in the Claude desktop app or the chatgbt desktop app working with
+[35:31] this system that has all that again has the recipe of how I want the drafting
+[35:37] process to go.
+[35:38] And then it has the, the context files about this, but like still the, many of
+[35:45] the same context files that used to live in the project in terms of like a style
+[35:49] guide, example pieces,
+[35:51] and then again I just bring the fresh information into that ecosystem and
+[35:58] a piece comes out of it one way or another.
+[36:01] Somehow a piece appears.
+[36:05] I'm so excited to use it when it comes available.
+[36:09] I hope to be an alpha tester of it when you're ready to share it.
+[36:14] Oh, it's on the GitHub.
+[36:15] You can get it now if you're on the ever GitHub.
+[36:18] Dang.
+[36:18] Okay, great.
+[36:19] I will definitely have to try it.
+[36:20] One of the things that I find so exciting about a great plugin.
+[36:25] A great plugin to me is like an expert instruction manual for how to do something
+[36:32] you have no business doing.
+[36:34] And so for me, for compound engineering,
+[36:38] I am not an engineer by trade, and yet I spend my weekend building different
+[36:44] products and products that I rely on now every day.
+[36:50] And what compound engineering allows me to do is to build a product using the logic
+[36:57] and as practices that a great engineer and actually like a great team of engineers
+[37:01] would use for different steps in the kind of like product build process.
+[37:07] Obviously it begins with something like a PRD or a plan.
+[37:10] Things are scoped really well, there's security element, obviously there's
+[37:14] compounding at the end, but this is a process that if you are not an engineer or an
+[37:19] expert at building products, it's just totally foreign to you, right?
+[37:22] So in the same way that when you were describing the things that you would
+[37:26] intuitively create as context files for your cloud projects over a year or two
+[37:33] ago.
+[37:34] Now it's like I can access Katie's brain recipe with this Compound Writing
+[37:41] plugin where I can both use the tool and the tool
+[37:48] can help me do better work.
+[37:50] But I think what's most exciting about a great plugin to me is that it can teach you
+[37:54] how to do that kind of work, right?
+[37:56] So it can teach you how to be a great writer because it presents the steps, the
+[38:01] options, and the different directions that you might take at any step.
+[38:05] Do you find that for writing in particular?
+[38:08] Because it's not so deterministic in the way that code is, that it's a little bit
+[38:13] more flavored, like it's more of a reflection of how you write, or can it be kind of
+[38:17] like a generic tool that other people can use, even if they're not professional
+[38:21] writers?
+[38:22] I definitely think people can use it who are not professional writers and it may
+[38:26] even be better for them because they don't have strong pre -existing opinions about
+[38:32] the writing and so they're going to be less inclined to nitpick and they'll just be
+[38:38] excited that they can produce something that they maybe hadn't been able to produce
+[38:43] before.
+[38:45] But,
+[38:48] and like, I think that, and like, honestly, I think, and I wrote about this in a
+[38:51] piece for working overtime, like writing with AI is harder than you think.
+[38:56] It's made me a better writer.
+[38:58] Like the analogy that I use for the Compound Writing plugin is that it's a gym.
+[39:04] It's a workout system to like make you a better writer because most of the, so like,
+[39:09] for example, in the editing step, I built in a lot of these reviewers.
+[39:12] One of my favorites is Vonnegut.
+[39:15] So Kurt Vonnegut had these like eight elements of story structure.
+[39:19] So it's things like start as close to the end as possible.
+[39:23] You know, every sentence has to earn its place.
+[39:26] Give the reader a character they can root for.
+[39:30] And I just turned that into a skill in the plugin.
+[39:33] And now you can base it, you can borrow this framework.
+[39:35] It's not that like Kurt Vonnegut, the spirit of Kurt Vonnegut is reviewing your
+[39:40] work, but he has this framework that I think is really useful for a lot of writers
+[39:44] that you can kind of distill and turn into a scale.
+[39:48] And I've done that with several different writers that I admire.
+[39:51] So another one I have is Hitchcock,
+[39:54] which is based on Hitchcock's principle of suspense.
+[39:58] So he has this famous quote about a bomb under the table where like if there's a
+[40:04] bomb under the table and it explodes, that's a one moment of surprise.
+[40:08] But if you have people sitting around the table and you show the audience the bomb
+[40:12] under the table and say this bomb will go off in five minutes, now you have five
+[40:17] minutes of suspense.
+[40:19] And so I turned that into a skill that assesses, okay, does this, does this make the
+[40:24] reader lean in?
+[40:25] Does this make the reader like anxious and curious to see what will happen next?
+[40:30] And that becomes another lens that you can apply to, to writing.
+[40:34] And so I get a lot of value out of that as an experienced writer even because like
+[40:38] I'm not always able to like consider all of those different lenses but now I can
+[40:43] just sort of like invoke Vonnegut, invoke Hitchcock, invoke Sorkin, invoke Sedaris
+[40:49] for humor and get those kinds of perspectives on my writing that are
+[40:56] informed by these really brilliant storytellers that I admire.
+[41:02] It's such a gift.
+[41:03] It's so cool that you've done this.
+[41:06] I mean, I could totally see how, you know, presented with the opinions of Sorkin and
+[41:12] Zadaris and Vonnegut.
+[41:14] Someone might say, oh, I really like Vonnegut.
+[41:16] Like, that's a framework that really resonates with me.
+[41:19] And maybe that is closer to the writing style that I aspire to have and might
+[41:23] pursue.
+[41:24] Or equally helpful.
+[41:26] I don't like the Hitchcock, you know, sort of like method of writing or sort of like
+[41:31] this leaning in.
+[41:32] And that's what actually would enable you to develop your own taste, which I think
+[41:35] is really what any ambitious AI user wants to do, right?
+[41:40] It's like we want to do things that we have no business doing, right?
+[41:44] Building products that we have, that we wouldn't have been able to build, you know,
+[41:48] 10 years ago or even five years ago, right?
+[41:51] In compelling ways that feel
+[41:54] authentic and and of a caliber that like we would be proud of but it's actually
+[42:00] really difficult to do high -quality work and it takes a lot of effort there's
+[42:05] really kind of no shortcut but with a plug -in like the Compound Writing plug -in it
+[42:12] just gives you something to react to it gives you so much more to react to that you
+[42:16] can either agree or disagree with and that can make you a better writer so much
+[42:21] faster.
+[42:22] So I'm personally so excited to be using that tool.
+[42:25] Thank you for making the plugin.
+[42:27] It is a gift, especially coming from you.
+[42:31] And I think it really informs this new chapter that we're in AI, which is, you know,
+[42:36] we're getting expertise that is codified that allows more people to do more great
+[42:42] things, which is just so exciting.
+[42:45] Yeah, and I'm benefiting from that on my end.
+[42:49] You know, like I also use compound engineering to do things that I have no business
+[42:52] doing.
+[42:53] Sometimes that gets me in trouble, but then AI gets me out of trouble as well.
+[42:59] So that's like, yeah, just like I wrote my like my one of my most recent pieces for
+[43:04] working overtime was about how I accidentally coded a security risk into a product
+[43:08] that I had built.
+[43:10] I had built an MCP into this app I made called Tastemaker that actually lets you
+[43:14] pull clips from different writing you admire and it distills that into a style
+[43:20] guide.
+[43:20] It's like okay this is like this is what you admire and appreciate in writing that
+[43:24] you might want to inform your own pieces and I built an MCP because I was like I
+[43:29] want to be able to like add new clips and like pull my style guide down without
+[43:34] actually having to go to the app just while I'm in Codex and like or Claude and like
+[43:39] I built it and I don't think I had the most up -to -date compound engineering plugin
+[43:43] that had more robust security features and Claude was just like I'll build that for
+[43:49] you no problem and then like I asked Codex to review it and Codex was like there are
+[43:54] five security vulnerabilities here so AI got me in the trouble and then AI got me
+[44:00] out of the trouble, but like just the fact that I'm here like building these kinds
+[44:04] of products, like I built my website, like that's crazy.
+[44:09] Like it's crazy that I'm able to do that, but all I have to do is like borrow
+[44:13] Kieran's brain and I can do it.
+[44:19] Well, I borrow Kieran's brain and I'm excited to be borrowing your brain.
+[44:23] So thank you.
+[44:23] Thank you for putting it out there.
+[44:26] Katie, you've been on this journey for really over two years now, you know, all the
+[44:31] way from starting to use Chat DPT as a career coach to now having a
+[44:37] codecs, not just helping you run your work day to day, but now having built your own
+[44:44] custom writing plugin.
+[44:46] It's such an incredible journey that you've been on.
+[44:49] And in a few months, you'll be speaking at the every conference thesis on November
+[44:55] fifth at Pioneer Works in front of so many executives and leaders in the AI space.
+[45:01] What is your thesis on AI today?
+[45:04] My thesis on AI today is that education and access are going to
+[45:11] matter more than they ever have before.
+[45:15] So something I feel very strongly about is the distribution of opportunity.
+[45:20] I am based in Columbus, Ohio.
+[45:24] I grew up in the Midwest.
+[45:27] I haven't really spent time in New York or SF or Austin and all these big tech hubs.
+[45:33] And I believe, but I believe really strongly that this technology should be in the
+[45:36] hands of as many people as possible.
+[45:39] But in order for that to happen, you have to create the right conditions.
+[45:43] So I'm very fortunate in the fact that I have connections.
+[45:47] Like, I have access to really great thinkers, and like, I can learn from Kieran, I
+[45:52] can learn from Dan, I can learn from you.
+[45:55] But all of that has been facilitated by the fact that I have a certain amount of
+[46:01] economic comfort.
+[46:02] I have a certain amount of free time and budget to experiment with these tools and
+[46:08] like get a subscription and vibe code until 2 a .m.
+[46:13] if that's what's interesting to me.
+[46:14] And I think that what I want to challenge the AI community with is thinking about
+[46:20] how we can expand those kinds of opportunities to more people and more kinds of
+[46:24] people in more different places.
+[46:26] Because AI does have this huge multiplicative capacity to end this compounding
+[46:32] capacity.
+[46:34] But the risk there is that value is going to compound to the small subset of people
+[46:40] that happen to be early.
+[46:41] And I just think that a much more compelling vision for an AI future is one where
+[46:46] everyone is able to come along for the ride.
+[46:48] I aspire to that version of the future.
+[46:52] Thank you so much, Katie.
+[46:53] It's been such a treat to connect today.
+[46:55] So excited to have the public release, to see the public release of the compound
+[47:00] writing plugin.
+[47:01] And thank you for your time.
+[47:04] Thanks for having me.
+[47:05] This was fun.
+[47:19] eye and I why because this show is the epitome of awesomeness it's like finding a
+[47:23] treasure chest in your backyard but instead of gold it's filled with pure
+[47:27] unadulterated knowledge bombs about chat GPT every episode is a roller coaster of
+[47:33] emotions insights and laughter that will leave you on the edge of your seat craving
+[47:38] for more it's not just a show it's a journey into the future with Dan Shipper as the
+[47:43] captain of the spaceship so do yourself a favor hit Like, smash subscribe, and strap
+[47:49] in for the ride of your life.
+[47:51] And now, without any further ado, let me just say Dan, I'm absolutely, hopelessly in
+[47:56] love with you.

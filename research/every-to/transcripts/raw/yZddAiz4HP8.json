@@ -1,0 +1,3382 @@
+{
+  "meta": {
+    "video_id": "yZddAiz4HP8",
+    "url": "https://www.youtube.com/watch?v=yZddAiz4HP8",
+    "language": "English (auto-generated)",
+    "language_code": "en",
+    "is_auto_generated": true,
+    "availability": {
+      "status": "available"
+    },
+    "fetched_via": "TubeAlfred youtube_video_transcript"
+  },
+  "transcript": [
+    {
+      "text": "It's model release day. We've got an",
+      "start_ms": "1280",
+      "end_ms": "6799",
+      "start_time_text": "0:01"
+    },
+    {
+      "text": "allnew Fable Fable 5.1",
+      "start_ms": "3760",
+      "end_ms": "9678.999999999998",
+      "start_time_text": "0:03"
+    },
+    {
+      "text": "and it is Fable for everyone. We've been",
+      "start_ms": "6799",
+      "end_ms": "11519",
+      "start_time_text": "0:06"
+    },
+    {
+      "text": "testing it for about a week. This is a",
+      "start_ms": "9679",
+      "end_ms": "14320",
+      "start_time_text": "0:09"
+    },
+    {
+      "text": "sick model. It is a better coding model",
+      "start_ms": "11519",
+      "end_ms": "15839",
+      "start_time_text": "0:11"
+    },
+    {
+      "text": "than the original Fable. So, if you love",
+      "start_ms": "14320",
+      "end_ms": "17520",
+      "start_time_text": "0:14"
+    },
+    {
+      "text": "the original Fable, you're going to love",
+      "start_ms": "15839",
+      "end_ms": "20720",
+      "start_time_text": "0:15"
+    },
+    {
+      "text": "this model even more. And it speaks",
+      "start_ms": "17520",
+      "end_ms": "23759.999999999996",
+      "start_time_text": "0:17"
+    },
+    {
+      "text": "English. It actually talks to you like a",
+      "start_ms": "20720",
+      "end_ms": "25119",
+      "start_time_text": "0:20"
+    },
+    {
+      "text": "normal person. It says things that you",
+      "start_ms": "23760",
+      "end_ms": "27680",
+      "start_time_text": "0:23"
+    },
+    {
+      "text": "can understand. And that's not all. It",
+      "start_ms": "25119",
+      "end_ms": "29920",
+      "start_time_text": "0:25"
+    },
+    {
+      "text": "is significantly faster. It's like twice",
+      "start_ms": "27680",
+      "end_ms": "33360",
+      "start_time_text": "0:27"
+    },
+    {
+      "text": "as fast as Old Fable and it uses half",
+      "start_ms": "29920",
+      "end_ms": "36719",
+      "start_time_text": "0:29"
+    },
+    {
+      "text": "the tokens as Opus 5 for similar tasks.",
+      "start_ms": "33360",
+      "end_ms": "38960",
+      "start_time_text": "0:33"
+    },
+    {
+      "text": "So, it's priced like a Fable, but you'll",
+      "start_ms": "36719",
+      "end_ms": "40239.00000000001",
+      "start_time_text": "0:36"
+    },
+    {
+      "text": "be able to use it for all your Opus",
+      "start_ms": "38960",
+      "end_ms": "42239.00000000001",
+      "start_time_text": "0:38"
+    },
+    {
+      "text": "tasks. And there's really no reason for",
+      "start_ms": "40239",
+      "end_ms": "45120",
+      "start_time_text": "0:40"
+    },
+    {
+      "text": "you to use Opus anymore. Fable all day,",
+      "start_ms": "42239",
+      "end_ms": "47760",
+      "start_time_text": "0:42"
+    },
+    {
+      "text": "baby. So, let's get into the vibe check.",
+      "start_ms": "45120",
+      "end_ms": "49680",
+      "start_time_text": "0:45"
+    },
+    {
+      "text": "So, before we get into this video, who",
+      "start_ms": "47760",
+      "end_ms": "52559",
+      "start_time_text": "0:47"
+    },
+    {
+      "text": "am I and how do I possibly have a full",
+      "start_ms": "49680",
+      "end_ms": "54640",
+      "start_time_text": "0:49"
+    },
+    {
+      "text": "review of a model that just dropped? My",
+      "start_ms": "52559",
+      "end_ms": "55839.99999999999",
+      "start_time_text": "0:52"
+    },
+    {
+      "text": "name is Dan Shipper and I'm the",
+      "start_ms": "54640",
+      "end_ms": "57840",
+      "start_time_text": "0:54"
+    },
+    {
+      "text": "co-founder and CEO of EveryY. Every is",
+      "start_ms": "55840",
+      "end_ms": "59600",
+      "start_time_text": "0:55"
+    },
+    {
+      "text": "the only subscription you need to stay",
+      "start_ms": "57840",
+      "end_ms": "62480.00000000001",
+      "start_time_text": "0:57"
+    },
+    {
+      "text": "at the edge of AI. We get all of the",
+      "start_ms": "59600",
+      "end_ms": "64720",
+      "start_time_text": "0:59"
+    },
+    {
+      "text": "models before they come out and we test",
+      "start_ms": "62480",
+      "end_ms": "67280",
+      "start_time_text": "1:02"
+    },
+    {
+      "text": "them with a team of writers, designers,",
+      "start_ms": "64720",
+      "end_ms": "69360",
+      "start_time_text": "1:04"
+    },
+    {
+      "text": "engineers, and more to tell you what",
+      "start_ms": "67280",
+      "end_ms": "71119",
+      "start_time_text": "1:07"
+    },
+    {
+      "text": "they're good for. So on the day a model",
+      "start_ms": "69360",
+      "end_ms": "73280",
+      "start_time_text": "1:09"
+    },
+    {
+      "text": "drops, we have long form reviews to tell",
+      "start_ms": "71119",
+      "end_ms": "75680",
+      "start_time_text": "1:11"
+    },
+    {
+      "text": "you what to use them for and what not to",
+      "start_ms": "73280",
+      "end_ms": "78080",
+      "start_time_text": "1:13"
+    },
+    {
+      "text": "use them for from our real experience",
+      "start_ms": "75680",
+      "end_ms": "79920",
+      "start_time_text": "1:15"
+    },
+    {
+      "text": "doing real work. So we've been testing",
+      "start_ms": "78080",
+      "end_ms": "81360",
+      "start_time_text": "1:18"
+    },
+    {
+      "text": "this model on all the kinds of things",
+      "start_ms": "79920",
+      "end_ms": "83280",
+      "start_time_text": "1:19"
+    },
+    {
+      "text": "that you do every day. So we've done it",
+      "start_ms": "81360",
+      "end_ms": "85280",
+      "start_time_text": "1:21"
+    },
+    {
+      "text": "from on coding, we've done it on",
+      "start_ms": "83280",
+      "end_ms": "86560",
+      "start_time_text": "1:23"
+    },
+    {
+      "text": "knowledge work like debt creation and",
+      "start_ms": "85280",
+      "end_ms": "88080",
+      "start_time_text": "1:25"
+    },
+    {
+      "text": "data analysis and we've done it on",
+      "start_ms": "86560",
+      "end_ms": "89600.00000000001",
+      "start_time_text": "1:26"
+    },
+    {
+      "text": "writing. And I'm going to show you",
+      "start_ms": "88080",
+      "end_ms": "90880",
+      "start_time_text": "1:28"
+    },
+    {
+      "text": "everything that we found in our usage",
+      "start_ms": "89600",
+      "end_ms": "93600",
+      "start_time_text": "1:29"
+    },
+    {
+      "text": "and how that has pulled through into how",
+      "start_ms": "90880",
+      "end_ms": "95839.99999999999",
+      "start_time_text": "1:30"
+    },
+    {
+      "text": "I use it day-to-day. What are the actual",
+      "start_ms": "93600",
+      "end_ms": "98079",
+      "start_time_text": "1:33"
+    },
+    {
+      "text": "numbers for how it has changed my usage",
+      "start_ms": "95840",
+      "end_ms": "100079.00000000001",
+      "start_time_text": "1:35"
+    },
+    {
+      "text": "over the week since I I got access to",
+      "start_ms": "98079",
+      "end_ms": "102559.99999999999",
+      "start_time_text": "1:38"
+    },
+    {
+      "text": "it. Let's get started.",
+      "start_ms": "100079",
+      "end_ms": "104000",
+      "start_time_text": "1:40"
+    },
+    {
+      "text": "One of the coolest things I had to build",
+      "start_ms": "102560",
+      "end_ms": "106000",
+      "start_time_text": "1:42"
+    },
+    {
+      "text": "is this thing called hands. It it is a",
+      "start_ms": "104000",
+      "end_ms": "107680",
+      "start_time_text": "1:44"
+    },
+    {
+      "text": "computer use agent that sits on my",
+      "start_ms": "106000",
+      "end_ms": "109759",
+      "start_time_text": "1:46"
+    },
+    {
+      "text": "computer and allows other agents to use",
+      "start_ms": "107680",
+      "end_ms": "111680",
+      "start_time_text": "1:47"
+    },
+    {
+      "text": "my computer remotely. So that's the",
+      "start_ms": "109759",
+      "end_ms": "114000",
+      "start_time_text": "1:49"
+    },
+    {
+      "text": "arrow for hands. That's hands going and",
+      "start_ms": "111680",
+      "end_ms": "115520.00000000001",
+      "start_time_text": "1:51"
+    },
+    {
+      "text": "using my computer. And you can see it",
+      "start_ms": "114000",
+      "end_ms": "117360",
+      "start_time_text": "1:54"
+    },
+    {
+      "text": "has this little uh this little window on",
+      "start_ms": "115520",
+      "end_ms": "119119",
+      "start_time_text": "1:55"
+    },
+    {
+      "text": "my computer that shows me what Hans is",
+      "start_ms": "117360",
+      "end_ms": "121040",
+      "start_time_text": "1:57"
+    },
+    {
+      "text": "doing. And what this does is it lets me",
+      "start_ms": "119119",
+      "end_ms": "122880",
+      "start_time_text": "1:59"
+    },
+    {
+      "text": "remotely use my computer from any agent",
+      "start_ms": "121040",
+      "end_ms": "126399",
+      "start_time_text": "2:01"
+    },
+    {
+      "text": "I want. And this is like a hard thing to",
+      "start_ms": "122880",
+      "end_ms": "129359.99999999999",
+      "start_time_text": "2:02"
+    },
+    {
+      "text": "build. It's hard to make a Mac app that",
+      "start_ms": "126399",
+      "end_ms": "131920",
+      "start_time_text": "2:06"
+    },
+    {
+      "text": "is a computer use agent that is",
+      "start_ms": "129360.00000000001",
+      "end_ms": "134080",
+      "start_time_text": "2:09"
+    },
+    {
+      "text": "accessible from the web that can do any",
+      "start_ms": "131920",
+      "end_ms": "136399.99999999997",
+      "start_time_text": "2:11"
+    },
+    {
+      "text": "task you ask it to do. And I tried to",
+      "start_ms": "134080",
+      "end_ms": "140640.00000000003",
+      "start_time_text": "2:14"
+    },
+    {
+      "text": "build hands in 5.6 six in regular Fable",
+      "start_ms": "136400",
+      "end_ms": "142640.00000000003",
+      "start_time_text": "2:16"
+    },
+    {
+      "text": "and it it was like good but like it",
+      "start_ms": "140640",
+      "end_ms": "144559.99999999997",
+      "start_time_text": "2:20"
+    },
+    {
+      "text": "didn't really work and this actually",
+      "start_ms": "142640",
+      "end_ms": "147440",
+      "start_time_text": "2:22"
+    },
+    {
+      "text": "just works like it just uses my computer",
+      "start_ms": "144560",
+      "end_ms": "149120",
+      "start_time_text": "2:24"
+    },
+    {
+      "text": "and I can I can have it use my computer",
+      "start_ms": "147440",
+      "end_ms": "151520",
+      "start_time_text": "2:27"
+    },
+    {
+      "text": "from Slack and that is like [ __ ]",
+      "start_ms": "149120",
+      "end_ms": "153680",
+      "start_time_text": "2:29"
+    },
+    {
+      "text": "wild. Look at that. It's look at that.",
+      "start_ms": "151520",
+      "end_ms": "154959",
+      "start_time_text": "2:31"
+    },
+    {
+      "text": "Like that is [ __ ] wild. And look,",
+      "start_ms": "153680",
+      "end_ms": "156879.00000000003",
+      "start_time_text": "2:33"
+    },
+    {
+      "text": "it's going to start typing too. And you",
+      "start_ms": "154959",
+      "end_ms": "159040",
+      "start_time_text": "2:34"
+    },
+    {
+      "text": "can see it's working in chatbt. You can",
+      "start_ms": "156879",
+      "end_ms": "161786",
+      "start_time_text": "2:36"
+    },
+    {
+      "text": "see it's typing. It's typing. And",
+      "start_ms": "159040",
+      "end_ms": "162959",
+      "start_time_text": "2:39"
+    },
+    {
+      "text": "[snorts] I have no idea how this works.",
+      "start_ms": "161786",
+      "end_ms": "166000",
+      "start_time_text": "2:41"
+    },
+    {
+      "text": "This was built end to end by Fable 5.1",
+      "start_ms": "162959",
+      "end_ms": "169680",
+      "start_time_text": "2:42"
+    },
+    {
+      "text": "from a couple prompts that is a desktop",
+      "start_ms": "166000",
+      "end_ms": "173680",
+      "start_time_text": "2:46"
+    },
+    {
+      "text": "agent built fully by this model. So this",
+      "start_ms": "169680",
+      "end_ms": "176239",
+      "start_time_text": "2:49"
+    },
+    {
+      "text": "is just like a fullyfledged app. It has",
+      "start_ms": "173680",
+      "end_ms": "177760.00000000003",
+      "start_time_text": "2:53"
+    },
+    {
+      "text": "a screenshot of the current state. It",
+      "start_ms": "176239",
+      "end_ms": "179680",
+      "start_time_text": "2:56"
+    },
+    {
+      "text": "says what it's doing. It has a log.",
+      "start_ms": "177760",
+      "end_ms": "181200",
+      "start_time_text": "2:57"
+    },
+    {
+      "text": "Look, look. These are all the tasks I've",
+      "start_ms": "179680",
+      "end_ms": "184080",
+      "start_time_text": "2:59"
+    },
+    {
+      "text": "been doing with with this thing. I mean,",
+      "start_ms": "181200",
+      "end_ms": "186640",
+      "start_time_text": "3:01"
+    },
+    {
+      "text": "this would or ordinarily take months to",
+      "start_ms": "184080",
+      "end_ms": "189200.00000000003",
+      "start_time_text": "3:04"
+    },
+    {
+      "text": "be good and it just worked after like a",
+      "start_ms": "186640",
+      "end_ms": "192799.99999999997",
+      "start_time_text": "3:06"
+    },
+    {
+      "text": "day. I gave a prompt to Fable 5.1 and it",
+      "start_ms": "189200",
+      "end_ms": "196399.99999999997",
+      "start_time_text": "3:09"
+    },
+    {
+      "text": "just churned on Ultra Code with like 40",
+      "start_ms": "192800",
+      "end_ms": "198800",
+      "start_time_text": "3:12"
+    },
+    {
+      "text": "sub agents for like a day and then this",
+      "start_ms": "196400",
+      "end_ms": "201040",
+      "start_time_text": "3:16"
+    },
+    {
+      "text": "came out and it just it just works. I I",
+      "start_ms": "198800",
+      "end_ms": "202239",
+      "start_time_text": "3:18"
+    },
+    {
+      "text": "don't know I don't know how else to say",
+      "start_ms": "201040",
+      "end_ms": "203679.99999999997",
+      "start_time_text": "3:21"
+    },
+    {
+      "text": "it. It's a completely different",
+      "start_ms": "202239",
+      "end_ms": "206560",
+      "start_time_text": "3:22"
+    },
+    {
+      "text": "experience of programming to be able to",
+      "start_ms": "203680",
+      "end_ms": "209040.00000000003",
+      "start_time_text": "3:23"
+    },
+    {
+      "text": "give a simple prompt to a model and have",
+      "start_ms": "206560",
+      "end_ms": "212159",
+      "start_time_text": "3:26"
+    },
+    {
+      "text": "a completely usable complex application",
+      "start_ms": "209040",
+      "end_ms": "216079.99999999997",
+      "start_time_text": "3:29"
+    },
+    {
+      "text": "come out like a day later. That said,",
+      "start_ms": "212159",
+      "end_ms": "217519",
+      "start_time_text": "3:32"
+    },
+    {
+      "text": "there are some things to be aware of.",
+      "start_ms": "216080",
+      "end_ms": "221040.00000000003",
+      "start_time_text": "3:36"
+    },
+    {
+      "text": "It's it's more token efficient than Opus",
+      "start_ms": "217519",
+      "end_ms": "222720",
+      "start_time_text": "3:37"
+    },
+    {
+      "text": "5, but it's, you know, if you give it a",
+      "start_ms": "221040",
+      "end_ms": "224239",
+      "start_time_text": "3:41"
+    },
+    {
+      "text": "big task like this on Ultra Code, it's",
+      "start_ms": "222720",
+      "end_ms": "225599",
+      "start_time_text": "3:42"
+    },
+    {
+      "text": "going to run for like a day and it's",
+      "start_ms": "224239",
+      "end_ms": "227680",
+      "start_time_text": "3:44"
+    },
+    {
+      "text": "going to use I mean, this is like a 3 to",
+      "start_ms": "225599",
+      "end_ms": "231679.99999999997",
+      "start_time_text": "3:45"
+    },
+    {
+      "text": "5 million token run. So, it can get it",
+      "start_ms": "227680",
+      "end_ms": "234799",
+      "start_time_text": "3:47"
+    },
+    {
+      "text": "can get expensive and especially on",
+      "start_ms": "231680",
+      "end_ms": "236879.00000000003",
+      "start_time_text": "3:51"
+    },
+    {
+      "text": "ultra code, it's not really that",
+      "start_ms": "234799",
+      "end_ms": "238720",
+      "start_time_text": "3:54"
+    },
+    {
+      "text": "conversational. It is conversational on",
+      "start_ms": "236879",
+      "end_ms": "241359.99999999997",
+      "start_time_text": "3:56"
+    },
+    {
+      "text": "lower lower effort settings, but if you",
+      "start_ms": "238720",
+      "end_ms": "242640",
+      "start_time_text": "3:58"
+    },
+    {
+      "text": "put it on ultra code, it's basically",
+      "start_ms": "241360",
+      "end_ms": "245360",
+      "start_time_text": "4:01"
+    },
+    {
+      "text": "just going to like go off and cook and",
+      "start_ms": "242640",
+      "end_ms": "247518.99999999997",
+      "start_time_text": "4:02"
+    },
+    {
+      "text": "come back later. So that's it's just",
+      "start_ms": "245360",
+      "end_ms": "249040.00000000003",
+      "start_time_text": "4:05"
+    },
+    {
+      "text": "like a different usage pattern than you",
+      "start_ms": "247519",
+      "end_ms": "251120",
+      "start_time_text": "4:07"
+    },
+    {
+      "text": "might be used to. It's like better for",
+      "start_ms": "249040",
+      "end_ms": "253519",
+      "start_time_text": "4:09"
+    },
+    {
+      "text": "especially for big projects like not as",
+      "start_ms": "251120",
+      "end_ms": "257040.00000000003",
+      "start_time_text": "4:11"
+    },
+    {
+      "text": "interactive coding work but [ __ ] sick",
+      "start_ms": "253519",
+      "end_ms": "258959",
+      "start_time_text": "4:13"
+    },
+    {
+      "text": "and and the other technical people at",
+      "start_ms": "257040.00000000003",
+      "end_ms": "261359.00000000003",
+      "start_time_text": "4:17"
+    },
+    {
+      "text": "every like Kieran Classen who's a GM of",
+      "start_ms": "258959",
+      "end_ms": "263919",
+      "start_time_text": "4:18"
+    },
+    {
+      "text": "Kora and makes compound engineering love",
+      "start_ms": "261358.99999999997",
+      "end_ms": "266638.99999999994",
+      "start_time_text": "4:21"
+    },
+    {
+      "text": "this model. Like I think for Kieran,",
+      "start_ms": "263919",
+      "end_ms": "269840",
+      "start_time_text": "4:23"
+    },
+    {
+      "text": "he's been a Claude stand for a long time",
+      "start_ms": "266639",
+      "end_ms": "273040",
+      "start_time_text": "4:26"
+    },
+    {
+      "text": "and even he didn't like Opus 5, didn't",
+      "start_ms": "269840",
+      "end_ms": "275520",
+      "start_time_text": "4:29"
+    },
+    {
+      "text": "like Sonnet 5, and this model, he's",
+      "start_ms": "273040",
+      "end_ms": "277280.00000000006",
+      "start_time_text": "4:33"
+    },
+    {
+      "text": "like, \"This is my favorite again.\" So,",
+      "start_ms": "275520",
+      "end_ms": "281120",
+      "start_time_text": "4:35"
+    },
+    {
+      "text": "it's like a big jump in both power and",
+      "start_ms": "277280",
+      "end_ms": "282880",
+      "start_time_text": "4:37"
+    },
+    {
+      "text": "usability, which usually don't go hand",
+      "start_ms": "281120",
+      "end_ms": "284960",
+      "start_time_text": "4:41"
+    },
+    {
+      "text": "in hand, and speed. It's just fast",
+      "start_ms": "282880",
+      "end_ms": "287680",
+      "start_time_text": "4:42"
+    },
+    {
+      "text": "enough to use for day-to-day tasks. To",
+      "start_ms": "284960",
+      "end_ms": "289520",
+      "start_time_text": "4:44"
+    },
+    {
+      "text": "give you a little bit of a sense for its",
+      "start_ms": "287680",
+      "end_ms": "293440",
+      "start_time_text": "4:47"
+    },
+    {
+      "text": "level of efficiency and how and how fast",
+      "start_ms": "289520",
+      "end_ms": "296560",
+      "start_time_text": "4:49"
+    },
+    {
+      "text": "it is, we ran it on our internal agent",
+      "start_ms": "293440",
+      "end_ms": "298160",
+      "start_time_text": "4:53"
+    },
+    {
+      "text": "benchmark. This measures it on tasks",
+      "start_ms": "296560",
+      "end_ms": "300400",
+      "start_time_text": "4:56"
+    },
+    {
+      "text": "that uh our internal agent does like",
+      "start_ms": "298160",
+      "end_ms": "302639",
+      "start_time_text": "4:58"
+    },
+    {
+      "text": "work inside of a company and we compared",
+      "start_ms": "300400",
+      "end_ms": "304960",
+      "start_time_text": "5:00"
+    },
+    {
+      "text": "it to Opus 5. So in terms of the number",
+      "start_ms": "302639",
+      "end_ms": "308479",
+      "start_time_text": "5:02"
+    },
+    {
+      "text": "of tokens per run, on average this model",
+      "start_ms": "304960",
+      "end_ms": "312638.99999999994",
+      "start_time_text": "5:04"
+    },
+    {
+      "text": "consumed about 766 tokens for each run.",
+      "start_ms": "308479",
+      "end_ms": "314159.99999999994",
+      "start_time_text": "5:08"
+    },
+    {
+      "text": "So each request to the model was about",
+      "start_ms": "312639",
+      "end_ms": "318160",
+      "start_time_text": "5:12"
+    },
+    {
+      "text": "766 tokens. By comparison, Opus 5 was",
+      "start_ms": "314160",
+      "end_ms": "321600",
+      "start_time_text": "5:14"
+    },
+    {
+      "text": "almost 2,000 tokens for the same tasks.",
+      "start_ms": "318160",
+      "end_ms": "324960.00000000006",
+      "start_time_text": "5:18"
+    },
+    {
+      "text": "Similarly, the the average latency for",
+      "start_ms": "321600",
+      "end_ms": "326639",
+      "start_time_text": "5:21"
+    },
+    {
+      "text": "this model was about 22 seconds. So",
+      "start_ms": "324960",
+      "end_ms": "328719.99999999994",
+      "start_time_text": "5:24"
+    },
+    {
+      "text": "that's how long it took for a basic",
+      "start_ms": "326639",
+      "end_ms": "331520",
+      "start_time_text": "5:26"
+    },
+    {
+      "text": "request to get a response. 22 seconds.",
+      "start_ms": "328720",
+      "end_ms": "334080.00000000006",
+      "start_time_text": "5:28"
+    },
+    {
+      "text": "Opus was about 37 seconds. It's a so",
+      "start_ms": "331520",
+      "end_ms": "336320",
+      "start_time_text": "5:31"
+    },
+    {
+      "text": "it's about twice as fast as as Opus. And",
+      "start_ms": "334080",
+      "end_ms": "339359.99999999994",
+      "start_time_text": "5:34"
+    },
+    {
+      "text": "it uses about half the tokens. That's",
+      "start_ms": "336320",
+      "end_ms": "341919",
+      "start_time_text": "5:36"
+    },
+    {
+      "text": "really crazy. And it's a very rare jump.",
+      "start_ms": "339360",
+      "end_ms": "344000",
+      "start_time_text": "5:39"
+    },
+    {
+      "text": "There was this moment in like December",
+      "start_ms": "341919",
+      "end_ms": "350159.99999999994",
+      "start_time_text": "5:41"
+    },
+    {
+      "text": "2025 where Opus45 and where Opus45 and",
+      "start_ms": "344000",
+      "end_ms": "353600",
+      "start_time_text": "5:44"
+    },
+    {
+      "text": "GBT 53ish like crossed this barrier",
+      "start_ms": "350160",
+      "end_ms": "355360",
+      "start_time_text": "5:50"
+    },
+    {
+      "text": "where suddenly it all these vibe coding",
+      "start_ms": "353600",
+      "end_ms": "357520.00000000006",
+      "start_time_text": "5:53"
+    },
+    {
+      "text": "use cases opened up and all these people",
+      "start_ms": "355360",
+      "end_ms": "359120",
+      "start_time_text": "5:55"
+    },
+    {
+      "text": "discovered that you could code in this",
+      "start_ms": "357520",
+      "end_ms": "361039",
+      "start_time_text": "5:57"
+    },
+    {
+      "text": "new way with these models. I think",
+      "start_ms": "359120",
+      "end_ms": "363280.00000000006",
+      "start_time_text": "5:59"
+    },
+    {
+      "text": "there's a similar thing happening with",
+      "start_ms": "361039",
+      "end_ms": "367039",
+      "start_time_text": "6:01"
+    },
+    {
+      "text": "Fable 5.1 because it opens up these long",
+      "start_ms": "363280",
+      "end_ms": "370638.99999999994",
+      "start_time_text": "6:03"
+    },
+    {
+      "text": "horizon tasks in an easy to use form",
+      "start_ms": "367039",
+      "end_ms": "372960",
+      "start_time_text": "6:07"
+    },
+    {
+      "text": "factor that's cheap enough for regular",
+      "start_ms": "370639",
+      "end_ms": "375199",
+      "start_time_text": "6:10"
+    },
+    {
+      "text": "people to try. I think it has the chance",
+      "start_ms": "372960",
+      "end_ms": "378880",
+      "start_time_text": "6:12"
+    },
+    {
+      "text": "to open up real delegation of coding and",
+      "start_ms": "375199",
+      "end_ms": "381919.00000000006",
+      "start_time_text": "6:15"
+    },
+    {
+      "text": "knowledgework tasks to to more average",
+      "start_ms": "378880",
+      "end_ms": "384489",
+      "start_time_text": "6:18"
+    },
+    {
+      "text": "knowledge workers and that's a big deal.",
+      "start_ms": "381919",
+      "end_ms": "386000",
+      "start_time_text": "6:21"
+    },
+    {
+      "text": "[music]",
+      "start_ms": "384489",
+      "end_ms": "388239.99999999994",
+      "start_time_text": "6:24"
+    },
+    {
+      "text": "So now let's get into knowledge work. So",
+      "start_ms": "386000",
+      "end_ms": "390800",
+      "start_time_text": "6:26"
+    },
+    {
+      "text": "we have this we have this really cool",
+      "start_ms": "388240",
+      "end_ms": "392880",
+      "start_time_text": "6:28"
+    },
+    {
+      "text": "eval viewer. So I can show you exactly",
+      "start_ms": "390800",
+      "end_ms": "394319",
+      "start_time_text": "6:30"
+    },
+    {
+      "text": "what we ran it on, what the prompts were",
+      "start_ms": "392880",
+      "end_ms": "396880",
+      "start_time_text": "6:32"
+    },
+    {
+      "text": "and what the outputs were. The first",
+      "start_ms": "394319",
+      "end_ms": "398160",
+      "start_time_text": "6:34"
+    },
+    {
+      "text": "knowledgework test we always do with",
+      "start_ms": "396880",
+      "end_ms": "400560",
+      "start_time_text": "6:36"
+    },
+    {
+      "text": "this model is we run it on data",
+      "start_ms": "398160",
+      "end_ms": "402960.00000000006",
+      "start_time_text": "6:38"
+    },
+    {
+      "text": "analysis. So we feed it a survey that we",
+      "start_ms": "400560",
+      "end_ms": "404720",
+      "start_time_text": "6:40"
+    },
+    {
+      "text": "gave like a real survey that we gave to",
+      "start_ms": "402960",
+      "end_ms": "406560",
+      "start_time_text": "6:42"
+    },
+    {
+      "text": "our customers a couple years ago and we",
+      "start_ms": "404720",
+      "end_ms": "409919.00000000006",
+      "start_time_text": "6:44"
+    },
+    {
+      "text": "ask it to analyze the survey. So the",
+      "start_ms": "406560",
+      "end_ms": "411600",
+      "start_time_text": "6:46"
+    },
+    {
+      "text": "prompt was I want you to build a static",
+      "start_ms": "409919",
+      "end_ms": "414080",
+      "start_time_text": "6:49"
+    },
+    {
+      "text": "HTML NPS dashboard. NPS's net promoter",
+      "start_ms": "411600",
+      "end_ms": "416560",
+      "start_time_text": "6:51"
+    },
+    {
+      "text": "score and pick one pick out and pick out",
+      "start_ms": "414080",
+      "end_ms": "417840",
+      "start_time_text": "6:54"
+    },
+    {
+      "text": "interesting insights after doing the",
+      "start_ms": "416560",
+      "end_ms": "421680",
+      "start_time_text": "6:56"
+    },
+    {
+      "text": "analysis. So this is what we got out of",
+      "start_ms": "417840",
+      "end_ms": "426400",
+      "start_time_text": "6:57"
+    },
+    {
+      "text": "the model. So it's a very clean design.",
+      "start_ms": "421680",
+      "end_ms": "428800",
+      "start_time_text": "7:01"
+    },
+    {
+      "text": "It really it makes it really easy to see",
+      "start_ms": "426400",
+      "end_ms": "430318.99999999994",
+      "start_time_text": "7:06"
+    },
+    {
+      "text": "like the score distribution and all that",
+      "start_ms": "428800",
+      "end_ms": "432000",
+      "start_time_text": "7:08"
+    },
+    {
+      "text": "kind of stuff which is I would say like",
+      "start_ms": "430319",
+      "end_ms": "434479.00000000006",
+      "start_time_text": "7:10"
+    },
+    {
+      "text": "pretty normal. You know it's not it's",
+      "start_ms": "432000",
+      "end_ms": "437199",
+      "start_time_text": "7:12"
+    },
+    {
+      "text": "not obviously like AI right now. So it",
+      "start_ms": "434479",
+      "end_ms": "439360",
+      "start_time_text": "7:14"
+    },
+    {
+      "text": "doesn't feel like slap. One thing that",
+      "start_ms": "437199",
+      "end_ms": "441599",
+      "start_time_text": "7:17"
+    },
+    {
+      "text": "it that it did that I think is a little",
+      "start_ms": "439360",
+      "end_ms": "444560",
+      "start_time_text": "7:19"
+    },
+    {
+      "text": "bit worse than for example GPT 5.6 is",
+      "start_ms": "441599",
+      "end_ms": "446560",
+      "start_time_text": "7:21"
+    },
+    {
+      "text": "and we can actually go look at GBT 5.6",
+      "start_ms": "444560",
+      "end_ms": "449840",
+      "start_time_text": "7:24"
+    },
+    {
+      "text": "for comparison like GBT 5.6 this is GB",
+      "start_ms": "446560",
+      "end_ms": "453120",
+      "start_time_text": "7:26"
+    },
+    {
+      "text": "5.6's version it pulled out a story at",
+      "start_ms": "449840",
+      "end_ms": "455198.99999999994",
+      "start_time_text": "7:29"
+    },
+    {
+      "text": "the top a strong core a clear promise",
+      "start_ms": "453120",
+      "end_ms": "456560",
+      "start_time_text": "7:33"
+    },
+    {
+      "text": "customer see every as a rare mix of",
+      "start_ms": "455199",
+      "end_ms": "458400.00000000006",
+      "start_time_text": "7:35"
+    },
+    {
+      "text": "thoughtful this is something that fable",
+      "start_ms": "456560",
+      "end_ms": "460319",
+      "start_time_text": "7:36"
+    },
+    {
+      "text": "5.1 didn't really do it was much more",
+      "start_ms": "458400",
+      "end_ms": "464000",
+      "start_time_text": "7:38"
+    },
+    {
+      "text": "like straight ahead so I I you know so I",
+      "start_ms": "460319",
+      "end_ms": "466000",
+      "start_time_text": "7:40"
+    },
+    {
+      "text": "really I actually really like GB 5.6 six",
+      "start_ms": "464000",
+      "end_ms": "467680",
+      "start_time_text": "7:44"
+    },
+    {
+      "text": "on this task. But one thing that I I",
+      "start_ms": "466000",
+      "end_ms": "471599",
+      "start_time_text": "7:46"
+    },
+    {
+      "text": "want to point out from 5.1 that's really",
+      "start_ms": "467680",
+      "end_ms": "474240",
+      "start_time_text": "7:47"
+    },
+    {
+      "text": "interesting is it did an incredibly good",
+      "start_ms": "471599",
+      "end_ms": "478719.99999999994",
+      "start_time_text": "7:51"
+    },
+    {
+      "text": "job at pulling out real insights from",
+      "start_ms": "474240",
+      "end_ms": "480960.00000000006",
+      "start_time_text": "7:54"
+    },
+    {
+      "text": "both the quantitative and qualitative",
+      "start_ms": "478720",
+      "end_ms": "482960.00000000006",
+      "start_time_text": "7:58"
+    },
+    {
+      "text": "data and then presenting it to us. So",
+      "start_ms": "480960",
+      "end_ms": "484719.99999999994",
+      "start_time_text": "8:00"
+    },
+    {
+      "text": "like what people love the writing is the",
+      "start_ms": "482960",
+      "end_ms": "486400",
+      "start_time_text": "8:02"
+    },
+    {
+      "text": "core of the love, the apps are the bonus",
+      "start_ms": "484720",
+      "end_ms": "487919.00000000006",
+      "start_time_text": "8:04"
+    },
+    {
+      "text": "keeps me current without overwhelming me",
+      "start_ms": "486400",
+      "end_ms": "490159.99999999994",
+      "start_time_text": "8:06"
+    },
+    {
+      "text": "is the strongest value proposition.",
+      "start_ms": "487919",
+      "end_ms": "491840",
+      "start_time_text": "8:07"
+    },
+    {
+      "text": "Interesting as a warning word, useful",
+      "start_ms": "490160",
+      "end_ms": "493599.00000000006",
+      "start_time_text": "8:10"
+    },
+    {
+      "text": "great and smart predict promoter. So",
+      "start_ms": "491840",
+      "end_ms": "495840",
+      "start_time_text": "8:11"
+    },
+    {
+      "text": "this is really cool, right? So it's it",
+      "start_ms": "493599",
+      "end_ms": "498159.99999999994",
+      "start_time_text": "8:13"
+    },
+    {
+      "text": "went and did the analysis to understand",
+      "start_ms": "495840",
+      "end_ms": "499758.99999999994",
+      "start_time_text": "8:15"
+    },
+    {
+      "text": "that when someone when one of our",
+      "start_ms": "498160",
+      "end_ms": "501680",
+      "start_time_text": "8:18"
+    },
+    {
+      "text": "customers calls us interesting they",
+      "start_ms": "499759",
+      "end_ms": "503120",
+      "start_time_text": "8:19"
+    },
+    {
+      "text": "actually don't really like us that much",
+      "start_ms": "501680",
+      "end_ms": "505039",
+      "start_time_text": "8:21"
+    },
+    {
+      "text": "but if someone calls us useful great or",
+      "start_ms": "503120",
+      "end_ms": "507599",
+      "start_time_text": "8:23"
+    },
+    {
+      "text": "smart they do love us and then it was",
+      "start_ms": "505039",
+      "end_ms": "509199",
+      "start_time_text": "8:25"
+    },
+    {
+      "text": "able to package it not only find the",
+      "start_ms": "507599",
+      "end_ms": "511280",
+      "start_time_text": "8:27"
+    },
+    {
+      "text": "insight but package it into a little",
+      "start_ms": "509199",
+      "end_ms": "513360",
+      "start_time_text": "8:29"
+    },
+    {
+      "text": "sentence that could express it to me in",
+      "start_ms": "511280",
+      "end_ms": "515199.99999999994",
+      "start_time_text": "8:31"
+    },
+    {
+      "text": "a way that I didn't feel like was slop.",
+      "start_ms": "513360",
+      "end_ms": "516399",
+      "start_time_text": "8:33"
+    },
+    {
+      "text": "This is something that Old Fable",
+      "start_ms": "515200.00000000006",
+      "end_ms": "519360",
+      "start_time_text": "8:35"
+    },
+    {
+      "text": "wouldn't do 5 absolutely would not do",
+      "start_ms": "516399",
+      "end_ms": "521760",
+      "start_time_text": "8:36"
+    },
+    {
+      "text": "and generally models struggle with. So",
+      "start_ms": "519360",
+      "end_ms": "524399",
+      "start_time_text": "8:39"
+    },
+    {
+      "text": "there's a there's a leap here in how it",
+      "start_ms": "521760",
+      "end_ms": "526240",
+      "start_time_text": "8:41"
+    },
+    {
+      "text": "is able to pick out interesting things",
+      "start_ms": "524399",
+      "end_ms": "528880",
+      "start_time_text": "8:44"
+    },
+    {
+      "text": "and then present them to you.",
+      "start_ms": "526240",
+      "end_ms": "530399",
+      "start_time_text": "8:46"
+    },
+    {
+      "text": "Another thing that we always do is we",
+      "start_ms": "528880",
+      "end_ms": "532560",
+      "start_time_text": "8:48"
+    },
+    {
+      "text": "have these models create a PowerPoint.",
+      "start_ms": "530399",
+      "end_ms": "534720",
+      "start_time_text": "8:50"
+    },
+    {
+      "text": "So here's the PowerPoint it created. You",
+      "start_ms": "532560",
+      "end_ms": "536239.9999999999",
+      "start_time_text": "8:52"
+    },
+    {
+      "text": "know you'll notice some like small",
+      "start_ms": "534720",
+      "end_ms": "538080",
+      "start_time_text": "8:54"
+    },
+    {
+      "text": "visual things like this every logo is",
+      "start_ms": "536240",
+      "end_ms": "541279",
+      "start_time_text": "8:56"
+    },
+    {
+      "text": "not quite right. But in general we the",
+      "start_ms": "538080",
+      "end_ms": "542959.0000000001",
+      "start_time_text": "8:58"
+    },
+    {
+      "text": "prompt we give it is just take",
+      "start_ms": "541279",
+      "end_ms": "546399",
+      "start_time_text": "9:01"
+    },
+    {
+      "text": "compounding engineering and turn it into",
+      "start_ms": "542959",
+      "end_ms": "549359.9999999999",
+      "start_time_text": "9:02"
+    },
+    {
+      "text": "a deck. It created this deck end to end.",
+      "start_ms": "546399",
+      "end_ms": "552000",
+      "start_time_text": "9:06"
+    },
+    {
+      "text": "I mean, this is a very well put together",
+      "start_ms": "549360",
+      "end_ms": "554399",
+      "start_time_text": "9:09"
+    },
+    {
+      "text": "deck on a couple different levels. For",
+      "start_ms": "552000",
+      "end_ms": "557600",
+      "start_time_text": "9:12"
+    },
+    {
+      "text": "one, it does a very good job of pulling",
+      "start_ms": "554399",
+      "end_ms": "560560",
+      "start_time_text": "9:14"
+    },
+    {
+      "text": "out specific ideas and making sure each",
+      "start_ms": "557600",
+      "end_ms": "563200",
+      "start_time_text": "9:17"
+    },
+    {
+      "text": "slide has one idea on it. It does a",
+      "start_ms": "560560",
+      "end_ms": "565599.9999999999",
+      "start_time_text": "9:20"
+    },
+    {
+      "text": "really good job of, you know, these",
+      "start_ms": "563200",
+      "end_ms": "567519",
+      "start_time_text": "9:23"
+    },
+    {
+      "text": "subtle visual design things like, you",
+      "start_ms": "565600",
+      "end_ms": "569839",
+      "start_time_text": "9:25"
+    },
+    {
+      "text": "know, the yellow for the compound",
+      "start_ms": "567519",
+      "end_ms": "571680",
+      "start_time_text": "9:27"
+    },
+    {
+      "text": "engineering and and and sort of the end",
+      "start_ms": "569839",
+      "end_ms": "573839",
+      "start_time_text": "9:29"
+    },
+    {
+      "text": "of that paragraph.",
+      "start_ms": "571680",
+      "end_ms": "575839",
+      "start_time_text": "9:31"
+    },
+    {
+      "text": "And it even does things like you you'll",
+      "start_ms": "573839",
+      "end_ms": "577680.0000000001",
+      "start_time_text": "9:33"
+    },
+    {
+      "text": "see it placed these arrows to show the",
+      "start_ms": "575839",
+      "end_ms": "579920.0000000001",
+      "start_time_text": "9:35"
+    },
+    {
+      "text": "compound engineering loop. It created it",
+      "start_ms": "577680",
+      "end_ms": "582239.9999999999",
+      "start_time_text": "9:37"
+    },
+    {
+      "text": "does these bubbles with these arrows.",
+      "start_ms": "579920",
+      "end_ms": "585279",
+      "start_time_text": "9:39"
+    },
+    {
+      "text": "Most models can't get these arrows right",
+      "start_ms": "582240",
+      "end_ms": "586720",
+      "start_time_text": "9:42"
+    },
+    {
+      "text": "there. There are these like subtle",
+      "start_ms": "585279",
+      "end_ms": "588160",
+      "start_time_text": "9:45"
+    },
+    {
+      "text": "little things that it does really really",
+      "start_ms": "586720",
+      "end_ms": "591040.0000000001",
+      "start_time_text": "9:46"
+    },
+    {
+      "text": "well. So it is the kind of model where",
+      "start_ms": "588160",
+      "end_ms": "593839",
+      "start_time_text": "9:48"
+    },
+    {
+      "text": "if you give it a, you know, a",
+      "start_ms": "591040",
+      "end_ms": "595680",
+      "start_time_text": "9:51"
+    },
+    {
+      "text": "well-written dock and turn it and ask it",
+      "start_ms": "593839",
+      "end_ms": "597360",
+      "start_time_text": "9:53"
+    },
+    {
+      "text": "to turn it into a deck, it'll do a",
+      "start_ms": "595680",
+      "end_ms": "598959",
+      "start_time_text": "9:55"
+    },
+    {
+      "text": "really good first pass end to end",
+      "start_ms": "597360",
+      "end_ms": "601920",
+      "start_time_text": "9:57"
+    },
+    {
+      "text": "without very much interference, which is",
+      "start_ms": "598959",
+      "end_ms": "604239.9999999999",
+      "start_time_text": "9:58"
+    },
+    {
+      "text": "something that most models can't do. So",
+      "start_ms": "601920",
+      "end_ms": "606319.9999999999",
+      "start_time_text": "10:01"
+    },
+    {
+      "text": "for example, this is what 5.6's deck",
+      "start_ms": "604240",
+      "end_ms": "608800",
+      "start_time_text": "10:04"
+    },
+    {
+      "text": "looks like. And you can tell it's just",
+      "start_ms": "606320",
+      "end_ms": "610959.0000000001",
+      "start_time_text": "10:06"
+    },
+    {
+      "text": "it's like a little bit worse. It's a",
+      "start_ms": "608800",
+      "end_ms": "613519",
+      "start_time_text": "10:08"
+    },
+    {
+      "text": "little bit more bare. You can see the",
+      "start_ms": "610959",
+      "end_ms": "615518.9999999999",
+      "start_time_text": "10:10"
+    },
+    {
+      "text": "arrows here. The arrows are not done",
+      "start_ms": "613519",
+      "end_ms": "617839",
+      "start_time_text": "10:13"
+    },
+    {
+      "text": "right. So So the thing I want you to",
+      "start_ms": "615519",
+      "end_ms": "620320",
+      "start_time_text": "10:15"
+    },
+    {
+      "text": "take away is",
+      "start_ms": "617839",
+      "end_ms": "623360",
+      "start_time_text": "10:17"
+    },
+    {
+      "text": "developers for at least the last six",
+      "start_ms": "620320",
+      "end_ms": "625040.0000000001",
+      "start_time_text": "10:20"
+    },
+    {
+      "text": "months, depending on who you are, have",
+      "start_ms": "623360",
+      "end_ms": "627279",
+      "start_time_text": "10:23"
+    },
+    {
+      "text": "been getting used to delegating big",
+      "start_ms": "625040",
+      "end_ms": "629439.9999999999",
+      "start_time_text": "10:25"
+    },
+    {
+      "text": "chunks of work to the model. That hasn't",
+      "start_ms": "627279",
+      "end_ms": "631120",
+      "start_time_text": "10:27"
+    },
+    {
+      "text": "really been possible for knowledge",
+      "start_ms": "629440",
+      "end_ms": "633760.0000000001",
+      "start_time_text": "10:29"
+    },
+    {
+      "text": "workers. You can do it, but the details",
+      "start_ms": "631120",
+      "end_ms": "636160",
+      "start_time_text": "10:31"
+    },
+    {
+      "text": "aren't really right. It looks a little",
+      "start_ms": "633760",
+      "end_ms": "639279",
+      "start_time_text": "10:33"
+    },
+    {
+      "text": "bit like slop. This is a big step in the",
+      "start_ms": "636160",
+      "end_ms": "641120",
+      "start_time_text": "10:36"
+    },
+    {
+      "text": "direction of actually I can have it make",
+      "start_ms": "639279",
+      "end_ms": "642720",
+      "start_time_text": "10:39"
+    },
+    {
+      "text": "a deck for me end to end. Actually, I",
+      "start_ms": "641120",
+      "end_ms": "644079",
+      "start_time_text": "10:41"
+    },
+    {
+      "text": "can have it do a bunch of data analysis",
+      "start_ms": "642720",
+      "end_ms": "645760",
+      "start_time_text": "10:42"
+    },
+    {
+      "text": "and get something back. And I'm like,",
+      "start_ms": "644079",
+      "end_ms": "647839",
+      "start_time_text": "10:44"
+    },
+    {
+      "text": "this is actually pretty good. And to be",
+      "start_ms": "645760",
+      "end_ms": "650000",
+      "start_time_text": "10:45"
+    },
+    {
+      "text": "clear, the original Fable did some of",
+      "start_ms": "647839",
+      "end_ms": "652240",
+      "start_time_text": "10:47"
+    },
+    {
+      "text": "this, but not at this speed and not at",
+      "start_ms": "650000",
+      "end_ms": "655440",
+      "start_time_text": "10:50"
+    },
+    {
+      "text": "this cost. So, it makes it available to",
+      "start_ms": "652240",
+      "end_ms": "657680.0000000001",
+      "start_time_text": "10:52"
+    },
+    {
+      "text": "more and more people that previously",
+      "start_ms": "655440",
+      "end_ms": "658720",
+      "start_time_text": "10:55"
+    },
+    {
+      "text": "would have looked at Fable and been",
+      "start_ms": "657680",
+      "end_ms": "661279",
+      "start_time_text": "10:57"
+    },
+    {
+      "text": "like, \"This is not for me.\" For example,",
+      "start_ms": "658720",
+      "end_ms": "662640",
+      "start_time_text": "10:58"
+    },
+    {
+      "text": "this is a meeting where I can be a",
+      "start_ms": "661279",
+      "end_ms": "664720",
+      "start_time_text": "11:01"
+    },
+    {
+      "text": "tiebreaker. our head of marketing is",
+      "start_ms": "662640",
+      "end_ms": "666560",
+      "start_time_text": "11:02"
+    },
+    {
+      "text": "talking about a new launch and who we're",
+      "start_ms": "664720",
+      "end_ms": "668000",
+      "start_time_text": "11:04"
+    },
+    {
+      "text": "targeting for that launch and whether we",
+      "start_ms": "666560",
+      "end_ms": "669839",
+      "start_time_text": "11:06"
+    },
+    {
+      "text": "might want to target other customers as",
+      "start_ms": "668000",
+      "end_ms": "672959",
+      "start_time_text": "11:08"
+    },
+    {
+      "text": "well and it's flagging me as like Dan",
+      "start_ms": "669839",
+      "end_ms": "674399",
+      "start_time_text": "11:09"
+    },
+    {
+      "text": "there's there's a there's a question",
+      "start_ms": "672959",
+      "end_ms": "677359.9999999999",
+      "start_time_text": "11:12"
+    },
+    {
+      "text": "about strategy here you might want to be",
+      "start_ms": "674399",
+      "end_ms": "678560",
+      "start_time_text": "11:14"
+    },
+    {
+      "text": "involved in this you might want to know",
+      "start_ms": "677360",
+      "end_ms": "680800.0000000001",
+      "start_time_text": "11:17"
+    },
+    {
+      "text": "about this and this is like a superpower",
+      "start_ms": "678560",
+      "end_ms": "684079",
+      "start_time_text": "11:18"
+    },
+    {
+      "text": "for me that Fable 5.1 can do is pick out",
+      "start_ms": "680800",
+      "end_ms": "685359.9999999999",
+      "start_time_text": "11:20"
+    },
+    {
+      "text": "interesting things that you're going to",
+      "start_ms": "684079",
+      "end_ms": "687199.9999999999",
+      "start_time_text": "11:24"
+    },
+    {
+      "text": "care about from what's happening in your",
+      "start_ms": "685360",
+      "end_ms": "688640",
+      "start_time_text": "11:25"
+    },
+    {
+      "text": "company what's happening in the world",
+      "start_ms": "687200",
+      "end_ms": "691200",
+      "start_time_text": "11:27"
+    },
+    {
+      "text": "and tell you about it in a way that kind",
+      "start_ms": "688640",
+      "end_ms": "693680",
+      "start_time_text": "11:28"
+    },
+    {
+      "text": "of clicks for you this is new. Normally,",
+      "start_ms": "691200",
+      "end_ms": "694800.0000000001",
+      "start_time_text": "11:31"
+    },
+    {
+      "text": "it would show you stuff and you'd be",
+      "start_ms": "693680",
+      "end_ms": "695920",
+      "start_time_text": "11:33"
+    },
+    {
+      "text": "like, \"Ah, like this doesn't really",
+      "start_ms": "694800",
+      "end_ms": "698079",
+      "start_time_text": "11:34"
+    },
+    {
+      "text": "click for me. It's it's not actually",
+      "start_ms": "695920",
+      "end_ms": "700079",
+      "start_time_text": "11:35"
+    },
+    {
+      "text": "interesting.\" This is the first model",
+      "start_ms": "698079",
+      "end_ms": "702959",
+      "start_time_text": "11:38"
+    },
+    {
+      "text": "that I've ever found that can pull out",
+      "start_ms": "700079",
+      "end_ms": "704560",
+      "start_time_text": "11:40"
+    },
+    {
+      "text": "something interesting and then present",
+      "start_ms": "702959",
+      "end_ms": "706319.9999999999",
+      "start_time_text": "11:42"
+    },
+    {
+      "text": "it to you in a way that makes it click.",
+      "start_ms": "704560",
+      "end_ms": "708560",
+      "start_time_text": "11:44"
+    },
+    {
+      "text": "I think the thing that Fable can do,",
+      "start_ms": "706320",
+      "end_ms": "710160.0000000001",
+      "start_time_text": "11:46"
+    },
+    {
+      "text": "well, one, it just like built this app",
+      "start_ms": "708560",
+      "end_ms": "712640",
+      "start_time_text": "11:48"
+    },
+    {
+      "text": "totally end to end. But the thing that",
+      "start_ms": "710160",
+      "end_ms": "714959",
+      "start_time_text": "11:50"
+    },
+    {
+      "text": "it can do is",
+      "start_ms": "712640",
+      "end_ms": "718319.9999999999",
+      "start_time_text": "11:52"
+    },
+    {
+      "text": "if when Fable thinks something is",
+      "start_ms": "714959",
+      "end_ms": "720079",
+      "start_time_text": "11:54"
+    },
+    {
+      "text": "interesting,",
+      "start_ms": "718320",
+      "end_ms": "722079.0000000001",
+      "start_time_text": "11:58"
+    },
+    {
+      "text": "it's more likely to actually be",
+      "start_ms": "720079",
+      "end_ms": "723839",
+      "start_time_text": "12:00"
+    },
+    {
+      "text": "interesting. You know, there's this um",
+      "start_ms": "722079",
+      "end_ms": "726160",
+      "start_time_text": "12:02"
+    },
+    {
+      "text": "there's this eval that's like loosely",
+      "start_ms": "723839",
+      "end_ms": "728959.0000000001",
+      "start_time_text": "12:03"
+    },
+    {
+      "text": "called the McDonald's eval where if",
+      "start_ms": "726160",
+      "end_ms": "730160",
+      "start_time_text": "12:06"
+    },
+    {
+      "text": "you're talking to your model and you're",
+      "start_ms": "728959",
+      "end_ms": "731920",
+      "start_time_text": "12:08"
+    },
+    {
+      "text": "like, \"Oh, that's exactly like",
+      "start_ms": "730160",
+      "end_ms": "733600",
+      "start_time_text": "12:10"
+    },
+    {
+      "text": "McDonald's.\" And it's like, \"Oh, yeah,",
+      "start_ms": "731920",
+      "end_ms": "734639",
+      "start_time_text": "12:11"
+    },
+    {
+      "text": "you're totally right.\" But you're",
+      "start_ms": "733600",
+      "end_ms": "735519",
+      "start_time_text": "12:13"
+    },
+    {
+      "text": "talking about something completely",
+      "start_ms": "734639",
+      "end_ms": "738720",
+      "start_time_text": "12:14"
+    },
+    {
+      "text": "random. That's a that's an example of",
+      "start_ms": "735519",
+      "end_ms": "741040",
+      "start_time_text": "12:15"
+    },
+    {
+      "text": "the kind of thing that models struggle",
+      "start_ms": "738720",
+      "end_ms": "743360",
+      "start_time_text": "12:18"
+    },
+    {
+      "text": "with is I would call it I mean to one to",
+      "start_ms": "741040",
+      "end_ms": "744880",
+      "start_time_text": "12:21"
+    },
+    {
+      "text": "some degree it's like people pleasing to",
+      "start_ms": "743360",
+      "end_ms": "748000",
+      "start_time_text": "12:23"
+    },
+    {
+      "text": "another it's basically discernment like",
+      "start_ms": "744880",
+      "end_ms": "750079",
+      "start_time_text": "12:24"
+    },
+    {
+      "text": "when you make a connection is that",
+      "start_ms": "748000",
+      "end_ms": "752240",
+      "start_time_text": "12:28"
+    },
+    {
+      "text": "connection actually interesting is it a",
+      "start_ms": "750079",
+      "end_ms": "754000",
+      "start_time_text": "12:30"
+    },
+    {
+      "text": "real connection or is it just that you",
+      "start_ms": "752240",
+      "end_ms": "755360",
+      "start_time_text": "12:32"
+    },
+    {
+      "text": "can connect anything to anything which",
+      "start_ms": "754000",
+      "end_ms": "756880",
+      "start_time_text": "12:34"
+    },
+    {
+      "text": "these models can do because they know",
+      "start_ms": "755360",
+      "end_ms": "760079.0000000001",
+      "start_time_text": "12:35"
+    },
+    {
+      "text": "everything and I think Fable's level of",
+      "start_ms": "756880",
+      "end_ms": "762880",
+      "start_time_text": "12:36"
+    },
+    {
+      "text": "discernment is much higher than previous",
+      "start_ms": "760079",
+      "end_ms": "765120",
+      "start_time_text": "12:40"
+    },
+    {
+      "text": "models I've tried [music]",
+      "start_ms": "762880",
+      "end_ms": "766639",
+      "start_time_text": "12:42"
+    },
+    {
+      "text": "and that takes me to the next which is",
+      "start_ms": "765120",
+      "end_ms": "769120",
+      "start_time_text": "12:45"
+    },
+    {
+      "text": "writing and obviously like writing is",
+      "start_ms": "766639",
+      "end_ms": "770399",
+      "start_time_text": "12:46"
+    },
+    {
+      "text": "that's it's that's what it's that's what",
+      "start_ms": "769120",
+      "end_ms": "772480",
+      "start_time_text": "12:49"
+    },
+    {
+      "text": "I love and so Enthropic has really",
+      "start_ms": "770399",
+      "end_ms": "774079",
+      "start_time_text": "12:50"
+    },
+    {
+      "text": "struggled with writing recently they",
+      "start_ms": "772480",
+      "end_ms": "776240",
+      "start_time_text": "12:52"
+    },
+    {
+      "text": "used to be the top writing model but",
+      "start_ms": "774079",
+      "end_ms": "779120",
+      "start_time_text": "12:54"
+    },
+    {
+      "text": "with Son of 5 and Opus 5 pretty much",
+      "start_ms": "776240",
+      "end_ms": "780639",
+      "start_time_text": "12:56"
+    },
+    {
+      "text": "everyone was just like this model",
+      "start_ms": "779120",
+      "end_ms": "782320",
+      "start_time_text": "12:59"
+    },
+    {
+      "text": "doesn't speak English correctly it",
+      "start_ms": "780639",
+      "end_ms": "784560.0000000001",
+      "start_time_text": "13:00"
+    },
+    {
+      "text": "doesn't give me good output anymore and",
+      "start_ms": "782320",
+      "end_ms": "785920.0000000001",
+      "start_time_text": "13:02"
+    },
+    {
+      "text": "everyone internally at every had",
+      "start_ms": "784560",
+      "end_ms": "789599.9999999999",
+      "start_time_text": "13:04"
+    },
+    {
+      "text": "switched to CHBT with Fable 5.1 it's not",
+      "start_ms": "785920",
+      "end_ms": "791680",
+      "start_time_text": "13:05"
+    },
+    {
+      "text": "only better than Opus at writing it's",
+      "start_ms": "789600",
+      "end_ms": "793760",
+      "start_time_text": "13:09"
+    },
+    {
+      "text": "actually starting to compete with CHBT",
+      "start_ms": "791680",
+      "end_ms": "796638.9999999999",
+      "start_time_text": "13:11"
+    },
+    {
+      "text": "it writes quickly it has pretty clear",
+      "start_ms": "793760",
+      "end_ms": "799200",
+      "start_time_text": "13:13"
+    },
+    {
+      "text": "pros. It still has a lot of the clawed",
+      "start_ms": "796639",
+      "end_ms": "802320",
+      "start_time_text": "13:16"
+    },
+    {
+      "text": "literariness, but if you look at the",
+      "start_ms": "799200",
+      "end_ms": "804000",
+      "start_time_text": "13:19"
+    },
+    {
+      "text": "reading level that it writes at and the",
+      "start_ms": "802320",
+      "end_ms": "806000",
+      "start_time_text": "13:22"
+    },
+    {
+      "text": "reading ease scores, it has the highest",
+      "start_ms": "804000",
+      "end_ms": "808079",
+      "start_time_text": "13:24"
+    },
+    {
+      "text": "reading ease and the lowest grade level",
+      "start_ms": "806000",
+      "end_ms": "811360",
+      "start_time_text": "13:26"
+    },
+    {
+      "text": "of Opus 5 and GBT 5.6 Soul. So, it is",
+      "start_ms": "808079",
+      "end_ms": "813279",
+      "start_time_text": "13:28"
+    },
+    {
+      "text": "just producing stuff that's easier to",
+      "start_ms": "811360",
+      "end_ms": "816079.0000000001",
+      "start_time_text": "13:31"
+    },
+    {
+      "text": "read. So, as an example of the kind of",
+      "start_ms": "813279",
+      "end_ms": "818720",
+      "start_time_text": "13:33"
+    },
+    {
+      "text": "oneshot writing this thing does, we",
+      "start_ms": "816079",
+      "end_ms": "821519",
+      "start_time_text": "13:36"
+    },
+    {
+      "text": "asked it to create a blog post based on",
+      "start_ms": "818720",
+      "end_ms": "825040.0000000001",
+      "start_time_text": "13:38"
+    },
+    {
+      "text": "a simple prompt and a long transcript of",
+      "start_ms": "821519",
+      "end_ms": "827600",
+      "start_time_text": "13:41"
+    },
+    {
+      "text": "Mike Taylor, who's our head of eval just",
+      "start_ms": "825040",
+      "end_ms": "828639",
+      "start_time_text": "13:45"
+    },
+    {
+      "text": "talking about some of the work that he",
+      "start_ms": "827600",
+      "end_ms": "830399",
+      "start_time_text": "13:47"
+    },
+    {
+      "text": "does. And we asked it to write some of",
+      "start_ms": "828639",
+      "end_ms": "831519",
+      "start_time_text": "13:48"
+    },
+    {
+      "text": "the things that he's learned about",
+      "start_ms": "830399",
+      "end_ms": "833760",
+      "start_time_text": "13:50"
+    },
+    {
+      "text": "getting teams to use AI. And this is the",
+      "start_ms": "831519",
+      "end_ms": "835279",
+      "start_time_text": "13:51"
+    },
+    {
+      "text": "post that it created just from a very,",
+      "start_ms": "833760",
+      "end_ms": "836560",
+      "start_time_text": "13:53"
+    },
+    {
+      "text": "very simple prompt. You can see the",
+      "start_ms": "835279",
+      "end_ms": "839839",
+      "start_time_text": "13:55"
+    },
+    {
+      "text": "prompt is really small. Raise the",
+      "start_ms": "836560",
+      "end_ms": "841199",
+      "start_time_text": "13:56"
+    },
+    {
+      "text": "ceiling, not the floor. Seven things",
+      "start_ms": "839839",
+      "end_ms": "842639",
+      "start_time_text": "13:59"
+    },
+    {
+      "text": "I've learned about getting teams to",
+      "start_ms": "841199",
+      "end_ms": "844639",
+      "start_time_text": "14:01"
+    },
+    {
+      "text": "actually use AI from my first few months",
+      "start_ms": "842639",
+      "end_ms": "846800",
+      "start_time_text": "14:02"
+    },
+    {
+      "text": "running tech consulting at every sampar",
+      "start_ms": "844639",
+      "end_ms": "848160",
+      "start_time_text": "14:04"
+    },
+    {
+      "text": "asked me a question on X last week that",
+      "start_ms": "846800",
+      "end_ms": "849439.9999999999",
+      "start_time_text": "14:06"
+    },
+    {
+      "text": "I've been asked in one form or another",
+      "start_ms": "848160",
+      "end_ms": "851120",
+      "start_time_text": "14:08"
+    },
+    {
+      "text": "in almost every client meeting since I",
+      "start_ms": "849440",
+      "end_ms": "853839",
+      "start_time_text": "14:09"
+    },
+    {
+      "text": "joined every how's everyone getting team",
+      "start_ms": "851120",
+      "end_ms": "855519",
+      "start_time_text": "14:11"
+    },
+    {
+      "text": "adoption for claude. It's the right",
+      "start_ms": "853839",
+      "end_ms": "856959.0000000001",
+      "start_time_text": "14:13"
+    },
+    {
+      "text": "question. The gap between what the",
+      "start_ms": "855519",
+      "end_ms": "858800",
+      "start_time_text": "14:15"
+    },
+    {
+      "text": "terminally online people in a company",
+      "start_ms": "856959",
+      "end_ms": "860399",
+      "start_time_text": "14:16"
+    },
+    {
+      "text": "can do with AI and what everyone else",
+      "start_ms": "858800",
+      "end_ms": "862319.9999999999",
+      "start_time_text": "14:18"
+    },
+    {
+      "text": "does with it has never been wider. This",
+      "start_ms": "860399",
+      "end_ms": "864320",
+      "start_time_text": "14:20"
+    },
+    {
+      "text": "is like pretty good pros. It doesn't",
+      "start_ms": "862320",
+      "end_ms": "866959.0000000001",
+      "start_time_text": "14:22"
+    },
+    {
+      "text": "feel like slop by the model. Buy the",
+      "start_ms": "864320",
+      "end_ms": "868399",
+      "start_time_text": "14:24"
+    },
+    {
+      "text": "model direct, not third party tools.",
+      "start_ms": "866959",
+      "end_ms": "870399",
+      "start_time_text": "14:26"
+    },
+    {
+      "text": "When a company decides to do AI, the",
+      "start_ms": "868399",
+      "end_ms": "872320",
+      "start_time_text": "14:28"
+    },
+    {
+      "text": "first instinct is to evalu evaluate",
+      "start_ms": "870399",
+      "end_ms": "873839",
+      "start_time_text": "14:30"
+    },
+    {
+      "text": "tools. Someone assembles a spreadsheet",
+      "start_ms": "872320",
+      "end_ms": "875440",
+      "start_time_text": "14:32"
+    },
+    {
+      "text": "of vendors with Clutter Codeex or Gemini",
+      "start_ms": "873839",
+      "end_ms": "877440",
+      "start_time_text": "14:33"
+    },
+    {
+      "text": "under the hood. It doesn't have any of",
+      "start_ms": "875440",
+      "end_ms": "879760.0000000001",
+      "start_time_text": "14:35"
+    },
+    {
+      "text": "the X not Ys. It has the raise the",
+      "start_ms": "877440",
+      "end_ms": "881360",
+      "start_time_text": "14:37"
+    },
+    {
+      "text": "ceiling, not the floor, but still it's",
+      "start_ms": "879760",
+      "end_ms": "883839",
+      "start_time_text": "14:39"
+    },
+    {
+      "text": "not it doesn't have that slop feeling.",
+      "start_ms": "881360",
+      "end_ms": "887760",
+      "start_time_text": "14:41"
+    },
+    {
+      "text": "It's well structured. It's thoughtful.",
+      "start_ms": "883839",
+      "end_ms": "889519",
+      "start_time_text": "14:43"
+    },
+    {
+      "text": "It's actually really impressive. Let's",
+      "start_ms": "887760",
+      "end_ms": "892240",
+      "start_time_text": "14:47"
+    },
+    {
+      "text": "look back at Opus. Opus 5. Same prompt,",
+      "start_ms": "889519",
+      "end_ms": "894160",
+      "start_time_text": "14:49"
+    },
+    {
+      "text": "same exercise, same everything. Nobody",
+      "start_ms": "892240",
+      "end_ms": "896639",
+      "start_time_text": "14:52"
+    },
+    {
+      "text": "wants to use your AI tools. Opus 5 was",
+      "start_ms": "894160",
+      "end_ms": "898015",
+      "start_time_text": "14:54"
+    },
+    {
+      "text": "such a dick.",
+      "start_ms": "896639",
+      "end_ms": "898240",
+      "start_time_text": "14:56"
+    },
+    {
+      "text": ">> [laughter]",
+      "start_ms": "898015",
+      "end_ms": "900000",
+      "start_time_text": "14:58"
+    },
+    {
+      "text": ">> Nobody wants to use your AI tools. Seven",
+      "start_ms": "898240",
+      "end_ms": "901199",
+      "start_time_text": "14:58"
+    },
+    {
+      "text": "things I've learned about AI adoption",
+      "start_ms": "900000",
+      "end_ms": "903680",
+      "start_time_text": "15:00"
+    },
+    {
+      "text": "since joining every consulting. Sam Par",
+      "start_ms": "901199",
+      "end_ms": "904800",
+      "start_time_text": "15:01"
+    },
+    {
+      "text": "asked a question last week that I think",
+      "start_ms": "903680",
+      "end_ms": "906560",
+      "start_time_text": "15:03"
+    },
+    {
+      "text": "is the real question in AI right now. So",
+      "start_ms": "904800",
+      "end_ms": "908399",
+      "start_time_text": "15:04"
+    },
+    {
+      "text": "that that opener, it's a sort of similar",
+      "start_ms": "906560",
+      "end_ms": "910560",
+      "start_time_text": "15:06"
+    },
+    {
+      "text": "opener. It's a it's a little bit of more",
+      "start_ms": "908399",
+      "end_ms": "913040",
+      "start_time_text": "15:08"
+    },
+    {
+      "text": "of a minimal sentence construction,",
+      "start_ms": "910560",
+      "end_ms": "915680",
+      "start_time_text": "15:10"
+    },
+    {
+      "text": "which isn't necessarily bad, but you can",
+      "start_ms": "913040",
+      "end_ms": "918160",
+      "start_time_text": "15:13"
+    },
+    {
+      "text": "just sort of feel, let's see, the",
+      "start_ms": "915680",
+      "end_ms": "920000",
+      "start_time_text": "15:15"
+    },
+    {
+      "text": "instinct is to go after lagards. We",
+      "start_ms": "918160",
+      "end_ms": "922079",
+      "start_time_text": "15:18"
+    },
+    {
+      "text": "bought you the tools. Now everyone needs",
+      "start_ms": "920000",
+      "end_ms": "924160",
+      "start_time_text": "15:20"
+    },
+    {
+      "text": "to use AI. This does not work. On pain",
+      "start_ms": "922079",
+      "end_ms": "925519",
+      "start_time_text": "15:22"
+    },
+    {
+      "text": "of death, a good number of people are",
+      "start_ms": "924160",
+      "end_ms": "927120",
+      "start_time_text": "15:24"
+    },
+    {
+      "text": "emotionally unwilling to use AI. Like",
+      "start_ms": "925519",
+      "end_ms": "929279",
+      "start_time_text": "15:25"
+    },
+    {
+      "text": "what is this thing even talking about?",
+      "start_ms": "927120",
+      "end_ms": "931839",
+      "start_time_text": "15:27"
+    },
+    {
+      "text": "It's Opus 5 is just so dark and they",
+      "start_ms": "929279",
+      "end_ms": "934240",
+      "start_time_text": "15:29"
+    },
+    {
+      "text": "fixed it with Fable 5.1. It's really",
+      "start_ms": "931839",
+      "end_ms": "936800.0000000001",
+      "start_time_text": "15:31"
+    },
+    {
+      "text": "impressive. I find for me personally,",
+      "start_ms": "934240",
+      "end_ms": "940160",
+      "start_time_text": "15:34"
+    },
+    {
+      "text": "I'm I'm a pretty I write every day and",
+      "start_ms": "936800",
+      "end_ms": "944399",
+      "start_time_text": "15:36"
+    },
+    {
+      "text": "I'm still using 5.6 in the CHBT for work",
+      "start_ms": "940160",
+      "end_ms": "948240",
+      "start_time_text": "15:40"
+    },
+    {
+      "text": "app for most of my day-to-day writing. I",
+      "start_ms": "944399",
+      "end_ms": "950560",
+      "start_time_text": "15:44"
+    },
+    {
+      "text": "still find with Fable 5.1, it's still",
+      "start_ms": "948240",
+      "end_ms": "952240",
+      "start_time_text": "15:48"
+    },
+    {
+      "text": "like a little bit literary and chunky,",
+      "start_ms": "950560",
+      "end_ms": "953599.9999999999",
+      "start_time_text": "15:50"
+    },
+    {
+      "text": "but different writers have different",
+      "start_ms": "952240",
+      "end_ms": "955920",
+      "start_time_text": "15:52"
+    },
+    {
+      "text": "styles. So Katie Parrot, who's a staff",
+      "start_ms": "953600",
+      "end_ms": "958240",
+      "start_time_text": "15:53"
+    },
+    {
+      "text": "writer, uses is now back. She she was",
+      "start_ms": "955920",
+      "end_ms": "959599.9999999999",
+      "start_time_text": "15:55"
+    },
+    {
+      "text": "using Chetchy Boutique all the time and",
+      "start_ms": "958240",
+      "end_ms": "961279",
+      "start_time_text": "15:58"
+    },
+    {
+      "text": "now she's back to Claude for a lot of",
+      "start_ms": "959600",
+      "end_ms": "962639",
+      "start_time_text": "15:59"
+    },
+    {
+      "text": "her writing because she's a big Claude",
+      "start_ms": "961279",
+      "end_ms": "966560",
+      "start_time_text": "16:01"
+    },
+    {
+      "text": "fan for many years until the the last",
+      "start_ms": "962639",
+      "end_ms": "969600",
+      "start_time_text": "16:02"
+    },
+    {
+      "text": "few models. So I find that for me I",
+      "start_ms": "966560",
+      "end_ms": "972160",
+      "start_time_text": "16:06"
+    },
+    {
+      "text": "really like more minimal straight ahead",
+      "start_ms": "969600",
+      "end_ms": "974000",
+      "start_time_text": "16:09"
+    },
+    {
+      "text": "pros and I can kind of collaborate with",
+      "start_ms": "972160",
+      "end_ms": "976240",
+      "start_time_text": "16:12"
+    },
+    {
+      "text": "5.6 a little bit easier to to create",
+      "start_ms": "974000",
+      "end_ms": "979360",
+      "start_time_text": "16:14"
+    },
+    {
+      "text": "that. But I am now flipping back to 5.1",
+      "start_ms": "976240",
+      "end_ms": "982560.0000000001",
+      "start_time_text": "16:16"
+    },
+    {
+      "text": "to Fable when the first prompt or two to",
+      "start_ms": "979360",
+      "end_ms": "985519",
+      "start_time_text": "16:19"
+    },
+    {
+      "text": "chat to BT doesn't work. So I find it to",
+      "start_ms": "982560",
+      "end_ms": "988079",
+      "start_time_text": "16:22"
+    },
+    {
+      "text": "be a valuable part of my arsenal where I",
+      "start_ms": "985519",
+      "end_ms": "989680",
+      "start_time_text": "16:25"
+    },
+    {
+      "text": "wasn't using claude at all for writing",
+      "start_ms": "988079",
+      "end_ms": "991199",
+      "start_time_text": "16:28"
+    },
+    {
+      "text": "anymore.",
+      "start_ms": "989680",
+      "end_ms": "993120",
+      "start_time_text": "16:29"
+    },
+    {
+      "text": "And that's new and I certain I mean I",
+      "start_ms": "991199",
+      "end_ms": "994479.9999999999",
+      "start_time_text": "16:31"
+    },
+    {
+      "text": "certainly was never using Fable for",
+      "start_ms": "993120",
+      "end_ms": "996720",
+      "start_time_text": "16:33"
+    },
+    {
+      "text": "writing because Fable is like this warp",
+      "start_ms": "994480",
+      "end_ms": "998480",
+      "start_time_text": "16:34"
+    },
+    {
+      "text": "drive thing.",
+      "start_ms": "996720",
+      "end_ms": "1000399",
+      "start_time_text": "16:36"
+    },
+    {
+      "text": "So, one of the things this model knows",
+      "start_ms": "998480",
+      "end_ms": "1003199.0000000001",
+      "start_time_text": "16:38"
+    },
+    {
+      "text": "how to do that other models don't really",
+      "start_ms": "1000399",
+      "end_ms": "1006800",
+      "start_time_text": "16:40"
+    },
+    {
+      "text": "know is it knows how sentences connect",
+      "start_ms": "1003199",
+      "end_ms": "1008719.9999999999",
+      "start_time_text": "16:43"
+    },
+    {
+      "text": "together. Like I was working on this",
+      "start_ms": "1006800",
+      "end_ms": "1010079",
+      "start_time_text": "16:46"
+    },
+    {
+      "text": "piece, I'm working on this history of",
+      "start_ms": "1008720",
+      "end_ms": "1014480",
+      "start_time_text": "16:48"
+    },
+    {
+      "text": "codecs and I was working on a piece of",
+      "start_ms": "1010079",
+      "end_ms": "1018800",
+      "start_time_text": "16:50"
+    },
+    {
+      "text": "it where I asked a question, why was",
+      "start_ms": "1014480",
+      "end_ms": "1020720",
+      "start_time_text": "16:54"
+    },
+    {
+      "text": "codeex cloud different? And the details",
+      "start_ms": "1018800",
+      "end_ms": "1022319.9999999999",
+      "start_time_text": "16:58"
+    },
+    {
+      "text": "of this don't matter. Why was Codex",
+      "start_ms": "1020720",
+      "end_ms": "1024880.0000000001",
+      "start_time_text": "17:00"
+    },
+    {
+      "text": "cloud different? And then there was some",
+      "start_ms": "1022320",
+      "end_ms": "1026720",
+      "start_time_text": "17:02"
+    },
+    {
+      "text": "text after that. There was I had I had a",
+      "start_ms": "1024880.0000000001",
+      "end_ms": "1028480",
+      "start_time_text": "17:04"
+    },
+    {
+      "text": "you know I had a falling paragraph and I",
+      "start_ms": "1026720",
+      "end_ms": "1030079",
+      "start_time_text": "17:06"
+    },
+    {
+      "text": "just knew it wasn't really quite working",
+      "start_ms": "1028480",
+      "end_ms": "1032480",
+      "start_time_text": "17:08"
+    },
+    {
+      "text": "and I threw it into this model and it",
+      "start_ms": "1030079",
+      "end_ms": "1033839",
+      "start_time_text": "17:10"
+    },
+    {
+      "text": "was like here's what's dragging it down",
+      "start_ms": "1032480",
+      "end_ms": "1035599.9999999999",
+      "start_time_text": "17:12"
+    },
+    {
+      "text": "roughly in order of how much it matters.",
+      "start_ms": "1033839",
+      "end_ms": "1036559",
+      "start_time_text": "17:13"
+    },
+    {
+      "text": "The biggest problem is that the",
+      "start_ms": "1035599.9999999999",
+      "end_ms": "1038159.9999999999",
+      "start_time_text": "17:15"
+    },
+    {
+      "text": "paragraph goes flat right where it",
+      "start_ms": "1036559",
+      "end_ms": "1039439.0000000001",
+      "start_time_text": "17:16"
+    },
+    {
+      "text": "should pay off. You set up a real",
+      "start_ms": "1038160.0000000001",
+      "end_ms": "1040720",
+      "start_time_text": "17:18"
+    },
+    {
+      "text": "puzzle. Why was Codex cloud different",
+      "start_ms": "1039439.0000000001",
+      "end_ms": "1042079.0000000002",
+      "start_time_text": "17:19"
+    },
+    {
+      "text": "and then answer it in the voice of a",
+      "start_ms": "1040720",
+      "end_ms": "1043839",
+      "start_time_text": "17:20"
+    },
+    {
+      "text": "help center article the right software",
+      "start_ms": "1042079",
+      "end_ms": "1045918.9999999999",
+      "start_time_text": "17:22"
+    },
+    {
+      "text": "dependencies blah blah blah. Everywhere",
+      "start_ms": "1043839",
+      "end_ms": "1047678.9999999999",
+      "start_time_text": "17:23"
+    },
+    {
+      "text": "else in the piece you reach for an image",
+      "start_ms": "1045919.0000000001",
+      "end_ms": "1049360.0000000002",
+      "start_time_text": "17:25"
+    },
+    {
+      "text": "here you explain dependency hell",
+      "start_ms": "1047679.0000000001",
+      "end_ms": "1052720",
+      "start_time_text": "17:27"
+    },
+    {
+      "text": "literally. So, it's actually zeroing in",
+      "start_ms": "1049360",
+      "end_ms": "1054799",
+      "start_time_text": "17:29"
+    },
+    {
+      "text": "on the right part of the problem and",
+      "start_ms": "1052720",
+      "end_ms": "1056960",
+      "start_time_text": "17:32"
+    },
+    {
+      "text": "then telling me how to fix it. And the",
+      "start_ms": "1054799",
+      "end_ms": "1058879.9999999998",
+      "start_time_text": "17:34"
+    },
+    {
+      "text": "takes that it does generally the",
+      "start_ms": "1056960",
+      "end_ms": "1060559",
+      "start_time_text": "17:36"
+    },
+    {
+      "text": "sentence are connecting. They're it's",
+      "start_ms": "1058880",
+      "end_ms": "1062080.0000000002",
+      "start_time_text": "17:38"
+    },
+    {
+      "text": "leading from one sentence to the next.",
+      "start_ms": "1060559",
+      "end_ms": "1063280",
+      "start_time_text": "17:40"
+    },
+    {
+      "text": "It doesn't write as many of those",
+      "start_ms": "1062080",
+      "end_ms": "1064480",
+      "start_time_text": "17:42"
+    },
+    {
+      "text": "sentences where you're like, \"Oh, yeah,",
+      "start_ms": "1063280",
+      "end_ms": "1065840",
+      "start_time_text": "17:43"
+    },
+    {
+      "text": "that's that sounds right.\" And then you",
+      "start_ms": "1064480",
+      "end_ms": "1066640",
+      "start_time_text": "17:44"
+    },
+    {
+      "text": "think about it and you're like, \"That",
+      "start_ms": "1065840",
+      "end_ms": "1067840",
+      "start_time_text": "17:45"
+    },
+    {
+      "text": "doesn't mean anything. I have no idea",
+      "start_ms": "1066640",
+      "end_ms": "1070960",
+      "start_time_text": "17:46"
+    },
+    {
+      "text": "what it means.\" And that's new for a",
+      "start_ms": "1067840",
+      "end_ms": "1073199.9999999998",
+      "start_time_text": "17:47"
+    },
+    {
+      "text": "model of this level of power. So the",
+      "start_ms": "1070960",
+      "end_ms": "1076000",
+      "start_time_text": "17:50"
+    },
+    {
+      "text": "takeaway here is if you really liked",
+      "start_ms": "1073200",
+      "end_ms": "1078559",
+      "start_time_text": "17:53"
+    },
+    {
+      "text": "Claude models until Opus 5 or Sonify 5",
+      "start_ms": "1076000",
+      "end_ms": "1080320",
+      "start_time_text": "17:56"
+    },
+    {
+      "text": "for writing, you're going to really like",
+      "start_ms": "1078559",
+      "end_ms": "1082399.9999999998",
+      "start_time_text": "17:58"
+    },
+    {
+      "text": "this model. It's going to be back to the",
+      "start_ms": "1080320",
+      "end_ms": "1084240",
+      "start_time_text": "18:00"
+    },
+    {
+      "text": "stuff that you love. And if you've been",
+      "start_ms": "1082400",
+      "end_ms": "1086960",
+      "start_time_text": "18:02"
+    },
+    {
+      "text": "using GPT 5.6 or similar models for your",
+      "start_ms": "1084240",
+      "end_ms": "1088799",
+      "start_time_text": "18:04"
+    },
+    {
+      "text": "writing, you should give this one a try.",
+      "start_ms": "1086960",
+      "end_ms": "1090799",
+      "start_time_text": "18:06"
+    },
+    {
+      "text": "It's a good one-two punch to give you a",
+      "start_ms": "1088799",
+      "end_ms": "1092240",
+      "start_time_text": "18:08"
+    },
+    {
+      "text": "little bit more variation and",
+      "start_ms": "1090799",
+      "end_ms": "1093679",
+      "start_time_text": "18:10"
+    },
+    {
+      "text": "perspective in your writing. That'll",
+      "start_ms": "1092240",
+      "end_ms": "1096400",
+      "start_time_text": "18:12"
+    },
+    {
+      "text": "help liven it up. So where does this",
+      "start_ms": "1093679",
+      "end_ms": "1098640",
+      "start_time_text": "18:13"
+    },
+    {
+      "text": "leave us? I I want to show you like my",
+      "start_ms": "1096400",
+      "end_ms": "1101039",
+      "start_time_text": "18:16"
+    },
+    {
+      "text": "actual usage. So I got this model on",
+      "start_ms": "1098640",
+      "end_ms": "1103200",
+      "start_time_text": "18:18"
+    },
+    {
+      "text": "August 24th and you can see you know",
+      "start_ms": "1101039",
+      "end_ms": "1105520",
+      "start_time_text": "18:21"
+    },
+    {
+      "text": "this is in in green this is codeex or",
+      "start_ms": "1103200",
+      "end_ms": "1107600.0000000002",
+      "start_time_text": "18:23"
+    },
+    {
+      "text": "chatbtd for work and in orange it's",
+      "start_ms": "1105520",
+      "end_ms": "1110240",
+      "start_time_text": "18:25"
+    },
+    {
+      "text": "cloud code. You can see it my my level",
+      "start_ms": "1107600",
+      "end_ms": "1113678.9999999998",
+      "start_time_text": "18:27"
+    },
+    {
+      "text": "of use has not really changed. I'm",
+      "start_ms": "1110240",
+      "end_ms": "1116640",
+      "start_time_text": "18:30"
+    },
+    {
+      "text": "mostly using codeex but then if I look",
+      "start_ms": "1113679",
+      "end_ms": "1118960",
+      "start_time_text": "18:33"
+    },
+    {
+      "text": "at the number of tokens",
+      "start_ms": "1116640",
+      "end_ms": "1123280.0000000002",
+      "start_time_text": "18:36"
+    },
+    {
+      "text": "my my use of claude jumped dramatically.",
+      "start_ms": "1118960",
+      "end_ms": "1125440",
+      "start_time_text": "18:38"
+    },
+    {
+      "text": "Why is that? That's interesting right?",
+      "start_ms": "1123280",
+      "end_ms": "1127678.9999999998",
+      "start_time_text": "18:43"
+    },
+    {
+      "text": "What Fable 5.1 has done for me is given",
+      "start_ms": "1125440",
+      "end_ms": "1129600.0000000002",
+      "start_time_text": "18:45"
+    },
+    {
+      "text": "me a model that I set off on a big",
+      "start_ms": "1127679",
+      "end_ms": "1132240",
+      "start_time_text": "18:47"
+    },
+    {
+      "text": "chunky task and I just let it cook and",
+      "start_ms": "1129600",
+      "end_ms": "1134879.9999999998",
+      "start_time_text": "18:49"
+    },
+    {
+      "text": "I'm in chat for my more basic day-to-day",
+      "start_ms": "1132240",
+      "end_ms": "1136480",
+      "start_time_text": "18:52"
+    },
+    {
+      "text": "stuff and then I flip back to Fable",
+      "start_ms": "1134880",
+      "end_ms": "1138720",
+      "start_time_text": "18:54"
+    },
+    {
+      "text": "every once in a while. And so I'm",
+      "start_ms": "1136480",
+      "end_ms": "1140960",
+      "start_time_text": "18:56"
+    },
+    {
+      "text": "getting like all this work done but I'm",
+      "start_ms": "1138720",
+      "end_ms": "1142400",
+      "start_time_text": "18:58"
+    },
+    {
+      "text": "not really checking it because it it",
+      "start_ms": "1140960",
+      "end_ms": "1144320",
+      "start_time_text": "19:00"
+    },
+    {
+      "text": "just does the work end to end. And this",
+      "start_ms": "1142400",
+      "end_ms": "1145760",
+      "start_time_text": "19:02"
+    },
+    {
+      "text": "is that new style of coding and",
+      "start_ms": "1144320",
+      "end_ms": "1147280",
+      "start_time_text": "19:04"
+    },
+    {
+      "text": "knowledge work that I'm talking about.",
+      "start_ms": "1145760",
+      "end_ms": "1149520",
+      "start_time_text": "19:05"
+    },
+    {
+      "text": "You want both. You want both gears. But",
+      "start_ms": "1147280",
+      "end_ms": "1151918.9999999998",
+      "start_time_text": "19:07"
+    },
+    {
+      "text": "what what Fable 5.1 has really given me",
+      "start_ms": "1149520",
+      "end_ms": "1154240",
+      "start_time_text": "19:09"
+    },
+    {
+      "text": "is this extra tool that works at the",
+      "start_ms": "1151919",
+      "end_ms": "1156320.0000000002",
+      "start_time_text": "19:11"
+    },
+    {
+      "text": "cost and speed of Opus 5, but gives you",
+      "start_ms": "1154240",
+      "end_ms": "1159280",
+      "start_time_text": "19:14"
+    },
+    {
+      "text": "the delegation power of Fable",
+      "start_ms": "1156320",
+      "end_ms": "1161120",
+      "start_time_text": "19:16"
+    },
+    {
+      "text": "that used to be pretty out of reach",
+      "start_ms": "1159280",
+      "end_ms": "1162399.9999999998",
+      "start_time_text": "19:19"
+    },
+    {
+      "text": "unless you're spend willing to spend a",
+      "start_ms": "1161120",
+      "end_ms": "1164479.9999999998",
+      "start_time_text": "19:21"
+    },
+    {
+      "text": "ton of money. So you can sort of see",
+      "start_ms": "1162400",
+      "end_ms": "1166559.0000000002",
+      "start_time_text": "19:22"
+    },
+    {
+      "text": "that in the graph, right? Like I'm still",
+      "start_ms": "1164480",
+      "end_ms": "1168799",
+      "start_time_text": "19:24"
+    },
+    {
+      "text": "using a lot of CHBT tokens, but I'm",
+      "start_ms": "1166559",
+      "end_ms": "1171200",
+      "start_time_text": "19:26"
+    },
+    {
+      "text": "using way more claw tokens and I'm in",
+      "start_ms": "1168799",
+      "end_ms": "1174000",
+      "start_time_text": "19:28"
+    },
+    {
+      "text": "CHBT more. I'm I'm prompting Chetch",
+      "start_ms": "1171200",
+      "end_ms": "1176080.0000000002",
+      "start_time_text": "19:31"
+    },
+    {
+      "text": "more. It's more of an interactive model.",
+      "start_ms": "1174000",
+      "end_ms": "1178480",
+      "start_time_text": "19:34"
+    },
+    {
+      "text": "I think that's really interesting. Um,",
+      "start_ms": "1176080",
+      "end_ms": "1180399.9999999998",
+      "start_time_text": "19:36"
+    },
+    {
+      "text": "okay. What did I actually use the tokens",
+      "start_ms": "1178480",
+      "end_ms": "1182880",
+      "start_time_text": "19:38"
+    },
+    {
+      "text": "on? It's like it's hands. It's this",
+      "start_ms": "1180400",
+      "end_ms": "1184320.0000000002",
+      "start_time_text": "19:40"
+    },
+    {
+      "text": "personal feed experiments. It's these",
+      "start_ms": "1182880",
+      "end_ms": "1187200",
+      "start_time_text": "19:42"
+    },
+    {
+      "text": "big things that I'm building end to end.",
+      "start_ms": "1184320",
+      "end_ms": "1189439.9999999998",
+      "start_time_text": "19:44"
+    },
+    {
+      "text": "And the rest of my work I'm mostly still",
+      "start_ms": "1187200",
+      "end_ms": "1191458",
+      "start_time_text": "19:47"
+    },
+    {
+      "text": "doing in Chach.",
+      "start_ms": "1189440",
+      "end_ms": "1192640",
+      "start_time_text": "19:49"
+    },
+    {
+      "text": "[music]",
+      "start_ms": "1191458",
+      "end_ms": "1196080.0000000002",
+      "start_time_text": "19:51"
+    },
+    {
+      "text": "So, final thoughts. If you like cloud",
+      "start_ms": "1192640",
+      "end_ms": "1197520.0000000002",
+      "start_time_text": "19:52"
+    },
+    {
+      "text": "models and you've been disappointed by",
+      "start_ms": "1196080",
+      "end_ms": "1198960",
+      "start_time_text": "19:56"
+    },
+    {
+      "text": "the recent releases, you're going to",
+      "start_ms": "1197520",
+      "end_ms": "1200960",
+      "start_time_text": "19:57"
+    },
+    {
+      "text": "love this. You need to check it out. And",
+      "start_ms": "1198960",
+      "end_ms": "1203840.0000000002",
+      "start_time_text": "19:58"
+    },
+    {
+      "text": "if you're a big GPT 5.6 six fan like I",
+      "start_ms": "1200960",
+      "end_ms": "1206640",
+      "start_time_text": "20:00"
+    },
+    {
+      "text": "am, it's worth really adding to your",
+      "start_ms": "1203840",
+      "end_ms": "1208320",
+      "start_time_text": "20:03"
+    },
+    {
+      "text": "arsenal, especially for your big",
+      "start_ms": "1206640",
+      "end_ms": "1210080.0000000002",
+      "start_time_text": "20:06"
+    },
+    {
+      "text": "projects and especially for trying to",
+      "start_ms": "1208320",
+      "end_ms": "1211360",
+      "start_time_text": "20:08"
+    },
+    {
+      "text": "understand, okay, where is knowledge",
+      "start_ms": "1210080",
+      "end_ms": "1212720",
+      "start_time_text": "20:10"
+    },
+    {
+      "text": "work going? How is knowledge work going",
+      "start_ms": "1211360",
+      "end_ms": "1214559",
+      "start_time_text": "20:11"
+    },
+    {
+      "text": "to work when I'm delegating lots of",
+      "start_ms": "1212720",
+      "end_ms": "1216480",
+      "start_time_text": "20:12"
+    },
+    {
+      "text": "things like making a slide deck end to",
+      "start_ms": "1214559",
+      "end_ms": "1218879.9999999998",
+      "start_time_text": "20:14"
+    },
+    {
+      "text": "end that used to be impossible, it's",
+      "start_ms": "1216480",
+      "end_ms": "1220640",
+      "start_time_text": "20:16"
+    },
+    {
+      "text": "starting to be possible now. And so, if",
+      "start_ms": "1218880",
+      "end_ms": "1222000",
+      "start_time_text": "20:18"
+    },
+    {
+      "text": "you want to get a glimpse of this new",
+      "start_ms": "1220640",
+      "end_ms": "1224080.0000000002",
+      "start_time_text": "20:20"
+    },
+    {
+      "text": "way of working in a way that isn't going",
+      "start_ms": "1222000",
+      "end_ms": "1226000",
+      "start_time_text": "20:22"
+    },
+    {
+      "text": "to totally break your bank account,",
+      "start_ms": "1224080",
+      "end_ms": "1229039",
+      "start_time_text": "20:24"
+    },
+    {
+      "text": "check out Fable 5.1.",
+      "start_ms": "1226000",
+      "end_ms": "1230880",
+      "start_time_text": "20:26"
+    },
+    {
+      "text": "In addition to this video, we have a",
+      "start_ms": "1229039",
+      "end_ms": "1232720",
+      "start_time_text": "20:29"
+    },
+    {
+      "text": "long form written vibe check with all of",
+      "start_ms": "1230880",
+      "end_ms": "1234400",
+      "start_time_text": "20:30"
+    },
+    {
+      "text": "our benchmarks and all of our testing",
+      "start_ms": "1232720",
+      "end_ms": "1237039",
+      "start_time_text": "20:32"
+    },
+    {
+      "text": "live now on every.TO. We also have a",
+      "start_ms": "1234400",
+      "end_ms": "1238720",
+      "start_time_text": "20:34"
+    },
+    {
+      "text": "prompt library that you can download to",
+      "start_ms": "1237039",
+      "end_ms": "1240879.9999999998",
+      "start_time_text": "20:37"
+    },
+    {
+      "text": "help you get the most out of Fable 5.1.",
+      "start_ms": "1238720",
+      "end_ms": "1242400",
+      "start_time_text": "20:38"
+    },
+    {
+      "text": "So, if you want to go deeper after this",
+      "start_ms": "1240880",
+      "end_ms": "1246000",
+      "start_time_text": "20:40"
+    },
+    {
+      "text": "video, check it out. Every.TO.",
+      "start_ms": "1242400",
+      "end_ms": "1246000",
+      "start_time_text": "20:42"
+    }
+  ],
+  "transcript_only_text": "It's model release day. We've got an allnew Fable Fable 5.1 and it is Fable for everyone. We've been testing it for about a week. This is a sick model. It is a better coding model than the original Fable. So, if you love the original Fable, you're going to love this model even more. And it speaks English. It actually talks to you like a normal person. It says things that you can understand. And that's not all. It is significantly faster. It's like twice as fast as Old Fable and it uses half the tokens as Opus 5 for similar tasks. So, it's priced like a Fable, but you'll be able to use it for all your Opus tasks. And there's really no reason for you to use Opus anymore. Fable all day, baby. So, let's get into the vibe check. So, before we get into this video, who am I and how do I possibly have a full review of a model that just dropped? My name is Dan Shipper and I'm the co-founder and CEO of EveryY. Every is the only subscription you need to stay at the edge of AI. We get all of the models before they come out and we test them with a team of writers, designers, engineers, and more to tell you what they're good for. So on the day a model drops, we have long form reviews to tell you what to use them for and what not to use them for from our real experience doing real work. So we've been testing this model on all the kinds of things that you do every day. So we've done it from on coding, we've done it on knowledge work like debt creation and data analysis and we've done it on writing. And I'm going to show you everything that we found in our usage and how that has pulled through into how I use it day-to-day. What are the actual numbers for how it has changed my usage over the week since I I got access to it. Let's get started. One of the coolest things I had to build is this thing called hands. It it is a computer use agent that sits on my computer and allows other agents to use my computer remotely. So that's the arrow for hands. That's hands going and using my computer. And you can see it has this little uh this little window on my computer that shows me what Hans is doing. And what this does is it lets me remotely use my computer from any agent I want. And this is like a hard thing to build. It's hard to make a Mac app that is a computer use agent that is accessible from the web that can do any task you ask it to do. And I tried to build hands in 5.6 six in regular Fable and it it was like good but like it didn't really work and this actually just works like it just uses my computer and I can I can have it use my computer from Slack and that is like [ __ ] wild. Look at that. It's look at that. Like that is [ __ ] wild. And look, it's going to start typing too. And you can see it's working in chatbt. You can see it's typing. It's typing. And [snorts] I have no idea how this works. This was built end to end by Fable 5.1 from a couple prompts that is a desktop agent built fully by this model. So this is just like a fullyfledged app. It has a screenshot of the current state. It says what it's doing. It has a log. Look, look. These are all the tasks I've been doing with with this thing. I mean, this would or ordinarily take months to be good and it just worked after like a day. I gave a prompt to Fable 5.1 and it just churned on Ultra Code with like 40 sub agents for like a day and then this came out and it just it just works. I I don't know I don't know how else to say it. It's a completely different experience of programming to be able to give a simple prompt to a model and have a completely usable complex application come out like a day later. That said, there are some things to be aware of. It's it's more token efficient than Opus 5, but it's, you know, if you give it a big task like this on Ultra Code, it's going to run for like a day and it's going to use I mean, this is like a 3 to 5 million token run. So, it can get it can get expensive and especially on ultra code, it's not really that conversational. It is conversational on lower lower effort settings, but if you put it on ultra code, it's basically just going to like go off and cook and come back later. So that's it's just like a different usage pattern than you might be used to. It's like better for especially for big projects like not as interactive coding work but [ __ ] sick and and the other technical people at every like Kieran Classen who's a GM of Kora and makes compound engineering love this model. Like I think for Kieran, he's been a Claude stand for a long time and even he didn't like Opus 5, didn't like Sonnet 5, and this model, he's like, \"This is my favorite again.\" So, it's like a big jump in both power and usability, which usually don't go hand in hand, and speed. It's just fast enough to use for day-to-day tasks. To give you a little bit of a sense for its level of efficiency and how and how fast it is, we ran it on our internal agent benchmark. This measures it on tasks that uh our internal agent does like work inside of a company and we compared it to Opus 5. So in terms of the number of tokens per run, on average this model consumed about 766 tokens for each run. So each request to the model was about 766 tokens. By comparison, Opus 5 was almost 2,000 tokens for the same tasks. Similarly, the the average latency for this model was about 22 seconds. So that's how long it took for a basic request to get a response. 22 seconds. Opus was about 37 seconds. It's a so it's about twice as fast as as Opus. And it uses about half the tokens. That's really crazy. And it's a very rare jump. There was this moment in like December 2025 where Opus45 and where Opus45 and GBT 53ish like crossed this barrier where suddenly it all these vibe coding use cases opened up and all these people discovered that you could code in this new way with these models. I think there's a similar thing happening with Fable 5.1 because it opens up these long horizon tasks in an easy to use form factor that's cheap enough for regular people to try. I think it has the chance to open up real delegation of coding and knowledgework tasks to to more average knowledge workers and that's a big deal. [music] So now let's get into knowledge work. So we have this we have this really cool eval viewer. So I can show you exactly what we ran it on, what the prompts were and what the outputs were. The first knowledgework test we always do with this model is we run it on data analysis. So we feed it a survey that we gave like a real survey that we gave to our customers a couple years ago and we ask it to analyze the survey. So the prompt was I want you to build a static HTML NPS dashboard. NPS's net promoter score and pick one pick out and pick out interesting insights after doing the analysis. So this is what we got out of the model. So it's a very clean design. It really it makes it really easy to see like the score distribution and all that kind of stuff which is I would say like pretty normal. You know it's not it's not obviously like AI right now. So it doesn't feel like slap. One thing that it that it did that I think is a little bit worse than for example GPT 5.6 is and we can actually go look at GBT 5.6 for comparison like GBT 5.6 this is GB 5.6's version it pulled out a story at the top a strong core a clear promise customer see every as a rare mix of thoughtful this is something that fable 5.1 didn't really do it was much more like straight ahead so I I you know so I really I actually really like GB 5.6 six on this task. But one thing that I I want to point out from 5.1 that's really interesting is it did an incredibly good job at pulling out real insights from both the quantitative and qualitative data and then presenting it to us. So like what people love the writing is the core of the love, the apps are the bonus keeps me current without overwhelming me is the strongest value proposition. Interesting as a warning word, useful great and smart predict promoter. So this is really cool, right? So it's it went and did the analysis to understand that when someone when one of our customers calls us interesting they actually don't really like us that much but if someone calls us useful great or smart they do love us and then it was able to package it not only find the insight but package it into a little sentence that could express it to me in a way that I didn't feel like was slop. This is something that Old Fable wouldn't do 5 absolutely would not do and generally models struggle with. So there's a there's a leap here in how it is able to pick out interesting things and then present them to you. Another thing that we always do is we have these models create a PowerPoint. So here's the PowerPoint it created. You know you'll notice some like small visual things like this every logo is not quite right. But in general we the prompt we give it is just take compounding engineering and turn it into a deck. It created this deck end to end. I mean, this is a very well put together deck on a couple different levels. For one, it does a very good job of pulling out specific ideas and making sure each slide has one idea on it. It does a really good job of, you know, these subtle visual design things like, you know, the yellow for the compound engineering and and and sort of the end of that paragraph. And it even does things like you you'll see it placed these arrows to show the compound engineering loop. It created it does these bubbles with these arrows. Most models can't get these arrows right there. There are these like subtle little things that it does really really well. So it is the kind of model where if you give it a, you know, a well-written dock and turn it and ask it to turn it into a deck, it'll do a really good first pass end to end without very much interference, which is something that most models can't do. So for example, this is what 5.6's deck looks like. And you can tell it's just it's like a little bit worse. It's a little bit more bare. You can see the arrows here. The arrows are not done right. So So the thing I want you to take away is developers for at least the last six months, depending on who you are, have been getting used to delegating big chunks of work to the model. That hasn't really been possible for knowledge workers. You can do it, but the details aren't really right. It looks a little bit like slop. This is a big step in the direction of actually I can have it make a deck for me end to end. Actually, I can have it do a bunch of data analysis and get something back. And I'm like, this is actually pretty good. And to be clear, the original Fable did some of this, but not at this speed and not at this cost. So, it makes it available to more and more people that previously would have looked at Fable and been like, \"This is not for me.\" For example, this is a meeting where I can be a tiebreaker. our head of marketing is talking about a new launch and who we're targeting for that launch and whether we might want to target other customers as well and it's flagging me as like Dan there's there's a there's a question about strategy here you might want to be involved in this you might want to know about this and this is like a superpower for me that Fable 5.1 can do is pick out interesting things that you're going to care about from what's happening in your company what's happening in the world and tell you about it in a way that kind of clicks for you this is new. Normally, it would show you stuff and you'd be like, \"Ah, like this doesn't really click for me. It's it's not actually interesting.\" This is the first model that I've ever found that can pull out something interesting and then present it to you in a way that makes it click. I think the thing that Fable can do, well, one, it just like built this app totally end to end. But the thing that it can do is if when Fable thinks something is interesting, it's more likely to actually be interesting. You know, there's this um there's this eval that's like loosely called the McDonald's eval where if you're talking to your model and you're like, \"Oh, that's exactly like McDonald's.\" And it's like, \"Oh, yeah, you're totally right.\" But you're talking about something completely random. That's a that's an example of the kind of thing that models struggle with is I would call it I mean to one to some degree it's like people pleasing to another it's basically discernment like when you make a connection is that connection actually interesting is it a real connection or is it just that you can connect anything to anything which these models can do because they know everything and I think Fable's level of discernment is much higher than previous models I've tried [music] and that takes me to the next which is writing and obviously like writing is that's it's that's what it's that's what I love and so Enthropic has really struggled with writing recently they used to be the top writing model but with Son of 5 and Opus 5 pretty much everyone was just like this model doesn't speak English correctly it doesn't give me good output anymore and everyone internally at every had switched to CHBT with Fable 5.1 it's not only better than Opus at writing it's actually starting to compete with CHBT it writes quickly it has pretty clear pros. It still has a lot of the clawed literariness, but if you look at the reading level that it writes at and the reading ease scores, it has the highest reading ease and the lowest grade level of Opus 5 and GBT 5.6 Soul. So, it is just producing stuff that's easier to read. So, as an example of the kind of oneshot writing this thing does, we asked it to create a blog post based on a simple prompt and a long transcript of Mike Taylor, who's our head of eval just talking about some of the work that he does. And we asked it to write some of the things that he's learned about getting teams to use AI. And this is the post that it created just from a very, very simple prompt. You can see the prompt is really small. Raise the ceiling, not the floor. Seven things I've learned about getting teams to actually use AI from my first few months running tech consulting at every sampar asked me a question on X last week that I've been asked in one form or another in almost every client meeting since I joined every how's everyone getting team adoption for claude. It's the right question. The gap between what the terminally online people in a company can do with AI and what everyone else does with it has never been wider. This is like pretty good pros. It doesn't feel like slop by the model. Buy the model direct, not third party tools. When a company decides to do AI, the first instinct is to evalu evaluate tools. Someone assembles a spreadsheet of vendors with Clutter Codeex or Gemini under the hood. It doesn't have any of the X not Ys. It has the raise the ceiling, not the floor, but still it's not it doesn't have that slop feeling. It's well structured. It's thoughtful. It's actually really impressive. Let's look back at Opus. Opus 5. Same prompt, same exercise, same everything. Nobody wants to use your AI tools. Opus 5 was such a dick. >> [laughter] >> Nobody wants to use your AI tools. Seven things I've learned about AI adoption since joining every consulting. Sam Par asked a question last week that I think is the real question in AI right now. So that that opener, it's a sort of similar opener. It's a it's a little bit of more of a minimal sentence construction, which isn't necessarily bad, but you can just sort of feel, let's see, the instinct is to go after lagards. We bought you the tools. Now everyone needs to use AI. This does not work. On pain of death, a good number of people are emotionally unwilling to use AI. Like what is this thing even talking about? It's Opus 5 is just so dark and they fixed it with Fable 5.1. It's really impressive. I find for me personally, I'm I'm a pretty I write every day and I'm still using 5.6 in the CHBT for work app for most of my day-to-day writing. I still find with Fable 5.1, it's still like a little bit literary and chunky, but different writers have different styles. So Katie Parrot, who's a staff writer, uses is now back. She she was using Chetchy Boutique all the time and now she's back to Claude for a lot of her writing because she's a big Claude fan for many years until the the last few models. So I find that for me I really like more minimal straight ahead pros and I can kind of collaborate with 5.6 a little bit easier to to create that. But I am now flipping back to 5.1 to Fable when the first prompt or two to chat to BT doesn't work. So I find it to be a valuable part of my arsenal where I wasn't using claude at all for writing anymore. And that's new and I certain I mean I certainly was never using Fable for writing because Fable is like this warp drive thing. So, one of the things this model knows how to do that other models don't really know is it knows how sentences connect together. Like I was working on this piece, I'm working on this history of codecs and I was working on a piece of it where I asked a question, why was codeex cloud different? And the details of this don't matter. Why was Codex cloud different? And then there was some text after that. There was I had I had a you know I had a falling paragraph and I just knew it wasn't really quite working and I threw it into this model and it was like here's what's dragging it down roughly in order of how much it matters. The biggest problem is that the paragraph goes flat right where it should pay off. You set up a real puzzle. Why was Codex cloud different and then answer it in the voice of a help center article the right software dependencies blah blah blah. Everywhere else in the piece you reach for an image here you explain dependency hell literally. So, it's actually zeroing in on the right part of the problem and then telling me how to fix it. And the takes that it does generally the sentence are connecting. They're it's leading from one sentence to the next. It doesn't write as many of those sentences where you're like, \"Oh, yeah, that's that sounds right.\" And then you think about it and you're like, \"That doesn't mean anything. I have no idea what it means.\" And that's new for a model of this level of power. So the takeaway here is if you really liked Claude models until Opus 5 or Sonify 5 for writing, you're going to really like this model. It's going to be back to the stuff that you love. And if you've been using GPT 5.6 or similar models for your writing, you should give this one a try. It's a good one-two punch to give you a little bit more variation and perspective in your writing. That'll help liven it up. So where does this leave us? I I want to show you like my actual usage. So I got this model on August 24th and you can see you know this is in in green this is codeex or chatbtd for work and in orange it's cloud code. You can see it my my level of use has not really changed. I'm mostly using codeex but then if I look at the number of tokens my my use of claude jumped dramatically. Why is that? That's interesting right? What Fable 5.1 has done for me is given me a model that I set off on a big chunky task and I just let it cook and I'm in chat for my more basic day-to-day stuff and then I flip back to Fable every once in a while. And so I'm getting like all this work done but I'm not really checking it because it it just does the work end to end. And this is that new style of coding and knowledge work that I'm talking about. You want both. You want both gears. But what what Fable 5.1 has really given me is this extra tool that works at the cost and speed of Opus 5, but gives you the delegation power of Fable that used to be pretty out of reach unless you're spend willing to spend a ton of money. So you can sort of see that in the graph, right? Like I'm still using a lot of CHBT tokens, but I'm using way more claw tokens and I'm in CHBT more. I'm I'm prompting Chetch more. It's more of an interactive model. I think that's really interesting. Um, okay. What did I actually use the tokens on? It's like it's hands. It's this personal feed experiments. It's these big things that I'm building end to end. And the rest of my work I'm mostly still doing in Chach. [music] So, final thoughts. If you like cloud models and you've been disappointed by the recent releases, you're going to love this. You need to check it out. And if you're a big GPT 5.6 six fan like I am, it's worth really adding to your arsenal, especially for your big projects and especially for trying to understand, okay, where is knowledge work going? How is knowledge work going to work when I'm delegating lots of things like making a slide deck end to end that used to be impossible, it's starting to be possible now. And so, if you want to get a glimpse of this new way of working in a way that isn't going to totally break your bank account, check out Fable 5.1. In addition to this video, we have a long form written vibe check with all of our benchmarks and all of our testing live now on every.TO. We also have a prompt library that you can download to help you get the most out of Fable 5.1. So, if you want to go deeper after this video, check it out. Every.TO."
+}

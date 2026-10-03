@@ -1,0 +1,1558 @@
+{
+  "meta": {
+    "video_id": "WW_0xPcFbzw",
+    "url": "https://www.youtube.com/watch?v=WW_0xPcFbzw",
+    "language": "English (auto-generated)",
+    "language_code": "en",
+    "is_auto_generated": true,
+    "availability": {
+      "status": "available"
+    },
+    "fetched_via": "TubeAlfred youtube_video_transcript"
+  },
+  "transcript": [
+    {
+      "text": "We're here. We're in San Francisco and",
+      "start_ms": "240",
+      "end_ms": "4880",
+      "start_time_text": "0:00"
+    },
+    {
+      "text": "we're going to talk about Dev Day. This",
+      "start_ms": "2800",
+      "end_ms": "8559.000000000002",
+      "start_time_text": "0:02"
+    },
+    {
+      "text": "is This is my fourth Dev Day. First year",
+      "start_ms": "4880",
+      "end_ms": "10800",
+      "start_time_text": "0:04"
+    },
+    {
+      "text": "they launched 11 11 products and",
+      "start_ms": "8559",
+      "end_ms": "14239.999999999998",
+      "start_time_text": "0:08"
+    },
+    {
+      "text": "features. Second year, five. Third year,",
+      "start_ms": "10800",
+      "end_ms": "17600",
+      "start_time_text": "0:10"
+    },
+    {
+      "text": "nine. This year, 22 new products and",
+      "start_ms": "14240",
+      "end_ms": "20080",
+      "start_time_text": "0:14"
+    },
+    {
+      "text": "features dropping today at Dev Day. If",
+      "start_ms": "17600",
+      "end_ms": "22400.000000000004",
+      "start_time_text": "0:17"
+    },
+    {
+      "text": "you're watching this, it means that the",
+      "start_ms": "20080",
+      "end_ms": "24320",
+      "start_time_text": "0:20"
+    },
+    {
+      "text": "keynote just started. We got access",
+      "start_ms": "22400",
+      "end_ms": "26080",
+      "start_time_text": "0:22"
+    },
+    {
+      "text": "early to everything they were dropping.",
+      "start_ms": "24320",
+      "end_ms": "27279",
+      "start_time_text": "0:24"
+    },
+    {
+      "text": "Here's our breakdown on what they",
+      "start_ms": "26080",
+      "end_ms": "28799.999999999996",
+      "start_time_text": "0:26"
+    },
+    {
+      "text": "launched, what matters, and what it",
+      "start_ms": "27279",
+      "end_ms": "30080",
+      "start_time_text": "0:27"
+    },
+    {
+      "text": "means for you.",
+      "start_ms": "28800",
+      "end_ms": "32160.000000000004",
+      "start_time_text": "0:28"
+    },
+    {
+      "text": "Number one is dots, an always on",
+      "start_ms": "30080",
+      "end_ms": "33839.99999999999",
+      "start_time_text": "0:30"
+    },
+    {
+      "text": "persistent agent that works sort of like",
+      "start_ms": "32159.999999999996",
+      "end_ms": "35919.99999999999",
+      "start_time_text": "0:32"
+    },
+    {
+      "text": "OpenClaw or Muse or Instinct or",
+      "start_ms": "33840",
+      "end_ms": "38079",
+      "start_time_text": "0:33"
+    },
+    {
+      "text": "Grockbots. This is a completion of a",
+      "start_ms": "35920",
+      "end_ms": "40160.00000000001",
+      "start_time_text": "0:35"
+    },
+    {
+      "text": "story arc that started like 9 months or",
+      "start_ms": "38079",
+      "end_ms": "42000",
+      "start_time_text": "0:38"
+    },
+    {
+      "text": "so ago when OpenClaw like totally blew",
+      "start_ms": "40160",
+      "end_ms": "44718.99999999999",
+      "start_time_text": "0:40"
+    },
+    {
+      "text": "up and OpenAI hired Pete Steinberger who",
+      "start_ms": "42000",
+      "end_ms": "47280",
+      "start_time_text": "0:42"
+    },
+    {
+      "text": "made OpenClaw to help them make these",
+      "start_ms": "44719",
+      "end_ms": "49120.00000000001",
+      "start_time_text": "0:44"
+    },
+    {
+      "text": "kinds of persistent agents. So this is",
+      "start_ms": "47280",
+      "end_ms": "51760.00000000001",
+      "start_time_text": "0:47"
+    },
+    {
+      "text": "OpenAI's entrance into that race. Dots",
+      "start_ms": "49120",
+      "end_ms": "54000",
+      "start_time_text": "0:49"
+    },
+    {
+      "text": "is an always on persistent agent. It",
+      "start_ms": "51760",
+      "end_ms": "56399",
+      "start_time_text": "0:51"
+    },
+    {
+      "text": "comes up as a little new tab at the top",
+      "start_ms": "54000",
+      "end_ms": "58879",
+      "start_time_text": "0:54"
+    },
+    {
+      "text": "of Chatbt. So instead of starting a new",
+      "start_ms": "56399",
+      "end_ms": "61920",
+      "start_time_text": "0:56"
+    },
+    {
+      "text": "chat in chatbd for work or codeex either",
+      "start_ms": "58879",
+      "end_ms": "63680",
+      "start_time_text": "0:58"
+    },
+    {
+      "text": "in the desktop app or in the mobile app,",
+      "start_ms": "61920",
+      "end_ms": "65600.00000000001",
+      "start_time_text": "1:01"
+    },
+    {
+      "text": "all you do is click your dot my dot's",
+      "start_ms": "63680",
+      "end_ms": "67520",
+      "start_time_text": "1:03"
+    },
+    {
+      "text": "name is buu and you have one long",
+      "start_ms": "65600",
+      "end_ms": "69039.99999999999",
+      "start_time_text": "1:05"
+    },
+    {
+      "text": "running chat that you can use to do",
+      "start_ms": "67520",
+      "end_ms": "71039.99999999999",
+      "start_time_text": "1:07"
+    },
+    {
+      "text": "anything you need to do in AI. Your",
+      "start_ms": "69040",
+      "end_ms": "73200",
+      "start_time_text": "1:09"
+    },
+    {
+      "text": "persistent agent has access to its own",
+      "start_ms": "71040",
+      "end_ms": "75119",
+      "start_time_text": "1:11"
+    },
+    {
+      "text": "computer. It has access to your computer",
+      "start_ms": "73200",
+      "end_ms": "77840",
+      "start_time_text": "1:13"
+    },
+    {
+      "text": "and it's proactive. So you'll notice",
+      "start_ms": "75119",
+      "end_ms": "79439",
+      "start_time_text": "1:15"
+    },
+    {
+      "text": "every once in a while through the day",
+      "start_ms": "77840",
+      "end_ms": "80880.00000000001",
+      "start_time_text": "1:17"
+    },
+    {
+      "text": "it'll just send you a message saying,",
+      "start_ms": "79439",
+      "end_ms": "82639.99999999999",
+      "start_time_text": "1:19"
+    },
+    {
+      "text": "\"Hey, I did this thing. Hey, like you",
+      "start_ms": "80880",
+      "end_ms": "84000",
+      "start_time_text": "1:20"
+    },
+    {
+      "text": "had a couple people reach out to",
+      "start_ms": "82640",
+      "end_ms": "85439",
+      "start_time_text": "1:22"
+    },
+    {
+      "text": "schedule something with you. I replied",
+      "start_ms": "84000",
+      "end_ms": "87600",
+      "start_time_text": "1:24"
+    },
+    {
+      "text": "to them.\" That kind of thing. when it",
+      "start_ms": "85439",
+      "end_ms": "90320",
+      "start_time_text": "1:25"
+    },
+    {
+      "text": "works, it's obviously the future. It's",
+      "start_ms": "87600",
+      "end_ms": "91679.99999999999",
+      "start_time_text": "1:27"
+    },
+    {
+      "text": "like really delightful. I've been able",
+      "start_ms": "90320",
+      "end_ms": "93360",
+      "start_time_text": "1:30"
+    },
+    {
+      "text": "to test it for the last week or so. And",
+      "start_ms": "91680",
+      "end_ms": "96079.00000000001",
+      "start_time_text": "1:31"
+    },
+    {
+      "text": "I find myself starting to reach for it",
+      "start_ms": "93360",
+      "end_ms": "98479",
+      "start_time_text": "1:33"
+    },
+    {
+      "text": "over starting a new chat in Codex or or",
+      "start_ms": "96079",
+      "end_ms": "100079",
+      "start_time_text": "1:36"
+    },
+    {
+      "text": "Chat GBT. It's one of those things where",
+      "start_ms": "98479",
+      "end_ms": "101600",
+      "start_time_text": "1:38"
+    },
+    {
+      "text": "you're like, I could have done this",
+      "start_ms": "100079",
+      "end_ms": "103679.99999999999",
+      "start_time_text": "1:40"
+    },
+    {
+      "text": "before if I manually set it all up with",
+      "start_ms": "101600",
+      "end_ms": "104960",
+      "start_time_text": "1:41"
+    },
+    {
+      "text": "heartbeats and stuff like that, but this",
+      "start_ms": "103680",
+      "end_ms": "108159",
+      "start_time_text": "1:43"
+    },
+    {
+      "text": "is just it just works sometimes. When it",
+      "start_ms": "104960",
+      "end_ms": "111520",
+      "start_time_text": "1:44"
+    },
+    {
+      "text": "works is good. Uh the only problem is,",
+      "start_ms": "108159",
+      "end_ms": "113119",
+      "start_time_text": "1:48"
+    },
+    {
+      "text": "at least in the versions that I've been",
+      "start_ms": "111520",
+      "end_ms": "116320",
+      "start_time_text": "1:51"
+    },
+    {
+      "text": "testing, it's not quite there yet. uh if",
+      "start_ms": "113119",
+      "end_ms": "117920",
+      "start_time_text": "1:53"
+    },
+    {
+      "text": "you compare it to like a Muse or a",
+      "start_ms": "116320",
+      "end_ms": "120559.99999999999",
+      "start_time_text": "1:56"
+    },
+    {
+      "text": "Grockbots, it's just a very early",
+      "start_ms": "117920",
+      "end_ms": "122079.00000000001",
+      "start_time_text": "1:57"
+    },
+    {
+      "text": "product that they're iterating on really",
+      "start_ms": "120560",
+      "end_ms": "123439",
+      "start_time_text": "2:00"
+    },
+    {
+      "text": "quickly. And I just found lots and lots",
+      "start_ms": "122079",
+      "end_ms": "125439",
+      "start_time_text": "2:02"
+    },
+    {
+      "text": "of bugs and and inconsistencies where it",
+      "start_ms": "123439",
+      "end_ms": "127360",
+      "start_time_text": "2:03"
+    },
+    {
+      "text": "felt kind of confusing for me to use and",
+      "start_ms": "125439",
+      "end_ms": "130079.99999999999",
+      "start_time_text": "2:05"
+    },
+    {
+      "text": "honestly for the dot itself to figure",
+      "start_ms": "127360",
+      "end_ms": "132959",
+      "start_time_text": "2:07"
+    },
+    {
+      "text": "out what to do. Um if you ask it to open",
+      "start_ms": "130080.00000000001",
+      "end_ms": "134560",
+      "start_time_text": "2:10"
+    },
+    {
+      "text": "up an inapp browser, it doesn't know",
+      "start_ms": "132959",
+      "end_ms": "136400",
+      "start_time_text": "2:12"
+    },
+    {
+      "text": "whether you mean the inapp browser in",
+      "start_ms": "134560",
+      "end_ms": "138560",
+      "start_time_text": "2:14"
+    },
+    {
+      "text": "its own thread or a separate codeex",
+      "start_ms": "136400",
+      "end_ms": "141760.00000000003",
+      "start_time_text": "2:16"
+    },
+    {
+      "text": "thread or in its on its cloud computer.",
+      "start_ms": "138560",
+      "end_ms": "143680",
+      "start_time_text": "2:18"
+    },
+    {
+      "text": "Um, I had lots of issues with like",
+      "start_ms": "141760",
+      "end_ms": "145440",
+      "start_time_text": "2:21"
+    },
+    {
+      "text": "logging in, having it log into external",
+      "start_ms": "143680",
+      "end_ms": "148000",
+      "start_time_text": "2:23"
+    },
+    {
+      "text": "sites and using its own wallet and all",
+      "start_ms": "145440",
+      "end_ms": "149520",
+      "start_time_text": "2:25"
+    },
+    {
+      "text": "of these things are getting cleaned up",
+      "start_ms": "148000",
+      "end_ms": "151920",
+      "start_time_text": "2:28"
+    },
+    {
+      "text": "and I am I imagine that they will be",
+      "start_ms": "149520",
+      "end_ms": "153840",
+      "start_time_text": "2:29"
+    },
+    {
+      "text": "different in a week or two but you can",
+      "start_ms": "151920",
+      "end_ms": "156160",
+      "start_time_text": "2:31"
+    },
+    {
+      "text": "just feel the speed that OpenAI is",
+      "start_ms": "153840",
+      "end_ms": "158239",
+      "start_time_text": "2:33"
+    },
+    {
+      "text": "operating at and I just didn't have the",
+      "start_ms": "156160",
+      "end_ms": "160480",
+      "start_time_text": "2:36"
+    },
+    {
+      "text": "best experience with this product. Okay,",
+      "start_ms": "158239",
+      "end_ms": "164480.00000000003",
+      "start_time_text": "2:38"
+    },
+    {
+      "text": "number two. Space space",
+      "start_ms": "160480",
+      "end_ms": "168000",
+      "start_time_text": "2:40"
+    },
+    {
+      "text": "is OpenAI's attempt to sort of build a",
+      "start_ms": "164480",
+      "end_ms": "170560",
+      "start_time_text": "2:44"
+    },
+    {
+      "text": "Microsoft Office suite inside of Chacht.",
+      "start_ms": "168000",
+      "end_ms": "171680",
+      "start_time_text": "2:48"
+    },
+    {
+      "text": "something that I've been wanting them to",
+      "start_ms": "170560",
+      "end_ms": "174080",
+      "start_time_text": "2:50"
+    },
+    {
+      "text": "do for a really long time and it's",
+      "start_ms": "171680",
+      "end_ms": "176239",
+      "start_time_text": "2:51"
+    },
+    {
+      "text": "finally here. It's a native",
+      "start_ms": "174080",
+      "end_ms": "179120",
+      "start_time_text": "2:54"
+    },
+    {
+      "text": "implementation of something like a file",
+      "start_ms": "176239",
+      "end_ms": "181519",
+      "start_time_text": "2:56"
+    },
+    {
+      "text": "system almost like Google Drive plus a",
+      "start_ms": "179120",
+      "end_ms": "184080",
+      "start_time_text": "2:59"
+    },
+    {
+      "text": "document editor, slides and sheets and",
+      "start_ms": "181519",
+      "end_ms": "186560",
+      "start_time_text": "3:01"
+    },
+    {
+      "text": "you can do it all from within your CHBT",
+      "start_ms": "184080",
+      "end_ms": "189200.00000000003",
+      "start_time_text": "3:04"
+    },
+    {
+      "text": "or codeex task or if you're using your",
+      "start_ms": "186560",
+      "end_ms": "191040",
+      "start_time_text": "3:06"
+    },
+    {
+      "text": "dot. What's really cool about it is it's",
+      "start_ms": "189200",
+      "end_ms": "192640",
+      "start_time_text": "3:09"
+    },
+    {
+      "text": "it's all in one place. So I can make a",
+      "start_ms": "191040",
+      "end_ms": "194159",
+      "start_time_text": "3:11"
+    },
+    {
+      "text": "comment in a document and then I can tag",
+      "start_ms": "192640",
+      "end_ms": "195599",
+      "start_time_text": "3:12"
+    },
+    {
+      "text": "my dot and it can go in and do work with",
+      "start_ms": "194159",
+      "end_ms": "197120",
+      "start_time_text": "3:14"
+    },
+    {
+      "text": "me and it's just sort of this like",
+      "start_ms": "195599",
+      "end_ms": "200879",
+      "start_time_text": "3:15"
+    },
+    {
+      "text": "parallel collaborative space space for",
+      "start_ms": "197120",
+      "end_ms": "204560",
+      "start_time_text": "3:17"
+    },
+    {
+      "text": "humans and now agents and you can see",
+      "start_ms": "200879",
+      "end_ms": "207280",
+      "start_time_text": "3:20"
+    },
+    {
+      "text": "how if I'm using this with my dot and",
+      "start_ms": "204560",
+      "end_ms": "208959",
+      "start_time_text": "3:24"
+    },
+    {
+      "text": "other people in my company how I'm going",
+      "start_ms": "207280",
+      "end_ms": "211599",
+      "start_time_text": "3:27"
+    },
+    {
+      "text": "to just like I can kind of never have to",
+      "start_ms": "208959",
+      "end_ms": "214720",
+      "start_time_text": "3:28"
+    },
+    {
+      "text": "leave ChachiBT which I kind of love. I",
+      "start_ms": "211599",
+      "end_ms": "217518.99999999997",
+      "start_time_text": "3:31"
+    },
+    {
+      "text": "think the space implementation is pretty",
+      "start_ms": "214720",
+      "end_ms": "220000",
+      "start_time_text": "3:34"
+    },
+    {
+      "text": "good. So, I'll be curious to see today",
+      "start_ms": "217519",
+      "end_ms": "221760",
+      "start_time_text": "3:37"
+    },
+    {
+      "text": "and over the next couple weeks if",
+      "start_ms": "220000",
+      "end_ms": "223599",
+      "start_time_text": "3:40"
+    },
+    {
+      "text": "they're fully featured enough for me to",
+      "start_ms": "221760",
+      "end_ms": "225599",
+      "start_time_text": "3:41"
+    },
+    {
+      "text": "switch to using them fully. You know, do",
+      "start_ms": "223599",
+      "end_ms": "228238.99999999997",
+      "start_time_text": "3:43"
+    },
+    {
+      "text": "I find myself reaching for them over",
+      "start_ms": "225599",
+      "end_ms": "230399.99999999997",
+      "start_time_text": "3:45"
+    },
+    {
+      "text": "Google Slides or Sheets or Keynote or",
+      "start_ms": "228239",
+      "end_ms": "232560",
+      "start_time_text": "3:48"
+    },
+    {
+      "text": "Notion? It's a tall order, but I think",
+      "start_ms": "230400",
+      "end_ms": "235280",
+      "start_time_text": "3:50"
+    },
+    {
+      "text": "for space and for docs, just being",
+      "start_ms": "232560",
+      "end_ms": "237200",
+      "start_time_text": "3:52"
+    },
+    {
+      "text": "integrated inside of Chetchup BT is a",
+      "start_ms": "235280",
+      "end_ms": "240000",
+      "start_time_text": "3:55"
+    },
+    {
+      "text": "huge benefit. Okay, number three. What",
+      "start_ms": "237200",
+      "end_ms": "241599",
+      "start_time_text": "3:57"
+    },
+    {
+      "text": "is number three? Ooh, this is a good",
+      "start_ms": "240000",
+      "end_ms": "243280",
+      "start_time_text": "4:00"
+    },
+    {
+      "text": "one. They're creating something called",
+      "start_ms": "241599",
+      "end_ms": "245679.99999999997",
+      "start_time_text": "4:01"
+    },
+    {
+      "text": "plug-in extensions. Plug-in extensions",
+      "start_ms": "243280",
+      "end_ms": "248000",
+      "start_time_text": "4:03"
+    },
+    {
+      "text": "are essentially like codeex native apps.",
+      "start_ms": "245680",
+      "end_ms": "249519",
+      "start_time_text": "4:05"
+    },
+    {
+      "text": "So in the same way that they're",
+      "start_ms": "248000",
+      "end_ms": "251920",
+      "start_time_text": "4:08"
+    },
+    {
+      "text": "launching their own native versions of",
+      "start_ms": "249519",
+      "end_ms": "254159",
+      "start_time_text": "4:09"
+    },
+    {
+      "text": "docs, slides, and sheets. Plug-in",
+      "start_ms": "251920",
+      "end_ms": "256959",
+      "start_time_text": "4:11"
+    },
+    {
+      "text": "extensions allows you to create apps for",
+      "start_ms": "254159",
+      "end_ms": "258399.99999999997",
+      "start_time_text": "4:14"
+    },
+    {
+      "text": "yourself that you distribute to your",
+      "start_ms": "256959",
+      "end_ms": "261280.00000000003",
+      "start_time_text": "4:16"
+    },
+    {
+      "text": "company or your users. These are apps",
+      "start_ms": "258399.99999999997",
+      "end_ms": "263359.99999999994",
+      "start_time_text": "4:18"
+    },
+    {
+      "text": "that are designed to be used inside of",
+      "start_ms": "261279.99999999997",
+      "end_ms": "266000",
+      "start_time_text": "4:21"
+    },
+    {
+      "text": "chatbt in parallel with dots or just",
+      "start_ms": "263360",
+      "end_ms": "268479.00000000006",
+      "start_time_text": "4:23"
+    },
+    {
+      "text": "regular chatbt or codeex threads. This",
+      "start_ms": "266000",
+      "end_ms": "270240",
+      "start_time_text": "4:26"
+    },
+    {
+      "text": "is something that I've been asking for",
+      "start_ms": "268479",
+      "end_ms": "273039.99999999994",
+      "start_time_text": "4:28"
+    },
+    {
+      "text": "for a long time and it's finally here.",
+      "start_ms": "270240",
+      "end_ms": "275520",
+      "start_time_text": "4:30"
+    },
+    {
+      "text": "And what they also added into the mix",
+      "start_ms": "273040",
+      "end_ms": "279199",
+      "start_time_text": "4:33"
+    },
+    {
+      "text": "here is the ability to allow your plugin",
+      "start_ms": "275520",
+      "end_ms": "282000",
+      "start_time_text": "4:35"
+    },
+    {
+      "text": "to be discovered automatically by",
+      "start_ms": "279199",
+      "end_ms": "284320",
+      "start_time_text": "4:39"
+    },
+    {
+      "text": "chatbt. So they have an they have a",
+      "start_ms": "282000",
+      "end_ms": "286960",
+      "start_time_text": "4:42"
+    },
+    {
+      "text": "plug-in store and they created a way",
+      "start_ms": "284320",
+      "end_ms": "289120",
+      "start_time_text": "4:44"
+    },
+    {
+      "text": "where when users are asking chatbt to do",
+      "start_ms": "286960",
+      "end_ms": "291120",
+      "start_time_text": "4:46"
+    },
+    {
+      "text": "something, it'll search and potentially",
+      "start_ms": "289120",
+      "end_ms": "293520",
+      "start_time_text": "4:49"
+    },
+    {
+      "text": "surface your plugin, your app to be used",
+      "start_ms": "291120",
+      "end_ms": "295759",
+      "start_time_text": "4:51"
+    },
+    {
+      "text": "by the user as a new distribution",
+      "start_ms": "293520",
+      "end_ms": "297919",
+      "start_time_text": "4:53"
+    },
+    {
+      "text": "mechanism for developers and startups.",
+      "start_ms": "295759",
+      "end_ms": "300639",
+      "start_time_text": "4:55"
+    },
+    {
+      "text": "It remains to be seen how how good this",
+      "start_ms": "297919",
+      "end_ms": "302880",
+      "start_time_text": "4:57"
+    },
+    {
+      "text": "is. They've had three or four cracks at",
+      "start_ms": "300639",
+      "end_ms": "305520",
+      "start_time_text": "5:00"
+    },
+    {
+      "text": "building an app store, but from what",
+      "start_ms": "302880",
+      "end_ms": "307120",
+      "start_time_text": "5:02"
+    },
+    {
+      "text": "I've seen, from the demos I've seen,",
+      "start_ms": "305520",
+      "end_ms": "309359.99999999994",
+      "start_time_text": "5:05"
+    },
+    {
+      "text": "this is the most promising one yet.",
+      "start_ms": "307120",
+      "end_ms": "312400",
+      "start_time_text": "5:07"
+    },
+    {
+      "text": "Number four, this is a good one. They",
+      "start_ms": "309360",
+      "end_ms": "315440",
+      "start_time_text": "5:09"
+    },
+    {
+      "text": "have extended sign in with CHBT. So, you",
+      "start_ms": "312400",
+      "end_ms": "317919",
+      "start_time_text": "5:12"
+    },
+    {
+      "text": "can take your CHBT subscription and",
+      "start_ms": "315440",
+      "end_ms": "320080",
+      "start_time_text": "5:15"
+    },
+    {
+      "text": "spend your tokens on third party apps.",
+      "start_ms": "317919",
+      "end_ms": "322080",
+      "start_time_text": "5:17"
+    },
+    {
+      "text": "They've got like 15 apps that are uh",
+      "start_ms": "320080",
+      "end_ms": "324159.99999999994",
+      "start_time_text": "5:20"
+    },
+    {
+      "text": "participating in this right now. So apps",
+      "start_ms": "322080",
+      "end_ms": "327120",
+      "start_time_text": "5:22"
+    },
+    {
+      "text": "like Devon where you're paying for a CHP",
+      "start_ms": "324160",
+      "end_ms": "329440",
+      "start_time_text": "5:24"
+    },
+    {
+      "text": "subscription when you go to use Devon",
+      "start_ms": "327120",
+      "end_ms": "331520",
+      "start_time_text": "5:27"
+    },
+    {
+      "text": "instead of using your usage on Devon you",
+      "start_ms": "329440",
+      "end_ms": "333280",
+      "start_time_text": "5:29"
+    },
+    {
+      "text": "can bring your CHP subscription with you",
+      "start_ms": "331520",
+      "end_ms": "335680",
+      "start_time_text": "5:31"
+    },
+    {
+      "text": "and draw down usage there. I think this",
+      "start_ms": "333280",
+      "end_ms": "337280",
+      "start_time_text": "5:33"
+    },
+    {
+      "text": "is incredible. It's really good for open",
+      "start_ms": "335680",
+      "end_ms": "339440",
+      "start_time_text": "5:35"
+    },
+    {
+      "text": "AI it's really good for app makers",
+      "start_ms": "337280",
+      "end_ms": "341919",
+      "start_time_text": "5:37"
+    },
+    {
+      "text": "people like us at every like when a user",
+      "start_ms": "339440",
+      "end_ms": "344000",
+      "start_time_text": "5:39"
+    },
+    {
+      "text": "comes to our app we always have to be",
+      "start_ms": "341919",
+      "end_ms": "345840",
+      "start_time_text": "5:41"
+    },
+    {
+      "text": "careful about okay how much AI are they",
+      "start_ms": "344000",
+      "end_ms": "347280",
+      "start_time_text": "5:44"
+    },
+    {
+      "text": "using all that kind of stuff and it it",
+      "start_ms": "345840",
+      "end_ms": "349440",
+      "start_time_text": "5:45"
+    },
+    {
+      "text": "incentivizes app makers to use cheaper",
+      "start_ms": "347280",
+      "end_ms": "350960",
+      "start_time_text": "5:47"
+    },
+    {
+      "text": "and cheaper models like all that kind of",
+      "start_ms": "349440",
+      "end_ms": "352560",
+      "start_time_text": "5:49"
+    },
+    {
+      "text": "stuff. Now, if you're bringing your",
+      "start_ms": "350960",
+      "end_ms": "353919",
+      "start_time_text": "5:50"
+    },
+    {
+      "text": "tokens, we don't have to worry about",
+      "start_ms": "352560",
+      "end_ms": "355520",
+      "start_time_text": "5:52"
+    },
+    {
+      "text": "that. You can use the best model for",
+      "start_ms": "353919",
+      "end_ms": "357758.99999999994",
+      "start_time_text": "5:53"
+    },
+    {
+      "text": "you. And that means I think it's a",
+      "start_ms": "355520",
+      "end_ms": "359758.99999999994",
+      "start_time_text": "5:55"
+    },
+    {
+      "text": "really good deal for users. It means",
+      "start_ms": "357759",
+      "end_ms": "361840.00000000006",
+      "start_time_text": "5:57"
+    },
+    {
+      "text": "that your it means that your AI",
+      "start_ms": "359759",
+      "end_ms": "364240",
+      "start_time_text": "5:59"
+    },
+    {
+      "text": "subscription is going to be a lot like a",
+      "start_ms": "361840",
+      "end_ms": "366400",
+      "start_time_text": "6:01"
+    },
+    {
+      "text": "cell phone data plan. Uh, and you can",
+      "start_ms": "364240",
+      "end_ms": "368080",
+      "start_time_text": "6:04"
+    },
+    {
+      "text": "use your tokens wherever you want. This",
+      "start_ms": "366400",
+      "end_ms": "370159.99999999994",
+      "start_time_text": "6:06"
+    },
+    {
+      "text": "is the first this is the first shot of",
+      "start_ms": "368080",
+      "end_ms": "373440",
+      "start_time_text": "6:08"
+    },
+    {
+      "text": "this, but I'm very excited for it. Okay,",
+      "start_ms": "370160",
+      "end_ms": "376000",
+      "start_time_text": "6:10"
+    },
+    {
+      "text": "number five, we've got the decisions",
+      "start_ms": "373440",
+      "end_ms": "377840",
+      "start_time_text": "6:13"
+    },
+    {
+      "text": "API. Uh if you've been following",
+      "start_ms": "376000",
+      "end_ms": "379600",
+      "start_time_text": "6:16"
+    },
+    {
+      "text": "anything in AI, you know that this new",
+      "start_ms": "377840",
+      "end_ms": "381359.99999999994",
+      "start_time_text": "6:17"
+    },
+    {
+      "text": "model dropped a couple weeks ago called",
+      "start_ms": "379600",
+      "end_ms": "384880",
+      "start_time_text": "6:19"
+    },
+    {
+      "text": "Jev, which gives you very very very fast",
+      "start_ms": "381360",
+      "end_ms": "387440",
+      "start_time_text": "6:21"
+    },
+    {
+      "text": "uh structured output responses for",
+      "start_ms": "384880",
+      "end_ms": "389600",
+      "start_time_text": "6:24"
+    },
+    {
+      "text": "questions that can be used as like LLM",
+      "start_ms": "387440",
+      "end_ms": "391039",
+      "start_time_text": "6:27"
+    },
+    {
+      "text": "as a judge or classifier. It's not",
+      "start_ms": "389600",
+      "end_ms": "392319",
+      "start_time_text": "6:29"
+    },
+    {
+      "text": "really an LLM. It's like a sort of",
+      "start_ms": "391039",
+      "end_ms": "394400",
+      "start_time_text": "6:31"
+    },
+    {
+      "text": "slightly different model. And it's so",
+      "start_ms": "392319",
+      "end_ms": "396319",
+      "start_time_text": "6:32"
+    },
+    {
+      "text": "much cheaper. It like gives you fable",
+      "start_ms": "394400",
+      "end_ms": "397840",
+      "start_time_text": "6:34"
+    },
+    {
+      "text": "level performance on a lot of problems,",
+      "start_ms": "396319",
+      "end_ms": "399759",
+      "start_time_text": "6:36"
+    },
+    {
+      "text": "but I don't know, it's like a couple",
+      "start_ms": "397840",
+      "end_ms": "402000",
+      "start_time_text": "6:37"
+    },
+    {
+      "text": "hundred times cheaper. And OpenAI today",
+      "start_ms": "399759",
+      "end_ms": "404479.00000000006",
+      "start_time_text": "6:39"
+    },
+    {
+      "text": "is releasing that. It's based on a",
+      "start_ms": "402000",
+      "end_ms": "409520",
+      "start_time_text": "6:42"
+    },
+    {
+      "text": "fine-tuned version of GPT6 Luna and it's",
+      "start_ms": "404479",
+      "end_ms": "411440",
+      "start_time_text": "6:44"
+    },
+    {
+      "text": "really freaking fast. Uh you can get",
+      "start_ms": "409520",
+      "end_ms": "413280",
+      "start_time_text": "6:49"
+    },
+    {
+      "text": "responses in like 150 milliseconds in",
+      "start_ms": "411440",
+      "end_ms": "415280",
+      "start_time_text": "6:51"
+    },
+    {
+      "text": "our testing internally at every we did",
+      "start_ms": "413280",
+      "end_ms": "418000",
+      "start_time_text": "6:53"
+    },
+    {
+      "text": "find that it was faster than Jev on some",
+      "start_ms": "415280",
+      "end_ms": "420719.99999999994",
+      "start_time_text": "6:55"
+    },
+    {
+      "text": "workloads and crucially it's multimodal",
+      "start_ms": "418000",
+      "end_ms": "422240",
+      "start_time_text": "6:58"
+    },
+    {
+      "text": "so you can feed it images. So if you're",
+      "start_ms": "420720",
+      "end_ms": "424160",
+      "start_time_text": "7:00"
+    },
+    {
+      "text": "a developer you care about this you",
+      "start_ms": "422240",
+      "end_ms": "424960.00000000006",
+      "start_time_text": "7:02"
+    },
+    {
+      "text": "should definitely check out the",
+      "start_ms": "424160",
+      "end_ms": "428400.00000000006",
+      "start_time_text": "7:04"
+    },
+    {
+      "text": "decisions API. Six there's like there's",
+      "start_ms": "424960",
+      "end_ms": "430239.99999999994",
+      "start_time_text": "7:04"
+    },
+    {
+      "text": "a ton of other things that they",
+      "start_ms": "428400",
+      "end_ms": "432479",
+      "start_time_text": "7:08"
+    },
+    {
+      "text": "launched. Okay they're launching a $500",
+      "start_ms": "430240",
+      "end_ms": "435199",
+      "start_time_text": "7:10"
+    },
+    {
+      "text": "plan. It's got a ton more usage than the",
+      "start_ms": "432479",
+      "end_ms": "437599",
+      "start_time_text": "7:12"
+    },
+    {
+      "text": "regular $200 pro plan and it gives you",
+      "start_ms": "435199",
+      "end_ms": "440160",
+      "start_time_text": "7:15"
+    },
+    {
+      "text": "access to Astra Ultraast, which is their",
+      "start_ms": "437599",
+      "end_ms": "441759",
+      "start_time_text": "7:17"
+    },
+    {
+      "text": "new Astra speed tier that's also",
+      "start_ms": "440160",
+      "end_ms": "444080.00000000006",
+      "start_time_text": "7:20"
+    },
+    {
+      "text": "dropping today. It does 250 tokens per",
+      "start_ms": "441759",
+      "end_ms": "445680",
+      "start_time_text": "7:21"
+    },
+    {
+      "text": "second. It's really, really freaking",
+      "start_ms": "444080",
+      "end_ms": "449198.99999999994",
+      "start_time_text": "7:24"
+    },
+    {
+      "text": "fast. It's crazy, but it will uh bleed",
+      "start_ms": "445680",
+      "end_ms": "451360",
+      "start_time_text": "7:25"
+    },
+    {
+      "text": "your token balance dry really fast. So,",
+      "start_ms": "449199",
+      "end_ms": "452800",
+      "start_time_text": "7:29"
+    },
+    {
+      "text": "be careful with that. We've also got",
+      "start_ms": "451360",
+      "end_ms": "455039",
+      "start_time_text": "7:31"
+    },
+    {
+      "text": "Soul 6.1. So, they're launching a new",
+      "start_ms": "452800",
+      "end_ms": "456720",
+      "start_time_text": "7:32"
+    },
+    {
+      "text": "version of Soul. It's got Astro level",
+      "start_ms": "455039",
+      "end_ms": "458400",
+      "start_time_text": "7:35"
+    },
+    {
+      "text": "performance, but it's 50% of the price.",
+      "start_ms": "456720",
+      "end_ms": "459680",
+      "start_time_text": "7:36"
+    },
+    {
+      "text": "If you like Astra, but you've been",
+      "start_ms": "458400",
+      "end_ms": "461039",
+      "start_time_text": "7:38"
+    },
+    {
+      "text": "priced out of it, you should definitely",
+      "start_ms": "459680",
+      "end_ms": "463680",
+      "start_time_text": "7:39"
+    },
+    {
+      "text": "check out Soul 6.1. They're also",
+      "start_ms": "461039",
+      "end_ms": "466318.99999999994",
+      "start_time_text": "7:41"
+    },
+    {
+      "text": "releasing an update to their agents API",
+      "start_ms": "463680",
+      "end_ms": "467520",
+      "start_time_text": "7:43"
+    },
+    {
+      "text": "that allows you to build on the same",
+      "start_ms": "466319",
+      "end_ms": "470160",
+      "start_time_text": "7:46"
+    },
+    {
+      "text": "harness as Codex in your own apps and it",
+      "start_ms": "467520",
+      "end_ms": "472639",
+      "start_time_text": "7:47"
+    },
+    {
+      "text": "now includes computer use. And last but",
+      "start_ms": "470160",
+      "end_ms": "474160",
+      "start_time_text": "7:50"
+    },
+    {
+      "text": "not least is they're releasing an all",
+      "start_ms": "472639",
+      "end_ms": "476160",
+      "start_time_text": "7:52"
+    },
+    {
+      "text": "new codec. It's got a voice chat. It's",
+      "start_ms": "474160",
+      "end_ms": "478000",
+      "start_time_text": "7:54"
+    },
+    {
+      "text": "got new and better interfaces for",
+      "start_ms": "476160",
+      "end_ms": "479919.00000000006",
+      "start_time_text": "7:56"
+    },
+    {
+      "text": "tracking agents and a bunch of other",
+      "start_ms": "478000",
+      "end_ms": "482400",
+      "start_time_text": "7:58"
+    },
+    {
+      "text": "things. You should check it out. Okay,",
+      "start_ms": "479919",
+      "end_ms": "484240",
+      "start_time_text": "7:59"
+    },
+    {
+      "text": "that is everything that they launched at",
+      "start_ms": "482400",
+      "end_ms": "487359.99999999994",
+      "start_time_text": "8:02"
+    },
+    {
+      "text": "Devday. You can see it's a mix of things",
+      "start_ms": "484240",
+      "end_ms": "490080",
+      "start_time_text": "8:04"
+    },
+    {
+      "text": "for knowledge workers and consumers and",
+      "start_ms": "487360",
+      "end_ms": "491360",
+      "start_time_text": "8:07"
+    },
+    {
+      "text": "then also a bunch of stuff for",
+      "start_ms": "490080",
+      "end_ms": "494080",
+      "start_time_text": "8:10"
+    },
+    {
+      "text": "developers. They're both building an",
+      "start_ms": "491360",
+      "end_ms": "495759",
+      "start_time_text": "8:11"
+    },
+    {
+      "text": "operating system for doing all of your",
+      "start_ms": "494080",
+      "end_ms": "498080",
+      "start_time_text": "8:14"
+    },
+    {
+      "text": "work inside of Chachebt and they're",
+      "start_ms": "495759",
+      "end_ms": "500240",
+      "start_time_text": "8:15"
+    },
+    {
+      "text": "building a platform and an ecosystem for",
+      "start_ms": "498080",
+      "end_ms": "502000",
+      "start_time_text": "8:18"
+    },
+    {
+      "text": "developers to build applications inside",
+      "start_ms": "500240",
+      "end_ms": "504160",
+      "start_time_text": "8:20"
+    },
+    {
+      "text": "of Chachebt and to bring the CHBT",
+      "start_ms": "502000",
+      "end_ms": "506240",
+      "start_time_text": "8:22"
+    },
+    {
+      "text": "subscription to other places around the",
+      "start_ms": "504160",
+      "end_ms": "508720",
+      "start_time_text": "8:24"
+    },
+    {
+      "text": "internet. Every 6 to 12 months you see",
+      "start_ms": "506240",
+      "end_ms": "510560",
+      "start_time_text": "8:26"
+    },
+    {
+      "text": "model progress creates a shift in form",
+      "start_ms": "508720",
+      "end_ms": "512880",
+      "start_time_text": "8:28"
+    },
+    {
+      "text": "factor. So in the GBT3 era, it was Chat",
+      "start_ms": "510560",
+      "end_ms": "516479.00000000006",
+      "start_time_text": "8:30"
+    },
+    {
+      "text": "GBT on the web. Uh around Sonnet 3.5, it",
+      "start_ms": "512880",
+      "end_ms": "518559.99999999994",
+      "start_time_text": "8:32"
+    },
+    {
+      "text": "shifted into terminals and coding agents",
+      "start_ms": "516479.00000000006",
+      "end_ms": "520640",
+      "start_time_text": "8:36"
+    },
+    {
+      "text": "in the terminal. Around February, GBT",
+      "start_ms": "518559.99999999994",
+      "end_ms": "522718.99999999994",
+      "start_time_text": "8:38"
+    },
+    {
+      "text": "5.3, it started shifting into desktop",
+      "start_ms": "520640",
+      "end_ms": "524880",
+      "start_time_text": "8:40"
+    },
+    {
+      "text": "apps. And now we're entering this",
+      "start_ms": "522719.00000000006",
+      "end_ms": "527360",
+      "start_time_text": "8:42"
+    },
+    {
+      "text": "persistent agent era. And so this is",
+      "start_ms": "524880",
+      "end_ms": "530160",
+      "start_time_text": "8:44"
+    },
+    {
+      "text": "OpenAI's first foray into persistent",
+      "start_ms": "527360",
+      "end_ms": "532800.0000000001",
+      "start_time_text": "8:47"
+    },
+    {
+      "text": "agents. Like I said, promising form",
+      "start_ms": "530160",
+      "end_ms": "534880",
+      "start_time_text": "8:50"
+    },
+    {
+      "text": "factor. I think they have a lot of",
+      "start_ms": "532800",
+      "end_ms": "537599.9999999999",
+      "start_time_text": "8:52"
+    },
+    {
+      "text": "reasons to win because it's integrated",
+      "start_ms": "534880",
+      "end_ms": "540640",
+      "start_time_text": "8:54"
+    },
+    {
+      "text": "right into Chacht. But honestly, in my",
+      "start_ms": "537600",
+      "end_ms": "543279",
+      "start_time_text": "8:57"
+    },
+    {
+      "text": "testing, it's just not quite there yet.",
+      "start_ms": "540640",
+      "end_ms": "544720",
+      "start_time_text": "9:00"
+    },
+    {
+      "text": "It's just like all the little things are",
+      "start_ms": "543279",
+      "end_ms": "546560",
+      "start_time_text": "9:03"
+    },
+    {
+      "text": "not quite working to make it a great",
+      "start_ms": "544720",
+      "end_ms": "549760",
+      "start_time_text": "9:04"
+    },
+    {
+      "text": "experience. My bet is that will improve.",
+      "start_ms": "546560",
+      "end_ms": "552560",
+      "start_time_text": "9:06"
+    },
+    {
+      "text": "So, my recommendation is wait a week or",
+      "start_ms": "549760",
+      "end_ms": "555360",
+      "start_time_text": "9:09"
+    },
+    {
+      "text": "two and then try it out. I will be at",
+      "start_ms": "552560",
+      "end_ms": "557040",
+      "start_time_text": "9:12"
+    },
+    {
+      "text": "Dev Day all day today. I will be",
+      "start_ms": "555360",
+      "end_ms": "559360",
+      "start_time_text": "9:15"
+    },
+    {
+      "text": "interviewing Sam Alman on this channel.",
+      "start_ms": "557040",
+      "end_ms": "561439.9999999999",
+      "start_time_text": "9:17"
+    },
+    {
+      "text": "So, tune in tomorrow for my interview",
+      "start_ms": "559360",
+      "end_ms": "563440",
+      "start_time_text": "9:19"
+    },
+    {
+      "text": "with him and we'll also have a dev day",
+      "start_ms": "561440",
+      "end_ms": "565120",
+      "start_time_text": "9:21"
+    },
+    {
+      "text": "vlog coming out. So, stay tuned for",
+      "start_ms": "563440",
+      "end_ms": "570880.0000000001",
+      "start_time_text": "9:23"
+    },
+    {
+      "text": "that. and we'll see you in space.",
+      "start_ms": "565120",
+      "end_ms": "574496",
+      "start_time_text": "9:25"
+    },
+    {
+      "text": "I don't know. [laughter]",
+      "start_ms": "570880",
+      "end_ms": "574496",
+      "start_time_text": "9:30"
+    }
+  ],
+  "transcript_only_text": "We're here. We're in San Francisco and we're going to talk about Dev Day. This is This is my fourth Dev Day. First year they launched 11 11 products and features. Second year, five. Third year, nine. This year, 22 new products and features dropping today at Dev Day. If you're watching this, it means that the keynote just started. We got access early to everything they were dropping. Here's our breakdown on what they launched, what matters, and what it means for you. Number one is dots, an always on persistent agent that works sort of like OpenClaw or Muse or Instinct or Grockbots. This is a completion of a story arc that started like 9 months or so ago when OpenClaw like totally blew up and OpenAI hired Pete Steinberger who made OpenClaw to help them make these kinds of persistent agents. So this is OpenAI's entrance into that race. Dots is an always on persistent agent. It comes up as a little new tab at the top of Chatbt. So instead of starting a new chat in chatbd for work or codeex either in the desktop app or in the mobile app, all you do is click your dot my dot's name is buu and you have one long running chat that you can use to do anything you need to do in AI. Your persistent agent has access to its own computer. It has access to your computer and it's proactive. So you'll notice every once in a while through the day it'll just send you a message saying, \"Hey, I did this thing. Hey, like you had a couple people reach out to schedule something with you. I replied to them.\" That kind of thing. when it works, it's obviously the future. It's like really delightful. I've been able to test it for the last week or so. And I find myself starting to reach for it over starting a new chat in Codex or or Chat GBT. It's one of those things where you're like, I could have done this before if I manually set it all up with heartbeats and stuff like that, but this is just it just works sometimes. When it works is good. Uh the only problem is, at least in the versions that I've been testing, it's not quite there yet. uh if you compare it to like a Muse or a Grockbots, it's just a very early product that they're iterating on really quickly. And I just found lots and lots of bugs and and inconsistencies where it felt kind of confusing for me to use and honestly for the dot itself to figure out what to do. Um if you ask it to open up an inapp browser, it doesn't know whether you mean the inapp browser in its own thread or a separate codeex thread or in its on its cloud computer. Um, I had lots of issues with like logging in, having it log into external sites and using its own wallet and all of these things are getting cleaned up and I am I imagine that they will be different in a week or two but you can just feel the speed that OpenAI is operating at and I just didn't have the best experience with this product. Okay, number two. Space space is OpenAI's attempt to sort of build a Microsoft Office suite inside of Chacht. something that I've been wanting them to do for a really long time and it's finally here. It's a native implementation of something like a file system almost like Google Drive plus a document editor, slides and sheets and you can do it all from within your CHBT or codeex task or if you're using your dot. What's really cool about it is it's it's all in one place. So I can make a comment in a document and then I can tag my dot and it can go in and do work with me and it's just sort of this like parallel collaborative space space for humans and now agents and you can see how if I'm using this with my dot and other people in my company how I'm going to just like I can kind of never have to leave ChachiBT which I kind of love. I think the space implementation is pretty good. So, I'll be curious to see today and over the next couple weeks if they're fully featured enough for me to switch to using them fully. You know, do I find myself reaching for them over Google Slides or Sheets or Keynote or Notion? It's a tall order, but I think for space and for docs, just being integrated inside of Chetchup BT is a huge benefit. Okay, number three. What is number three? Ooh, this is a good one. They're creating something called plug-in extensions. Plug-in extensions are essentially like codeex native apps. So in the same way that they're launching their own native versions of docs, slides, and sheets. Plug-in extensions allows you to create apps for yourself that you distribute to your company or your users. These are apps that are designed to be used inside of chatbt in parallel with dots or just regular chatbt or codeex threads. This is something that I've been asking for for a long time and it's finally here. And what they also added into the mix here is the ability to allow your plugin to be discovered automatically by chatbt. So they have an they have a plug-in store and they created a way where when users are asking chatbt to do something, it'll search and potentially surface your plugin, your app to be used by the user as a new distribution mechanism for developers and startups. It remains to be seen how how good this is. They've had three or four cracks at building an app store, but from what I've seen, from the demos I've seen, this is the most promising one yet. Number four, this is a good one. They have extended sign in with CHBT. So, you can take your CHBT subscription and spend your tokens on third party apps. They've got like 15 apps that are uh participating in this right now. So apps like Devon where you're paying for a CHP subscription when you go to use Devon instead of using your usage on Devon you can bring your CHP subscription with you and draw down usage there. I think this is incredible. It's really good for open AI it's really good for app makers people like us at every like when a user comes to our app we always have to be careful about okay how much AI are they using all that kind of stuff and it it incentivizes app makers to use cheaper and cheaper models like all that kind of stuff. Now, if you're bringing your tokens, we don't have to worry about that. You can use the best model for you. And that means I think it's a really good deal for users. It means that your it means that your AI subscription is going to be a lot like a cell phone data plan. Uh, and you can use your tokens wherever you want. This is the first this is the first shot of this, but I'm very excited for it. Okay, number five, we've got the decisions API. Uh if you've been following anything in AI, you know that this new model dropped a couple weeks ago called Jev, which gives you very very very fast uh structured output responses for questions that can be used as like LLM as a judge or classifier. It's not really an LLM. It's like a sort of slightly different model. And it's so much cheaper. It like gives you fable level performance on a lot of problems, but I don't know, it's like a couple hundred times cheaper. And OpenAI today is releasing that. It's based on a fine-tuned version of GPT6 Luna and it's really freaking fast. Uh you can get responses in like 150 milliseconds in our testing internally at every we did find that it was faster than Jev on some workloads and crucially it's multimodal so you can feed it images. So if you're a developer you care about this you should definitely check out the decisions API. Six there's like there's a ton of other things that they launched. Okay they're launching a $500 plan. It's got a ton more usage than the regular $200 pro plan and it gives you access to Astra Ultraast, which is their new Astra speed tier that's also dropping today. It does 250 tokens per second. It's really, really freaking fast. It's crazy, but it will uh bleed your token balance dry really fast. So, be careful with that. We've also got Soul 6.1. So, they're launching a new version of Soul. It's got Astro level performance, but it's 50% of the price. If you like Astra, but you've been priced out of it, you should definitely check out Soul 6.1. They're also releasing an update to their agents API that allows you to build on the same harness as Codex in your own apps and it now includes computer use. And last but not least is they're releasing an all new codec. It's got a voice chat. It's got new and better interfaces for tracking agents and a bunch of other things. You should check it out. Okay, that is everything that they launched at Devday. You can see it's a mix of things for knowledge workers and consumers and then also a bunch of stuff for developers. They're both building an operating system for doing all of your work inside of Chachebt and they're building a platform and an ecosystem for developers to build applications inside of Chachebt and to bring the CHBT subscription to other places around the internet. Every 6 to 12 months you see model progress creates a shift in form factor. So in the GBT3 era, it was Chat GBT on the web. Uh around Sonnet 3.5, it shifted into terminals and coding agents in the terminal. Around February, GBT 5.3, it started shifting into desktop apps. And now we're entering this persistent agent era. And so this is OpenAI's first foray into persistent agents. Like I said, promising form factor. I think they have a lot of reasons to win because it's integrated right into Chacht. But honestly, in my testing, it's just not quite there yet. It's just like all the little things are not quite working to make it a great experience. My bet is that will improve. So, my recommendation is wait a week or two and then try it out. I will be at Dev Day all day today. I will be interviewing Sam Alman on this channel. So, tune in tomorrow for my interview with him and we'll also have a dev day vlog coming out. So, stay tuned for that. and we'll see you in space. I don't know. [laughter]"
+}
