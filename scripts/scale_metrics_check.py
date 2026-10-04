@@ -24,13 +24,21 @@ def java_loc_tree(dir_path: Path) -> tuple[int, int]:
     return len(files), loc
 
 
-def matrix_union_loc(manifest: dict) -> int:
-    total = 0
+def matrix_unique_loc(manifest: dict) -> tuple[int, int]:
+    """Unique Java paths across shards (honest LOC, no double-count thin vs charter)."""
+    paths: set[Path] = set()
+    loc = 0
     for sl in manifest.get("slices") or []:
         refs = ROOT / sl["refs_dir"]
-        _, loc = java_loc_tree(refs)
-        total += loc
-    return total
+        if not refs.is_dir():
+            continue
+        for p in refs.rglob("*.java"):
+            key = p.resolve()
+            if key in paths:
+                continue
+            paths.add(key)
+            loc += len(p.read_text(encoding="utf-8").splitlines())
+    return len(paths), loc
 
 
 def ref_token_count(refs_dir: Path, wiringmap: Path) -> int:
@@ -78,25 +86,35 @@ def main() -> int:
     if parsed < exp["handler_family"]["min_parsed"]:
         failures.append(f"handler parsed {parsed} < {exp['handler_family']['min_parsed']}")
 
-    union_loc = matrix_union_loc(manifest)
-    if union_loc < exp["union_loc_estimate"]["min_java_loc_touched_by_matrix"]:
-        failures.append(
-            f"matrix union LOC {union_loc} < {exp['union_loc_estimate']['min_java_loc_touched_by_matrix']}"
-        )
+    unique_files, unique_loc = matrix_unique_loc(manifest)
+    min_unique = exp["union_loc_estimate"].get(
+        "min_unique_java_loc", exp["union_loc_estimate"]["min_java_loc_touched_by_matrix"]
+    )
+    if unique_loc < min_unique:
+        failures.append(f"matrix unique LOC {unique_loc} < {min_unique}")
 
     token_report = json.loads(TOKEN_REPORT.read_text(encoding="utf-8"))
+    tokens = token_report.get("tokens") or {}
+    explicit_full = int(tokens.get("explicit_full") or 0)
+    factored_full = int(tokens.get("factored_full") or 0)
+    # Measured pack sizes on 29-handler wedge (not repo-wide 514 extrapolation).
+    if factored_full >= explicit_full or explicit_full == 0:
+        failures.append(
+            f"handler wedge measured factored {factored_full} >= explicit {explicit_full}"
+        )
     breakeven = token_report.get("breakeven") or {}
-    verdict = breakeven.get("verdict_at_n") or token_report.get("decision")
-    if verdict != "WIN":
-        failures.append(f"handler token breakeven not WIN: {verdict!r}")
+    verdict = breakeven.get("verdict_at_n")
 
     report = {
         "charter": {"java_files": c_files, "loc": c_loc, "ref_tokens": refs},
         "slice_matrix_slices": n_slices,
         "edge_recall_pairs": pairs,
         "handler_parsed": parsed,
-        "matrix_union_java_loc": union_loc,
-        "handler_token_decision": token_report.get("decision") or token_report.get("family_decision"),
+        "matrix_unique_java_files": unique_files,
+        "matrix_unique_java_loc": unique_loc,
+        "handler_measured_explicit_tokens": explicit_full,
+        "handler_measured_factored_tokens": factored_full,
+        "handler_breakeven_verdict_at_n514": verdict,
     }
     print(json.dumps(report, indent=2))
 
@@ -107,7 +125,7 @@ def main() -> int:
 
     print(
         f"OK: scale metrics — charter {c_loc} LOC, {n_slices} matrix slices, "
-        f"{pairs} recall pairs, ~{union_loc} LOC touched",
+        f"{pairs} recall pairs, {unique_loc} unique Java LOC ({unique_files} files)",
         file=sys.stderr,
     )
     return 0

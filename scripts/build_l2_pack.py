@@ -22,7 +22,7 @@ MOTIF_SLICE_UNIT = """motif SliceUnit(U, edges):
 
 def short_unit(unit_id: str) -> str:
     if unit_id.startswith("unit:"):
-        return unit_id.split(".")[-1]
+        return unit_id.removeprefix("unit:").split(".")[-1]
     return unit_id
 
 
