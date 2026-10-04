@@ -548,6 +548,7 @@
       "id": "fineract-charter-10k",
       "refs_dir": "fixtures/external/fineract-charter-10k",
       "wiringmap": "fixtures/external/fineract-charter-10k/wiringmap.v0.json",
+      "allow_extract_surplus": true,
       "pairs": [
         [
           "ActivateSavingsAccountCommandHandler.java",

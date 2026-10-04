@@ -1,4 +1,4 @@
-.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check charter-1k-check charter-10k-check slice-matrix-check scale-metrics-check fetch-charter-1k-apply fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pack-blind-results-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval meta-evaluator meta-evaluator-check pipeline-io wiringmap-check wiringmap-stress wiring-core-check
+.PHONY: verify witness e2 dogfood-grade dogfood-grade-toybank dogfood-grade-fineract-thin dogfood-grade-handler-wedge external-slice-check charter-1k-check charter-10k-check slice-matrix-check scale-metrics-check scale-report scale-report-check repo-inventory-check fetch-charter-1k-apply fetch-slice-dry-run fetch-slice-io-check fetch-slice-manifest-check pack-v0-check handler-family-pack-check cr-f95-stub-check pack-blind-eval-check pack-blind-results-check pulse-unified-eval-check edge-recall-sample-check pulse-gate pulse-loop pulse-eval meta-evaluator meta-evaluator-check pipeline-io wiringmap-check wiringmap-stress wiring-core-check
 
 verify:
 	@./scripts/verify.sh
@@ -47,6 +47,15 @@ slice-matrix-check:
 
 scale-metrics-check:
 	@python3 scripts/scale_metrics_check.py
+
+scale-report:
+	@python3 scripts/scale_report_run.py
+
+scale-report-check:
+	@python3 scripts/scale_report_check.py
+
+repo-inventory-check:
+	@python3 scripts/repo_inventory_v0.py --out fixtures/repo-inventory/wiring-and-the-whole.v0.json >/dev/null
 
 fetch-charter-1k-apply:
 	@bash scripts/fetch_fineract_charter_1k.sh --apply

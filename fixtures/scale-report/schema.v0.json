@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "scale-report.v0",
+  "type": "object",
+  "required": ["schema_version", "generated_at_utc", "corpus", "metrics", "slice_matrix_timing"],
+  "properties": {
+    "schema_version": { "const": "scale-report.v0" },
+    "generated_at_utc": { "type": "string" },
+    "git_sha": { "type": "string" },
+    "corpus": {
+      "type": "object",
+      "required": ["kind", "summary"],
+      "properties": {
+        "kind": { "type": "string" },
+        "summary": { "type": "string" },
+        "upstream_repo": { "type": "string" },
+        "upstream_commit_pinned": { "type": "boolean" },
+        "source_pools": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "metrics": { "type": "object" },
+    "charter_10k_breakdown": { "type": "object" },
+    "slice_matrix_timing": { "type": "object" },
+    "viewing": { "type": "object" }
+  }
+}

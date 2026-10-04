@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "wiring-index-record.v0",
+  "type": "object",
+  "required": ["schema_version", "repo_root", "path", "kind", "recorded_at_utc"],
+  "properties": {
+    "schema_version": { "const": "wiring-index-record.v0" },
+    "repo_root": { "type": "string" },
+    "path": { "type": "string" },
+    "kind": {
+      "type": "string",
+      "description": "e.g. java_ref_token, rigspec_edge, inventory_summary"
+    },
+    "recorded_at_utc": { "type": "string" },
+    "payload": { "type": "object" }
+  }
+}

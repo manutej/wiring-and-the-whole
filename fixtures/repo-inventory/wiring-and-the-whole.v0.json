@@ -1,0 +1,88 @@
+{
+  "schema_version": "repo-inventory.v0",
+  "root": "/workspace",
+  "scanned_at_utc": "2026-10-04T00:55:08Z",
+  "total_files": 564,
+  "total_bytes": 4270134,
+  "java_files": 149,
+  "java_bytes": 1253313,
+  "by_extension": {
+    "(no_ext)": {
+      "files": 2,
+      "bytes": 4967
+    },
+    ".css": {
+      "files": 2,
+      "bytes": 3952
+    },
+    ".html": {
+      "files": 7,
+      "bytes": 53004
+    },
+    ".ico": {
+      "files": 1,
+      "bytes": 25931
+    },
+    ".java": {
+      "files": 149,
+      "bytes": 1253313
+    },
+    ".js": {
+      "files": 3,
+      "bytes": 2110
+    },
+    ".json": {
+      "files": 71,
+      "bytes": 871984
+    },
+    ".lock": {
+      "files": 1,
+      "bytes": 7727
+    },
+    ".md": {
+      "files": 139,
+      "bytes": 565124
+    },
+    ".mjs": {
+      "files": 2,
+      "bytes": 605
+    },
+    ".py": {
+      "files": 35,
+      "bytes": 187355
+    },
+    ".rs": {
+      "files": 11,
+      "bytes": 33087
+    },
+    ".sh": {
+      "files": 18,
+      "bytes": 46418
+    },
+    ".svg": {
+      "files": 8,
+      "bytes": 15950
+    },
+    ".toml": {
+      "files": 1,
+      "bytes": 674
+    },
+    ".ts": {
+      "files": 10,
+      "bytes": 28562
+    },
+    ".tsbuildinfo": {
+      "files": 1,
+      "bytes": 135154
+    },
+    ".tsx": {
+      "files": 29,
+      "bytes": 66278
+    },
+    ".txt": {
+      "files": 74,
+      "bytes": 967939
+    }
+  },
+  "note": "Byte totals from stat() only \u2014 no file body reads."
+}

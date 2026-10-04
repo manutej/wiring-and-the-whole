@@ -64,14 +64,15 @@ def main() -> int:
         pairs = extract_pairs(refs_dir)
         if cid == "fineract-charter-10k":
             pairs = [p for p in pairs if (p[0], p[1]) not in one_k_pairs]
-        samples.append(
-            {
-                "id": cid,
-                "refs_dir": str(refs_dir.relative_to(ROOT)),
-                "wiringmap": str(wiringmap.relative_to(ROOT)),
-                "pairs": pairs,
-            }
-        )
+        entry: dict[str, object] = {
+            "id": cid,
+            "refs_dir": str(refs_dir.relative_to(ROOT)),
+            "wiringmap": str(wiringmap.relative_to(ROOT)),
+            "pairs": pairs,
+        }
+        if cid == "fineract-charter-10k":
+            entry["allow_extract_surplus"] = True
+        samples.append(entry)
 
     doc["samples"] = samples
     doc["description"] = (
