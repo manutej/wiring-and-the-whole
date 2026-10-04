@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 
 import { MermaidChart } from "@/components/MermaidChart";
 import { WiringForceLattice } from "@/components/WiringForceLattice";
+import { WiringSheafVolume } from "@/components/WiringSheafVolume";
 import type { WiringMapV0 } from "@/lib/wiringmap-types";
 import { buildWiringRows, uniqueTargetServices } from "@/lib/wiringMapViewModel";
 import { wiringMapToMermaid } from "@/lib/wiringmapToMermaid";
@@ -18,6 +19,7 @@ export function WiringMapBrowser({ map, title }: Props) {
   const services = useMemo(() => uniqueTargetServices(rows), [rows]);
   const [query, setQuery] = useState("");
   const [focusId, setFocusId] = useState<string | null>(rows[0]?.unitId ?? null);
+  const [graphView, setGraphView] = useState<"volume" | "flat">("volume");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -39,7 +41,16 @@ export function WiringMapBrowser({ map, title }: Props) {
       {title && <h3 className="text-base font-medium">{title}</h3>}
 
       <p className="text-[var(--mute)] max-w-2xl">
-        Primary view: layered force lattice (handlers → glued services → infra), aligned with{" "}
+        Primary view: **stalk volume** (oblique 3D, ontological sectors) in the spirit of{" "}
+        <a
+          className="text-[var(--vermillion)]"
+          href="https://github.com/manutej/stalks-and-sections"
+          target="_blank"
+          rel="noreferrer"
+        >
+          stalks-and-sections
+        </a>
+        ; flat force lattice remains available. Glue colours follow{" "}
         <a
           className="text-[var(--vermillion)]"
           href="https://github.com/manutej/cell-sheaf"
@@ -47,25 +58,57 @@ export function WiringMapBrowser({ map, title }: Props) {
           rel="noreferrer"
         >
           cell-sheaf
-        </a>{" "}
-        restriction / glue colors. Use the table and per-handler Mermaid for detail; avoid the
-        legacy full-graph Mermaid unless you need a raw dump.
+        </a>
+        . Use the table and per-handler Mermaid for detail.
       </p>
 
       <section>
-        <h4 className="font-medium mb-2">Force lattice (multi-layer)</h4>
-        <WiringForceLattice
-          map={map}
-          height={520}
-          focusId={focusId}
-          onFocusChange={(id) => {
-            if (!id) {
-              setFocusId(null);
-              return;
-            }
-            if (id.startsWith("unit:")) setFocusId(id);
-          }}
-        />
+        <div className="flex flex-wrap items-center gap-2 mb-2">
+          <h4 className="font-medium">Graph view</h4>
+          <div className="flex text-xs border border-[var(--line)]">
+            <button
+              type="button"
+              className={`px-3 py-1 ${graphView === "volume" ? "bg-[var(--cream)]" : "bg-[var(--paper)]"}`}
+              onClick={() => setGraphView("volume")}
+            >
+              Stalk volume
+            </button>
+            <button
+              type="button"
+              className={`px-3 py-1 border-l border-[var(--line)] ${graphView === "flat" ? "bg-[var(--cream)]" : "bg-[var(--paper)]"}`}
+              onClick={() => setGraphView("flat")}
+            >
+              Flat lattice
+            </button>
+          </div>
+        </div>
+        {graphView === "volume" ? (
+          <WiringSheafVolume
+            map={map}
+            height={560}
+            focusId={focusId}
+            onFocusChange={(id) => {
+              if (!id) {
+                setFocusId(null);
+                return;
+              }
+              if (id.startsWith("unit:")) setFocusId(id);
+            }}
+          />
+        ) : (
+          <WiringForceLattice
+            map={map}
+            height={520}
+            focusId={focusId}
+            onFocusChange={(id) => {
+              if (!id) {
+                setFocusId(null);
+                return;
+              }
+              if (id.startsWith("unit:")) setFocusId(id);
+            }}
+          />
+        )}
       </section>
 
       <label className="block max-w-md">

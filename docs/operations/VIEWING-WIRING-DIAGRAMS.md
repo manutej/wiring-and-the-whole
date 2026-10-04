@@ -2,13 +2,19 @@
 
 ## Comprehensive charter map (30 units, 92 edges)
 
-Charter maps use **`WiringMapBrowser`**: primary **force lattice** (layered d3-force, glued junctions, cell-sheaf glue colors), plus searchable handler → callee table and per-handler focus Mermaid. A single full-graph Mermaid for 30 handlers / 90+ edges is intentionally hidden under “Legacy full graph”.
+Charter maps use **`WiringMapBrowser`**: primary **stalk volume** (oblique 3D, glass hierarchy planes, ontological sectors — [stalks-and-sections](https://github.com/manutej/stalks-and-sections) idiom), optional **flat force lattice**, plus searchable handler → callee table and per-handler focus Mermaid. Full-graph Mermaid stays under “Legacy full graph”.
 
 | Piece | Path |
 |-------|------|
-| **Force lattice UI** | `preview/graph/src/components/WiringForceLattice.tsx` |
-| **Map → lattice + sheaf stub** | `preview/graph/src/lib/wiringMapToLatticeGraph.ts` |
-| **Visual law (reference)** | [manutej/cell-sheaf](https://github.com/manutej/cell-sheaf) — restriction curves, glue palette |
+| **Stalk volume UI** | `preview/graph/src/components/WiringSheafVolume.tsx` |
+| **Ontology + levels** | `preview/graph/src/lib/wiringOntology.ts` |
+| **3D layout + projection** | `preview/graph/src/lib/wiringSheafLayout.ts` |
+| **Map → volume + stalks JSON** | `preview/graph/src/lib/wiringMapToVolumeGraph.ts` |
+| **Flat lattice (alt)** | `preview/graph/src/components/WiringForceLattice.tsx` |
+| **Glue / lattice** | `preview/graph/src/lib/wiringMapToLatticeGraph.ts` |
+| **Visual law** | [cell-sheaf](https://github.com/manutej/cell-sheaf) glue · [stalks-and-sections](https://github.com/manutej/stalks-and-sections) planes |
+
+Export: **Export stalks JSON** in the volume view → load in stalks-and-sections via `docs/examples/` + dataset switcher.
 
 | Surface | URL / path |
 |---------|------------|
