@@ -1,10 +1,8 @@
-import { MermaidChart } from "@/components/MermaidChart";
+import { WiringMapBrowser } from "@/components/WiringMapBrowser";
 import toybank from "@/lib/data/toybank-accounts.v0.json";
 import type { WiringMapV0 } from "@/lib/wiringmap-types";
-import { wiringMapToMermaid } from "@/lib/wiringmapToMermaid";
 
 const map = toybank as WiringMapV0;
-const chart = wiringMapToMermaid(map);
 
 export default function WiringMapPage() {
   return (

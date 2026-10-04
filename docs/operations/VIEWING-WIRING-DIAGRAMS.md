@@ -2,7 +2,7 @@
 
 ## Comprehensive charter map (30 units, 92 edges)
 
-The **full** WiringMap v0 for charter 10k is rendered as Mermaid (units subgraph + junctions + all example edges).
+Charter maps use **`WiringMapBrowser`** (searchable handler → callee table + per-handler focus Mermaid). A single full-graph Mermaid for 30 handlers / 90+ edges is intentionally hidden under “Legacy full graph”.
 
 | Surface | URL / path |
 |---------|------------|

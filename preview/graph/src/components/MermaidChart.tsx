@@ -24,7 +24,14 @@ export function MermaidChart({ chart, className }: Props) {
           startOnLoad: false,
           theme: "neutral",
           securityLevel: "strict",
-          flowchart: { htmlLabels: true, curve: "basis" },
+          flowchart: {
+            htmlLabels: true,
+            curve: "basis",
+            nodeSpacing: 28,
+            rankSpacing: 40,
+            padding: 12,
+            useMaxWidth: true,
+          },
         });
         const { svg: rendered } = await mermaid.render(
           `mmd-${reactId}`,

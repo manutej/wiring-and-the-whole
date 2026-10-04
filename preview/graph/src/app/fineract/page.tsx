@@ -1,10 +1,8 @@
-import { MermaidChart } from "@/components/MermaidChart";
+import { WiringMapBrowser } from "@/components/WiringMapBrowser";
 import fineract from "@/lib/data/fineract-thin.v0.json";
 import type { WiringMapV0 } from "@/lib/wiringmap-types";
-import { wiringMapToMermaid } from "@/lib/wiringmapToMermaid";
 
 const map = fineract as WiringMapV0;
-const chart = wiringMapToMermaid(map);
 
 export default function FineractWiringMapPage() {
   return (
@@ -18,17 +16,7 @@ export default function FineractWiringMapPage() {
           on main
         </p>
       </div>
-      <div className="diagram-panel">
-        <MermaidChart chart={chart} className="mermaid-output" />
-      </div>
-      <details className="text-sm font-sans">
-        <summary className="cursor-pointer text-[var(--vermillion)]">
-          Mermaid source (generated)
-        </summary>
-        <pre className="mt-2 p-3 bg-[var(--paper)] border border-[var(--line)] overflow-x-auto text-xs font-mono">
-          {chart}
-        </pre>
-      </details>
+      <WiringMapBrowser map={map} />
     </article>
   );
 }
