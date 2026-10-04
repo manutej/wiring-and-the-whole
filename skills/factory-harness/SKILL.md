@@ -7,6 +7,26 @@ description: Build and maintain agent factory harnesses — versioned skills, st
 
 The **harness** is everything that wraps the model: tools, skills, routing, sandboxes, telemetry, and refresh jobs. Warp (Gupta/Lloyd) treats the harness as a **living product** (~1M MAU IDE → cloud team platform), not a frozen prompt bundle.
 
+## Progressive disclosure
+
+**Layer 1:** Treat harness + **skill library** as a product: version, route models, **refresh stale skills**, hook self-improvement.
+
+**Layer 2 moves:** Harness inventory · skill as asset · stale-skill refresh · self-improvement hook · Pareto routing · CI parity · handoff to eval.
+
+**Layer 3 — transcript refs**
+
+| video_id | MM:SS | Label | Snippet |
+|----------|-------|-------|---------|
+| `TN3mj92oZ8I` | 0:22 | FACT | ~1M active users on Warp agentic dev environment |
+| `TN3mj92oZ8I` | 2:28 | FACT | Factory skills get stale over time without refresh |
+| `TN3mj92oZ8I` | 1:10 | FACT | Self-improvement loop can be automatic |
+| `TN3mj92oZ8I` | 9:29 | FACT | Model routing: Pareto-efficient defaults vs pinning one model |
+| `tUPPVhBBcoM` | 0:00 | FACT | Open-source agentic environment; agents first-class in terminal |
+
+## Unified system
+
+**OS stage:** Platform loop (harness). **Upstream:** [`process-embedded-factory`](../process-embedded-factory/SKILL.md) · **Downstream:** [`covariant-eval-loop`](../covariant-eval-loop/SKILL.md). **Talks:** Gupta `TN3mj92oZ8I`, Lloyd `tUPPVhBBcoM`.
+
 ## When to use
 
 - Building **coding factories** for multiple repos or teams.

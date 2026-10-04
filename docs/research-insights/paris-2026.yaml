@@ -92,3 +92,12 @@ insights:
     maps_to: skill
     target: skills/factory-harness/SKILL.md
     status: adopted
+
+  - id: software-factory-skill-plugin-spec
+    video_id: null
+    cite: null
+    theme: Software factories
+    summary: "Progressive disclosure skill/plugin package spec + 3-iteration faithfulness consensus."
+    maps_to: spec
+    target: docs/specs/software-factory-skill-plugin.v0.md
+    status: adopted

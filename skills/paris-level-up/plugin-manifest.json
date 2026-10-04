@@ -1,0 +1,34 @@
+{
+  "name": "paris-level-up",
+  "version": "0.1.0",
+  "description": "AI Engineer Paris 2026 software factory OS — 8 skills from 9 ingested talks",
+  "corpus": "research/ai-engineer-paris-2026/digest.json",
+  "spec": "docs/specs/software-factory-skill-plugin.v0.md",
+  "skills": [
+    "skills/factory-operator/SKILL.md",
+    "skills/process-embedded-factory/SKILL.md",
+    "skills/factory-harness/SKILL.md",
+    "skills/covariant-eval-loop/SKILL.md",
+    "skills/agent-orchestra/SKILL.md",
+    "skills/pr-pulse-discipline/SKILL.md",
+    "skills/eval-over-review/SKILL.md",
+    "skills/devex-metrics-grounding/SKILL.md"
+  ],
+  "triggers": [
+    "software factory",
+    "coding factory",
+    "agent factory",
+    "long-running agents",
+    "factory harness",
+    "PR bottleneck",
+    "covariant eval",
+    "orchestra not factory",
+    "eval over code review",
+    "DevEx metrics AI"
+  ],
+  "programme_boundary_skills": [
+    "skills/interface-first-context/SKILL.md",
+    "skills/systems-intake/SKILL.md",
+    "skills/symmetry-lens/SKILL.md"
+  ]
+}

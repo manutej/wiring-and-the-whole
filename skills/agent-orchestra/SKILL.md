@@ -7,6 +7,23 @@ description: Orchestrate parallel coding agents — conductor score, session lim
 
 **Metaphor** (Charlie Holtz, Conductor @ `TRfzFJCJ7ZE`): many agents in parallel need a **score** — who plays what, when to stop, how to combine — not an unbounded factory line of PRs. Essential for **long-running** programs where several sessions touch the same epic.
 
+## Progressive disclosure
+
+**Layer 1:** Parallel long-running agents need a **conductor + score**, not an unbounded factory line of overlapping PRs.
+
+**Layer 2 moves:** Write score · conductor role · session caps · shared context bundle · merge-back cadence · stop conditions · tracker embed.
+
+**Layer 3 — transcript refs**
+
+| video_id | MM:SS | Label | Snippet |
+|----------|-------|-------|---------|
+| `TRfzFJCJ7ZE` | 0:00 | FACT | Conductor desktop app for managing agents (speaker intro) |
+| `TRfzFJCJ7ZE` | — | CONJECTURE | Orchestra sections/score beat factory assembly-line (editorial thesis; no MM:SS in digest) |
+
+## Unified system
+
+**OS stage:** Multi-session scale. **Upstream:** [`covariant-eval-loop`](../covariant-eval-loop/SKILL.md) · **Downstream:** [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md). **Programme:** [`interface-first-context`](../interface-first-context/SKILL.md). **Talk:** `TRfzFJCJ7ZE`.
+
 ## When to use
 
 - **>1 agent** active on related work (features, migrations, refactors).

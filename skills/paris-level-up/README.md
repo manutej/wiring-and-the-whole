@@ -2,6 +2,20 @@
 
 Agent **SKILL.md** instruments distilled from **9 ingested** AI Engineer Paris talks (fact + inference separated in each skill’s Provenance). Use with programme skills (`interface-first-context`, `systems-intake`, `symmetry-lens`) and [`docs/PULSE.md`](../../docs/PULSE.md) for pulse-sized adoption.
 
+**Implementable spec:** [`docs/specs/software-factory-skill-plugin.v0.md`](../../docs/specs/software-factory-skill-plugin.v0.md) · **Consensus:** [`docs/specs/software-factory-skills-consensus/`](../../docs/specs/software-factory-skills-consensus/) · **Plugin stub:** [`plugin-manifest.json`](plugin-manifest.json).
+
+**Captions:** All cites derive from **English auto-generated** YouTube captions (`digest.json` / `transcript-summaries.json`). Layer 3 tables mark **FACT** vs **CONJECTURE** per skill.
+
+## Unified factory OS
+
+```text
+[devex-metrics-grounding] ──feedback──┐
+                                      v
+factory-operator → process-embedded-factory → factory-harness → covariant-eval-loop
+    → agent-orchestra → pr-pulse-discipline + eval-over-review → (metrics loop)
+         ↑ programme T1: interface-first-context, systems-intake at boundaries
+```
+
 ## Curriculum (recommended order)
 
 | Order | Skill | Primary speakers | You learn |

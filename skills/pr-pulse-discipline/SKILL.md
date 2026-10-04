@@ -7,6 +7,25 @@ description: Fix the PR bottleneck — Agent Skills as review rubric, small diff
 
 Matt Pocock’s frame (`LlgiOCmFG_w`): AI **increased PR supply** while human review bandwidth is flat — the bottleneck is **review and process**, not raw generation. **Skills** are durable rubrics for authoring and reviewing; this repo’s **pulse** adds firewalled adversarial + evaluator lanes ([`docs/PULSE.md`](../../docs/PULSE.md)).
 
+## Progressive disclosure
+
+**Layer 1:** Agent speed needs **process brakes** — small PRs, skills as review rubric, separated implement/adversarial/evaluator lanes.
+
+**Layer 2 moves:** Small PR · skill rubric · risk tiers · implementer brief · adversarial lane · automated gate · evaluator SHIP.
+
+**Layer 3 — transcript refs**
+
+| video_id | MM:SS | Label | Snippet |
+|----------|-------|-------|---------|
+| `LlgiOCmFG_w` | 0:00 | FACT | Huge numbers of unreviewed PRs; strain increased with AI |
+| `LlgiOCmFG_w` | 0:00 | FACT | Uses rubric of skills for PR/review speed |
+| `LlgiOCmFG_w` | — | CONJECTURE | Deep modules, review-agent split (audience themes / editorial; not digest MM:SS) |
+| — | — | CONJECTURE | Pulse evaluator firewall — programme [`docs/PULSE.md`](../../docs/PULSE.md), not Paris transcript |
+
+## Unified system
+
+**OS stage:** Ship gates (PR/pulse). **Upstream:** [`agent-orchestra`](../agent-orchestra/SKILL.md) · **Downstream:** [`eval-over-review`](../eval-over-review/SKILL.md). **Talk:** `LlgiOCmFG_w`.
+
 ## When to use
 
 - Agents opening **many PRs** or giant diffs.

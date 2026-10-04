@@ -7,6 +7,24 @@ description: Embed coding agents in eng workflow — issue trackers, chat, VCS, 
 
 WorkOS’s lesson: **producing patches is insufficient**; factories must live where work is tracked and discussed. Design integrations so long-running agents **read state** and **write auditable progress**, not only open PRs.
 
+## Progressive disclosure
+
+**Layer 1:** Embed agents in **Slack/Linear/GitHub** (or equivalents) with **webhook-driven progress**, not patch-only bots.
+
+**Layer 2 moves:** System of record · progress agent · chat embed · webhook graph · scope binding · human escalation · outcome check.
+
+**Layer 3 — transcript refs**
+
+| video_id | MM:SS | Label | Snippet |
+|----------|-------|-------|---------|
+| `HvboD89DyQ8` | 3:56 | FACT | Not sufficient that the factory produces code — embed eng process |
+| `HvboD89DyQ8` | 4:10 | FACT | TARS in Slack, Linear, GitHub; webhook tracking |
+| `HvboD89DyQ8` | 3:34 | FACT | Laptop-parity test: sandbox alone ≠ factory |
+
+## Unified system
+
+**OS stage:** Embed in work. **Upstream:** [`factory-operator`](../factory-operator/SKILL.md) · **Downstream:** [`factory-harness`](../factory-harness/SKILL.md), [`agent-orchestra`](../agent-orchestra/SKILL.md). **Talk:** `HvboD89DyQ8` (WorkOS).
+
 ## When to use
 
 - Standing up a **team coding factory** (cloud agents, background workers).

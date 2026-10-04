@@ -7,6 +7,25 @@ description: Define and operate a software factory — outcome metrics, build vs
 
 **Operating definition** for agentic SDLC systems: a factory is an **organization-scale loop** from intent → integrated delivery, not “model + sandbox.” Synthesizes WorkOS skepticism, Factory.com builder reality, and Warp’s environment-centric view (Paris 2026 ingested talks).
 
+## Progressive disclosure
+
+**Layer 1:** A software factory is judged by **shipped outcomes** and **embedded eng process**, not sandbox + model router alone.
+
+**Layer 2 moves:** Name the loop · outcome metric · sandbox honesty test · build/buy · environment claim · blast-radius tiers · programme charter boundary.
+
+**Layer 3 — transcript refs**
+
+| video_id | MM:SS | Label | Snippet |
+|----------|-------|-------|---------|
+| `HvboD89DyQ8` | 2:36 | FACT | Success metrics outcome-based (ship features faster), not PR/code volume |
+| `HvboD89DyQ8` | 3:34 | FACT | Sandbox factory indistinguishable from laptop Claude Code |
+| `vGCJ7diEtrw` | 0:00 | FACT | Few people building a factory; define it, build vs buy, cost (Factory.com) |
+| `tUPPVhBBcoM` | 0:00 | FACT | Open-source agentic dev environment; terminal with agents built in |
+
+## Unified system
+
+**OS stage:** Define & justify (entry). **Upstream:** — · **Downstream:** [`process-embedded-factory`](../process-embedded-factory/SKILL.md), [`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md). **Talks:** WorkOS skeptic, Factory.com builder, Warp Lloyd environment. Map: [`docs/specs/software-factory-skill-plugin.v0.md`](../../docs/specs/software-factory-skill-plugin.v0.md).
+
 ## When to use
 
 - Deciding **build vs buy** for an internal coding factory.

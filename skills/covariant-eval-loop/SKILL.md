@@ -7,6 +7,25 @@ description: Self-improving agents — covariant benchmarks, harness, and config
 
 **Covariance rule** (W&B @ 1:41, `XyV6bSMyq-I`): you cannot change the **benchmark**, **harness**, or **agent configuration** in isolation — they co-move. Long-running and self-improving agents need a **closed loop**: prod → traces → offline hill-climb → gated deploy.
 
+## Progressive disclosure
+
+**Layer 1:** Benchmark, harness, and agent config are **covariant** — change one, re-measure all; close prod→offline flywheel.
+
+**Layer 2 moves:** Triple lock · prod instrumentation · trace export · offline bench · regression tasks · sim-to-real note · promotion gate.
+
+**Layer 3 — transcript refs**
+
+| video_id | MM:SS | Label | Snippet |
+|----------|-------|-------|---------|
+| `XyV6bSMyq-I` | 1:41 | FACT | Benchmarks, evaluations, and agent harness configs are all covariant |
+| `XyV6bSMyq-I` | 2:41 | FACT | Production traces into offline envs to hill-climb — flywheel |
+| `XyV6bSMyq-I` | 13:32 | FACT | WBAF caught missing weave.log via offline regression |
+| `XyV6bSMyq-I` | 0:24 | FACT | Arya agent GA; deep dive on self-improving agent |
+
+## Unified system
+
+**OS stage:** Prove harness changes. **Upstream:** [`factory-harness`](../factory-harness/SKILL.md) · **Downstream:** [`agent-orchestra`](../agent-orchestra/SKILL.md), ship gates. **Programme:** [`systems-intake`](../systems-intake/SKILL.md). **Talk:** `XyV6bSMyq-I`.
+
 ## When to use
 
 - **Self-improving** coding or research agents.

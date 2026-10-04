@@ -7,6 +7,24 @@ description: Replace ritual code review with eval discipline — observability, 
 
 Laurie Voss (`_mi3alkqy4s`): agent speed broke the assumption that **human diff review** scales. The replacement is not “no humans” but **measurement** — evals, observability, and targeted human judgment on **high-risk** deltas (pairs with Pocock PR discipline and W&B covariant loops).
 
+## Progressive disclosure
+
+**Layer 1:** When agents outpace human review, shift to **evals + observability** and reserve humans for high-risk judgment.
+
+**Layer 2 moves:** Review map · agent eval suite · observability · human-on-risk · small PRs · covariant ship · DevEx feedback.
+
+**Layer 3 — transcript refs**
+
+| video_id | MM:SS | Label | Snippet |
+|----------|-------|-------|---------|
+| `_mi3alkqy4s` | 0:00 | FACT | AI agents dramatically increased how fast developers produce code |
+| `_mi3alkqy4s` | 0:00 | FACT | Speed at which humans can review code has not kept pace |
+| `_mi3alkqy4s` | 0:00 | FACT | Speaker frames problem: how to test AI (Arize devrel) |
+
+## Unified system
+
+**OS stage:** Ship gates (measurement). **Upstream:** [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md) · **Downstream:** [`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md). **Talk:** `_mi3alkqy4s`. Pairs with Pocock/W&B — **CONJECTURE** composition, not single talk.
+
 ## When to use
 
 - **Agent-generated** or **agent-assisted** code paths.

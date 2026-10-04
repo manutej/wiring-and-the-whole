@@ -7,6 +7,24 @@ description: Ground AI and factory programs in org DevEx data — DX-style platf
 
 Justin Reock (DX @ `Se8jHLliLXE`): **400+ org** platform data beats conference stories. Before scaling **coding factories** or **long-running agents**, anchor claims in **developer experience and productivity signals** your organization can actually measure.
 
+## Progressive disclosure
+
+**Layer 1:** Ground factory/agent programs in **quarterly DevEx/productivity data**, not stage anecdotes.
+
+**Layer 2 moves:** Frameworks (DORA/SPACE/DevX) · baseline quarter · hypothesis · instrument · segment · decide (harness refresh).
+
+**Layer 3 — transcript refs**
+
+| video_id | MM:SS | Label | Snippet |
+|----------|-------|-------|---------|
+| `Se8jHLliLXE` | 0:00 | FACT | Quarterly state-of-AI reports from platform research data |
+| `Se8jHLliLXE` | 0:00 | FACT | Platform lineage: DORA metrics, SPACE, DevX framework |
+| `Se8jHLliLXE` | — | FACT | Catalog title: data from 400+ orgs (YouTube metadata, not verified quote) |
+
+## Unified system
+
+**OS stage:** Feedback / justify investment. **Upstream:** — · **Downstream:** informs [`factory-operator`](../factory-operator/SKILL.md), [`eval-over-review`](../eval-over-review/SKILL.md). **Talk:** `Se8jHLliLXE`.
+
 ## When to use
 
 - Executive or platform team asks **“Is AI helping?”**
