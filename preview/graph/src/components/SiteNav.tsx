@@ -4,6 +4,8 @@ const links = [
   { href: "/", label: "Overview" },
   { href: "/wiringmap", label: "Toybank" },
   { href: "/fineract", label: "Fineract thin" },
+  { href: "/charter", label: "Charter 1k" },
+  { href: "/scale", label: "Scale diagrams" },
   { href: "/spine", label: "Rust spine" },
   { href: "/witness", label: "E1 witness" },
   { href: "/pipeline", label: "Pipeline I/O" },

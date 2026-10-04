@@ -1,6 +1,6 @@
 # Scale & compound diagrams
 
-**Preview (live render):** deploy [wiring-graph-preview](https://wiring-graph-preview.vercel.app) route **`/scale`**.
+**Preview (live render):** [wiring-graph-preview.vercel.app/scale](https://wiring-graph-preview.vercel.app/scale) — requires **`/scale` on `main`** (Scale Build S2+S3); until deploy finishes, read the Mermaid blocks below in GitHub.
 
 **Source of truth for chart text:** [`preview/graph/src/lib/scaleDiagrams.ts`](../preview/graph/src/lib/scaleDiagrams.ts) · **Skill DAGs:** [`skills/compound-build-loop/SKILL.md`](../skills/compound-build-loop/SKILL.md).
 
