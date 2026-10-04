@@ -1,0 +1,528 @@
+# Machine-readable reference index — AI Engineer Paris 2026 (9 ingested talks)
+# Schema: docs/specs/software-factory-skill-plugin.v1.md § Reference disclosure tiers
+# Segment ids are stable slugs referenced from Paris factory SKILL.md (L4).
+version: "1.0.0"
+corpus: research/ai-engineer-paris-2026/digest.json
+caption_note: English (auto-generated) YouTube captions; timestamps are best-effort.
+
+disclosure_tiers:
+  L1: SKILL.md one-liner
+  L2: SKILL.md Layer 2 moves
+  L3: SKILL.md short refs or segment id pointers
+  L4: segments below — curated excerpts for special_areas
+  L5: l5_pointer — transcript-summaries.json + YouTube watch URL
+
+talks:
+  HvboD89DyQ8:
+    title: "No, That's Not a Software Factory — Ryan Cooke, WorkOS"
+    themes: [software factory skeptic, outcome metrics, process embed, sandbox honesty]
+    special_areas: [outcome-based success metrics, TARS embed, webhook progress, tier-0 demo vs factory]
+    l5_pointer:
+      summary_path: research/ai-engineer-paris-2026/transcript-summaries.json
+      summary_key: HvboD89DyQ8
+      youtube_watch: https://www.youtube.com/watch?v=HvboD89DyQ8
+    segment_ids: [workos-outcome-metrics, workos-sandbox-parity, workos-embed-process, workos-tars-webhooks, workos-opening-hook]
+    segments:
+      - id: workos-outcome-metrics
+        disclosure_tier: L4
+        start: "2:36"
+        end: "3:15"
+        quote: "Success metrics are outcome-based (ship features faster), not raw PR/code volume."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: factory-operator
+        special_area: outcome-based success metrics
+      - id: workos-sandbox-parity
+        disclosure_tier: L4
+        start: "3:34"
+        end: "3:55"
+        quote: "Sandbox + model router alone was indistinguishable from engineers running Claude Code locally."
+        quote_label: FACT
+        source: digest.json + transcript-summaries.json quotes
+        maps_to_skill: factory-operator
+        special_area: tier-0 demo vs factory
+      - id: workos-embed-process
+        disclosure_tier: L4
+        start: "3:56"
+        end: "4:09"
+        quote: "Code output isn't enough; embed eng process (TARS in Slack/Linear/GitHub + Horizon)."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: process-embedded-factory
+        special_area: TARS embed
+      - id: workos-tars-webhooks
+        disclosure_tier: L4
+        start: "4:10"
+        end: "4:45"
+        quote: "TARS tracks project progress via webhooks, not only generating patches."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: process-embedded-factory
+        special_area: webhook progress
+      - id: workos-opening-hook
+        disclosure_tier: L4
+        start: "0:00"
+        end: "1:30"
+        quote: "Software factories — familiar audience; Ramp blogged about their inspects (opening)."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: factory-operator
+        special_area: software factory skeptic
+
+  vGCJ7diEtrw:
+    title: "What It Actually Takes to Build a Software Factory — Tereza Tížková, Factory"
+    themes: [build vs buy, enterprise factory, definition and cost]
+    special_areas: [factory definition, build vs outsource, EY/Adobe production, cost framing]
+    l5_pointer:
+      summary_path: research/ai-engineer-paris-2026/transcript-summaries.json
+      summary_key: vGCJ7diEtrw
+      youtube_watch: https://www.youtube.com/watch?v=vGCJ7diEtrw
+    segment_ids: [factory-com-build, factory-com-few-builders, factory-com-enterprise, factory-com-agenda]
+    segments:
+      - id: factory-com-build
+        disclosure_tier: L4
+        start: "0:00"
+        end: "2:30"
+        quote: "factory.com … building the software factory … technology catching up for enterprises."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: factory-operator
+        special_area: factory definition
+      - id: factory-com-few-builders
+        disclosure_tier: L4
+        start: "0:00"
+        end: "1:00"
+        quote: "Everyone talks software factory; few build one; fewer know what it takes."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: factory-operator
+        special_area: factory definition
+      - id: factory-com-enterprise
+        disclosure_tier: L4
+        start: "2:00"
+        end: "3:00"
+        quote: "Production for enterprises like EY or Adobe."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: factory-operator
+        special_area: EY/Adobe production
+      - id: factory-com-agenda
+        disclosure_tier: L4
+        start: "0:45"
+        end: "2:00"
+        quote: "Build vs outsource, what works in production, challenges, cost."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: factory-operator
+        special_area: build vs outsource
+
+  tUPPVhBBcoM:
+    title: "Self-Improving software factories — Zach Lloyd, Warp"
+    themes: [self-improving factories, OSS agentic IDE, environment-centric dev]
+    special_areas: [agentic dev environment, shipping without typing code, terminal-first agents]
+    l5_pointer:
+      summary_path: research/ai-engineer-paris-2026/transcript-summaries.json
+      summary_key: tUPPVhBBcoM
+      youtube_watch: https://www.youtube.com/watch?v=tUPPVhBBcoM
+    segment_ids: [warp-lloyd-environment, warp-lloyd-self-improving, warp-lloyd-no-code-six-months, warp-lloyd-oss-terminal]
+    segments:
+      - id: warp-lloyd-environment
+        disclosure_tier: L4
+        start: "1:30"
+        end: "2:30"
+        quote: "Open-source agentic development environment … terminal that has agents built in."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: factory-operator
+        special_area: agentic dev environment
+      - id: warp-lloyd-self-improving
+        disclosure_tier: L4
+        start: "0:00"
+        end: "1:00"
+        quote: "Self-improving software factories and what is happening to development."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: factory-harness
+        special_area: self-improving factories
+      - id: warp-lloyd-no-code-six-months
+        disclosure_tier: L4
+        start: "0:45"
+        end: "1:30"
+        quote: "Still shipping frequently; haven't written a line of code in the last six months."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: factory-harness
+        special_area: shipping without typing code
+      - id: warp-lloyd-oss-terminal
+        disclosure_tier: L4
+        start: "0:30"
+        end: "1:30"
+        quote: "Former Google Docs principal engineer; Warp founder — agents as product surface."
+        quote_label: INFERENCE
+        source: editorial synthesis from opening FACTs
+        maps_to_skill: factory-harness
+        special_area: agentic dev environment
+
+  TN3mj92oZ8I:
+    title: "Building Self-Improving Agent Software Factories — Suraj Gupta, Warp"
+    themes: [cloud agent platform, harness, stale skills, model routing]
+    special_areas: [skill refresh, auto improvement loop, Pareto routing, ~1M MAU scale]
+    l5_pointer:
+      summary_path: research/ai-engineer-paris-2026/transcript-summaries.json
+      summary_key: TN3mj92oZ8I
+      youtube_watch: https://www.youtube.com/watch?v=TN3mj92oZ8I
+    segment_ids: [warp-scale-maus, warp-self-improve-loop, warp-stale-skills, warp-pareto-routing, warp-harness-cloud-platform]
+    segments:
+      - id: warp-scale-maus
+        disclosure_tier: L4
+        start: "0:22"
+        end: "1:05"
+        quote: "~1M MAU on Warp's agentic IDE; cloud agent platform for teams."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: factory-harness
+        special_area: ~1M MAU scale
+      - id: warp-self-improve-loop
+        disclosure_tier: L4
+        start: "1:10"
+        end: "1:45"
+        quote: "Self-improvement loop can be automatic as the software-factory paradigm shifts."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: factory-harness
+        special_area: auto improvement loop
+      - id: warp-stale-skills
+        disclosure_tier: L4
+        start: "2:28"
+        end: "3:15"
+        quote: "Factory skills go stale unless the improvement loop refreshes them."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: factory-harness
+        special_area: skill refresh
+      - id: warp-pareto-routing
+        disclosure_tier: L4
+        start: "9:29"
+        end: "10:15"
+        quote: "Model routing favors Pareto-efficient defaults instead of users pinning one model."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: factory-harness
+        special_area: Pareto routing
+      - id: warp-harness-cloud-platform
+        disclosure_tier: L4
+        start: "0:00"
+        end: "0:45"
+        quote: "Lead Harness development … cloud agent platform to enable teams to build software."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: factory-harness
+        special_area: cloud agent platform
+
+  XyV6bSMyq-I:
+    title: "How We Built an Agent That Improves Itself — Zubin Aysola, W&B"
+    themes: [covariant evals, production traces, WBAF, flywheel]
+    special_areas: [benchmark-harness covariance, prod offline hill-climb, weave regression, sim-to-real]
+    l5_pointer:
+      summary_path: research/ai-engineer-paris-2026/transcript-summaries.json
+      summary_key: XyV6bSMyq-I
+      youtube_watch: https://www.youtube.com/watch?v=XyV6bSMyq-I
+    segment_ids: [wb-arya-intro, wb-covariant-triple, wb-trace-flywheel, wb-weave-regression, wb-sim-to-real-note]
+    segments:
+      - id: wb-arya-intro
+        disclosure_tier: L4
+        start: "0:24"
+        end: "1:00"
+        quote: "Arya agent GA Monday; deep dive on self-improving agent (pairs main-stage W&B talk)."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: covariant-eval-loop
+        special_area: flywheel
+      - id: wb-covariant-triple
+        disclosure_tier: L4
+        start: "1:41"
+        end: "2:25"
+        quote: "Benchmarks, evals, and harness configs are covariant; need prod + offline measurement."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: covariant-eval-loop
+        special_area: benchmark-harness covariance
+      - id: wb-trace-flywheel
+        disclosure_tier: L4
+        start: "2:41"
+        end: "3:30"
+        quote: "Production traces feed offline sims; Weave logging closes self-improvement flywheel."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: covariant-eval-loop
+        special_area: prod offline hill-climb
+      - id: wb-weave-regression
+        disclosure_tier: L4
+        start: "13:32"
+        end: "14:30"
+        quote: "WBAF caught missing weave.log SDK call via offline regression tasks."
+        quote_label: FACT
+        source: digest.json insights.bullets
+        maps_to_skill: covariant-eval-loop
+        special_area: weave regression
+      - id: wb-sim-to-real-note
+        disclosure_tier: L4
+        start: "1:41"
+        end: "2:41"
+        quote: "Dynamic agent systems need explicit sim-to-real gap between offline and production."
+        quote_label: INFERENCE
+        source: editorial synthesis from digest @ 1:41
+        maps_to_skill: covariant-eval-loop
+        special_area: sim-to-real
+
+  TRfzFJCJ7ZE:
+    title: "Orchestras, Not Factories — Charlie Holtz, Conductor"
+    themes: [multi-agent coordination, Conductor, orchestra metaphor]
+    special_areas: [conductor score, parallel sessions, desktop agent management]
+    l5_pointer:
+      summary_path: research/ai-engineer-paris-2026/transcript-summaries.json
+      summary_key: TRfzFJCJ7ZE
+      youtube_watch: https://www.youtube.com/watch?v=TRfzFJCJ7ZE
+    segment_ids: [holtz-conductor-intro, holtz-orchestra-thesis, holtz-ai-engineering-room, holtz-parallel-management]
+    segments:
+      - id: holtz-conductor-intro
+        disclosure_tier: L4
+        start: "0:00"
+        end: "2:30"
+        quote: "Co-founder of Conductor — desktop app for managing agents."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: agent-orchestra
+        special_area: desktop agent management
+      - id: holtz-orchestra-thesis
+        disclosure_tier: L4
+        start: "0:00"
+        end: "0:00"
+        quote: "Orchestra score beats unbounded factory assembly line for parallel agents."
+        quote_label: INFERENCE
+        source: editorial thesis; talk title + Conductor framing
+        maps_to_skill: agent-orchestra
+        special_area: conductor score
+      - id: holtz-ai-engineering-room
+        disclosure_tier: L4
+        start: "0:30"
+        end: "1:30"
+        quote: "AI engineering conference — room of people who want to hear about this."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: agent-orchestra
+        special_area: conductor score
+      - id: holtz-parallel-management
+        disclosure_tier: L4
+        start: "2:00"
+        end: "4:00"
+        quote: "Single operator surface for multiple agent sessions reduces overlap chaos."
+        quote_label: INFERENCE
+        source: editorial synthesis from Conductor product FACT
+        maps_to_skill: agent-orchestra
+        special_area: parallel sessions
+
+  LlgiOCmFG_w:
+    title: "Fixing the PR Bottleneck — Matt Pocock, AIHero"
+    themes: [PR bottleneck, skills rubric, review speed]
+    special_areas: [unreviewed backlog, skills for PR/review, AI review constraints]
+    l5_pointer:
+      summary_path: research/ai-engineer-paris-2026/transcript-summaries.json
+      summary_key: LlgiOCmFG_w
+      youtube_watch: https://www.youtube.com/watch?v=LlgiOCmFG_w
+    segment_ids: [pocock-pr-backlog, pocock-skills-rubric, pocock-new-skills-announce, pocock-ai-constraints, pocock-deep-modules-audience]
+    segments:
+      - id: pocock-pr-backlog
+        disclosure_tier: L4
+        start: "0:00"
+        end: "1:00"
+        quote: "Huge numbers of PRs unreviewed … increased massively because of AI."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: pr-pulse-discipline
+        special_area: unreviewed backlog
+      - id: pocock-skills-rubric
+        disclosure_tier: L4
+        start: "0:45"
+        end: "2:00"
+        quote: "Rubric of my skills … improve PRs and speed at which you can review them."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: pr-pulse-discipline
+        special_area: skills for PR/review
+      - id: pocock-new-skills-announce
+        disclosure_tier: L4
+        start: "1:00"
+        end: "2:30"
+        quote: "New skills to announce to improve PRs and review speed."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: pr-pulse-discipline
+        special_area: skills for PR/review
+      - id: pocock-ai-constraints
+        disclosure_tier: L4
+        start: "0:30"
+        end: "1:30"
+        quote: "AI imposing weird constraints on review process."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: pr-pulse-discipline
+        special_area: AI review constraints
+      - id: pocock-deep-modules-audience
+        disclosure_tier: L4
+        start: "0:00"
+        end: "0:00"
+        quote: "Deep modules / test interfaces — audience theme (digest); no MM:SS bullet yet."
+        quote_label: INFERENCE
+        source: digest.json audience_signals_sample
+        maps_to_skill: pr-pulse-discipline
+        special_area: skills for PR/review
+
+  _mi3alkqy4s:
+    title: "The Death of the Code Review — Laurie Voss, Arize AI"
+    themes: [review bandwidth, agent speed, testing AI]
+    special_areas: [human review lag, eval over review, observability mindset]
+    l5_pointer:
+      summary_path: research/ai-engineer-paris-2026/transcript-summaries.json
+      summary_key: _mi3alkqy4s
+      youtube_watch: https://www.youtube.com/watch?v=_mi3alkqy4s
+    segment_ids: [voss-agent-speed, voss-review-bandwidth, voss-test-ai-framing, voss-arize-npm, voss-pairs-pocock]
+    segments:
+      - id: voss-agent-speed
+        disclosure_tier: L4
+        start: "0:00"
+        end: "1:30"
+        quote: "AI agents dramatically increased how fast developers can produce code."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: eval-over-review
+        special_area: agent speed
+      - id: voss-review-bandwidth
+        disclosure_tier: L4
+        start: "0:45"
+        end: "2:00"
+        quote: "Speed at which humans can review code has not kept pace."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: eval-over-review
+        special_area: human review lag
+      - id: voss-test-ai-framing
+        disclosure_tier: L4
+        start: "0:30"
+        end: "1:30"
+        quote: "Think about AI and how to test it (Arize devrel framing)."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: eval-over-review
+        special_area: eval over review
+      - id: voss-arize-npm
+        disclosure_tier: L4
+        start: "0:15"
+        end: "1:00"
+        quote: "Head of developer relations at Arize AI; formerly co-founded npm, Inc."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: eval-over-review
+        special_area: observability mindset
+      - id: voss-pairs-pocock
+        disclosure_tier: L4
+        start: "0:00"
+        end: "0:45"
+        quote: "Back-to-back with Pocock PR talk — compose supply-side + review/eval gates."
+        quote_label: INFERENCE
+        source: editorial cross-talk pairing
+        maps_to_skill: pr-pulse-discipline
+        special_area: human review lag
+
+  Se8jHLliLXE:
+    title: "State of AI in Software Development — Justin Reock, DX"
+    themes: [DevEx measurement, quarterly AI reports, DORA SPACE DevX]
+    special_areas: [platform data, AI productivity research, org trends]
+    l5_pointer:
+      summary_path: research/ai-engineer-paris-2026/transcript-summaries.json
+      summary_key: Se8jHLliLXE
+      youtube_watch: https://www.youtube.com/watch?v=Se8jHLliLXE
+    segment_ids: [dx-quarterly-reports, dx-frameworks-lineage, dx-data-platform, dx-devex-productivity, dx-catalog-400-orgs]
+    segments:
+      - id: dx-quarterly-reports
+        disclosure_tier: L4
+        start: "0:00"
+        end: "1:30"
+        quote: "Quarterly state-of-AI and AI impact reports from platform research data."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: devex-metrics-grounding
+        special_area: AI productivity research
+      - id: dx-frameworks-lineage
+        disclosure_tier: L4
+        start: "0:45"
+        end: "2:00"
+        quote: "Platform from folks who worked on DORA, SPACE, and DevX frameworks."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: devex-metrics-grounding
+        special_area: DORA SPACE DevX
+      - id: dx-data-platform
+        disclosure_tier: L4
+        start: "1:15"
+        end: "2:30"
+        quote: "Data gathering platform for trends across an organization."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: devex-metrics-grounding
+        special_area: platform data
+      - id: dx-devex-productivity
+        disclosure_tier: L4
+        start: "0:00"
+        end: "1:00"
+        quote: "Developer experience and productivity — AI impact over the last year."
+        quote_label: FACT
+        source: transcript-summaries.json opening
+        maps_to_skill: devex-metrics-grounding
+        special_area: org trends
+      - id: dx-catalog-400-orgs
+        disclosure_tier: L4
+        start: "0:00"
+        end: "0:00"
+        quote: "Catalog/YouTube metadata cites 400+ orgs sample — not verified in talk opening."
+        quote_label: INFERENCE
+        source: catalog.json / YouTube metadata
+        maps_to_skill: devex-metrics-grounding
+        special_area: org trends
+
+# Programme boundary — not a Paris transcript FACT; listed for pr-pulse L4 hook
+programme_segments:
+  - id: pulse-evaluator-firewall
+    disclosure_tier: L4
+    quote: "Pulse evaluator SHIP is firewalled from implementer/adversarial lanes (programme docs/PULSE.md)."
+    quote_label: INFERENCE
+    source: docs/PULSE.md programme
+    maps_to_skill: pr-pulse-discipline
+    special_area: evaluator firewall
+
+# Canonical L3 segment lists (must match Paris SKILL.md References + plugin-manifest skills[].id)
+skills:
+  factory-operator:
+    reference_tier_default: L3
+    segments: [workos-outcome-metrics, workos-sandbox-parity, factory-com-build, warp-lloyd-environment]
+  process-embedded-factory:
+    reference_tier_default: L3
+    segments: [workos-embed-process, workos-tars-webhooks, workos-sandbox-parity]
+  factory-harness:
+    reference_tier_default: L3
+    segments: [warp-scale-maus, warp-self-improve-loop, warp-stale-skills, warp-pareto-routing, warp-lloyd-environment]
+  covariant-eval-loop:
+    reference_tier_default: L3
+    segments: [wb-arya-intro, wb-covariant-triple, wb-trace-flywheel, wb-weave-regression]
+  agent-orchestra:
+    reference_tier_default: L3
+    segments: [holtz-conductor-intro, holtz-orchestra-thesis]
+  pr-pulse-discipline:
+    reference_tier_default: L3
+    segments: [pocock-pr-backlog, pocock-skills-rubric, pulse-evaluator-firewall]
+  eval-over-review:
+    reference_tier_default: L3
+    segments: [voss-agent-speed, voss-review-bandwidth, voss-test-ai-framing]
+  devex-metrics-grounding:
+    reference_tier_default: L3
+    segments: [dx-quarterly-reports, dx-frameworks-lineage, dx-catalog-400-orgs]

@@ -1,84 +1,57 @@
 ---
 name: agent-orchestra
-description: Orchestrate parallel coding agents — conductor score, session limits, merge-back, not factory assembly-line only. Auto-apply when running multiple concurrent agents, Conductor-style desktop control, long-running parallel tasks, or swarm without coordination plan.
+description: Orchestrate parallel coding agents with a conductor score — not an unbounded PR assembly line. Triggers — multiple concurrent agents, Conductor-style control, long-running parallel tasks, agent swarm coordination.
 ---
 
 # Agent orchestra
 
-**Metaphor** (Charlie Holtz, Conductor @ `TRfzFJCJ7ZE`): many agents in parallel need a **score** — who plays what, when to stop, how to combine — not an unbounded factory line of PRs. Essential for **long-running** programs where several sessions touch the same epic.
+Parallel long-running agents need a **score**: who plays what, when to stop, how to merge — not unlimited overlapping PRs on one epic.
 
 ## Progressive disclosure
 
-**Layer 1:** Parallel long-running agents need a **conductor + score**, not an unbounded factory line of overlapping PRs.
+**Layer 1:** Use a **conductor + score** before starting a second agent on related work.
 
-**Layer 2 moves:** Write score · conductor role · session caps · shared context bundle · merge-back cadence · stop conditions · tracker embed.
+**Layer 2 moves:** Write score · session caps · shared context · merge-back · stop conditions.
 
-**Layer 3 — transcript refs**
+**Layer 3:** Segment ids in **References**.
 
-| video_id | MM:SS | Label | Snippet |
-|----------|-------|-------|---------|
-| `TRfzFJCJ7ZE` | 0:00 | FACT | Conductor desktop app for managing agents (speaker intro) |
-| `TRfzFJCJ7ZE` | — | CONJECTURE | Orchestra sections/score beat factory assembly-line (editorial thesis; no MM:SS in digest) |
-
-## Unified system
-
-**OS stage:** Multi-session scale. **Upstream:** [`covariant-eval-loop`](../covariant-eval-loop/SKILL.md) · **Downstream:** [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md). **Programme:** [`interface-first-context`](../interface-first-context/SKILL.md). **Talk:** `TRfzFJCJ7ZE`.
+**Unified system:** Multi-session scale. **Upstream:** [`covariant-eval-loop`](../covariant-eval-loop/SKILL.md) · **Downstream:** [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md). Programme: [`interface-first-context`](../interface-first-context/SKILL.md).
 
 ## When to use
 
-- **>1 agent** active on related work (features, migrations, refactors).
-- **Long-running** sessions (hours/days) that might overlap or conflict.
-- Operator drowning in agent tabs / cloud run URLs.
+- >1 agent on related work; hours/days sessions that may conflict; operator drowning in run URLs.
 
 ## When NOT to use
 
-- Single agent, single PR, single issue — overhead not worth it.
-- Fully serial batch jobs with no shared state — use queue instead.
+- Single agent / single PR; fully serial batch jobs — use a queue.
 
-## Core moves (7)
+## Core moves
 
-1. **Score** — Written plan: tracks (Agent A = API, B = tests, C = docs) with **dependencies** and merge order.
-2. **Conductor role** — Human or dedicated meta-agent assigns tracks, **does not** implement everything.
-3. **Session caps** — Max parallel agents per repo/epic; excess waits (avoid git/CI thundering herd).
-4. **Shared context bundle** — Issue ID, architecture notes, [`interface-first-context`](../interface-first-context/SKILL.md) L1 slice, eval gates — same pointer for all players.
-5. **Merge-back cadence** — Rebase/integrate on schedule; one **integration owner** resolves conflicts.
-6. **Stop conditions** — Per track: done = CI green + eval pass + review lane; orchestra stops when score complete.
-7. **Embed alignment** — Progress visible in tracker ([`process-embedded-factory`](../process-embedded-factory/SKILL.md)).
-
-## Output template
-
-```markdown
-# Orchestra score — {epic}
-
-## Tracks
-| Track | Agent/session | Scope | Blocked by | Done when |
-|-------|---------------|-------|------------|-----------|
-| A | ... | ... | — | PR merged |
-
-## Integration
-- Owner:
-- Merge window:
-- Conflict policy:
-
-## Forbidden overlap
-- Files/dirs exclusively owned by track ...
-```
+1. **Score** — Tracks (A=API, B=tests…) with dependencies and merge order (`holtz-orchestra-thesis` — editorial).
+2. **Conductor** — Human or meta-agent assigns tracks; does not implement everything (`holtz-conductor-intro`).
+3. **Session caps** — Max parallel agents per repo/epic; excess waits.
+4. **Shared context bundle** — Issue ID, architecture notes, interface L1 slice, eval gates — same pointer for all players.
+5. **Merge-back + stops** — Integration owner on cadence; done = CI + eval + review lane; tracker embed per [`process-embedded-factory`](../process-embedded-factory/SKILL.md).
 
 ## Quality gate
 
-- [ ] No two agents **default-edit same paths** without lock.
-- [ ] **Score exists** before second agent starts.
+- [ ] Score exists before second agent starts.
+- [ ] No two agents default-edit same paths without lock.
 - [ ] Integration owner named.
-- [ ] Stop conditions include **eval/review**, not “agent said done.”
+- [ ] Stop conditions include eval/review, not “agent said done.”
+- [ ] Progress visible in system of record.
 
 ## Failure modes
 
-| Symptom | Fix |
-|---------|-----|
-| Duplicate PRs same fix | Conductor assigns exclusive tracks |
-| Endless parallel drift | Scheduled merge-back |
-| Lost sessions | Embed + session registry in tracker |
+| Symptom | Fix | Segment |
+|---------|-----|---------|
+| Duplicate PRs | Exclusive tracks | `holtz-orchestra-thesis` |
+| Parallel drift | Scheduled merge-back | `holtz-conductor-intro` |
+| Lost sessions | Tracker + registry | `workos-tars-webhooks` |
+| Review pile | [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md) | `pocock-pr-backlog` |
 
-## Provenance
+## References
 
-- Charlie Holtz — *Orchestras, Not Factories* (`TRfzFJCJ7ZE`)
+- Index: `research/ai-engineer-paris-2026/references/index.yaml`
+- L4: `holtz-conductor-intro`, `holtz-orchestra-thesis`
+- L5: `transcript-summaries.json#TRfzFJCJ7ZE`

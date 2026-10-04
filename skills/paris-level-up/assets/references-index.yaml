@@ -1,0 +1,29 @@
+# Slim portable copy — subset of research/ai-engineer-paris-2026/references/index.yaml
+schema_version: paris-references.v1-slim
+source_of_truth: research/ai-engineer-paris-2026/references/index.yaml
+l5_pattern: "{repo}/research/ai-engineer-paris-2026/transcript-summaries.json#${video_id}"
+
+segments:
+  workos-outcome-metrics: { video_id: HvboD89DyQ8, summary: Outcome metrics, not PR/code volume. }
+  workos-sandbox-parity: { video_id: HvboD89DyQ8, summary: Sandbox alone ≠ factory vs laptop agent. }
+  workos-embed-process: { video_id: HvboD89DyQ8, summary: Embed eng process, not code-only bots. }
+  workos-tars-webhooks: { video_id: HvboD89DyQ8, summary: TARS + Slack/Linear/GitHub webhooks. }
+  factory-com-build: { video_id: vGCJ7diEtrw, summary: Define factory; build vs buy; cost. }
+  warp-lloyd-environment: { video_id: tUPPVhBBcoM, summary: Agentic terminal / OSS dev environment. }
+  warp-stale-skills: { video_id: TN3mj92oZ8I, summary: Skills go stale without refresh. }
+  warp-pareto-routing: { video_id: TN3mj92oZ8I, summary: Pareto model routing defaults. }
+  wb-covariant-triple: { video_id: XyV6bSMyq-I, summary: Bench + harness + config covariant. }
+  holtz-conductor-intro: { video_id: TRfzFJCJ7ZE, summary: Conductor desktop for agents. }
+  pocock-pr-backlog: { video_id: LlgiOCmFG_w, summary: Unreviewed PR pile worsened with AI. }
+  voss-review-bandwidth: { video_id: _mi3alkqy4s, summary: Review bandwidth lag vs agent speed. }
+  dx-quarterly-reports: { video_id: Se8jHLliLXE, summary: Quarterly platform research reports. }
+
+skills:
+  factory-operator: [workos-outcome-metrics, workos-sandbox-parity, factory-com-build, warp-lloyd-environment]
+  process-embedded-factory: [workos-embed-process, workos-tars-webhooks, workos-sandbox-parity]
+  factory-harness: [warp-stale-skills, warp-pareto-routing, warp-lloyd-environment]
+  covariant-eval-loop: [wb-covariant-triple]
+  agent-orchestra: [holtz-conductor-intro]
+  pr-pulse-discipline: [pocock-pr-backlog, pulse-evaluator-firewall]
+  eval-over-review: [voss-review-bandwidth]
+  devex-metrics-grounding: [dx-quarterly-reports]

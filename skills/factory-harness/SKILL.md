@@ -1,70 +1,57 @@
 ---
 name: factory-harness
-description: Build and maintain agent factory harnesses — versioned skills, stale-skill refresh, Pareto model routing, cloud team platforms. Auto-apply when designing Warp-style harnesses, skill libraries for factories, model routers, or self-improving dev environments.
+description: Maintain factory harnesses — versioned skills, stale-skill refresh, Pareto routing, team platforms. Triggers — Warp-style harness, skill libraries for factories, model routers, self-improving dev environments.
 ---
 
 # Factory harness
 
-The **harness** is everything that wraps the model: tools, skills, routing, sandboxes, telemetry, and refresh jobs. Warp (Gupta/Lloyd) treats the harness as a **living product** (~1M MAU IDE → cloud team platform), not a frozen prompt bundle.
+The harness wraps the model: tools, skills, routing, sandboxes, telemetry, refresh jobs. Treat it as a **living product**, not a frozen prompt bundle.
 
 ## Progressive disclosure
 
-**Layer 1:** Treat harness + **skill library** as a product: version, route models, **refresh stale skills**, hook self-improvement.
+**Layer 1:** Version the harness; **refresh stale skills**; route models; hook self-improvement.
 
-**Layer 2 moves:** Harness inventory · skill as asset · stale-skill refresh · self-improvement hook · Pareto routing · CI parity · handoff to eval.
+**Layer 2 moves:** Inventory · skill assets · refresh · routing · eval handoff.
 
-**Layer 3 — transcript refs**
+**Layer 3:** Segment ids in **References**.
 
-| video_id | MM:SS | Label | Snippet |
-|----------|-------|-------|---------|
-| `TN3mj92oZ8I` | 0:22 | FACT | ~1M active users on Warp agentic dev environment |
-| `TN3mj92oZ8I` | 2:28 | FACT | Factory skills get stale over time without refresh |
-| `TN3mj92oZ8I` | 1:10 | FACT | Self-improvement loop can be automatic |
-| `TN3mj92oZ8I` | 9:29 | FACT | Model routing: Pareto-efficient defaults vs pinning one model |
-| `tUPPVhBBcoM` | 0:00 | FACT | Open-source agentic environment; agents first-class in terminal |
-
-## Unified system
-
-**OS stage:** Platform loop (harness). **Upstream:** [`process-embedded-factory`](../process-embedded-factory/SKILL.md) · **Downstream:** [`covariant-eval-loop`](../covariant-eval-loop/SKILL.md). **Talks:** Gupta `TN3mj92oZ8I`, Lloyd `tUPPVhBBcoM`.
+**Unified system:** Platform loop. **Upstream:** [`process-embedded-factory`](../process-embedded-factory/SKILL.md) · **Downstream:** [`covariant-eval-loop`](../covariant-eval-loop/SKILL.md).
 
 ## When to use
 
-- Building **coding factories** for multiple repos or teams.
-- Maintaining a **skill library** used by long-running agents.
-- Choosing **default models** vs user-pinned models at scale.
+- Multi-repo/team coding factories; shared skill libraries for long-running agents; default vs pinned models at scale.
 
 ## When NOT to use
 
-- One-shot chat without reusable skill assets.
-- Covariant bench design — pair with [`covariant-eval-loop`](../covariant-eval-loop/SKILL.md).
+- One-shot chat without reusable skills; bench design → [`covariant-eval-loop`](../covariant-eval-loop/SKILL.md).
 
-## Core moves (7)
+## Core moves
 
-1. **Harness inventory** — Tools, MCP servers, skills, sandbox shape, secrets policy — versioned together.
-2. **Skill as factory asset** — Skills are **review rubrics + procedures** (Pocock alignment), not one-line prompts; store in repo with owners.
-3. **Stale-skill refresh** — Schedule or event-driven revalidation (bug-repro skills, upgrade guides) — skills **decay** (Warp @ 2:28, `TN3mj92oZ8I`).
-4. **Self-improvement hook** — When a run fails, capture trace → task to update skill or tool config (automatic loop possible @ 1:10 same talk).
-5. **Model routing** — Prefer **Pareto defaults** (quality/cost/latency) over everyone pinning one model (@ 9:29); document override policy.
-6. **Environment parity** — Dev container / cloud sandbox matches CI; harness changes trigger **`make verify`** or project equivalent before fleet rollout.
-7. **Handoff to eval** — Any harness change ships with bench delta ([`covariant-eval-loop`](../covariant-eval-loop/SKILL.md), [`systems-intake`](../systems-intake/SKILL.md)).
+1. **Harness inventory** — Tools, MCP, skills, sandbox, secrets — versioned together.
+2. **Skills as assets** — Review rubrics + procedures with owners (align [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md)).
+3. **Stale-skill refresh** — Calendar or failure-driven revalidation (`warp-stale-skills`, `warp-self-improve-loop`).
+4. **Pareto routing** — Quality/cost/latency defaults; document overrides (`warp-pareto-routing`).
+5. **Covariant handoff** — Harness change ships with bench delta ([`covariant-eval-loop`](../covariant-eval-loop/SKILL.md)); CI parity before fleet rollout.
 
 ## Quality gate
 
-- [ ] **Skill catalog** with owner + last-validated date.
-- [ ] **Refresh job** defined (calendar or “after N failures”).
-- [ ] **Routing table** documented with default and escape hatches.
-- [ ] Harness version string exposed to logs for incident debug.
-- [ ] No silent global prompt edits without changelog entry.
+- [ ] Skill catalog with owner + last-validated date.
+- [ ] Refresh job defined (calendar or after N failures).
+- [ ] Routing table with defaults and escape hatches.
+- [ ] Harness version in logs for incidents.
+- [ ] No silent global prompt edits without changelog.
 
 ## Failure modes
 
-| Symptom | Fix | Paris cite |
-|---------|-----|------------|
-| Bug-repro skill wrong after upgrade | Refresh loop + regression task | Warp @ 2:28 |
-| Cost explosion | Routing defaults + caps | Warp @ 9:29 |
-| “Works on my machine” harness | Sandbox parity + version pin | Warp cloud platform |
+| Symptom | Fix | Segment |
+|---------|-----|---------|
+| Skills wrong after upgrade | Refresh + regression | `warp-stale-skills` |
+| Cost explosion | Routing defaults + caps | `warp-pareto-routing` |
+| Works locally only | Sandbox parity + pin | `warp-lloyd-environment` |
+| Bench drift | Same PR as harness | `wb-covariant-triple` |
 
-## Provenance
+## References
 
-- Suraj Gupta — *Building Self-Improving Agent Software Factories* (`TN3mj92oZ8I`)
-- Zach Lloyd — *Self-Improving Software Factories* (`tUPPVhBBcoM`)
+- Index: `research/ai-engineer-paris-2026/references/index.yaml`
+- L4: `warp-scale-maus`, `warp-self-improve-loop`, `warp-stale-skills`, `warp-pareto-routing`, `warp-lloyd-environment`
+- L5: `transcript-summaries.json#TN3mj92oZ8I`, `#tUPPVhBBcoM`

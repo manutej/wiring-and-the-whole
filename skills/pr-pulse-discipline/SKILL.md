@@ -1,67 +1,57 @@
 ---
 name: pr-pulse-discipline
-description: Fix the PR bottleneck — Agent Skills as review rubric, small diffs, separated implement/adversarial/evaluator lanes. Auto-apply when agent output floods PRs, designing skills for review, pulse workflows, or Pocock-style process brakes.
+description: Fix the PR bottleneck — skills as review rubric, small diffs, separated implement/adversarial/evaluator lanes. Triggers — agent PR flood, skills for review, pulse workflows, Pocock-style process brakes.
 ---
 
 # PR & pulse discipline
 
-Matt Pocock’s frame (`LlgiOCmFG_w`): AI **increased PR supply** while human review bandwidth is flat — the bottleneck is **review and process**, not raw generation. **Skills** are durable rubrics for authoring and reviewing; this repo’s **pulse** adds firewalled adversarial + evaluator lanes ([`docs/PULSE.md`](../../docs/PULSE.md)).
+Agent speed increased PR supply while review bandwidth is flat. **Skills** are durable rubrics; **pulse** adds firewalled adversarial + evaluator lanes ([`docs/PULSE.md`](../../docs/PULSE.md)).
 
 ## Progressive disclosure
 
-**Layer 1:** Agent speed needs **process brakes** — small PRs, skills as review rubric, separated implement/adversarial/evaluator lanes.
+**Layer 1:** **Process brakes** — small PRs, skill rubrics, separated lanes.
 
-**Layer 2 moves:** Small PR · skill rubric · risk tiers · implementer brief · adversarial lane · automated gate · evaluator SHIP.
+**Layer 2 moves:** Small PR · skill rubric · risk tiers · adversarial · automated gate · evaluator SHIP.
 
-**Layer 3 — transcript refs**
+**Layer 3:** Segment ids in **References**.
 
-| video_id | MM:SS | Label | Snippet |
-|----------|-------|-------|---------|
-| `LlgiOCmFG_w` | 0:00 | FACT | Huge numbers of unreviewed PRs; strain increased with AI |
-| `LlgiOCmFG_w` | 0:00 | FACT | Uses rubric of skills for PR/review speed |
-| `LlgiOCmFG_w` | — | CONJECTURE | Deep modules, review-agent split (audience themes / editorial; not digest MM:SS) |
-| — | — | CONJECTURE | Pulse evaluator firewall — programme [`docs/PULSE.md`](../../docs/PULSE.md), not Paris transcript |
-
-## Unified system
-
-**OS stage:** Ship gates (PR/pulse). **Upstream:** [`agent-orchestra`](../agent-orchestra/SKILL.md) · **Downstream:** [`eval-over-review`](../eval-over-review/SKILL.md). **Talk:** `LlgiOCmFG_w`.
+**Unified system:** Ship gates. **Upstream:** [`agent-orchestra`](../agent-orchestra/SKILL.md) · **Downstream:** [`eval-over-review`](../eval-over-review/SKILL.md).
 
 ## When to use
 
-- Agents opening **many PRs** or giant diffs.
-- Minting **skills** meant for review/authoring (not only codegen).
-- Any **pulse** on programme or factory repos.
+- Many agent PRs or giant diffs; skills for review/authoring; any pulse on factory or programme repos.
 
 ## When NOT to use
 
-- No VCS / no PR culture — adapt to patch queues but keep separation of roles.
-- Replacing [`eval-over-review`](../eval-over-review/SKILL.md) — use both.
+- No VCS — adapt to patch queues but keep role separation; does not replace [`eval-over-review`](../eval-over-review/SKILL.md).
 
-## Core moves (7)
+## Core moves
 
-1. **Small PR rule** — One primary deliverable per pulse: one skill adoption, one wiringmap slice, one harness bump ([`docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md`](../../docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md)).
-2. **Skill as rubric** — Review skill lists moves, checklists, forbidden merges — reviewer runs skill, not vibe scan.
-3. **Risk tiers** — Blast radius labels (docs-only vs harness vs prod config); higher tier → more human eyes.
-4. **Implementer brief** — Scope in/out, commands, handoff; implementer **must not** read evaluator rubric same pulse.
-5. **Adversarial lane** — Separate subagent/person lists gaps before merge.
-6. **Automated gate** — `make verify`, `make verify-research` (if Paris touched), `make pulse-eval` when wiring/pack/L1 touched.
-7. **Evaluator SHIP** — Merge blocked until firewalled evaluator signs ([`docs/roadmap/CONSENSUS-FORWARD.md`](../../docs/roadmap/CONSENSUS-FORWARD.md)).
+1. **Small PR** — One primary deliverable per pulse ([`docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md`](../../docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md)).
+2. **Skill rubric** — Reviewer runs skill checklist, not vibe scan (`pocock-skills-rubric`).
+3. **Risk tiers** — Docs vs harness vs prod config → more human eyes on high tier.
+4. **Lanes** — Implementer brief; adversarial gaps; implementer must not read evaluator rubric same pulse (`pulse-evaluator-firewall`).
+5. **Gates** — `make verify`, `make verify-research` if Paris touched, `make pulse-eval` when wiring/pack/L1 touched; evaluator SHIP before merge.
 
 ## Quality gate
 
-- [ ] PR description states **one primary intent**.
-- [ ] Reviewer can point to **skill or brief** used.
+- [ ] PR description states one primary intent.
+- [ ] Reviewer cites skill or brief path.
 - [ ] Adversarial notes attached for pulse work.
-- [ ] CI + eval commands run and referenced in PR.
+- [ ] CI + eval commands run and referenced.
+- [ ] No self-graded LGTM on pulse work.
 
 ## Failure modes
 
-| Symptom | Fix | Paris cite |
-|---------|-----|------------|
-| PR pile, no reviews | Tier + skill-based review; reduce PR size | Pocock |
-| Self-graded “LGTM” | Evaluator firewall | Programme pulse |
-| Skills unused | Bind review checklist to skill file path | Pocock |
+| Symptom | Fix | Segment |
+|---------|-----|---------|
+| PR pile | Smaller PRs + rubric | `pocock-pr-backlog` |
+| Rubric ignored | Bind review to skill path | `pocock-skills-rubric` |
+| Self-graded ship | Evaluator firewall | `pulse-evaluator-firewall` |
+| Missing research gate | verify-research | `workos-outcome-metrics` |
 
-## Provenance
+## References
 
-- Matt Pocock — *Fixing the PR Bottleneck* (`LlgiOCmFG_w`)
+- Index: `research/ai-engineer-paris-2026/references/index.yaml`
+- L4: `pocock-pr-backlog`, `pocock-skills-rubric`, `pulse-evaluator-firewall`
+- L5: `transcript-summaries.json#LlgiOCmFG_w`

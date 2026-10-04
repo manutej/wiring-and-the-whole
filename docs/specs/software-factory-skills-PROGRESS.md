@@ -20,7 +20,8 @@ Governance: [`docs/research/CORPUS-CHARTER.md`](../research/CORPUS-CHARTER.md) �
 | 2026-10-02 | Consensus forward plan | [`docs/roadmap/CONSENSUS-FORWARD.md`](../roadmap/CONSENSUS-FORWARD.md), charter, yaml rows |
 | 2026-10-04 | **8 factory skills shipped** | [`4db24e8`](https://github.com/manutej/wiring-and-the-whole/commit/4db24e8) — `skills/paris-level-up/README.md` + 8× `SKILL.md` |
 | 2026-10-04 | **Spec v0 + progressive disclosure** | [`35b6c4c`](https://github.com/manutej/wiring-and-the-whole/commit/35b6c4c) — spec v0, L1/L2/L3, consensus ITERATION 1–3, manifest stub |
-| 2026-10-04 | **Spec v1 harmonization** | This commit — v1 spec, PROGRESS doc, version alignment (manifest `1.0.0`) |
+| 2026-10-04 | **Spec v1 harmonization** | v1 spec, PROGRESS doc, version alignment (manifest `1.0.0`) |
+| 2026-10-04 | **Portable plugin v1** | Lean 8× skills (~80 lines), `references/index.yaml`, assets/, manifest `1.1.0`, `verify_references_index.sh` |
 
 Ingest loop: corpus **frozen at 9 talks** since TubeAlfred credits exhausted ([`digest.json`](../../research/ai-engineer-paris-2026/digest.json) `last_ingest_status`: `skipped_insufficient_credits`).
 
@@ -69,7 +70,7 @@ Triggers in manifest match spec § Trigger model (10 phrases). Programme boundar
 |--------------|------------------------|
 | Layer 1 — One-liner | `**Layer 1:**` |
 | Layer 2 — Moves | `**Layer 2 moves:**` |
-| Layer 3 — Transcript refs | `**Layer 3 — transcript refs**` + table |
+| Layer 3 — Reference ids | `**Layer 3:**` → `## References` L4 segment ids |
 | Unified system | `**Unified system**` under `## Progressive disclosure` |
 
 Consensus write-up: [`software-factory-skills-consensus/ITERATION-3.md`](./software-factory-skills-consensus/ITERATION-3.md) (frozen at SHIP; v1 does not reopen scores).
@@ -79,15 +80,18 @@ Consensus write-up: [`software-factory-skills-consensus/ITERATION-3.md`](./softw
 ### Done (v1 scope)
 
 - [x] 9-talk corpus ingested with digest + transcript word counts
-- [x] 8 factory skills + curriculum README + ascii OS map
-- [x] Progressive disclosure L1/L2/L3 + unified system on all 8 skills
+- [x] 8 factory skills + curriculum README + portable plugin README/assets
+- [x] Lean progressive disclosure L1/L2/L3 (segment ids) + unified system on all 8 skills
+- [x] `research/ai-engineer-paris-2026/references/index.yaml` + slim `assets/references-index.yaml`
+- [x] `scripts/verify_references_index.sh` wired into `make verify-research`
 - [x] 3-iteration faithfulness consensus (advocate / evaluator / operator)
 - [x] Implementable spec (v0 → **v1**), redirect stub for old v0 path
 - [x] `plugin-manifest.json` stub (name, skills, triggers, programme boundary)
 - [x] Registry adoption rows for all talks + spec
 - [x] `make verify-research` gate on branch (with ingest degraded warn when credits 0)
+- [x] **Reference index** — L4 segments for 9 talks + programme `pulse-evaluator-firewall`; [`references/README.md`](../../research/ai-engineer-paris-2026/references/README.md)
 
-### Pending (out of v1 / spec P5)
+### Pending (out of v1 / spec P6)
 
 - [ ] **TubeAlfred credits** — batch ingest top IDs from `digest.json` → `next_ingest_priority` (e.g. `buHC7bQE1X4`, `YIVkERhy8xo`, …)
 - [ ] **Catalog-only sessions** — ~21 catalog entries without transcripts; no FACT rows until ingested

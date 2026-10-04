@@ -1,73 +1,58 @@
 ---
 name: factory-operator
-description: Define and operate a software factory — outcome metrics, build vs buy, skepticism toward sandbox-only stacks. Auto-apply when user asks software factory, coding factory, agent factory, Ramp/Inspects-style SDLC, or whether their setup is a real factory vs laptop agents.
+description: Operate a software factory on outcome metrics and honest build/buy — not sandbox-only agents. Triggers — software factory, coding factory, agent factory, build vs buy factory, Ramp/Inspects SDLC, real factory vs laptop agents.
 ---
 
 # Factory operator
 
-**Operating definition** for agentic SDLC systems: a factory is an **organization-scale loop** from intent → integrated delivery, not “model + sandbox.” Synthesizes WorkOS skepticism, Factory.com builder reality, and Warp’s environment-centric view (Paris 2026 ingested talks).
+Organization-scale loop from intent → integrated delivery. Synthesizes WorkOS skepticism, Factory.com builder reality, Warp environment-centric view (Paris 2026).
 
 ## Progressive disclosure
 
-**Layer 1:** A software factory is judged by **shipped outcomes** and **embedded eng process**, not sandbox + model router alone.
+**Layer 1:** Judge a factory by **shipped outcomes** and **embedded eng process**, not sandbox + model router alone.
 
-**Layer 2 moves:** Name the loop · outcome metric · sandbox honesty test · build/buy · environment claim · blast-radius tiers · programme charter boundary.
+**Layer 2 moves:** Outcome metric · sandbox honesty · build/buy · environment surface · blast-radius tiers.
 
-**Layer 3 — transcript refs**
+**Layer 3:** L4 segment ids in **References** (not quoted here).
 
-| video_id | MM:SS | Label | Snippet |
-|----------|-------|-------|---------|
-| `HvboD89DyQ8` | 2:36 | FACT | Success metrics outcome-based (ship features faster), not PR/code volume |
-| `HvboD89DyQ8` | 3:34 | FACT | Sandbox factory indistinguishable from laptop Claude Code |
-| `vGCJ7diEtrw` | 0:00 | FACT | Few people building a factory; define it, build vs buy, cost (Factory.com) |
-| `tUPPVhBBcoM` | 0:00 | FACT | Open-source agentic dev environment; terminal with agents built in |
-
-## Unified system
-
-**OS stage:** Define & justify (entry). **Upstream:** — · **Downstream:** [`process-embedded-factory`](../process-embedded-factory/SKILL.md), [`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md). **Talks:** WorkOS skeptic, Factory.com builder, Warp Lloyd environment. Map: [`docs/specs/software-factory-skill-plugin.v1.md`](../../docs/specs/software-factory-skill-plugin.v1.md).
+**Unified system:** Define & justify (entry). **Downstream:** [`process-embedded-factory`](../process-embedded-factory/SKILL.md), [`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md). OS map: [`paris-level-up/assets/factory-os-diagram.mmd`](../paris-level-up/assets/factory-os-diagram.mmd).
 
 ## When to use
 
-- Deciding **build vs buy** for an internal coding factory.
-- Auditing a vendor or internal pitch: “Is this just Claude Code in a VM?”
-- Setting **success metrics** before scaling agent spend.
-- Scoping a **long-running agent** program (weeks, many repos) with executive reporting.
+- Build vs buy for an internal coding factory; executive metrics before scaling agent spend.
+- Auditing “Claude Code in a VM” pitches; scoping **long-running** multi-repo programs.
 
 ## When NOT to use
 
-- Single-session codegen or one-off scripts — use IDE agents only.
-- Proving formal compression or wiring claims — use programme T1–T3 skills.
-- Replacing [`process-embedded-factory`](../process-embedded-factory/SKILL.md) integration design.
+- One-off scripts; programme T1–T3 formal claims; integration design → [`process-embedded-factory`](../process-embedded-factory/SKILL.md).
 
-## Core moves (7)
+## Core moves
 
-1. **Name the loop** — Intake → plan → implement → verify → ship → observe. Which stages are automated vs human?
-2. **Outcome metric** — At least one: time-to-feature, incident rate, migration completion, customer-visible ship — **not** PR count or LOC (WorkOS @ 2:36, `HvboD89DyQ8`).
-3. **Sandbox honesty test** — If removing Slack/Linear/Jira/webhooks leaves the same experience as a local agent, label **tier-0 demo**, not factory (WorkOS @ 3:34).
-4. **Build vs buy matrix** — Enterprise need (EY/Adobe-style) vs team size; cost of harness + eval + integrations (Factory.com framing, `vGCJ7diEtrw`).
-5. **Environment claim** — Terminal/IDE/cloud agent surface (Warp, `tUPPVhBBcoM`) vs headless batch only; document where humans steer.
-6. **Blast-radius tiers** — Map changes to Pocock-style risk tiers before widening autonomy (pairs with [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md)).
-7. **Charter boundary** — Conference narratives do not override programme MUST-PROVE; factory work here is **process design**, not paper claims.
+1. **Outcome metric** — Time-to-feature, incidents, customer-visible ship — **not** PR count or LOC (`workos-outcome-metrics`).
+2. **Sandbox honesty** — If Slack/Linear/webhooks add nothing vs local agent, label tier-0 demo (`workos-sandbox-parity`).
+3. **Build vs buy** — Cost harness, eval, integrations for your enterprise shape (`factory-com-build`).
+4. **Environment surface** — Where humans steer: terminal/IDE/cloud vs headless only (`warp-lloyd-environment`).
+5. **Blast-radius tiers** — Before widening autonomy, align with [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md); factory work ≠ programme MUST-PROVE.
 
 ## Quality gate
 
-- [ ] Written **one-sentence factory definition** for your org.
-- [ ] **≥1 outcome metric** with measurement source (DX platform, incidents, product analytics).
-- [ ] Explicit **“not a factory yet”** list (e.g. no ticket sync, no eval gate).
-- [ ] Integration map started (see process-embedded skill) or consciously deferred with reason.
+- [ ] One-sentence factory definition for your org.
+- [ ] ≥1 outcome metric with a measurement source.
+- [ ] Explicit “not a factory yet” list (no ticket sync, no eval gate, etc.).
+- [ ] Integration map started or deferred with reason.
 - [ ] No success criterion that is only “more agent PRs merged.”
 
 ## Failure modes
 
-| Symptom | Fix | Paris cite |
-|---------|-----|------------|
-| Executives see demos, not ships | Tie roadmap to outcome metric + embedded process | WorkOS |
-| “Factory” is model router only | Add workflow embed + progress tracking | WorkOS @ 3:56 |
-| Buy vs build undecided | Cost harness, eval, integrations, refresh loops | Factory.com |
-| Agents without product surface | Pick IDE/terminal/cloud home for long runs | Warp Lloyd |
+| Symptom | Fix | Segment |
+|---------|-----|---------|
+| Demos, not ships | Outcome metric + embed | `workos-outcome-metrics` |
+| Model router only | Workflow embed | `workos-embed-process` |
+| Buy vs build stuck | Price harness + eval | `factory-com-build` |
+| No product surface | Pick IDE/terminal home | `warp-lloyd-environment` |
 
-## Provenance
+## References
 
-- Ryan Cooke — *No, That’s Not a Software Factory* (`HvboD89DyQ8`)
-- Tereza Tížková — *What It Actually Takes to Build a Software Factory* (`vGCJ7diEtrw`)
-- Zach Lloyd — *Self-Improving Software Factories* (`tUPPVhBBcoM`)
+- Index: `research/ai-engineer-paris-2026/references/index.yaml` (portable: [`assets/references-index.yaml`](../paris-level-up/assets/references-index.yaml))
+- L4: `workos-outcome-metrics`, `workos-sandbox-parity`, `factory-com-build`, `warp-lloyd-environment`
+- L5: `research/ai-engineer-paris-2026/transcript-summaries.json#HvboD89DyQ8`, `#vGCJ7diEtrw`, `#tUPPVhBBcoM`

@@ -1,0 +1,23 @@
+flowchart LR
+  subgraph define["Define & justify"]
+    FO[factory-operator]
+    DM[devex-metrics-grounding]
+  end
+  subgraph embed["Embed in work"]
+    PE[process-embedded-factory]
+  end
+  subgraph platform["Platform loop"]
+    FH[factory-harness]
+    CE[covariant-eval-loop]
+  end
+  subgraph scale["Multi-session"]
+    AO[agent-orchestra]
+  end
+  subgraph ship["Ship gates"]
+    PR[pr-pulse-discipline]
+    EV[eval-over-review]
+  end
+
+  FO --> PE --> FH --> CE --> AO --> PR --> EV
+  DM -.-> FO
+  DM -.-> EV

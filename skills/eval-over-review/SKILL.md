@@ -1,66 +1,57 @@
 ---
 name: eval-over-review
-description: Replace ritual code review with eval discipline — observability, tests-as-gates, AI change measurement. Auto-apply when code review is bottleneck, Arize-style LLM evals, or agent-generated code quality gates.
+description: Shift from ritual code review to eval discipline — observability, tests-as-gates, measured AI change. Triggers — review bottleneck, Arize-style LLM evals, agent-generated code quality gates.
 ---
 
 # Eval over review
 
-Laurie Voss (`_mi3alkqy4s`): agent speed broke the assumption that **human diff review** scales. The replacement is not “no humans” but **measurement** — evals, observability, and targeted human judgment on **high-risk** deltas (pairs with Pocock PR discipline and W&B covariant loops).
+Human diff review does not scale with agent speed. Replace theater with **measurement** — evals, observability — and reserve humans for **high-risk** judgment (pairs with PR discipline and covariant loops).
 
 ## Progressive disclosure
 
-**Layer 1:** When agents outpace human review, shift to **evals + observability** and reserve humans for high-risk judgment.
+**Layer 1:** **Evals + observability** first; humans on high-risk gaps.
 
-**Layer 2 moves:** Review map · agent eval suite · observability · human-on-risk · small PRs · covariant ship · DevEx feedback.
+**Layer 2 moves:** Review map · agent eval suite · observability · human-on-risk · covariant ship.
 
-**Layer 3 — transcript refs**
+**Layer 3:** Segment ids in **References**.
 
-| video_id | MM:SS | Label | Snippet |
-|----------|-------|-------|---------|
-| `_mi3alkqy4s` | 0:00 | FACT | AI agents dramatically increased how fast developers produce code |
-| `_mi3alkqy4s` | 0:00 | FACT | Speed at which humans can review code has not kept pace |
-| `_mi3alkqy4s` | 0:00 | FACT | Speaker frames problem: how to test AI (Arize devrel) |
-
-## Unified system
-
-**OS stage:** Ship gates (measurement). **Upstream:** [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md) · **Downstream:** [`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md). **Talk:** `_mi3alkqy4s`. Pairs with Pocock/W&B — **CONJECTURE** composition, not single talk.
+**Unified system:** Ship gates (measurement). **Upstream:** [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md) · **Downstream:** [`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md). Cross-talk composition with Pocock/W&B is **CONJECTURE** unless cited.
 
 ## When to use
 
-- **Agent-generated** or **agent-assisted** code paths.
-- Designing **quality gates** for factories and long-running agents.
-- Moving from “LGTM culture” to **artifact-backed** ship criteria.
+- Agent-generated paths; quality gates for factories; artifact-backed ship criteria vs LGTM culture.
 
 ## When NOT to use
 
-- Sole gate with zero automated checks — add evals first.
-- Claiming eval proves formal correctness — label demonstrated scope.
+- Zero automated checks — add evals first; eval ≠ formal correctness without scope label.
 
-## Core moves (7)
+## Core moves
 
-1. **Review map** — List what review used to catch; mark each **automatable** (test, lint, eval harness) vs **human-only** (architecture, security judgment).
-2. **Eval suite for agents** — Tasks derived from real failures (regression style); store results as JSON/logs.
-3. **Observability** — Production signals for AI-touched code: errors, latency, feature flags — Arize-adjacent mindset.
-4. **Human on risk** — Humans review **tier-1** changes and eval gaps, not every line.
-5. **Pair with PR discipline** — Small diffs make evals tractable ([`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md)).
-6. **Covariant changes** — Eval/harness bumps ship together ([`covariant-eval-loop`](../covariant-eval-loop/SKILL.md)).
-7. **DevEx feedback** — Did eval investment reduce incidents or cycle time? ([`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md)).
+1. **Review map** — What review caught → automatable vs human-only (`voss-test-ai-framing`).
+2. **Agent eval suite** — Tasks from real failures; JSON/log artifacts (`voss-agent-speed`).
+3. **Observability** — Prod signals on AI-touched code: errors, latency, flags.
+4. **Human on risk** — Tier-1 architecture/security and eval gaps only (`voss-review-bandwidth`).
+5. **Covariant + small PRs** — Ship eval/harness together ([`covariant-eval-loop`](../covariant-eval-loop/SKILL.md)); keep diffs tractable ([`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md)); loop metrics via [`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md).
 
 ## Quality gate
 
-- [ ] **≥1 automated check** blocks merge for agent-touched paths.
-- [ ] Eval artifacts **stored**, not only CI green without logs.
-- [ ] Human review scope **documented** (what humans still do).
-- [ ] New agent capability → **new or updated eval task**.
+- [ ] ≥1 automated check blocks merge on agent-touched paths.
+- [ ] Eval artifacts stored, not CI-green-only.
+- [ ] Human review scope documented.
+- [ ] New capability → new or updated eval task.
+- [ ] Smoke on PR, full suite on schedule documented.
 
 ## Failure modes
 
-| Symptom | Fix |
-|---------|-----|
-| Review theater continues | Remove redundant human steps covered by eval |
-| Eval green, users suffer | Add prod observability + trace tasks |
-| Eval too slow | Tier: smoke on PR, full nightly |
+| Symptom | Fix | Segment |
+|---------|-----|---------|
+| Review theater | Drop steps covered by eval | `voss-review-bandwidth` |
+| Eval green, users hurt | Prod observability | `voss-agent-speed` |
+| Slow eval | Tier smoke vs nightly | `wb-covariant-triple` |
+| Giant diffs | Small PR rule | `pocock-pr-backlog` |
 
-## Provenance
+## References
 
-- Laurie Voss — *The Death of the Code Review* (`_mi3alkqy4s`)
+- Index: `research/ai-engineer-paris-2026/references/index.yaml`
+- L4: `voss-agent-speed`, `voss-review-bandwidth`, `voss-test-ai-framing`
+- L5: `transcript-summaries.json#_mi3alkqy4s`

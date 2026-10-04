@@ -1,73 +1,59 @@
 ---
 name: covariant-eval-loop
-description: Self-improving agents — covariant benchmarks, harness, and config; production traces into offline regression; logging flywheel. Auto-apply when changing agent evals, W&B/Weave-style logging, offline agent benches, or Arya/WBAF-like improvement loops.
+description: Covariant agent improvement — bench, harness, and config move together; traces into offline regression. Triggers — agent evals, Weave logging, offline agent benches, self-improving agent loops.
 ---
 
 # Covariant eval loop
 
-**Covariance rule** (W&B @ 1:41, `XyV6bSMyq-I`): you cannot change the **benchmark**, **harness**, or **agent configuration** in isolation — they co-move. Long-running and self-improving agents need a **closed loop**: prod → traces → offline hill-climb → gated deploy.
+You cannot change **benchmark**, **harness**, or **agent configuration** in isolation. Close prod → traces → offline hill-climb → gated deploy.
 
 ## Progressive disclosure
 
-**Layer 1:** Benchmark, harness, and agent config are **covariant** — change one, re-measure all; close prod→offline flywheel.
+**Layer 1:** Benchmark, harness, and config are **covariant** — change one, re-measure all.
 
-**Layer 2 moves:** Triple lock · prod instrumentation · trace export · offline bench · regression tasks · sim-to-real note · promotion gate.
+**Layer 2 moves:** Triple lock · prod traces · offline bench · regression tasks · promotion gate.
 
-**Layer 3 — transcript refs**
+**Layer 3:** Segment ids in **References**.
 
-| video_id | MM:SS | Label | Snippet |
-|----------|-------|-------|---------|
-| `XyV6bSMyq-I` | 1:41 | FACT | Benchmarks, evaluations, and agent harness configs are all covariant |
-| `XyV6bSMyq-I` | 2:41 | FACT | Production traces into offline envs to hill-climb — flywheel |
-| `XyV6bSMyq-I` | 13:32 | FACT | WBAF caught missing weave.log via offline regression |
-| `XyV6bSMyq-I` | 0:24 | FACT | Arya agent GA; deep dive on self-improving agent |
-
-## Unified system
-
-**OS stage:** Prove harness changes. **Upstream:** [`factory-harness`](../factory-harness/SKILL.md) · **Downstream:** [`agent-orchestra`](../agent-orchestra/SKILL.md), ship gates. **Programme:** [`systems-intake`](../systems-intake/SKILL.md). **Talk:** `XyV6bSMyq-I`.
+**Unified system:** Prove harness changes. **Upstream:** [`factory-harness`](../factory-harness/SKILL.md) · **Downstream:** [`agent-orchestra`](../agent-orchestra/SKILL.md). Programme: [`systems-intake`](../systems-intake/SKILL.md).
 
 ## When to use
 
-- **Self-improving** coding or research agents.
-- Adding tools/skills to a factory harness ([`factory-harness`](../factory-harness/SKILL.md)).
-- Designing **regression suites** that catch SDK/logging omissions (WBAF example @ 13:32).
+- Self-improving coding/research agents; adding tools/skills; regression suites for SDK/logging gaps.
 
 ## When NOT to use
 
-- Static one-shot codegen with no telemetry.
-- Claiming sim-to-real proof without documented gap (label CONJECTURE).
+- Static one-shot codegen; sim-to-real proof without documented gap (label CONJECTURE).
 
-## Core moves (7)
+## Core moves
 
-1. **Triple lock** — Document current `(benchmark_version, harness_version, agent_config_id)` hash; bump all affected pieces in one PR when any leg changes.
-2. **Prod instrumentation** — Structured logs/traces (Weave-style) on every tool call and model turn worth debugging.
-3. **Trace export** — Production failures and wins become **offline episodes** (@ 2:41 flywheel).
-4. **Offline bench** — Runnable without prod keys; deterministic subset for CI; richer suite nightly.
-5. **Regression tasks** — Small tasks that caught real bugs (e.g. missing `weave.log` call @ 13:32) — never delete without replacement.
-6. **Sim-to-real note** — Explicit list of what offline **does not** capture (latency, human approval, data drift).
-7. **Gate** — No harness promotion without offline pass **and** labeled eval delta for reviewers.
+1. **Triple lock** — Document `(benchmark_version, harness_version, agent_config_id)`; bump affected legs in one PR (`wb-covariant-triple`).
+2. **Trace flywheel** — Prod failures/wins → offline episodes (`wb-trace-flywheel`).
+3. **Offline bench** — Deterministic CI subset + richer nightly; no prod keys in CI.
+4. **Regression tasks** — Keep tasks that caught real bugs (`wb-weave-regression`); note sim-to-real gaps explicitly.
+5. **Promotion gate** — No harness promotion without offline pass + eval delta artifact; programme: `make verify` / `make pulse-eval` when applicable.
 
 ## Quality gate
 
-- [ ] Changing harness triggers **bench update** in same change set.
-- [ ] **≥1 regression task** tied to a past incident or miss.
-- [ ] Trace → offline pipeline documented (even if manual at first).
-- [ ] Eval results stored as **artifacts**, not chat-only.
-- [ ] Programme repos: run `make verify` / `make pulse-eval` when applicable.
+- [ ] Harness change includes bench update in same change set.
+- [ ] ≥1 regression task tied to a past miss.
+- [ ] Trace → offline pipeline documented (manual OK at first).
+- [ ] Eval results stored as artifacts, not chat-only.
+- [ ] Sim-to-real limitations written down.
 
 ## Failure modes
 
-| Symptom | Fix |
-|---------|-----|
-| Bench green, prod broken | Add trace-derived cases; covary config |
-| Overfitting offline | Holdout prod sample; rotate tasks |
-| Logging gap undetected | SDK/regression task per critical span |
+| Symptom | Fix | Segment |
+|---------|-----|---------|
+| Bench green, prod broken | Trace-derived cases | `wb-trace-flywheel` |
+| Overfitting offline | Holdout prod sample | `wb-covariant-triple` |
+| Logging gap | SDK regression task | `wb-weave-regression` |
+| Config-only “fix” | Covary harness+bench | `wb-covariant-triple` |
 
-## Cross-links
+## References
 
-- Slice intake: [`systems-intake`](../systems-intake/SKILL.md) (covariant section).
-- Merge discipline: [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md).
+- Index: `research/ai-engineer-paris-2026/references/index.yaml`
+- L4: `wb-arya-intro`, `wb-covariant-triple`, `wb-trace-flywheel`, `wb-weave-regression`
+- L5: `transcript-summaries.json#XyV6bSMyq-I`
 
-## Provenance
-
-- Zubin Aysola — *How We Built an Agent That Improves Itself* (`XyV6bSMyq-I`, @ 1:41, 2:41, 13:32)
+Cross-links: [`pr-pulse-discipline`](../pr-pulse-discipline/SKILL.md) for merge gates.

@@ -1,19 +1,81 @@
 {
   "name": "paris-level-up",
-  "version": "1.0.0",
-  "description": "AI Engineer Paris 2026 software factory OS — 8 skills from 9 ingested talks",
+  "version": "1.1.0",
+  "description": "Portable Paris 2026 software factory OS — 8 lean skills, L3 references, high-value assets",
+  "referenceIndex": "research/ai-engineer-paris-2026/references/index.yaml",
+  "referenceIndexPortable": "skills/paris-level-up/assets/references-index.yaml",
   "corpus": "research/ai-engineer-paris-2026/digest.json",
   "spec": "docs/specs/software-factory-skill-plugin.v1.md",
-  "progress": "docs/specs/software-factory-skills-PROGRESS.md",
+  "assetPaths": [
+    "skills/paris-level-up/assets/factory-os-diagram.mmd",
+    "skills/paris-level-up/assets/reference-tier-cheatsheet.md",
+    "skills/paris-level-up/assets/references-index.yaml"
+  ],
   "skills": [
-    "skills/factory-operator/SKILL.md",
-    "skills/process-embedded-factory/SKILL.md",
-    "skills/factory-harness/SKILL.md",
-    "skills/covariant-eval-loop/SKILL.md",
-    "skills/agent-orchestra/SKILL.md",
-    "skills/pr-pulse-discipline/SKILL.md",
-    "skills/eval-over-review/SKILL.md",
-    "skills/devex-metrics-grounding/SKILL.md"
+    {
+      "id": "factory-operator",
+      "path": "skills/factory-operator/SKILL.md",
+      "description": "Operate a software factory on outcome metrics and honest build/buy.",
+      "triggers": ["software factory", "coding factory", "agent factory", "build vs buy factory"],
+      "referenceTierDefault": "L3",
+      "assetPaths": ["skills/paris-level-up/assets/factory-os-diagram.mmd"]
+    },
+    {
+      "id": "process-embedded-factory",
+      "path": "skills/process-embedded-factory/SKILL.md",
+      "description": "Embed agents in trackers, chat, and VCS with webhook progress.",
+      "triggers": ["TARS agent", "Slack Linear GitHub factory", "workflow integrations"],
+      "referenceTierDefault": "L3",
+      "assetPaths": []
+    },
+    {
+      "id": "factory-harness",
+      "path": "skills/factory-harness/SKILL.md",
+      "description": "Version harness, refresh stale skills, Pareto model routing.",
+      "triggers": ["factory harness", "skill library agents", "model router factory"],
+      "referenceTierDefault": "L3",
+      "assetPaths": []
+    },
+    {
+      "id": "covariant-eval-loop",
+      "path": "skills/covariant-eval-loop/SKILL.md",
+      "description": "Covariant bench+harness+config; prod traces to offline regression.",
+      "triggers": ["covariant eval", "self-improving agent", "Weave offline bench"],
+      "referenceTierDefault": "L3",
+      "assetPaths": []
+    },
+    {
+      "id": "agent-orchestra",
+      "path": "skills/agent-orchestra/SKILL.md",
+      "description": "Conductor score for parallel long-running agents.",
+      "triggers": ["orchestra not factory", "multiple concurrent agents", "Conductor agents"],
+      "referenceTierDefault": "L3",
+      "assetPaths": []
+    },
+    {
+      "id": "pr-pulse-discipline",
+      "path": "skills/pr-pulse-discipline/SKILL.md",
+      "description": "PR bottleneck brakes — skills as rubric, pulse lanes.",
+      "triggers": ["PR bottleneck", "agent PR flood", "pulse evaluator"],
+      "referenceTierDefault": "L3",
+      "assetPaths": []
+    },
+    {
+      "id": "eval-over-review",
+      "path": "skills/eval-over-review/SKILL.md",
+      "description": "Evals and observability over ritual code review.",
+      "triggers": ["eval over code review", "Arize evals", "agent code quality gate"],
+      "referenceTierDefault": "L3",
+      "assetPaths": []
+    },
+    {
+      "id": "devex-metrics-grounding",
+      "path": "skills/devex-metrics-grounding/SKILL.md",
+      "description": "Ground factory programs in quarterly DevEx data.",
+      "triggers": ["DevEx metrics AI", "justify agent spend", "measure AI impact"],
+      "referenceTierDefault": "L3",
+      "assetPaths": []
+    }
   ],
   "triggers": [
     "software factory",

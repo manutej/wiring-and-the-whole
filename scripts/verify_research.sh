@@ -28,5 +28,7 @@ if kit.is_dir():
         a, b = root / name, kit / name
         if a.exists() and b.exists() and a.read_bytes() != b.read_bytes():
             sys.exit(f"verify-research: FAIL kit/data/{name} diverges from research/{name}")
-print("verify-research: OK")
+print("verify-research: OK (corpus)")
 PY
+
+bash "$ROOT/scripts/verify_references_index.sh"
