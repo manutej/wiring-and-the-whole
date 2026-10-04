@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 
 import { MermaidChart } from "@/components/MermaidChart";
+import { WiringForceLattice } from "@/components/WiringForceLattice";
 import type { WiringMapV0 } from "@/lib/wiringmap-types";
 import { buildWiringRows, uniqueTargetServices } from "@/lib/wiringMapViewModel";
 import { wiringMapToMermaid } from "@/lib/wiringmapToMermaid";
@@ -38,9 +39,34 @@ export function WiringMapBrowser({ map, title }: Props) {
       {title && <h3 className="text-base font-medium">{title}</h3>}
 
       <p className="text-[var(--mute)] max-w-2xl">
-        Full-graph Mermaid does not scale for 30+ handlers and 90+ edges. Use the table and
-        per-handler focus view below; expand “legacy full graph” only if you need the raw dump.
+        Primary view: layered force lattice (handlers → glued services → infra), aligned with{" "}
+        <a
+          className="text-[var(--vermillion)]"
+          href="https://github.com/manutej/cell-sheaf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          cell-sheaf
+        </a>{" "}
+        restriction / glue colors. Use the table and per-handler Mermaid for detail; avoid the
+        legacy full-graph Mermaid unless you need a raw dump.
       </p>
+
+      <section>
+        <h4 className="font-medium mb-2">Force lattice (multi-layer)</h4>
+        <WiringForceLattice
+          map={map}
+          height={520}
+          focusId={focusId}
+          onFocusChange={(id) => {
+            if (!id) {
+              setFocusId(null);
+              return;
+            }
+            if (id.startsWith("unit:")) setFocusId(id);
+          }}
+        />
+      </section>
 
       <label className="block max-w-md">
         <span className="text-[var(--mute)]">Filter handlers or services</span>

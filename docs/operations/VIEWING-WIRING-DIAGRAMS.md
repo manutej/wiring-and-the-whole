@@ -2,7 +2,13 @@
 
 ## Comprehensive charter map (30 units, 92 edges)
 
-Charter maps use **`WiringMapBrowser`** (searchable handler → callee table + per-handler focus Mermaid). A single full-graph Mermaid for 30 handlers / 90+ edges is intentionally hidden under “Legacy full graph”.
+Charter maps use **`WiringMapBrowser`**: primary **force lattice** (layered d3-force, glued junctions, cell-sheaf glue colors), plus searchable handler → callee table and per-handler focus Mermaid. A single full-graph Mermaid for 30 handlers / 90+ edges is intentionally hidden under “Legacy full graph”.
+
+| Piece | Path |
+|-------|------|
+| **Force lattice UI** | `preview/graph/src/components/WiringForceLattice.tsx` |
+| **Map → lattice + sheaf stub** | `preview/graph/src/lib/wiringMapToLatticeGraph.ts` |
+| **Visual law (reference)** | [manutej/cell-sheaf](https://github.com/manutej/cell-sheaf) — restriction curves, glue palette |
 
 | Surface | URL / path |
 |---------|------------|
