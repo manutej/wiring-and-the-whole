@@ -6,6 +6,7 @@
 |----|--------|-------|--------------|
 | [#42](https://github.com/manutej/wiring-and-the-whole/pull/42) | yes | M1 Rust engine + M2 charter-1k | **verified** — `make pulse-loop` on `main`; independent evals on branch preserved in `docs/pulse/evaluations/` |
 | [#43](https://github.com/manutej/wiring-and-the-whole/pull/43) | yes | S2 slice matrix + S3 metrics + `/scale` | **verified** — dual-engine matrix + B1 `short_unit` fix; preview `/scale` live after deploy |
+| [#44](https://github.com/manutej/wiring-and-the-whole/pull/44) | yes | S4 charter ~10k LOC + 7-shard matrix | **verified** — `make pulse-loop` 42/42; content-hash LOC + delta edge recall |
 
 ## Rigor checks (run on `main` after every merge)
 
