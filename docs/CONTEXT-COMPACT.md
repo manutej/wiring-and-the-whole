@@ -22,7 +22,8 @@ Map production codebases as a **module of systems** (T1), find symmetries/invari
 | Density ladder | D0–D3 `fixtures/density/` + **D4** external slice — **`make wiringmap-stress`** |
 | External thin slice | `fixtures/external/fineract-handlers-thin/` (7 handlers, vendored) — **`make external-slice-check`** |
 | L1 dogfood | meta / toybank / fineract-thin packs + **`make dogfood-grade*`** |
-| SKILL mint | **3/3:** `interface-first-context`, **`systems-intake`** (v0 + covariant eval), **`symmetry-lens`** |
+| SKILL mint (programme) | **3/3:** `interface-first-context`, `systems-intake`, `symmetry-lens` |
+| Paris level-up (factories / agents) | **8 skills** — start [`skills/paris-level-up/README.md`](../skills/paris-level-up/README.md) |
 
 ## Verify & interface checks
 
@@ -61,7 +62,7 @@ See [`SCALE-PATH.md`](SCALE-PATH.md): CommandHandler pack @ N=30 → sparse fetc
 ## Pointers
 
 - Resume: `HANDOFF.md` · Build order: `docs/roadmap/BUILD-OUT-RESEARCH.md` · Forward plan: `docs/roadmap/CONSENSUS-FORWARD.md`
-- Paris registry: `docs/research-insights/paris-2026.yaml`
+- Paris registry: `docs/research-insights/paris-2026.yaml` · Factory/agent skills: `skills/paris-level-up/README.md`
 - Witness: `docs/witness/index.html` · L1 skill: `skills/interface-first-context/SKILL.md`
 - Fixtures: `fixtures/density/README.md`, `fixtures/external/README.md`
 - Scale: `docs/SCALE-PATH.md`

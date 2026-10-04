@@ -8,8 +8,8 @@ insights:
     cite: "0:00"
     theme: PR bottleneck
     summary: "Agent speed needs process brakes; skills as review rubric."
-    maps_to: pulse
-    target: docs/pulse/IMPLEMENTER-BRIEF-TEMPLATE.md
+    maps_to: skill
+    target: skills/pr-pulse-discipline/SKILL.md
     status: adopted
 
   - id: voss-measure-review
@@ -17,9 +17,9 @@ insights:
     cite: "0:00"
     theme: Code review / evals
     summary: "Replace ritual review with eval discipline and observability."
-    maps_to: l1
-    target: docs/dogfood/L1-QUESTIONS.json
-    status: candidate
+    maps_to: skill
+    target: skills/eval-over-review/SKILL.md
+    status: adopted
 
   - id: wb-covariant-evals
     video_id: XyV6bSMyq-I
@@ -27,7 +27,7 @@ insights:
     theme: Self-improving agents
     summary: "Benchmarks, harness, and agent config are covariant—measure prod + offline."
     maps_to: skill
-    target: skills/systems-intake/SKILL.md
+    target: skills/covariant-eval-loop/SKILL.md
     status: adopted
 
   - id: workos-outcome-metrics
@@ -35,18 +35,18 @@ insights:
     cite: "2:36"
     theme: Factory skeptic
     summary: "Factory success = outcome metrics (ship features), not PR/code volume."
-    maps_to: l1
-    target: docs/dogfood/L1-wiring-and-the-whole.md
-    status: candidate
+    maps_to: skill
+    target: skills/factory-operator/SKILL.md
+    status: adopted
 
   - id: workos-embed-process
     video_id: HvboD89DyQ8
     cite: "3:56"
     theme: Factory skeptic
     summary: "Code-only automation insufficient; embed eng process in tooling."
-    maps_to: pulse
-    target: docs/PULSE.md
-    status: candidate
+    maps_to: skill
+    target: skills/process-embedded-factory/SKILL.md
+    status: adopted
 
   - id: warp-stale-skills
     video_id: TN3mj92oZ8I
@@ -54,23 +54,41 @@ insights:
     theme: Software factories
     summary: "Factory skills go stale without self-improvement refresh loop."
     maps_to: skill
-    target: skills/interface-first-context/SKILL.md
-    status: candidate
+    target: skills/factory-harness/SKILL.md
+    status: adopted
 
   - id: holtz-orchestra
     video_id: TRfzFJCJ7ZE
     cite: "0:00"
     theme: Multi-agent orchestration
     summary: "Parallel agents need a score (conductor), not only factory line."
-    maps_to: none
-    target: paris-editorial-kit only
-    status: candidate
+    maps_to: skill
+    target: skills/agent-orchestra/SKILL.md
+    status: adopted
 
   - id: dx-data-grounding
     video_id: Se8jHLliLXE
     cite: "0:00"
     theme: Engineering metrics
     summary: "Quarterly platform data vs anecdote for AI impact on DevEx."
-    maps_to: gate
-    target: experiments/README.md
-    status: candidate
+    maps_to: skill
+    target: skills/devex-metrics-grounding/SKILL.md
+    status: adopted
+
+  - id: factory-com-build
+    video_id: vGCJ7diEtrw
+    cite: "0:00"
+    theme: Software factories
+    summary: "Build vs buy, enterprise factory definition, production challenges."
+    maps_to: skill
+    target: skills/factory-operator/SKILL.md
+    status: adopted
+
+  - id: warp-lloyd-environment
+    video_id: tUPPVhBBcoM
+    cite: "0:00"
+    theme: Software factories
+    summary: "Agentic IDE/environment as locus of self-improving development."
+    maps_to: skill
+    target: skills/factory-harness/SKILL.md
+    status: adopted
