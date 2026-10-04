@@ -1,0 +1,25 @@
+{
+  "schema_version": "scale-metrics.v0",
+  "description": "Frozen lower bounds for scale honesty gates (update only when charter/matrix grows intentionally)",
+  "charter_1k": {
+    "min_java_files": 25,
+    "min_loc": 1300,
+    "max_loc": 1600,
+    "min_ref_tokens": 85
+  },
+  "slice_matrix": {
+    "min_slices": 6,
+    "note": "toybank x3 + thin + charter-1k + report"
+  },
+  "edge_recall": {
+    "min_total_pairs": 125
+  },
+  "handler_family": {
+    "min_parsed": 29
+  },
+  "union_loc_estimate": {
+    "min_java_loc_touched_by_matrix": 1700,
+    "min_unique_java_loc": 1350,
+    "note": "unique paths dedupe thin slice files copied in charter"
+  }
+}

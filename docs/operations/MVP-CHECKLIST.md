@@ -12,6 +12,6 @@
 | M1× | Independent eval SHIP on M1 bundle | eval doc | **done** (conditional SHIP) |
 | M2a | 1k charter manifest + fetch pin | `make charter-1k-check` | **done** |
 | M2b | Edge-recall ~100+ pairs on charter | pulse-eval | **done** (125 total) |
-| **PR** | Single integration PR | All M1 + eval | **draft** ([#42](https://github.com/manutej/wiring-and-the-whole/pull/42)) |
+| **PR** | Single integration PR | All M1 + eval | **merged** ([#42](https://github.com/manutej/wiring-and-the-whole/pull/42)) |
 
 Build log: [`build-log/2026-10-03-mvp-push.md`](build-log/2026-10-03-mvp-push.md)

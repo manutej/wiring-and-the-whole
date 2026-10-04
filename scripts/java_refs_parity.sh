@@ -18,7 +18,7 @@ TMP_RS="$(mktemp)"
 trap 'rm -f "${TMP_PY}" "${TMP_RS}"' EXIT
 
 python3 scripts/extract_refs.py "${ROOT}/${REFS_DIR}" --no-example-check >"${TMP_PY}" 2>/dev/null
-"${BIN}" "${ROOT}/${REFS_DIR}" --slice "${SLICE}" >"${TMP_RS}"
+"${BIN}" "${ROOT}/${REFS_DIR}" --slice "${SLICE}" --no-example-check >"${TMP_RS}"
 
 python3 - <<'PY' "${TMP_PY}" "${TMP_RS}"
 import json, sys

@@ -67,6 +67,16 @@ check "external fineract slice check" bash scripts/fineract_slice_check.sh
 
 check "fineract charter-1k slice (~1k LOC, manifest + refs)" make charter-1k-check
 
+check "slice matrix (6 shards, rust engine validate→extract→pack→reexpand)" make slice-matrix-check
+
+check "slice matrix (6 shards, python engine dual-stack)" \
+  env WIRING_ENGINE=python bash scripts/slice_matrix_run.sh
+
+check "scale metrics (charter LOC, recall pairs, handler WIN, matrix union LOC)" make scale-metrics-check
+
+check "l2 pack parity all slice-matrix wiringmaps (Rust vs Python)" \
+  bash scripts/l2_pack_parity_all_maps.sh
+
 check "fetch slice dry-run leaves fixtures untouched" \
   bash scripts/fetch_fineract_slice.sh
 
@@ -90,6 +100,9 @@ check "dogfood toybank L1 (pack I/O parse mode)" \
 
 check "world I/O pipeline (extract→validate→pack→reexpand→grade)" \
   bash scripts/pipeline_world_io.sh
+
+check "pipeline-io rejects invalid WIRING_ENGINE" \
+  expect_exit 1 env WIRING_ENGINE=bogus bash scripts/pipeline_world_io.sh
 
 check "CommandHandler family wedge (29 handlers, reexpand gate)" \
   make handler-family-pack-check

@@ -1,0 +1,36 @@
+{
+  "schema_version": "slice-matrix.v0",
+  "description": "Shard-local pipeline jobs for scale-out CI (validate → extract → pack → reexpand per slice)",
+  "slices": [
+    {
+      "id": "toybank-accounts",
+      "refs_dir": "witness/toybank/accounts",
+      "wiringmap": "wiringmap/examples/toybank-accounts.v0.json"
+    },
+    {
+      "id": "toybank-loans",
+      "refs_dir": "witness/toybank/loans",
+      "wiringmap": "wiringmap/examples/toybank-loans.v0.json"
+    },
+    {
+      "id": "toybank-savings",
+      "refs_dir": "witness/toybank/savings",
+      "wiringmap": "wiringmap/examples/toybank-savings.v0.json"
+    },
+    {
+      "id": "fineract-handlers-thin",
+      "refs_dir": "fixtures/external/fineract-handlers-thin",
+      "wiringmap": "fixtures/external/fineract-handlers-thin/wiringmap.v0.json"
+    },
+    {
+      "id": "fineract-charter-1k",
+      "refs_dir": "fixtures/external/fineract-charter-1k",
+      "wiringmap": "fixtures/external/fineract-charter-1k/wiringmap.v0.json"
+    },
+    {
+      "id": "toybank-report",
+      "refs_dir": "witness/toybank/report",
+      "wiringmap": "wiringmap/examples/toybank-report.v0.json"
+    }
+  ]
+}
