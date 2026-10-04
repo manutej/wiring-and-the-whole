@@ -1,0 +1,1311 @@
+{
+  "schema_version": "wiringmap.v0",
+  "meta": {
+    "repo": "wiring-and-the-whole",
+    "ref": "fixtures/external/fineract-charter-10k",
+    "slice": "42 Java files (~10k LOC experiments PATH LIST); 30 wired handlers; service bodies co-packaged for scale test",
+    "notes": "Experiments PATH LIST (e3-ablation handlers, e5-depth + e2-tokens services); // refs: injected from parser v1 \u2014 not a live Fineract checkout."
+  },
+  "junctions": [
+    {
+      "id": "junction:infrastructure.DataIntegrityErrorHandler",
+      "label": "infrastructure.DataIntegrityErrorHandler",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:infrastructure.core.api.JsonCommand",
+      "label": "infrastructure.core.api.JsonCommand",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:SavingsAccountWritePlatformService",
+      "label": "SavingsAccountWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.savings.service.SavingsAccountWritePlatformService",
+      "label": "portfolio.savings.service.SavingsAccountWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:LoanChargeWritePlatformService",
+      "label": "LoanChargeWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.loanaccount.service.LoanChargeWritePlatformService",
+      "label": "portfolio.loanaccount.service.LoanChargeWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:LoanOriginatorWritePlatformService",
+      "label": "LoanOriginatorWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.loanorigination.service.LoanOriginatorWritePlatformService",
+      "label": "portfolio.loanorigination.service.LoanOriginatorWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:LoanWritePlatformService",
+      "label": "LoanWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "label": "portfolio.loanaccount.service.LoanWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:DelinquencyWritePlatformService",
+      "label": "DelinquencyWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "label": "portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:LoanApplicationWritePlatformService",
+      "label": "LoanApplicationWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "label": "portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:LoanApprovedAmountWritePlatformService",
+      "label": "LoanApprovedAmountWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.loanaccount.service.LoanApprovedAmountWritePlatformService",
+      "label": "portfolio.loanaccount.service.LoanApprovedAmountWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:ShareAccountWritePlatformService",
+      "label": "ShareAccountWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.shareaccounts.service.ShareAccountWritePlatformService",
+      "label": "portfolio.shareaccounts.service.ShareAccountWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:CollectionSheetWritePlatformService",
+      "label": "CollectionSheetWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.collectionsheet.service.CollectionSheetWritePlatformService",
+      "label": "portfolio.collectionsheet.service.CollectionSheetWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:ChargeWritePlatformService",
+      "label": "ChargeWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.charge.service.ChargeWritePlatformService",
+      "label": "portfolio.charge.service.ChargeWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:InterestPauseWritePlatformService",
+      "label": "InterestPauseWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.interestpauses.service.InterestPauseWritePlatformService",
+      "label": "portfolio.interestpauses.service.InterestPauseWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:TransferWritePlatformService",
+      "label": "TransferWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.transfer.service.TransferWritePlatformService",
+      "label": "portfolio.transfer.service.TransferWritePlatformService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:WorkingCapitalLoanRecoveryPaymentWriteService",
+      "label": "WorkingCapitalLoanRecoveryPaymentWriteService",
+      "junction_kind": "other"
+    },
+    {
+      "id": "junction:portfolio.workingcapitalloan.service.WorkingCapitalLoanRecoveryPaymentWriteService",
+      "label": "portfolio.workingcapitalloan.service.WorkingCapitalLoanRecoveryPaymentWriteService",
+      "junction_kind": "other"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit:handler.ActivateSavingsAccountCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/ActivateSavingsAccountCommandHandler.java",
+      "role": "Command handler \u2014 SAVINGSACCOUNT ACTIVATE",
+      "ports": [
+        {
+          "id": "port:handler.ActivateSavingsAccountCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.AddLoanChargeCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/AddLoanChargeCommandHandler.java",
+      "role": "Command handler \u2014 LOANCHARGE CREATE",
+      "ports": [
+        {
+          "id": "port:handler.AddLoanChargeCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.AttachLoanOriginatorCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/AttachLoanOriginatorCommandHandler.java",
+      "role": "Command handler \u2014 LOAN_ORIGINATOR ATTACH",
+      "ports": [
+        {
+          "id": "port:handler.AttachLoanOriginatorCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.BulkUpdateLoanOfficerCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/BulkUpdateLoanOfficerCommandHandler.java",
+      "role": "Command handler \u2014 LOAN BULKREASSIGN",
+      "ports": [
+        {
+          "id": "port:handler.BulkUpdateLoanOfficerCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.CloseLoanCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/CloseLoanCommandHandler.java",
+      "role": "Command handler \u2014 LOAN CLOSE",
+      "ports": [
+        {
+          "id": "port:handler.CloseLoanCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.CreateDelinquencyRangeCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/CreateDelinquencyRangeCommandHandler.java",
+      "role": "Command handler \u2014 DELINQUENCY_RANGE CREATE",
+      "ports": [
+        {
+          "id": "port:handler.CreateDelinquencyRangeCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.CreditBalanceRefundCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/CreditBalanceRefundCommandHandler.java",
+      "role": "Command handler \u2014 LOAN CREDITBALANCEREFUND",
+      "ports": [
+        {
+          "id": "port:handler.CreditBalanceRefundCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.DetachLoanOriginatorCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/DetachLoanOriginatorCommandHandler.java",
+      "role": "Command handler \u2014 LOAN_ORIGINATOR DETACH",
+      "ports": [
+        {
+          "id": "port:handler.DetachLoanOriginatorCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.DisburseLoanCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/DisburseLoanCommandHandler.java",
+      "role": "Command handler \u2014 LOAN DISBURSE",
+      "ports": [
+        {
+          "id": "port:handler.DisburseLoanCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.DisburseLoanToSavingsCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/DisburseLoanToSavingsCommandHandler.java",
+      "role": "Command handler \u2014 LOAN DISBURSETOSAVINGS",
+      "ports": [
+        {
+          "id": "port:handler.DisburseLoanToSavingsCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.ForeClosureCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/ForeClosureCommandHandler.java",
+      "role": "Command handler \u2014 LOAN FORECLOSURE",
+      "ports": [
+        {
+          "id": "port:handler.ForeClosureCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.GLIMApplicationRejectionCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/GLIMApplicationRejectionCommandHandler.java",
+      "role": "Command handler \u2014 GLIMLOAN REJECT",
+      "ports": [
+        {
+          "id": "port:handler.GLIMApplicationRejectionCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.LoanApplicationModificationCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/LoanApplicationModificationCommandHandler.java",
+      "role": "Command handler \u2014 LOAN UPDATE",
+      "ports": [
+        {
+          "id": "port:handler.LoanApplicationModificationCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.LoanApplicationSubmittalCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/LoanApplicationSubmittalCommandHandler.java",
+      "role": "Command handler \u2014 LOAN CREATE",
+      "ports": [
+        {
+          "id": "port:handler.LoanApplicationSubmittalCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.LoanApplicationWithdrawnByApplicantCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/LoanApplicationWithdrawnByApplicantCommandHandler.java",
+      "role": "Command handler \u2014 LOAN WITHDRAW",
+      "ports": [
+        {
+          "id": "port:handler.LoanApplicationWithdrawnByApplicantCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.LoanApprovedAmountModificationCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/LoanApprovedAmountModificationCommandHandler.java",
+      "role": "Command handler \u2014 LOAN UPDATE_APPROVED_AMOUNT",
+      "ports": [
+        {
+          "id": "port:handler.LoanApprovedAmountModificationCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.LoanGoodwillCreditCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/LoanGoodwillCreditCommandHandler.java",
+      "role": "Command handler \u2014 LOAN GOODWILLCREDIT",
+      "ports": [
+        {
+          "id": "port:handler.LoanGoodwillCreditCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.LoanMerchantIssuedRefundCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/LoanMerchantIssuedRefundCommandHandler.java",
+      "role": "Command handler \u2014 LOAN MERCHANTISSUEDREFUND",
+      "ports": [
+        {
+          "id": "port:handler.LoanMerchantIssuedRefundCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.LoanRefundByCashCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/LoanRefundByCashCommandHandler.java",
+      "role": "Command handler \u2014 LOAN REFUNDBYCASH",
+      "ports": [
+        {
+          "id": "port:handler.LoanRefundByCashCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.LoanRepaymentChargebackCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/LoanRepaymentChargebackCommandHandler.java",
+      "role": "Command handler \u2014 LOAN CHARGEBACK",
+      "ports": [
+        {
+          "id": "port:handler.LoanRepaymentChargebackCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.MarkLoanAsFraudCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/MarkLoanAsFraudCommandHandler.java",
+      "role": "Command handler \u2014 LOAN SETFRAUD",
+      "ports": [
+        {
+          "id": "port:handler.MarkLoanAsFraudCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.RejectAddtionalSharesCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/RejectAddtionalSharesCommandHandler.java",
+      "role": "Command handler \u2014 SHAREACCOUNT REJECTADDITIONALSHARES",
+      "ports": [
+        {
+          "id": "port:handler.RejectAddtionalSharesCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.SaveCenterCollectionSheetCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/SaveCenterCollectionSheetCommandHandler.java",
+      "role": "Command handler \u2014 CENTER SAVECOLLECTIONSHEET",
+      "ports": [
+        {
+          "id": "port:handler.SaveCenterCollectionSheetCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.UpdateChargeDefinitionCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/UpdateChargeDefinitionCommandHandler.java",
+      "role": "Command handler \u2014 CHARGE UPDATE",
+      "ports": [
+        {
+          "id": "port:handler.UpdateChargeDefinitionCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.UpdateDelinquencyBucketCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/UpdateDelinquencyBucketCommandHandler.java",
+      "role": "Command handler \u2014 DELINQUENCY_BUCKET UPDATE",
+      "ports": [
+        {
+          "id": "port:handler.UpdateDelinquencyBucketCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.UpdateDelinquencyRangeCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/UpdateDelinquencyRangeCommandHandler.java",
+      "role": "Command handler \u2014 DELINQUENCY_RANGE UPDATE",
+      "ports": [
+        {
+          "id": "port:handler.UpdateDelinquencyRangeCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.UpdateInterestPauseCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/UpdateInterestPauseCommandHandler.java",
+      "role": "Command handler \u2014 LOAN UPDATEINTERESTPAUSE",
+      "ports": [
+        {
+          "id": "port:handler.UpdateInterestPauseCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.UpdateLoanDelinquencyBucketCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/UpdateLoanDelinquencyBucketCommandHandler.java",
+      "role": "Command handler \u2014 LOAN UPDATEDELINQUENCY",
+      "ports": [
+        {
+          "id": "port:handler.UpdateLoanDelinquencyBucketCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.WithdrawClientTransferCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/WithdrawClientTransferCommandHandler.java",
+      "role": "Command handler \u2014 CLIENT WITHDRAWTRANSFER",
+      "ports": [
+        {
+          "id": "port:handler.WithdrawClientTransferCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    },
+    {
+      "id": "unit:handler.WorkingCapitalLoanRecoveryPaymentCommandHandler",
+      "path": "fixtures/external/fineract-charter-10k/WorkingCapitalLoanRecoveryPaymentCommandHandler.java",
+      "role": "Command handler \u2014 WORKINGCAPITALLOAN RECOVERYPAYMENT",
+      "ports": [
+        {
+          "id": "port:handler.WorkingCapitalLoanRecoveryPaymentCommandHandler#processCommand",
+          "symbol": "processCommand",
+          "kind": "method",
+          "signature_stub": "CommandProcessingResult processCommand(JsonCommand command)",
+          "exported": true
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:activatesavingsaccountcommandhandler-0",
+      "from": "port:handler.ActivateSavingsAccountCommandHandler#processCommand",
+      "to": "junction:SavingsAccountWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "ActivateSavingsAccountCommandHandler.java // refs: SavingsAccountWritePlatformService#activate"
+    },
+    {
+      "id": "edge:activatesavingsaccountcommandhandler-1",
+      "from": "port:handler.ActivateSavingsAccountCommandHandler#processCommand",
+      "to": "junction:portfolio.savings.service.SavingsAccountWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "ActivateSavingsAccountCommandHandler.java // refs: portfolio.savings.service.SavingsAccountWritePlatformService#activate"
+    },
+    {
+      "id": "edge:addloanchargecommandhandler-0",
+      "from": "port:handler.AddLoanChargeCommandHandler#processCommand",
+      "to": "junction:LoanChargeWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AddLoanChargeCommandHandler.java // refs: LoanChargeWritePlatformService#addLoanCharge"
+    },
+    {
+      "id": "edge:addloanchargecommandhandler-1",
+      "from": "port:handler.AddLoanChargeCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanChargeWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AddLoanChargeCommandHandler.java // refs: portfolio.loanaccount.service.LoanChargeWritePlatformService#addLoanCharge"
+    },
+    {
+      "id": "edge:addloanchargecommandhandler-2",
+      "from": "port:handler.AddLoanChargeCommandHandler#processCommand",
+      "to": "junction:infrastructure.DataIntegrityErrorHandler",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AddLoanChargeCommandHandler.java // refs: infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+    },
+    {
+      "id": "edge:addloanchargecommandhandler-3",
+      "from": "port:handler.AddLoanChargeCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AddLoanChargeCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:attachloanoriginatorcommandhandler-0",
+      "from": "port:handler.AttachLoanOriginatorCommandHandler#processCommand",
+      "to": "junction:LoanOriginatorWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AttachLoanOriginatorCommandHandler.java // refs: LoanOriginatorWritePlatformService#attachOriginatorToLoan"
+    },
+    {
+      "id": "edge:attachloanoriginatorcommandhandler-1",
+      "from": "port:handler.AttachLoanOriginatorCommandHandler#processCommand",
+      "to": "junction:portfolio.loanorigination.service.LoanOriginatorWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AttachLoanOriginatorCommandHandler.java // refs: portfolio.loanorigination.service.LoanOriginatorWritePlatformService#attachOriginatorToLoan"
+    },
+    {
+      "id": "edge:attachloanoriginatorcommandhandler-2",
+      "from": "port:handler.AttachLoanOriginatorCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AttachLoanOriginatorCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:attachloanoriginatorcommandhandler-3",
+      "from": "port:handler.AttachLoanOriginatorCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "AttachLoanOriginatorCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:bulkupdateloanofficercommandhandler-0",
+      "from": "port:handler.BulkUpdateLoanOfficerCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "BulkUpdateLoanOfficerCommandHandler.java // refs: LoanWritePlatformService#bulkLoanReassignment"
+    },
+    {
+      "id": "edge:bulkupdateloanofficercommandhandler-1",
+      "from": "port:handler.BulkUpdateLoanOfficerCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "BulkUpdateLoanOfficerCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#bulkLoanReassignment"
+    },
+    {
+      "id": "edge:closeloancommandhandler-0",
+      "from": "port:handler.CloseLoanCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CloseLoanCommandHandler.java // refs: LoanWritePlatformService#closeLoan"
+    },
+    {
+      "id": "edge:closeloancommandhandler-1",
+      "from": "port:handler.CloseLoanCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CloseLoanCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#closeLoan"
+    },
+    {
+      "id": "edge:closeloancommandhandler-2",
+      "from": "port:handler.CloseLoanCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CloseLoanCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:createdelinquencyrangecommandhandler-0",
+      "from": "port:handler.CreateDelinquencyRangeCommandHandler#processCommand",
+      "to": "junction:DelinquencyWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CreateDelinquencyRangeCommandHandler.java // refs: DelinquencyWritePlatformService#createDelinquencyRange"
+    },
+    {
+      "id": "edge:createdelinquencyrangecommandhandler-1",
+      "from": "port:handler.CreateDelinquencyRangeCommandHandler#processCommand",
+      "to": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CreateDelinquencyRangeCommandHandler.java // refs: portfolio.delinquency.service.DelinquencyWritePlatformService#createDelinquencyRange"
+    },
+    {
+      "id": "edge:creditbalancerefundcommandhandler-0",
+      "from": "port:handler.CreditBalanceRefundCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CreditBalanceRefundCommandHandler.java // refs: LoanWritePlatformService#creditBalanceRefund"
+    },
+    {
+      "id": "edge:creditbalancerefundcommandhandler-1",
+      "from": "port:handler.CreditBalanceRefundCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CreditBalanceRefundCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#creditBalanceRefund"
+    },
+    {
+      "id": "edge:creditbalancerefundcommandhandler-2",
+      "from": "port:handler.CreditBalanceRefundCommandHandler#processCommand",
+      "to": "junction:infrastructure.DataIntegrityErrorHandler",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CreditBalanceRefundCommandHandler.java // refs: infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+    },
+    {
+      "id": "edge:creditbalancerefundcommandhandler-3",
+      "from": "port:handler.CreditBalanceRefundCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "CreditBalanceRefundCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:detachloanoriginatorcommandhandler-0",
+      "from": "port:handler.DetachLoanOriginatorCommandHandler#processCommand",
+      "to": "junction:LoanOriginatorWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DetachLoanOriginatorCommandHandler.java // refs: LoanOriginatorWritePlatformService#detachOriginatorFromLoan"
+    },
+    {
+      "id": "edge:detachloanoriginatorcommandhandler-1",
+      "from": "port:handler.DetachLoanOriginatorCommandHandler#processCommand",
+      "to": "junction:portfolio.loanorigination.service.LoanOriginatorWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DetachLoanOriginatorCommandHandler.java // refs: portfolio.loanorigination.service.LoanOriginatorWritePlatformService#detachOriginatorFromLoan"
+    },
+    {
+      "id": "edge:detachloanoriginatorcommandhandler-2",
+      "from": "port:handler.DetachLoanOriginatorCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DetachLoanOriginatorCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:detachloanoriginatorcommandhandler-3",
+      "from": "port:handler.DetachLoanOriginatorCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DetachLoanOriginatorCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:disburseloancommandhandler-0",
+      "from": "port:handler.DisburseLoanCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanCommandHandler.java // refs: LoanWritePlatformService#disburseLoan"
+    },
+    {
+      "id": "edge:disburseloancommandhandler-1",
+      "from": "port:handler.DisburseLoanCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#disburseLoan"
+    },
+    {
+      "id": "edge:disburseloancommandhandler-2",
+      "from": "port:handler.DisburseLoanCommandHandler#processCommand",
+      "to": "junction:infrastructure.DataIntegrityErrorHandler",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanCommandHandler.java // refs: infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+    },
+    {
+      "id": "edge:disburseloancommandhandler-3",
+      "from": "port:handler.DisburseLoanCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:disburseloantosavingscommandhandler-0",
+      "from": "port:handler.DisburseLoanToSavingsCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanToSavingsCommandHandler.java // refs: LoanWritePlatformService#disburseLoan"
+    },
+    {
+      "id": "edge:disburseloantosavingscommandhandler-1",
+      "from": "port:handler.DisburseLoanToSavingsCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanToSavingsCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#disburseLoan"
+    },
+    {
+      "id": "edge:disburseloantosavingscommandhandler-2",
+      "from": "port:handler.DisburseLoanToSavingsCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "DisburseLoanToSavingsCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:foreclosurecommandhandler-0",
+      "from": "port:handler.ForeClosureCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "ForeClosureCommandHandler.java // refs: LoanWritePlatformService#forecloseLoan"
+    },
+    {
+      "id": "edge:foreclosurecommandhandler-1",
+      "from": "port:handler.ForeClosureCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "ForeClosureCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#forecloseLoan"
+    },
+    {
+      "id": "edge:foreclosurecommandhandler-2",
+      "from": "port:handler.ForeClosureCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "ForeClosureCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:glimapplicationrejectioncommandhandler-0",
+      "from": "port:handler.GLIMApplicationRejectionCommandHandler#processCommand",
+      "to": "junction:LoanApplicationWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "GLIMApplicationRejectionCommandHandler.java // refs: LoanApplicationWritePlatformService#rejectGLIMApplicationApproval"
+    },
+    {
+      "id": "edge:glimapplicationrejectioncommandhandler-1",
+      "from": "port:handler.GLIMApplicationRejectionCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "GLIMApplicationRejectionCommandHandler.java // refs: portfolio.loanaccount.service.LoanApplicationWritePlatformService#rejectGLIMApplicationApproval"
+    },
+    {
+      "id": "edge:glimapplicationrejectioncommandhandler-2",
+      "from": "port:handler.GLIMApplicationRejectionCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "GLIMApplicationRejectionCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:loanapplicationmodificationcommandhandler-0",
+      "from": "port:handler.LoanApplicationModificationCommandHandler#processCommand",
+      "to": "junction:LoanApplicationWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApplicationModificationCommandHandler.java // refs: LoanApplicationWritePlatformService#modifyApplication"
+    },
+    {
+      "id": "edge:loanapplicationmodificationcommandhandler-1",
+      "from": "port:handler.LoanApplicationModificationCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApplicationModificationCommandHandler.java // refs: portfolio.loanaccount.service.LoanApplicationWritePlatformService#modifyApplication"
+    },
+    {
+      "id": "edge:loanapplicationmodificationcommandhandler-2",
+      "from": "port:handler.LoanApplicationModificationCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApplicationModificationCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:loanapplicationsubmittalcommandhandler-0",
+      "from": "port:handler.LoanApplicationSubmittalCommandHandler#processCommand",
+      "to": "junction:LoanApplicationWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApplicationSubmittalCommandHandler.java // refs: LoanApplicationWritePlatformService#submitApplication"
+    },
+    {
+      "id": "edge:loanapplicationsubmittalcommandhandler-1",
+      "from": "port:handler.LoanApplicationSubmittalCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApplicationSubmittalCommandHandler.java // refs: portfolio.loanaccount.service.LoanApplicationWritePlatformService#submitApplication"
+    },
+    {
+      "id": "edge:loanapplicationwithdrawnbyapplicantcommandhandler-0",
+      "from": "port:handler.LoanApplicationWithdrawnByApplicantCommandHandler#processCommand",
+      "to": "junction:LoanApplicationWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApplicationWithdrawnByApplicantCommandHandler.java // refs: LoanApplicationWritePlatformService#applicantWithdrawsFromApplication"
+    },
+    {
+      "id": "edge:loanapplicationwithdrawnbyapplicantcommandhandler-1",
+      "from": "port:handler.LoanApplicationWithdrawnByApplicantCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApplicationWithdrawnByApplicantCommandHandler.java // refs: portfolio.loanaccount.service.LoanApplicationWritePlatformService#applicantWithdrawsFromApplication"
+    },
+    {
+      "id": "edge:loanapplicationwithdrawnbyapplicantcommandhandler-2",
+      "from": "port:handler.LoanApplicationWithdrawnByApplicantCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApplicationWithdrawnByApplicantCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:loanapprovedamountmodificationcommandhandler-0",
+      "from": "port:handler.LoanApprovedAmountModificationCommandHandler#processCommand",
+      "to": "junction:LoanApprovedAmountWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApprovedAmountModificationCommandHandler.java // refs: LoanApprovedAmountWritePlatformService#modifyLoanApprovedAmount"
+    },
+    {
+      "id": "edge:loanapprovedamountmodificationcommandhandler-1",
+      "from": "port:handler.LoanApprovedAmountModificationCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanApprovedAmountWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApprovedAmountModificationCommandHandler.java // refs: portfolio.loanaccount.service.LoanApprovedAmountWritePlatformService#modifyLoanApprovedAmount"
+    },
+    {
+      "id": "edge:loanapprovedamountmodificationcommandhandler-2",
+      "from": "port:handler.LoanApprovedAmountModificationCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanApprovedAmountModificationCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:loangoodwillcreditcommandhandler-0",
+      "from": "port:handler.LoanGoodwillCreditCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanGoodwillCreditCommandHandler.java // refs: LoanWritePlatformService#makeLoanRepayment"
+    },
+    {
+      "id": "edge:loangoodwillcreditcommandhandler-1",
+      "from": "port:handler.LoanGoodwillCreditCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanGoodwillCreditCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#makeLoanRepayment"
+    },
+    {
+      "id": "edge:loangoodwillcreditcommandhandler-2",
+      "from": "port:handler.LoanGoodwillCreditCommandHandler#processCommand",
+      "to": "junction:infrastructure.DataIntegrityErrorHandler",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanGoodwillCreditCommandHandler.java // refs: infrastructure.DataIntegrityErrorHandler#handleDataIntegrityIssues"
+    },
+    {
+      "id": "edge:loangoodwillcreditcommandhandler-3",
+      "from": "port:handler.LoanGoodwillCreditCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanGoodwillCreditCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:loanmerchantissuedrefundcommandhandler-0",
+      "from": "port:handler.LoanMerchantIssuedRefundCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanMerchantIssuedRefundCommandHandler.java // refs: LoanWritePlatformService#makeRefund"
+    },
+    {
+      "id": "edge:loanmerchantissuedrefundcommandhandler-1",
+      "from": "port:handler.LoanMerchantIssuedRefundCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanMerchantIssuedRefundCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#makeRefund"
+    },
+    {
+      "id": "edge:loanmerchantissuedrefundcommandhandler-2",
+      "from": "port:handler.LoanMerchantIssuedRefundCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanMerchantIssuedRefundCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:loanrefundbycashcommandhandler-0",
+      "from": "port:handler.LoanRefundByCashCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanRefundByCashCommandHandler.java // refs: LoanWritePlatformService#makeLoanRefund"
+    },
+    {
+      "id": "edge:loanrefundbycashcommandhandler-1",
+      "from": "port:handler.LoanRefundByCashCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanRefundByCashCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#makeLoanRefund"
+    },
+    {
+      "id": "edge:loanrefundbycashcommandhandler-2",
+      "from": "port:handler.LoanRefundByCashCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanRefundByCashCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:loanrepaymentchargebackcommandhandler-0",
+      "from": "port:handler.LoanRepaymentChargebackCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanRepaymentChargebackCommandHandler.java // refs: LoanWritePlatformService#chargebackLoanTransaction"
+    },
+    {
+      "id": "edge:loanrepaymentchargebackcommandhandler-1",
+      "from": "port:handler.LoanRepaymentChargebackCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanRepaymentChargebackCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#chargebackLoanTransaction"
+    },
+    {
+      "id": "edge:loanrepaymentchargebackcommandhandler-2",
+      "from": "port:handler.LoanRepaymentChargebackCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanRepaymentChargebackCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:loanrepaymentchargebackcommandhandler-3",
+      "from": "port:handler.LoanRepaymentChargebackCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "LoanRepaymentChargebackCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:markloanasfraudcommandhandler-0",
+      "from": "port:handler.MarkLoanAsFraudCommandHandler#processCommand",
+      "to": "junction:LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "MarkLoanAsFraudCommandHandler.java // refs: LoanWritePlatformService#markLoanAsFraud"
+    },
+    {
+      "id": "edge:markloanasfraudcommandhandler-1",
+      "from": "port:handler.MarkLoanAsFraudCommandHandler#processCommand",
+      "to": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "MarkLoanAsFraudCommandHandler.java // refs: portfolio.loanaccount.service.LoanWritePlatformService#markLoanAsFraud"
+    },
+    {
+      "id": "edge:markloanasfraudcommandhandler-2",
+      "from": "port:handler.MarkLoanAsFraudCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "MarkLoanAsFraudCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:rejectaddtionalsharescommandhandler-0",
+      "from": "port:handler.RejectAddtionalSharesCommandHandler#processCommand",
+      "to": "junction:ShareAccountWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "RejectAddtionalSharesCommandHandler.java // refs: ShareAccountWritePlatformService#rejectAdditionalShares"
+    },
+    {
+      "id": "edge:rejectaddtionalsharescommandhandler-1",
+      "from": "port:handler.RejectAddtionalSharesCommandHandler#processCommand",
+      "to": "junction:portfolio.shareaccounts.service.ShareAccountWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "RejectAddtionalSharesCommandHandler.java // refs: portfolio.shareaccounts.service.ShareAccountWritePlatformService#rejectAdditionalShares"
+    },
+    {
+      "id": "edge:rejectaddtionalsharescommandhandler-2",
+      "from": "port:handler.RejectAddtionalSharesCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "RejectAddtionalSharesCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:savecentercollectionsheetcommandhandler-0",
+      "from": "port:handler.SaveCenterCollectionSheetCommandHandler#processCommand",
+      "to": "junction:CollectionSheetWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "SaveCenterCollectionSheetCommandHandler.java // refs: CollectionSheetWritePlatformService#updateCollectionSheet"
+    },
+    {
+      "id": "edge:savecentercollectionsheetcommandhandler-1",
+      "from": "port:handler.SaveCenterCollectionSheetCommandHandler#processCommand",
+      "to": "junction:portfolio.collectionsheet.service.CollectionSheetWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "SaveCenterCollectionSheetCommandHandler.java // refs: portfolio.collectionsheet.service.CollectionSheetWritePlatformService#updateCollectionSheet"
+    },
+    {
+      "id": "edge:updatechargedefinitioncommandhandler-0",
+      "from": "port:handler.UpdateChargeDefinitionCommandHandler#processCommand",
+      "to": "junction:ChargeWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateChargeDefinitionCommandHandler.java // refs: ChargeWritePlatformService#updateCharge"
+    },
+    {
+      "id": "edge:updatechargedefinitioncommandhandler-1",
+      "from": "port:handler.UpdateChargeDefinitionCommandHandler#processCommand",
+      "to": "junction:portfolio.charge.service.ChargeWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateChargeDefinitionCommandHandler.java // refs: portfolio.charge.service.ChargeWritePlatformService#updateCharge"
+    },
+    {
+      "id": "edge:updatechargedefinitioncommandhandler-2",
+      "from": "port:handler.UpdateChargeDefinitionCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateChargeDefinitionCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:updatedelinquencybucketcommandhandler-0",
+      "from": "port:handler.UpdateDelinquencyBucketCommandHandler#processCommand",
+      "to": "junction:DelinquencyWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateDelinquencyBucketCommandHandler.java // refs: DelinquencyWritePlatformService#updateDelinquencyBucket"
+    },
+    {
+      "id": "edge:updatedelinquencybucketcommandhandler-1",
+      "from": "port:handler.UpdateDelinquencyBucketCommandHandler#processCommand",
+      "to": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateDelinquencyBucketCommandHandler.java // refs: portfolio.delinquency.service.DelinquencyWritePlatformService#updateDelinquencyBucket"
+    },
+    {
+      "id": "edge:updatedelinquencybucketcommandhandler-2",
+      "from": "port:handler.UpdateDelinquencyBucketCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateDelinquencyBucketCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:updatedelinquencyrangecommandhandler-0",
+      "from": "port:handler.UpdateDelinquencyRangeCommandHandler#processCommand",
+      "to": "junction:DelinquencyWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateDelinquencyRangeCommandHandler.java // refs: DelinquencyWritePlatformService#updateDelinquencyRange"
+    },
+    {
+      "id": "edge:updatedelinquencyrangecommandhandler-1",
+      "from": "port:handler.UpdateDelinquencyRangeCommandHandler#processCommand",
+      "to": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateDelinquencyRangeCommandHandler.java // refs: portfolio.delinquency.service.DelinquencyWritePlatformService#updateDelinquencyRange"
+    },
+    {
+      "id": "edge:updatedelinquencyrangecommandhandler-2",
+      "from": "port:handler.UpdateDelinquencyRangeCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateDelinquencyRangeCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:updateinterestpausecommandhandler-0",
+      "from": "port:handler.UpdateInterestPauseCommandHandler#processCommand",
+      "to": "junction:InterestPauseWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateInterestPauseCommandHandler.java // refs: InterestPauseWritePlatformService#updateInterestPause"
+    },
+    {
+      "id": "edge:updateinterestpausecommandhandler-1",
+      "from": "port:handler.UpdateInterestPauseCommandHandler#processCommand",
+      "to": "junction:portfolio.interestpauses.service.InterestPauseWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateInterestPauseCommandHandler.java // refs: portfolio.interestpauses.service.InterestPauseWritePlatformService#updateInterestPause"
+    },
+    {
+      "id": "edge:updateinterestpausecommandhandler-2",
+      "from": "port:handler.UpdateInterestPauseCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateInterestPauseCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    },
+    {
+      "id": "edge:updateloandelinquencybucketcommandhandler-0",
+      "from": "port:handler.UpdateLoanDelinquencyBucketCommandHandler#processCommand",
+      "to": "junction:DelinquencyWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateLoanDelinquencyBucketCommandHandler.java // refs: DelinquencyWritePlatformService#applyDelinquencyTagToLoan"
+    },
+    {
+      "id": "edge:updateloandelinquencybucketcommandhandler-1",
+      "from": "port:handler.UpdateLoanDelinquencyBucketCommandHandler#processCommand",
+      "to": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateLoanDelinquencyBucketCommandHandler.java // refs: portfolio.delinquency.service.DelinquencyWritePlatformService#applyDelinquencyTagToLoan"
+    },
+    {
+      "id": "edge:updateloandelinquencybucketcommandhandler-2",
+      "from": "port:handler.UpdateLoanDelinquencyBucketCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "UpdateLoanDelinquencyBucketCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:withdrawclienttransfercommandhandler-0",
+      "from": "port:handler.WithdrawClientTransferCommandHandler#processCommand",
+      "to": "junction:TransferWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "WithdrawClientTransferCommandHandler.java // refs: TransferWritePlatformService#withdrawClientTransfer"
+    },
+    {
+      "id": "edge:withdrawclienttransfercommandhandler-1",
+      "from": "port:handler.WithdrawClientTransferCommandHandler#processCommand",
+      "to": "junction:portfolio.transfer.service.TransferWritePlatformService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "WithdrawClientTransferCommandHandler.java // refs: portfolio.transfer.service.TransferWritePlatformService#withdrawClientTransfer"
+    },
+    {
+      "id": "edge:withdrawclienttransfercommandhandler-2",
+      "from": "port:handler.WithdrawClientTransferCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "WithdrawClientTransferCommandHandler.java // refs: infrastructure.core.api.JsonCommand#entityId"
+    },
+    {
+      "id": "edge:workingcapitalloanrecoverypaymentcommandhandler-0",
+      "from": "port:handler.WorkingCapitalLoanRecoveryPaymentCommandHandler#processCommand",
+      "to": "junction:WorkingCapitalLoanRecoveryPaymentWriteService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "WorkingCapitalLoanRecoveryPaymentCommandHandler.java // refs: WorkingCapitalLoanRecoveryPaymentWriteService#recoveryPayment"
+    },
+    {
+      "id": "edge:workingcapitalloanrecoverypaymentcommandhandler-1",
+      "from": "port:handler.WorkingCapitalLoanRecoveryPaymentCommandHandler#processCommand",
+      "to": "junction:portfolio.workingcapitalloan.service.WorkingCapitalLoanRecoveryPaymentWriteService",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "WorkingCapitalLoanRecoveryPaymentCommandHandler.java // refs: portfolio.workingcapitalloan.service.WorkingCapitalLoanRecoveryPaymentWriteService#recoveryPayment"
+    },
+    {
+      "id": "edge:workingcapitalloanrecoverypaymentcommandhandler-2",
+      "from": "port:handler.WorkingCapitalLoanRecoveryPaymentCommandHandler#processCommand",
+      "to": "junction:infrastructure.core.api.JsonCommand",
+      "edge_kind": "di",
+      "doctrine_tag": "system_map",
+      "evidence": "WorkingCapitalLoanRecoveryPaymentCommandHandler.java // refs: infrastructure.core.api.JsonCommand#getLoanId"
+    }
+  ]
+}

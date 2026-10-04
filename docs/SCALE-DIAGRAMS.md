@@ -13,9 +13,9 @@ flowchart TB
   M0[M0 demo verify pipeline preview]
   M1[M1 Rust engine parity]
   M2[M2 charter 1k plus recall 125]
-  S2[S2 slice matrix 6 shards]
+  S2[S2 slice matrix 7 shards]
   S3[S3 scale metrics plus diagrams]
-  M3[M3 multi-family 10k charter]
+  M3[M3 charter 10k scale test]
   M0 --> M1 --> M2 --> S2 --> S3 --> M3
 ```
 
@@ -59,10 +59,11 @@ flowchart LR
     S4[fineract thin]
     S5[charter 1k]
     S6[report module]
+    S7[charter 10k]
   end
   R[Reducer JSON report]
-  M --> S1 & S2 & S3 & S4 & S5 & S6
-  S1 & S2 & S3 & S4 & S5 & S6 --> R
+  M --> S1 & S2 & S3 & S4 & S5 & S6 & S7
+  S1 & S2 & S3 & S4 & S5 & S6 & S7 --> R
 ```
 
 **Command:** `make slice-matrix-check` · **Manifest:** [`fixtures/slice-matrix/manifest.v0.json`](../fixtures/slice-matrix/manifest.v0.json).

@@ -67,9 +67,11 @@ check "external fineract slice check" bash scripts/fineract_slice_check.sh
 
 check "fineract charter-1k slice (~1k LOC, manifest + refs)" make charter-1k-check
 
-check "slice matrix (6 shards, rust engine validate→extract→pack→reexpand)" make slice-matrix-check
+check "fineract charter-10k slice (~10k LOC experiments PATH LIST)" make charter-10k-check
 
-check "slice matrix (6 shards, python engine dual-stack)" \
+check "slice matrix (7 shards, rust engine validate→extract→pack→reexpand)" make slice-matrix-check
+
+check "slice matrix (7 shards, python engine dual-stack)" \
   env WIRING_ENGINE=python bash scripts/slice_matrix_run.sh
 
 check "scale metrics (charter LOC, recall pairs, handler WIN, matrix union LOC)" make scale-metrics-check
@@ -207,7 +209,7 @@ if len(doc.get('pack_blind_eval', {}).get('cases') or []) < 2:
     sys.exit(1)
 "
 
-check "edge-recall sample gate (toybank + fineract thin + charter-1k, 100+ frozen pairs)" \
+check "edge-recall sample gate (toybank + thin + charter 1k/10k delta, 120+ frozen pairs)" \
   make edge-recall-sample-check
 
 TMP_EDGE_FIX="$(mktemp)"

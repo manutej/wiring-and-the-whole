@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Append fineract-charter-1k pairs to fixtures/edge-recall-sample/expected.v0.json."""
+"""Refresh fineract charter slices in fixtures/edge-recall-sample/expected.v0.json."""
 
 from __future__ import annotations
 
@@ -10,8 +10,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURE = ROOT / "fixtures/edge-recall-sample/expected.v0.json"
-CHARTER_DIR = ROOT / "fixtures/external/fineract-charter-1k"
-CHARTER_MAP = CHARTER_DIR / "wiringmap.v0.json"
+
+CHARTERS: list[tuple[str, Path, Path]] = [
+    (
+        "fineract-charter-1k",
+        ROOT / "fixtures/external/fineract-charter-1k",
+        ROOT / "fixtures/external/fineract-charter-1k/wiringmap.v0.json",
+    ),
+    (
+        "fineract-charter-10k",
+        ROOT / "fixtures/external/fineract-charter-10k",
+        ROOT / "fixtures/external/fineract-charter-10k/wiringmap.v0.json",
+    ),
+]
 
 
 def extract_pairs(refs_dir: Path) -> list[list[str]]:
@@ -37,20 +48,35 @@ def extract_pairs(refs_dir: Path) -> list[list[str]]:
 def main() -> int:
     doc = json.loads(FIXTURE.read_text(encoding="utf-8"))
     samples = doc.setdefault("samples", [])
-    samples = [s for s in samples if s.get("id") != "fineract-charter-1k"]
-    pairs = extract_pairs(CHARTER_DIR)
-    samples.append(
-        {
-            "id": "fineract-charter-1k",
-            "refs_dir": "fixtures/external/fineract-charter-1k",
-            "wiringmap": "fixtures/external/fineract-charter-1k/wiringmap.v0.json",
-            "pairs": pairs,
-        }
-    )
+    charter_ids = {cid for cid, _, _ in CHARTERS}
+    samples = [s for s in samples if s.get("id") not in charter_ids]
+
+    one_k_pairs: set[tuple[str, str]] = set()
+    charter_1k_dir = CHARTERS[0][1]
+    if charter_1k_dir.is_dir():
+        for pair in extract_pairs(charter_1k_dir):
+            one_k_pairs.add((pair[0], pair[1]))
+
+    for cid, refs_dir, wiringmap in CHARTERS:
+        if not refs_dir.is_dir():
+            print(f"SKIP: missing {refs_dir}", file=sys.stderr)
+            continue
+        pairs = extract_pairs(refs_dir)
+        if cid == "fineract-charter-10k":
+            pairs = [p for p in pairs if (p[0], p[1]) not in one_k_pairs]
+        samples.append(
+            {
+                "id": cid,
+                "refs_dir": str(refs_dir.relative_to(ROOT)),
+                "wiringmap": str(wiringmap.relative_to(ROOT)),
+                "pairs": pairs,
+            }
+        )
+
     doc["samples"] = samples
     doc["description"] = (
         "Frozen (file, ref_token) pairs for wedge-2 edge recall sample gate "
-        "(toybank + fineract thin + ~1k charter vertical)"
+        "(toybank + fineract thin + charter 1k + charter 10k scale vertical)"
     )
     FIXTURE.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
     total = sum(len(s["pairs"]) for s in samples)

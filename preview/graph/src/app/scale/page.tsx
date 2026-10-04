@@ -10,7 +10,7 @@ import {
 const sections = [
   {
     title: "Scale ladder (programme)",
-    body: "M0 demo through M3 — current tip: S2 slice matrix + S3 metrics on branch scale-build-2.",
+    body: "M0 demo through M3 — current tip: S4 charter ~10k LOC + 7-shard slice matrix (integration branch until merge).",
     chart: scaleLadderDag,
   },
   {
@@ -19,7 +19,7 @@ const sections = [
     chart: compoundProgrammeDag,
   },
   {
-    title: "Slice matrix (6 shards)",
+    title: "Slice matrix (7 shards)",
     body: "make slice-matrix-check — same hot path as pipeline-io per shard; reducer JSON on stdout.",
     chart: sliceMatrixDag,
   },

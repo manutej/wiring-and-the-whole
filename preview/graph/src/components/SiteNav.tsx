@@ -5,6 +5,7 @@ const links = [
   { href: "/wiringmap", label: "Toybank" },
   { href: "/fineract", label: "Fineract thin" },
   { href: "/charter", label: "Charter 1k" },
+  { href: "/charter-10k", label: "Charter 10k" },
   { href: "/scale", label: "Scale diagrams" },
   { href: "/spine", label: "Rust spine" },
   { href: "/witness", label: "E1 witness" },
