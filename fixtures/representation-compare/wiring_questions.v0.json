@@ -1,0 +1,110 @@
+{
+  "schema_version": "representation-compare.v0",
+  "description": "Cold-navigation wiring questions — graded per representation bundle (test agent)",
+  "questions": [
+    {
+      "id": "Q1",
+      "category": "wiring",
+      "text": "DisburseLoan @CommandType action value",
+      "expected": "DISBURSE",
+      "l2_md": { "kind": "regex", "pattern": "DisburseLoanCommandHandler[\\s\\S]*?action\\s*=\\s*\"([^\"]+)\"" },
+      "l2_factored": {
+        "kind": "regex",
+        "pattern": "inst CommandHandler\\(DisburseLoanCommandHandler, [^,]+, [^,]+, [^,]+, ([A-Z]+)\\)"
+      },
+      "l2_explicit": {
+        "kind": "regex",
+        "pattern": "anno DisburseLoanCommandHandler @CommandType entity=\\w+ action=([A-Z]+)"
+      },
+      "ast_struct": {
+        "kind": "regex",
+        "pattern": "FILE DisburseLoanCommandHandler\\.java[\\s\\S]*?@CommandType entity=\\w+ action=([A-Z]+)"
+      },
+      "raw_java": { "kind": "file_regex", "file": "DisburseLoanCommandHandler.java", "pattern": "action\\s*=\\s*\"([^\"]+)\"" }
+    },
+    {
+      "id": "Q2",
+      "category": "wiring",
+      "text": "DisburseLoan primary platform service call (method name)",
+      "expected": "disburseLoan",
+      "l2_md": { "kind": "regex", "pattern": "DisburseLoanCommandHandler[\\s\\S]*?#([a-zA-Z]+)" },
+      "l2_factored": {
+        "kind": "regex",
+        "pattern": "inst CommandHandler\\(DisburseLoanCommandHandler, [^,]+, ([a-zA-Z]+),"
+      },
+      "l2_explicit": {
+        "kind": "regex",
+        "pattern": "edge DisburseLoanCommandHandler -> \\w+#([a-zA-Z]+)"
+      },
+      "ast_struct": {
+        "kind": "regex",
+        "pattern": "FILE DisburseLoanCommandHandler\\.java[\\s\\S]*?CALL (disburseLoan)"
+      },
+      "raw_java": { "kind": "file_regex", "file": "DisburseLoanCommandHandler.java", "pattern": "\\.(disburseLoan)\\(" }
+    },
+    {
+      "id": "Q3",
+      "category": "wiring",
+      "text": "CloseLoan @CommandType action value",
+      "expected": "CLOSE",
+      "l2_md": { "kind": "regex", "pattern": "CloseLoanCommandHandler\\.java \\|\\s*LOAN / ([A-Z]+)" },
+      "l2_factored": {
+        "kind": "regex",
+        "pattern": "inst CommandHandler\\(CloseLoanCommandHandler, [^,]+, [^,]+, [^,]+, ([A-Z]+)\\)"
+      },
+      "l2_explicit": {
+        "kind": "regex",
+        "pattern": "anno CloseLoanCommandHandler @CommandType entity=\\w+ action=([A-Z]+)"
+      },
+      "ast_struct": {
+        "kind": "regex",
+        "pattern": "FILE CloseLoanCommandHandler\\.java[\\s\\S]*?@CommandType entity=\\w+ action=([A-Z]+)"
+      },
+      "raw_java": { "kind": "file_regex", "file": "CloseLoanCommandHandler.java", "pattern": "action\\s*=\\s*\"([^\"]+)\"" }
+    },
+    {
+      "id": "Q4",
+      "category": "topology",
+      "text": "Count inst CommandHandler rows in factored L2 pack",
+      "expected": "29",
+      "l2_md": { "kind": "regex", "pattern": "`inst CommandHandler` rows in factored pack \\|\\s*(\\d+)" },
+      "l2_factored": { "kind": "count_lines", "prefix": "inst CommandHandler(" },
+      "l2_explicit": { "kind": "unsupported" },
+      "ast_struct": { "kind": "unsupported" },
+      "raw_java": { "kind": "unsupported" }
+    },
+    {
+      "id": "Q5",
+      "category": "meta",
+      "text": "Parallel experiments pool path",
+      "expected": "experiments/e3-ablation/raw/",
+      "l2_md": { "kind": "regex", "pattern": "(experiments/e3-ablation/raw/)" },
+      "l2_factored": { "kind": "unsupported" },
+      "l2_explicit": { "kind": "unsupported" },
+      "ast_struct": { "kind": "unsupported" },
+      "raw_java": { "kind": "unsupported" }
+    },
+    {
+      "id": "Q6",
+      "category": "wiring",
+      "text": "CommandHandler.java files in e3 pool (on disk)",
+      "expected": "30",
+      "l2_md": { "kind": "regex", "pattern": "Java files in pool[^|]*\\|\\s*(\\d+)" },
+      "l2_factored": { "kind": "unsupported" },
+      "l2_explicit": { "kind": "unsupported" },
+      "ast_struct": { "kind": "count_files", "suffix": "CommandHandler.java" },
+      "raw_java": { "kind": "count_files", "suffix": "CommandHandler.java" }
+    },
+    {
+      "id": "Q7",
+      "category": "syntax",
+      "text": "DisburseLoanCommandHandler declares CommandType annotation (yes/no)",
+      "expected": "yes",
+      "l2_md": { "kind": "regex", "pattern": "DisburseLoanCommandHandler[\\s\\S]*@CommandType" },
+      "l2_factored": { "kind": "regex", "pattern": "inst CommandHandler\\(DisburseLoanCommandHandler," },
+      "l2_explicit": { "kind": "regex", "pattern": "unit DisburseLoanCommandHandler" },
+      "ast_struct": { "kind": "regex", "pattern": "FILE DisburseLoanCommandHandler\\.java[\\s\\S]*CommandType" },
+      "raw_java": { "kind": "file_regex", "file": "DisburseLoanCommandHandler.java", "pattern": "@CommandType" }
+    }
+  ]
+}

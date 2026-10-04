@@ -37,6 +37,14 @@ body {
   height: auto;
 }
 
+.mermaid-compact svg {
+  font-size: 11px !important;
+}
+
+.mermaid-compact .nodeLabel {
+  font-size: 11px;
+}
+
 .witness-frame {
   width: 100%;
   min-height: 70vh;

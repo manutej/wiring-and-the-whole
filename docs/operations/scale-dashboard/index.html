@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wiring scale dashboard</title>
+  <style>
+    :root { font-family: ui-sans-serif, system-ui, sans-serif; background: #faf9f7; color: #1a1a1a; }
+    body { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+    h1 { font-weight: 500; font-size: 1.5rem; }
+    .banner { background: #fff3e0; border: 1px solid #e65100; padding: 1rem; margin: 1rem 0; border-radius: 4px; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.875rem; }
+    th, td { border: 1px solid #ddd; padding: 0.4rem 0.6rem; text-align: left; }
+    th { background: #eee; }
+    a { color: #c0392b; }
+    pre { background: #fff; border: 1px solid #ddd; padding: 1rem; overflow: auto; font-size: 0.75rem; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>Wiring scale dashboard (S4 charter 10k)</h1>
+  <p>Generated <code>2026-10-04T01:03:52Z</code> · git <code>3fe1c7a</code></p>
+
+  <section>
+    <h2>Pipeline performance (measured)</h2>
+    <p><strong>7-shard matrix total:</strong> 57.49 ms (Rust) · 1076.53 ms (Python)</p>
+    <p><strong>Charter 10k shard:</strong> validate 1.21 · extract 3.21 · pack 2.67 · reexpand 2.32 · <strong>total 9.41 ms</strong> (Rust)</p>
+  </section>
+
+  <div class="banner">
+    <strong>What repo is this?</strong> Charter 10k is NOT a full Apache Fineract clone. It copies real Fineract-derived Java from in-repo experiment corpora (e3-ablation, e5-depth, e2-tokens) with parser-injected // refs: — not hand-wrapped placeholder code.
+    <br />Upstream reference: https://github.com/apache/fineract.git · commit pinned: False.
+  </div>
+
+  <section>
+    <h2>L2 vs AST (29-handler wedge, test agent)</h2>
+    <p>Tokens factored: 1045 · AST struct: 5241 · raw Java: 11962</p>
+    <p>Agent pass score — L2 factored: 5/7 · L2 md: 6/7 · AST: 5/7</p>
+    <p><code>docs/operations/reports/REPRESENTATION-COMPARE-LATEST.md</code></p>
+  </section>
+
+  <div class="grid">
+    <section>
+      <h2>Scale metrics</h2>
+      <ul>
+        <li>Matrix slices: 7</li>
+        <li>Unique Java LOC (content hash): 10663</li>
+        <li>Edge recall: 127 frozen / 118 distinct</li>
+        <li>Charter 10k LOC: 10270</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Charter 10k wiring vs context</h2>
+      <ul>
+        <li>Handler LOC: 1394 (30 files)</li>
+        <li>Context LOC: 8876 (11 files)</li>
+        <li>Mapped fraction (by LOC): 13.6%</li>
+        <li>WiringMap: 30 units · 92 edges</li>
+      </ul>
+    </section>
+  </div>
+
+  <section>
+    <h2>View comprehensive wiring diagram</h2>
+    <p>Live Mermaid (all wired units + edges): <a href="https://wiring-graph-preview.vercel.app/charter-10k">charter-10k preview</a>.
+    Interactive dashboard: <a href="https://wiring-graph-preview.vercel.app/scale-dashboard">/scale-dashboard</a>.
+    Programme diagrams: <a href="https://wiring-graph-preview.vercel.app/scale">/scale</a>.</p>
+  </section>
+
+  <section>
+    <h2>Slice matrix timing (Rust, ms)</h2>
+    <table>
+      <thead><tr><th>Shard</th><th>Java files</th><th>validate</th><th>extract</th><th>pack</th><th>reexpand</th><th>total</th></tr></thead>
+      <tbody><tr>
+          <td>toybank-accounts</td>
+          <td>4</td>
+          <td>1.62</td>
+          <td>2.19</td>
+          <td>3.65</td>
+          <td>2.57</td>
+          <td><strong>10.05</strong></td>
+        </tr><tr>
+          <td>toybank-loans</td>
+          <td>4</td>
+          <td>1.05</td>
+          <td>1.44</td>
+          <td>2.38</td>
+          <td>2.03</td>
+          <td><strong>6.92</strong></td>
+        </tr><tr>
+          <td>toybank-savings</td>
+          <td>3</td>
+          <td>0.89</td>
+          <td>1.27</td>
+          <td>2.24</td>
+          <td>1.95</td>
+          <td><strong>6.37</strong></td>
+        </tr><tr>
+          <td>fineract-handlers-thin</td>
+          <td>7</td>
+          <td>0.95</td>
+          <td>1.34</td>
+          <td>2.31</td>
+          <td>1.84</td>
+          <td><strong>6.44</strong></td>
+        </tr><tr>
+          <td>fineract-charter-1k</td>
+          <td>29</td>
+          <td>1.34</td>
+          <td>1.68</td>
+          <td>2.47</td>
+          <td>5.53</td>
+          <td><strong>11.04</strong></td>
+        </tr><tr>
+          <td>toybank-report</td>
+          <td>1</td>
+          <td>1.12</td>
+          <td>1.17</td>
+          <td>2.46</td>
+          <td>2.49</td>
+          <td><strong>7.26</strong></td>
+        </tr><tr>
+          <td>fineract-charter-10k</td>
+          <td>41</td>
+          <td>1.21</td>
+          <td>3.21</td>
+          <td>2.67</td>
+          <td>2.32</td>
+          <td><strong>9.41</strong></td>
+        </tr></tbody>
+    </table>
+    <p>Matrix total: 57.49 ms (Rust) · 1076.53 ms (Python)</p>
+  </section>
+
+  <section>
+    <h2>Raw report JSON</h2>
+    <pre id="json">{
+  &quot;schema_version&quot;: &quot;scale-report.v0&quot;,
+  &quot;generated_at_utc&quot;: &quot;2026-10-04T01:03:52Z&quot;,
+  &quot;git_sha&quot;: &quot;3fe1c7a&quot;,
+  &quot;corpus&quot;: {
+    &quot;kind&quot;: &quot;experiments_path_list_not_checkout&quot;,
+    &quot;summary&quot;: &quot;Charter 10k is NOT a full Apache Fineract clone. It copies real Fineract-derived Java from in-repo experiment corpora (e3-ablation, e5-depth, e2-tokens) with parser-injected // refs: \u2014 not hand-wrapped placeholder code.&quot;,
+    &quot;upstream_repo&quot;: &quot;https://github.com/apache/fineract.git&quot;,
+    &quot;upstream_commit_pinned&quot;: false,
+    &quot;source_pools&quot;: [
+      &quot;experiments/e3-ablation/raw (*CommandHandler.java)&quot;,
+      &quot;experiments/e5-depth/raw (*.java services)&quot;,
+      &quot;experiments/e2-tokens/raw (*.java)&quot;
+    ],
+    &quot;this_repo&quot;: &quot;https://github.com/manutej/wiring-and-the-whole&quot;,
+    &quot;charter_fixture&quot;: &quot;fixtures/external/fineract-charter-10k&quot;
+  },
+  &quot;metrics&quot;: {
+    &quot;charter_1k&quot;: {
+      &quot;java_files&quot;: 29,
+      &quot;loc&quot;: 1350,
+      &quot;ref_tokens&quot;: 90
+    },
+    &quot;slice_matrix_slices&quot;: 7,
+    &quot;edge_recall_frozen_pairs&quot;: 127,
+    &quot;edge_recall_distinct_pairs&quot;: 118,
+    &quot;handler_parsed&quot;: 29,
+    &quot;matrix_unique_java_bodies&quot;: 60,
+    &quot;matrix_unique_java_loc&quot;: 10663,
+    &quot;handler_measured_explicit_tokens&quot;: 1923,
+    &quot;handler_measured_factored_tokens&quot;: 947,
+    &quot;handler_breakeven_verdict_at_n514&quot;: &quot;WIN&quot;,
+    &quot;charter_10k&quot;: {
+      &quot;java_files&quot;: 41,
+      &quot;loc&quot;: 10270,
+      &quot;ref_tokens&quot;: 92
+    }
+  },
+  &quot;charter_10k_breakdown&quot;: {
+    &quot;handler_java_files&quot;: 30,
+    &quot;context_java_files&quot;: 11,
+    &quot;handler_loc&quot;: 1394,
+    &quot;context_loc&quot;: 8876,
+    &quot;total_loc&quot;: 10270,
+    &quot;mapped_fraction_loc&quot;: 0.1357,
+    &quot;wiringmap_units&quot;: 30,
+    &quot;wiringmap_edges&quot;: 92,
+    &quot;wiringmap_junctions&quot;: 28
+  },
+  &quot;slice_matrix_timing&quot;: {
+    &quot;rust&quot;: {
+      &quot;schema_version&quot;: &quot;slice-matrix-timing.v0&quot;,
+      &quot;wiring_engine&quot;: &quot;rust&quot;,
+      &quot;slice_count&quot;: 7,
+      &quot;slices&quot;: [
+        {
+          &quot;id&quot;: &quot;toybank-accounts&quot;,
+          &quot;refs_dir&quot;: &quot;witness/toybank/accounts&quot;,
+          &quot;java_files&quot;: 4,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 1.62,
+            &quot;extract_ms&quot;: 2.19,
+            &quot;pack_ms&quot;: 3.65,
+            &quot;reexpand_ms&quot;: 2.57,
+            &quot;total_ms&quot;: 10.05
+          }
+        },
+        {
+          &quot;id&quot;: &quot;toybank-loans&quot;,
+          &quot;refs_dir&quot;: &quot;witness/toybank/loans&quot;,
+          &quot;java_files&quot;: 4,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 1.05,
+            &quot;extract_ms&quot;: 1.44,
+            &quot;pack_ms&quot;: 2.38,
+            &quot;reexpand_ms&quot;: 2.03,
+            &quot;total_ms&quot;: 6.92
+          }
+        },
+        {
+          &quot;id&quot;: &quot;toybank-savings&quot;,
+          &quot;refs_dir&quot;: &quot;witness/toybank/savings&quot;,
+          &quot;java_files&quot;: 3,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 0.89,
+            &quot;extract_ms&quot;: 1.27,
+            &quot;pack_ms&quot;: 2.24,
+            &quot;reexpand_ms&quot;: 1.95,
+            &quot;total_ms&quot;: 6.37
+          }
+        },
+        {
+          &quot;id&quot;: &quot;fineract-handlers-thin&quot;,
+          &quot;refs_dir&quot;: &quot;fixtures/external/fineract-handlers-thin&quot;,
+          &quot;java_files&quot;: 7,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 0.95,
+            &quot;extract_ms&quot;: 1.34,
+            &quot;pack_ms&quot;: 2.31,
+            &quot;reexpand_ms&quot;: 1.84,
+            &quot;total_ms&quot;: 6.44
+          }
+        },
+        {
+          &quot;id&quot;: &quot;fineract-charter-1k&quot;,
+          &quot;refs_dir&quot;: &quot;fixtures/external/fineract-charter-1k&quot;,
+          &quot;java_files&quot;: 29,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 1.34,
+            &quot;extract_ms&quot;: 1.68,
+            &quot;pack_ms&quot;: 2.47,
+            &quot;reexpand_ms&quot;: 5.53,
+            &quot;total_ms&quot;: 11.04
+          }
+        },
+        {
+          &quot;id&quot;: &quot;toybank-report&quot;,
+          &quot;refs_dir&quot;: &quot;witness/toybank/report&quot;,
+          &quot;java_files&quot;: 1,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 1.12,
+            &quot;extract_ms&quot;: 1.17,
+            &quot;pack_ms&quot;: 2.46,
+            &quot;reexpand_ms&quot;: 2.49,
+            &quot;total_ms&quot;: 7.26
+          }
+        },
+        {
+          &quot;id&quot;: &quot;fineract-charter-10k&quot;,
+          &quot;refs_dir&quot;: &quot;fixtures/external/fineract-charter-10k&quot;,
+          &quot;java_files&quot;: 41,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 1.21,
+            &quot;extract_ms&quot;: 3.21,
+            &quot;pack_ms&quot;: 2.67,
+            &quot;reexpand_ms&quot;: 2.32,
+            &quot;total_ms&quot;: 9.41
+          }
+        }
+      ],
+      &quot;total_ms&quot;: 57.49
+    },
+    &quot;python&quot;: {
+      &quot;schema_version&quot;: &quot;slice-matrix-timing.v0&quot;,
+      &quot;wiring_engine&quot;: &quot;python&quot;,
+      &quot;slice_count&quot;: 7,
+      &quot;slices&quot;: [
+        {
+          &quot;id&quot;: &quot;toybank-accounts&quot;,
+          &quot;refs_dir&quot;: &quot;witness/toybank/accounts&quot;,
+          &quot;java_files&quot;: 4,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 81.95,
+            &quot;extract_ms&quot;: 25.72,
+            &quot;pack_ms&quot;: 23.57,
+            &quot;reexpand_ms&quot;: 30.48,
+            &quot;total_ms&quot;: 161.75
+          }
+        },
+        {
+          &quot;id&quot;: &quot;toybank-loans&quot;,
+          &quot;refs_dir&quot;: &quot;witness/toybank/loans&quot;,
+          &quot;java_files&quot;: 4,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 78.98,
+            &quot;extract_ms&quot;: 23.23,
+            &quot;pack_ms&quot;: 23.55,
+            &quot;reexpand_ms&quot;: 22.01,
+            &quot;total_ms&quot;: 147.8
+          }
+        },
+        {
+          &quot;id&quot;: &quot;toybank-savings&quot;,
+          &quot;refs_dir&quot;: &quot;witness/toybank/savings&quot;,
+          &quot;java_files&quot;: 3,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 78.31,
+            &quot;extract_ms&quot;: 23.79,
+            &quot;pack_ms&quot;: 23.2,
+            &quot;reexpand_ms&quot;: 21.72,
+            &quot;total_ms&quot;: 147.04
+          }
+        },
+        {
+          &quot;id&quot;: &quot;fineract-handlers-thin&quot;,
+          &quot;refs_dir&quot;: &quot;fixtures/external/fineract-handlers-thin&quot;,
+          &quot;java_files&quot;: 7,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 77.46,
+            &quot;extract_ms&quot;: 23.78,
+            &quot;pack_ms&quot;: 23.85,
+            &quot;reexpand_ms&quot;: 21.91,
+            &quot;total_ms&quot;: 147.03
+          }
+        },
+        {
+          &quot;id&quot;: &quot;fineract-charter-1k&quot;,
+          &quot;refs_dir&quot;: &quot;fixtures/external/fineract-charter-1k&quot;,
+          &quot;java_files&quot;: 29,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 90.54,
+            &quot;extract_ms&quot;: 25.0,
+            &quot;pack_ms&quot;: 25.29,
+            &quot;reexpand_ms&quot;: 24.25,
+            &quot;total_ms&quot;: 165.1
+          }
+        },
+        {
+          &quot;id&quot;: &quot;toybank-report&quot;,
+          &quot;refs_dir&quot;: &quot;witness/toybank/report&quot;,
+          &quot;java_files&quot;: 1,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 79.01,
+            &quot;extract_ms&quot;: 23.7,
+            &quot;pack_ms&quot;: 24.12,
+            &quot;reexpand_ms&quot;: 21.93,
+            &quot;total_ms&quot;: 148.78
+          }
+        },
+        {
+          &quot;id&quot;: &quot;fineract-charter-10k&quot;,
+          &quot;refs_dir&quot;: &quot;fixtures/external/fineract-charter-10k&quot;,
+          &quot;java_files&quot;: 41,
+          &quot;steps_ms&quot;: {
+            &quot;validate_ms&quot;: 85.65,
+            &quot;extract_ms&quot;: 26.76,
+            &quot;pack_ms&quot;: 24.55,
+            &quot;reexpand_ms&quot;: 22.05,
+            &quot;total_ms&quot;: 159.03
+          }
+        }
+      ],
+      &quot;total_ms&quot;: 1076.53
+    }
+  },
+  &quot;performance&quot;: {
+    &quot;matrix_total_ms_rust&quot;: 57.49,
+    &quot;matrix_total_ms_python&quot;: 1076.53,
+    &quot;charter_10k_validate_ms&quot;: 1.21,
+    &quot;charter_10k_extract_ms&quot;: 3.21,
+    &quot;charter_10k_pack_ms&quot;: 2.67,
+    &quot;charter_10k_reexpand_ms&quot;: 2.32,
+    &quot;charter_10k_total_ms&quot;: 9.41
+  },
+  &quot;representation_compare&quot;: {
+    &quot;tokens_factored&quot;: 1045,
+    &quot;tokens_ast&quot;: 5241,
+    &quot;tokens_raw&quot;: 11962,
+    &quot;pass_l2_factored&quot;: 5,
+    &quot;pass_l2_md&quot;: 6,
+    &quot;pass_ast&quot;: 5
+  },
+  &quot;viewing&quot;: {
+    &quot;comprehensive_wiring_mermaid&quot;: &quot;https://wiring-graph-preview.vercel.app/charter-10k&quot;,
+    &quot;charter_1k&quot;: &quot;https://wiring-graph-preview.vercel.app/charter&quot;,
+    &quot;scale_ladder_diagrams&quot;: &quot;https://wiring-graph-preview.vercel.app/scale&quot;,
+    &quot;html_dashboard&quot;: &quot;https://wiring-graph-preview.vercel.app/scale-dashboard&quot;,
+    &quot;static_html&quot;: &quot;docs/operations/scale-dashboard/index.html&quot;,
+    &quot;local_makefile&quot;: &quot;make charter-10k-check&quot;,
+    &quot;docs&quot;: &quot;docs/operations/VIEWING-WIRING-DIAGRAMS.md&quot;
+  }
+}</pre>
+  </section>
+</body>
+</html>

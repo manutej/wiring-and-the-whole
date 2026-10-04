@@ -76,6 +76,8 @@ check "slice matrix (7 shards, python engine dual-stack)" \
 
 check "scale metrics (charter LOC, recall pairs, handler WIN, matrix union LOC)" make scale-metrics-check
 
+check "scale report dashboard artifact (JSON + timing)" make scale-report-check
+
 check "l2 pack parity all slice-matrix wiringmaps (Rust vs Python)" \
   bash scripts/l2_pack_parity_all_maps.sh
 

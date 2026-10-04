@@ -1,10 +1,8 @@
-import { MermaidChart } from "@/components/MermaidChart";
+import { WiringMapBrowser } from "@/components/WiringMapBrowser";
 import toybank from "@/lib/data/toybank-accounts.v0.json";
 import type { WiringMapV0 } from "@/lib/wiringmap-types";
-import { wiringMapToMermaid } from "@/lib/wiringmapToMermaid";
 
 const map = toybank as WiringMapV0;
-const chart = wiringMapToMermaid(map);
 
 export default function WiringMapPage() {
   return (
@@ -17,17 +15,7 @@ export default function WiringMapPage() {
           <code className="font-mono text-xs">{map.schema_version}</code>
         </p>
       </div>
-      <div className="diagram-panel">
-        <MermaidChart chart={chart} className="mermaid-output" />
-      </div>
-      <details className="text-sm font-sans">
-        <summary className="cursor-pointer text-[var(--vermillion)]">
-          Mermaid source (generated)
-        </summary>
-        <pre className="mt-2 p-3 bg-[var(--paper)] border border-[var(--line)] overflow-x-auto text-xs font-mono">
-          {chart}
-        </pre>
-      </details>
+      <WiringMapBrowser map={map} />
     </article>
   );
 }

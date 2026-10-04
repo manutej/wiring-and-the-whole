@@ -86,6 +86,8 @@ unverified until an independent reader re-derives it (this caught two real bugs)
 
 ## 6. Next actions
 
+**Next loop handoff (2026-10-04):** [`docs/operations/HANDOFF-NEXT-LOOP.md`](docs/operations/HANDOFF-NEXT-LOOP.md) — performance dashboard, L2 vs AST compare, S5 OpenRig prep.
+
 **Cold-start queue:** [`docs/CONTEXT-COMPACT.md`](docs/CONTEXT-COMPACT.md) + scale wedges in [`docs/SCALE-PATH.md`](docs/SCALE-PATH.md).
 
 **Shipped on main (harness):** `make verify`; WiringMap v0 + `make pack-v0-check`; density D0–D4; external thin slice;

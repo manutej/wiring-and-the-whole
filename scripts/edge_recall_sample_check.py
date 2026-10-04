@@ -86,6 +86,9 @@ def main(argv: list[str] | None = None) -> int:
             failures.append(f"{sid}: wiringmap missing {pair[0]} -> {pair[1]}")
         for pair in sorted(from_map - extracted):
             failures.append(f"{sid}: wiringmap cites ref not in // refs: {pair[0]} -> {pair[1]}")
+        if not sample.get("allow_extract_surplus"):
+            for pair in sorted(extracted - expected):
+                failures.append(f"{sid}: extract surplus (not frozen) {pair[0]} -> {pair[1]}")
 
     if failures:
         for line in failures:

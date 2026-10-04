@@ -1,0 +1,477 @@
+FILE AddLoanChargeCommandHandler.java
+  @CommandType entity=LOANCHARGE action=CREATE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.DataIntegrityErrorHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanChargeWritePlatformService
+  import org.springframework.dao.DataIntegrityViolationException
+  import org.springframework.orm.jpa.JpaSystemException
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS AddLoanChargeCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL CommandProcessingResult.empty
+      CALL addLoanCharge
+      CALL command.getLoanId
+      CALL dataIntegrityErrorHandler.handleDataIntegrityIssues
+      CALL dve.getMostSpecificCause
+
+FILE AttachLoanOriginatorCommandHandler.java
+  @CommandType entity=LOAN_ORIGINATOR action=ATTACH
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanorigination.service.LoanOriginatorWritePlatformService
+  import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
+  import org.springframework.stereotype.Service
+  CLASS AttachLoanOriginatorCommandHandler annotations=['Service', 'CommandType', 'RequiredArgsConstructor', 'ConditionalOnProperty']
+    METHOD processCommand annotations=['Override']
+      CALL attachOriginatorToLoan
+      CALL command.getLoanId
+      CALL command.subentityId
+
+FILE BulkUpdateLoanOfficerCommandHandler.java
+  @CommandType entity=LOAN action=BULKREASSIGN
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS BulkUpdateLoanOfficerCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL bulkLoanReassignment
+
+FILE CloseLoanCommandHandler.java
+  @CommandType entity=LOAN action=CLOSE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS CloseLoanCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL closeLoan
+      CALL command.getLoanId
+
+FILE CreateDelinquencyRangeCommandHandler.java
+  @CommandType entity=DELINQUENCY_RANGE action=CREATE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.delinquency.service.DelinquencyWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS CreateDelinquencyRangeCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL createDelinquencyRange
+
+FILE CreditBalanceRefundCommandHandler.java
+  @CommandType entity=LOAN action=CREDITBALANCEREFUND
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.DataIntegrityErrorHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.dao.DataIntegrityViolationException
+  import org.springframework.orm.jpa.JpaSystemException
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS CreditBalanceRefundCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL CommandProcessingResult.empty
+      CALL command.getLoanId
+      CALL creditBalanceRefund
+      CALL dataIntegrityErrorHandler.handleDataIntegrityIssues
+      CALL dve.getMostSpecificCause
+
+FILE DetachLoanOriginatorCommandHandler.java
+  @CommandType entity=LOAN_ORIGINATOR action=DETACH
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanorigination.service.LoanOriginatorWritePlatformService
+  import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
+  import org.springframework.stereotype.Service
+  CLASS DetachLoanOriginatorCommandHandler annotations=['Service', 'CommandType', 'RequiredArgsConstructor', 'ConditionalOnProperty']
+    METHOD processCommand annotations=['Override']
+      CALL command.getLoanId
+      CALL command.subentityId
+      CALL detachOriginatorFromLoan
+
+FILE DisburseLoanCommandHandler.java
+  @CommandType entity=LOAN action=DISBURSE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.DataIntegrityErrorHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.dao.DataIntegrityViolationException
+  import org.springframework.orm.jpa.JpaSystemException
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS DisburseLoanCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL CommandProcessingResult.empty
+      CALL command.entityId
+      CALL dataIntegrityErrorHandler.handleDataIntegrityIssues
+      CALL disburseLoan
+      CALL dve.getMostSpecificCause
+
+FILE DisburseLoanToSavingsCommandHandler.java
+  @CommandType entity=LOAN action=DISBURSETOSAVINGS
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS DisburseLoanToSavingsCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.entityId
+      CALL disburseLoan
+
+FILE ForeClosureCommandHandler.java
+  @CommandType entity=LOAN action=FORECLOSURE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.stereotype.Service
+  CLASS ForeClosureCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Override']
+      CALL command.getLoanId
+      CALL writePlatformService.forecloseLoan
+
+FILE GLIMApplicationRejectionCommandHandler.java
+  @CommandType entity=GLIMLOAN action=REJECT
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanApplicationWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS GLIMApplicationRejectionCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.entityId
+      CALL rejectGLIMApplicationApproval
+
+FILE LoanApplicationModificationCommandHandler.java
+  @CommandType entity=LOAN action=UPDATE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanApplicationWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS LoanApplicationModificationCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.getLoanId
+      CALL modifyApplication
+
+FILE LoanApplicationSubmittalCommandHandler.java
+  @CommandType entity=LOAN action=CREATE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanApplicationWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS LoanApplicationSubmittalCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL submitApplication
+
+FILE LoanApplicationWithdrawnByApplicantCommandHandler.java
+  @CommandType entity=LOAN action=WITHDRAW
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanApplicationWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS LoanApplicationWithdrawnByApplicantCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL applicantWithdrawsFromApplication
+      CALL command.entityId
+
+FILE LoanApprovedAmountModificationCommandHandler.java
+  @CommandType entity=LOAN action=UPDATE_APPROVED_AMOUNT
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanApprovedAmountWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS LoanApprovedAmountModificationCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Override', 'Transactional']
+      CALL command.getLoanId
+      CALL loanApprovedAmountWritePlatformService.modifyLoanApprovedAmount
+
+FILE LoanGoodwillCreditCommandHandler.java
+  @CommandType entity=LOAN action=GOODWILLCREDIT
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.DataIntegrityErrorHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.domain.LoanTransactionType
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.dao.DataIntegrityViolationException
+  import org.springframework.orm.jpa.JpaSystemException
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS LoanGoodwillCreditCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL CommandProcessingResult.empty
+      CALL command.getLoanId
+      CALL dataIntegrityErrorHandler.handleDataIntegrityIssues
+      CALL dve.getMostSpecificCause
+      CALL makeLoanRepayment
+
+FILE LoanMerchantIssuedRefundCommandHandler.java
+  @CommandType entity=LOAN action=MERCHANTISSUEDREFUND
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.domain.LoanTransactionType
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS LoanMerchantIssuedRefundCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.getLoanId
+      CALL makeRefund
+
+FILE LoanRefundByCashCommandHandler.java
+  @CommandType entity=LOAN action=REFUNDBYCASH
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS LoanRefundByCashCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.getLoanId
+      CALL makeLoanRefund
+
+FILE LoanRepaymentChargebackCommandHandler.java
+  @CommandType entity=LOAN action=CHARGEBACK
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS LoanRepaymentChargebackCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL chargebackLoanTransaction
+      CALL command.entityId
+      CALL command.getLoanId
+
+FILE MarkLoanAsFraudCommandHandler.java
+  @CommandType entity=LOAN action=SETFRAUD
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.loanaccount.service.LoanWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS MarkLoanAsFraudCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.getLoanId
+      CALL markLoanAsFraud
+
+FILE PaymentTypeCreateCommandHandler.java
+  import io.github.resilience4j.retry.annotation.Retry
+  import lombok.RequiredArgsConstructor
+  import lombok.extern.slf4j.Slf4j
+  import org.apache.fineract.command.core.Command
+  import org.apache.fineract.command.core.CommandHandler
+  import org.apache.fineract.portfolio.paymenttype.data.PaymentTypeCreateRequest
+  import org.apache.fineract.portfolio.paymenttype.data.PaymentTypeCreateResponse
+  import org.apache.fineract.portfolio.paymenttype.service.PaymentTypeWriteService
+  import org.springframework.stereotype.Component
+  import org.springframework.transaction.annotation.Transactional
+  CLASS PaymentTypeCreateCommandHandler annotations=['Slf4j', 'Component', 'RequiredArgsConstructor']
+    METHOD handle annotations=['Retry', 'Override', 'Transactional']
+      CALL command.getPayload
+      CALL paymentTypeWriteService.createPaymentType
+    METHOD fallback annotations=['Override']
+
+FILE RejectAddtionalSharesCommandHandler.java
+  @CommandType entity=SHAREACCOUNT action=REJECTADDITIONALSHARES
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.shareaccounts.service.ShareAccountWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS RejectAddtionalSharesCommandHandler annotations=['Service', 'CommandType', 'RequiredArgsConstructor']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL jsonCommand.entityId
+      CALL rejectAdditionalShares
+
+FILE SaveCenterCollectionSheetCommandHandler.java
+  @CommandType entity=CENTER action=SAVECOLLECTIONSHEET
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.collectionsheet.service.CollectionSheetWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS SaveCenterCollectionSheetCommandHandler annotations=['Service', 'CommandType', 'RequiredArgsConstructor']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL updateCollectionSheet
+
+FILE UpdateChargeDefinitionCommandHandler.java
+  @CommandType entity=CHARGE action=UPDATE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.charge.service.ChargeWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS UpdateChargeDefinitionCommandHandler annotations=['RequiredArgsConstructor', 'Service', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.entityId
+      CALL updateCharge
+
+FILE UpdateDelinquencyBucketCommandHandler.java
+  @CommandType entity=DELINQUENCY_BUCKET action=UPDATE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.delinquency.service.DelinquencyWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS UpdateDelinquencyBucketCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.entityId
+      CALL updateDelinquencyBucket
+
+FILE UpdateDelinquencyRangeCommandHandler.java
+  @CommandType entity=DELINQUENCY_RANGE action=UPDATE
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.delinquency.service.DelinquencyWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS UpdateDelinquencyRangeCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.entityId
+      CALL updateDelinquencyRange
+
+FILE UpdateInterestPauseCommandHandler.java
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.infrastructure.core.domain.ExternalId
+  import org.apache.fineract.infrastructure.core.exception.PlatformApiDataValidationException
+  import org.apache.fineract.portfolio.interestpauses.service.InterestPauseWritePlatformService
+  import org.springframework.stereotype.Component
+  CLASS UpdateInterestPauseCommandHandler annotations=['Component', 'RequiredArgsConstructor']
+    METHOD processCommand annotations=['Override']
+      CALL command.getLoanExternalId
+      CALL command.getLoanId
+      CALL command.getResourceId
+      CALL command.stringValueOfParameterNamed
+      CALL interestPauseService.updateInterestPause
+
+FILE UpdateLoanDelinquencyBucketCommandHandler.java
+  @CommandType entity=LOAN action=UPDATEDELINQUENCY
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.delinquency.service.DelinquencyWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS UpdateLoanDelinquencyBucketCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL applyDelinquencyTagToLoan
+      CALL command.entityId
+
+FILE WithdrawClientTransferCommandHandler.java
+  @CommandType entity=CLIENT action=WITHDRAWTRANSFER
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.transfer.service.TransferWritePlatformService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS WithdrawClientTransferCommandHandler annotations=['Service', 'CommandType', 'RequiredArgsConstructor']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.entityId
+      CALL withdrawClientTransfer
+
+FILE WorkingCapitalLoanRecoveryPaymentCommandHandler.java
+  import lombok.RequiredArgsConstructor
+  import org.apache.fineract.commands.annotation.CommandType
+  import org.apache.fineract.commands.domain.CommandWrapperConstants
+  import org.apache.fineract.commands.handler.NewCommandSourceHandler
+  import org.apache.fineract.infrastructure.core.api.JsonCommand
+  import org.apache.fineract.infrastructure.core.data.CommandProcessingResult
+  import org.apache.fineract.portfolio.workingcapitalloan.service.WorkingCapitalLoanRecoveryPaymentWriteService
+  import org.springframework.stereotype.Service
+  import org.springframework.transaction.annotation.Transactional
+  CLASS WorkingCapitalLoanRecoveryPaymentCommandHandler annotations=['Service', 'RequiredArgsConstructor', 'CommandType']
+    METHOD processCommand annotations=['Transactional', 'Override']
+      CALL command.getLoanId
+      CALL recoveryPayment
