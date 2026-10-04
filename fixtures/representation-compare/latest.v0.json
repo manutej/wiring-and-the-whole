@@ -1,0 +1,239 @@
+{
+  "schema_version": "representation-compare.v0",
+  "generated_at_utc": "2026-10-04T01:03:51Z",
+  "git_sha": "3fe1c7a",
+  "tokens": {
+    "l2_md": 813,
+    "l2_factored": 1045,
+    "l2_explicit": 2021,
+    "ast_struct": 5241,
+    "raw_java": 11962
+  },
+  "summary": {
+    "l2_md": {
+      "pass": 6,
+      "fail": 1,
+      "na": 0,
+      "wiring_pass_rate": 0.75
+    },
+    "l2_factored": {
+      "pass": 5,
+      "fail": 0,
+      "na": 2,
+      "wiring_pass_rate": 1.0
+    },
+    "l2_explicit": {
+      "pass": 4,
+      "fail": 0,
+      "na": 3,
+      "wiring_pass_rate": 1.0
+    },
+    "ast_struct": {
+      "pass": 5,
+      "fail": 0,
+      "na": 2,
+      "wiring_pass_rate": 1.0
+    },
+    "raw_java": {
+      "pass": 5,
+      "fail": 0,
+      "na": 2,
+      "wiring_pass_rate": 1.0
+    }
+  },
+  "agent": {
+    "questions": [
+      {
+        "id": "Q1",
+        "category": "wiring",
+        "expected": "DISBURSE",
+        "answers": {
+          "l2_md": {
+            "status": "pass",
+            "got": "DISBURSE"
+          },
+          "l2_factored": {
+            "status": "pass",
+            "got": "DISBURSE"
+          },
+          "l2_explicit": {
+            "status": "pass",
+            "got": "DISBURSE"
+          },
+          "ast_struct": {
+            "status": "pass",
+            "got": "DISBURSE"
+          },
+          "raw_java": {
+            "status": "pass",
+            "got": "DISBURSE"
+          }
+        }
+      },
+      {
+        "id": "Q2",
+        "category": "wiring",
+        "expected": "disburseLoan",
+        "answers": {
+          "l2_md": {
+            "status": "pass",
+            "got": "disburseLoan"
+          },
+          "l2_factored": {
+            "status": "pass",
+            "got": "disburseLoan"
+          },
+          "l2_explicit": {
+            "status": "pass",
+            "got": "disburseLoan"
+          },
+          "ast_struct": {
+            "status": "pass",
+            "got": "disburseLoan"
+          },
+          "raw_java": {
+            "status": "pass",
+            "got": "disburseLoan"
+          }
+        }
+      },
+      {
+        "id": "Q3",
+        "category": "wiring",
+        "expected": "CLOSE",
+        "answers": {
+          "l2_md": {
+            "status": "fail",
+            "error": "no match for CloseLoanCommandHandler\\.java \\|\\s*LOAN / ([A-Z]+)"
+          },
+          "l2_factored": {
+            "status": "pass",
+            "got": "CLOSE"
+          },
+          "l2_explicit": {
+            "status": "pass",
+            "got": "CLOSE"
+          },
+          "ast_struct": {
+            "status": "pass",
+            "got": "CLOSE"
+          },
+          "raw_java": {
+            "status": "pass",
+            "got": "CLOSE"
+          }
+        }
+      },
+      {
+        "id": "Q4",
+        "category": "topology",
+        "expected": "29",
+        "answers": {
+          "l2_md": {
+            "status": "pass",
+            "got": "29"
+          },
+          "l2_factored": {
+            "status": "pass",
+            "got": "29"
+          },
+          "l2_explicit": {
+            "status": "na",
+            "detail": "unsupported"
+          },
+          "ast_struct": {
+            "status": "na",
+            "detail": "unsupported"
+          },
+          "raw_java": {
+            "status": "na",
+            "detail": "unsupported"
+          }
+        }
+      },
+      {
+        "id": "Q5",
+        "category": "meta",
+        "expected": "experiments/e3-ablation/raw/",
+        "answers": {
+          "l2_md": {
+            "status": "pass",
+            "got": "experiments/e3-ablation/raw/"
+          },
+          "l2_factored": {
+            "status": "na",
+            "detail": "unsupported"
+          },
+          "l2_explicit": {
+            "status": "na",
+            "detail": "unsupported"
+          },
+          "ast_struct": {
+            "status": "na",
+            "detail": "unsupported"
+          },
+          "raw_java": {
+            "status": "na",
+            "detail": "unsupported"
+          }
+        }
+      },
+      {
+        "id": "Q6",
+        "category": "wiring",
+        "expected": "30",
+        "answers": {
+          "l2_md": {
+            "status": "pass",
+            "got": "30"
+          },
+          "l2_factored": {
+            "status": "na",
+            "detail": "unsupported"
+          },
+          "l2_explicit": {
+            "status": "na",
+            "detail": "unsupported"
+          },
+          "ast_struct": {
+            "status": "pass",
+            "got": "30"
+          },
+          "raw_java": {
+            "status": "pass",
+            "got": "30"
+          }
+        }
+      },
+      {
+        "id": "Q7",
+        "category": "syntax",
+        "expected": "yes",
+        "answers": {
+          "l2_md": {
+            "status": "pass",
+            "got": "yes"
+          },
+          "l2_factored": {
+            "status": "pass",
+            "got": "yes"
+          },
+          "l2_explicit": {
+            "status": "pass",
+            "got": "yes"
+          },
+          "ast_struct": {
+            "status": "pass",
+            "got": "yes"
+          },
+          "raw_java": {
+            "status": "pass",
+            "got": "yes"
+          }
+        }
+      }
+    ]
+  },
+  "performance_note": "See fixtures/scale-report/latest.v0.json slice_matrix_timing for pipeline ms",
+  "analysis": "**Compression:** L2 factored is ~11\u00d7 smaller than raw Java and ~5\u00d7 smaller than javalang AST struct on the 29-handler wedge. **Quality tradeoff:** L2 markdown scores highest on curated L1/dogfood (meta + topology tables). L2 factored/explicit excel at operadic inst rows and lossless reexpand; AST/raw excel at syntax and call-site fidelity per file. **AST gap:** Plain AST dumps omit annotation *values* unless augmented (we add @CommandType entity/action via source regex). They do not encode cross-handler wiring edges or breakeven token economics without a separate graph pass. **When to use which:** Agent context = prefer L2 factored for wiring at scale; navigation/audit = L2 md; refactor tools = AST; ground truth dispute = raw Java. **This run:** test agent pass count \u2014 L2 md 6/7, AST struct 5/7, L2 factored 5/7."
+}

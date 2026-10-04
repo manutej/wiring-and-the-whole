@@ -25,6 +25,20 @@ export type ScaleReportV0 = {
     wiringmap_units: number;
     wiringmap_edges: number;
   };
+  performance?: {
+    matrix_total_ms_rust?: number;
+    matrix_total_ms_python?: number;
+    charter_10k_total_ms?: number;
+    charter_10k_extract_ms?: number;
+  };
+  representation_compare?: {
+    tokens_factored?: number;
+    tokens_ast?: number;
+    tokens_raw?: number;
+    pass_l2_factored?: number;
+    pass_l2_md?: number;
+    pass_ast?: number;
+  };
   slice_matrix_timing: {
     rust: {
       total_ms: number;

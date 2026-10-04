@@ -16,6 +16,7 @@ OUT_JSON = ROOT / "fixtures/scale-report/latest.v0.json"
 OUT_MD = ROOT / "docs/operations/reports/SCALE-REPORT-LATEST.md"
 OUT_HTML = ROOT / "docs/operations/scale-dashboard/index.html"
 PREVIEW_JSON = ROOT / "preview/graph/public/scale-report.v0.json"
+REP_COMPARE = ROOT / "fixtures/representation-compare/latest.v0.json"
 CHARTER_10K = ROOT / "fixtures/external/fineract-charter-10k"
 
 
@@ -86,6 +87,42 @@ def corpus_block() -> dict[str, object]:
     }
 
 
+def performance_block(rust_timing: dict[str, object], py_timing: dict[str, object]) -> dict[str, object]:
+    c10: dict[str, object] = {}
+    for sl in rust_timing.get("slices") or []:
+        if sl.get("id") == "fineract-charter-10k":
+            steps = sl.get("steps_ms") or {}
+            c10 = {
+                "charter_10k_validate_ms": steps.get("validate_ms"),
+                "charter_10k_extract_ms": steps.get("extract_ms"),
+                "charter_10k_pack_ms": steps.get("pack_ms"),
+                "charter_10k_reexpand_ms": steps.get("reexpand_ms"),
+                "charter_10k_total_ms": steps.get("total_ms"),
+            }
+            break
+    return {
+        "matrix_total_ms_rust": rust_timing.get("total_ms"),
+        "matrix_total_ms_python": py_timing.get("total_ms"),
+        **c10,
+    }
+
+
+def representation_summary() -> dict[str, object]:
+    if not REP_COMPARE.is_file():
+        subprocess.run([sys.executable, str(ROOT / "scripts/representation_compare_run.py")], check=True, cwd=ROOT)
+    doc = json.loads(REP_COMPARE.read_text(encoding="utf-8"))
+    tokens = doc.get("tokens") or {}
+    summary = doc.get("summary") or {}
+    return {
+        "tokens_factored": tokens.get("l2_factored"),
+        "tokens_ast": tokens.get("ast_struct"),
+        "tokens_raw": tokens.get("raw_java"),
+        "pass_l2_factored": (summary.get("l2_factored") or {}).get("pass"),
+        "pass_l2_md": (summary.get("l2_md") or {}).get("pass"),
+        "pass_ast": (summary.get("ast_struct") or {}).get("pass"),
+    }
+
+
 def viewing_block() -> dict[str, object]:
     base = "https://wiring-graph-preview.vercel.app"
     return {
@@ -125,6 +162,8 @@ def render_html(report: dict[str, object]) -> str:
         </tr>"""
 
     mapped_pct = float(breakdown.get("mapped_fraction_loc") or 0) * 100
+    perf = report.get("performance") or {}
+    rep = report.get("representation_compare") or {}
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -150,10 +189,23 @@ def render_html(report: dict[str, object]) -> str:
   <h1>Wiring scale dashboard (S4 charter 10k)</h1>
   <p>Generated <code>{html.escape(str(report.get("generated_at_utc")))}</code> · git <code>{html.escape(str(report.get("git_sha")))}</code></p>
 
+  <section>
+    <h2>Pipeline performance (measured)</h2>
+    <p><strong>7-shard matrix total:</strong> {perf.get("matrix_total_ms_rust")} ms (Rust) · {perf.get("matrix_total_ms_python")} ms (Python)</p>
+    <p><strong>Charter 10k shard:</strong> validate {perf.get("charter_10k_validate_ms")} · extract {perf.get("charter_10k_extract_ms")} · pack {perf.get("charter_10k_pack_ms")} · reexpand {perf.get("charter_10k_reexpand_ms")} · <strong>total {perf.get("charter_10k_total_ms")} ms</strong> (Rust)</p>
+  </section>
+
   <div class="banner">
     <strong>What repo is this?</strong> {html.escape(str(corpus.get("summary")))}
     <br />Upstream reference: {html.escape(str(corpus.get("upstream_repo")))} · commit pinned: {corpus.get("upstream_commit_pinned")}.
   </div>
+
+  <section>
+    <h2>L2 vs AST (29-handler wedge, test agent)</h2>
+    <p>Tokens factored: {rep.get("tokens_factored")} · AST struct: {rep.get("tokens_ast")} · raw Java: {rep.get("tokens_raw")}</p>
+    <p>Agent pass score — L2 factored: {rep.get("pass_l2_factored")}/7 · L2 md: {rep.get("pass_l2_md")}/7 · AST: {rep.get("pass_ast")}/7</p>
+    <p><code>docs/operations/reports/REPRESENTATION-COMPARE-LATEST.md</code></p>
+  </section>
 
   <div class="grid">
     <section>
@@ -259,6 +311,9 @@ def main() -> int:
     rust_timing = run_json([sys.executable, timing_script])
     py_timing = run_json([sys.executable, timing_script], {"WIRING_ENGINE": "python"})
 
+    perf = performance_block(rust_timing, py_timing)
+    rep_summary = representation_summary()
+
     report: dict[str, object] = {
         "schema_version": "scale-report.v0",
         "generated_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -267,6 +322,8 @@ def main() -> int:
         "metrics": metrics,
         "charter_10k_breakdown": charter_10k_breakdown(),
         "slice_matrix_timing": {"rust": rust_timing, "python": py_timing},
+        "performance": perf,
+        "representation_compare": rep_summary,
         "viewing": viewing_block(),
     }
 

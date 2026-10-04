@@ -30,6 +30,9 @@ export default async function ScaleDashboardPage() {
   const metrics = report.metrics;
   const breakdown = report.charter_10k_breakdown;
   const rust = report.slice_matrix_timing.rust;
+  const py = report.slice_matrix_timing.python;
+  const perf = report.performance;
+  const rep = report.representation_compare;
   const viewing = report.viewing;
 
   return (
@@ -40,6 +43,31 @@ export default async function ScaleDashboardPage() {
           Generated {report.generated_at_utc} · git <code className="font-mono text-xs">{report.git_sha}</code>
         </p>
       </div>
+
+      <section className="border-2 border-[var(--vermillion)] p-4 bg-[var(--paper)]">
+        <h3 className="font-medium mb-2 text-[var(--vermillion)]">Pipeline performance (measured)</h3>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            7-shard matrix: <strong>{perf?.matrix_total_ms_rust ?? rust.total_ms} ms</strong> Rust ·{" "}
+            {perf?.matrix_total_ms_python ?? py.total_ms} ms Python
+          </li>
+          <li>
+            Charter 10k shard (Rust): total <strong>{perf?.charter_10k_total_ms ?? "—"} ms</strong>
+            {perf?.charter_10k_extract_ms != null ? ` (extract ${perf.charter_10k_extract_ms} ms)` : ""}
+          </li>
+        </ul>
+      </section>
+
+      {rep && (
+        <section className="border border-[var(--line)] p-4">
+          <h3 className="font-medium mb-2">L2 vs AST (29-handler test agent)</h3>
+          <p>
+            Tokens: factored {rep.tokens_factored} · AST {rep.tokens_ast} · raw {rep.tokens_raw} ·
+            pass scores: L2 factored {rep.pass_l2_factored}/7 · L2 md {rep.pass_l2_md}/7 · AST{" "}
+            {rep.pass_ast}/7
+          </p>
+        </section>
+      )}
 
       <section className="border border-[var(--line)] bg-[#fff3e0] p-4">
         <h3 className="font-medium mb-2">Corpus honesty</h3>
