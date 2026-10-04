@@ -67,7 +67,9 @@ check "external fineract slice check" bash scripts/fineract_slice_check.sh
 
 check "fineract charter-1k slice (~1k LOC, manifest + refs)" make charter-1k-check
 
-check "slice matrix (5 shards, rust engine validate→extract→pack→reexpand)" make slice-matrix-check
+check "slice matrix (6 shards, rust engine validate→extract→pack→reexpand)" make slice-matrix-check
+
+check "scale metrics (charter LOC, recall pairs, handler WIN, matrix union LOC)" make scale-metrics-check
 
 check "fetch slice dry-run leaves fixtures untouched" \
   bash scripts/fetch_fineract_slice.sh

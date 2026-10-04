@@ -26,6 +26,11 @@
       "id": "fineract-charter-1k",
       "refs_dir": "fixtures/external/fineract-charter-1k",
       "wiringmap": "fixtures/external/fineract-charter-1k/wiringmap.v0.json"
+    },
+    {
+      "id": "toybank-report",
+      "refs_dir": "witness/toybank/report",
+      "wiringmap": "wiringmap/examples/toybank-report.v0.json"
     }
   ]
 }

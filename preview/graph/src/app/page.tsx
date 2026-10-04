@@ -17,6 +17,11 @@ const cards = [
     body: "29-handler pinned vertical — manifest drift + 90 ref tokens (M2 scale-honest slice).",
   },
   {
+    href: "/scale",
+    title: "Scale & compound diagrams",
+    body: "Mermaid: programme ladder, slice matrix shards, wiring+math gates, Rust pipeline.",
+  },
+  {
     href: "/spine",
     title: "Rust migration spine",
     body: "This repo’s own harness wiring: Python tools → wiring-core Phase 1 targets.",
