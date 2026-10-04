@@ -23,7 +23,7 @@ Map production codebases as a **module of systems** (T1), find symmetries/invari
 | External thin slice | `fixtures/external/fineract-handlers-thin/` (7 handlers, vendored) — **`make external-slice-check`** |
 | L1 dogfood | meta / toybank / fineract-thin packs + **`make dogfood-grade*`** |
 | SKILL mint (programme) | **3/3:** `interface-first-context`, `systems-intake`, `symmetry-lens` |
-| Paris level-up (factories / agents) | **8 skills** — start [`skills/paris-level-up/README.md`](../skills/paris-level-up/README.md) |
+| Paris level-up (factories / agents) | **8 skills** — [`skills/paris-level-up/README.md`](../skills/paris-level-up/README.md); spec v1 + [`docs/specs/software-factory-skills-PROGRESS.md`](specs/software-factory-skills-PROGRESS.md) |
 
 ## Verify & interface checks
 

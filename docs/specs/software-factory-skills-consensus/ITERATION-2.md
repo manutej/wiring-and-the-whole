@@ -6,7 +6,7 @@ Incorporates operator deltas from iteration 1.
 
 **Progressive disclosure:** All 8 skills draft-updated with L1/L2/L3 + `## Unified system`.
 
-**Factory OS diagram:** Mermaid in `software-factory-skill-plugin.v0.md`; README ascii pipeline retained.
+**Factory OS diagram:** Mermaid in `software-factory-skill-plugin.v1.md` (v0 at iteration time); README ascii pipeline retained.
 
 **CONJECTURE labeling:** Pocock deep-module / review-agent / blast-radius bullets labeled CONJECTURE in L3 (audience themes + editorial explorer, not digest MM:SS). Holtz “score/sections” CONJECTURE; Conductor desktop @ 0:00 FACT.
 

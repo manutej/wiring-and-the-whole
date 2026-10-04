@@ -97,7 +97,7 @@ insights:
     video_id: null
     cite: null
     theme: Software factories
-    summary: "Progressive disclosure skill/plugin package spec + 3-iteration faithfulness consensus."
+    summary: "Progressive disclosure skill/plugin package spec v1 + progress report + 3-iteration faithfulness consensus."
     maps_to: spec
-    target: docs/specs/software-factory-skill-plugin.v0.md
+    target: docs/specs/software-factory-skill-plugin.v1.md
     status: adopted

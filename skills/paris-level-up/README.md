@@ -2,7 +2,7 @@
 
 Agent **SKILL.md** instruments distilled from **9 ingested** AI Engineer Paris talks (fact + inference separated in each skill’s Provenance). Use with programme skills (`interface-first-context`, `systems-intake`, `symmetry-lens`) and [`docs/PULSE.md`](../../docs/PULSE.md) for pulse-sized adoption.
 
-**Implementable spec:** [`docs/specs/software-factory-skill-plugin.v0.md`](../../docs/specs/software-factory-skill-plugin.v0.md) · **Consensus:** [`docs/specs/software-factory-skills-consensus/`](../../docs/specs/software-factory-skills-consensus/) · **Plugin stub:** [`plugin-manifest.json`](plugin-manifest.json).
+**Implementable spec (v1):** [`docs/specs/software-factory-skill-plugin.v1.md`](../../docs/specs/software-factory-skill-plugin.v1.md) · **Progress:** [`docs/specs/software-factory-skills-PROGRESS.md`](../../docs/specs/software-factory-skills-PROGRESS.md) · **Consensus:** [`docs/specs/software-factory-skills-consensus/`](../../docs/specs/software-factory-skills-consensus/) · **Plugin stub:** [`plugin-manifest.json`](plugin-manifest.json) (`1.0.0`).
 
 **Captions:** All cites derive from **English auto-generated** YouTube captions (`digest.json` / `transcript-summaries.json`). Layer 3 tables mark **FACT** vs **CONJECTURE** per skill.
 

@@ -4,7 +4,7 @@
 
 **Deliverables shipped:**
 
-- `docs/specs/software-factory-skill-plugin.v0.md` — architecture, progressive disclosure schema, OS diagram, acceptance tests.
+- `docs/specs/software-factory-skill-plugin.v1.md` (was v0 at ship) — architecture, progressive disclosure schema, OS diagram, acceptance tests.
 - 8 × `SKILL.md` with `## Progressive disclosure` + `## Unified system`.
 - `skills/paris-level-up/README.md` — curriculum, caption note, link to spec.
 - `skills/paris-level-up/plugin-manifest.json` — stub triggers.
@@ -73,3 +73,5 @@
 **Deltas vs initial skills:** Added progressive disclosure + unified system sections; no change to core 7-move logic except explicit labeling.
 
 **Follow-ups (out of scope v0):** Ingest `next_ingest_priority` talks; enrich MM:SS bullets for talks with hook-only digest; optional `make verify-skills` FACT linter.
+
+**Post-consensus (v1 harmonization, no skill rewrites):** Canonical spec renamed to [`software-factory-skill-plugin.v1.md`](../software-factory-skill-plugin.v1.md); progress narrative in [`software-factory-skills-PROGRESS.md`](../software-factory-skills-PROGRESS.md).

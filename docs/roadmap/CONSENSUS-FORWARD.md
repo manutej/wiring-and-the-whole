@@ -127,6 +127,14 @@ Paris **explorer** stays **optional teaching surface** until Phase 3 exit criter
 | Fixture | `fixtures/external/fineract-handlers-thin/` — 4th handler edge |
 | Pulse | `docs/pulse/briefs/2026-10-02-consensus-forward-execute.md` |
 
+### Execution log (2026-10-04)
+
+| Step | Artifact |
+|------|----------|
+| Factory OS v1 | [`docs/specs/software-factory-skill-plugin.v1.md`](../specs/software-factory-skill-plugin.v1.md) — harmonized with manifest `1.0.0` |
+| Progress | [`docs/specs/software-factory-skills-PROGRESS.md`](../specs/software-factory-skills-PROGRESS.md) — 9×8 coverage matrix, dual-map, pending ingest |
+| Skills | 8× Paris factory `SKILL.md` L1/L2/L3 unchanged; registry spec row → v1 |
+
 ---
 
 ## References

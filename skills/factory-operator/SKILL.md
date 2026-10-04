@@ -24,7 +24,7 @@ description: Define and operate a software factory — outcome metrics, build vs
 
 ## Unified system
 
-**OS stage:** Define & justify (entry). **Upstream:** — · **Downstream:** [`process-embedded-factory`](../process-embedded-factory/SKILL.md), [`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md). **Talks:** WorkOS skeptic, Factory.com builder, Warp Lloyd environment. Map: [`docs/specs/software-factory-skill-plugin.v0.md`](../../docs/specs/software-factory-skill-plugin.v0.md).
+**OS stage:** Define & justify (entry). **Upstream:** — · **Downstream:** [`process-embedded-factory`](../process-embedded-factory/SKILL.md), [`devex-metrics-grounding`](../devex-metrics-grounding/SKILL.md). **Talks:** WorkOS skeptic, Factory.com builder, Warp Lloyd environment. Map: [`docs/specs/software-factory-skill-plugin.v1.md`](../../docs/specs/software-factory-skill-plugin.v1.md).
 
 ## When to use
 
