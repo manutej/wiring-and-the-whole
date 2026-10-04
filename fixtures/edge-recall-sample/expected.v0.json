@@ -1,6 +1,6 @@
 {
   "schema_version": "edge-recall-sample.v0",
-  "description": "Frozen (file, ref_token) pairs for wedge-2 edge recall sample gate (toybank + fineract thin + ~1k charter vertical)",
+  "description": "Frozen (file, ref_token) pairs for wedge-2 edge recall sample gate (toybank + fineract thin + charter 1k + charter 10k scale vertical)",
   "samples": [
     {
       "id": "toybank-accounts",
@@ -541,6 +541,21 @@
         [
           "WorkingCapitalLoanRecoveryPaymentCommandHandler.java",
           "infrastructure.core.api.JsonCommand#getLoanId"
+        ]
+      ]
+    },
+    {
+      "id": "fineract-charter-10k",
+      "refs_dir": "fixtures/external/fineract-charter-10k",
+      "wiringmap": "fixtures/external/fineract-charter-10k/wiringmap.v0.json",
+      "pairs": [
+        [
+          "ActivateSavingsAccountCommandHandler.java",
+          "SavingsAccountWritePlatformService#activate"
+        ],
+        [
+          "ActivateSavingsAccountCommandHandler.java",
+          "portfolio.savings.service.SavingsAccountWritePlatformService#activate"
         ]
       ]
     }

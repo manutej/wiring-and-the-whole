@@ -7,19 +7,27 @@
     "max_loc": 1600,
     "min_ref_tokens": 85
   },
+  "charter_10k": {
+    "min_java_files": 40,
+    "min_loc": 8500,
+    "max_loc": 11000,
+    "min_ref_tokens": 85
+  },
   "slice_matrix": {
-    "min_slices": 6,
-    "note": "toybank x3 + thin + charter-1k + report"
+    "min_slices": 7,
+    "note": "toybank x3 + thin + charter-1k + report + charter-10k"
   },
   "edge_recall": {
-    "min_total_pairs": 125
+    "min_total_pairs": 127,
+    "min_distinct_pairs": 118,
+    "note": "10k charter slice stores delta pairs only (not duplicates of 1k)"
   },
   "handler_family": {
     "min_parsed": 29
   },
   "union_loc_estimate": {
     "min_java_loc_touched_by_matrix": 1700,
-    "min_unique_java_loc": 1350,
-    "note": "unique paths dedupe thin slice files copied in charter"
+    "min_unique_java_loc": 10500,
+    "note": "content-hash dedupe across matrix shards (charter-1k bodies not counted twice)"
   }
 }
