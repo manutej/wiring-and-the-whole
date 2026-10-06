@@ -1,0 +1,1445 @@
+{
+  "id": "fineract-charter-1k",
+  "title": "29 @CommandType handlers (~1k LOC chartered vertical)",
+  "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2).",
+  "levels": [
+    {
+      "id": 0,
+      "label": "units"
+    },
+    {
+      "id": 1,
+      "label": "junctions"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "unit:handler.AddLoanChargeCommandHandler",
+      "title": "AddLoanChargeCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOANCHARGE CREATE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/AddLoanChargeCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.AttachLoanOriginatorCommandHandler",
+      "title": "AttachLoanOriginatorCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN_ORIGINATOR ATTACH",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/AttachLoanOriginatorCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.BulkUpdateLoanOfficerCommandHandler",
+      "title": "BulkUpdateLoanOfficerCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN BULKREASSIGN",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/BulkUpdateLoanOfficerCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.CloseLoanCommandHandler",
+      "title": "CloseLoanCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN CLOSE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/CloseLoanCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.CreateDelinquencyRangeCommandHandler",
+      "title": "CreateDelinquencyRangeCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — DELINQUENCY_RANGE CREATE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/CreateDelinquencyRangeCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.CreditBalanceRefundCommandHandler",
+      "title": "CreditBalanceRefundCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN CREDITBALANCEREFUND",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/CreditBalanceRefundCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.DetachLoanOriginatorCommandHandler",
+      "title": "DetachLoanOriginatorCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN_ORIGINATOR DETACH",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/DetachLoanOriginatorCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.DisburseLoanCommandHandler",
+      "title": "DisburseLoanCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN DISBURSE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/DisburseLoanCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.DisburseLoanToSavingsCommandHandler",
+      "title": "DisburseLoanToSavingsCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN DISBURSETOSAVINGS",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/DisburseLoanToSavingsCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.ForeClosureCommandHandler",
+      "title": "ForeClosureCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN FORECLOSURE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/ForeClosureCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.GLIMApplicationRejectionCommandHandler",
+      "title": "GLIMApplicationRejectionCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — GLIMLOAN REJECT",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/GLIMApplicationRejectionCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.LoanApplicationModificationCommandHandler",
+      "title": "LoanApplicationModificationCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN UPDATE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/LoanApplicationModificationCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.LoanApplicationSubmittalCommandHandler",
+      "title": "LoanApplicationSubmittalCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN CREATE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/LoanApplicationSubmittalCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.LoanApplicationWithdrawnByApplicantCommandHandler",
+      "title": "LoanApplicationWithdrawnByApplicantCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN WITHDRAW",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/LoanApplicationWithdrawnByApplicantCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.LoanApprovedAmountModificationCommandHandler",
+      "title": "LoanApprovedAmountModificationCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN UPDATE_APPROVED_AMOUNT",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/LoanApprovedAmountModificationCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.LoanGoodwillCreditCommandHandler",
+      "title": "LoanGoodwillCreditCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN GOODWILLCREDIT",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/LoanGoodwillCreditCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.LoanMerchantIssuedRefundCommandHandler",
+      "title": "LoanMerchantIssuedRefundCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN MERCHANTISSUEDREFUND",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/LoanMerchantIssuedRefundCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.LoanRefundByCashCommandHandler",
+      "title": "LoanRefundByCashCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN REFUNDBYCASH",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/LoanRefundByCashCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.LoanRepaymentChargebackCommandHandler",
+      "title": "LoanRepaymentChargebackCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN CHARGEBACK",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/LoanRepaymentChargebackCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.MarkLoanAsFraudCommandHandler",
+      "title": "MarkLoanAsFraudCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN SETFRAUD",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/MarkLoanAsFraudCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.RejectAddtionalSharesCommandHandler",
+      "title": "RejectAddtionalSharesCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — SHAREACCOUNT REJECTADDITIONALSHARES",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/RejectAddtionalSharesCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.SaveCenterCollectionSheetCommandHandler",
+      "title": "SaveCenterCollectionSheetCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — CENTER SAVECOLLECTIONSHEET",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/SaveCenterCollectionSheetCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.UpdateChargeDefinitionCommandHandler",
+      "title": "UpdateChargeDefinitionCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — CHARGE UPDATE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/UpdateChargeDefinitionCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.UpdateDelinquencyBucketCommandHandler",
+      "title": "UpdateDelinquencyBucketCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — DELINQUENCY_BUCKET UPDATE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/UpdateDelinquencyBucketCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.UpdateDelinquencyRangeCommandHandler",
+      "title": "UpdateDelinquencyRangeCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — DELINQUENCY_RANGE UPDATE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/UpdateDelinquencyRangeCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.UpdateInterestPauseCommandHandler",
+      "title": "UpdateInterestPauseCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN UPDATEINTERESTPAUSE",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/UpdateInterestPauseCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.UpdateLoanDelinquencyBucketCommandHandler",
+      "title": "UpdateLoanDelinquencyBucketCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — LOAN UPDATEDELINQUENCY",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/UpdateLoanDelinquencyBucketCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.WithdrawClientTransferCommandHandler",
+      "title": "WithdrawClientTransferCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — CLIENT WITHDRAWTRANSFER",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/WithdrawClientTransferCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "unit:handler.WorkingCapitalLoanRecoveryPaymentCommandHandler",
+      "title": "WorkingCapitalLoanRecoveryPaymentCommandHandler",
+      "kind": "module",
+      "level": 0,
+      "dim": 1,
+      "summary": "Command handler — WORKINGCAPITALLOAN RECOVERYPAYMENT",
+      "sources": [
+        "fixtures/external/fineract-charter-1k/WorkingCapitalLoanRecoveryPaymentCommandHandler.java"
+      ],
+      "known": false
+    },
+    {
+      "id": "junction:infrastructure.DataIntegrityErrorHandler",
+      "title": "infrastructure.DataIntegrityErrorHandler",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:infrastructure.core.api.JsonCommand",
+      "title": "infrastructure.core.api.JsonCommand",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:LoanChargeWritePlatformService",
+      "title": "LoanChargeWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.loanaccount.service.LoanChargeWritePlatformService",
+      "title": "portfolio.loanaccount.service.LoanChargeWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:LoanOriginatorWritePlatformService",
+      "title": "LoanOriginatorWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.loanorigination.service.LoanOriginatorWritePlatformService",
+      "title": "portfolio.loanorigination.service.LoanOriginatorWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:LoanWritePlatformService",
+      "title": "LoanWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "title": "portfolio.loanaccount.service.LoanWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:DelinquencyWritePlatformService",
+      "title": "DelinquencyWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "title": "portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:LoanApplicationWritePlatformService",
+      "title": "LoanApplicationWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "title": "portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:LoanApprovedAmountWritePlatformService",
+      "title": "LoanApprovedAmountWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.loanaccount.service.LoanApprovedAmountWritePlatformService",
+      "title": "portfolio.loanaccount.service.LoanApprovedAmountWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:ShareAccountWritePlatformService",
+      "title": "ShareAccountWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.shareaccounts.service.ShareAccountWritePlatformService",
+      "title": "portfolio.shareaccounts.service.ShareAccountWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:CollectionSheetWritePlatformService",
+      "title": "CollectionSheetWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.collectionsheet.service.CollectionSheetWritePlatformService",
+      "title": "portfolio.collectionsheet.service.CollectionSheetWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:ChargeWritePlatformService",
+      "title": "ChargeWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.charge.service.ChargeWritePlatformService",
+      "title": "portfolio.charge.service.ChargeWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:InterestPauseWritePlatformService",
+      "title": "InterestPauseWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.interestpauses.service.InterestPauseWritePlatformService",
+      "title": "portfolio.interestpauses.service.InterestPauseWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:TransferWritePlatformService",
+      "title": "TransferWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.transfer.service.TransferWritePlatformService",
+      "title": "portfolio.transfer.service.TransferWritePlatformService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:WorkingCapitalLoanRecoveryPaymentWriteService",
+      "title": "WorkingCapitalLoanRecoveryPaymentWriteService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    },
+    {
+      "id": "junction:portfolio.workingcapitalloan.service.WorkingCapitalLoanRecoveryPaymentWriteService",
+      "title": "portfolio.workingcapitalloan.service.WorkingCapitalLoanRecoveryPaymentWriteService",
+      "kind": "api",
+      "level": 1,
+      "dim": 1,
+      "known": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "unit:handler.AddLoanChargeCommandHandler",
+      "target": "junction:LoanChargeWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.AddLoanChargeCommandHandler",
+      "target": "junction:infrastructure.DataIntegrityErrorHandler",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.AddLoanChargeCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.AddLoanChargeCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanChargeWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.AttachLoanOriginatorCommandHandler",
+      "target": "junction:LoanOriginatorWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.AttachLoanOriginatorCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 2 wiring edges",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.AttachLoanOriginatorCommandHandler",
+      "target": "junction:portfolio.loanorigination.service.LoanOriginatorWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.BulkUpdateLoanOfficerCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.BulkUpdateLoanOfficerCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.CloseLoanCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.CloseLoanCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.CloseLoanCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.CreateDelinquencyRangeCommandHandler",
+      "target": "junction:DelinquencyWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.CreateDelinquencyRangeCommandHandler",
+      "target": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.CreditBalanceRefundCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.CreditBalanceRefundCommandHandler",
+      "target": "junction:infrastructure.DataIntegrityErrorHandler",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.CreditBalanceRefundCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.CreditBalanceRefundCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DetachLoanOriginatorCommandHandler",
+      "target": "junction:LoanOriginatorWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DetachLoanOriginatorCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 2 wiring edges",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DetachLoanOriginatorCommandHandler",
+      "target": "junction:portfolio.loanorigination.service.LoanOriginatorWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DisburseLoanCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DisburseLoanCommandHandler",
+      "target": "junction:infrastructure.DataIntegrityErrorHandler",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DisburseLoanCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DisburseLoanCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DisburseLoanToSavingsCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DisburseLoanToSavingsCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.DisburseLoanToSavingsCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.ForeClosureCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.ForeClosureCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.ForeClosureCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.GLIMApplicationRejectionCommandHandler",
+      "target": "junction:LoanApplicationWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.GLIMApplicationRejectionCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.GLIMApplicationRejectionCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApplicationModificationCommandHandler",
+      "target": "junction:LoanApplicationWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApplicationModificationCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApplicationModificationCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApplicationSubmittalCommandHandler",
+      "target": "junction:LoanApplicationWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApplicationSubmittalCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApplicationWithdrawnByApplicantCommandHandler",
+      "target": "junction:LoanApplicationWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApplicationWithdrawnByApplicantCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApplicationWithdrawnByApplicantCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanApplicationWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApprovedAmountModificationCommandHandler",
+      "target": "junction:LoanApprovedAmountWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApprovedAmountModificationCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanApprovedAmountModificationCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanApprovedAmountWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanGoodwillCreditCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanGoodwillCreditCommandHandler",
+      "target": "junction:infrastructure.DataIntegrityErrorHandler",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanGoodwillCreditCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanGoodwillCreditCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanMerchantIssuedRefundCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanMerchantIssuedRefundCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanMerchantIssuedRefundCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanRefundByCashCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanRefundByCashCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanRefundByCashCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanRepaymentChargebackCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanRepaymentChargebackCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 2 wiring edges",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.LoanRepaymentChargebackCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.MarkLoanAsFraudCommandHandler",
+      "target": "junction:LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.MarkLoanAsFraudCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.MarkLoanAsFraudCommandHandler",
+      "target": "junction:portfolio.loanaccount.service.LoanWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.RejectAddtionalSharesCommandHandler",
+      "target": "junction:ShareAccountWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.RejectAddtionalSharesCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.RejectAddtionalSharesCommandHandler",
+      "target": "junction:portfolio.shareaccounts.service.ShareAccountWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.SaveCenterCollectionSheetCommandHandler",
+      "target": "junction:CollectionSheetWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.SaveCenterCollectionSheetCommandHandler",
+      "target": "junction:portfolio.collectionsheet.service.CollectionSheetWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateChargeDefinitionCommandHandler",
+      "target": "junction:ChargeWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateChargeDefinitionCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateChargeDefinitionCommandHandler",
+      "target": "junction:portfolio.charge.service.ChargeWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateDelinquencyBucketCommandHandler",
+      "target": "junction:DelinquencyWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateDelinquencyBucketCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateDelinquencyBucketCommandHandler",
+      "target": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateDelinquencyRangeCommandHandler",
+      "target": "junction:DelinquencyWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateDelinquencyRangeCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateDelinquencyRangeCommandHandler",
+      "target": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateInterestPauseCommandHandler",
+      "target": "junction:InterestPauseWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateInterestPauseCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateInterestPauseCommandHandler",
+      "target": "junction:portfolio.interestpauses.service.InterestPauseWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateLoanDelinquencyBucketCommandHandler",
+      "target": "junction:DelinquencyWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateLoanDelinquencyBucketCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.UpdateLoanDelinquencyBucketCommandHandler",
+      "target": "junction:portfolio.delinquency.service.DelinquencyWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.WithdrawClientTransferCommandHandler",
+      "target": "junction:TransferWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.WithdrawClientTransferCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.WithdrawClientTransferCommandHandler",
+      "target": "junction:portfolio.transfer.service.TransferWritePlatformService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.WorkingCapitalLoanRecoveryPaymentCommandHandler",
+      "target": "junction:WorkingCapitalLoanRecoveryPaymentWriteService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.WorkingCapitalLoanRecoveryPaymentCommandHandler",
+      "target": "junction:infrastructure.core.api.JsonCommand",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    },
+    {
+      "source": "unit:handler.WorkingCapitalLoanRecoveryPaymentCommandHandler",
+      "target": "junction:portfolio.workingcapitalloan.service.WorkingCapitalLoanRecoveryPaymentWriteService",
+      "relation": "di",
+      "restrictKind": "identity",
+      "note": "merged 1 wiring edge",
+      "x-swarm": {
+        "residualMeaning": "Structural wiring only: no residual was computed, and every map stays unverified until a quantizer exists (j2)."
+      }
+    }
+  ]
+}
