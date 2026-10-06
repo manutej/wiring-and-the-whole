@@ -27,6 +27,11 @@ RESTRICT_BY_KIND = {
     "link": "identity",
 }
 
+# Last segment of a source path (e.g. bolt_386.go), not Java package.class names.
+_SOURCE_FILE_EXT = frozenset(
+    {"c", "cpp", "go", "h", "java", "js", "jsx", "kt", "py", "rb", "rs", "swift", "ts", "tsx"}
+)
+
 
 def slugify_ref(ref: str) -> str:
     tail = ref.rstrip("/").split("/")[-1]
@@ -37,7 +42,10 @@ def slugify_ref(ref: str) -> str:
 def unit_title(unit_id: str) -> str:
     body = unit_id.split(":", 1)[-1] if ":" in unit_id else unit_id
     if "." in body:
-        return body.rsplit(".", 1)[-1]
+        stem, suffix = body.rsplit(".", 1)
+        if suffix.lower() in _SOURCE_FILE_EXT and stem:
+            return Path(body).stem
+        return suffix
     if ":" in body:
         return body.rsplit(":", 1)[-1]
     return body
