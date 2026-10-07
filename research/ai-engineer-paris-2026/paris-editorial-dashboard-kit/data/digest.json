@@ -163,7 +163,7 @@
     "oVsEddfhdxc",
     "474j-n1Ltxc"
   ],
-  "last_ingest_at": "2026-10-06T12:00:08Z",
-  "last_ingest_note": "Loop tick 12:00 UTC: TubeAlfred 402 insufficient_credits (0 available). Skipped channel_videos + transcripts. No catalog diff (local snapshot unchanged, 30 videos). Corpus frozen at 9 ingested; next priority buHC7bQE1X4 (17K views, Get Out of the Model's Way).",
+  "last_ingest_at": "2026-10-07T00:00:19Z",
+  "last_ingest_note": "Loop tick 00:00 UTC 2026-10-07: TubeAlfred 402 insufficient_credits (0 available, 1 required). Skipped channel_videos + transcripts. No catalog diff (local snapshot unchanged, 30 videos). Corpus frozen at 9 ingested; next priority buHC7bQE1X4 (17K views, Get Out of the Model's Way).",
   "last_ingest_status": "skipped_insufficient_credits"
 }
