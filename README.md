@@ -85,6 +85,13 @@ Original session: 2026-07-24 → 07-30. Workspace reclaimed. Corpus rebuilt 2026
 
 From a fresh clone (needs **python3** and **node**): run **`make verify`** — E1 witness, E2 token counts vs frozen JSON, E3 grades on checked-in responses. Details: [`experiments/README.md`](experiments/README.md).
 
+Export a [`wiringmap.v0`](wiringmap/) file to stalks-and-sections SheafGraph JSON (stdout):
+
+```bash
+python3 scripts/wiringmap_to_sheaf.py <wiringmap.v0.json> > out.json
+python3 scripts/wiringmap_to_sheaf.py fixtures/external/fineract-charter-1k/wiringmap.v0.json > exports/sheaf/fineract-charter-1k.sheafgraph.json
+```
+
 ---
 
 ## How to read it
